@@ -1,0 +1,116 @@
+#pragma once
+
+#include <string>
+#include <utility>
+#include <vector>
+
+#include <windows.h>
+
+#include "mod_types.h"
+#include "profiles.h"
+
+constexpr int kModsTargetRowsVisible = 10;
+
+constexpr int kMainMenuItems = 7;
+
+struct AuthUiState {
+    std::wstring title;
+    std::wstring userCode;
+    std::wstring verificationUri;
+    std::wstring status;
+    std::wstring detail;
+    int secondsRemaining = 0;
+    bool isError = false;
+    bool showDeviceCode = true;
+    bool showMainMenu = false;
+    bool isLocalSession = false;
+    bool showAccounts = false;
+    int selectedAccountIndex = 0;
+    std::wstring accountsMessage = L"A  Select an option";
+    std::vector<std::wstring> localNames;
+    int localActive = -1;
+    int localCursor = -1;
+    bool localDeletePending = false;
+    bool localNameEditing = false;
+    bool localNameRenaming = false;
+    std::wstring localNameDraft;
+    bool showRemoteFiles = false;
+    bool showModsPage = false;
+    int selectedMenuIndex = 0;
+    std::wstring homePlayerName;
+    std::wstring homeProfileName;
+    std::wstring homeTargetText;
+    int homeModCount = -1;
+    int selectedModsTab = 0;
+    ModSource modsSource = ModSource::Modrinth;
+    int modsHoverSource = -1;
+    int selectedModIndex = 0;
+    int modsFocus = 0;
+    int modsScrollRow = 0;
+    int modsHoverTab = -1;
+    int modsTotalHits = 0;
+    bool modsExhausted = false;
+    bool modsSearchEditing = false;
+    std::wstring modsSearchQuery;
+    bool modsDetailOpen = false;
+    ModCard modsDetailCard;
+    std::wstring modsDetailBody;
+    std::wstring modsDetailMeta;
+    std::vector<std::pair<UINT32, UINT32>> modsDetailBold;
+    std::vector<std::pair<UINT32, UINT32>> modsDetailHead;
+    bool modsDetailLoading = false;
+    int modsDetailScroll = 0;
+    unsigned modsDetailReqId = 0;
+    bool modsCompatWarn = false;
+    bool modsCompatAcked = false;
+    std::wstring modsCompatNote;
+    std::wstring modsCompatContext;
+    std::wstring activeProfileName;
+    std::wstring activeProfileId;
+    std::vector<LaunchTarget> modsTargets;
+    std::wstring modsBrowseTargetId;
+    bool modsTargetOpen = false;
+    int modsTargetScroll = 0;
+    int modsTargetSel = 0;
+    bool modsProfileOpen = false;
+    std::wstring modsProfileId;
+    std::wstring modsProfileName;
+    std::wstring modsProfileTargetText;
+    bool modsProfileBuiltin = false;
+    bool modsProfileControllerModEnabled = true;
+    std::vector<std::wstring> modsProfileMods;
+    int modsProfileScroll = 0;
+    int modsProfileFocus = 0;
+    int modsProfileSel = 0;
+    bool modsInspectOpen = false;
+    std::wstring modsInspectText;
+    bool modsRenaming = false;
+    std::wstring modsRenameText;
+    std::vector<ModCard> modsCards;
+    float animation = 0.0f;
+    float progress = -1.0f;
+    bool showLaunchLog = false;
+    std::wstring launchLogText;
+
+    bool showCrashScreen = false;
+    std::wstring crashHeadline;
+    std::wstring crashSuspectLine;
+    std::wstring crashTrace;
+    std::wstring crashConsentPayload;
+    bool crashDetailsOpen = false;
+    int crashDetailScroll = 0;
+    bool crashAskConsent = false;
+    int crashSelected = 0;
+    int crashButtonCount = 0;
+    std::wstring crashFootnote;
+
+    bool showSettings = false;
+    int settingsSelected = 0;
+    int settingsHighlightColor = 0;
+    bool settingsReportingOn = false;
+    bool settingsConfigured = false;
+    std::wstring settingsInstallId;
+    std::wstring settingsNote;
+    ModSource settingsModSource = ModSource::Modrinth;
+    std::wstring settingsCurseForgeKeyHint;
+};
