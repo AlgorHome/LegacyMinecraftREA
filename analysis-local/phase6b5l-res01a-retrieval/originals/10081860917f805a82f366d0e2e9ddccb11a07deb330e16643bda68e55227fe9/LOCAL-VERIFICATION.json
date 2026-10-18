@@ -1,0 +1,124 @@
+{
+  "receiptSha256": "10081860917f805a82f366d0e2e9ddccb11a07deb330e16643bda68e55227fe9",
+  "preservedOriginal": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b5l-res01a-retrieval\\originals\\10081860917f805a82f366d0e2e9ddccb11a07deb330e16643bda68e55227fe9\\D06-RES01a-7A897A91-DE14-4A33-82AE-4737F5575C6D.json",
+  "independentOwnerHashSupplied": true,
+  "schemaAndBinding": "PASS",
+  "receiptStatus": "PASS",
+  "terminal": true,
+  "case": "D06-RES01a",
+  "version": "0.2.2.0",
+  "runId": "7A897A91-DE14-4A33-82AE-4737F5575C6D",
+  "processId": "12DB5ECA-0A71-4310-BB19-E8E1B64FA742",
+  "reason": "RGBA8_TEXTURE_CREATED_DESCRIPTOR_MATCH",
+  "sequence": 4,
+  "elapsedMs": 62,
+  "payloadMatches": [
+    {
+      "role": "executable_sha256",
+      "member": "NativeCapabilities.exe",
+      "independentlyHashedSha256": "cb08435285c6dad6f0eba7b0be955f4243d52d29bf575cacfcef4aa6facfbd67",
+      "match": true
+    },
+    {
+      "role": "manifest_sha256",
+      "member": "AppxManifest.xml",
+      "independentlyHashedSha256": "82f0b634c4343a5272af9f873d1accc528970407da0dce1913deeb1704ccc3c0",
+      "match": true
+    },
+    {
+      "role": "build_inputs_sha256",
+      "member": "native-inputs.json",
+      "independentlyHashedSha256": "d7fcb2e1ac04e3013a37dcca473ea24e402ce165de1f7460efbd7924de9b8a1e",
+      "match": true
+    },
+    {
+      "role": "policy_sha256",
+      "member": "profiles/D06-RES01a.json",
+      "independentlyHashedSha256": "ec8a12dda98ecfbcaac14ff647c329867d7e386aebcf4d6d0d4e48812348c0e2",
+      "match": true
+    },
+    {
+      "role": "schema_sha256",
+      "member": "contracts/native-receipt.schema.json",
+      "independentlyHashedSha256": "cd2ba13e2da44ead0cb3f421d88138596cca6541e86105daed7e892883029180",
+      "match": true
+    },
+    {
+      "role": "inventory_sha256",
+      "member": "native-inventory.json",
+      "independentlyHashedSha256": "d5abc15a2bd38f06d749fd371855302b74861eebc8f46ddab0d03e9bdf42fbe4",
+      "match": true
+    }
+  ],
+  "details": {
+    "requested_driver_type": "HARDWARE",
+    "requested_driver_type_value": 1,
+    "requested_feature_level": 45056,
+    "creation_flags": 32,
+    "software_fallback_allowed": false,
+    "render_or_present_tested": false,
+    "requested_descriptor": {
+      "width": 1,
+      "height": 1,
+      "mip_levels": 1,
+      "array_size": 1,
+      "format": 28,
+      "sample_count": 1,
+      "sample_quality": 0,
+      "usage": 0,
+      "bind_flags": 8,
+      "cpu_access_flags": 0,
+      "misc_flags": 0
+    },
+    "format_name": "DXGI_FORMAT_R8G8B8A8_UNORM",
+    "format_value": 28,
+    "initial_data_supplied": false,
+    "nonnull_output_pointer": true,
+    "texture_attempted": true,
+    "get_desc_called": true,
+    "memory_before": {
+      "usage_bytes": 4927488,
+      "limit_bytes": 1073741824,
+      "available": true
+    },
+    "creation_hresult": "0x00000000",
+    "creation_hresult_signed": 0,
+    "selected_feature_level": 45056,
+    "device_returned": true,
+    "context_returned": true,
+    "get_adapter_hresult": "0x00000000",
+    "get_desc_hresult": "0x00000000",
+    "adapter_flags": 0,
+    "adapter_software_flag": false,
+    "texture_hresult": "0x00000000",
+    "texture_hresult_signed": 0,
+    "texture_returned": true,
+    "returned_descriptor": {
+      "width": 1,
+      "height": 1,
+      "mip_levels": 1,
+      "array_size": 1,
+      "format": 28,
+      "sample_count": 1,
+      "sample_quality": 0,
+      "usage": 0,
+      "bind_flags": 8,
+      "cpu_access_flags": 0,
+      "misc_flags": 0
+    },
+    "descriptors_match": true,
+    "texture_reference_released": true,
+    "test_resources_released": true,
+    "memory_after_release": {
+      "usage_bytes": 9994240,
+      "limit_bytes": 1073741824,
+      "available": true
+    }
+  },
+  "visiblePass": "OWNER_REPORTED_UNCORRELATED",
+  "photograph": "NOT_SUPPLIED_TO_THIS_VERIFIER",
+  "formalAcceptance": "PENDING_INDEPENDENT_ASSOCIATION_AND_FINAL_REVIEW",
+  "consoleClock": "NOT_INDEPENDENTLY_VERIFIED",
+  "newTargetExecution": false,
+  "consoleAccess": false
+}
