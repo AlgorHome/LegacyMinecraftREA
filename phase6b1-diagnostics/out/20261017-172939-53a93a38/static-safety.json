@@ -1,0 +1,343 @@
+{
+  "verdict": "PASS_STATIC_ONLY",
+  "sourceCommit": "70d720f7b426b79faee8ba96e2e16ab5ffe96d44",
+  "identity": {
+    "Name": "AlgorHome.LegacyForge.NativeDiagnostics",
+    "Publisher": "CN=LegacyForgeDiagnostics",
+    "Version": "0.2.0.0",
+    "ProcessorArchitecture": "x64"
+  },
+  "entryPoint": "LegacyForgeNativeDiagnostics.App",
+  "capabilities": [],
+  "dependencies": [
+    {
+      "Name": "Windows.Universal",
+      "MinVersion": "10.0.17763.0",
+      "MaxVersionTested": "10.0.26100.0"
+    },
+    {
+      "Name": "Microsoft.VCLibs.140.00",
+      "MinVersion": "14.0.0.0",
+      "Publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+    }
+  ],
+  "payload": [
+    {
+      "path": "AppxManifest.xml",
+      "bytes": 1425,
+      "sha256": "b107ba9665b0eb35d640cb5f7ff43b96ec2071d341feca0d5bfc3343eb98b7a4"
+    },
+    {
+      "path": "Assets/SplashScreen.png",
+      "bytes": 1477,
+      "sha256": "d195f3ffb31e2b9c0381d8aeafb4c0649360dc46939525cb275062f03641d923"
+    },
+    {
+      "path": "Assets/Square150x150Logo.png",
+      "bytes": 469,
+      "sha256": "cfce78a93197c46c8ffb95ab85f183a8b4c070b3092a8b04b1a88910096ddb82"
+    },
+    {
+      "path": "Assets/Square44x44Logo.png",
+      "bytes": 125,
+      "sha256": "fae939abf1e0864326180b17ddd82cc618ce1512be5810db8f1de29249dd3cf0"
+    },
+    {
+      "path": "Assets/StoreLogo.png",
+      "bytes": 150,
+      "sha256": "8c66ace1328b014584aa938a2039b57cdf2065b606825508688c2ea235468ffc"
+    },
+    {
+      "path": "LICENSE.txt",
+      "bytes": 11558,
+      "sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6"
+    },
+    {
+      "path": "NativeCapabilities.exe",
+      "bytes": 118784,
+      "sha256": "cbacd0a118ad2b5be2756ef1dcebb323dcd1683de10c824e1a3c817cf0fd3f6d"
+    },
+    {
+      "path": "contracts/native-receipt.schema.json",
+      "bytes": 4600,
+      "sha256": "db311c43104e3940cd7299a495b3ac2a5a0440cb8b3af06cbb5ba1314a4331e1"
+    },
+    {
+      "path": "native-inputs.json",
+      "bytes": 3841,
+      "sha256": "f639a385b10fc701e2909a7a337100dd67dfbc5b4a8adfeb0ea2489d69d181ed"
+    },
+    {
+      "path": "native-inventory.json",
+      "bytes": 200,
+      "sha256": "642a0d0826deb138fb61fdbcedf02718e83d0938b3960a00c0c1ffc848354bb4"
+    },
+    {
+      "path": "profiles/D06-HW01.json",
+      "bytes": 507,
+      "sha256": "01561fdb7ff95df0d502659b7ab3c5065a8c9f681c4d5ed38db7053a9f837cac"
+    }
+  ],
+  "nativeImports": [
+    {
+      "module": "api-ms-win-core-file-l1-1-0.dll",
+      "symbols": [
+        "ReadFile",
+        "GetFileAttributesW",
+        "FlushFileBuffers",
+        "WriteFile",
+        "CreateDirectoryW"
+      ]
+    },
+    {
+      "module": "api-ms-win-core-file-l1-2-0.dll",
+      "symbols": [
+        "CreateFile2"
+      ]
+    },
+    {
+      "module": "api-ms-win-core-handle-l1-1-0.dll",
+      "symbols": [
+        "CloseHandle"
+      ]
+    },
+    {
+      "module": "api-ms-win-core-errorhandling-l1-1-0.dll",
+      "symbols": [
+        "GetLastError"
+      ]
+    },
+    {
+      "module": "api-ms-win-core-sysinfo-l1-1-0.dll",
+      "symbols": [
+        "GetSystemTimeAsFileTime",
+        "GetTickCount64",
+        "GetSystemTime"
+      ]
+    },
+    {
+      "module": "api-ms-win-core-file-l2-1-0.dll",
+      "symbols": [
+        "MoveFileExW"
+      ]
+    },
+    {
+      "module": "bcrypt.dll",
+      "symbols": [
+        "BCryptFinishHash",
+        "BCryptDestroyHash",
+        "BCryptCloseAlgorithmProvider",
+        "BCryptCreateHash",
+        "BCryptOpenAlgorithmProvider",
+        "BCryptGetProperty",
+        "BCryptHashData"
+      ]
+    },
+    {
+      "module": "api-ms-win-core-com-l1-1-0.dll",
+      "symbols": [
+        "CoTaskMemAlloc",
+        "CoCreateFreeThreadedMarshaler",
+        "CoCreateGuid",
+        "StringFromGUID2",
+        "CoInitializeEx"
+      ]
+    },
+    {
+      "module": "d3d11.dll",
+      "symbols": [
+        "D3D11CreateDevice"
+      ]
+    },
+    {
+      "module": "MSVCP140_APP.dll",
+      "symbols": [
+        "_Mtx_unlock",
+        "_Query_perf_counter",
+        "_Query_perf_frequency",
+        "?_Xlength_error@std@@YAXPEBD@Z",
+        "?_Syserror_map@std@@YAPEBDH@Z",
+        "?_Throw_Cpp_error@std@@YAXH@Z",
+        "_Thrd_detach",
+        "_Cnd_signal",
+        "_Mtx_lock",
+        "_Cnd_do_broadcast_at_thread_exit"
+      ]
+    },
+    {
+      "module": "VCRUNTIME140_APP.dll",
+      "symbols": [
+        "memset",
+        "memcpy",
+        "__std_exception_copy",
+        "_CxxThrowException",
+        "__C_specific_handler",
+        "__std_exception_destroy",
+        "__std_terminate",
+        "memmove"
+      ]
+    },
+    {
+      "module": "VCRUNTIME140_1_APP.dll",
+      "symbols": [
+        "__CxxFrameHandler4"
+      ]
+    },
+    {
+      "module": "api-ms-win-crt-runtime-l1-1-0.dll",
+      "symbols": [
+        "_register_onexit_function",
+        "_exit",
+        "exit",
+        "_c_exit",
+        "_initterm",
+        "_get_wide_winmain_command_line",
+        "_initialize_wide_environment",
+        "_configure_wide_argv",
+        "_initterm_e",
+        "_set_app_type",
+        "_seh_filter_exe",
+        "_cexit",
+        "_crt_atexit",
+        "_initialize_onexit_table",
+        "_beginthreadex",
+        "terminate",
+        "abort",
+        "_errno",
+        "_invoke_watson",
+        "_invalid_parameter_noinfo",
+        "_register_thread_local_exe_atexit_callback"
+      ]
+    },
+    {
+      "module": "api-ms-win-crt-string-l1-1-0.dll",
+      "symbols": [
+        "strlen",
+        "iswspace",
+        "wcslen"
+      ]
+    },
+    {
+      "module": "api-ms-win-crt-stdio-l1-1-0.dll",
+      "symbols": [
+        "_set_fmode",
+        "__p__commode",
+        "__stdio_common_vswprintf_s"
+      ]
+    },
+    {
+      "module": "api-ms-win-crt-heap-l1-1-0.dll",
+      "symbols": [
+        "_set_new_mode",
+        "_callnewh",
+        "malloc",
+        "free"
+      ]
+    },
+    {
+      "module": "api-ms-win-crt-math-l1-1-0.dll",
+      "symbols": [
+        "__setusermatherr"
+      ]
+    },
+    {
+      "module": "api-ms-win-crt-locale-l1-1-0.dll",
+      "symbols": [
+        "_configthreadlocale"
+      ]
+    },
+    {
+      "module": "api-ms-win-core-synch-l1-1-0.dll",
+      "symbols": [
+        "ReleaseSRWLockExclusive",
+        "AcquireSRWLockExclusive"
+      ]
+    },
+    {
+      "module": "api-ms-win-core-synch-l1-2-0.dll",
+      "symbols": [
+        "WakeAllConditionVariable",
+        "SleepConditionVariableSRW",
+        "Sleep"
+      ]
+    },
+    {
+      "module": "api-ms-win-core-processthreads-l1-1-0.dll",
+      "symbols": [
+        "GetCurrentThreadId",
+        "GetCurrentProcessId"
+      ]
+    },
+    {
+      "module": "api-ms-win-core-winrt-l1-1-0.dll",
+      "symbols": [
+        "RoInitialize",
+        "RoGetActivationFactory"
+      ]
+    },
+    {
+      "module": "api-ms-win-core-profile-l1-1-0.dll",
+      "symbols": [
+        "QueryPerformanceCounter"
+      ]
+    },
+    {
+      "module": "api-ms-win-core-interlocked-l1-1-0.dll",
+      "symbols": [
+        "InitializeSListHead",
+        "InterlockedPushEntrySList"
+      ]
+    },
+    {
+      "module": "api-ms-win-core-winrt-error-l1-1-1.dll",
+      "symbols": [
+        "RoOriginateLanguageException"
+      ]
+    },
+    {
+      "module": "api-ms-win-core-libraryloader-l1-2-0.dll",
+      "symbols": [
+        "GetProcAddress",
+        "LoadLibraryExW",
+        "FreeLibrary"
+      ]
+    },
+    {
+      "module": "OLEAUT32.dll",
+      "symbols": [
+        "ordinal:201",
+        "ordinal:7",
+        "ordinal:6",
+        "ordinal:200"
+      ]
+    },
+    {
+      "module": "api-ms-win-core-string-l1-1-0.dll",
+      "symbols": [
+        "WideCharToMultiByte",
+        "MultiByteToWideChar"
+      ]
+    },
+    {
+      "module": "api-ms-win-core-heap-l1-1-0.dll",
+      "symbols": [
+        "GetProcessHeap",
+        "HeapFree",
+        "HeapAlloc"
+      ]
+    }
+  ],
+  "nativeImportClosure": "System/API-set/framework references require target loader validation; no claim of complete Xbox closure",
+  "unsignedAppxSha256": "6e4ddfd8924631cba602b0aa845ddee877d64c7fa07aff2d3a8dec908a66716d",
+  "jniExcluded": true,
+  "oneHardwareCallSite": true,
+  "noSwapchainOrPresentationCode": true,
+  "executed": false,
+  "signed": false,
+  "ui": "Platform MessageDialog; Xbox behavior NOT EXECUTED",
+  "limits": [
+    "Source/race/failure review is static, not a runtime test",
+    "Blocked native and file calls cannot be cancelled",
+    "First terminal ownership and late-PASS guard inspected only"
+  ]
+}

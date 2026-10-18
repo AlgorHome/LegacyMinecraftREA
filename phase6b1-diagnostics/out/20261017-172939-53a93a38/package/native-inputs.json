@@ -1,0 +1,117 @@
+{
+  "schema": "legacyforge-native-inputs-v1",
+  "sourceCommit": "70d720f7b426b79faee8ba96e2e16ab5ffe96d44",
+  "compiledSourceCommit": "70d720f7b426b79faee8ba96e2e16ab5ffe96d44",
+  "buildId": "20261017-172939-53a93a38",
+  "generatedIdentitySha256": "327304b165eadabebac2e6f377a0defa7aa5be3b96662bfed5cb2e5e9497b801",
+  "caseId": "D06-HW01",
+  "nativeOnly": true,
+  "jniEnabled": false,
+  "definitions": [
+    "LFN_NATIVE_ONLY=1",
+    "LFN_JNI_ENABLED=0",
+    "LFD_D00_ONLY=1",
+    "LFN_CASE_D06_HW01=1"
+  ],
+  "compiledSources": [
+    "src/app.cpp",
+    "src/report.cpp",
+    "src/probe.cpp"
+  ],
+  "sourceFiles": [
+    {
+      "sha256": "744a1502c1d7ad664e0677975e40beb6cf6abfe3f49da5311af22b109a50af68",
+      "path": ".gitignore"
+    },
+    {
+      "sha256": "4af074230a8d8a62ead54e9e31e30598c607e621d004eaf16a7b11a2a07503d4",
+      "path": "build.ps1"
+    },
+    {
+      "sha256": "642a0d0826deb138fb61fdbcedf02718e83d0938b3960a00c0c1ffc848354bb4",
+      "path": "native-inventory.json"
+    },
+    {
+      "sha256": "9c5543a7ef969ec0edbad0b70e49b488b8946fc433bd4ec095ece10abbdb73de",
+      "path": "README.md"
+    },
+    {
+      "sha256": "db311c43104e3940cd7299a495b3ac2a5a0440cb8b3af06cbb5ba1314a4331e1",
+      "path": "contracts/native-receipt.schema.json"
+    },
+    {
+      "sha256": "5867ecf3d2f0378a80323bc766789e73e0a3c99c61a7a0882938a4ea6c1e07b7",
+      "path": "include/build_config.h"
+    },
+    {
+      "sha256": "f7089bd9944c4249a92fc46e3f9b48f1d43943f0c0038a1db865f1394b6bb663",
+      "path": "include/native.h"
+    },
+    {
+      "sha256": "b107ba9665b0eb35d640cb5f7ff43b96ec2071d341feca0d5bfc3343eb98b7a4",
+      "path": "package/Package.appxmanifest"
+    },
+    {
+      "sha256": "01561fdb7ff95df0d502659b7ab3c5065a8c9f681c4d5ed38db7053a9f837cac",
+      "path": "profiles/D06-HW01.json"
+    },
+    {
+      "sha256": "ac921e9d55d3a2987cfc5662363bb090d55f50166193d71a94690878505cef99",
+      "path": "src/app.cpp"
+    },
+    {
+      "sha256": "9012eebf4a839c30eb8842ef8551889a3bd46b6de7799640a33b0449ab815453",
+      "path": "src/probe.cpp"
+    },
+    {
+      "sha256": "6e46adaaba2d349420dca17b96a4eef483b2cb58a48904f533931ca833038831",
+      "path": "src/report.cpp"
+    },
+    {
+      "sha256": "fe1d80b3dbc69712fba03867a6991890ff95700e451b440b33a56a1a11169bde",
+      "path": "tools/static_verify.py"
+    }
+  ],
+  "packageFiles": [
+    {
+      "sha256": "b107ba9665b0eb35d640cb5f7ff43b96ec2071d341feca0d5bfc3343eb98b7a4",
+      "path": "AppxManifest.xml"
+    },
+    {
+      "sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6",
+      "path": "LICENSE.txt"
+    },
+    {
+      "sha256": "642a0d0826deb138fb61fdbcedf02718e83d0938b3960a00c0c1ffc848354bb4",
+      "path": "native-inventory.json"
+    },
+    {
+      "sha256": "cbacd0a118ad2b5be2756ef1dcebb323dcd1683de10c824e1a3c817cf0fd3f6d",
+      "path": "NativeCapabilities.exe"
+    },
+    {
+      "sha256": "d195f3ffb31e2b9c0381d8aeafb4c0649360dc46939525cb275062f03641d923",
+      "path": "Assets/SplashScreen.png"
+    },
+    {
+      "sha256": "cfce78a93197c46c8ffb95ab85f183a8b4c070b3092a8b04b1a88910096ddb82",
+      "path": "Assets/Square150x150Logo.png"
+    },
+    {
+      "sha256": "fae939abf1e0864326180b17ddd82cc618ce1512be5810db8f1de29249dd3cf0",
+      "path": "Assets/Square44x44Logo.png"
+    },
+    {
+      "sha256": "8c66ace1328b014584aa938a2039b57cdf2065b606825508688c2ea235468ffc",
+      "path": "Assets/StoreLogo.png"
+    },
+    {
+      "sha256": "db311c43104e3940cd7299a495b3ac2a5a0440cb8b3af06cbb5ba1314a4331e1",
+      "path": "contracts/native-receipt.schema.json"
+    },
+    {
+      "sha256": "01561fdb7ff95df0d502659b7ab3c5065a8c9f681c4d5ed38db7053a9f837cac",
+      "path": "profiles/D06-HW01.json"
+    }
+  ]
+}

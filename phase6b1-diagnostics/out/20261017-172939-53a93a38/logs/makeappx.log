@@ -1,0 +1,40 @@
+Microsoft (R) MakeAppx Tool
+
+Copyright (C) 2013 Microsoft.  All rights reserved.
+
+
+
+The path (/p) parameter is: "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\NativeCapabilities\out\20261017-172939-53a93a38\NativeCapabilities.unsigned.appx"
+
+The content directory (/d) parameter is: "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\NativeCapabilities\out\20261017-172939-53a93a38\package"
+
+Enumerating files from directory "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\NativeCapabilities\out\20261017-172939-53a93a38\package"
+
+Packing 11 file(s) in "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\NativeCapabilities\out\20261017-172939-53a93a38\package" (content directory) to "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\NativeCapabilities\out\20261017-172939-53a93a38\NativeCapabilities.unsigned.appx" (output file name).
+
+Memory limit defaulting to 4188739584 bytes.
+
+Using "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\NativeCapabilities\out\20261017-172939-53a93a38\package\AppxManifest.xml" as the manifest for the package.
+
+Processing "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\NativeCapabilities\out\20261017-172939-53a93a38\package\LICENSE.txt" as a payload file.  Its path in the package will be "LICENSE.txt".
+
+Processing "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\NativeCapabilities\out\20261017-172939-53a93a38\package\profiles\D06-HW01.json" as a payload file.  Its path in the package will be "profiles\D06-HW01.json".
+
+Processing "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\NativeCapabilities\out\20261017-172939-53a93a38\package\contracts\native-receipt.schema.json" as a payload file.  Its path in the package will be "contracts\native-receipt.schema.json".
+
+Processing "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\NativeCapabilities\out\20261017-172939-53a93a38\package\native-inventory.json" as a payload file.  Its path in the package will be "native-inventory.json".
+
+Processing "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\NativeCapabilities\out\20261017-172939-53a93a38\package\NativeCapabilities.exe" as a payload file.  Its path in the package will be "NativeCapabilities.exe".
+
+Processing "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\NativeCapabilities\out\20261017-172939-53a93a38\package\Assets\Square150x150Logo.png" as a payload file.  Its path in the package will be "Assets\Square150x150Logo.png".
+
+Processing "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\NativeCapabilities\out\20261017-172939-53a93a38\package\Assets\StoreLogo.png" as a payload file.  Its path in the package will be "Assets\StoreLogo.png".
+
+Processing "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\NativeCapabilities\out\20261017-172939-53a93a38\package\Assets\Square44x44Logo.png" as a payload file.  Its path in the package will be "Assets\Square44x44Logo.png".
+
+Processing "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\NativeCapabilities\out\20261017-172939-53a93a38\package\Assets\SplashScreen.png" as a payload file.  Its path in the package will be "Assets\SplashScreen.png".
+
+Processing "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\NativeCapabilities\out\20261017-172939-53a93a38\package\native-inputs.json" as a payload file.  Its path in the package will be "native-inputs.json".
+
+Package creation succeeded.
+
