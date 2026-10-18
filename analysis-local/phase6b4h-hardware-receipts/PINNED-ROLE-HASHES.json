@@ -1,0 +1,34 @@
+{
+  "authority": "independently hashed pinned unsigned build, not receipt-supplied values",
+  "unsignedSha256": "0595e9936aa4091ebdcce3e23b4e43fdba014d88267b4aaa0656fbd9cddb307e",
+  "sourceCommit": "553c6554f40f1372b0ea09f6badbbb98e133a9ab",
+  "packageFullName": "AlgorHome.LegacyForge.RuntimeDiagnostics_0.1.3.0_x64__x26zk9zqnnfrj",
+  "expectedRoles": [
+    {
+      "role": "diagnostic_exe_sha256",
+      "sha256": "89997350241657405fc38e596788c91b45c9e5978288d066ece51e3f42a4a6b9",
+      "path": "RuntimeDiagnostics.exe"
+    },
+    {
+      "role": "package_manifest_sha256",
+      "sha256": "68e2b1a0a418593f6c768d5c4df044574e36b876276903c684eb18fe6a18065a",
+      "path": "AppxManifest.xml"
+    },
+    {
+      "role": "input_manifest_sha256",
+      "sha256": "b53990c9ef4c4211d7c88c33b547b043ec14bef8258b2089dd29e5ad0c102404",
+      "path": "diagnostic-inputs.json"
+    },
+    {
+      "role": "runtime_inventory_sha256",
+      "sha256": "a847983740065493a4e5e106aada42b355f7d1b5955cedc39dd5bf36649915c1",
+      "path": "runtime-inventory.json"
+    },
+    {
+      "role": "profile_sha256",
+      "sha256": "d27605ed090789a49f9f0e171b21a79470af27cae829c904c427f55bebe6f8e8",
+      "path": "profiles/native-control.json"
+    }
+  ],
+  "approvedSignedSha256": "ca93ec2f10b75a7e9e87df679a2cbf5cdf84630fc94820df731e2f3759661848"
+}

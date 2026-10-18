@@ -1,0 +1,17 @@
+{
+  "authority": "owner-reported read-only Portal inspection",
+  "name": "AlgorHome.LegacyForge.RuntimeDiagnostics",
+  "version": "0.1.2.0",
+  "architecture": "x64",
+  "package_full_name": "AlgorHome.LegacyForge.RuntimeDiagnostics_0.1.2.0_x64__x26zk9zqnnfrj",
+  "package_full_name_evidence": "Complete identifier provided as owner text; screenshot reportedly truncates it. Full suffix not independently verified by Codex.",
+  "state": "Not running",
+  "receipt_directory": "LocalState/Phase6B1Receipts",
+  "receipt_directory_visibility": "Not shown",
+  "receipt_directory_availability": "UNKNOWN",
+  "receipt_directory_absence_confirmed": false,
+  "receipt_filenames_timestamps_sizes": "Not available",
+  "receipt_persistence": "UNKNOWN",
+  "activation_records": "NOT PROVIDED",
+  "new_launch_or_console_access_by_codex": false
+}

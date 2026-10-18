@@ -1,0 +1,58 @@
+{
+  "receipt_checks": "PASS",
+  "original_path": "C:\\Users\\arinze\\Desktop\\D00-0799F3FD-1056-4709-9302-202AA86C4C5D.json",
+  "preserved_copy": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b4h-hardware-receipts\\originals\\D00-0799F3FD-1056-4709-9302-202AA86C4C5D.json",
+  "receipt_sha256": "1d247637c6551e2da289eecd3b343e0728b57aa4385a852590f61444fe888b7f",
+  "original_bytes_preserved": true,
+  "schema_validation": "PASS - all keywords used by pinned schema checked with local standard-library validator",
+  "schema_sha256": "b73b2822e9b19799e1935bc9f6af12fc2a7b77598c87523e9c44aa44a12c3790",
+  "case": "D00",
+  "version": "0.1.3.0",
+  "status": "PASS",
+  "reason": "D00_ACTIVATED_HASHES_RECORDED",
+  "run_id": "0799F3FD-1056-4709-9302-202AA86C4C5D",
+  "process_instance_id": "4ED596EB-3A90-4202-BEB3-3A18F8957218",
+  "observed_at_utc": "2026-10-17T19:33:43.607Z",
+  "observed_at_America_Chicago": "2026-10-17 14:33:43.607 CDT",
+  "sequence": 2,
+  "elapsed_monotonic_ms": 31,
+  "role_comparison": [
+    {
+      "role": "diagnostic_exe_sha256",
+      "expected_from_pinned_APPX": "89997350241657405fc38e596788c91b45c9e5978288d066ece51e3f42a4a6b9",
+      "receipt_matches": true
+    },
+    {
+      "role": "package_manifest_sha256",
+      "expected_from_pinned_APPX": "68e2b1a0a418593f6c768d5c4df044574e36b876276903c684eb18fe6a18065a",
+      "receipt_matches": true
+    },
+    {
+      "role": "input_manifest_sha256",
+      "expected_from_pinned_APPX": "b53990c9ef4c4211d7c88c33b547b043ec14bef8258b2089dd29e5ad0c102404",
+      "receipt_matches": true
+    },
+    {
+      "role": "runtime_inventory_sha256",
+      "expected_from_pinned_APPX": "a847983740065493a4e5e106aada42b355f7d1b5955cedc39dd5bf36649915c1",
+      "receipt_matches": true
+    },
+    {
+      "role": "profile_sha256",
+      "expected_from_pinned_APPX": "d27605ed090789a49f9f0e171b21a79470af27cae829c904c427f55bebe6f8e8",
+      "receipt_matches": true
+    }
+  ],
+  "persistence_evidence": "Retrieved terminal file with durable-checkpoint marker; no separate PersistenceError field exists in receipt; photo shows receipt-saved success message",
+  "privacy_review": "No personal account/device/network identifiers found in supplied fixed fields; reviewed copy unchanged",
+  "sanitized_copy_sha256": "1d247637c6551e2da289eecd3b343e0728b57aa4385a852590f61444fe888b7f",
+  "photo_correlation": "PASS supporting visual evidence; photo shows D00 PASS and saved receipt; run association owner-attested, no visible run/time ID",
+  "photo_sha256": "74f383324231a453d88474ebc8a83a4ffb7c178f720c0384cbe6b8b7be8bf6fa",
+  "formal_overall_acceptance": "PASS - native D00 scope only",
+  "limits": [
+    "Receipt is not cryptographically signed; Xbox origin/retrieval context is owner-attested",
+    "Receipt timestamp is console-reported; not a measured clock synchronization",
+    "Sequence2 is structurally consistent; previous file versions are not separately preserved",
+    "Durable write strategy is not power-loss durability certification"
+  ]
+}

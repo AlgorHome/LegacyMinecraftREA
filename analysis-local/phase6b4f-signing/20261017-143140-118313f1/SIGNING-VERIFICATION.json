@@ -1,0 +1,103 @@
+{
+  "sourceCommit": "553c6554f40f1372b0ea09f6badbbb98e133a9ab",
+  "unsignedPath": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\out\\20261017-142300-e07d5ee8\\RuntimeDiagnostics.unsigned.appx",
+  "unsignedSha256": "0595e9936aa4091ebdcce3e23b4e43fdba014d88267b4aaa0656fbd9cddb307e",
+  "signedPath": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b4f-signing\\20261017-143140-118313f1\\RuntimeDiagnostics.D00.MTAExperiment.0.1.3.0.signed.appx",
+  "signAttempts": 1,
+  "signerThumbprint": "D6245FB640D520EDED8F8A987B364BCADE01D01D",
+  "certificate": {
+    "signatureAlgorithm": "1.2.840.113549.1.1.11",
+    "subject": "CN=LegacyForgeDiagnostics",
+    "endEntity": true,
+    "thumbprint": "D6245FB640D520EDED8F8A987B364BCADE01D01D",
+    "eku": [
+      "1.3.6.1.5.5.7.3.3"
+    ],
+    "notAfterUtc": "2027-10-17T18:08:48.0000000Z",
+    "issuer": "CN=LegacyForgeDiagnostics",
+    "keyUsage": "DigitalSignature",
+    "key": {
+      "exportPolicy": "None",
+      "keySize": 2048,
+      "provider": "Microsoft Software Key Storage Provider"
+    },
+    "notBeforeUtc": "2026-10-17T17:58:48.0000000Z"
+  },
+  "signCommand": "signtool sign /fd SHA256 /s My /sha1 <approved-thumbprint> <fresh-copy>",
+  "verifyCommand": "signtool verify /pa /v <signed-copy>",
+  "targetExecuted": false,
+  "consoleAccess": false,
+  "trustChanged": false,
+  "signExitCode": 0,
+  "signedSha256": "ca93ec2f10b75a7e9e87df679a2cbf5cdf84630fc94820df731e2f3759661848",
+  "standardVerifyExitCode": 1,
+  "cmsIntegrity": "PASS",
+  "cmsDigestAlgorithm": "2.16.840.1.101.3.4.2.1",
+  "packageDigest": {
+    "SubjectGuid": "0ac5df4b-ce07-4de2-b76e-23c839a09fd1",
+    "DigestAlgorithm": "2.16.840.1.101.3.4.2.1",
+    "DigestHex": "4150505841585043A16D2EAEC37DFE18EC2A69CFB0080AE623B32B3AA779089B6A78A8CEC879F4DA41584344986EA128E977C2FD452F40906884A9D995E00A6591FB7C0A8643CFEFD32046A841584354E88123AA86134DCE648915F1B83003C1279D5A712F6B6EF05F62B6F4B7523BDE4158424DCD596BE374B1D792AEC3DCB50CCC627CF7EDE3919FD60A976442C1A80AA280CF4158434971F8D17A026DCCAE20280ED043BEFE934EEFD1177A07D1D77F8FD06729BA62CA",
+    "FileDigestMatches": true,
+    "MutatedExpectedDigestRejected": true,
+    "FileDigestError": null,
+    "MutatedDigestError": "0x80096010"
+  },
+  "normalTrustCacheOnly": "0x800B0109",
+  "identity": {
+    "applicationId": "App",
+    "entryPoint": "LegacyForgeDiagnostics.App",
+    "version": "0.1.3.0",
+    "name": "AlgorHome.LegacyForge.RuntimeDiagnostics",
+    "architecture": "x64",
+    "publisher": "CN=LegacyForgeDiagnostics"
+  },
+  "preservedFiles": [
+    {
+      "sha256": "51e5c74462e79a296335beab4830f479e861e7132e0f660c680f6974d3b27530",
+      "unchanged": true,
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b3d-signing\\20261017-132111-5ff08807\\RuntimeDiagnostics.D00.signed.appx"
+    },
+    {
+      "sha256": "ecb53bb12ac86600df22c5d80608f908f10371787be9aa96e06d53011c8c9558",
+      "unchanged": true,
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\out\\20261017-122521-8ece767b\\RuntimeDiagnostics.unsigned.appx"
+    },
+    {
+      "sha256": "0b97d0d88a9e549cbaa453d6d17f54d087a5d1da9dea45c3ee4f79c66d725560",
+      "unchanged": true,
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b3c-certificate\\CERTIFICATE-PUBLIC-METADATA.json"
+    },
+    {
+      "sha256": "720a92d11875ccb422d09f8b13c58f611e9e818b21fb79f6cbc1764b1c8944c0",
+      "unchanged": true,
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b4a-activation-investigation\\OWNER-OBSERVATIONS.json"
+    },
+    {
+      "sha256": "e4ffef8502405cd6bbc6d8e27b09a40c8f9119f6b424bfca53c5e08becf6ede7",
+      "unchanged": true,
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b4c-signing\\20261017-140847-c38e9c14\\RuntimeDiagnostics.D00.ActivationExperiment.0.1.2.0.signed.appx"
+    },
+    {
+      "sha256": "5fd3462dcce83faea10617b19d18000f437e19d70d04b0e2a5bc98411b9a44fd",
+      "unchanged": true,
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\out\\20261017-140332-19d39263\\RuntimeDiagnostics.unsigned.appx"
+    },
+    {
+      "sha256": "bb499a69af25fe5aaab20dfe3065ef5846078642d5235eabf582b1d68fba35d2",
+      "unchanged": true,
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b4d-activation-triage\\OBSERVATIONS.json"
+    },
+    {
+      "sha256": "f5c5a336f4f4207da8d3a81aabc9dc444486c44d47f39a7194484e338c63a164",
+      "unchanged": true,
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b4e-evidence-retrieval\\OWNER-INVENTORY.json"
+    },
+    {
+      "sha256": "0595e9936aa4091ebdcce3e23b4e43fdba014d88267b4aaa0656fbd9cddb307e",
+      "unchanged": true,
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\out\\20261017-142300-e07d5ee8\\RuntimeDiagnostics.unsigned.appx"
+    }
+  ],
+  "trustStoreInventoriesUnchanged": true,
+  "status": "SIGNED_AND_CRYPTOGRAPHICALLY_VERIFIED_CHAIN_TRUST_REPORTED_SEPARATELY"
+}
