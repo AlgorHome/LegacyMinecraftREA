@@ -1,0 +1,259 @@
+{
+  "version_markers": [
+    751888,
+    115841256
+  ],
+  "blocks": [
+    {
+      "offset": 115841320,
+      "stored_bytes": 999527,
+      "decoded_bytes": 5085511,
+      "header_crc_valid": true,
+      "chunk_crc_valid": true,
+      "chunks": 244,
+      "decoded_sha256": "b1c3a29ec0144f6b4613d0ba5d64f05c9693ec32d04000ffb7c21c20714927c3"
+    }
+  ],
+  "strings": [
+    {
+      "offset": 4,
+      "value": "Legacy Launcher Stable"
+    },
+    {
+      "offset": 136,
+      "value": "Legacy Launcher Team "
+    },
+    {
+      "offset": 180,
+      "value": "https://llaun.ch"
+    },
+    {
+      "offset": 220,
+      "value": "https://llaun.ch "
+    },
+    {
+      "offset": 256,
+      "value": "https://llaun.ch"
+    },
+    {
+      "offset": 310,
+      "value": "{userappdata}\\.tlauncher\\legacy\\Minecraft"
+    },
+    {
+      "offset": 562,
+      "value": "*.exe,*.dll,*.chm"
+    },
+    {
+      "offset": 1814,
+      "value": "minecraft.gamedir="
+    },
+    {
+      "offset": 1910,
+      "value": "minecraft.jre.dir="
+    },
+    {
+      "offset": 3434,
+      "value": "%1 version %2"
+    },
+    {
+      "offset": 6002,
+      "value": "The system indicates that the following shared file is no longer in use by any programs. Would you like for Uninstall to remove this shared file?"
+    },
+    {
+      "offset": 6680,
+      "value": "Remove Shared File?"
+    },
+    {
+      "offset": 14262,
+      "value": "The drive or UNC share you selected does not exist or is not accessible. Please select another."
+    },
+    {
+      "offset": 14836,
+      "value": "\\\\server\\share"
+    },
+    {
+      "offset": 15316,
+      "value": "Please read the following License Agreement. You must accept the terms of this agreement before continuing with the installation."
+    },
+    {
+      "offset": 16514,
+      "value": "This program can only be installed on versions of Windows designed for the following processor architectures:"
+    },
+    {
+      "offset": 22198,
+      "value": "The setup files are corrupted, or are incompatible with this version of Setup. Please correct the problem or obtain a new copy of the program."
+    },
+    {
+      "offset": 25376,
+      "value": "The uninstall log file \"%1\" is in a format not recognized by this version of the uninstaller. Cannot uninstall"
+    },
+    {
+      "offset": 25792,
+      "value": "Installing Legacy Launcher"
+    },
+    {
+      "offset": 25846,
+      "value": "Now we're going to install Legacy Launcher for Minecraft."
+    },
+    {
+      "offset": 26064,
+      "value": "This program does not support the version of Windows your computer is running."
+    },
+    {
+      "offset": 26222,
+      "value": "This program cannot be installed on %1 version %2 or later."
+    },
+    {
+      "offset": 26342,
+      "value": "This program requires %1 version %2 or later."
+    },
+    {
+      "offset": 26458,
+      "value": "Thanks for choosing Legacy Launcher!"
+    },
+    {
+      "offset": 26554,
+      "value": "License Agreement"
+    },
+    {
+      "offset": 50359,
+      "value": "Russian translation by Dmitry Kann, http://www.dk-soft.org/"
+    },
+    {
+      "offset": 52801,
+      "value": " Legacy Launcher"
+    },
+    {
+      "offset": 52873,
+      "value": " Legacy Launcher "
+    },
+    {
+      "offset": 52913,
+      "value": " Minecraft."
+    },
+    {
+      "offset": 53503,
+      "value": " Legacy Launcher!"
+    },
+    {
+      "offset": 55824,
+      "value": "NameAndVersion"
+    },
+    {
+      "offset": 55856,
+      "value": "%1 version %2"
+    },
+    {
+      "offset": 57062,
+      "value": "NameAndVersion"
+    },
+    {
+      "offset": 59528,
+      "value": "{app}\\TL.exe"
+    },
+    {
+      "offset": 59756,
+      "value": "{app}\\launcher\\bootstrap.jar"
+    },
+    {
+      "offset": 59895,
+      "value": "{app}\\launcher\\launcher.jar"
+    },
+    {
+      "offset": 60032,
+      "value": "{app}\\launcher\\libraries\\com\\fasterxml\\jackson\\core\\jackson-core\\2.13.0\\jackson-core-2.13.0.jar"
+    },
+    {
+      "offset": 60305,
+      "value": "{app}\\launcher\\libraries\\com\\github\\zafarkhaja\\java-semver\\0.9.0\\java-semver-0.9.0.jar"
+    },
+    {
+      "offset": 60560,
+      "value": "{app}\\launcher\\libraries\\com\\google\\code\\findbugs\\jsr305\\3.0.2\\jsr305-3.0.2.jar"
+    },
+    {
+      "offset": 60801,
+      "value": "{app}\\launcher\\libraries\\com\\google\\code\\gson\\gson\\2.8.9\\gson-2.8.9.jar"
+    },
+    {
+      "offset": 61026,
+      "value": "{app}\\launcher\\libraries\\com\\google\\errorprone\\error_prone_annotations\\2.7.1\\error_prone_annotations-2.7.1.jar"
+    },
+    {
+      "offset": 61329,
+      "value": "{app}\\launcher\\libraries\\com\\google\\guava\\failureaccess\\1.0.1\\failureaccess-1.0.1.jar"
+    },
+    {
+      "offset": 61582,
+      "value": "{app}\\launcher\\libraries\\com\\google\\guava\\guava\\31.0.1-jre\\guava-31.0.1-jre.jar"
+    },
+    {
+      "offset": 61823,
+      "value": "{app}\\launcher\\libraries\\com\\google\\guava\\listenablefuture\\9999.0-empty-to-avoid-conflict-with-guava\\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"
+    },
+    {
+      "offset": 62232,
+      "value": "{app}\\launcher\\libraries\\com\\google\\j2objc\\j2objc-annotations\\1.3\\j2objc-annotations-1.3.jar"
+    },
+    {
+      "offset": 62499,
+      "value": "{app}\\launcher\\libraries\\com\\moandjiezana\\toml\\toml4j\\0.7.2\\toml4j-0.7.2.jar"
+    },
+    {
+      "offset": 62734,
+      "value": "{app}\\launcher\\libraries\\com\\mojang\\authlib\\1.5.24\\authlib-1.5.24.jar"
+    },
+    {
+      "offset": 62955,
+      "value": "{app}\\launcher\\libraries\\com\\timgroup\\java-statsd-client\\3.1.0\\java-statsd-client-3.1.0.jar"
+    },
+    {
+      "offset": 63220,
+      "value": "{app}\\launcher\\libraries\\commons-codec\\commons-codec\\1.11\\commons-codec-1.11.jar"
+    },
+    {
+      "offset": 63463,
+      "value": "{app}\\launcher\\libraries\\commons-io\\commons-io\\2.11.0\\commons-io-2.11.0.jar"
+    },
+    {
+      "offset": 63696,
+      "value": "{app}\\launcher\\libraries\\commons-logging\\commons-logging\\1.2\\commons-logging-1.2.jar"
+    },
+    {
+      "offset": 63947,
+      "value": "{app}\\launcher\\libraries\\io\\sentry\\sentry\\1.7.30\\sentry-1.7.30.jar"
+    },
+    {
+      "offset": 64162,
+      "value": "{app}\\launcher\\libraries\\me\\cortex\\jarscanner\\1.1\\jarscanner-1.1.jar"
+    },
+    {
+      "offset": 64381,
+      "value": "{app}\\launcher\\libraries\\net\\sf\\jopt-simple\\jopt-simple\\5.0.4\\jopt-simple-5.0.4.jar"
+    },
+    {
+      "offset": 64630,
+      "value": "{app}\\launcher\\libraries\\org\\apache\\commons\\commons-compress\\1.21\\commons-compress-1.21.jar"
+    },
+    {
+      "offset": 64895,
+      "value": "{app}\\launcher\\libraries\\org\\apache\\commons\\commons-lang3\\3.12.0\\commons-lang3-3.12.0.jar"
+    },
+    {
+      "offset": 65156,
+      "value": "{app}\\launcher\\libraries\\org\\apache\\httpcomponents\\fluent-hc\\4.5.13\\fluent-hc-4.5.13.jar"
+    },
+    {
+      "offset": 65415,
+      "value": "{app}\\launcher\\libraries\\org\\apache\\httpcomponents\\httpclient\\4.5.13\\httpclient-4.5.13.jar"
+    },
+    {
+      "offset": 65678,
+      "value": "{app}\\launcher\\libraries\\org\\apache\\httpcomponents\\httpcore\\4.4.13\\httpcore-4.4.13.jar"
+    },
+    {
+      "offset": 65933,
+      "value": "{app}\\launcher\\libraries\\org\\apache\\logging\\log4j\\log4j-1.2-api\\2.19.0\\log4j-1.2-api-2.19.0.jar"
+    }
+  ]
+}

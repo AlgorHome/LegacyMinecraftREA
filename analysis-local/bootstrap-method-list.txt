@@ -1,0 +1,96 @@
+
+CLASS net/legacylauncher/bootstrap/meta/BootstrapMeta SHA256 0a36e4620db7b31f340e2eb8d340e0e15645fca4d3c70e0b7462d129a338ddec
+METHODS [('getVersion', '()Lcom/github/zafarkhaja/semver/Version;', 0), ('getShortBrand', '()Ljava/lang/String;', 0)]
+
+CLASS net/legacylauncher/bootstrap/meta/DoomsdayMessage SHA256 6baa57d81af61a89e02f69de490bb3662628ba42a085f977af8f651ca687d1ec
+METHODS [('<init>', '()V', 5), ('requestSyncOrNull', '()Lnet/legacylauncher/afterlife/DoomsdayMessageV1;', 7), ('makeRequest', '()Lnet/legacylauncher/afterlife/DoomsdayMessageV1;', 83), ('makeSingleRequest', '(Ljava/lang/String;Lcom/google/gson/Gson;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;', 12), ('lambda$makeSingleRequest$2', '(Ljava/lang/String;Lcom/google/gson/Gson;)Lnet/legacylauncher/afterlife/DoomsdayMessageV1;', 67), ('lambda$makeRequest$1', '(Lcom/google/gson/Gson;Ljava/util/concurrent/ExecutorService;Ljava/lang/String;)Ljava/util/concurrent/CompletableFuture;', 7), ('lambda$makeRequest$0', '(Ljava/lang/Runnable;)Ljava/lang/Thread;', 11)]
+
+CLASS net/legacylauncher/bootstrap/meta/DownloadEntry SHA256 8c681a1f4d7b1ea7b3989e720e5d002c78321d01c36ff90e98949defd59ac4f3
+METHODS [('<init>', '(Ljava/lang/String;Ljava/util/List;Ljava/lang/String;)V', 37), ('<init>', '()V', 16), ('getName', '()Ljava/lang/String;', 5), ('setName', '(Ljava/lang/String;)V', 6), ('getUrl', '()Ljava/util/List;', 5), ('getChecksum', '()Ljava/lang/String;', 5), ('setChecksum', '(Ljava/lang/String;)V', 6), ('toDownloadTask', '(Ljava/lang/String;Ljava/nio/file/Path;)Lnet/legacylauncher/bootstrap/task/DownloadTask;', 18), ('toString', '()Ljava/lang/String;', 62)]
+
+CLASS net/legacylauncher/bootstrap/meta/LauncherMeta SHA256 7a60a5388dbc39ef2e5696afb819fdb719b142ad7422e3a3b9a01e614a33d040
+METHODS [('getVersion', '()Lcom/github/zafarkhaja/semver/Version;', 0), ('getShortBrand', '()Ljava/lang/String;', 0)]
+
+CLASS net/legacylauncher/bootstrap/meta/LocalBootstrapMeta SHA256 2b9181f1efdcb203478a294ee14fde950e30a6c61deb77661cc7f6f41f38e980
+METHODS [('<init>', '()V', 11), ('getInstance', '()Lnet/legacylauncher/bootstrap/meta/LocalBootstrapMeta;', 4), ('getVersion', '()Lcom/github/zafarkhaja/semver/Version;', 4), ('getShortBrand', '()Ljava/lang/String;', 5), ('setShortBrand', '(Ljava/lang/String;)V', 6), ('toStringBuilder', '()Lorg/apache/commons/lang3/builder/ToStringBuilder;', 23), ('<clinit>', '()V', 19)]
+
+CLASS net/legacylauncher/bootstrap/meta/LocalLauncherMeta$Deserializer$1 SHA256 8c6c2b0f513fdc63f5fb102d88bf2641f37a779c13cff43c3757946043634b5e
+METHODS [('<init>', '(Lnet/legacylauncher/bootstrap/meta/LocalLauncherMeta$Deserializer;)V', 10)]
+
+CLASS net/legacylauncher/bootstrap/meta/LocalLauncherMeta$Deserializer$2 SHA256 505853221663c1c475f3a3dfb564a5478882dd0f5eb6a6e077b492f1b97b6c20
+METHODS [('<init>', '(Lnet/legacylauncher/bootstrap/meta/LocalLauncherMeta$Deserializer;)V', 10)]
+
+CLASS net/legacylauncher/bootstrap/meta/LocalLauncherMeta$Deserializer SHA256 9544d004ac65fb878ed58acd155975027e657963dc0486296992149b2710351a
+METHODS [('<init>', '()V', 5), ('deserialize', '(Lcom/google/gson/JsonElement;Ljava/lang/reflect/Type;Lcom/google/gson/JsonDeserializationContext;)Lnet/legacylauncher/bootstrap/meta/LocalLauncherMeta;', 132), ('deserialize', '(Lcom/google/gson/JsonElement;Ljava/lang/reflect/Type;Lcom/google/gson/JsonDeserializationContext;)Ljava/lang/Object;', 8), ('lambda$deserialize$3', '(Lcom/google/gson/JsonObject;)Ljava/util/Map;', 62), ('lambda$deserialize$2', '(Ljava/util/Map;Ljava/lang/String;)V', 21), ('lambda$deserialize$1', '(Ljava/util/Map;Ljava/lang/String;)V', 41), ('lambda$deserialize$0', '(Lcom/google/gson/JsonDeserializationContext;Lcom/google/gson/JsonObject;)Ljava/util/Map;', 22)]
+
+CLASS net/legacylauncher/bootstrap/meta/LocalLauncherMeta$Entrypoint SHA256 160adddbc83fcf7b403c2abd689978ac139dbf884d66bdf9e7accc885b547314
+METHODS [('<init>', '(Ljava/lang/String;Ljava/lang/String;)V', 15), ('getType', '()Ljava/lang/String;', 5), ('getMethod', '()Ljava/lang/String;', 5), ('equals', '(Ljava/lang/Object;)Z', 94), ('hashCode', '()I', 58), ('toString', '()Ljava/lang/String;', 40)]
+
+CLASS net/legacylauncher/bootstrap/meta/LocalLauncherMeta$EntrypointType SHA256 6d088c247d40920b4c72b4b694b2fc2837aaa12d0d16f6f83b61afefac7a7cee
+METHODS [('values', '()[Lnet/legacylauncher/bootstrap/meta/LocalLauncherMeta$EntrypointType;', 10), ('valueOf', '(Ljava/lang/String;)Lnet/legacylauncher/bootstrap/meta/LocalLauncherMeta$EntrypointType;', 10), ('<init>', '(Ljava/lang/String;I)V', 7), ('$values', '()[Lnet/legacylauncher/bootstrap/meta/LocalLauncherMeta$EntrypointType;', 23), ('<clinit>', '()V', 46)]
+
+CLASS net/legacylauncher/bootstrap/meta/LocalLauncherMeta SHA256 a71add5f236109d6be749a103c9feb76be7c16860aadc00e30789145f6334174
+METHODS [('<init>', '(Lnet/legacylauncher/bootstrap/meta/OldLauncherMeta;)V', 74), ('getEntrypoints', '()Ljava/util/Map;', 8), ('getLibraries', '()Ljava/util/List;', 8), ('getEntrypoint', '(Lnet/legacylauncher/bootstrap/meta/LocalLauncherMeta$EntrypointType;)Lnet/legacylauncher/bootstrap/meta/LocalLauncherMeta$Entrypoint;', 47), ('hasEntrypoint', '(Lnet/legacylauncher/bootstrap/meta/LocalLauncherMeta$EntrypointType;)Z', 11), ('getVersion', '()Lcom/github/zafarkhaja/semver/Version;', 5), ('getShortBrand', '()Ljava/lang/String;', 5), ('getBrand', '()Ljava/lang/String;', 5), ('equals', '(Ljava/lang/Object;)Z', 205), ('hashCode', '()I', 139), ('toString', '()Ljava/lang/String;', 76), ('<init>', '(Lcom/github/zafarkhaja/semver/Version;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/Map;)V', 32)]
+
+CLASS net/legacylauncher/bootstrap/meta/OldLauncherMeta SHA256 1289d6a275958af4d67f45511589f919b51bf77d6dcdcb97b11a47b75ec3b96c
+METHODS [('toModernMeta', '()Lnet/legacylauncher/bootstrap/meta/LocalLauncherMeta;', 9), ('<init>', '(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/github/zafarkhaja/semver/Version;Ljava/util/List;)V', 32), ('getBrand', '()Ljava/lang/String;', 5), ('getShortBrand', '()Ljava/lang/String;', 5), ('getMainClass', '()Ljava/lang/String;', 5), ('getVersion', '()Lcom/github/zafarkhaja/semver/Version;', 5), ('getLibraries', '()Ljava/util/List;', 5), ('equals', '(Ljava/lang/Object;)Z', 205), ('hashCode', '()I', 139), ('toString', '()Ljava/lang/String;', 76)]
+
+CLASS net/legacylauncher/bootstrap/meta/OutdatedUpdateMetaException SHA256 44afd355ba9d99e36001eff7eba719954bf718736b6ca80adc6e69883bb921e2
+METHODS [('<init>', '(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V', 38)]
+
+CLASS net/legacylauncher/bootstrap/meta/RemoteBootstrapMeta SHA256 8ce1c400d99f0fdd7189b61bbb78ef7b6b7af634749273385a6ee95d215c57c6
+METHODS [('<init>', '(Lcom/github/zafarkhaja/semver/Version;Ljava/lang/String;Lnet/legacylauncher/bootstrap/meta/DownloadEntry;)V', 20), ('getVersion', '()Lcom/github/zafarkhaja/semver/Version;', 5), ('getShortBrand', '()Ljava/lang/String;', 5), ('getDownload', '()Lnet/legacylauncher/bootstrap/meta/DownloadEntry;', 5), ('toStringBuilder', '()Lorg/apache/commons/lang3/builder/ToStringBuilder;', 32)]
+
+CLASS net/legacylauncher/bootstrap/meta/RemoteLauncherMeta SHA256 daab9e34310070d62c48560875a396040272d490f45907ab3b988516ea7d2843
+METHODS [('<init>', '(Lcom/github/zafarkhaja/semver/Version;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/Map;)V', 32), ('getDownloads', '()Ljava/util/List;', 19), ('getVersion', '()Lcom/github/zafarkhaja/semver/Version;', 5), ('getShortBrand', '()Ljava/lang/String;', 5), ('getChecksum', '()Ljava/lang/String;', 5), ('getUrls', '()Ljava/util/List;', 5), ('getDescription', '()Ljava/util/Map;', 5), ('equals', '(Ljava/lang/Object;)Z', 205), ('hashCode', '()I', 139), ('toString', '()Ljava/lang/String;', 76)]
+
+CLASS net/legacylauncher/bootstrap/meta/UpdateMeta$1 SHA256 9de9540367a568e91212868dfcfd66d48a9ff7f30a3d31d2c0420bea244260f8
+METHODS [('<init>', '(Ljava/lang/String;Lnet/legacylauncher/bootstrap/meta/UpdateMeta$ConnectionInterrupter;Ljava/lang/String;)V', 16), ('execute', '()Lnet/legacylauncher/bootstrap/meta/UpdateMeta;', 77), ('fetchUpdateMeta', '(Ljava/util/concurrent/ScheduledExecutorService;)Lnet/legacylauncher/bootstrap/meta/UpdateMeta;', 275), ('setupInterruption', '(Ljava/util/concurrent/atomic/AtomicBoolean;Lnet/legacylauncher/bootstrap/meta/UpdateMeta$ConnectionInterrupter;)V', 34), ('execute', '()Ljava/lang/Object;', 5), ('lambda$setupInterruption$2', '(Lnet/legacylauncher/bootstrap/meta/UpdateMeta$ConnectionInterrupter;Ljava/util/concurrent/atomic/AtomicBoolean;Ljava/lang/Thread;Ljava/util/concurrent/ScheduledExecutorService;)V', 20), ('lambda$setupInterruption$1', '(Ljava/util/concurrent/atomic/AtomicBoolean;Ljava/lang/Thread;)V', 12), ('lambda$fetchUpdateMeta$0', '(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;', 21)]
+
+CLASS net/legacylauncher/bootstrap/meta/UpdateMeta$ConnectionInterrupter$Callback SHA256 49e160a26d4133977fe53e631361f3621b387df8ec00a31113b8b4aeb56af01f
+METHODS [('onConnectionInterrupted', '()V', 0)]
+
+CLASS net/legacylauncher/bootstrap/meta/UpdateMeta$ConnectionInterrupter SHA256 3e816029a82f9f40c6d1c23c47af743f4df73f4b52ed31736afd0e1d52ad33f3
+METHODS [('mayInterruptConnection', '(Lnet/legacylauncher/bootstrap/meta/UpdateMeta$ConnectionInterrupter$Callback;)V', 0)]
+
+CLASS net/legacylauncher/bootstrap/meta/UpdateMeta$UpdateMetaFetchFailed SHA256 bb874988309e6cdf1039b5b565c38935477764656f146dd5340c86daafb0ad73
+METHODS [('<init>', '()V', 7)]
+
+CLASS net/legacylauncher/bootstrap/meta/UpdateMeta SHA256 ccb5eb9dfd35ac9550596a2dcdc3be01ed675a25d3b501457dbdfbc117e99010
+METHODS [('fetchFor', '(Ljava/lang/String;Lnet/legacylauncher/bootstrap/meta/UpdateMeta$ConnectionInterrupter;)Lnet/legacylauncher/bootstrap/task/Task;', 19), ('readQueue', '(Lnet/legacylauncher/connection/ConnectionQueue;ILcom/google/gson/Gson;J)Lnet/legacylauncher/bootstrap/meta/UpdateMeta;', 388), ('createGson', '(Ljava/lang/String;)Lcom/google/gson/Gson;', 45), ('fetchFrom', '(Lcom/google/gson/Gson;Ljava/io/InputStream;)Lnet/legacylauncher/bootstrap/meta/UpdateMeta;', 137), ('fetchFrom', '(Ljava/io/InputStream;Ljava/lang/String;)Lnet/legacylauncher/bootstrap/meta/UpdateMeta;', 9), ('<init>', '(Lnet/legacylauncher/bootstrap/meta/RemoteBootstrapMeta;Lnet/legacylauncher/bootstrap/meta/RemoteLauncherMeta;Lnet/legacylauncher/bootstrap/meta/RemoteLauncherMeta;Ljava/lang/String;)V', 34), ('getLauncher', '(Z)Lnet/legacylauncher/bootstrap/meta/RemoteLauncherMeta;', 35), ('getBootstrap', '()Lnet/legacylauncher/bootstrap/meta/RemoteBootstrapMeta;', 5), ('getOptions', '()Ljava/lang/String;', 5), ('lambda$readQueue$0', '()Ljava/io/IOException;', 11), ('access$000', '()Lorg/slf4j/Logger;', 4), ('access$100', '(Ljava/lang/String;)Lcom/google/gson/Gson;', 5), ('access$200', '(Lnet/legacylauncher/connection/ConnectionQueue;ILcom/google/gson/Gson;J)Lnet/legacylauncher/bootstrap/meta/UpdateMeta;', 8), ('<clinit>', '()V', 12)]
+
+CLASS net/legacylauncher/bootstrap/task/DownloadTask SHA256 4ae8041e3b605e0862db6ecefd069b0b4f732f8780d68a197767dc6090c5d91c
+METHODS [('<init>', '(Ljava/lang/String;Ljava/util/List;Ljava/nio/file/Path;Ljava/lang/String;)V', 56), ('<init>', '(Ljava/lang/String;Ljava/net/URL;Ljava/nio/file/Path;Ljava/lang/String;)V', 13), ('execute', '()Ljava/lang/Void;', 209), ('downloadUrl', '(Ljava/net/URL;)V', 590), ('execute', '()Ljava/lang/Object;', 5), ('<clinit>', '()V', 9)]
+
+CLASS net/legacylauncher/bootstrap/task/ExceptionHandler SHA256 fdaf46dfaa4bc170b201b8c4dfd776de7a9908dd30623e132f97a9acf743705d
+METHODS [('get', '()Lnet/legacylauncher/bootstrap/task/ExceptionHandler;', 4), ('<init>', '()V', 5), ('uncaughtException', '(Ljava/lang/Thread;Ljava/lang/Throwable;)V', 16), ('<clinit>', '()V', 19)]
+
+CLASS net/legacylauncher/bootstrap/task/Task SHA256 226ab2a08135f50d4a66ecdc1f0a2af18d4f5e2bc43204cb3f0add76c9573d4e
+METHODS [('<init>', '(Ljava/lang/String;)V', 32), ('getName', '()Ljava/lang/String;', 5), ('addListener', '(Lnet/legacylauncher/bootstrap/task/TaskListener;)V', 19), ('getBindingTask', '()Lnet/legacylauncher/bootstrap/task/Task;', 5), ('interrupt', '()V', 34), ('interrupted', '()V', 1), ('call', '()Ljava/lang/Object;', 521), ('unbind', '()V', 9), ('bindTo', '(Lnet/legacylauncher/bootstrap/task/Task;DD)Ljava/lang/Object;', 160), ('getProgress', '()D', 5), ('updateProgress', '(D)V', 104), ('isExecuting', '()Z', 8), ('checkInterrupted', '()V', 17), ('isInterrupted', '()Z', 5), ('toStringBuilder', '()Lorg/apache/commons/lang3/builder/ToStringBuilder;', 21), ('toString', '()Ljava/lang/String;', 8), ('execute', '()Ljava/lang/Object;', 0), ('<clinit>', '()V', 9)]
+
+CLASS net/legacylauncher/bootstrap/task/TaskException SHA256 f2a7744992b211b454f1caf4f9fb924c2cc0950cbc449d46fadedf79765e050f
+METHODS [('<init>', '(Lnet/legacylauncher/bootstrap/task/Task;)V', 10), ('<init>', '(Lnet/legacylauncher/bootstrap/task/Task;Ljava/lang/Throwable;)V', 11), ('getTaskName', '(Lnet/legacylauncher/bootstrap/task/Task;Ljava/lang/Throwable;)Ljava/lang/String;', 84), ('getHighestTask', '(Lnet/legacylauncher/bootstrap/task/Task;)Lnet/legacylauncher/bootstrap/task/Task;', 17)]
+
+CLASS net/legacylauncher/bootstrap/task/TaskInterruptedException SHA256 17c9202fd46f105c15ca0dc1ee58fa41b4f6b249d23b332f43833ce00104b1e6
+METHODS [('<init>', '(Lnet/legacylauncher/bootstrap/task/Task;)V', 6)]
+
+CLASS net/legacylauncher/bootstrap/task/TaskList$1 SHA256 6b64b7a1de2819b30d56d5d7802e1c13efa0c8c9fd2b9f49df5f751b85413dc5
+METHODS [('<init>', '()V', 16), ('newThread', '(Ljava/lang/Runnable;)Ljava/lang/Thread;', 48)]
+
+CLASS net/legacylauncher/bootstrap/task/TaskList SHA256 6038b5c96c6f8158fe983ac9f91b4d778e42f60ed714bcfb80c9c14f5a8f1f06
+METHODS [('<init>', '(Ljava/lang/String;Ljava/util/concurrent/ExecutorService;Z)V', 35), ('<init>', '(Ljava/lang/String;I)V', 14), ('<init>', '(Ljava/lang/String;)V', 13), ('submit', '(Lnet/legacylauncher/bootstrap/task/Task;)Ljava/util/concurrent/Future;', 40), ('getTaskSet', '()Ljava/util/Set;', 10), ('execute', '()Ljava/lang/Void;', 218), ('cancellAll', '()V', 42), ('toStringBuilder', '()Lorg/apache/commons/lang3/builder/ToStringBuilder;', 14), ('getThreadFactory', '()Ljava/util/concurrent/ThreadFactory;', 20), ('execute', '()Ljava/lang/Object;', 5)]
+
+CLASS net/legacylauncher/bootstrap/task/TaskListener SHA256 e81378c0bb4c32f99e474f4a12bb8a5a6c4ee17c7c1af4bf1c26ab7ba61addd1
+METHODS [('onTaskStarted', '(Lnet/legacylauncher/bootstrap/task/Task;)V', 1), ('onTaskUpdated', '(Lnet/legacylauncher/bootstrap/task/Task;D)V', 1), ('onTaskBound', '(Lnet/legacylauncher/bootstrap/task/Task;Lnet/legacylauncher/bootstrap/task/Task;)V', 1), ('onTaskInterrupted', '(Lnet/legacylauncher/bootstrap/task/Task;)V', 1), ('onTaskSucceeded', '(Lnet/legacylauncher/bootstrap/task/Task;)V', 1), ('onTaskErrored', '(Lnet/legacylauncher/bootstrap/task/Task;Ljava/lang/Exception;)V', 1)]
+
+CLASS net/legacylauncher/bootstrap/transport/ChecksumStream SHA256 cbf343e1d779d49edb05b5a5a61b8e5a0544f98dd64f4752b893dbddd896fea7
+METHODS [('<init>', '(Ljava/io/InputStream;)V', 30), ('digest', '()[B', 39), ('read', '()I', 24), ('read', '([B)I', 26), ('read', '([BII)I', 32), ('close', '()V', 16)]
+
+CLASS net/legacylauncher/bootstrap/transport/InvalidStreamSignatureException SHA256 96a1eeb1c1a3a4a0b62238c7870271e0fc6e1f58b3bd44e6c322c323683ee0af
+METHODS [('<init>', '()V', 5)]
+
+CLASS net/legacylauncher/bootstrap/transport/SignedStream SHA256 612128aa31d747fd944c0b6bb382ca1090f79aeec43277d5429147d429e15955
+METHODS [('<init>', '(Ljava/io/InputStream;)V', 6), ('read', '()I', 21), ('read', '([B)I', 22), ('read', '([BII)I', 27), ('readSignature', '()Z', 65), ('validateSignature', '()V', 67), ('verify', '([B[B)Z', 50), ('<clinit>', '()V', 67)]
+
+CLASS net/legacylauncher/bootstrap/transport/StreamNotSignedException SHA256 eb877f7dd83ebfdf649bf86538ecc5f67b9d1350ee89745745fe99e0c2f0443c
+METHODS [('<init>', '(Ljava/lang/String;)V', 6)]

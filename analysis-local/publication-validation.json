@@ -1,0 +1,12 @@
+{
+  "required_documents": 12,
+  "total_markdown": 20,
+  "publication_files": 32,
+  "target_rows": 56,
+  "new_behavioral_verdicts": {
+    "BLOCKED": 56
+  },
+  "validated_installer_payload_records": 770,
+  "native_audit_observations": 291,
+  "errors": []
+}

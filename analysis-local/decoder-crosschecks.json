@@ -1,0 +1,209 @@
+{
+  "meaning": "Analyzer cross-checks only, never behavioral target tests",
+  "checks": [
+    {
+      "tool": "trusted-javap",
+      "artifact_sha256": "5f1f1b8ef187c5fcea69830d4dec87c84447a6c134c314fe5a840340e4ee5e6c",
+      "class": "ru.turikhay.tlauncher.minecraft.launcher.MinecraftLauncher",
+      "exit_code": 0,
+      "pattern_checks": {
+        "321: invokevirtual": true,
+        "java/lang/ProcessBuilder.start": true
+      },
+      "output_sha256": "f14064bd5de5d3e6d6dbb5d23572f13c31d436bdf1480981f5885afec22f4e05"
+    },
+    {
+      "tool": "trusted-javap",
+      "artifact_sha256": "5f1f1b8ef187c5fcea69830d4dec87c84447a6c134c314fe5a840340e4ee5e6c",
+      "class": "net.minecraft.launcher.updater.OfficialVersionList",
+      "exit_code": 0,
+      "pattern_checks": {
+        "version_manifest.json": true
+      },
+      "output_sha256": "cf9473b32f860ba6d1a57f5b08d322333216f8f981e6d6ec2dffe98d56e5e391"
+    },
+    {
+      "tool": "trusted-javap",
+      "artifact_sha256": "df2d2516e905cdc87a68ec456f881664a5b158ba810934251d7b70a740679588",
+      "class": "ru.turikhay.tlauncher.bootstrap.transport.SignedStream",
+      "exit_code": 0,
+      "pattern_checks": {
+        "SHA1withRSA": true,
+        "/public.der": true
+      },
+      "output_sha256": "05d50aabec521d5fc1a940ba471693b1c229d34f8537d4b6a690f5bda8afb2fa"
+    },
+    {
+      "tool": "trusted-javap",
+      "artifact_sha256": "ebd3531f0b341c2ac67d71e1ad1ce7e2c318a58df092fe72401e3df60e5aa720",
+      "class": "net.legacylauncher.bootstrap.transport.SignedStream",
+      "exit_code": 0,
+      "pattern_checks": {
+        "SHA1withRSA": true,
+        "public.der": true
+      },
+      "output_sha256": "4db1e4e82c77a39b1f0e3f3fea63741e6ba9de26f9002f8a694cedf3f74cde2e"
+    },
+    {
+      "tool": "trusted-javap",
+      "artifact_sha256": "ebd3531f0b341c2ac67d71e1ad1ce7e2c318a58df092fe72401e3df60e5aa720",
+      "class": "net.legacylauncher.bootstrap.meta.UpdateMeta",
+      "exit_code": 0,
+      "pattern_checks": {
+        ".signed": true,
+        "validateSignature": true
+      },
+      "output_sha256": "b70f6245f4786fdc011825e255d2efc29f021d644ee3ff3efaa51679c2567e2c"
+    },
+    {
+      "tool": "trusted-javap",
+      "artifact_sha256": "ebd3531f0b341c2ac67d71e1ad1ce7e2c318a58df092fe72401e3df60e5aa720",
+      "class": "net.legacylauncher.bootstrap.task.DownloadTask",
+      "exit_code": 0,
+      "pattern_checks": {
+        "10000": true,
+        "5000": true,
+        "Files.copy": true
+      },
+      "output_sha256": "4712c93243c89f86f842e8a9791a5f49ff1dbbdda2e7cdb519ebef9f574f2428"
+    },
+    {
+      "tool": "trusted-javap",
+      "artifact_sha256": "364b9add9a3b0e74e553439b3f0e33a573bb5d28667adc028180d509b0459eec",
+      "class": "net.legacylauncher.managers.ProfileManager",
+      "exit_code": 0,
+      "pattern_checks": {
+        "Gson.toJson": true,
+        "Files.move": true
+      },
+      "output_sha256": "7fdac164b0b3bb2be229bf5798733f641a779ed25f86c2bc24092f901f0d11e5"
+    },
+    {
+      "tool": "trusted-javap",
+      "artifact_sha256": "364b9add9a3b0e74e553439b3f0e33a573bb5d28667adc028180d509b0459eec",
+      "class": "net.legacylauncher.user.MinecraftUserJsonizer$MicrosoftTokenPayload",
+      "exit_code": 0,
+      "pattern_checks": {
+        "getAccessToken": true,
+        "getRefreshToken": true
+      },
+      "output_sha256": "079e5edb580f7c220622f70cc5d65befb44b63346e332d2769e068eeb7f61fc7"
+    },
+    {
+      "tool": "objdump",
+      "path": "TL.exe",
+      "sha256": "2b11f487e853e952dc677071202cbe25d6800ccaf3f93a3232c5eed715a1c033",
+      "exit_code": 0,
+      "import_module_sets_equal": true,
+      "objdump_modules": [
+        "advapi32.dll",
+        "kernel32.dll",
+        "msvcrt.dll",
+        "shell32.dll",
+        "user32.dll"
+      ],
+      "parser_modules": [
+        "advapi32.dll",
+        "kernel32.dll",
+        "msvcrt.dll",
+        "shell32.dll",
+        "user32.dll"
+      ],
+      "output_sha256": "7bcff5c03902fae2ea7197256624e70fce7fe8f8a38d9dee4f5f495b94425ecd"
+    },
+    {
+      "tool": "objdump",
+      "path": "game/versions/1.21.11/natives/glfw.dll",
+      "sha256": "affa7e54eb0dedce4a5721c327c1a16035edbbd039cd402e08107d6d2d55eb1a",
+      "exit_code": 0,
+      "import_module_sets_equal": true,
+      "objdump_modules": [
+        "gdi32.dll",
+        "kernel32.dll",
+        "shell32.dll",
+        "user32.dll"
+      ],
+      "parser_modules": [
+        "gdi32.dll",
+        "kernel32.dll",
+        "shell32.dll",
+        "user32.dll"
+      ],
+      "output_sha256": "ad5a30574764cf53aa8ca6f780eca4737bafa32b97454664304e37d7e1a3ed26"
+    },
+    {
+      "tool": "objdump",
+      "path": "game/versions/1.21.11/natives/OpenAL.dll",
+      "sha256": "0630aa42492f78126da1c4d99769632e03c55b2e63b050efe7e3005e07e3e6fc",
+      "exit_code": 0,
+      "import_module_sets_equal": true,
+      "objdump_modules": [
+        "kernel32.dll",
+        "ole32.dll",
+        "shell32.dll",
+        "user32.dll",
+        "winmm.dll"
+      ],
+      "parser_modules": [
+        "kernel32.dll",
+        "ole32.dll",
+        "shell32.dll",
+        "user32.dll",
+        "winmm.dll"
+      ],
+      "output_sha256": "50b2be3c4296a30d5cd3654a7d5f06a6931d8c5c3c1c068323972df9d6d4ea74"
+    },
+    {
+      "tool": "objdump",
+      "path": "jre/bin/server/jvm.dll",
+      "sha256": "064a55423c55802d3ae7147c4f33d30d79d9b7f4f339c99fcb30c8759d0f8268",
+      "exit_code": 0,
+      "import_module_sets_equal": true,
+      "objdump_modules": [
+        "advapi32.dll",
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-filesystem-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "kernel32.dll",
+        "psapi.dll",
+        "user32.dll",
+        "vcruntime140.dll",
+        "vcruntime140_1.dll",
+        "version.dll",
+        "winmm.dll",
+        "wsock32.dll"
+      ],
+      "parser_modules": [
+        "advapi32.dll",
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-filesystem-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "kernel32.dll",
+        "psapi.dll",
+        "user32.dll",
+        "vcruntime140.dll",
+        "vcruntime140_1.dll",
+        "version.dll",
+        "winmm.dll",
+        "wsock32.dll"
+      ],
+      "output_sha256": "ab5dfa80ac71ecdb57082f21d4a4d9236f1f86fe9b1e297d108ebb8ab5c6d8de"
+    }
+  ],
+  "javap_version": "21.0.12.1",
+  "objdump_version": "GNU objdump (Binutils for MinGW-W64 x86_64, built by Brecht Sanders, r1) 2.47.20260726"
+}

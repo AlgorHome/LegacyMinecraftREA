@@ -1,0 +1,90 @@
+{
+  "sha256": "2b11f487e853e952dc677071202cbe25d6800ccaf3f93a3232c5eed715a1c033",
+  "strings": [
+    {
+      "offset": 27786,
+      "encoding": "ascii",
+      "value": "Launch4j"
+    },
+    {
+      "offset": 28235,
+      "encoding": "ascii",
+      "value": "Check launcher:"
+    },
+    {
+      "offset": 28260,
+      "encoding": "ascii",
+      "value": "checkCompatibilityByLauncherPath"
+    },
+    {
+      "offset": 28336,
+      "encoding": "ascii",
+      "value": "checkCompatibilityByLauncherPath"
+    },
+    {
+      "offset": 28673,
+      "encoding": "ascii",
+      "value": "SOFTWARE\\JavaSoft\\JRE"
+    },
+    {
+      "offset": 28891,
+      "encoding": "ascii",
+      "value": "JREHOMEDIR"
+    },
+    {
+      "offset": 29146,
+      "encoding": "ascii",
+      "value": "bundledJreSearch()"
+    },
+    {
+      "offset": 29168,
+      "encoding": "ascii",
+      "value": "Bundled JRE:"
+    },
+    {
+      "offset": 29222,
+      "encoding": "ascii",
+      "value": "Bundled JRE(s):"
+    },
+    {
+      "offset": 29254,
+      "encoding": "ascii",
+      "value": "installedJreSearch()"
+    },
+    {
+      "offset": 29276,
+      "encoding": "ascii",
+      "value": "jreSearch()"
+    },
+    {
+      "offset": 29507,
+      "encoding": "ascii",
+      "value": "Launcher:"
+    },
+    {
+      "offset": 29521,
+      "encoding": "ascii",
+      "value": "Launcher args:"
+    },
+    {
+      "offset": 408392,
+      "encoding": "ascii",
+      "value": "jre;x86"
+    },
+    {
+      "offset": 408404,
+      "encoding": "ascii",
+      "value": "-Xmx128m -Dtlauncher.bootstrap.restartExec=TL.exe"
+    },
+    {
+      "offset": 408456,
+      "encoding": "ascii",
+      "value": "launcher\\bootstrap.jar"
+    },
+    {
+      "offset": 408484,
+      "encoding": "ascii",
+      "value": "_JAVA_OPTIONS=-Dtlauncher.launch4j=true"
+    }
+  ]
+}

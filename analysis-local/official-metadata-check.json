@@ -1,0 +1,724 @@
+{
+  "scope": "Unauthenticated public JSON metadata only; no target execution or component binaries",
+  "checks": [
+    {
+      "kind": "mojang-version",
+      "manifest": {
+        "url": "https://piston-meta.mojang.com/mc/game/version_manifest_v2.json",
+        "final_url": "https://piston-meta.mojang.com/mc/game/version_manifest_v2.json",
+        "bytes": 277821,
+        "sha1": "f9e02be69ab99dcd2626c25fc4263cbe3276c285",
+        "sha256": "ac37f92737df1a9d7660047136fedd3edebd90bd6e552f53ddc3f222079bc8fa"
+      },
+      "selected_version": {
+        "url": "https://piston-meta.mojang.com/v1/packages/718cd84b4912691fe5de829aab6876a4b7f6c5c4/1.21.11.json",
+        "final_url": "https://piston-meta.mojang.com/v1/packages/718cd84b4912691fe5de829aab6876a4b7f6c5c4/1.21.11.json",
+        "bytes": 42184,
+        "sha1": "718cd84b4912691fe5de829aab6876a4b7f6c5c4",
+        "sha256": "471a6eeadf1c74f84ed5d4290fb7234b746373478a4d6ac651962b93f0cb36d9",
+        "expected_sha1": "718cd84b4912691fe5de829aab6876a4b7f6c5c4",
+        "sha1_valid": true,
+        "critical_fields_equal": {
+          "id": true,
+          "mainClass": true,
+          "javaVersion": true,
+          "assetIndex": false,
+          "downloads": true
+        },
+        "local_asset_index_sha1": "e81d9e2536723a11eb68e11c5642708926b8be5f",
+        "local_asset_index_sha1_valid": true,
+        "official_asset_index_fields_equal": {
+          "id": true,
+          "sha1": true,
+          "size": true,
+          "totalSize": true,
+          "url": true
+        },
+        "local_asset_index_extra_field_names": [
+          "known"
+        ],
+        "libraries": {
+          "official_count": 107,
+          "local_count": 107,
+          "checks": [
+            {
+              "name": "at.yawk.lz4:lz4-java:1.8.1",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "ca.weblite:java-objc-bridge:1.1",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "com.azure:azure-json:1.4.0",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "com.github.oshi:oshi-core:6.9.0",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "com.google.code.gson:gson:2.13.2",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "com.google.guava:failureaccess:1.0.3",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "com.google.guava:guava:33.5.0-jre",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "com.ibm.icu:icu4j:77.1",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "com.microsoft.azure:msal4j:1.23.1",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "com.mojang:authlib:7.0.61",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "com.mojang:blocklist:1.0.10",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "com.mojang:brigadier:1.3.10",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "com.mojang:datafixerupper:9.0.19",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "com.mojang:jtracy:1.0.37",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "com.mojang:jtracy:1.0.37:natives-linux",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "com.mojang:jtracy:1.0.37:natives-macos",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "com.mojang:jtracy:1.0.37:natives-macos-arm64",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "com.mojang:jtracy:1.0.37:natives-windows",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "com.mojang:logging:1.6.11",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "com.mojang:patchy:2.2.10",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "com.mojang:text2speech:1.18.11",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "commons-codec:commons-codec:1.19.0",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "commons-io:commons-io:2.20.0",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "io.netty:netty-buffer:4.2.7.Final",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "io.netty:netty-codec-base:4.2.7.Final",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "io.netty:netty-codec-compression:4.2.7.Final",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "io.netty:netty-codec-http:4.2.7.Final",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "io.netty:netty-common:4.2.7.Final",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "io.netty:netty-handler:4.2.7.Final",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "io.netty:netty-resolver:4.2.7.Final",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "io.netty:netty-transport-classes-epoll:4.2.7.Final",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "io.netty:netty-transport-classes-kqueue:4.2.7.Final",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "io.netty:netty-transport-native-epoll:4.2.7.Final:linux-aarch_64",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "io.netty:netty-transport-native-epoll:4.2.7.Final:linux-x86_64",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "io.netty:netty-transport-native-kqueue:4.2.7.Final:osx-aarch_64",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "io.netty:netty-transport-native-kqueue:4.2.7.Final:osx-x86_64",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "io.netty:netty-transport-native-unix-common:4.2.7.Final",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "io.netty:netty-transport:4.2.7.Final",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "it.unimi.dsi:fastutil:8.5.18",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "net.java.dev.jna:jna-platform:5.17.0",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "net.java.dev.jna:jna:5.17.0",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "net.sf.jopt-simple:jopt-simple:5.0.4",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.apache.commons:commons-compress:1.28.0",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.apache.commons:commons-lang3:3.19.0",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.apache.logging.log4j:log4j-api:2.25.2",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.apache.logging.log4j:log4j-core:2.25.2",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.apache.logging.log4j:log4j-slf4j2-impl:2.25.2",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.jcraft:jorbis:0.0.17",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.joml:joml:1.10.8",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.jspecify:jspecify:1.0.0",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-freetype:3.3.3",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-freetype:3.3.3:natives-linux",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-freetype:3.3.3:natives-macos-arm64",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-freetype:3.3.3:natives-macos-patch",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-freetype:3.3.3:natives-windows",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-freetype:3.3.3:natives-windows-arm64",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-freetype:3.3.3:natives-windows-x86",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-glfw:3.3.3",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-glfw:3.3.3:natives-linux",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-glfw:3.3.3:natives-macos",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-glfw:3.3.3:natives-macos-arm64",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-glfw:3.3.3:natives-windows",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-glfw:3.3.3:natives-windows-arm64",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-glfw:3.3.3:natives-windows-x86",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-jemalloc:3.3.3",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-jemalloc:3.3.3:natives-linux",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-jemalloc:3.3.3:natives-macos",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-jemalloc:3.3.3:natives-macos-arm64",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-jemalloc:3.3.3:natives-windows",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-jemalloc:3.3.3:natives-windows-arm64",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-jemalloc:3.3.3:natives-windows-x86",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-openal:3.3.3",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-openal:3.3.3:natives-linux",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-openal:3.3.3:natives-macos",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-openal:3.3.3:natives-macos-arm64",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-openal:3.3.3:natives-windows",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-openal:3.3.3:natives-windows-arm64",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-openal:3.3.3:natives-windows-x86",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-opengl:3.3.3",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-opengl:3.3.3:natives-linux",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-opengl:3.3.3:natives-macos",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-opengl:3.3.3:natives-macos-arm64",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-opengl:3.3.3:natives-windows",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-opengl:3.3.3:natives-windows-arm64",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-opengl:3.3.3:natives-windows-x86",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-stb:3.3.3",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-stb:3.3.3:natives-linux",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-stb:3.3.3:natives-macos",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-stb:3.3.3:natives-macos-arm64",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-stb:3.3.3:natives-windows",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-stb:3.3.3:natives-windows-arm64",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-stb:3.3.3:natives-windows-x86",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-tinyfd:3.3.3",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-tinyfd:3.3.3:natives-linux",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-tinyfd:3.3.3:natives-macos",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-tinyfd:3.3.3:natives-macos-arm64",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-tinyfd:3.3.3:natives-windows",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-tinyfd:3.3.3:natives-windows-arm64",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl-tinyfd:3.3.3:natives-windows-x86",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl:3.3.3",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl:3.3.3:natives-linux",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl:3.3.3:natives-macos",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl:3.3.3:natives-macos-arm64",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl:3.3.3:natives-windows",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl:3.3.3:natives-windows-arm64",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.lwjgl:lwjgl:3.3.3:natives-windows-x86",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            },
+            {
+              "name": "org.slf4j:slf4j-api:2.0.17",
+              "present_in_official": true,
+              "artifact_sha1_equal": true,
+              "artifact_url_equal": true
+            }
+          ],
+          "official_only_names": []
+        }
+      },
+      "observed": {
+        "id": "1.21.11",
+        "mainClass": "net.minecraft.client.main.Main",
+        "javaVersion": {
+          "component": "java-runtime-delta",
+          "majorVersion": 21
+        },
+        "assetIndex": {
+          "id": "29",
+          "sha1": "e81d9e2536723a11eb68e11c5642708926b8be5f",
+          "size": 529966,
+          "totalSize": 452678632,
+          "url": "https://piston-meta.mojang.com/v1/packages/e81d9e2536723a11eb68e11c5642708926b8be5f/29.json"
+        }
+      }
+    },
+    {
+      "kind": "fabric-profile",
+      "metadata": {
+        "url": "https://meta.fabricmc.net/v2/versions/loader/1.21.11/0.19.5/profile/json",
+        "final_url": "https://meta.fabricmc.net/v2/versions/loader/1.21.11/0.19.5/profile/json",
+        "bytes": 2865,
+        "sha1": "9962d2da962136a7ad8764c6b6bdb99e221b0be3",
+        "sha256": "5f5f7769b2305da29cb73c19c3e5698c9dc6813326a13c373d7dda5be64827b3"
+      },
+      "observed": {
+        "id": "fabric-loader-0.19.5-1.21.11",
+        "inheritsFrom": "1.21.11",
+        "mainClass": "net.fabricmc.loader.impl.launch.knot.KnotClient",
+        "libraries": 8,
+        "has_arguments": true
+      }
+    }
+  ]
+}

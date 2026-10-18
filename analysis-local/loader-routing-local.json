@@ -1,0 +1,2078 @@
+[
+  {
+    "artifact": "archived-launcher",
+    "class": "net/minecraft/launcher/versions/CompleteVersion",
+    "method": "getModpackType",
+    "descriptor": "()Lnet/minecraft/launcher/versions/ModpackType;",
+    "class_sha256": "a9a616c53bb7f4ddb3db56bd030bb721311e9c55c261478d0d41f39ae8f3dd16",
+    "observations": [
+      {
+        "offset": 17,
+        "op": "getstatic",
+        "ref": "net/minecraft/launcher/versions/ModpackType.FORGE_LEGACY_ABSOLUTELnet/minecraft/launcher/versions/ModpackType;"
+      }
+    ]
+  },
+  {
+    "artifact": "archived-launcher",
+    "class": "net/minecraft/launcher/versions/CompleteVersion",
+    "method": "resolveFamily",
+    "descriptor": "(Ljava/lang/String;)V",
+    "class_sha256": "a9a616c53bb7f4ddb3db56bd030bb721311e9c55c261478d0d41f39ae8f3dd16",
+    "observations": [
+      {
+        "offset": 17,
+        "op": "ldc_w",
+        "ref": "Forge-"
+      },
+      {
+        "offset": 27,
+        "op": "ldc_w",
+        "ref": "Fabric-"
+      },
+      {
+        "offset": 52,
+        "op": "ldc_w",
+        "ref": "forge"
+      },
+      {
+        "offset": 69,
+        "op": "ldc_w",
+        "ref": "Forge-"
+      },
+      {
+        "offset": 96,
+        "op": "ldc_w",
+        "ref": "fabric"
+      },
+      {
+        "offset": 113,
+        "op": "ldc_w",
+        "ref": "Fabric-"
+      }
+    ]
+  },
+  {
+    "artifact": "archived-launcher",
+    "class": "net/minecraft/launcher/versions/CompleteVersion",
+    "method": "resolve",
+    "descriptor": "(Lru/turikhay/tlauncher/managers/VersionManager;ZLjava/util/List;)Lnet/minecraft/launcher/versions/CompleteVersion;",
+    "class_sha256": "a9a616c53bb7f4ddb3db56bd030bb721311e9c55c261478d0d41f39ae8f3dd16",
+    "observations": [
+      {
+        "offset": 33,
+        "op": "ldc_w",
+        "ref": "Forge-"
+      },
+      {
+        "offset": 46,
+        "op": "ldc_w",
+        "ref": "Fabric-"
+      }
+    ]
+  },
+  {
+    "artifact": "archived-launcher",
+    "class": "net/minecraft/launcher/versions/LibraryType",
+    "method": "<clinit>",
+    "descriptor": "()V",
+    "class_sha256": "d56d6c5673490794fc64add81475088fb1ac8a1fa3433cf2dad5547a3e5d136c",
+    "observations": [
+      {
+        "offset": 37,
+        "op": "ldc",
+        "ref": "forge_transformer"
+      }
+    ]
+  },
+  {
+    "artifact": "archived-launcher",
+    "class": "net/minecraft/launcher/versions/ModpackType",
+    "method": "getByVersion",
+    "descriptor": "(Ljava/lang/String;)Lnet/minecraft/launcher/versions/ModpackType;",
+    "class_sha256": "bc25d824954b560d6ed4087bd19c1c520dcb812fb55bee4fd2ebb2bd7ef7d8fe",
+    "observations": [
+      {
+        "offset": 60,
+        "op": "getstatic",
+        "ref": "net/minecraft/launcher/versions/ModpackType.FORGE_1_13Lnet/minecraft/launcher/versions/ModpackType;"
+      },
+      {
+        "offset": 74,
+        "op": "getstatic",
+        "ref": "net/minecraft/launcher/versions/ModpackType.FORGE_LEGACY_ABSOLUTELnet/minecraft/launcher/versions/ModpackType;"
+      },
+      {
+        "offset": 88,
+        "op": "getstatic",
+        "ref": "net/minecraft/launcher/versions/ModpackType.FORGE_LEGACYLnet/minecraft/launcher/versions/ModpackType;"
+      }
+    ]
+  },
+  {
+    "artifact": "archived-launcher",
+    "class": "net/minecraft/launcher/versions/ModpackType",
+    "method": "$values",
+    "descriptor": "()[Lnet/minecraft/launcher/versions/ModpackType;",
+    "class_sha256": "bc25d824954b560d6ed4087bd19c1c520dcb812fb55bee4fd2ebb2bd7ef7d8fe",
+    "observations": [
+      {
+        "offset": 6,
+        "op": "getstatic",
+        "ref": "net/minecraft/launcher/versions/ModpackType.FORGE_LEGACYLnet/minecraft/launcher/versions/ModpackType;"
+      },
+      {
+        "offset": 12,
+        "op": "getstatic",
+        "ref": "net/minecraft/launcher/versions/ModpackType.FORGE_LEGACY_ABSOLUTELnet/minecraft/launcher/versions/ModpackType;"
+      },
+      {
+        "offset": 18,
+        "op": "getstatic",
+        "ref": "net/minecraft/launcher/versions/ModpackType.FORGE_1_13Lnet/minecraft/launcher/versions/ModpackType;"
+      }
+    ]
+  },
+  {
+    "artifact": "archived-launcher",
+    "class": "net/minecraft/launcher/versions/ModpackType",
+    "method": "<clinit>",
+    "descriptor": "()V",
+    "class_sha256": "bc25d824954b560d6ed4087bd19c1c520dcb812fb55bee4fd2ebb2bd7ef7d8fe",
+    "observations": [
+      {
+        "offset": 4,
+        "op": "ldc",
+        "ref": "FORGE_LEGACY"
+      },
+      {
+        "offset": 12,
+        "op": "putstatic",
+        "ref": "net/minecraft/launcher/versions/ModpackType.FORGE_LEGACYLnet/minecraft/launcher/versions/ModpackType;"
+      },
+      {
+        "offset": 19,
+        "op": "ldc",
+        "ref": "FORGE_LEGACY_ABSOLUTE"
+      },
+      {
+        "offset": 27,
+        "op": "putstatic",
+        "ref": "net/minecraft/launcher/versions/ModpackType.FORGE_LEGACY_ABSOLUTELnet/minecraft/launcher/versions/ModpackType;"
+      },
+      {
+        "offset": 34,
+        "op": "ldc",
+        "ref": "FORGE_1_13"
+      },
+      {
+        "offset": 42,
+        "op": "putstatic",
+        "ref": "net/minecraft/launcher/versions/ModpackType.FORGE_1_13Lnet/minecraft/launcher/versions/ModpackType;"
+      }
+    ]
+  },
+  {
+    "artifact": "archived-launcher",
+    "class": "net/minecraft/launcher/versions/ReleaseType$SubType$1",
+    "method": "isSubType",
+    "descriptor": "(Lnet/minecraft/launcher/versions/Version;)Z",
+    "class_sha256": "9d683304d392e4b4244405e8240a077bc773c46d2b4e86704f93b9f5e58d5265",
+    "observations": [
+      {
+        "offset": 63,
+        "op": "ldc",
+        "ref": "forge"
+      }
+    ]
+  },
+  {
+    "artifact": "archived-launcher",
+    "class": "net/minecraft/launcher/versions/VersionFamily",
+    "method": "doGuess",
+    "descriptor": "(Lnet/minecraft/launcher/updater/VersionSyncInfo;Ljava/lang/String;)Lnet/minecraft/launcher/versions/VersionFamily$Guess;",
+    "class_sha256": "e502c86e8c88caa57ecf21637e9a3ee3ad061c2872a676f9b9822eabe217eaa5",
+    "observations": [
+      {
+        "offset": 72,
+        "op": "ldc",
+        "ref": "forge"
+      },
+      {
+        "offset": 84,
+        "op": "ldc",
+        "ref": "Forge-???"
+      },
+      {
+        "offset": 98,
+        "op": "ldc",
+        "ref": "fabric"
+      },
+      {
+        "offset": 110,
+        "op": "ldc",
+        "ref": "Fabric-???"
+      }
+    ]
+  },
+  {
+    "artifact": "archived-launcher",
+    "class": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile",
+    "method": "<init>",
+    "descriptor": "(Lru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect;Lru/turikhay/tlauncher/jre/JavaRuntimeManifest$RuntimeFile;)V",
+    "class_sha256": "604c2bc9f3de033656c72e75f1dd646b5fe55593806b8b35e20855b0ed4ed586",
+    "observations": [
+      {
+        "offset": 2,
+        "op": "putfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.this$0Lru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect;"
+      },
+      {
+        "offset": 11,
+        "op": "putfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.runtimeFileLru/turikhay/tlauncher/jre/JavaRuntimeManifest$RuntimeFile;"
+      },
+      {
+        "offset": 19,
+        "op": "putfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.pathLjava/lang/String;"
+      },
+      {
+        "offset": 28,
+        "op": "invokestatic",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.access$000(Lru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect;)Ljava/io/File;"
+      },
+      {
+        "offset": 32,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.pathLjava/lang/String;"
+      },
+      {
+        "offset": 38,
+        "op": "putfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.realFileLjava/io/File;"
+      }
+    ]
+  },
+  {
+    "artifact": "archived-launcher",
+    "class": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile",
+    "method": "shouldDownload",
+    "descriptor": "()Z",
+    "class_sha256": "604c2bc9f3de033656c72e75f1dd646b5fe55593806b8b35e20855b0ed4ed586",
+    "observations": [
+      {
+        "offset": 0,
+        "op": "invokestatic",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.access$100()Lorg/apache/logging/log4j/Logger;"
+      },
+      {
+        "offset": 6,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.pathLjava/lang/String;"
+      },
+      {
+        "offset": 15,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.runtimeFileLru/turikhay/tlauncher/jre/JavaRuntimeManifest$RuntimeFile;"
+      },
+      {
+        "offset": 24,
+        "op": "invokestatic",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.access$100()Lorg/apache/logging/log4j/Logger;"
+      },
+      {
+        "offset": 30,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.pathLjava/lang/String;"
+      },
+      {
+        "offset": 45,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.this$0Lru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect;"
+      },
+      {
+        "offset": 48,
+        "op": "invokestatic",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.access$000(Lru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect;)Ljava/io/File;"
+      },
+      {
+        "offset": 52,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.pathLjava/lang/String;"
+      },
+      {
+        "offset": 66,
+        "op": "invokestatic",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.access$100()Lorg/apache/logging/log4j/Logger;"
+      },
+      {
+        "offset": 72,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.pathLjava/lang/String;"
+      },
+      {
+        "offset": 83,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.runtimeFileLru/turikhay/tlauncher/jre/JavaRuntimeManifest$RuntimeFile;"
+      },
+      {
+        "offset": 104,
+        "op": "invokestatic",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.access$100()Lorg/apache/logging/log4j/Logger;"
+      },
+      {
+        "offset": 132,
+        "op": "invokestatic",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.access$100()Lorg/apache/logging/log4j/Logger;"
+      },
+      {
+        "offset": 138,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.pathLjava/lang/String;"
+      },
+      {
+        "offset": 157,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.runtimeFileLru/turikhay/tlauncher/jre/JavaRuntimeManifest$RuntimeFile;"
+      },
+      {
+        "offset": 184,
+        "op": "invokestatic",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.access$100()Lorg/apache/logging/log4j/Logger;"
+      },
+      {
+        "offset": 190,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.pathLjava/lang/String;"
+      },
+      {
+        "offset": 204,
+        "op": "invokestatic",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.access$100()Lorg/apache/logging/log4j/Logger;"
+      },
+      {
+        "offset": 210,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.pathLjava/lang/String;"
+      }
+    ]
+  },
+  {
+    "artifact": "archived-launcher",
+    "class": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile",
+    "method": "download",
+    "descriptor": "()V",
+    "class_sha256": "604c2bc9f3de033656c72e75f1dd646b5fe55593806b8b35e20855b0ed4ed586",
+    "observations": [
+      {
+        "offset": 1,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.runtimeFileLru/turikhay/tlauncher/jre/JavaRuntimeManifest$RuntimeFile;"
+      },
+      {
+        "offset": 10,
+        "op": "invokestatic",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.access$100()Lorg/apache/logging/log4j/Logger;"
+      },
+      {
+        "offset": 16,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.runtimeFileLru/turikhay/tlauncher/jre/JavaRuntimeManifest$RuntimeFile;"
+      },
+      {
+        "offset": 28,
+        "op": "invokespecial",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.downloadLzma()V"
+      },
+      {
+        "offset": 34,
+        "op": "invokestatic",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.access$100()Lorg/apache/logging/log4j/Logger;"
+      },
+      {
+        "offset": 40,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.runtimeFileLru/turikhay/tlauncher/jre/JavaRuntimeManifest$RuntimeFile;"
+      },
+      {
+        "offset": 52,
+        "op": "invokespecial",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.downloadRaw()V"
+      }
+    ]
+  },
+  {
+    "artifact": "archived-launcher",
+    "class": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile",
+    "method": "downloadLzma",
+    "descriptor": "()V",
+    "class_sha256": "604c2bc9f3de033656c72e75f1dd646b5fe55593806b8b35e20855b0ed4ed586",
+    "observations": [
+      {
+        "offset": 5,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.this$0Lru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect;"
+      },
+      {
+        "offset": 8,
+        "op": "invokestatic",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.access$000(Lru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect;)Ljava/io/File;"
+      },
+      {
+        "offset": 19,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.pathLjava/lang/String;"
+      },
+      {
+        "offset": 39,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.runtimeFileLru/turikhay/tlauncher/jre/JavaRuntimeManifest$RuntimeFile;"
+      },
+      {
+        "offset": 46,
+        "op": "invokespecial",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.downloadAndCheck(Lnet/minecraft/launcher/updater/DownloadInfo;Ljava/io/File;)V"
+      },
+      {
+        "offset": 49,
+        "op": "invokestatic",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.access$100()Lorg/apache/logging/log4j/Logger;"
+      },
+      {
+        "offset": 95,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.realFileLjava/io/File;"
+      },
+      {
+        "offset": 184,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.pathLjava/lang/String;"
+      },
+      {
+        "offset": 214,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.runtimeFileLru/turikhay/tlauncher/jre/JavaRuntimeManifest$RuntimeFile;"
+      },
+      {
+        "offset": 221,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.realFileLjava/io/File;"
+      },
+      {
+        "offset": 224,
+        "op": "invokespecial",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.checkFile(Lnet/minecraft/launcher/updater/DownloadInfo;Ljava/io/File;)V"
+      }
+    ]
+  },
+  {
+    "artifact": "archived-launcher",
+    "class": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile",
+    "method": "downloadRaw",
+    "descriptor": "()V",
+    "class_sha256": "604c2bc9f3de033656c72e75f1dd646b5fe55593806b8b35e20855b0ed4ed586",
+    "observations": [
+      {
+        "offset": 2,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.runtimeFileLru/turikhay/tlauncher/jre/JavaRuntimeManifest$RuntimeFile;"
+      },
+      {
+        "offset": 9,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.realFileLjava/io/File;"
+      },
+      {
+        "offset": 12,
+        "op": "invokespecial",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.downloadAndCheck(Lnet/minecraft/launcher/updater/DownloadInfo;Ljava/io/File;)V"
+      }
+    ]
+  },
+  {
+    "artifact": "archived-launcher",
+    "class": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile",
+    "method": "downloadAndCheck",
+    "descriptor": "(Lnet/minecraft/launcher/updater/DownloadInfo;Ljava/io/File;)V",
+    "class_sha256": "604c2bc9f3de033656c72e75f1dd646b5fe55593806b8b35e20855b0ed4ed586",
+    "observations": [
+      {
+        "offset": 0,
+        "op": "invokestatic",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.access$100()Lorg/apache/logging/log4j/Logger;"
+      },
+      {
+        "offset": 28,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.this$0Lru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect;"
+      },
+      {
+        "offset": 31,
+        "op": "invokestatic",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.access$200(Lru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect;)Lorg/apache/http/client/HttpClient;"
+      },
+      {
+        "offset": 163,
+        "op": "invokespecial",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.checkFile(Lnet/minecraft/launcher/updater/DownloadInfo;Ljava/io/File;)V"
+      },
+      {
+        "offset": 166,
+        "op": "invokestatic",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.access$100()Lorg/apache/logging/log4j/Logger;"
+      }
+    ]
+  },
+  {
+    "artifact": "archived-launcher",
+    "class": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile",
+    "method": "checkFile",
+    "descriptor": "(Lnet/minecraft/launcher/updater/DownloadInfo;Ljava/io/File;)V",
+    "class_sha256": "604c2bc9f3de033656c72e75f1dd646b5fe55593806b8b35e20855b0ed4ed586",
+    "observations": [
+      {
+        "offset": 0,
+        "op": "invokestatic",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.access$100()Lorg/apache/logging/log4j/Logger;"
+      },
+      {
+        "offset": 29,
+        "op": "invokestatic",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.access$100()Lorg/apache/logging/log4j/Logger;"
+      },
+      {
+        "offset": 72,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.pathLjava/lang/String;"
+      },
+      {
+        "offset": 138,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.pathLjava/lang/String;"
+      }
+    ]
+  },
+  {
+    "artifact": "archived-launcher",
+    "class": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect",
+    "method": "<init>",
+    "descriptor": "(Ljava/io/File;Lru/turikhay/tlauncher/jre/JavaRuntimeRemote;)V",
+    "class_sha256": "64e78a1b37a41177eaac44c8557c906385b55d1eaf40048be72718076b71932a",
+    "observations": [
+      {
+        "offset": 6,
+        "op": "putfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.runtimeInfoLru/turikhay/tlauncher/jre/JavaRuntimeRemote;"
+      },
+      {
+        "offset": 15,
+        "op": "putfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.runtimeDirLjava/io/File;"
+      },
+      {
+        "offset": 24,
+        "op": "putfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.workingDirLjava/io/File;"
+      }
+    ]
+  },
+  {
+    "artifact": "archived-launcher",
+    "class": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect",
+    "method": "install",
+    "descriptor": "(Lru/turikhay/tlauncher/jre/ProgressReporter;)V",
+    "class_sha256": "64e78a1b37a41177eaac44c8557c906385b55d1eaf40048be72718076b71932a",
+    "observations": [
+      {
+        "offset": 2,
+        "op": "putfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.reporterLru/turikhay/tlauncher/jre/ProgressReporter;"
+      },
+      {
+        "offset": 6,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.workingDirLjava/io/File;"
+      },
+      {
+        "offset": 15,
+        "op": "getstatic",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.LOGGERLorg/apache/logging/log4j/Logger;"
+      },
+      {
+        "offset": 21,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.workingDirLjava/io/File;"
+      },
+      {
+        "offset": 33,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.workingDirLjava/io/File;"
+      },
+      {
+        "offset": 43,
+        "op": "getstatic",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.LOGGERLorg/apache/logging/log4j/Logger;"
+      },
+      {
+        "offset": 49,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.workingDirLjava/io/File;"
+      },
+      {
+        "offset": 60,
+        "op": "getstatic",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.LOGGERLorg/apache/logging/log4j/Logger;"
+      },
+      {
+        "offset": 71,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.runtimeInfoLru/turikhay/tlauncher/jre/JavaRuntimeRemote;"
+      },
+      {
+        "offset": 98,
+        "op": "putfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.runtimeFilesLjava/util/List;"
+      },
+      {
+        "offset": 101,
+        "op": "invokestatic",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.checkInterrupted()V"
+      },
+      {
+        "offset": 104,
+        "op": "getstatic",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.LOGGERLorg/apache/logging/log4j/Logger;"
+      },
+      {
+        "offset": 117,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.runtimeFilesLjava/util/List;"
+      },
+      {
+        "offset": 131,
+        "op": "getstatic",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.LOGGERLorg/apache/logging/log4j/Logger;"
+      },
+      {
+        "offset": 143,
+        "op": "invokespecial",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.listMissingFiles()Ljava/util/List;"
+      },
+      {
+        "offset": 146,
+        "op": "putfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.missingFilesLjava/util/List;"
+      },
+      {
+        "offset": 150,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.missingFilesLjava/util/List;"
+      },
+      {
+        "offset": 161,
+        "op": "getstatic",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.LOGGERLorg/apache/logging/log4j/Logger;"
+      },
+      {
+        "offset": 174,
+        "op": "getstatic",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.LOGGERLorg/apache/logging/log4j/Logger;"
+      },
+      {
+        "offset": 180,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.missingFilesLjava/util/List;"
+      },
+      {
+        "offset": 197,
+        "op": "invokespecial",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.downloadFiles()V"
+      },
+      {
+        "offset": 200,
+        "op": "getstatic",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.LOGGERLorg/apache/logging/log4j/Logger;"
+      },
+      {
+        "offset": 206,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.missingFilesLjava/util/List;"
+      },
+      {
+        "offset": 222,
+        "op": "getstatic",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.LOGGERLorg/apache/logging/log4j/Logger;"
+      },
+      {
+        "offset": 237,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.runtimeDirLjava/io/File;"
+      },
+      {
+        "offset": 246,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.runtimeInfoLru/turikhay/tlauncher/jre/JavaRuntimeRemote;"
+      },
+      {
+        "offset": 261,
+        "op": "getstatic",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.LOGGERLorg/apache/logging/log4j/Logger;"
+      },
+      {
+        "offset": 273,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.runtimeFilesLjava/util/List;"
+      },
+      {
+        "offset": 283,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.runtimeFilesLjava/util/List;"
+      }
+    ]
+  },
+  {
+    "artifact": "archived-launcher",
+    "class": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect",
+    "method": "listMissingFiles",
+    "descriptor": "()Ljava/util/List;",
+    "class_sha256": "64e78a1b37a41177eaac44c8557c906385b55d1eaf40048be72718076b71932a",
+    "observations": [
+      {
+        "offset": 9,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.runtimeFilesLjava/util/List;"
+      },
+      {
+        "offset": 37,
+        "op": "new",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile"
+      },
+      {
+        "offset": 43,
+        "op": "invokespecial",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.<init>(Lru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect;Lru/turikhay/tlauncher/jre/JavaRuntimeManifest$RuntimeFile;)V"
+      },
+      {
+        "offset": 50,
+        "op": "invokevirtual",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.shouldDownload()Z"
+      },
+      {
+        "offset": 65,
+        "op": "invokestatic",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.checkInterrupted()V"
+      },
+      {
+        "offset": 71,
+        "op": "getstatic",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.LOGGERLorg/apache/logging/log4j/Logger;"
+      }
+    ]
+  },
+  {
+    "artifact": "archived-launcher",
+    "class": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect",
+    "method": "downloadFiles",
+    "descriptor": "()V",
+    "class_sha256": "64e78a1b37a41177eaac44c8557c906385b55d1eaf40048be72718076b71932a",
+    "observations": [
+      {
+        "offset": 6,
+        "op": "putfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.clientLorg/apache/http/client/HttpClient;"
+      },
+      {
+        "offset": 13,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.missingFilesLjava/util/List;"
+      },
+      {
+        "offset": 25,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.missingFilesLjava/util/List;"
+      },
+      {
+        "offset": 34,
+        "op": "checkcast",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile"
+      },
+      {
+        "offset": 37,
+        "op": "invokevirtual",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect$MissingFile.download()V"
+      },
+      {
+        "offset": 41,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.reporterLru/turikhay/tlauncher/jre/ProgressReporter;"
+      },
+      {
+        "offset": 49,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.missingFilesLjava/util/List;"
+      },
+      {
+        "offset": 63,
+        "op": "invokestatic",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.checkInterrupted()V"
+      },
+      {
+        "offset": 105,
+        "op": "putfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.clientLorg/apache/http/client/HttpClient;"
+      },
+      {
+        "offset": 115,
+        "op": "putfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.clientLorg/apache/http/client/HttpClient;"
+      }
+    ]
+  },
+  {
+    "artifact": "archived-launcher",
+    "class": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect",
+    "method": "access$000",
+    "descriptor": "(Lru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect;)Ljava/io/File;",
+    "class_sha256": "64e78a1b37a41177eaac44c8557c906385b55d1eaf40048be72718076b71932a",
+    "observations": [
+      {
+        "offset": 1,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.workingDirLjava/io/File;"
+      }
+    ]
+  },
+  {
+    "artifact": "archived-launcher",
+    "class": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect",
+    "method": "access$100",
+    "descriptor": "()Lorg/apache/logging/log4j/Logger;",
+    "class_sha256": "64e78a1b37a41177eaac44c8557c906385b55d1eaf40048be72718076b71932a",
+    "observations": [
+      {
+        "offset": 0,
+        "op": "getstatic",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.LOGGERLorg/apache/logging/log4j/Logger;"
+      }
+    ]
+  },
+  {
+    "artifact": "archived-launcher",
+    "class": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect",
+    "method": "access$200",
+    "descriptor": "(Lru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect;)Lorg/apache/http/client/HttpClient;",
+    "class_sha256": "64e78a1b37a41177eaac44c8557c906385b55d1eaf40048be72718076b71932a",
+    "observations": [
+      {
+        "offset": 1,
+        "op": "getfield",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.clientLorg/apache/http/client/HttpClient;"
+      }
+    ]
+  },
+  {
+    "artifact": "archived-launcher",
+    "class": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect",
+    "method": "<clinit>",
+    "descriptor": "()V",
+    "class_sha256": "64e78a1b37a41177eaac44c8557c906385b55d1eaf40048be72718076b71932a",
+    "observations": [
+      {
+        "offset": 0,
+        "op": "ldc",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect"
+      },
+      {
+        "offset": 5,
+        "op": "putstatic",
+        "ref": "ru/turikhay/tlauncher/jre/JavaRuntimeInstallerDirect.LOGGERLorg/apache/logging/log4j/Logger;"
+      }
+    ]
+  },
+  {
+    "artifact": "archived-launcher",
+    "class": "ru/turikhay/tlauncher/managers/MemoryAllocationService$VersionContext",
+    "method": "isForge",
+    "descriptor": "()Z",
+    "class_sha256": "0ff12a51238fadf0c8fe30a4e731ca2f1f66702875a4f855d9128c909713282e",
+    "observations": [
+      {
+        "offset": 10,
+        "op": "ldc",
+        "ref": "forge"
+      }
+    ]
+  },
+  {
+    "artifact": "archived-launcher",
+    "class": "ru/turikhay/tlauncher/managers/MemoryAllocationService",
+    "method": "doQueryHint",
+    "descriptor": "(Lru/turikhay/tlauncher/managers/MemoryAllocationService$VersionContext;)Lru/turikhay/tlauncher/managers/MemoryAllocationService$Hint;",
+    "class_sha256": "8a5f24c78e90cc7405cf3b48781de6949e646934aa6cb1ab513cfe3cf42ad511",
+    "observations": [
+      {
+        "offset": 88,
+        "op": "invokevirtual",
+        "ref": "ru/turikhay/tlauncher/managers/MemoryAllocationService$VersionContext.isForge()Z"
+      },
+      {
+        "offset": 113,
+        "op": "ldc",
+        "ref": "Detected Forge version: bumping x 2: {} -> {} MiB"
+      }
+    ]
+  },
+  {
+    "artifact": "archived-launcher",
+    "class": "ru/turikhay/tlauncher/minecraft/crash/CrashManager$LogFlusherEntry",
+    "method": "treeDir",
+    "descriptor": "(Ljava/io/File;IILjava/lang/StringBuilder;)V",
+    "class_sha256": "6a9b20073928d317718fe2a4a191e8e534c1431ceb6181ce8ebb92029c800be2",
+    "observations": [
+      {
+        "offset": 624,
+        "op": "invokespecial",
+        "ref": "ru/turikhay/tlauncher/minecraft/crash/CrashManager$LogFlusherEntry.tryFabricMod(Ljava/util/zip/ZipFile;Ljava/lang/StringBuilder;)Z"
+      }
+    ]
+  },
+  {
+    "artifact": "archived-launcher",
+    "class": "ru/turikhay/tlauncher/minecraft/crash/CrashManager$LogFlusherEntry",
+    "method": "tryFabricMod",
+    "descriptor": "(Ljava/util/zip/ZipFile;Ljava/lang/StringBuilder;)Z",
+    "class_sha256": "6a9b20073928d317718fe2a4a191e8e534c1431ceb6181ce8ebb92029c800be2",
+    "observations": [
+      {
+        "offset": 1,
+        "op": "ldc_w",
+        "ref": "fabric.mod.json"
+      },
+      {
+        "offset": 36,
+        "op": "ldc_w",
+        "ref": "fabricModRoot"
+      },
+      {
+        "offset": 88,
+        "op": "ldc_w",
+        "ref": "{}\u2514 [!!!] Couldn't read fabric.mod.json: {}"
+      }
+    ]
+  },
+  {
+    "artifact": "archived-launcher",
+    "class": "ru/turikhay/tlauncher/minecraft/crash/CrashManager",
+    "method": "<init>",
+    "descriptor": "(Lru/turikhay/tlauncher/minecraft/launcher/MinecraftLauncher;Ljava/lang/String;Lru/turikhay/tlauncher/minecraft/launcher/ChildProcessLogger;Ljava/nio/charset/Charset;I)V",
+    "class_sha256": "df9756ce99b4b300607d16aeb44ea2a6bd8d40bd034eab223d8dd5495ca92ad1",
+    "observations": [
+      {
+        "offset": 111,
+        "op": "ldc_w",
+        "ref": "forge"
+      },
+      {
+        "offset": 117,
+        "op": "ldc_w",
+        "ref": "fabric"
+      }
+    ]
+  },
+  {
+    "artifact": "archived-launcher",
+    "class": "ru/turikhay/tlauncher/minecraft/crash/GraphicsEntry",
+    "method": "checkCapability",
+    "descriptor": "(Ljava/util/List;)Z",
+    "class_sha256": "6720c2863a25bdbbdd578628976c36b09fca4029cfbbeb08a45517e94f1ce8f2",
+    "observations": [
+      {
+        "offset": 360,
+        "op": "ldc",
+        "ref": "https://yadi.sk/d/dvzmBSqttQXhy/Java%208%20update%2045/Installers"
+      }
+    ]
+  },
+  {
+    "artifact": "archived-launcher",
+    "class": "ru/turikhay/tlauncher/minecraft/launcher/MinecraftLauncher$2",
+    "method": "<clinit>",
+    "descriptor": "()V",
+    "class_sha256": "c2e66dfcc37c033ffa6a41ec2597da85593e6c6fbff9cb96518215405b0bfb16",
+    "observations": [
+      {
+        "offset": 51,
+        "op": "getstatic",
+        "ref": "net/minecraft/launcher/versions/ModpackType.FORGE_LEGACYLnet/minecraft/launcher/versions/ModpackType;"
+      },
+      {
+        "offset": 66,
+        "op": "getstatic",
+        "ref": "net/minecraft/launcher/versions/ModpackType.FORGE_LEGACY_ABSOLUTELnet/minecraft/launcher/versions/ModpackType;"
+      },
+      {
+        "offset": 81,
+        "op": "getstatic",
+        "ref": "net/minecraft/launcher/versions/ModpackType.FORGE_1_13Lnet/minecraft/launcher/versions/ModpackType;"
+      }
+    ]
+  },
+  {
+    "artifact": "archived-launcher",
+    "class": "ru/turikhay/tlauncher/minecraft/launcher/MinecraftLauncher",
+    "method": "processModpack",
+    "descriptor": "()Ljava/util/List;",
+    "class_sha256": "8f6c865bc5a8236928fb855869115df30fdde984c2a27727f7df11eeaccce0a9",
+    "observations": [
+      {
+        "offset": 91,
+        "op": "getstatic",
+        "ref": "net/minecraft/launcher/versions/ModpackType.FORGE_LEGACY_ABSOLUTELnet/minecraft/launcher/versions/ModpackType;"
+      }
+    ]
+  },
+  {
+    "artifact": "archived-launcher",
+    "class": "ru/turikhay/tlauncher/minecraft/launcher/MinecraftLauncher",
+    "method": "createArgumentsSubstitutor",
+    "descriptor": "()Lorg/apache/commons/lang3/text/StrSubstitutor;",
+    "class_sha256": "8f6c865bc5a8236928fb855869115df30fdde984c2a27727f7df11eeaccce0a9",
+    "observations": [
+      {
+        "offset": 199,
+        "op": "ldc_w",
+        "ref": "forge_transformers"
+      }
+    ]
+  },
+  {
+    "artifact": "archived-launcher",
+    "class": "ru/turikhay/tlauncher/repository/RepositoryProxy",
+    "method": "<clinit>",
+    "descriptor": "()V",
+    "class_sha256": "a56062a128cbb2656172e6e7698254b0d9ed1933f0dd2978910c19e390705ac1",
+    "observations": [
+      {
+        "offset": 40,
+        "op": "ldc",
+        "ref": "files.minecraftforge.net"
+      },
+      {
+        "offset": 46,
+        "op": "ldc",
+        "ref": "maven.fabricmc.net"
+      }
+    ]
+  },
+  {
+    "artifact": "archived-launcher",
+    "class": "ru/turikhay/tlauncher/ui/crash/CrashFrame",
+    "method": "isProbablyBadVersionCrashed",
+    "descriptor": "()Z",
+    "class_sha256": "584ff8bfeac3c1635d82ca5baeb932c9c3e66bc30972139c4e1cc424c8cdc5ed",
+    "observations": [
+      {
+        "offset": 21,
+        "op": "ldc_w",
+        "ref": "forge"
+      },
+      {
+        "offset": 37,
+        "op": "ldc_w",
+        "ref": "fabric"
+      }
+    ]
+  },
+  {
+    "artifact": "installed-launcher",
+    "class": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile",
+    "method": "<init>",
+    "descriptor": "(Lnet/legacylauncher/jre/JavaRuntimeInstallerDirect;Lnet/legacylauncher/jre/JavaRuntimeManifest$RuntimeFile;)V",
+    "class_sha256": "5419341d8c5dd1b7a8d1ecb9ce6815e089017ae6ed29f44356d1cbd4a3466a78",
+    "observations": [
+      {
+        "offset": 2,
+        "op": "putfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.this$0Lnet/legacylauncher/jre/JavaRuntimeInstallerDirect;"
+      },
+      {
+        "offset": 11,
+        "op": "putfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.runtimeFileLnet/legacylauncher/jre/JavaRuntimeManifest$RuntimeFile;"
+      },
+      {
+        "offset": 19,
+        "op": "putfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.pathLjava/lang/String;"
+      },
+      {
+        "offset": 28,
+        "op": "invokestatic",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.access$000(Lnet/legacylauncher/jre/JavaRuntimeInstallerDirect;)Ljava/io/File;"
+      },
+      {
+        "offset": 32,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.pathLjava/lang/String;"
+      },
+      {
+        "offset": 38,
+        "op": "putfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.realFileLjava/io/File;"
+      }
+    ]
+  },
+  {
+    "artifact": "installed-launcher",
+    "class": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile",
+    "method": "shouldDownload",
+    "descriptor": "()Z",
+    "class_sha256": "5419341d8c5dd1b7a8d1ecb9ce6815e089017ae6ed29f44356d1cbd4a3466a78",
+    "observations": [
+      {
+        "offset": 0,
+        "op": "invokestatic",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.access$100()Lorg/slf4j/Logger;"
+      },
+      {
+        "offset": 6,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.pathLjava/lang/String;"
+      },
+      {
+        "offset": 15,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.runtimeFileLnet/legacylauncher/jre/JavaRuntimeManifest$RuntimeFile;"
+      },
+      {
+        "offset": 24,
+        "op": "invokestatic",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.access$100()Lorg/slf4j/Logger;"
+      },
+      {
+        "offset": 30,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.pathLjava/lang/String;"
+      },
+      {
+        "offset": 45,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.this$0Lnet/legacylauncher/jre/JavaRuntimeInstallerDirect;"
+      },
+      {
+        "offset": 48,
+        "op": "invokestatic",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.access$000(Lnet/legacylauncher/jre/JavaRuntimeInstallerDirect;)Ljava/io/File;"
+      },
+      {
+        "offset": 52,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.pathLjava/lang/String;"
+      },
+      {
+        "offset": 66,
+        "op": "invokestatic",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.access$100()Lorg/slf4j/Logger;"
+      },
+      {
+        "offset": 72,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.pathLjava/lang/String;"
+      },
+      {
+        "offset": 83,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.runtimeFileLnet/legacylauncher/jre/JavaRuntimeManifest$RuntimeFile;"
+      },
+      {
+        "offset": 104,
+        "op": "invokestatic",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.access$100()Lorg/slf4j/Logger;"
+      },
+      {
+        "offset": 132,
+        "op": "invokestatic",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.access$100()Lorg/slf4j/Logger;"
+      },
+      {
+        "offset": 144,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.pathLjava/lang/String;"
+      },
+      {
+        "offset": 170,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.runtimeFileLnet/legacylauncher/jre/JavaRuntimeManifest$RuntimeFile;"
+      },
+      {
+        "offset": 197,
+        "op": "invokestatic",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.access$100()Lorg/slf4j/Logger;"
+      },
+      {
+        "offset": 209,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.pathLjava/lang/String;"
+      },
+      {
+        "offset": 230,
+        "op": "invokestatic",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.access$100()Lorg/slf4j/Logger;"
+      },
+      {
+        "offset": 236,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.pathLjava/lang/String;"
+      }
+    ]
+  },
+  {
+    "artifact": "installed-launcher",
+    "class": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile",
+    "method": "download",
+    "descriptor": "()V",
+    "class_sha256": "5419341d8c5dd1b7a8d1ecb9ce6815e089017ae6ed29f44356d1cbd4a3466a78",
+    "observations": [
+      {
+        "offset": 1,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.runtimeFileLnet/legacylauncher/jre/JavaRuntimeManifest$RuntimeFile;"
+      },
+      {
+        "offset": 10,
+        "op": "invokestatic",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.access$100()Lorg/slf4j/Logger;"
+      },
+      {
+        "offset": 16,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.runtimeFileLnet/legacylauncher/jre/JavaRuntimeManifest$RuntimeFile;"
+      },
+      {
+        "offset": 28,
+        "op": "invokespecial",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.downloadLzma()V"
+      },
+      {
+        "offset": 34,
+        "op": "invokestatic",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.access$100()Lorg/slf4j/Logger;"
+      },
+      {
+        "offset": 40,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.runtimeFileLnet/legacylauncher/jre/JavaRuntimeManifest$RuntimeFile;"
+      },
+      {
+        "offset": 52,
+        "op": "invokespecial",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.downloadRaw()V"
+      }
+    ]
+  },
+  {
+    "artifact": "installed-launcher",
+    "class": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile",
+    "method": "downloadLzma",
+    "descriptor": "()V",
+    "class_sha256": "5419341d8c5dd1b7a8d1ecb9ce6815e089017ae6ed29f44356d1cbd4a3466a78",
+    "observations": [
+      {
+        "offset": 5,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.this$0Lnet/legacylauncher/jre/JavaRuntimeInstallerDirect;"
+      },
+      {
+        "offset": 8,
+        "op": "invokestatic",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.access$000(Lnet/legacylauncher/jre/JavaRuntimeInstallerDirect;)Ljava/io/File;"
+      },
+      {
+        "offset": 19,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.pathLjava/lang/String;"
+      },
+      {
+        "offset": 39,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.runtimeFileLnet/legacylauncher/jre/JavaRuntimeManifest$RuntimeFile;"
+      },
+      {
+        "offset": 46,
+        "op": "invokespecial",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.downloadAndCheck(Lnet/minecraft/launcher/updater/DownloadInfo;Ljava/io/File;)V"
+      },
+      {
+        "offset": 49,
+        "op": "invokestatic",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.access$100()Lorg/slf4j/Logger;"
+      },
+      {
+        "offset": 94,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.realFileLjava/io/File;"
+      },
+      {
+        "offset": 190,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.pathLjava/lang/String;"
+      },
+      {
+        "offset": 220,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.runtimeFileLnet/legacylauncher/jre/JavaRuntimeManifest$RuntimeFile;"
+      },
+      {
+        "offset": 227,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.realFileLjava/io/File;"
+      },
+      {
+        "offset": 230,
+        "op": "invokespecial",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.checkFile(Lnet/minecraft/launcher/updater/DownloadInfo;Ljava/io/File;)V"
+      }
+    ]
+  },
+  {
+    "artifact": "installed-launcher",
+    "class": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile",
+    "method": "downloadRaw",
+    "descriptor": "()V",
+    "class_sha256": "5419341d8c5dd1b7a8d1ecb9ce6815e089017ae6ed29f44356d1cbd4a3466a78",
+    "observations": [
+      {
+        "offset": 2,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.runtimeFileLnet/legacylauncher/jre/JavaRuntimeManifest$RuntimeFile;"
+      },
+      {
+        "offset": 9,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.realFileLjava/io/File;"
+      },
+      {
+        "offset": 12,
+        "op": "invokespecial",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.downloadAndCheck(Lnet/minecraft/launcher/updater/DownloadInfo;Ljava/io/File;)V"
+      }
+    ]
+  },
+  {
+    "artifact": "installed-launcher",
+    "class": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile",
+    "method": "downloadAndCheck",
+    "descriptor": "(Lnet/minecraft/launcher/updater/DownloadInfo;Ljava/io/File;)V",
+    "class_sha256": "5419341d8c5dd1b7a8d1ecb9ce6815e089017ae6ed29f44356d1cbd4a3466a78",
+    "observations": [
+      {
+        "offset": 0,
+        "op": "invokestatic",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.access$100()Lorg/slf4j/Logger;"
+      },
+      {
+        "offset": 48,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.this$0Lnet/legacylauncher/jre/JavaRuntimeInstallerDirect;"
+      },
+      {
+        "offset": 51,
+        "op": "invokestatic",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.access$200(Lnet/legacylauncher/jre/JavaRuntimeInstallerDirect;)Lorg/apache/hc/client5/http/classic/HttpClient;"
+      },
+      {
+        "offset": 114,
+        "op": "invokespecial",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.checkFile(Lnet/minecraft/launcher/updater/DownloadInfo;Ljava/io/File;)V"
+      },
+      {
+        "offset": 117,
+        "op": "invokestatic",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.access$100()Lorg/slf4j/Logger;"
+      }
+    ]
+  },
+  {
+    "artifact": "installed-launcher",
+    "class": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile",
+    "method": "checkFile",
+    "descriptor": "(Lnet/minecraft/launcher/updater/DownloadInfo;Ljava/io/File;)V",
+    "class_sha256": "5419341d8c5dd1b7a8d1ecb9ce6815e089017ae6ed29f44356d1cbd4a3466a78",
+    "observations": [
+      {
+        "offset": 0,
+        "op": "invokestatic",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.access$100()Lorg/slf4j/Logger;"
+      },
+      {
+        "offset": 29,
+        "op": "invokestatic",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.access$100()Lorg/slf4j/Logger;"
+      },
+      {
+        "offset": 72,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.pathLjava/lang/String;"
+      },
+      {
+        "offset": 137,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.pathLjava/lang/String;"
+      }
+    ]
+  },
+  {
+    "artifact": "installed-launcher",
+    "class": "net/legacylauncher/jre/JavaRuntimeInstallerDirect",
+    "method": "<init>",
+    "descriptor": "(Ljava/io/File;Lnet/legacylauncher/jre/JavaRuntimeRemote;)V",
+    "class_sha256": "69a41bf8d6f318e139a9fe481890c6672deca9219fca236dae2b8f208a0755f4",
+    "observations": [
+      {
+        "offset": 6,
+        "op": "putfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.runtimeInfoLnet/legacylauncher/jre/JavaRuntimeRemote;"
+      },
+      {
+        "offset": 15,
+        "op": "putfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.runtimeDirLjava/io/File;"
+      },
+      {
+        "offset": 24,
+        "op": "putfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.workingDirLjava/io/File;"
+      }
+    ]
+  },
+  {
+    "artifact": "installed-launcher",
+    "class": "net/legacylauncher/jre/JavaRuntimeInstallerDirect",
+    "method": "install",
+    "descriptor": "(Lnet/legacylauncher/jre/ProgressReporter;)V",
+    "class_sha256": "69a41bf8d6f318e139a9fe481890c6672deca9219fca236dae2b8f208a0755f4",
+    "observations": [
+      {
+        "offset": 2,
+        "op": "putfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.reporterLnet/legacylauncher/jre/ProgressReporter;"
+      },
+      {
+        "offset": 6,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.workingDirLjava/io/File;"
+      },
+      {
+        "offset": 15,
+        "op": "getstatic",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.logLorg/slf4j/Logger;"
+      },
+      {
+        "offset": 21,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.workingDirLjava/io/File;"
+      },
+      {
+        "offset": 33,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.workingDirLjava/io/File;"
+      },
+      {
+        "offset": 43,
+        "op": "getstatic",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.logLorg/slf4j/Logger;"
+      },
+      {
+        "offset": 49,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.workingDirLjava/io/File;"
+      },
+      {
+        "offset": 60,
+        "op": "getstatic",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.logLorg/slf4j/Logger;"
+      },
+      {
+        "offset": 71,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.runtimeInfoLnet/legacylauncher/jre/JavaRuntimeRemote;"
+      },
+      {
+        "offset": 98,
+        "op": "putfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.runtimeFilesLjava/util/List;"
+      },
+      {
+        "offset": 101,
+        "op": "invokestatic",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.checkInterrupted()V"
+      },
+      {
+        "offset": 104,
+        "op": "getstatic",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.logLorg/slf4j/Logger;"
+      },
+      {
+        "offset": 117,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.runtimeFilesLjava/util/List;"
+      },
+      {
+        "offset": 131,
+        "op": "getstatic",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.logLorg/slf4j/Logger;"
+      },
+      {
+        "offset": 143,
+        "op": "invokespecial",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.listMissingFiles()Ljava/util/List;"
+      },
+      {
+        "offset": 146,
+        "op": "putfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.missingFilesLjava/util/List;"
+      },
+      {
+        "offset": 150,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.missingFilesLjava/util/List;"
+      },
+      {
+        "offset": 161,
+        "op": "getstatic",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.logLorg/slf4j/Logger;"
+      },
+      {
+        "offset": 174,
+        "op": "getstatic",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.logLorg/slf4j/Logger;"
+      },
+      {
+        "offset": 180,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.missingFilesLjava/util/List;"
+      },
+      {
+        "offset": 197,
+        "op": "invokespecial",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.downloadFiles()V"
+      },
+      {
+        "offset": 200,
+        "op": "getstatic",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.logLorg/slf4j/Logger;"
+      },
+      {
+        "offset": 206,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.missingFilesLjava/util/List;"
+      },
+      {
+        "offset": 222,
+        "op": "getstatic",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.logLorg/slf4j/Logger;"
+      },
+      {
+        "offset": 237,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.runtimeDirLjava/io/File;"
+      },
+      {
+        "offset": 246,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.runtimeInfoLnet/legacylauncher/jre/JavaRuntimeRemote;"
+      },
+      {
+        "offset": 261,
+        "op": "getstatic",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.logLorg/slf4j/Logger;"
+      },
+      {
+        "offset": 273,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.runtimeFilesLjava/util/List;"
+      },
+      {
+        "offset": 283,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.runtimeFilesLjava/util/List;"
+      }
+    ]
+  },
+  {
+    "artifact": "installed-launcher",
+    "class": "net/legacylauncher/jre/JavaRuntimeInstallerDirect",
+    "method": "listMissingFiles",
+    "descriptor": "()Ljava/util/List;",
+    "class_sha256": "69a41bf8d6f318e139a9fe481890c6672deca9219fca236dae2b8f208a0755f4",
+    "observations": [
+      {
+        "offset": 9,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.runtimeFilesLjava/util/List;"
+      },
+      {
+        "offset": 37,
+        "op": "new",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile"
+      },
+      {
+        "offset": 43,
+        "op": "invokespecial",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.<init>(Lnet/legacylauncher/jre/JavaRuntimeInstallerDirect;Lnet/legacylauncher/jre/JavaRuntimeManifest$RuntimeFile;)V"
+      },
+      {
+        "offset": 50,
+        "op": "invokevirtual",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.shouldDownload()Z"
+      },
+      {
+        "offset": 65,
+        "op": "invokestatic",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.checkInterrupted()V"
+      },
+      {
+        "offset": 71,
+        "op": "getstatic",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.logLorg/slf4j/Logger;"
+      }
+    ]
+  },
+  {
+    "artifact": "installed-launcher",
+    "class": "net/legacylauncher/jre/JavaRuntimeInstallerDirect",
+    "method": "downloadFiles",
+    "descriptor": "()V",
+    "class_sha256": "69a41bf8d6f318e139a9fe481890c6672deca9219fca236dae2b8f208a0755f4",
+    "observations": [
+      {
+        "offset": 6,
+        "op": "putfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.clientLorg/apache/hc/client5/http/classic/HttpClient;"
+      },
+      {
+        "offset": 13,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.missingFilesLjava/util/List;"
+      },
+      {
+        "offset": 25,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.missingFilesLjava/util/List;"
+      },
+      {
+        "offset": 34,
+        "op": "checkcast",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile"
+      },
+      {
+        "offset": 37,
+        "op": "invokevirtual",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect$MissingFile.download()V"
+      },
+      {
+        "offset": 41,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.reporterLnet/legacylauncher/jre/ProgressReporter;"
+      },
+      {
+        "offset": 49,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.missingFilesLjava/util/List;"
+      },
+      {
+        "offset": 63,
+        "op": "invokestatic",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.checkInterrupted()V"
+      },
+      {
+        "offset": 105,
+        "op": "putfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.clientLorg/apache/hc/client5/http/classic/HttpClient;"
+      },
+      {
+        "offset": 115,
+        "op": "putfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.clientLorg/apache/hc/client5/http/classic/HttpClient;"
+      }
+    ]
+  },
+  {
+    "artifact": "installed-launcher",
+    "class": "net/legacylauncher/jre/JavaRuntimeInstallerDirect",
+    "method": "access$000",
+    "descriptor": "(Lnet/legacylauncher/jre/JavaRuntimeInstallerDirect;)Ljava/io/File;",
+    "class_sha256": "69a41bf8d6f318e139a9fe481890c6672deca9219fca236dae2b8f208a0755f4",
+    "observations": [
+      {
+        "offset": 1,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.workingDirLjava/io/File;"
+      }
+    ]
+  },
+  {
+    "artifact": "installed-launcher",
+    "class": "net/legacylauncher/jre/JavaRuntimeInstallerDirect",
+    "method": "access$100",
+    "descriptor": "()Lorg/slf4j/Logger;",
+    "class_sha256": "69a41bf8d6f318e139a9fe481890c6672deca9219fca236dae2b8f208a0755f4",
+    "observations": [
+      {
+        "offset": 0,
+        "op": "getstatic",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.logLorg/slf4j/Logger;"
+      }
+    ]
+  },
+  {
+    "artifact": "installed-launcher",
+    "class": "net/legacylauncher/jre/JavaRuntimeInstallerDirect",
+    "method": "access$200",
+    "descriptor": "(Lnet/legacylauncher/jre/JavaRuntimeInstallerDirect;)Lorg/apache/hc/client5/http/classic/HttpClient;",
+    "class_sha256": "69a41bf8d6f318e139a9fe481890c6672deca9219fca236dae2b8f208a0755f4",
+    "observations": [
+      {
+        "offset": 1,
+        "op": "getfield",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.clientLorg/apache/hc/client5/http/classic/HttpClient;"
+      }
+    ]
+  },
+  {
+    "artifact": "installed-launcher",
+    "class": "net/legacylauncher/jre/JavaRuntimeInstallerDirect",
+    "method": "<clinit>",
+    "descriptor": "()V",
+    "class_sha256": "69a41bf8d6f318e139a9fe481890c6672deca9219fca236dae2b8f208a0755f4",
+    "observations": [
+      {
+        "offset": 0,
+        "op": "ldc",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect"
+      },
+      {
+        "offset": 5,
+        "op": "putstatic",
+        "ref": "net/legacylauncher/jre/JavaRuntimeInstallerDirect.logLorg/slf4j/Logger;"
+      }
+    ]
+  },
+  {
+    "artifact": "installed-launcher",
+    "class": "net/legacylauncher/managers/MemoryAllocationService$VersionContext",
+    "method": "isForge",
+    "descriptor": "()Z",
+    "class_sha256": "4b7578068384790216fa6cc3db1c4b603ba0db033c902b77f6bef49f8b0a539b",
+    "observations": [
+      {
+        "offset": 10,
+        "op": "ldc",
+        "ref": "forge"
+      }
+    ]
+  },
+  {
+    "artifact": "installed-launcher",
+    "class": "net/legacylauncher/minecraft/launcher/MinecraftLauncher$2",
+    "method": "<clinit>",
+    "descriptor": "()V",
+    "class_sha256": "9c4145448989a65bb56877a01c401444d2f8ac2fc016f989b662e90f953653f5",
+    "observations": [
+      {
+        "offset": 51,
+        "op": "getstatic",
+        "ref": "net/minecraft/launcher/versions/ModpackType.FORGE_LEGACYLnet/minecraft/launcher/versions/ModpackType;"
+      },
+      {
+        "offset": 66,
+        "op": "getstatic",
+        "ref": "net/minecraft/launcher/versions/ModpackType.FORGE_LEGACY_ABSOLUTELnet/minecraft/launcher/versions/ModpackType;"
+      },
+      {
+        "offset": 81,
+        "op": "getstatic",
+        "ref": "net/minecraft/launcher/versions/ModpackType.FORGE_1_13Lnet/minecraft/launcher/versions/ModpackType;"
+      }
+    ]
+  },
+  {
+    "artifact": "installed-launcher",
+    "class": "net/legacylauncher/minecraft/launcher/MinecraftLauncher",
+    "method": "processModpack",
+    "descriptor": "()Ljava/util/List;",
+    "class_sha256": "f2162a3dcae82b696fda7b95469310e5491f5fe15016b2c3872b67539dac309a",
+    "observations": [
+      {
+        "offset": 91,
+        "op": "getstatic",
+        "ref": "net/minecraft/launcher/versions/ModpackType.FORGE_LEGACY_ABSOLUTELnet/minecraft/launcher/versions/ModpackType;"
+      }
+    ]
+  },
+  {
+    "artifact": "installed-launcher",
+    "class": "net/legacylauncher/minecraft/launcher/MinecraftLauncher",
+    "method": "createArgumentsSubstitutor",
+    "descriptor": "()Lorg/apache/commons/lang3/text/StrSubstitutor;",
+    "class_sha256": "f2162a3dcae82b696fda7b95469310e5491f5fe15016b2c3872b67539dac309a",
+    "observations": [
+      {
+        "offset": 199,
+        "op": "ldc_w",
+        "ref": "forge_transformers"
+      }
+    ]
+  },
+  {
+    "artifact": "installed-launcher",
+    "class": "net/legacylauncher/repository/RepositoryProxy",
+    "method": "<clinit>",
+    "descriptor": "()V",
+    "class_sha256": "fab5d84c7537634964c56cac3313daa64a0f4c5cddc23293f2fd234ffa2dcefa",
+    "observations": [
+      {
+        "offset": 40,
+        "op": "ldc",
+        "ref": "files.minecraftforge.net"
+      },
+      {
+        "offset": 46,
+        "op": "ldc",
+        "ref": "maven.minecraftforge.net"
+      },
+      {
+        "offset": 52,
+        "op": "ldc",
+        "ref": "maven.fabricmc.net"
+      },
+      {
+        "offset": 70,
+        "op": "ldc",
+        "ref": "maven.neoforged.net"
+      },
+      {
+        "offset": 76,
+        "op": "ldc",
+        "ref": "modloaders.forgecdn.net"
+      }
+    ]
+  },
+  {
+    "artifact": "installed-launcher",
+    "class": "net/minecraft/launcher/versions/CompleteVersion",
+    "method": "getModpackType",
+    "descriptor": "()Lnet/minecraft/launcher/versions/ModpackType;",
+    "class_sha256": "b4b5f937a6d8e1551a5da0dc70287d56a3fcd3115eb3a33d7868570b08146d39",
+    "observations": [
+      {
+        "offset": 17,
+        "op": "getstatic",
+        "ref": "net/minecraft/launcher/versions/ModpackType.FORGE_LEGACY_ABSOLUTELnet/minecraft/launcher/versions/ModpackType;"
+      }
+    ]
+  },
+  {
+    "artifact": "installed-launcher",
+    "class": "net/minecraft/launcher/versions/CompleteVersion",
+    "method": "resolveFamily",
+    "descriptor": "(Ljava/lang/String;)V",
+    "class_sha256": "b4b5f937a6d8e1551a5da0dc70287d56a3fcd3115eb3a33d7868570b08146d39",
+    "observations": [
+      {
+        "offset": 17,
+        "op": "ldc_w",
+        "ref": "Forge-"
+      },
+      {
+        "offset": 27,
+        "op": "ldc_w",
+        "ref": "Fabric-"
+      },
+      {
+        "offset": 52,
+        "op": "ldc_w",
+        "ref": "forge"
+      },
+      {
+        "offset": 69,
+        "op": "ldc_w",
+        "ref": "Forge-"
+      },
+      {
+        "offset": 96,
+        "op": "ldc_w",
+        "ref": "fabric"
+      },
+      {
+        "offset": 113,
+        "op": "ldc_w",
+        "ref": "Fabric-"
+      }
+    ]
+  },
+  {
+    "artifact": "installed-launcher",
+    "class": "net/minecraft/launcher/versions/CompleteVersion",
+    "method": "resolve",
+    "descriptor": "(Lnet/legacylauncher/managers/VersionManager;ZLjava/util/List;)Lnet/minecraft/launcher/versions/CompleteVersion;",
+    "class_sha256": "b4b5f937a6d8e1551a5da0dc70287d56a3fcd3115eb3a33d7868570b08146d39",
+    "observations": [
+      {
+        "offset": 33,
+        "op": "ldc_w",
+        "ref": "Forge-"
+      },
+      {
+        "offset": 46,
+        "op": "ldc_w",
+        "ref": "Fabric-"
+      }
+    ]
+  },
+  {
+    "artifact": "installed-launcher",
+    "class": "net/minecraft/launcher/versions/LibraryType",
+    "method": "<clinit>",
+    "descriptor": "()V",
+    "class_sha256": "27248d61e87a4bf4348e5cc6757d52dd86069f16542080ad04c88cdef76d486a",
+    "observations": [
+      {
+        "offset": 37,
+        "op": "ldc",
+        "ref": "forge_transformer"
+      }
+    ]
+  },
+  {
+    "artifact": "installed-launcher",
+    "class": "net/minecraft/launcher/versions/ModpackType",
+    "method": "getByVersion",
+    "descriptor": "(Ljava/lang/String;)Lnet/minecraft/launcher/versions/ModpackType;",
+    "class_sha256": "d38e8619b155c6182610219d5be486e4202a0ba5bb338421e1450cbf6c194cdf",
+    "observations": [
+      {
+        "offset": 60,
+        "op": "getstatic",
+        "ref": "net/minecraft/launcher/versions/ModpackType.FORGE_1_13Lnet/minecraft/launcher/versions/ModpackType;"
+      },
+      {
+        "offset": 74,
+        "op": "getstatic",
+        "ref": "net/minecraft/launcher/versions/ModpackType.FORGE_LEGACY_ABSOLUTELnet/minecraft/launcher/versions/ModpackType;"
+      },
+      {
+        "offset": 88,
+        "op": "getstatic",
+        "ref": "net/minecraft/launcher/versions/ModpackType.FORGE_LEGACYLnet/minecraft/launcher/versions/ModpackType;"
+      }
+    ]
+  },
+  {
+    "artifact": "installed-launcher",
+    "class": "net/minecraft/launcher/versions/ModpackType",
+    "method": "$values",
+    "descriptor": "()[Lnet/minecraft/launcher/versions/ModpackType;",
+    "class_sha256": "d38e8619b155c6182610219d5be486e4202a0ba5bb338421e1450cbf6c194cdf",
+    "observations": [
+      {
+        "offset": 6,
+        "op": "getstatic",
+        "ref": "net/minecraft/launcher/versions/ModpackType.FORGE_LEGACYLnet/minecraft/launcher/versions/ModpackType;"
+      },
+      {
+        "offset": 12,
+        "op": "getstatic",
+        "ref": "net/minecraft/launcher/versions/ModpackType.FORGE_LEGACY_ABSOLUTELnet/minecraft/launcher/versions/ModpackType;"
+      },
+      {
+        "offset": 18,
+        "op": "getstatic",
+        "ref": "net/minecraft/launcher/versions/ModpackType.FORGE_1_13Lnet/minecraft/launcher/versions/ModpackType;"
+      }
+    ]
+  },
+  {
+    "artifact": "installed-launcher",
+    "class": "net/minecraft/launcher/versions/ModpackType",
+    "method": "<clinit>",
+    "descriptor": "()V",
+    "class_sha256": "d38e8619b155c6182610219d5be486e4202a0ba5bb338421e1450cbf6c194cdf",
+    "observations": [
+      {
+        "offset": 4,
+        "op": "ldc",
+        "ref": "FORGE_LEGACY"
+      },
+      {
+        "offset": 12,
+        "op": "putstatic",
+        "ref": "net/minecraft/launcher/versions/ModpackType.FORGE_LEGACYLnet/minecraft/launcher/versions/ModpackType;"
+      },
+      {
+        "offset": 19,
+        "op": "ldc",
+        "ref": "FORGE_LEGACY_ABSOLUTE"
+      },
+      {
+        "offset": 27,
+        "op": "putstatic",
+        "ref": "net/minecraft/launcher/versions/ModpackType.FORGE_LEGACY_ABSOLUTELnet/minecraft/launcher/versions/ModpackType;"
+      },
+      {
+        "offset": 34,
+        "op": "ldc",
+        "ref": "FORGE_1_13"
+      },
+      {
+        "offset": 42,
+        "op": "putstatic",
+        "ref": "net/minecraft/launcher/versions/ModpackType.FORGE_1_13Lnet/minecraft/launcher/versions/ModpackType;"
+      }
+    ]
+  },
+  {
+    "artifact": "installed-launcher",
+    "class": "net/minecraft/launcher/versions/ReleaseType$SubType$1",
+    "method": "isSubType",
+    "descriptor": "(Lnet/minecraft/launcher/versions/Version;)Z",
+    "class_sha256": "ff2cdc28fbb0be29976a591bc9e0eed63efaad5c0e6576cb3e86b1ae971583d0",
+    "observations": [
+      {
+        "offset": 63,
+        "op": "ldc",
+        "ref": "forge"
+      }
+    ]
+  },
+  {
+    "artifact": "installed-launcher",
+    "class": "net/minecraft/launcher/versions/VersionFamily",
+    "method": "doGuess",
+    "descriptor": "(Lnet/minecraft/launcher/updater/VersionSyncInfo;Ljava/lang/String;)Lnet/minecraft/launcher/versions/VersionFamily$Guess;",
+    "class_sha256": "7beed0aa5d31013590e085fedb6a47900398ab2a4b83c1b1b4dba46542fb8b4f",
+    "observations": [
+      {
+        "offset": 72,
+        "op": "ldc",
+        "ref": "forge"
+      },
+      {
+        "offset": 84,
+        "op": "ldc",
+        "ref": "Forge-???"
+      },
+      {
+        "offset": 98,
+        "op": "ldc",
+        "ref": "fabric"
+      },
+      {
+        "offset": 110,
+        "op": "ldc",
+        "ref": "Fabric-???"
+      }
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "RetrievedUtc": "2026-10-17T06:08:15.8835620Z",
+  "Identifier": "legacy-launcher-for-minecraft",
+  "Title": "Legacy Launcher for Minecraft",
+  "CreatorClaim": "Legacy Launcher Team",
+  "PublicDate": "2024-02-26 21:00:34",
+  "ArchiveLicenseField": null,
+  "Installer": {
+    "name": "LegacyLauncher_Installer_legacy.exe",
+    "size": "117751681",
+    "mtime": "1708981418",
+    "sha1": "00bddca8bba387a76d6f18fc942859acf9ff5a60",
+    "md5": "53eea8664d54198e1989301b12f795da",
+    "format": "Windows Executable",
+    "source": "original"
+  }
+}

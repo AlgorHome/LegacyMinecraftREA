@@ -1,0 +1,379 @@
+{
+  "summary": {
+    "legacy.properties": {
+      "files": 1,
+      "bytes": 96
+    },
+    "logs": {
+      "files": 4,
+      "bytes": 2284766
+    },
+    "legacy/Minecraft/tl.args": {
+      "files": 1,
+      "bytes": 125
+    },
+    "legacy/Minecraft/TL.exe": {
+      "files": 1,
+      "bytes": 409088
+    },
+    "legacy/Minecraft/tl.properties": {
+      "files": 1,
+      "bytes": 1880
+    },
+    "legacy/Minecraft/unins000.dat": {
+      "files": 1,
+      "bytes": 141107
+    },
+    "legacy/Minecraft/unins000.exe": {
+      "files": 1,
+      "bytes": 3593603
+    },
+    "legacy/Minecraft/game": {
+      "files": 4688,
+      "bytes": 588291591
+    },
+    "legacy/Minecraft/jre": {
+      "files": 774,
+      "bytes": 315398146
+    },
+    "legacy/Minecraft/launcher": {
+      "files": 74,
+      "bytes": 47507825
+    }
+  },
+  "selected_files": [
+    {
+      "path": "LegacyLauncher_Installer_legacy.exe",
+      "bytes": 117751681,
+      "sha256": "a7c997ba3c3e91c048f80f96f08754948428f6d3fe4001bab79c4ae09d06c5e0",
+      "pe": {
+        "format": "PE32",
+        "machine": "0x14c",
+        "architecture": "x86",
+        "subsystem": 2,
+        "entry_rva": "0xb5eec",
+        "timestamp_raw": 1676472856,
+        "sections": 10,
+        "inno_markers": [
+          "Inno Setup Setup Data",
+          "Inno Setup"
+        ]
+      }
+    },
+    {
+      "path": "legacy\\Minecraft\\TL.exe",
+      "bytes": 409088,
+      "sha256": "2b11f487e853e952dc677071202cbe25d6800ccaf3f93a3232c5eed715a1c033",
+      "pe": {
+        "format": "PE32",
+        "machine": "0x14c",
+        "architecture": "x86",
+        "subsystem": 2,
+        "entry_rva": "0x1590",
+        "timestamp_raw": 1653381278,
+        "sections": 9,
+        "inno_markers": []
+      }
+    },
+    {
+      "path": "legacy\\Minecraft\\unins000.exe",
+      "bytes": 3593603,
+      "sha256": "46b85011af3c4fb909e6795cb4d87cb72f7814f81bde4507ce1eea4e3bebf781",
+      "pe": {
+        "format": "PE32",
+        "machine": "0x14c",
+        "architecture": "x86",
+        "subsystem": 2,
+        "entry_rva": "0x2c6668",
+        "timestamp_raw": 1676472857,
+        "sections": 10,
+        "inno_markers": [
+          "Inno Setup Setup Data",
+          "Inno Setup"
+        ]
+      }
+    },
+    {
+      "path": "legacy\\Minecraft\\launcher\\bootstrap.jar",
+      "bytes": 11026138,
+      "sha256": "09ba7517c8a9b30780ff9a6de230b8905247835ae0da914d66991e2b3b4b6c4e",
+      "pe": null
+    },
+    {
+      "path": "legacy\\Minecraft\\launcher\\launcher.jar",
+      "bytes": 5496812,
+      "sha256": "364b9add9a3b0e74e553439b3f0e33a573bb5d28667adc028180d509b0459eec",
+      "pe": null
+    },
+    {
+      "path": "legacy\\Minecraft\\jre\\bin\\java.exe",
+      "bytes": 47344,
+      "sha256": "88929241f30cbb0ba439bfab1cd82cf6d092f776e5c73a452f80ed465355adec",
+      "pe": {
+        "format": "PE32+",
+        "machine": "0x8664",
+        "architecture": "x86_64",
+        "subsystem": 3,
+        "entry_rva": "0x1420",
+        "timestamp_raw": 3467587068,
+        "sections": 6,
+        "inno_markers": []
+      }
+    },
+    {
+      "path": "legacy\\Minecraft\\jre\\bin\\javaw.exe",
+      "bytes": 47344,
+      "sha256": "3850d4f443b2a97014a1dcb94db893f0b3396201a8573aa4c4b967ff61528ac6",
+      "pe": {
+        "format": "PE32+",
+        "machine": "0x8664",
+        "architecture": "x86_64",
+        "subsystem": 2,
+        "entry_rva": "0x1428",
+        "timestamp_raw": 1912555943,
+        "sections": 6,
+        "inno_markers": []
+      }
+    },
+    {
+      "path": "legacy\\Minecraft\\jre\\bin\\server\\jvm.dll",
+      "bytes": 12665584,
+      "sha256": "064a55423c55802d3ae7147c4f33d30d79d9b7f4f339c99fcb30c8759d0f8268",
+      "pe": {
+        "format": "PE32+",
+        "machine": "0x8664",
+        "architecture": "x86_64",
+        "subsystem": 2,
+        "entry_rva": "0x892afc",
+        "timestamp_raw": 155529455,
+        "sections": 6,
+        "inno_markers": []
+      }
+    },
+    {
+      "path": "legacy\\Minecraft\\game\\versions\\1.21.11\\natives\\glfw.dll",
+      "bytes": 496128,
+      "sha256": "affa7e54eb0dedce4a5721c327c1a16035edbbd039cd402e08107d6d2d55eb1a",
+      "pe": {
+        "format": "PE32+",
+        "machine": "0x8664",
+        "architecture": "x86_64",
+        "subsystem": 3,
+        "entry_rva": "0x151c0",
+        "timestamp_raw": 1692362470,
+        "sections": 7,
+        "inno_markers": []
+      }
+    },
+    {
+      "path": "legacy\\Minecraft\\game\\versions\\1.21.11\\natives\\jemalloc.dll",
+      "bytes": 398336,
+      "sha256": "9abf0095066ebab37b78968e11370a8078313e48cb5be8eda01f67623c6a6248",
+      "pe": {
+        "format": "PE32+",
+        "machine": "0x8664",
+        "architecture": "x86_64",
+        "subsystem": 2,
+        "entry_rva": "0x359bc",
+        "timestamp_raw": 1694802646,
+        "sections": 6,
+        "inno_markers": []
+      }
+    },
+    {
+      "path": "legacy\\Minecraft\\game\\versions\\1.21.11\\natives\\jna4102832794457777779.dll",
+      "bytes": 273408,
+      "sha256": "5a7ff949f6d93d86491eb5b26b1cfc60051168a60622650224b89995ac420023",
+      "pe": {
+        "format": "PE32+",
+        "machine": "0x8664",
+        "architecture": "x86_64",
+        "subsystem": 2,
+        "entry_rva": "0x198e0",
+        "timestamp_raw": 1714803378,
+        "sections": 7,
+        "inno_markers": []
+      }
+    },
+    {
+      "path": "legacy\\Minecraft\\game\\versions\\1.21.11\\natives\\lwjgl.dll",
+      "bytes": 479232,
+      "sha256": "a39adf52947fafd954c2a86ce031abb8c59825f7ee50337ac8c41e4280abe82d",
+      "pe": {
+        "format": "PE32+",
+        "machine": "0x8664",
+        "architecture": "x86_64",
+        "subsystem": 2,
+        "entry_rva": "0x257e0",
+        "timestamp_raw": 1694871707,
+        "sections": 6,
+        "inno_markers": []
+      }
+    },
+    {
+      "path": "legacy\\Minecraft\\game\\versions\\1.21.11\\natives\\lwjgl_opengl.dll",
+      "bytes": 364032,
+      "sha256": "fe200dc96ab31237a52facd6345d31f9740ef16dd411e5f9be014eaa30f89fb6",
+      "pe": {
+        "format": "PE32+",
+        "machine": "0x8664",
+        "architecture": "x86_64",
+        "subsystem": 2,
+        "entry_rva": "0x18bf4",
+        "timestamp_raw": 1694871730,
+        "sections": 6,
+        "inno_markers": []
+      }
+    },
+    {
+      "path": "legacy\\Minecraft\\game\\versions\\1.21.11\\natives\\lwjgl_stb.dll",
+      "bytes": 510464,
+      "sha256": "de03f38f8c7471b4924aa8bdf8724c181d1a7c20428dbce2ed301877e1d387e4",
+      "pe": {
+        "format": "PE32+",
+        "machine": "0x8664",
+        "architecture": "x86_64",
+        "subsystem": 2,
+        "entry_rva": "0x42898",
+        "timestamp_raw": 1694871738,
+        "sections": 6,
+        "inno_markers": []
+      }
+    },
+    {
+      "path": "legacy\\Minecraft\\game\\versions\\1.21.11\\natives\\OpenAL.dll",
+      "bytes": 1338368,
+      "sha256": "0630aa42492f78126da1c4d99769632e03c55b2e63b050efe7e3005e07e3e6fc",
+      "pe": {
+        "format": "PE32+",
+        "machine": "0x8664",
+        "architecture": "x86_64",
+        "subsystem": 3,
+        "entry_rva": "0x9a200",
+        "timestamp_raw": 1685468577,
+        "sections": 7,
+        "inno_markers": []
+      }
+    },
+    {
+      "path": "legacy\\Minecraft\\game\\versions\\1.21.11\\1.21.11.jar",
+      "bytes": 31152600,
+      "sha256": "1473c9489ac50fda3c435049a76a70d61a10b8610db27f5ba9d8756b686cd3bd",
+      "pe": null
+    },
+    {
+      "path": "legacy\\Minecraft\\game\\versions\\1.21.11\\1.21.11.jar.bak",
+      "bytes": 31152600,
+      "sha256": "1473c9489ac50fda3c435049a76a70d61a10b8610db27f5ba9d8756b686cd3bd",
+      "pe": null
+    },
+    {
+      "path": "legacy\\Minecraft\\jre\\java-runtime-delta\\windows-x64\\java-runtime-delta\\bin\\java.exe",
+      "bytes": 39424,
+      "sha256": "0afb1170b83c156dfdb7f54bb34c9b058064175c329a5d80b782bcc9dbaa2164",
+      "pe": {
+        "format": "PE32+",
+        "machine": "0x8664",
+        "architecture": "x86_64",
+        "subsystem": 3,
+        "entry_rva": "0x1434",
+        "timestamp_raw": 3518432371,
+        "sections": 6,
+        "inno_markers": []
+      }
+    },
+    {
+      "path": "legacy\\Minecraft\\jre\\java-runtime-delta\\windows-x64\\java-runtime-delta\\bin\\server\\jvm.dll",
+      "bytes": 13870080,
+      "sha256": "8b2da3280a300fc5d183da24cb578fa29d59f26c25ad29fcbdd0cc525a75cf26",
+      "pe": {
+        "format": "PE32+",
+        "machine": "0x8664",
+        "architecture": "x86_64",
+        "subsystem": 2,
+        "entry_rva": "0x94ee2c",
+        "timestamp_raw": 570255879,
+        "sections": 6,
+        "inno_markers": []
+      }
+    }
+  ],
+  "installer_sha1": "00bddca8bba387a76d6f18fc942859acf9ff5a60",
+  "installer_md5": "53eea8664d54198e1989301b12f795da",
+  "jars": {
+    "bootstrap.jar": {
+      "entries": 116,
+      "classes": 70,
+      "manifest": "Manifest-Version: 1.0\r\nMain-Class: org.springframework.boot.loader.JarLauncher\r\nStart-Class: net.legacylauncher.bootstrap.BootstrapStarter\r\nSpring-Boot-Version: 2.7.18\r\nSpring-Boot-Classes: BOOT-INF/classes/\r\nSpring-Boot-Lib: BOOT-INF/lib/\r\nSpring-Boot-Classpath-Index: BOOT-INF/classpath.idx\r\nSpring-Boot-Layers-Index: BOOT-INF/layers.idx\r\n\r\n",
+      "license_entries": []
+    },
+    "launcher.jar": {
+      "entries": 1329,
+      "classes": 1112,
+      "manifest": "Manifest-Version: 1.0\r\nMulti-Release: true\r\n\r\n",
+      "license_entries": [
+        "net/legacylauncher/managers/PersonalNoticeManager$Payload.class",
+        "net/legacylauncher/managers/PersonalNoticeManager.class",
+        "net/legacylauncher/ui/frames/FirstRunNotice$1.class",
+        "net/legacylauncher/ui/frames/FirstRunNotice$2.class",
+        "net/legacylauncher/ui/frames/FirstRunNotice.class",
+        "net/legacylauncher/ui/frames/InstallOpenGLCompatPackNotice$1.class",
+        "net/legacylauncher/ui/frames/InstallOpenGLCompatPackNotice.class",
+        "net/legacylauncher/ui/notice/",
+        "net/legacylauncher/ui/notice/DirectNoticeImage.class",
+        "net/legacylauncher/ui/notice/LauncherNoticeAction.class",
+        "net/legacylauncher/ui/notice/MainNoticePanel$1.class",
+        "net/legacylauncher/ui/notice/MainNoticePanel$2.class",
+        "net/legacylauncher/ui/notice/MainNoticePanel$3.class",
+        "net/legacylauncher/ui/notice/MainNoticePanel.class",
+        "net/legacylauncher/ui/notice/Notice.class",
+        "net/legacylauncher/ui/notice/NoticeAction.class",
+        "net/legacylauncher/ui/notice/NoticeCard$1.class",
+        "net/legacylauncher/ui/notice/NoticeCard$Button.class",
+        "net/legacylauncher/ui/notice/NoticeCard$ButtonPane.class",
+        "net/legacylauncher/ui/notice/NoticeCard$Popup$1.class",
+        "net/legacylauncher/ui/notice/NoticeCard$Popup.class",
+        "net/legacylauncher/ui/notice/NoticeCard.class",
+        "net/legacylauncher/ui/notice/NoticeDeserializer$1.class",
+        "net/legacylauncher/ui/notice/NoticeDeserializer.class",
+        "net/legacylauncher/ui/notice/NoticeEditorPane.class",
+        "net/legacylauncher/ui/notice/NoticeImage.class",
+        "net/legacylauncher/ui/notice/NoticeList.class",
+        "net/legacylauncher/ui/notice/NoticeManager.class",
+        "net/legacylauncher/ui/notice/NoticeManagerListener.class",
+        "net/legacylauncher/ui/notice/NoticePanel.class",
+        "net/legacylauncher/ui/notice/NoticePopup.class",
+        "net/legacylauncher/ui/notice/NoticeSidePanel$1.class",
+        "net/legacylauncher/ui/notice/NoticeSidePanel$ButtonPanel.class",
+        "net/legacylauncher/ui/notice/NoticeSidePanel$Page.class",
+        "net/legacylauncher/ui/notice/NoticeSidePanel.class",
+        "net/legacylauncher/ui/notice/NoticeTextSize.class",
+        "net/legacylauncher/ui/notice/OpenSceneAction.class",
+        "net/legacylauncher/ui/notice/ParamPair.class",
+        "net/legacylauncher/ui/notice/ServerNoticeAction.class",
+        "net/legacylauncher/ui/notice/SizeCalculator.class",
+        "net/legacylauncher/ui/notice/UrlNoticeAction.class",
+        "net/legacylauncher/ui/notice/UrlNoticeImage.class",
+        "net/legacylauncher/ui/scenes/NoticeScene$1.class",
+        "net/legacylauncher/ui/scenes/NoticeScene$2.class",
+        "net/legacylauncher/ui/scenes/NoticeScene$ButtonPanel$1.class",
+        "net/legacylauncher/ui/scenes/NoticeScene$ButtonPanel.class",
+        "net/legacylauncher/ui/scenes/NoticeScene.class",
+        "LICENSE.txt"
+      ]
+    }
+  },
+  "asset_verification": [
+    {
+      "index": "29.json",
+      "sha256": "f92b2a637abd71661ae5846717a187606be13a13d6162fcf6ebd45df465114e5",
+      "objects": 4591,
+      "present": 4591,
+      "sha1_valid": 4591
+    }
+  ],
+  "runtime_release_paths": [
+    "jre\\release",
+    "jre\\java-runtime-delta\\windows-x64\\java-runtime-delta\\release"
+  ]
+}

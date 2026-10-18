@@ -1,0 +1,56 @@
+{
+  "commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+  "repository": "https://github.com/AlgorHome/LegacyForge",
+  "analysis": "read-only static source; no build or runtime validation",
+  "sourceHashes": [
+    {
+      "sha256": "fad066071b9c8914350d719fd08e2ea516daa59b6087b83ba45c96bb4787eeaf",
+      "path": "MC.Xbox/launch/runtime_manager.cpp"
+    },
+    {
+      "sha256": "c37eade570d45fbdad0ba876be3347729b1000e579692c1819d059dbf80b5b12",
+      "path": "MC.Xbox/launch/minecraft_launch.cpp"
+    },
+    {
+      "sha256": "71873d00ddffae104a252497db098ace1634da6204b81a9d9c71b0fc56cefa95",
+      "path": "MC.Xbox/auth/minecraft_auth.cpp"
+    },
+    {
+      "sha256": "f33e679e9f120a9b7f66800c89fdbddaf938664449de729da96e09e3ca054261",
+      "path": "MC.Xbox/common/launch_diagnostics.h"
+    },
+    {
+      "sha256": "843bde309ed1b1a32a06e7f11430d93f8a63d485c79ca6677886fdce57954b32",
+      "path": "scripts/new-download-manifest.ps1"
+    },
+    {
+      "sha256": "0dde9a0c2e0e9b6f028fae5efe9d45a8a81a1e26e330bb72d42cacc3a4ad4d10",
+      "path": "glfw_shim/glfw_uwp.cpp"
+    },
+    {
+      "sha256": "34476f79eeb64dd71a1d6f9e92c99cf507466d42b78f33ba158eae68dbeff5c5",
+      "path": "MC.Xbox/ui/launcher_ui.cpp"
+    },
+    {
+      "sha256": "d8e39662957e68eacee24ae0abfa2dec85ede34cf2561e909a9db2f65def954f",
+      "path": "MC.Xbox/launch/loaders/fabric.cpp"
+    },
+    {
+      "sha256": "467e46d864fa9c4868bd5d8da5ab9ef23be6a681c136831dae273378769da001",
+      "path": "MC.Xbox/launch/loaders/forge.cpp"
+    },
+    {
+      "sha256": "343741ddc54ade76d25725e56e35b89ad169c160772ab5f514d93ccf4847eaf3",
+      "path": "MC.Xbox/launch/loaders/neoforge.cpp"
+    },
+    {
+      "sha256": "7dd25ee8a02f8e347c3bf718f8b615b48c30a0a03f1a5d118e082fdb4fa3916e",
+      "path": "MC.Xbox/mods/mods_browser.cpp"
+    },
+    {
+      "sha256": "acbd5fca365058b94dc5d01aacd13b5a67373eb8b5611b17cd5f539a4dba2a55",
+      "path": "config/versions.tsv"
+    }
+  ],
+  "checkout": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\legacyforge-d145343"
+}

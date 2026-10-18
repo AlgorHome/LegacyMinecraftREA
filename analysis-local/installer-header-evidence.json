@@ -1,0 +1,3304 @@
+{
+  "installer_sha256": "a7c997ba3c3e91c048f80f96f08754948428f6d3fe4001bab79c4ae09d06c5e0",
+  "version_markers": [
+    751888,
+    115841256
+  ],
+  "blocks": [
+    {
+      "offset": 115841320,
+      "stored_bytes": 999527,
+      "decoded_bytes": 5085511,
+      "header_crc_valid": true,
+      "chunk_crc_valid": true,
+      "chunks": 244,
+      "decoded_sha256": "b1c3a29ec0144f6b4613d0ba5d64f05c9693ec32d04000ffb7c21c20714927c3",
+      "strings": [
+        {
+          "offset": 4,
+          "value": "Legacy Launcher Stable"
+        },
+        {
+          "offset": 136,
+          "value": "Legacy Launcher Team "
+        },
+        {
+          "offset": 180,
+          "value": "https://llaun.ch"
+        },
+        {
+          "offset": 220,
+          "value": "https://llaun.ch "
+        },
+        {
+          "offset": 256,
+          "value": "https://llaun.ch"
+        },
+        {
+          "offset": 310,
+          "value": "{userappdata}\\.tlauncher\\legacy\\Minecraft"
+        },
+        {
+          "offset": 562,
+          "value": "*.exe,*.dll,*.chm"
+        },
+        {
+          "offset": 1814,
+          "value": "minecraft.gamedir="
+        },
+        {
+          "offset": 1910,
+          "value": "minecraft.jre.dir="
+        },
+        {
+          "offset": 3434,
+          "value": "%1 version %2"
+        },
+        {
+          "offset": 6002,
+          "value": "The system indicates that the following shared file is no longer in use by any programs. Would you like for Uninstall to remove this shared file?"
+        },
+        {
+          "offset": 6680,
+          "value": "Remove Shared File?"
+        },
+        {
+          "offset": 14262,
+          "value": "The drive or UNC share you selected does not exist or is not accessible. Please select another."
+        },
+        {
+          "offset": 14836,
+          "value": "\\\\server\\share"
+        },
+        {
+          "offset": 15316,
+          "value": "Please read the following License Agreement. You must accept the terms of this agreement before continuing with the installation."
+        },
+        {
+          "offset": 16514,
+          "value": "This program can only be installed on versions of Windows designed for the following processor architectures:"
+        },
+        {
+          "offset": 22198,
+          "value": "The setup files are corrupted, or are incompatible with this version of Setup. Please correct the problem or obtain a new copy of the program."
+        },
+        {
+          "offset": 25376,
+          "value": "The uninstall log file \"%1\" is in a format not recognized by this version of the uninstaller. Cannot uninstall"
+        },
+        {
+          "offset": 25792,
+          "value": "Installing Legacy Launcher"
+        },
+        {
+          "offset": 25846,
+          "value": "Now we're going to install Legacy Launcher for Minecraft."
+        },
+        {
+          "offset": 26064,
+          "value": "This program does not support the version of Windows your computer is running."
+        },
+        {
+          "offset": 26222,
+          "value": "This program cannot be installed on %1 version %2 or later."
+        },
+        {
+          "offset": 26342,
+          "value": "This program requires %1 version %2 or later."
+        },
+        {
+          "offset": 26458,
+          "value": "Thanks for choosing Legacy Launcher!"
+        },
+        {
+          "offset": 26554,
+          "value": "License Agreement"
+        },
+        {
+          "offset": 50359,
+          "value": "Russian translation by Dmitry Kann, http://www.dk-soft.org/"
+        },
+        {
+          "offset": 52801,
+          "value": " Legacy Launcher"
+        },
+        {
+          "offset": 52873,
+          "value": " Legacy Launcher "
+        },
+        {
+          "offset": 52913,
+          "value": " Minecraft."
+        },
+        {
+          "offset": 53503,
+          "value": " Legacy Launcher!"
+        },
+        {
+          "offset": 55824,
+          "value": "NameAndVersion"
+        },
+        {
+          "offset": 55856,
+          "value": "%1 version %2"
+        },
+        {
+          "offset": 57062,
+          "value": "NameAndVersion"
+        },
+        {
+          "offset": 59528,
+          "value": "{app}\\TL.exe"
+        },
+        {
+          "offset": 59756,
+          "value": "{app}\\launcher\\bootstrap.jar"
+        },
+        {
+          "offset": 59895,
+          "value": "{app}\\launcher\\launcher.jar"
+        },
+        {
+          "offset": 60032,
+          "value": "{app}\\launcher\\libraries\\com\\fasterxml\\jackson\\core\\jackson-core\\2.13.0\\jackson-core-2.13.0.jar"
+        },
+        {
+          "offset": 60305,
+          "value": "{app}\\launcher\\libraries\\com\\github\\zafarkhaja\\java-semver\\0.9.0\\java-semver-0.9.0.jar"
+        },
+        {
+          "offset": 60560,
+          "value": "{app}\\launcher\\libraries\\com\\google\\code\\findbugs\\jsr305\\3.0.2\\jsr305-3.0.2.jar"
+        },
+        {
+          "offset": 60801,
+          "value": "{app}\\launcher\\libraries\\com\\google\\code\\gson\\gson\\2.8.9\\gson-2.8.9.jar"
+        },
+        {
+          "offset": 61026,
+          "value": "{app}\\launcher\\libraries\\com\\google\\errorprone\\error_prone_annotations\\2.7.1\\error_prone_annotations-2.7.1.jar"
+        },
+        {
+          "offset": 61329,
+          "value": "{app}\\launcher\\libraries\\com\\google\\guava\\failureaccess\\1.0.1\\failureaccess-1.0.1.jar"
+        },
+        {
+          "offset": 61582,
+          "value": "{app}\\launcher\\libraries\\com\\google\\guava\\guava\\31.0.1-jre\\guava-31.0.1-jre.jar"
+        },
+        {
+          "offset": 61823,
+          "value": "{app}\\launcher\\libraries\\com\\google\\guava\\listenablefuture\\9999.0-empty-to-avoid-conflict-with-guava\\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"
+        },
+        {
+          "offset": 62232,
+          "value": "{app}\\launcher\\libraries\\com\\google\\j2objc\\j2objc-annotations\\1.3\\j2objc-annotations-1.3.jar"
+        },
+        {
+          "offset": 62499,
+          "value": "{app}\\launcher\\libraries\\com\\moandjiezana\\toml\\toml4j\\0.7.2\\toml4j-0.7.2.jar"
+        },
+        {
+          "offset": 62734,
+          "value": "{app}\\launcher\\libraries\\com\\mojang\\authlib\\1.5.24\\authlib-1.5.24.jar"
+        },
+        {
+          "offset": 62955,
+          "value": "{app}\\launcher\\libraries\\com\\timgroup\\java-statsd-client\\3.1.0\\java-statsd-client-3.1.0.jar"
+        },
+        {
+          "offset": 63220,
+          "value": "{app}\\launcher\\libraries\\commons-codec\\commons-codec\\1.11\\commons-codec-1.11.jar"
+        },
+        {
+          "offset": 63463,
+          "value": "{app}\\launcher\\libraries\\commons-io\\commons-io\\2.11.0\\commons-io-2.11.0.jar"
+        },
+        {
+          "offset": 63696,
+          "value": "{app}\\launcher\\libraries\\commons-logging\\commons-logging\\1.2\\commons-logging-1.2.jar"
+        },
+        {
+          "offset": 63947,
+          "value": "{app}\\launcher\\libraries\\io\\sentry\\sentry\\1.7.30\\sentry-1.7.30.jar"
+        },
+        {
+          "offset": 64162,
+          "value": "{app}\\launcher\\libraries\\me\\cortex\\jarscanner\\1.1\\jarscanner-1.1.jar"
+        },
+        {
+          "offset": 64381,
+          "value": "{app}\\launcher\\libraries\\net\\sf\\jopt-simple\\jopt-simple\\5.0.4\\jopt-simple-5.0.4.jar"
+        },
+        {
+          "offset": 64630,
+          "value": "{app}\\launcher\\libraries\\org\\apache\\commons\\commons-compress\\1.21\\commons-compress-1.21.jar"
+        },
+        {
+          "offset": 64895,
+          "value": "{app}\\launcher\\libraries\\org\\apache\\commons\\commons-lang3\\3.12.0\\commons-lang3-3.12.0.jar"
+        },
+        {
+          "offset": 65156,
+          "value": "{app}\\launcher\\libraries\\org\\apache\\httpcomponents\\fluent-hc\\4.5.13\\fluent-hc-4.5.13.jar"
+        },
+        {
+          "offset": 65415,
+          "value": "{app}\\launcher\\libraries\\org\\apache\\httpcomponents\\httpclient\\4.5.13\\httpclient-4.5.13.jar"
+        },
+        {
+          "offset": 65678,
+          "value": "{app}\\launcher\\libraries\\org\\apache\\httpcomponents\\httpcore\\4.4.13\\httpcore-4.4.13.jar"
+        },
+        {
+          "offset": 65933,
+          "value": "{app}\\launcher\\libraries\\org\\apache\\logging\\log4j\\log4j-1.2-api\\2.19.0\\log4j-1.2-api-2.19.0.jar"
+        },
+        {
+          "offset": 66206,
+          "value": "{app}\\launcher\\libraries\\org\\apache\\logging\\log4j\\log4j-api\\2.19.0\\log4j-api-2.19.0.jar"
+        },
+        {
+          "offset": 66463,
+          "value": "{app}\\launcher\\libraries\\org\\apache\\logging\\log4j\\log4j-core\\2.19.0\\log4j-core-2.19.0.jar"
+        },
+        {
+          "offset": 66724,
+          "value": "{app}\\launcher\\libraries\\org\\apache\\logging\\log4j\\log4j-slf4j2-impl\\2.19.0\\log4j-slf4j2-impl-2.19.0.jar"
+        },
+        {
+          "offset": 67013,
+          "value": "{app}\\launcher\\libraries\\org\\checkerframework\\checker-qual\\3.12.0\\checker-qual-3.12.0.jar"
+        },
+        {
+          "offset": 67274,
+          "value": "{app}\\launcher\\libraries\\org\\jdom\\jdom\\2.0.2\\jdom-2.0.2.jar"
+        },
+        {
+          "offset": 67475,
+          "value": "{app}\\launcher\\libraries\\org\\nanohttpd\\nanohttpd\\2.3.1\\nanohttpd-2.3.1.jar"
+        },
+        {
+          "offset": 67706,
+          "value": "{app}\\launcher\\libraries\\org\\slf4j\\slf4j-api\\2.0.1\\slf4j-api-2.0.1.jar"
+        },
+        {
+          "offset": 67929,
+          "value": "{app}\\launcher\\libraries\\org\\tukaani\\xz\\1.9\\xz-1.9.jar"
+        },
+        {
+          "offset": 68120,
+          "value": "{app}\\launcher\\libraries\\ru\\turikhay\\app\\nstweaker\\1.0\\nstweaker-1.0.jar"
+        },
+        {
+          "offset": 68347,
+          "value": "{app}\\launcher\\libraries\\ru\\turikhay\\jvd\\1.0\\jvd-1.0.jar"
+        },
+        {
+          "offset": 68542,
+          "value": "{app}\\jre\\DISCLAIMER"
+        },
+        {
+          "offset": 68701,
+          "value": "{app}\\jre\\OPENJFX_LICENSE"
+        },
+        {
+          "offset": 68870,
+          "value": "{app}\\jre\\readme.txt"
+        },
+        {
+          "offset": 69029,
+          "value": "{app}\\jre\\release"
+        },
+        {
+          "offset": 69182,
+          "value": "{app}\\jre\\Welcome.html"
+        },
+        {
+          "offset": 69345,
+          "value": "{app}\\jre\\bin\\api-ms-win-core-console-l1-1-0.dll"
+        },
+        {
+          "offset": 69560,
+          "value": "{app}\\jre\\bin\\api-ms-win-core-console-l1-2-0.dll"
+        },
+        {
+          "offset": 69775,
+          "value": "{app}\\jre\\bin\\api-ms-win-core-datetime-l1-1-0.dll"
+        },
+        {
+          "offset": 69992,
+          "value": "{app}\\jre\\bin\\api-ms-win-core-debug-l1-1-0.dll"
+        },
+        {
+          "offset": 70203,
+          "value": "{app}\\jre\\bin\\api-ms-win-core-errorhandling-l1-1-0.dll"
+        },
+        {
+          "offset": 70430,
+          "value": "{app}\\jre\\bin\\api-ms-win-core-fibers-l1-1-0.dll"
+        },
+        {
+          "offset": 70643,
+          "value": "{app}\\jre\\bin\\api-ms-win-core-file-l1-1-0.dll"
+        },
+        {
+          "offset": 70852,
+          "value": "{app}\\jre\\bin\\api-ms-win-core-file-l1-2-0.dll"
+        },
+        {
+          "offset": 71061,
+          "value": "{app}\\jre\\bin\\api-ms-win-core-file-l2-1-0.dll"
+        },
+        {
+          "offset": 71270,
+          "value": "{app}\\jre\\bin\\api-ms-win-core-handle-l1-1-0.dll"
+        },
+        {
+          "offset": 71483,
+          "value": "{app}\\jre\\bin\\api-ms-win-core-heap-l1-1-0.dll"
+        },
+        {
+          "offset": 71692,
+          "value": "{app}\\jre\\bin\\api-ms-win-core-interlocked-l1-1-0.dll"
+        },
+        {
+          "offset": 71915,
+          "value": "{app}\\jre\\bin\\api-ms-win-core-libraryloader-l1-1-0.dll"
+        },
+        {
+          "offset": 72142,
+          "value": "{app}\\jre\\bin\\api-ms-win-core-localization-l1-2-0.dll"
+        },
+        {
+          "offset": 72367,
+          "value": "{app}\\jre\\bin\\api-ms-win-core-memory-l1-1-0.dll"
+        },
+        {
+          "offset": 72580,
+          "value": "{app}\\jre\\bin\\api-ms-win-core-namedpipe-l1-1-0.dll"
+        },
+        {
+          "offset": 72799,
+          "value": "{app}\\jre\\bin\\api-ms-win-core-processenvironment-l1-1-0.dll"
+        },
+        {
+          "offset": 73036,
+          "value": "{app}\\jre\\bin\\api-ms-win-core-processthreads-l1-1-0.dll"
+        },
+        {
+          "offset": 73265,
+          "value": "{app}\\jre\\bin\\api-ms-win-core-processthreads-l1-1-1.dll"
+        },
+        {
+          "offset": 73494,
+          "value": "{app}\\jre\\bin\\api-ms-win-core-profile-l1-1-0.dll"
+        },
+        {
+          "offset": 73709,
+          "value": "{app}\\jre\\bin\\api-ms-win-core-rtlsupport-l1-1-0.dll"
+        },
+        {
+          "offset": 73930,
+          "value": "{app}\\jre\\bin\\api-ms-win-core-string-l1-1-0.dll"
+        },
+        {
+          "offset": 74143,
+          "value": "{app}\\jre\\bin\\api-ms-win-core-synch-l1-1-0.dll"
+        },
+        {
+          "offset": 74354,
+          "value": "{app}\\jre\\bin\\api-ms-win-core-synch-l1-2-0.dll"
+        },
+        {
+          "offset": 74565,
+          "value": "{app}\\jre\\bin\\api-ms-win-core-sysinfo-l1-1-0.dll"
+        },
+        {
+          "offset": 74780,
+          "value": "{app}\\jre\\bin\\api-ms-win-core-timezone-l1-1-0.dll"
+        },
+        {
+          "offset": 74997,
+          "value": "{app}\\jre\\bin\\api-ms-win-core-util-l1-1-0.dll"
+        },
+        {
+          "offset": 75206,
+          "value": "{app}\\jre\\bin\\api-ms-win-crt-conio-l1-1-0.dll"
+        },
+        {
+          "offset": 75415,
+          "value": "{app}\\jre\\bin\\api-ms-win-crt-convert-l1-1-0.dll"
+        },
+        {
+          "offset": 75628,
+          "value": "{app}\\jre\\bin\\api-ms-win-crt-environment-l1-1-0.dll"
+        },
+        {
+          "offset": 75849,
+          "value": "{app}\\jre\\bin\\api-ms-win-crt-filesystem-l1-1-0.dll"
+        },
+        {
+          "offset": 76068,
+          "value": "{app}\\jre\\bin\\api-ms-win-crt-heap-l1-1-0.dll"
+        },
+        {
+          "offset": 76275,
+          "value": "{app}\\jre\\bin\\api-ms-win-crt-locale-l1-1-0.dll"
+        },
+        {
+          "offset": 76486,
+          "value": "{app}\\jre\\bin\\api-ms-win-crt-math-l1-1-0.dll"
+        },
+        {
+          "offset": 76693,
+          "value": "{app}\\jre\\bin\\api-ms-win-crt-multibyte-l1-1-0.dll"
+        },
+        {
+          "offset": 76910,
+          "value": "{app}\\jre\\bin\\api-ms-win-crt-private-l1-1-0.dll"
+        },
+        {
+          "offset": 77123,
+          "value": "{app}\\jre\\bin\\api-ms-win-crt-process-l1-1-0.dll"
+        },
+        {
+          "offset": 77336,
+          "value": "{app}\\jre\\bin\\api-ms-win-crt-runtime-l1-1-0.dll"
+        },
+        {
+          "offset": 77549,
+          "value": "{app}\\jre\\bin\\api-ms-win-crt-stdio-l1-1-0.dll"
+        },
+        {
+          "offset": 77758,
+          "value": "{app}\\jre\\bin\\api-ms-win-crt-string-l1-1-0.dll"
+        },
+        {
+          "offset": 77969,
+          "value": "{app}\\jre\\bin\\api-ms-win-crt-time-l1-1-0.dll"
+        },
+        {
+          "offset": 78176,
+          "value": "{app}\\jre\\bin\\api-ms-win-crt-utility-l1-1-0.dll"
+        },
+        {
+          "offset": 78389,
+          "value": "{app}\\jre\\bin\\awt.dll"
+        },
+        {
+          "offset": 78550,
+          "value": "{app}\\jre\\bin\\decora_sse.dll"
+        },
+        {
+          "offset": 78725,
+          "value": "{app}\\jre\\bin\\dt_socket.dll"
+        },
+        {
+          "offset": 78898,
+          "value": "{app}\\jre\\bin\\fontmanager.dll"
+        },
+        {
+          "offset": 79075,
+          "value": "{app}\\jre\\bin\\freetype.dll"
+        },
+        {
+          "offset": 79246,
+          "value": "{app}\\jre\\bin\\fxplugins.dll"
+        },
+        {
+          "offset": 79419,
+          "value": "{app}\\jre\\bin\\glass.dll"
+        },
+        {
+          "offset": 79584,
+          "value": "{app}\\jre\\bin\\glib-lite.dll"
+        },
+        {
+          "offset": 79757,
+          "value": "{app}\\jre\\bin\\gstreamer-lite.dll"
+        },
+        {
+          "offset": 79940,
+          "value": "{app}\\jre\\bin\\instrument.dll"
+        },
+        {
+          "offset": 80115,
+          "value": "{app}\\jre\\bin\\j2gss.dll"
+        },
+        {
+          "offset": 80280,
+          "value": "{app}\\jre\\bin\\j2pcsc.dll"
+        },
+        {
+          "offset": 80447,
+          "value": "{app}\\jre\\bin\\j2pkcs11.dll"
+        },
+        {
+          "offset": 80618,
+          "value": "{app}\\jre\\bin\\jaas.dll"
+        },
+        {
+          "offset": 80781,
+          "value": "{app}\\jre\\bin\\jabswitch.exe"
+        },
+        {
+          "offset": 80954,
+          "value": "{app}\\jre\\bin\\jaccessinspector.exe"
+        },
+        {
+          "offset": 81141,
+          "value": "{app}\\jre\\bin\\jaccesswalker.exe"
+        },
+        {
+          "offset": 81322,
+          "value": "{app}\\jre\\bin\\java.dll"
+        },
+        {
+          "offset": 81485,
+          "value": "{app}\\jre\\bin\\java.exe"
+        },
+        {
+          "offset": 81648,
+          "value": "{app}\\jre\\bin\\javaaccessbridge.dll"
+        },
+        {
+          "offset": 81835,
+          "value": "{app}\\jre\\bin\\javafx_font.dll"
+        },
+        {
+          "offset": 82012,
+          "value": "{app}\\jre\\bin\\javafx_iio.dll"
+        },
+        {
+          "offset": 82187,
+          "value": "{app}\\jre\\bin\\javajpeg.dll"
+        },
+        {
+          "offset": 82358,
+          "value": "{app}\\jre\\bin\\javaw.exe"
+        },
+        {
+          "offset": 82523,
+          "value": "{app}\\jre\\bin\\jawt.dll"
+        },
+        {
+          "offset": 82686,
+          "value": "{app}\\jre\\bin\\jdwp.dll"
+        },
+        {
+          "offset": 82849,
+          "value": "{app}\\jre\\bin\\jfr.exe"
+        },
+        {
+          "offset": 83010,
+          "value": "{app}\\jre\\bin\\jfxmedia.dll"
+        },
+        {
+          "offset": 83181,
+          "value": "{app}\\jre\\bin\\jfxwebkit.dll"
+        },
+        {
+          "offset": 83354,
+          "value": "{app}\\jre\\bin\\jimage.dll"
+        },
+        {
+          "offset": 83521,
+          "value": "{app}\\jre\\bin\\jli.dll"
+        },
+        {
+          "offset": 83682,
+          "value": "{app}\\jre\\bin\\jrunscript.exe"
+        },
+        {
+          "offset": 83857,
+          "value": "{app}\\jre\\bin\\jsound.dll"
+        },
+        {
+          "offset": 84024,
+          "value": "{app}\\jre\\bin\\jsvml.dll"
+        },
+        {
+          "offset": 84189,
+          "value": "{app}\\jre\\bin\\keytool.exe"
+        },
+        {
+          "offset": 84358,
+          "value": "{app}\\jre\\bin\\kinit.exe"
+        },
+        {
+          "offset": 84523,
+          "value": "{app}\\jre\\bin\\klist.exe"
+        },
+        {
+          "offset": 84688,
+          "value": "{app}\\jre\\bin\\ktab.exe"
+        },
+        {
+          "offset": 84851,
+          "value": "{app}\\jre\\bin\\lcms.dll"
+        },
+        {
+          "offset": 85014,
+          "value": "{app}\\jre\\bin\\management.dll"
+        },
+        {
+          "offset": 85189,
+          "value": "{app}\\jre\\bin\\management_agent.dll"
+        },
+        {
+          "offset": 85376,
+          "value": "{app}\\jre\\bin\\management_ext.dll"
+        },
+        {
+          "offset": 85559,
+          "value": "{app}\\jre\\bin\\mlib_image.dll"
+        },
+        {
+          "offset": 85734,
+          "value": "{app}\\jre\\bin\\msvcp140.dll"
+        },
+        {
+          "offset": 85905,
+          "value": "{app}\\jre\\bin\\net.dll"
+        },
+        {
+          "offset": 86066,
+          "value": "{app}\\jre\\bin\\nio.dll"
+        },
+        {
+          "offset": 86227,
+          "value": "{app}\\jre\\bin\\prefs.dll"
+        },
+        {
+          "offset": 86392,
+          "value": "{app}\\jre\\bin\\prism_common.dll"
+        },
+        {
+          "offset": 86571,
+          "value": "{app}\\jre\\bin\\prism_d3d.dll"
+        },
+        {
+          "offset": 86744,
+          "value": "{app}\\jre\\bin\\prism_sw.dll"
+        },
+        {
+          "offset": 86915,
+          "value": "{app}\\jre\\bin\\rmi.dll"
+        },
+        {
+          "offset": 87076,
+          "value": "{app}\\jre\\bin\\rmiregistry.exe"
+        },
+        {
+          "offset": 87253,
+          "value": "{app}\\jre\\bin\\splashscreen.dll"
+        },
+        {
+          "offset": 87432,
+          "value": "{app}\\jre\\bin\\sspi_bridge.dll"
+        },
+        {
+          "offset": 87609,
+          "value": "{app}\\jre\\bin\\sunmscapi.dll"
+        },
+        {
+          "offset": 87782,
+          "value": "{app}\\jre\\bin\\ucrtbase.dll"
+        },
+        {
+          "offset": 87953,
+          "value": "{app}\\jre\\bin\\vcruntime140.dll"
+        },
+        {
+          "offset": 88132,
+          "value": "{app}\\jre\\bin\\vcruntime140_1.dll"
+        },
+        {
+          "offset": 88315,
+          "value": "{app}\\jre\\bin\\verify.dll"
+        },
+        {
+          "offset": 88482,
+          "value": "{app}\\jre\\bin\\w2k_lsa_auth.dll"
+        },
+        {
+          "offset": 88661,
+          "value": "{app}\\jre\\bin\\windowsaccessbridge-64.dll"
+        },
+        {
+          "offset": 88860,
+          "value": "{app}\\jre\\bin\\WinFallbackLookup.dll"
+        },
+        {
+          "offset": 89049,
+          "value": "{app}\\jre\\bin\\zip.dll"
+        },
+        {
+          "offset": 89210,
+          "value": "{app}\\jre\\bin\\server\\classes.jsa"
+        },
+        {
+          "offset": 89393,
+          "value": "{app}\\jre\\bin\\server\\classes_nocoops.jsa"
+        },
+        {
+          "offset": 89592,
+          "value": "{app}\\jre\\bin\\server\\jvm.dll"
+        },
+        {
+          "offset": 89767,
+          "value": "{app}\\jre\\conf\\logging.properties"
+        },
+        {
+          "offset": 89952,
+          "value": "{app}\\jre\\conf\\net.properties"
+        },
+        {
+          "offset": 90129,
+          "value": "{app}\\jre\\conf\\sound.properties"
+        },
+        {
+          "offset": 90310,
+          "value": "{app}\\jre\\conf\\management\\jmxremote.access"
+        },
+        {
+          "offset": 90513,
+          "value": "{app}\\jre\\conf\\management\\jmxremote.password.template"
+        },
+        {
+          "offset": 90738,
+          "value": "{app}\\jre\\conf\\management\\management.properties"
+        },
+        {
+          "offset": 90951,
+          "value": "{app}\\jre\\conf\\security\\java.policy"
+        },
+        {
+          "offset": 91140,
+          "value": "{app}\\jre\\conf\\security\\java.security"
+        },
+        {
+          "offset": 91333,
+          "value": "{app}\\jre\\conf\\security\\policy\\README.txt"
+        },
+        {
+          "offset": 91534,
+          "value": "{app}\\jre\\conf\\security\\policy\\limited\\default_local.policy"
+        },
+        {
+          "offset": 91771,
+          "value": "{app}\\jre\\conf\\security\\policy\\limited\\default_US_export.policy"
+        },
+        {
+          "offset": 92016,
+          "value": "{app}\\jre\\conf\\security\\policy\\limited\\exempt_local.policy"
+        },
+        {
+          "offset": 92251,
+          "value": "{app}\\jre\\conf\\security\\policy\\unlimited\\default_local.policy"
+        },
+        {
+          "offset": 92492,
+          "value": "{app}\\jre\\conf\\security\\policy\\unlimited\\default_US_export.policy"
+        },
+        {
+          "offset": 92741,
+          "value": "{app}\\jre\\legal\\com.azul.crs.client\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 92978,
+          "value": "{app}\\jre\\legal\\com.azul.crs.client\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 93205,
+          "value": "{app}\\jre\\legal\\com.azul.crs.client\\LICENSE"
+        },
+        {
+          "offset": 93410,
+          "value": "{app}\\jre\\legal\\com.azul.tooling\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 93641,
+          "value": "{app}\\jre\\legal\\com.azul.tooling\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 93862,
+          "value": "{app}\\jre\\legal\\com.azul.tooling\\LICENSE"
+        },
+        {
+          "offset": 94061,
+          "value": "{app}\\jre\\legal\\java.base\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 94278,
+          "value": "{app}\\jre\\legal\\java.base\\aes.md"
+        },
+        {
+          "offset": 94461,
+          "value": "{app}\\jre\\legal\\java.base\\asm.md"
+        },
+        {
+          "offset": 94644,
+          "value": "{app}\\jre\\legal\\java.base\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 94851,
+          "value": "{app}\\jre\\legal\\java.base\\c-libutl.md"
+        },
+        {
+          "offset": 95044,
+          "value": "{app}\\jre\\legal\\java.base\\cldr.md"
+        },
+        {
+          "offset": 95229,
+          "value": "{app}\\jre\\legal\\java.base\\icu.md"
+        },
+        {
+          "offset": 95412,
+          "value": "{app}\\jre\\legal\\java.base\\LICENSE"
+        },
+        {
+          "offset": 95597,
+          "value": "{app}\\jre\\legal\\java.base\\public_suffix.md"
+        },
+        {
+          "offset": 95800,
+          "value": "{app}\\jre\\legal\\java.base\\unicode.md"
+        },
+        {
+          "offset": 95991,
+          "value": "{app}\\jre\\legal\\java.base\\wepoll.md"
+        },
+        {
+          "offset": 96180,
+          "value": "{app}\\jre\\legal\\java.base\\zlib.md"
+        },
+        {
+          "offset": 96365,
+          "value": "{app}\\jre\\legal\\java.compiler\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 96590,
+          "value": "{app}\\jre\\legal\\java.compiler\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 96805,
+          "value": "{app}\\jre\\legal\\java.compiler\\LICENSE"
+        },
+        {
+          "offset": 96998,
+          "value": "{app}\\jre\\legal\\java.datatransfer\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 97231,
+          "value": "{app}\\jre\\legal\\java.datatransfer\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 97454,
+          "value": "{app}\\jre\\legal\\java.datatransfer\\LICENSE"
+        },
+        {
+          "offset": 97655,
+          "value": "{app}\\jre\\legal\\java.desktop\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 97878,
+          "value": "{app}\\jre\\legal\\java.desktop\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 98091,
+          "value": "{app}\\jre\\legal\\java.desktop\\colorimaging.md"
+        },
+        {
+          "offset": 98298,
+          "value": "{app}\\jre\\legal\\java.desktop\\freetype.md"
+        },
+        {
+          "offset": 98497,
+          "value": "{app}\\jre\\legal\\java.desktop\\giflib.md"
+        },
+        {
+          "offset": 98692,
+          "value": "{app}\\jre\\legal\\java.desktop\\harfbuzz.md"
+        },
+        {
+          "offset": 98891,
+          "value": "{app}\\jre\\legal\\java.desktop\\jpeg.md"
+        },
+        {
+          "offset": 99082,
+          "value": "{app}\\jre\\legal\\java.desktop\\lcms.md"
+        },
+        {
+          "offset": 99273,
+          "value": "{app}\\jre\\legal\\java.desktop\\libpng.md"
+        },
+        {
+          "offset": 99468,
+          "value": "{app}\\jre\\legal\\java.desktop\\LICENSE"
+        },
+        {
+          "offset": 99659,
+          "value": "{app}\\jre\\legal\\java.desktop\\mesa3d.md"
+        },
+        {
+          "offset": 99854,
+          "value": "{app}\\jre\\legal\\java.instrument\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 100083,
+          "value": "{app}\\jre\\legal\\java.instrument\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 100302,
+          "value": "{app}\\jre\\legal\\java.instrument\\LICENSE"
+        },
+        {
+          "offset": 100499,
+          "value": "{app}\\jre\\legal\\java.logging\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 100722,
+          "value": "{app}\\jre\\legal\\java.logging\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 100935,
+          "value": "{app}\\jre\\legal\\java.logging\\LICENSE"
+        },
+        {
+          "offset": 101126,
+          "value": "{app}\\jre\\legal\\java.management\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 101355,
+          "value": "{app}\\jre\\legal\\java.management\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 101574,
+          "value": "{app}\\jre\\legal\\java.management\\LICENSE"
+        },
+        {
+          "offset": 101771,
+          "value": "{app}\\jre\\legal\\java.management.rmi\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 102008,
+          "value": "{app}\\jre\\legal\\java.management.rmi\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 102235,
+          "value": "{app}\\jre\\legal\\java.management.rmi\\LICENSE"
+        },
+        {
+          "offset": 102440,
+          "value": "{app}\\jre\\legal\\java.naming\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 102661,
+          "value": "{app}\\jre\\legal\\java.naming\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 102872,
+          "value": "{app}\\jre\\legal\\java.naming\\LICENSE"
+        },
+        {
+          "offset": 103061,
+          "value": "{app}\\jre\\legal\\java.net.http\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 103286,
+          "value": "{app}\\jre\\legal\\java.net.http\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 103501,
+          "value": "{app}\\jre\\legal\\java.net.http\\LICENSE"
+        },
+        {
+          "offset": 103694,
+          "value": "{app}\\jre\\legal\\java.prefs\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 103913,
+          "value": "{app}\\jre\\legal\\java.prefs\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 104122,
+          "value": "{app}\\jre\\legal\\java.prefs\\LICENSE"
+        },
+        {
+          "offset": 104309,
+          "value": "{app}\\jre\\legal\\java.rmi\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 104524,
+          "value": "{app}\\jre\\legal\\java.rmi\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 104729,
+          "value": "{app}\\jre\\legal\\java.rmi\\LICENSE"
+        },
+        {
+          "offset": 104912,
+          "value": "{app}\\jre\\legal\\java.scripting\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 105139,
+          "value": "{app}\\jre\\legal\\java.scripting\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 105356,
+          "value": "{app}\\jre\\legal\\java.scripting\\LICENSE"
+        },
+        {
+          "offset": 105551,
+          "value": "{app}\\jre\\legal\\java.se\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 105764,
+          "value": "{app}\\jre\\legal\\java.se\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 105967,
+          "value": "{app}\\jre\\legal\\java.se\\LICENSE"
+        },
+        {
+          "offset": 106148,
+          "value": "{app}\\jre\\legal\\java.security.jgss\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 106383,
+          "value": "{app}\\jre\\legal\\java.security.jgss\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 106608,
+          "value": "{app}\\jre\\legal\\java.security.jgss\\LICENSE"
+        },
+        {
+          "offset": 106811,
+          "value": "{app}\\jre\\legal\\java.security.sasl\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 107046,
+          "value": "{app}\\jre\\legal\\java.security.sasl\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 107271,
+          "value": "{app}\\jre\\legal\\java.security.sasl\\LICENSE"
+        },
+        {
+          "offset": 107474,
+          "value": "{app}\\jre\\legal\\java.smartcardio\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 107705,
+          "value": "{app}\\jre\\legal\\java.smartcardio\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 107926,
+          "value": "{app}\\jre\\legal\\java.smartcardio\\LICENSE"
+        },
+        {
+          "offset": 108125,
+          "value": "{app}\\jre\\legal\\java.sql\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 108340,
+          "value": "{app}\\jre\\legal\\java.sql\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 108545,
+          "value": "{app}\\jre\\legal\\java.sql\\LICENSE"
+        },
+        {
+          "offset": 108728,
+          "value": "{app}\\jre\\legal\\java.sql.rowset\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 108957,
+          "value": "{app}\\jre\\legal\\java.sql.rowset\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 109176,
+          "value": "{app}\\jre\\legal\\java.sql.rowset\\LICENSE"
+        },
+        {
+          "offset": 109373,
+          "value": "{app}\\jre\\legal\\java.transaction.xa\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 109610,
+          "value": "{app}\\jre\\legal\\java.transaction.xa\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 109837,
+          "value": "{app}\\jre\\legal\\java.transaction.xa\\LICENSE"
+        },
+        {
+          "offset": 110042,
+          "value": "{app}\\jre\\legal\\java.xml\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 110257,
+          "value": "{app}\\jre\\legal\\java.xml\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 110462,
+          "value": "{app}\\jre\\legal\\java.xml\\bcel.md"
+        },
+        {
+          "offset": 110645,
+          "value": "{app}\\jre\\legal\\java.xml\\dom.md"
+        },
+        {
+          "offset": 110826,
+          "value": "{app}\\jre\\legal\\java.xml\\jcup.md"
+        },
+        {
+          "offset": 111009,
+          "value": "{app}\\jre\\legal\\java.xml\\LICENSE"
+        },
+        {
+          "offset": 111192,
+          "value": "{app}\\jre\\legal\\java.xml\\xalan.md"
+        },
+        {
+          "offset": 111377,
+          "value": "{app}\\jre\\legal\\java.xml\\xerces.md"
+        },
+        {
+          "offset": 111564,
+          "value": "{app}\\jre\\legal\\java.xml.crypto\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 111793,
+          "value": "{app}\\jre\\legal\\java.xml.crypto\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 112012,
+          "value": "{app}\\jre\\legal\\java.xml.crypto\\LICENSE"
+        },
+        {
+          "offset": 112209,
+          "value": "{app}\\jre\\legal\\java.xml.crypto\\santuario.md"
+        },
+        {
+          "offset": 112416,
+          "value": "{app}\\jre\\legal\\javafx.base\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 112637,
+          "value": "{app}\\jre\\legal\\javafx.base\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 112848,
+          "value": "{app}\\jre\\legal\\javafx.base\\LICENSE"
+        },
+        {
+          "offset": 113037,
+          "value": "{app}\\jre\\legal\\javafx.controls\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 113266,
+          "value": "{app}\\jre\\legal\\javafx.controls\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 113485,
+          "value": "{app}\\jre\\legal\\javafx.controls\\LICENSE"
+        },
+        {
+          "offset": 113682,
+          "value": "{app}\\jre\\legal\\javafx.fxml\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 113903,
+          "value": "{app}\\jre\\legal\\javafx.fxml\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 114114,
+          "value": "{app}\\jre\\legal\\javafx.fxml\\LICENSE"
+        },
+        {
+          "offset": 114303,
+          "value": "{app}\\jre\\legal\\javafx.graphics\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 114532,
+          "value": "{app}\\jre\\legal\\javafx.graphics\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 114751,
+          "value": "{app}\\jre\\legal\\javafx.graphics\\jpeg_fx.md"
+        },
+        {
+          "offset": 114954,
+          "value": "{app}\\jre\\legal\\javafx.graphics\\LICENSE"
+        },
+        {
+          "offset": 115151,
+          "value": "{app}\\jre\\legal\\javafx.graphics\\mesa3d.md"
+        },
+        {
+          "offset": 115352,
+          "value": "{app}\\jre\\legal\\javafx.media\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 115575,
+          "value": "{app}\\jre\\legal\\javafx.media\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 115788,
+          "value": "{app}\\jre\\legal\\javafx.media\\directshow.md"
+        },
+        {
+          "offset": 115991,
+          "value": "{app}\\jre\\legal\\javafx.media\\glib.md"
+        },
+        {
+          "offset": 116182,
+          "value": "{app}\\jre\\legal\\javafx.media\\gstreamer.md"
+        },
+        {
+          "offset": 116383,
+          "value": "{app}\\jre\\legal\\javafx.media\\libffi.md"
+        },
+        {
+          "offset": 116578,
+          "value": "{app}\\jre\\legal\\javafx.media\\LICENSE"
+        },
+        {
+          "offset": 116769,
+          "value": "{app}\\jre\\legal\\javafx.swing\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 116992,
+          "value": "{app}\\jre\\legal\\javafx.swing\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 117205,
+          "value": "{app}\\jre\\legal\\javafx.swing\\LICENSE"
+        },
+        {
+          "offset": 117396,
+          "value": "{app}\\jre\\legal\\javafx.web\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 117615,
+          "value": "{app}\\jre\\legal\\javafx.web\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 117824,
+          "value": "{app}\\jre\\legal\\javafx.web\\icu_web.md"
+        },
+        {
+          "offset": 118017,
+          "value": "{app}\\jre\\legal\\javafx.web\\libxml2.md"
+        },
+        {
+          "offset": 118210,
+          "value": "{app}\\jre\\legal\\javafx.web\\libxslt.md"
+        },
+        {
+          "offset": 118403,
+          "value": "{app}\\jre\\legal\\javafx.web\\LICENSE"
+        },
+        {
+          "offset": 118590,
+          "value": "{app}\\jre\\legal\\javafx.web\\webkit.md"
+        },
+        {
+          "offset": 118781,
+          "value": "{app}\\jre\\legal\\jdk.accessibility\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 119014,
+          "value": "{app}\\jre\\legal\\jdk.accessibility\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 119237,
+          "value": "{app}\\jre\\legal\\jdk.accessibility\\LICENSE"
+        },
+        {
+          "offset": 119438,
+          "value": "{app}\\jre\\legal\\jdk.charsets\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 119661,
+          "value": "{app}\\jre\\legal\\jdk.charsets\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 119874,
+          "value": "{app}\\jre\\legal\\jdk.charsets\\LICENSE"
+        },
+        {
+          "offset": 120065,
+          "value": "{app}\\jre\\legal\\jdk.crypto.cryptoki\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 120302,
+          "value": "{app}\\jre\\legal\\jdk.crypto.cryptoki\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 120529,
+          "value": "{app}\\jre\\legal\\jdk.crypto.cryptoki\\LICENSE"
+        },
+        {
+          "offset": 120734,
+          "value": "{app}\\jre\\legal\\jdk.crypto.cryptoki\\pkcs11cryptotoken.md"
+        },
+        {
+          "offset": 120965,
+          "value": "{app}\\jre\\legal\\jdk.crypto.cryptoki\\pkcs11wrapper.md"
+        },
+        {
+          "offset": 121188,
+          "value": "{app}\\jre\\legal\\jdk.crypto.ec\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 121413,
+          "value": "{app}\\jre\\legal\\jdk.crypto.ec\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 121628,
+          "value": "{app}\\jre\\legal\\jdk.crypto.ec\\LICENSE"
+        },
+        {
+          "offset": 121821,
+          "value": "{app}\\jre\\legal\\jdk.crypto.mscapi\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 122054,
+          "value": "{app}\\jre\\legal\\jdk.crypto.mscapi\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 122277,
+          "value": "{app}\\jre\\legal\\jdk.crypto.mscapi\\LICENSE"
+        },
+        {
+          "offset": 122478,
+          "value": "{app}\\jre\\legal\\jdk.dynalink\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 122701,
+          "value": "{app}\\jre\\legal\\jdk.dynalink\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 122914,
+          "value": "{app}\\jre\\legal\\jdk.dynalink\\dynalink.md"
+        },
+        {
+          "offset": 123113,
+          "value": "{app}\\jre\\legal\\jdk.dynalink\\LICENSE"
+        },
+        {
+          "offset": 123304,
+          "value": "{app}\\jre\\legal\\jdk.httpserver\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 123531,
+          "value": "{app}\\jre\\legal\\jdk.httpserver\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 123748,
+          "value": "{app}\\jre\\legal\\jdk.httpserver\\LICENSE"
+        },
+        {
+          "offset": 123943,
+          "value": "{app}\\jre\\legal\\jdk.incubator.foreign\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 124184,
+          "value": "{app}\\jre\\legal\\jdk.incubator.foreign\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 124415,
+          "value": "{app}\\jre\\legal\\jdk.incubator.foreign\\LICENSE"
+        },
+        {
+          "offset": 124624,
+          "value": "{app}\\jre\\legal\\jdk.incubator.vector\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 124863,
+          "value": "{app}\\jre\\legal\\jdk.incubator.vector\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 125092,
+          "value": "{app}\\jre\\legal\\jdk.incubator.vector\\LICENSE"
+        },
+        {
+          "offset": 125299,
+          "value": "{app}\\jre\\legal\\jdk.internal.vm.ci\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 125534,
+          "value": "{app}\\jre\\legal\\jdk.internal.vm.ci\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 125759,
+          "value": "{app}\\jre\\legal\\jdk.internal.vm.ci\\LICENSE"
+        },
+        {
+          "offset": 125962,
+          "value": "{app}\\jre\\legal\\jdk.internal.vm.compiler\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 126209,
+          "value": "{app}\\jre\\legal\\jdk.internal.vm.compiler\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 126446,
+          "value": "{app}\\jre\\legal\\jdk.internal.vm.compiler\\LICENSE"
+        },
+        {
+          "offset": 126661,
+          "value": "{app}\\jre\\legal\\jdk.internal.vm.compiler.management\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 126930,
+          "value": "{app}\\jre\\legal\\jdk.internal.vm.compiler.management\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 127189,
+          "value": "{app}\\jre\\legal\\jdk.internal.vm.compiler.management\\LICENSE"
+        },
+        {
+          "offset": 127426,
+          "value": "{app}\\jre\\legal\\jdk.jdwp.agent\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 127653,
+          "value": "{app}\\jre\\legal\\jdk.jdwp.agent\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 127870,
+          "value": "{app}\\jre\\legal\\jdk.jdwp.agent\\LICENSE"
+        },
+        {
+          "offset": 128065,
+          "value": "{app}\\jre\\legal\\jdk.jfr\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 128278,
+          "value": "{app}\\jre\\legal\\jdk.jfr\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 128481,
+          "value": "{app}\\jre\\legal\\jdk.jfr\\LICENSE"
+        },
+        {
+          "offset": 128662,
+          "value": "{app}\\jre\\legal\\jdk.jsobject\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 128885,
+          "value": "{app}\\jre\\legal\\jdk.jsobject\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 129098,
+          "value": "{app}\\jre\\legal\\jdk.jsobject\\LICENSE"
+        },
+        {
+          "offset": 129289,
+          "value": "{app}\\jre\\legal\\jdk.localedata\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 129516,
+          "value": "{app}\\jre\\legal\\jdk.localedata\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 129733,
+          "value": "{app}\\jre\\legal\\jdk.localedata\\cldr.md"
+        },
+        {
+          "offset": 129928,
+          "value": "{app}\\jre\\legal\\jdk.localedata\\LICENSE"
+        },
+        {
+          "offset": 130123,
+          "value": "{app}\\jre\\legal\\jdk.localedata\\thaidict.md"
+        },
+        {
+          "offset": 130326,
+          "value": "{app}\\jre\\legal\\jdk.management\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 130553,
+          "value": "{app}\\jre\\legal\\jdk.management\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 130770,
+          "value": "{app}\\jre\\legal\\jdk.management\\LICENSE"
+        },
+        {
+          "offset": 130965,
+          "value": "{app}\\jre\\legal\\jdk.management.agent\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 131204,
+          "value": "{app}\\jre\\legal\\jdk.management.agent\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 131433,
+          "value": "{app}\\jre\\legal\\jdk.management.agent\\LICENSE"
+        },
+        {
+          "offset": 131640,
+          "value": "{app}\\jre\\legal\\jdk.management.jfr\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 131875,
+          "value": "{app}\\jre\\legal\\jdk.management.jfr\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 132100,
+          "value": "{app}\\jre\\legal\\jdk.management.jfr\\LICENSE"
+        },
+        {
+          "offset": 132303,
+          "value": "{app}\\jre\\legal\\jdk.naming.dns\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 132530,
+          "value": "{app}\\jre\\legal\\jdk.naming.dns\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 132747,
+          "value": "{app}\\jre\\legal\\jdk.naming.dns\\LICENSE"
+        },
+        {
+          "offset": 132942,
+          "value": "{app}\\jre\\legal\\jdk.naming.rmi\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 133169,
+          "value": "{app}\\jre\\legal\\jdk.naming.rmi\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 133386,
+          "value": "{app}\\jre\\legal\\jdk.naming.rmi\\LICENSE"
+        },
+        {
+          "offset": 133581,
+          "value": "{app}\\jre\\legal\\jdk.net\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 133794,
+          "value": "{app}\\jre\\legal\\jdk.net\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 133997,
+          "value": "{app}\\jre\\legal\\jdk.net\\LICENSE"
+        },
+        {
+          "offset": 134178,
+          "value": "{app}\\jre\\legal\\jdk.nio.mapmode\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 134407,
+          "value": "{app}\\jre\\legal\\jdk.nio.mapmode\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 134626,
+          "value": "{app}\\jre\\legal\\jdk.nio.mapmode\\LICENSE"
+        },
+        {
+          "offset": 134823,
+          "value": "{app}\\jre\\legal\\jdk.random\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 135042,
+          "value": "{app}\\jre\\legal\\jdk.random\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 135251,
+          "value": "{app}\\jre\\legal\\jdk.random\\LICENSE"
+        },
+        {
+          "offset": 135438,
+          "value": "{app}\\jre\\legal\\jdk.sctp\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 135653,
+          "value": "{app}\\jre\\legal\\jdk.sctp\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 135858,
+          "value": "{app}\\jre\\legal\\jdk.sctp\\LICENSE"
+        },
+        {
+          "offset": 136041,
+          "value": "{app}\\jre\\legal\\jdk.security.auth\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 136274,
+          "value": "{app}\\jre\\legal\\jdk.security.auth\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 136497,
+          "value": "{app}\\jre\\legal\\jdk.security.auth\\LICENSE"
+        },
+        {
+          "offset": 136698,
+          "value": "{app}\\jre\\legal\\jdk.security.jgss\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 136931,
+          "value": "{app}\\jre\\legal\\jdk.security.jgss\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 137154,
+          "value": "{app}\\jre\\legal\\jdk.security.jgss\\LICENSE"
+        },
+        {
+          "offset": 137355,
+          "value": "{app}\\jre\\legal\\jdk.unsupported\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 137584,
+          "value": "{app}\\jre\\legal\\jdk.unsupported\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 137803,
+          "value": "{app}\\jre\\legal\\jdk.unsupported\\LICENSE"
+        },
+        {
+          "offset": 138000,
+          "value": "{app}\\jre\\legal\\jdk.unsupported.desktop\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 138245,
+          "value": "{app}\\jre\\legal\\jdk.unsupported.desktop\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 138480,
+          "value": "{app}\\jre\\legal\\jdk.unsupported.desktop\\LICENSE"
+        },
+        {
+          "offset": 138693,
+          "value": "{app}\\jre\\legal\\jdk.xml.dom\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 138914,
+          "value": "{app}\\jre\\legal\\jdk.xml.dom\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 139125,
+          "value": "{app}\\jre\\legal\\jdk.xml.dom\\LICENSE"
+        },
+        {
+          "offset": 139314,
+          "value": "{app}\\jre\\legal\\jdk.zipfs\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 139531,
+          "value": "{app}\\jre\\legal\\jdk.zipfs\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 139738,
+          "value": "{app}\\jre\\legal\\jdk.zipfs\\LICENSE"
+        },
+        {
+          "offset": 139923,
+          "value": "{app}\\jre\\lib\\classlist"
+        },
+        {
+          "offset": 140088,
+          "value": "{app}\\jre\\lib\\fontconfig.bfc"
+        },
+        {
+          "offset": 140263,
+          "value": "{app}\\jre\\lib\\fontconfig.properties.src"
+        },
+        {
+          "offset": 140460,
+          "value": "{app}\\jre\\lib\\javafx-swt.jar"
+        },
+        {
+          "offset": 140635,
+          "value": "{app}\\jre\\lib\\javafx.properties"
+        },
+        {
+          "offset": 140816,
+          "value": "{app}\\jre\\lib\\jawt.lib"
+        },
+        {
+          "offset": 140979,
+          "value": "{app}\\jre\\lib\\jrt-fs.jar"
+        },
+        {
+          "offset": 141146,
+          "value": "{app}\\jre\\lib\\jvm.cfg"
+        },
+        {
+          "offset": 141307,
+          "value": "{app}\\jre\\lib\\jvm.lib"
+        },
+        {
+          "offset": 141468,
+          "value": "{app}\\jre\\lib\\modules"
+        },
+        {
+          "offset": 141629,
+          "value": "{app}\\jre\\lib\\psfont.properties.ja"
+        },
+        {
+          "offset": 141816,
+          "value": "{app}\\jre\\lib\\psfontj2d.properties"
+        },
+        {
+          "offset": 142003,
+          "value": "{app}\\jre\\lib\\tzdb.dat"
+        },
+        {
+          "offset": 142166,
+          "value": "{app}\\jre\\lib\\tzmappings"
+        },
+        {
+          "offset": 142333,
+          "value": "{app}\\jre\\lib\\jfr\\default.jfc"
+        },
+        {
+          "offset": 142510,
+          "value": "{app}\\jre\\lib\\jfr\\profile.jfc"
+        },
+        {
+          "offset": 142687,
+          "value": "{app}\\jre\\lib\\security\\blocked.certs"
+        },
+        {
+          "offset": 142878,
+          "value": "{app}\\jre\\lib\\security\\cacerts"
+        },
+        {
+          "offset": 143057,
+          "value": "{app}\\jre\\lib\\security\\default.policy"
+        },
+        {
+          "offset": 143250,
+          "value": "{app}\\jre\\lib\\security\\public_suffix_list.dat"
+        },
+        {
+          "offset": 143459,
+          "value": "{app}\\jre\\x86\\DISCLAIMER"
+        },
+        {
+          "offset": 143634,
+          "value": "{app}\\jre\\x86\\OPENJFX_LICENSE"
+        },
+        {
+          "offset": 143819,
+          "value": "{app}\\jre\\x86\\readme.txt"
+        },
+        {
+          "offset": 143994,
+          "value": "{app}\\jre\\x86\\release"
+        },
+        {
+          "offset": 144163,
+          "value": "{app}\\jre\\x86\\Welcome.html"
+        },
+        {
+          "offset": 144342,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-core-console-l1-1-0.dll"
+        },
+        {
+          "offset": 144573,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-core-console-l1-2-0.dll"
+        },
+        {
+          "offset": 144804,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-core-datetime-l1-1-0.dll"
+        },
+        {
+          "offset": 145037,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-core-debug-l1-1-0.dll"
+        },
+        {
+          "offset": 145264,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-core-errorhandling-l1-1-0.dll"
+        },
+        {
+          "offset": 145507,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-core-fibers-l1-1-0.dll"
+        },
+        {
+          "offset": 145736,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-core-file-l1-1-0.dll"
+        },
+        {
+          "offset": 145961,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-core-file-l1-2-0.dll"
+        },
+        {
+          "offset": 146186,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-core-file-l2-1-0.dll"
+        },
+        {
+          "offset": 146411,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-core-handle-l1-1-0.dll"
+        },
+        {
+          "offset": 146640,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-core-heap-l1-1-0.dll"
+        },
+        {
+          "offset": 146865,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-core-interlocked-l1-1-0.dll"
+        },
+        {
+          "offset": 147104,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-core-libraryloader-l1-1-0.dll"
+        },
+        {
+          "offset": 147347,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-core-localization-l1-2-0.dll"
+        },
+        {
+          "offset": 147588,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-core-memory-l1-1-0.dll"
+        },
+        {
+          "offset": 147817,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-core-namedpipe-l1-1-0.dll"
+        },
+        {
+          "offset": 148052,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-core-processenvironment-l1-1-0.dll"
+        },
+        {
+          "offset": 148305,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-core-processthreads-l1-1-0.dll"
+        },
+        {
+          "offset": 148550,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-core-processthreads-l1-1-1.dll"
+        },
+        {
+          "offset": 148795,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-core-profile-l1-1-0.dll"
+        },
+        {
+          "offset": 149026,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-core-rtlsupport-l1-1-0.dll"
+        },
+        {
+          "offset": 149263,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-core-string-l1-1-0.dll"
+        },
+        {
+          "offset": 149492,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-core-synch-l1-1-0.dll"
+        },
+        {
+          "offset": 149719,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-core-synch-l1-2-0.dll"
+        },
+        {
+          "offset": 149946,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-core-sysinfo-l1-1-0.dll"
+        },
+        {
+          "offset": 150177,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-core-timezone-l1-1-0.dll"
+        },
+        {
+          "offset": 150410,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-core-util-l1-1-0.dll"
+        },
+        {
+          "offset": 150635,
+          "value": "{app}\\jre\\x86\\bin\\API-MS-Win-core-xstate-l2-1-0.dll"
+        },
+        {
+          "offset": 150864,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-crt-conio-l1-1-0.dll"
+        },
+        {
+          "offset": 151089,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-crt-convert-l1-1-0.dll"
+        },
+        {
+          "offset": 151318,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-crt-environment-l1-1-0.dll"
+        },
+        {
+          "offset": 151555,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-crt-filesystem-l1-1-0.dll"
+        },
+        {
+          "offset": 151790,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-crt-heap-l1-1-0.dll"
+        },
+        {
+          "offset": 152013,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-crt-locale-l1-1-0.dll"
+        },
+        {
+          "offset": 152240,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-crt-math-l1-1-0.dll"
+        },
+        {
+          "offset": 152463,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-crt-multibyte-l1-1-0.dll"
+        },
+        {
+          "offset": 152696,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-crt-private-l1-1-0.dll"
+        },
+        {
+          "offset": 152925,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-crt-process-l1-1-0.dll"
+        },
+        {
+          "offset": 153154,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-crt-runtime-l1-1-0.dll"
+        },
+        {
+          "offset": 153383,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-crt-stdio-l1-1-0.dll"
+        },
+        {
+          "offset": 153608,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-crt-string-l1-1-0.dll"
+        },
+        {
+          "offset": 153835,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-crt-time-l1-1-0.dll"
+        },
+        {
+          "offset": 154058,
+          "value": "{app}\\jre\\x86\\bin\\api-ms-win-crt-utility-l1-1-0.dll"
+        },
+        {
+          "offset": 154287,
+          "value": "{app}\\jre\\x86\\bin\\awt.dll"
+        },
+        {
+          "offset": 154464,
+          "value": "{app}\\jre\\x86\\bin\\decora_sse.dll"
+        },
+        {
+          "offset": 154655,
+          "value": "{app}\\jre\\x86\\bin\\dt_socket.dll"
+        },
+        {
+          "offset": 154844,
+          "value": "{app}\\jre\\x86\\bin\\fontmanager.dll"
+        },
+        {
+          "offset": 155037,
+          "value": "{app}\\jre\\x86\\bin\\freetype.dll"
+        },
+        {
+          "offset": 155224,
+          "value": "{app}\\jre\\x86\\bin\\fxplugins.dll"
+        },
+        {
+          "offset": 155413,
+          "value": "{app}\\jre\\x86\\bin\\glass.dll"
+        },
+        {
+          "offset": 155594,
+          "value": "{app}\\jre\\x86\\bin\\glib-lite.dll"
+        },
+        {
+          "offset": 155783,
+          "value": "{app}\\jre\\x86\\bin\\gstreamer-lite.dll"
+        },
+        {
+          "offset": 155982,
+          "value": "{app}\\jre\\x86\\bin\\instrument.dll"
+        },
+        {
+          "offset": 156173,
+          "value": "{app}\\jre\\x86\\bin\\j2gss.dll"
+        },
+        {
+          "offset": 156354,
+          "value": "{app}\\jre\\x86\\bin\\j2pcsc.dll"
+        },
+        {
+          "offset": 156537,
+          "value": "{app}\\jre\\x86\\bin\\j2pkcs11.dll"
+        },
+        {
+          "offset": 156724,
+          "value": "{app}\\jre\\x86\\bin\\jaas.dll"
+        },
+        {
+          "offset": 156903,
+          "value": "{app}\\jre\\x86\\bin\\jabswitch.exe"
+        },
+        {
+          "offset": 157092,
+          "value": "{app}\\jre\\x86\\bin\\jabsysinfo.dll"
+        },
+        {
+          "offset": 157283,
+          "value": "{app}\\jre\\x86\\bin\\jaccessinspector-32.exe"
+        },
+        {
+          "offset": 157492,
+          "value": "{app}\\jre\\x86\\bin\\jaccessinspector.exe"
+        },
+        {
+          "offset": 157695,
+          "value": "{app}\\jre\\x86\\bin\\jaccesswalker-32.exe"
+        },
+        {
+          "offset": 157898,
+          "value": "{app}\\jre\\x86\\bin\\jaccesswalker.exe"
+        },
+        {
+          "offset": 158095,
+          "value": "{app}\\jre\\x86\\bin\\java.dll"
+        },
+        {
+          "offset": 158274,
+          "value": "{app}\\jre\\x86\\bin\\java.exe"
+        },
+        {
+          "offset": 158453,
+          "value": "{app}\\jre\\x86\\bin\\javaaccessbridge-32.dll"
+        },
+        {
+          "offset": 158662,
+          "value": "{app}\\jre\\x86\\bin\\javaaccessbridge.dll"
+        },
+        {
+          "offset": 158865,
+          "value": "{app}\\jre\\x86\\bin\\javafx_font.dll"
+        },
+        {
+          "offset": 159058,
+          "value": "{app}\\jre\\x86\\bin\\javafx_iio.dll"
+        },
+        {
+          "offset": 159249,
+          "value": "{app}\\jre\\x86\\bin\\javajpeg.dll"
+        },
+        {
+          "offset": 159436,
+          "value": "{app}\\jre\\x86\\bin\\javaw.exe"
+        },
+        {
+          "offset": 159617,
+          "value": "{app}\\jre\\x86\\bin\\jawt.dll"
+        },
+        {
+          "offset": 159796,
+          "value": "{app}\\jre\\x86\\bin\\jdwp.dll"
+        },
+        {
+          "offset": 159975,
+          "value": "{app}\\jre\\x86\\bin\\jfr.exe"
+        },
+        {
+          "offset": 160152,
+          "value": "{app}\\jre\\x86\\bin\\jfxmedia.dll"
+        },
+        {
+          "offset": 160339,
+          "value": "{app}\\jre\\x86\\bin\\jfxwebkit.dll"
+        },
+        {
+          "offset": 160528,
+          "value": "{app}\\jre\\x86\\bin\\jimage.dll"
+        },
+        {
+          "offset": 160711,
+          "value": "{app}\\jre\\x86\\bin\\jli.dll"
+        },
+        {
+          "offset": 160888,
+          "value": "{app}\\jre\\x86\\bin\\jrunscript.exe"
+        },
+        {
+          "offset": 161079,
+          "value": "{app}\\jre\\x86\\bin\\jsound.dll"
+        },
+        {
+          "offset": 161262,
+          "value": "{app}\\jre\\x86\\bin\\keytool.exe"
+        },
+        {
+          "offset": 161447,
+          "value": "{app}\\jre\\x86\\bin\\kinit.exe"
+        },
+        {
+          "offset": 161628,
+          "value": "{app}\\jre\\x86\\bin\\klist.exe"
+        },
+        {
+          "offset": 161809,
+          "value": "{app}\\jre\\x86\\bin\\ktab.exe"
+        },
+        {
+          "offset": 161988,
+          "value": "{app}\\jre\\x86\\bin\\lcms.dll"
+        },
+        {
+          "offset": 162167,
+          "value": "{app}\\jre\\x86\\bin\\management.dll"
+        },
+        {
+          "offset": 162358,
+          "value": "{app}\\jre\\x86\\bin\\management_agent.dll"
+        },
+        {
+          "offset": 162561,
+          "value": "{app}\\jre\\x86\\bin\\management_ext.dll"
+        },
+        {
+          "offset": 162760,
+          "value": "{app}\\jre\\x86\\bin\\mlib_image.dll"
+        },
+        {
+          "offset": 162951,
+          "value": "{app}\\jre\\x86\\bin\\msvcp140.dll"
+        },
+        {
+          "offset": 163138,
+          "value": "{app}\\jre\\x86\\bin\\net.dll"
+        },
+        {
+          "offset": 163315,
+          "value": "{app}\\jre\\x86\\bin\\nio.dll"
+        },
+        {
+          "offset": 163492,
+          "value": "{app}\\jre\\x86\\bin\\prefs.dll"
+        },
+        {
+          "offset": 163673,
+          "value": "{app}\\jre\\x86\\bin\\prism_common.dll"
+        },
+        {
+          "offset": 163868,
+          "value": "{app}\\jre\\x86\\bin\\prism_d3d.dll"
+        },
+        {
+          "offset": 164057,
+          "value": "{app}\\jre\\x86\\bin\\prism_sw.dll"
+        },
+        {
+          "offset": 164244,
+          "value": "{app}\\jre\\x86\\bin\\rmi.dll"
+        },
+        {
+          "offset": 164421,
+          "value": "{app}\\jre\\x86\\bin\\rmiregistry.exe"
+        },
+        {
+          "offset": 164614,
+          "value": "{app}\\jre\\x86\\bin\\splashscreen.dll"
+        },
+        {
+          "offset": 164809,
+          "value": "{app}\\jre\\x86\\bin\\sspi_bridge.dll"
+        },
+        {
+          "offset": 165002,
+          "value": "{app}\\jre\\x86\\bin\\sunmscapi.dll"
+        },
+        {
+          "offset": 165191,
+          "value": "{app}\\jre\\x86\\bin\\ucrtbase.dll"
+        },
+        {
+          "offset": 165378,
+          "value": "{app}\\jre\\x86\\bin\\vcruntime140.dll"
+        },
+        {
+          "offset": 165573,
+          "value": "{app}\\jre\\x86\\bin\\verify.dll"
+        },
+        {
+          "offset": 165756,
+          "value": "{app}\\jre\\x86\\bin\\w2k_lsa_auth.dll"
+        },
+        {
+          "offset": 165951,
+          "value": "{app}\\jre\\x86\\bin\\windowsaccessbridge-32.dll"
+        },
+        {
+          "offset": 166166,
+          "value": "{app}\\jre\\x86\\bin\\windowsaccessbridge.dll"
+        },
+        {
+          "offset": 166375,
+          "value": "{app}\\jre\\x86\\bin\\WinFallbackLookup.dll"
+        },
+        {
+          "offset": 166580,
+          "value": "{app}\\jre\\x86\\bin\\zip.dll"
+        },
+        {
+          "offset": 166757,
+          "value": "{app}\\jre\\x86\\bin\\client\\jvm.dll"
+        },
+        {
+          "offset": 166948,
+          "value": "{app}\\jre\\x86\\bin\\server\\classes.jsa"
+        },
+        {
+          "offset": 167147,
+          "value": "{app}\\jre\\x86\\bin\\server\\jvm.dll"
+        },
+        {
+          "offset": 167338,
+          "value": "{app}\\jre\\x86\\conf\\logging.properties"
+        },
+        {
+          "offset": 167539,
+          "value": "{app}\\jre\\x86\\conf\\net.properties"
+        },
+        {
+          "offset": 167732,
+          "value": "{app}\\jre\\x86\\conf\\sound.properties"
+        },
+        {
+          "offset": 167929,
+          "value": "{app}\\jre\\x86\\conf\\management\\jmxremote.access"
+        },
+        {
+          "offset": 168148,
+          "value": "{app}\\jre\\x86\\conf\\management\\jmxremote.password.template"
+        },
+        {
+          "offset": 168389,
+          "value": "{app}\\jre\\x86\\conf\\management\\management.properties"
+        },
+        {
+          "offset": 168618,
+          "value": "{app}\\jre\\x86\\conf\\security\\java.policy"
+        },
+        {
+          "offset": 168823,
+          "value": "{app}\\jre\\x86\\conf\\security\\java.security"
+        },
+        {
+          "offset": 169032,
+          "value": "{app}\\jre\\x86\\conf\\security\\policy\\README.txt"
+        },
+        {
+          "offset": 169249,
+          "value": "{app}\\jre\\x86\\conf\\security\\policy\\limited\\default_local.policy"
+        },
+        {
+          "offset": 169502,
+          "value": "{app}\\jre\\x86\\conf\\security\\policy\\limited\\default_US_export.policy"
+        },
+        {
+          "offset": 169763,
+          "value": "{app}\\jre\\x86\\conf\\security\\policy\\limited\\exempt_local.policy"
+        },
+        {
+          "offset": 170014,
+          "value": "{app}\\jre\\x86\\conf\\security\\policy\\unlimited\\default_local.policy"
+        },
+        {
+          "offset": 170271,
+          "value": "{app}\\jre\\x86\\conf\\security\\policy\\unlimited\\default_US_export.policy"
+        },
+        {
+          "offset": 170536,
+          "value": "{app}\\jre\\x86\\legal\\java.base\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 170769,
+          "value": "{app}\\jre\\x86\\legal\\java.base\\aes.md"
+        },
+        {
+          "offset": 170968,
+          "value": "{app}\\jre\\x86\\legal\\java.base\\asm.md"
+        },
+        {
+          "offset": 171167,
+          "value": "{app}\\jre\\x86\\legal\\java.base\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 171390,
+          "value": "{app}\\jre\\x86\\legal\\java.base\\c-libutl.md"
+        },
+        {
+          "offset": 171599,
+          "value": "{app}\\jre\\x86\\legal\\java.base\\cldr.md"
+        },
+        {
+          "offset": 171800,
+          "value": "{app}\\jre\\x86\\legal\\java.base\\icu.md"
+        },
+        {
+          "offset": 171999,
+          "value": "{app}\\jre\\x86\\legal\\java.base\\LICENSE"
+        },
+        {
+          "offset": 172200,
+          "value": "{app}\\jre\\x86\\legal\\java.base\\public_suffix.md"
+        },
+        {
+          "offset": 172419,
+          "value": "{app}\\jre\\x86\\legal\\java.base\\unicode.md"
+        },
+        {
+          "offset": 172626,
+          "value": "{app}\\jre\\x86\\legal\\java.base\\wepoll.md"
+        },
+        {
+          "offset": 172831,
+          "value": "{app}\\jre\\x86\\legal\\java.base\\zlib.md"
+        },
+        {
+          "offset": 173032,
+          "value": "{app}\\jre\\x86\\legal\\java.compiler\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 173273,
+          "value": "{app}\\jre\\x86\\legal\\java.compiler\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 173504,
+          "value": "{app}\\jre\\x86\\legal\\java.compiler\\LICENSE"
+        },
+        {
+          "offset": 173713,
+          "value": "{app}\\jre\\x86\\legal\\java.datatransfer\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 173962,
+          "value": "{app}\\jre\\x86\\legal\\java.datatransfer\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 174201,
+          "value": "{app}\\jre\\x86\\legal\\java.datatransfer\\LICENSE"
+        },
+        {
+          "offset": 174418,
+          "value": "{app}\\jre\\x86\\legal\\java.desktop\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 174657,
+          "value": "{app}\\jre\\x86\\legal\\java.desktop\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 174886,
+          "value": "{app}\\jre\\x86\\legal\\java.desktop\\colorimaging.md"
+        },
+        {
+          "offset": 175109,
+          "value": "{app}\\jre\\x86\\legal\\java.desktop\\freetype.md"
+        },
+        {
+          "offset": 175324,
+          "value": "{app}\\jre\\x86\\legal\\java.desktop\\giflib.md"
+        },
+        {
+          "offset": 175535,
+          "value": "{app}\\jre\\x86\\legal\\java.desktop\\harfbuzz.md"
+        },
+        {
+          "offset": 175750,
+          "value": "{app}\\jre\\x86\\legal\\java.desktop\\jpeg.md"
+        },
+        {
+          "offset": 175957,
+          "value": "{app}\\jre\\x86\\legal\\java.desktop\\lcms.md"
+        },
+        {
+          "offset": 176164,
+          "value": "{app}\\jre\\x86\\legal\\java.desktop\\libpng.md"
+        },
+        {
+          "offset": 176375,
+          "value": "{app}\\jre\\x86\\legal\\java.desktop\\LICENSE"
+        },
+        {
+          "offset": 176582,
+          "value": "{app}\\jre\\x86\\legal\\java.desktop\\mesa3d.md"
+        },
+        {
+          "offset": 176793,
+          "value": "{app}\\jre\\x86\\legal\\java.instrument\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 177038,
+          "value": "{app}\\jre\\x86\\legal\\java.instrument\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 177273,
+          "value": "{app}\\jre\\x86\\legal\\java.instrument\\LICENSE"
+        },
+        {
+          "offset": 177486,
+          "value": "{app}\\jre\\x86\\legal\\java.logging\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 177725,
+          "value": "{app}\\jre\\x86\\legal\\java.logging\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 177954,
+          "value": "{app}\\jre\\x86\\legal\\java.logging\\LICENSE"
+        },
+        {
+          "offset": 178161,
+          "value": "{app}\\jre\\x86\\legal\\java.management\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 178406,
+          "value": "{app}\\jre\\x86\\legal\\java.management\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 178641,
+          "value": "{app}\\jre\\x86\\legal\\java.management\\LICENSE"
+        },
+        {
+          "offset": 178854,
+          "value": "{app}\\jre\\x86\\legal\\java.management.rmi\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 179107,
+          "value": "{app}\\jre\\x86\\legal\\java.management.rmi\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 179350,
+          "value": "{app}\\jre\\x86\\legal\\java.management.rmi\\LICENSE"
+        },
+        {
+          "offset": 179571,
+          "value": "{app}\\jre\\x86\\legal\\java.naming\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 179808,
+          "value": "{app}\\jre\\x86\\legal\\java.naming\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 180035,
+          "value": "{app}\\jre\\x86\\legal\\java.naming\\LICENSE"
+        },
+        {
+          "offset": 180240,
+          "value": "{app}\\jre\\x86\\legal\\java.net.http\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 180481,
+          "value": "{app}\\jre\\x86\\legal\\java.net.http\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 180712,
+          "value": "{app}\\jre\\x86\\legal\\java.net.http\\LICENSE"
+        },
+        {
+          "offset": 180921,
+          "value": "{app}\\jre\\x86\\legal\\java.prefs\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 181156,
+          "value": "{app}\\jre\\x86\\legal\\java.prefs\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 181381,
+          "value": "{app}\\jre\\x86\\legal\\java.prefs\\LICENSE"
+        },
+        {
+          "offset": 181584,
+          "value": "{app}\\jre\\x86\\legal\\java.rmi\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 181815,
+          "value": "{app}\\jre\\x86\\legal\\java.rmi\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 182036,
+          "value": "{app}\\jre\\x86\\legal\\java.rmi\\LICENSE"
+        },
+        {
+          "offset": 182235,
+          "value": "{app}\\jre\\x86\\legal\\java.scripting\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 182478,
+          "value": "{app}\\jre\\x86\\legal\\java.scripting\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 182711,
+          "value": "{app}\\jre\\x86\\legal\\java.scripting\\LICENSE"
+        },
+        {
+          "offset": 182922,
+          "value": "{app}\\jre\\x86\\legal\\java.se\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 183151,
+          "value": "{app}\\jre\\x86\\legal\\java.se\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 183370,
+          "value": "{app}\\jre\\x86\\legal\\java.se\\LICENSE"
+        },
+        {
+          "offset": 183567,
+          "value": "{app}\\jre\\x86\\legal\\java.security.jgss\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 183818,
+          "value": "{app}\\jre\\x86\\legal\\java.security.jgss\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 184059,
+          "value": "{app}\\jre\\x86\\legal\\java.security.jgss\\LICENSE"
+        },
+        {
+          "offset": 184278,
+          "value": "{app}\\jre\\x86\\legal\\java.security.sasl\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 184529,
+          "value": "{app}\\jre\\x86\\legal\\java.security.sasl\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 184770,
+          "value": "{app}\\jre\\x86\\legal\\java.security.sasl\\LICENSE"
+        },
+        {
+          "offset": 184989,
+          "value": "{app}\\jre\\x86\\legal\\java.smartcardio\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 185236,
+          "value": "{app}\\jre\\x86\\legal\\java.smartcardio\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 185473,
+          "value": "{app}\\jre\\x86\\legal\\java.smartcardio\\LICENSE"
+        },
+        {
+          "offset": 185688,
+          "value": "{app}\\jre\\x86\\legal\\java.sql\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 185919,
+          "value": "{app}\\jre\\x86\\legal\\java.sql\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 186140,
+          "value": "{app}\\jre\\x86\\legal\\java.sql\\LICENSE"
+        },
+        {
+          "offset": 186339,
+          "value": "{app}\\jre\\x86\\legal\\java.sql.rowset\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 186584,
+          "value": "{app}\\jre\\x86\\legal\\java.sql.rowset\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 186819,
+          "value": "{app}\\jre\\x86\\legal\\java.sql.rowset\\LICENSE"
+        },
+        {
+          "offset": 187032,
+          "value": "{app}\\jre\\x86\\legal\\java.transaction.xa\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 187285,
+          "value": "{app}\\jre\\x86\\legal\\java.transaction.xa\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 187528,
+          "value": "{app}\\jre\\x86\\legal\\java.transaction.xa\\LICENSE"
+        },
+        {
+          "offset": 187749,
+          "value": "{app}\\jre\\x86\\legal\\java.xml\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 187980,
+          "value": "{app}\\jre\\x86\\legal\\java.xml\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 188201,
+          "value": "{app}\\jre\\x86\\legal\\java.xml\\bcel.md"
+        },
+        {
+          "offset": 188400,
+          "value": "{app}\\jre\\x86\\legal\\java.xml\\dom.md"
+        },
+        {
+          "offset": 188597,
+          "value": "{app}\\jre\\x86\\legal\\java.xml\\jcup.md"
+        },
+        {
+          "offset": 188796,
+          "value": "{app}\\jre\\x86\\legal\\java.xml\\LICENSE"
+        },
+        {
+          "offset": 188995,
+          "value": "{app}\\jre\\x86\\legal\\java.xml\\xalan.md"
+        },
+        {
+          "offset": 189196,
+          "value": "{app}\\jre\\x86\\legal\\java.xml\\xerces.md"
+        },
+        {
+          "offset": 189399,
+          "value": "{app}\\jre\\x86\\legal\\java.xml.crypto\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 189644,
+          "value": "{app}\\jre\\x86\\legal\\java.xml.crypto\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 189879,
+          "value": "{app}\\jre\\x86\\legal\\java.xml.crypto\\LICENSE"
+        },
+        {
+          "offset": 190092,
+          "value": "{app}\\jre\\x86\\legal\\java.xml.crypto\\santuario.md"
+        },
+        {
+          "offset": 190315,
+          "value": "{app}\\jre\\x86\\legal\\javafx.base\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 190552,
+          "value": "{app}\\jre\\x86\\legal\\javafx.base\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 190779,
+          "value": "{app}\\jre\\x86\\legal\\javafx.base\\LICENSE"
+        },
+        {
+          "offset": 190984,
+          "value": "{app}\\jre\\x86\\legal\\javafx.controls\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 191229,
+          "value": "{app}\\jre\\x86\\legal\\javafx.controls\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 191464,
+          "value": "{app}\\jre\\x86\\legal\\javafx.controls\\LICENSE"
+        },
+        {
+          "offset": 191677,
+          "value": "{app}\\jre\\x86\\legal\\javafx.fxml\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 191914,
+          "value": "{app}\\jre\\x86\\legal\\javafx.fxml\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 192141,
+          "value": "{app}\\jre\\x86\\legal\\javafx.fxml\\LICENSE"
+        },
+        {
+          "offset": 192346,
+          "value": "{app}\\jre\\x86\\legal\\javafx.graphics\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 192591,
+          "value": "{app}\\jre\\x86\\legal\\javafx.graphics\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 192826,
+          "value": "{app}\\jre\\x86\\legal\\javafx.graphics\\jpeg_fx.md"
+        },
+        {
+          "offset": 193045,
+          "value": "{app}\\jre\\x86\\legal\\javafx.graphics\\LICENSE"
+        },
+        {
+          "offset": 193258,
+          "value": "{app}\\jre\\x86\\legal\\javafx.graphics\\mesa3d.md"
+        },
+        {
+          "offset": 193475,
+          "value": "{app}\\jre\\x86\\legal\\javafx.media\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 193714,
+          "value": "{app}\\jre\\x86\\legal\\javafx.media\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 193943,
+          "value": "{app}\\jre\\x86\\legal\\javafx.media\\directshow.md"
+        },
+        {
+          "offset": 194162,
+          "value": "{app}\\jre\\x86\\legal\\javafx.media\\glib.md"
+        },
+        {
+          "offset": 194369,
+          "value": "{app}\\jre\\x86\\legal\\javafx.media\\gstreamer.md"
+        },
+        {
+          "offset": 194586,
+          "value": "{app}\\jre\\x86\\legal\\javafx.media\\libffi.md"
+        },
+        {
+          "offset": 194797,
+          "value": "{app}\\jre\\x86\\legal\\javafx.media\\LICENSE"
+        },
+        {
+          "offset": 195004,
+          "value": "{app}\\jre\\x86\\legal\\javafx.swing\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 195243,
+          "value": "{app}\\jre\\x86\\legal\\javafx.swing\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 195472,
+          "value": "{app}\\jre\\x86\\legal\\javafx.swing\\LICENSE"
+        },
+        {
+          "offset": 195679,
+          "value": "{app}\\jre\\x86\\legal\\javafx.web\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 195914,
+          "value": "{app}\\jre\\x86\\legal\\javafx.web\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 196139,
+          "value": "{app}\\jre\\x86\\legal\\javafx.web\\icu_web.md"
+        },
+        {
+          "offset": 196348,
+          "value": "{app}\\jre\\x86\\legal\\javafx.web\\libxml2.md"
+        },
+        {
+          "offset": 196557,
+          "value": "{app}\\jre\\x86\\legal\\javafx.web\\libxslt.md"
+        },
+        {
+          "offset": 196766,
+          "value": "{app}\\jre\\x86\\legal\\javafx.web\\LICENSE"
+        },
+        {
+          "offset": 196969,
+          "value": "{app}\\jre\\x86\\legal\\javafx.web\\webkit.md"
+        },
+        {
+          "offset": 197176,
+          "value": "{app}\\jre\\x86\\legal\\jdk.accessibility\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 197425,
+          "value": "{app}\\jre\\x86\\legal\\jdk.accessibility\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 197664,
+          "value": "{app}\\jre\\x86\\legal\\jdk.accessibility\\LICENSE"
+        },
+        {
+          "offset": 197881,
+          "value": "{app}\\jre\\x86\\legal\\jdk.charsets\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 198120,
+          "value": "{app}\\jre\\x86\\legal\\jdk.charsets\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 198349,
+          "value": "{app}\\jre\\x86\\legal\\jdk.charsets\\LICENSE"
+        },
+        {
+          "offset": 198556,
+          "value": "{app}\\jre\\x86\\legal\\jdk.crypto.cryptoki\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 198809,
+          "value": "{app}\\jre\\x86\\legal\\jdk.crypto.cryptoki\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 199052,
+          "value": "{app}\\jre\\x86\\legal\\jdk.crypto.cryptoki\\LICENSE"
+        },
+        {
+          "offset": 199273,
+          "value": "{app}\\jre\\x86\\legal\\jdk.crypto.cryptoki\\pkcs11cryptotoken.md"
+        },
+        {
+          "offset": 199520,
+          "value": "{app}\\jre\\x86\\legal\\jdk.crypto.cryptoki\\pkcs11wrapper.md"
+        },
+        {
+          "offset": 199759,
+          "value": "{app}\\jre\\x86\\legal\\jdk.crypto.ec\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 200000,
+          "value": "{app}\\jre\\x86\\legal\\jdk.crypto.ec\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 200231,
+          "value": "{app}\\jre\\x86\\legal\\jdk.crypto.ec\\LICENSE"
+        },
+        {
+          "offset": 200440,
+          "value": "{app}\\jre\\x86\\legal\\jdk.crypto.mscapi\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 200689,
+          "value": "{app}\\jre\\x86\\legal\\jdk.crypto.mscapi\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 200928,
+          "value": "{app}\\jre\\x86\\legal\\jdk.crypto.mscapi\\LICENSE"
+        },
+        {
+          "offset": 201145,
+          "value": "{app}\\jre\\x86\\legal\\jdk.dynalink\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 201384,
+          "value": "{app}\\jre\\x86\\legal\\jdk.dynalink\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 201613,
+          "value": "{app}\\jre\\x86\\legal\\jdk.dynalink\\dynalink.md"
+        },
+        {
+          "offset": 201828,
+          "value": "{app}\\jre\\x86\\legal\\jdk.dynalink\\LICENSE"
+        },
+        {
+          "offset": 202035,
+          "value": "{app}\\jre\\x86\\legal\\jdk.httpserver\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 202278,
+          "value": "{app}\\jre\\x86\\legal\\jdk.httpserver\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 202511,
+          "value": "{app}\\jre\\x86\\legal\\jdk.httpserver\\LICENSE"
+        },
+        {
+          "offset": 202722,
+          "value": "{app}\\jre\\x86\\legal\\jdk.incubator.foreign\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 202979,
+          "value": "{app}\\jre\\x86\\legal\\jdk.incubator.foreign\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 203226,
+          "value": "{app}\\jre\\x86\\legal\\jdk.incubator.foreign\\LICENSE"
+        },
+        {
+          "offset": 203451,
+          "value": "{app}\\jre\\x86\\legal\\jdk.incubator.vector\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 203706,
+          "value": "{app}\\jre\\x86\\legal\\jdk.incubator.vector\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 203951,
+          "value": "{app}\\jre\\x86\\legal\\jdk.incubator.vector\\LICENSE"
+        },
+        {
+          "offset": 204174,
+          "value": "{app}\\jre\\x86\\legal\\jdk.jdwp.agent\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 204417,
+          "value": "{app}\\jre\\x86\\legal\\jdk.jdwp.agent\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 204650,
+          "value": "{app}\\jre\\x86\\legal\\jdk.jdwp.agent\\LICENSE"
+        },
+        {
+          "offset": 204861,
+          "value": "{app}\\jre\\x86\\legal\\jdk.jfr\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 205090,
+          "value": "{app}\\jre\\x86\\legal\\jdk.jfr\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 205309,
+          "value": "{app}\\jre\\x86\\legal\\jdk.jfr\\LICENSE"
+        },
+        {
+          "offset": 205506,
+          "value": "{app}\\jre\\x86\\legal\\jdk.jsobject\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 205745,
+          "value": "{app}\\jre\\x86\\legal\\jdk.jsobject\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 205974,
+          "value": "{app}\\jre\\x86\\legal\\jdk.jsobject\\LICENSE"
+        },
+        {
+          "offset": 206181,
+          "value": "{app}\\jre\\x86\\legal\\jdk.localedata\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 206424,
+          "value": "{app}\\jre\\x86\\legal\\jdk.localedata\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 206657,
+          "value": "{app}\\jre\\x86\\legal\\jdk.localedata\\cldr.md"
+        },
+        {
+          "offset": 206868,
+          "value": "{app}\\jre\\x86\\legal\\jdk.localedata\\LICENSE"
+        },
+        {
+          "offset": 207079,
+          "value": "{app}\\jre\\x86\\legal\\jdk.localedata\\thaidict.md"
+        },
+        {
+          "offset": 207298,
+          "value": "{app}\\jre\\x86\\legal\\jdk.management\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 207541,
+          "value": "{app}\\jre\\x86\\legal\\jdk.management\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 207774,
+          "value": "{app}\\jre\\x86\\legal\\jdk.management\\LICENSE"
+        },
+        {
+          "offset": 207985,
+          "value": "{app}\\jre\\x86\\legal\\jdk.management.agent\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 208240,
+          "value": "{app}\\jre\\x86\\legal\\jdk.management.agent\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 208485,
+          "value": "{app}\\jre\\x86\\legal\\jdk.management.agent\\LICENSE"
+        },
+        {
+          "offset": 208708,
+          "value": "{app}\\jre\\x86\\legal\\jdk.management.jfr\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 208959,
+          "value": "{app}\\jre\\x86\\legal\\jdk.management.jfr\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 209200,
+          "value": "{app}\\jre\\x86\\legal\\jdk.management.jfr\\LICENSE"
+        },
+        {
+          "offset": 209419,
+          "value": "{app}\\jre\\x86\\legal\\jdk.naming.dns\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 209662,
+          "value": "{app}\\jre\\x86\\legal\\jdk.naming.dns\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 209895,
+          "value": "{app}\\jre\\x86\\legal\\jdk.naming.dns\\LICENSE"
+        },
+        {
+          "offset": 210106,
+          "value": "{app}\\jre\\x86\\legal\\jdk.naming.rmi\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 210349,
+          "value": "{app}\\jre\\x86\\legal\\jdk.naming.rmi\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 210582,
+          "value": "{app}\\jre\\x86\\legal\\jdk.naming.rmi\\LICENSE"
+        },
+        {
+          "offset": 210793,
+          "value": "{app}\\jre\\x86\\legal\\jdk.net\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 211022,
+          "value": "{app}\\jre\\x86\\legal\\jdk.net\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 211241,
+          "value": "{app}\\jre\\x86\\legal\\jdk.net\\LICENSE"
+        },
+        {
+          "offset": 211438,
+          "value": "{app}\\jre\\x86\\legal\\jdk.nio.mapmode\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 211683,
+          "value": "{app}\\jre\\x86\\legal\\jdk.nio.mapmode\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 211918,
+          "value": "{app}\\jre\\x86\\legal\\jdk.nio.mapmode\\LICENSE"
+        },
+        {
+          "offset": 212131,
+          "value": "{app}\\jre\\x86\\legal\\jdk.random\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 212366,
+          "value": "{app}\\jre\\x86\\legal\\jdk.random\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 212591,
+          "value": "{app}\\jre\\x86\\legal\\jdk.random\\LICENSE"
+        },
+        {
+          "offset": 212794,
+          "value": "{app}\\jre\\x86\\legal\\jdk.sctp\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 213025,
+          "value": "{app}\\jre\\x86\\legal\\jdk.sctp\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 213246,
+          "value": "{app}\\jre\\x86\\legal\\jdk.sctp\\LICENSE"
+        },
+        {
+          "offset": 213445,
+          "value": "{app}\\jre\\x86\\legal\\jdk.security.auth\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 213694,
+          "value": "{app}\\jre\\x86\\legal\\jdk.security.auth\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 213933,
+          "value": "{app}\\jre\\x86\\legal\\jdk.security.auth\\LICENSE"
+        },
+        {
+          "offset": 214150,
+          "value": "{app}\\jre\\x86\\legal\\jdk.security.jgss\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 214399,
+          "value": "{app}\\jre\\x86\\legal\\jdk.security.jgss\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 214638,
+          "value": "{app}\\jre\\x86\\legal\\jdk.security.jgss\\LICENSE"
+        },
+        {
+          "offset": 214855,
+          "value": "{app}\\jre\\x86\\legal\\jdk.unsupported\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 215100,
+          "value": "{app}\\jre\\x86\\legal\\jdk.unsupported\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 215335,
+          "value": "{app}\\jre\\x86\\legal\\jdk.unsupported\\LICENSE"
+        },
+        {
+          "offset": 215548,
+          "value": "{app}\\jre\\x86\\legal\\jdk.unsupported.desktop\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 215809,
+          "value": "{app}\\jre\\x86\\legal\\jdk.unsupported.desktop\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 216060,
+          "value": "{app}\\jre\\x86\\legal\\jdk.unsupported.desktop\\LICENSE"
+        },
+        {
+          "offset": 216289,
+          "value": "{app}\\jre\\x86\\legal\\jdk.xml.dom\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 216526,
+          "value": "{app}\\jre\\x86\\legal\\jdk.xml.dom\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 216753,
+          "value": "{app}\\jre\\x86\\legal\\jdk.xml.dom\\LICENSE"
+        },
+        {
+          "offset": 216958,
+          "value": "{app}\\jre\\x86\\legal\\jdk.zipfs\\ADDITIONAL_LICENSE_INFO"
+        },
+        {
+          "offset": 217191,
+          "value": "{app}\\jre\\x86\\legal\\jdk.zipfs\\ASSEMBLY_EXCEPTION"
+        },
+        {
+          "offset": 217414,
+          "value": "{app}\\jre\\x86\\legal\\jdk.zipfs\\LICENSE"
+        },
+        {
+          "offset": 217615,
+          "value": "{app}\\jre\\x86\\lib\\classlist"
+        },
+        {
+          "offset": 217796,
+          "value": "{app}\\jre\\x86\\lib\\fontconfig.bfc"
+        },
+        {
+          "offset": 217987,
+          "value": "{app}\\jre\\x86\\lib\\fontconfig.properties.src"
+        },
+        {
+          "offset": 218200,
+          "value": "{app}\\jre\\x86\\lib\\javafx-swt.jar"
+        },
+        {
+          "offset": 218391,
+          "value": "{app}\\jre\\x86\\lib\\javafx.properties"
+        },
+        {
+          "offset": 218588,
+          "value": "{app}\\jre\\x86\\lib\\jawt.lib"
+        },
+        {
+          "offset": 218767,
+          "value": "{app}\\jre\\x86\\lib\\jrt-fs.jar"
+        },
+        {
+          "offset": 218950,
+          "value": "{app}\\jre\\x86\\lib\\jvm.cfg"
+        },
+        {
+          "offset": 219127,
+          "value": "{app}\\jre\\x86\\lib\\jvm.lib"
+        },
+        {
+          "offset": 219304,
+          "value": "{app}\\jre\\x86\\lib\\modules"
+        },
+        {
+          "offset": 219481,
+          "value": "{app}\\jre\\x86\\lib\\psfont.properties.ja"
+        },
+        {
+          "offset": 219684,
+          "value": "{app}\\jre\\x86\\lib\\psfontj2d.properties"
+        },
+        {
+          "offset": 219887,
+          "value": "{app}\\jre\\x86\\lib\\tzdb.dat"
+        },
+        {
+          "offset": 220066,
+          "value": "{app}\\jre\\x86\\lib\\tzmappings"
+        },
+        {
+          "offset": 220249,
+          "value": "{app}\\jre\\x86\\lib\\jfr\\default.jfc"
+        },
+        {
+          "offset": 220442,
+          "value": "{app}\\jre\\x86\\lib\\jfr\\profile.jfc"
+        },
+        {
+          "offset": 220635,
+          "value": "{app}\\jre\\x86\\lib\\security\\blocked.certs"
+        },
+        {
+          "offset": 220842,
+          "value": "{app}\\jre\\x86\\lib\\security\\cacerts"
+        },
+        {
+          "offset": 221037,
+          "value": "{app}\\jre\\x86\\lib\\security\\default.policy"
+        },
+        {
+          "offset": 221246,
+          "value": "{app}\\jre\\x86\\lib\\security\\public_suffix_list.dat"
+        },
+        {
+          "offset": 221640,
+          "value": "{userprograms}\\Legacy Launcher Stable"
+        },
+        {
+          "offset": 221718,
+          "value": "{app}\\TL.exe"
+        },
+        {
+          "offset": 221838,
+          "value": "{autodesktop}\\Legacy Launcher Stable"
+        },
+        {
+          "offset": 221914,
+          "value": "{app}\\TL.exe"
+        },
+        {
+          "offset": 222056,
+          "value": "{app}\\jre"
+        },
+        {
+          "offset": 222200,
+          "value": "{app}\\TL.exe"
+        },
+        {
+          "offset": 222248,
+          "value": "{cm:LaunchProgram,Legacy Launcher Stable}"
+        },
+        {
+          "offset": 27208,
+          "value": "\\pard\\sa200\\sl276\\slmult1\\qc\\b\\f0\\fs22\\lang9 Legacy Launcher\\b0  is free alternative Minecraft launcher\\par"
+        },
+        {
+          "offset": 27319,
+          "value": "\\pard\\sa200\\sl276\\slmult1 You can always download the latest version at: {{\\field{\\*\\fldinst{HYPERLINK https://llaun.ch/dl/mcl/installer }}{\\fldrslt{https://llaun.ch/dl/mcl/installer\\ul0\\cf0}}}}\\f0\\fs22\\par"
+        },
+        {
+          "offset": 27620,
+          "value": "\\pard{\\pntext\\f1\\'B7\\tab}{\\*\\pn\\pnlvlblt\\pnf1\\pnindent0{\\pntxtb\\'B7}}\\fi-360\\li720\\sl240\\slmult1 Discord: {{\\field{\\*\\fldinst{HYPERLINK https://llaun.ch/discord/intl }}{\\fldrslt{https://llaun.ch/discord/intl\\ul0\\cf0}}}}\\f0\\fs22\\par"
+        },
+        {
+          "offset": 27853,
+          "value": "{\\pntext\\f1\\'B7\\tab}Reddit: {{\\field{\\*\\fldinst{HYPERLINK https://llaun.ch/reddit }}{\\fldrslt{https://llaun.ch/reddit\\ul0\\cf0}}}}\\f0\\fs22\\par"
+        },
+        {
+          "offset": 27996,
+          "value": "{\\pntext\\f1\\'B7\\tab}Facebook: {{\\field{\\*\\fldinst{HYPERLINK https://llaun.ch/fb }}{\\fldrslt{https://llaun.ch/fb\\ul0\\cf0}}}}\\f0\\fs22\\par"
+        },
+        {
+          "offset": 28133,
+          "value": "{\\pntext\\f1\\'B7\\tab}VK: {{\\field{\\*\\fldinst{HYPERLINK https://llaun.ch/vk }}{\\fldrslt{https://llaun.ch/vk\\ul0\\cf0}}}}\\f0\\fs22\\par"
+        },
+        {
+          "offset": 54357,
+          "value": "\\pard\\sa200\\sl276\\slmult1\\qc\\b\\f0\\fs22\\lang9 Legacy Launcher\\b0  \\f1\\endash\\f0  \\f2\\lang1049\\'e1\\'e5\\'f1\\'ef\\'eb\\'e0\\'f2\\'ed\\'fb\\'e9 \\'e0\\'eb\\'fc\\'f2\\'e5\\'f0\\'ed\\'e0\\'f2\\'e8\\'e2\\'ed\\'fb\\'e9 \\'eb\\'e0\\'f3\\'ed\\'f7\\'e5\\'f0 \\'e4\\'eb\\'ff \\f0\\lang1033 Minecraft\\lang9\\par"
+        },
+        {
+          "offset": 54625,
+          "value": "\\pard\\sa200\\sl276\\slmult1\\f2\\lang1049\\'c2\\'fb \\'e2\\'f1\\'e5\\'e3\\'e4\\'e0 \\'ec\\'ee\\'e6\\'e5\\'f2\\'e5 \\'e7\\'e0\\'e3\\'f0\\'f3\\'e7\\'e8\\'f2\\'fc \\'f1\\'e2\\'e5\\'e6\\'f3\\'fe \\'e2\\'e5\\'f0\\'f1\\'e8\\'fe \\'e7\\'e4\\'e5\\'f1\\'fc\\f0\\lang9 : {{\\field{\\*\\fldinst{HYPERLINK https://llaun.ch/ }}{\\fldrslt{https://llaun.ch/\\ul0\\cf0}}}}\\f0\\fs22\\par"
+        },
+        {
+          "offset": 55211,
+          "value": "\\pard{\\pntext\\f3\\'B7\\tab}{\\*\\pn\\pnlvlblt\\pnf3\\pnindent0{\\pntxtb\\'B7}}\\fi-360\\li720\\sl240\\slmult1 VK: {{\\field{\\*\\fldinst{HYPERLINK https://llaun.ch/vk }}{\\fldrslt{https://llaun.ch/vk\\ul0\\cf0}}}}\\f0\\fs22\\par"
+        },
+        {
+          "offset": 55419,
+          "value": "{\\pntext\\f3\\'B7\\tab}Discord: {{\\field{\\*\\fldinst{HYPERLINK https://llaun.ch/discord/ru }}{\\fldrslt{https://llaun.ch/discord/ru\\ul0\\cf0}}}}\\f0\\fs22\\par"
+        },
+        {
+          "offset": 55571,
+          "value": "{\\pntext\\f3\\'B7\\tab}Facebook: {{\\field{\\*\\fldinst{HYPERLINK https://llaun.ch/fb }}{\\fldrslt{https://llaun.ch/fb\\ul0\\cf0}}}}\\f0\\fs22\\par"
+        }
+      ]
+    }
+  ],
+  "location_block": {
+    "offset": 116840856,
+    "stored_bytes": 10884,
+    "decoded_bytes": 56980,
+    "decoded_sha256": "39be148985f2aceff5a14632bb2535c07177c02f7e186162d5df4513da9efcb8",
+    "header_crc_valid": true,
+    "chunks_crc_valid": true
+  }
+}
