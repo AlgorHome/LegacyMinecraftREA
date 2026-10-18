@@ -1,0 +1,14 @@
+{
+  "releaseApi": "https://api.github.com/repos/microsoft/winget-cli/releases/tags/v1.29.380",
+  "releasePage": "https://github.com/microsoft/winget-cli/releases/tag/v1.29.380",
+  "releaseTag": "v1.29.380",
+  "archiveUrl": "https://github.com/microsoft/winget-cli/releases/download/v1.29.380/DesktopAppInstaller_Dependencies.zip",
+  "archiveBytes": 97760717,
+  "archiveSha256": "ba875afe9d190f61218985ac0292a99d1db710bf93e13c68944ca9d89f0d82d1",
+  "githubPublishedDigest": "sha256:ba875afe9d190f61218985ac0292a99d1db710bf93e13c68944ca9d89f0d82d1",
+  "zipMember": "x64/Microsoft.VCLibs.140.00_14.0.33519.0_x64.appx",
+  "candidatePath": "Microsoft.VCLibs.140.00.x64.official.appx",
+  "candidateSha256": "9c17b521f9d690a1f504da5108ed6eec5669eb3a8fd1331eef43e40d84e74283",
+  "candidateBytes": 896581,
+  "targetExecuted": false
+}
