@@ -1,0 +1,18 @@
+build_config.h
+C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\NativeCapabilities\include\build_config.h(16): fatal error C1189: #error:  This project permits only native D06-HW01; Java and additional cases are forbidden
+
+
+#pragma once
+
+
+
+
+
+
+
+
+
+
+
+
+

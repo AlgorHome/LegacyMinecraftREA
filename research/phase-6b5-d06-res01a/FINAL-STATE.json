@@ -1,0 +1,34 @@
+{
+  "sourceCommit": "4457142ff1fd9e01371eb446612c70162ce93357",
+  "unsignedAppx": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\NativeCapabilities\\out\\20261017-183031-15ba7835\\NativeCapabilities.unsigned.appx",
+  "unsignedAppxSha256": "526c7fe24950a1084e592c2df3d020c82aa1d15cd330b4b7fd5612e82191d7e8",
+  "verdict": "PASS_STATIC_ONLY",
+  "hardwareStatus": "NOT EXECUTED",
+  "baselineFilesUnchanged": 107,
+  "requiredDeliverables": [
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-res01a\\IMPLEMENTATION-REPORT.md",
+      "sha256": "e0c3fc180983399779cfb77ce0bad4d86f59bdb5cf0289371dc9c0f49c204b47"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-res01a\\STATIC-SAFETY-REVIEW.md",
+      "sha256": "7283405f26aacbb166bfb807a4b6527d1e1027a9dcd50476448f6a128ac40073"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-res01a\\BUILD-EVIDENCE.json",
+      "sha256": "0f9fe5b34c2068fb0d1fcd30e52e06e3a70444601f04f5e1a567fdd1ccd28cf9"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-res01a\\RECEIPT-SCHEMA.json",
+      "sha256": "cd2ba13e2da44ead0cb3f421d88138596cca6541e86105daed7e892883029180"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-res01a\\HARDWARE-ACCEPTANCE-PLAN.md",
+      "sha256": "232d4c99fc108fde538a899682f45d7fca3890931df8707475beae8bad361676"
+    }
+  ],
+  "signed": false,
+  "targetExecuted": false,
+  "consoleAccess": false,
+  "sourceCheckoutClean": true
+}

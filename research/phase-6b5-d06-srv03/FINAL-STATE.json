@@ -1,0 +1,22 @@
+{
+  "sourceCommit": "deb44072dd8e3ef2c936307b0a6788c6a95fad6b",
+  "branch": "research/phase6b5x-d06-srv03",
+  "sourceClean": true,
+  "unsignedAppx": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\NativeCapabilities\\out\\20261017-194936-1a6bc299\\NativeCapabilities.unsigned.appx",
+  "unsignedSha256": "f0c9aff93c7fe05d202d9460d0f6f8643b3facfe674ce1543055a9027e1bc3e6",
+  "staticVerdict": "PASS_STATIC_ONLY",
+  "preservedOriginalFrozen": 175,
+  "preservedTotal": 208,
+  "baselinePreservation": "PASS",
+  "requiredDeliverables": [
+    "IMPLEMENTATION-REPORT.md",
+    "STATIC-SAFETY-REVIEW.md",
+    "BUILD-EVIDENCE.json",
+    "RECEIPT-SCHEMA.json",
+    "HARDWARE-ACCEPTANCE-PLAN.md"
+  ],
+  "signed": false,
+  "targetExecuted": false,
+  "consoleAccess": false,
+  "nextGate": "Separate authorization for local signing and integrity verification"
+}

@@ -1,0 +1,128 @@
+{
+  "verdict": "PASS_D06_FMT01_ONLY",
+  "receipt_path": "C:\\Users\\arinze\\Desktop\\D06-FMT01-D10A4D4B-45B4-4E67-972F-5B7A13675204.json",
+  "receipt_sha256": "453d84192d19a698513513742468dae8509c74973ecd9645fe08266cb1184893",
+  "receipt_bytes": 2735,
+  "photo_path": "C:\\Users\\arinze\\AppData\\Local\\Temp\\codex-clipboard-bc68cd2c-bddb-42f5-a0a8-2c7b83f911be.png",
+  "photo_sha256": "9a4c59da1a878a699aa9936081bd69cf5e21214923ae529ce7c59a919abafa68",
+  "photo_bytes": 2239950,
+  "preserved_originals": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b5-fmt01-hardware-acceptance\\originals",
+  "schema_validation": "PASS_PINNED_V2_STRUCTURE_AND_CASE_ORACLE",
+  "source_commit": "bbe3a42c422e4328d5f98c07a9370fa948d0cbbf",
+  "build_id": "20261017-180047-9ad3700d",
+  "package_name": "AlgorHome.LegacyForge.NativeDiagnostics",
+  "package_version": "0.2.1.0",
+  "architecture": "x64",
+  "run_id": "D10A4D4B-45B4-4E67-972F-5B7A13675204",
+  "process_instance_id": "F55B2698-AF7B-4D48-A176-9B8DDCC6AA28",
+  "status": "PASS",
+  "reason": "RGBA8_REQUIRED_FORMAT_SUPPORT_CONFIRMED",
+  "stage": "FINAL",
+  "terminal": true,
+  "sequence": 4,
+  "last_durable_checkpoint_stage": "BEFORE_FORMAT_QUERY",
+  "observed_at_utc": "2026-10-17T23:15:01.858Z",
+  "observed_at_chicago": "2026-10-17T18:15:01.858000-05:00",
+  "elapsed_ms": 63,
+  "deadline_ms": 10000,
+  "headroom_before_bytes": 1068810240,
+  "observed_memory_growth_bytes": 4972544,
+  "payload_comparisons": [
+    {
+      "role": "executable_sha256",
+      "member": "NativeCapabilities.exe",
+      "independently_hashed_sha256": "eda70661b4f0ec6b7df6e08b81c8e42f7ee2f6f11acc8f3c3be69a5872f43de1",
+      "receipt_match": true,
+      "signed_payload_match": true
+    },
+    {
+      "role": "manifest_sha256",
+      "member": "AppxManifest.xml",
+      "independently_hashed_sha256": "593fbda9d0dce1ac6b6f12a96e187d5b1c2d0d4aaced9accdadb7cf806807fd0",
+      "receipt_match": true,
+      "signed_payload_match": true
+    },
+    {
+      "role": "build_inputs_sha256",
+      "member": "native-inputs.json",
+      "independently_hashed_sha256": "5cb62bbacce8b7000099f9432c285bbb71b8b3e26fd50876878f1db1a89cc21a",
+      "receipt_match": true,
+      "signed_payload_match": true
+    },
+    {
+      "role": "policy_sha256",
+      "member": "profiles/D06-FMT01.json",
+      "independently_hashed_sha256": "57f849c631ba5fd2de08e6d6eda593eccd81f7cba485212b99f7665b86f0a845",
+      "receipt_match": true,
+      "signed_payload_match": true
+    },
+    {
+      "role": "schema_sha256",
+      "member": "contracts/native-receipt.schema.json",
+      "independently_hashed_sha256": "3373265fb3aa787a375e4edc1da54e4807793bf4151d645519d9c45b5cdbb6b7",
+      "receipt_match": true,
+      "signed_payload_match": true
+    },
+    {
+      "role": "inventory_sha256",
+      "member": "native-inventory.json",
+      "independently_hashed_sha256": "37cc66fcd8abd77fce39b6d488ac822e196ced3bf91cb1a7835ec90976d1f1b6",
+      "receipt_match": true,
+      "signed_payload_match": true
+    }
+  ],
+  "details": {
+    "requested_driver_type": "HARDWARE",
+    "requested_driver_type_value": 1,
+    "requested_feature_level": 45056,
+    "creation_flags": 32,
+    "software_fallback_allowed": false,
+    "render_or_present_tested": false,
+    "format_name": "DXGI_FORMAT_R8G8B8A8_UNORM",
+    "format_value": 28,
+    "required_support_mask": 16928,
+    "query_attempted": true,
+    "format_support_valid": true,
+    "memory_before": {
+      "usage_bytes": 4931584,
+      "limit_bytes": 1073741824,
+      "available": true
+    },
+    "creation_hresult": "0x00000000",
+    "creation_hresult_signed": 0,
+    "selected_feature_level": 45056,
+    "device_returned": true,
+    "context_returned": true,
+    "get_adapter_hresult": "0x00000000",
+    "get_desc_hresult": "0x00000000",
+    "adapter_flags": 0,
+    "adapter_software_flag": false,
+    "query_hresult": "0x00000000",
+    "query_hresult_signed": 0,
+    "format_support_raw": 872346611,
+    "format_support_hex": "0x33FEF3F3",
+    "texture2d_supported": true,
+    "shader_sample_supported": true,
+    "render_target_supported": true,
+    "mip_supported": true,
+    "test_resources_released": true,
+    "memory_after_release": {
+      "usage_bytes": 9904128,
+      "limit_bytes": 1073741824,
+      "available": true
+    }
+  },
+  "baseline_files_verified_unchanged": 84,
+  "photo_association": "Visually inspected supplied original: exact run UUID/case/version/PASS/reason/S_OK/11_0/saved-receipt message match; photo does not display query mask or query HRESULT",
+  "persistence": "Retrieved original terminal receipt plus matching UI saved message; new FMT01 UUID, version/build binding distinguish stale HW01 evidence",
+  "limits": [
+    "Owner attests Xbox Series X origin and retrieval; receipt/photo are not hardware-attested signatures",
+    "Receipt UTC clock accuracy and remote file listing/timestamps not independently verified",
+    "Sequence/checkpoint consistency checked; earlier overwritten checkpoint bytes not supplied",
+    "Scoped COM-reference release is not proof of all driver allocations freed",
+    "No app texture creation/rendering/presentation/OpenGL/LWJGL/Java/JNI/Minecraft tested"
+  ],
+  "new_target_execution": false,
+  "console_access": false,
+  "source_modified": false
+}

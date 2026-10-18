@@ -1,0 +1,854 @@
+diff --git a/diagnostics/NativeCapabilities/README.md b/diagnostics/NativeCapabilities/README.md
+index 9a924c5..204044e 100644
+--- a/diagnostics/NativeCapabilities/README.md
++++ b/diagnostics/NativeCapabilities/README.md
+@@ -1,48 +1,51 @@
+-# NativeCapabilities â€” D06-RES01a only
+-
+-Diagnostic NativeDiagnostics0.2.2.0, same separate identity as accepted0.2.1.0,
+-zero declared capabilities. Future installation updates/replaces that registration
+-and may retain stale LocalState. No signing or installation in this phase.
+-Accepted D00 RuntimeDiagnostics and production LegacyForge remain separate.
+-
+-MTA/CoreApplication startup and LegacyForgeNativeDiagnostics.App entry point retained.
+-One fixed hardware device,11_0/BGRA_SUPPORT, no WARP/retry; establish non-software
+-adapter. Create exactly one1x1 RGBA8 DEFAULT/SHADER_RESOURCE texture, one mip,
+-array1, sample count1/quality0, CPU/misc flags0, null initial data and nonnull output.
+-S_OK and nonnull texture required, then GetDesc exact comparison of all11 fields.
+-S_FALSE is not allocation success. Scoped texture/device/context references release.
+-No CheckFormatSupport sweep, initialization/read of undefined contents, graphics
+-views, buffers, shaders, clear/draw/copy/map/readback, swapchain or presentation.
+-Driver internal allocations exceed nominal4-byte texel storage and cannot be capped.
+-
+-Build: existing MSVC14.44.35207 UWP store libraries, SDK10.0.26100.0 C++/WinRT,
+-PowerShell7 and Python standard library. No downloads or new dependencies.
+-From a clean committed checkout:
++# NativeCapabilities â€” D06-SRV01 only
++
++Standalone native-only diagnostic, NativeDiagnostics0.2.3.0, zero capabilities.
++Existing identity/publisher/entry point retained; future installation replaces0.2.2.0
++and may retain old receipts/LocalState. Accepted D00 and production remain separate.
++
++MTA/CoreApplication startup. One hardware D3D11 device11_0/BGRA_SUPPORT with known
++non-software adapter; one accepted RES01a1x1 RGBA8 DEFAULT/SHADER_RESOURCE texture,
++no initial data; compare every texture descriptor field, then one explicit SRV:
++RGBA8, TEXTURE2D, MostDetailedMip0, MipLevels1. S_OK and nonnull view required;
++one view GetDesc checks four relevant fields. Different ViewDimension fails before
++reading Texture2D union fields. SRV leaves scope before texture/context/device.
++No S_FALSE-as-allocation PASS, retries, WARP, extra case or interactive selection.
++
++No texel writes/reads, pipeline binding, SRV sampling, RTV/other views, shaders,
++draw/clear/copy/map/readback, swapchain/presentation, Java/JNI/Minecraft or runtimes.
++Only one reviewed SRV factory is permitted. Driver internal allocations are not
++strictly bounded to the nominal4-byte texture. COM release is scoped-reference
++cleanup, not proof of freeing every driver allocation.
++
++Build with existing Windows MSVC14.44.35207 UWP libraries, SDK10.0.26100.0,
++PowerShell7 and Python standard library. No downloads/dependencies/certificates:
+ 
+ ```powershell
+ pwsh -NoProfile -File .\diagnostics\NativeCapabilities\build.ps1
+ ```
+ 
+-Fresh ignored build directory, x64 executable and unsigned APPX. Only app.cpp,
+-report.cpp and probe.cpp compiled; all preprocessed for Java exclusion. Six unsafe
+-macro configurations rejected by compiler. One RES01a case per build; previous
+-HW01/FMT01 macros/activation arguments blocked. No runtime file/Java input options.
+-
+-Receipt schema v3. tools/receipt_contract.py validates structures and case semantics
+-with original synthetic JSON fixtures; it never executes target code. Six payload
+-roles bound to source/build and current-run UUID. Typical sequence STARTED1 ->
+-BEFORE_CREATE_DEVICE2 -> BEFORE_CREATE_TEXTURE3 -> FINAL4. Saved final original,
+-independent payload hashes and owner photo/run match required for acceptance.
+-NOT EXECUTED is distinct from PASS/FAILED/BLOCKED/INCONCLUSIVE.
+-
+-10s observational deadline;30s owner window. Watchdog cannot cancel GPU or file calls.
+-Initial package hashing/writing precedes timer arming.128KiB per receipt,100ms lock
+-acquisition, temp/flush/atomic replace; OS file operations are not hard-time-bounded.
+-First terminal wins; late PASS denied. Receipt marker VERIFY_BY_RETRIEVAL is not a
+-self-prediction of flush success. Platform MessageDialog is not app rendering.
+-Memory policy:>=256MiB before headroom,<=64MiB observed growth; not peak/leak proof.
+-
+-See external docs/research/phase-6b5-d06-res01a for complete evidence and independently
+-gated hardware plan. Never execute the diagnostic as part of a host build check.
+-https://learn.microsoft.com/en-us/windows/win32/api/d3d11/nf-d3d11-id3d11device-createtexture2d
+-https://learn.microsoft.com/en-us/windows/win32/api/d3d11/ns-d3d11-d3d11_texture2d_desc
++Clean committed checkout required; unique ignored out directory, unsigned x64 APPX.
++Three native units compiled/preprocessed; seven unsafe configurations rejected by
++compiler-only tests. Target code never executed by the build or JSON oracle tests.
++
++Receipt v4, case D06-SRV01. Six independently verifiable payload-role hashes,
++source/build/frozen references, identity and process/run UUIDs. Typical sequence:
++STARTED1 -> BEFORE_CREATE_DEVICE2 -> BEFORE_CREATE_TEXTURE3 -> BEFORE_CREATE_SRV4
++-> FINAL5. Original final retrieval + independent hashes + exact photo/run required.
++Missing intermediate/returned data never becomes a fabricated all-zero descriptor.
++PASS/FAILED/BLOCKED/INCONCLUSIVE/NOT EXECUTED remain distinct.
++
++10s observational deadline,30s owner window. First terminal wins; late PASS denied.
++No cancellation of blocked GPU/GetDesc/release/file calls. Startup hashing/initial
++write precedes timer.128KiB writer cap,100ms lock acquisition, finite byte progress,
++temp/flush/atomic replacement; no hard OS-call wall-time or power-loss guarantee.
++VERIFY_BY_RETRIEVAL avoids predicting successful persistence within its own bytes.
++Memory sample policy>=256MiB headroom,<=64MiB observed growth, no peak/leak proof.
++Platform MessageDialog is not app-owned rendering; async UI failures remain a limit.
++
++See external docs/research/phase-6b5-d06-srv01 for full source diff, unsigned evidence,
++receipt contract and separately gated signing/install/launch/retrieval/cleanup plan.
++No source build authorization permits signing, target execution or console access.
++https://learn.microsoft.com/en-us/windows/win32/api/d3d11/nf-d3d11-id3d11device-createshaderresourceview
++https://learn.microsoft.com/en-us/windows/win32/api/d3d11/nf-d3d11-id3d11shaderresourceview-getdesc
+diff --git a/diagnostics/NativeCapabilities/build.ps1 b/diagnostics/NativeCapabilities/build.ps1
+index 40d87a1..2922f7a 100644
+--- a/diagnostics/NativeCapabilities/build.ps1
++++ b/diagnostics/NativeCapabilities/build.ps1
+@@ -1,5 +1,5 @@
+ [CmdletBinding()]
+-param([ValidateSet('D06-RES01a')][string]$Case='D06-RES01a',
++param([ValidateSet('D06-SRV01')][string]$Case='D06-SRV01',
+  [string]$MsvcRoot='C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207',
+  [string]$SdkRoot='C:\Program Files (x86)\Windows Kits\10',[string]$SdkVersion='10.0.26100.0',[string]$Python='python')
+ # Compile/static tooling only; no diagnostic execution, signing, installation or downloads.
+@@ -15,7 +15,7 @@ $out=Join-Path $root ('out\'+$buildId)
+ $stage=Join-Path $out 'package';$objects=Join-Path $out 'objects';$generated=Join-Path $out 'generated';$logs=Join-Path $out 'logs'
+ foreach($dir in @($stage,$objects,$generated,$logs,(Join-Path $stage 'profiles'),(Join-Path $stage 'contracts'))){New-Item -ItemType Directory -Path $dir -ErrorAction Stop | Out-Null}
+ function Hash([string]$path){(Get-FileHash -LiteralPath $path -Algorithm SHA256).Hash.ToLowerInvariant()}
+-$definitions=@('LFN_NATIVE_ONLY=1','LFN_JNI_ENABLED=0','LFD_D00_ONLY=1','LFN_CASE_D06_RES01A=1')
++$definitions=@('LFN_NATIVE_ONLY=1','LFN_JNI_ENABLED=0','LFD_D00_ONLY=1','LFN_CASE_D06_SRV01=1')
+ $sources=@('src/app.cpp','src/report.cpp','src/probe.cpp')
+ $record=[ordered]@{schema='legacyforge-native-build-v1';sourceCommit=$commit;buildId=$buildId;caseId=$Case;definitions=$definitions;compiledSources=$sources;nativeOnly=$true;jniEnabled=$false;status='STARTED';targetExecuted=$false;signed=$false;commands=@();tools=@();sourceFiles=@();artifacts=@()}
+ function Save { $record | ConvertTo-Json -Depth 12 | Set-Content -LiteralPath (Join-Path $out 'build-receipt.json') -Encoding utf8 }
+@@ -40,7 +40,7 @@ try {
+  # Preprocessor-only rejection tests: never link or execute an unsafe build.
+  $gateSource=Join-Path $generated 'gate.cpp'
+  '#include "build_config.h"' | Set-Content -LiteralPath $gateSource -Encoding utf8
+- foreach($definition in @('LFN_NATIVE_ONLY=0','LFN_JNI_ENABLED=1','LFD_D00_ONLY=0','LFN_CASE_D06_RES01A=0','LFN_CASE_D06_HW01=1','LFN_CASE_D06_FMT01=1')) {
++ foreach($definition in @('LFN_NATIVE_ONLY=0','LFN_JNI_ENABLED=1','LFD_D00_ONLY=0','LFN_CASE_D06_SRV01=0','LFN_CASE_D06_HW01=1','LFN_CASE_D06_FMT01=1','LFN_CASE_D06_RES01A=1')) {
+   $name='gate-'+$definition.Replace('=','-');$log=Join-Path $logs ($name+'.log')
+   & $cl /nologo /P ('/I'+(Join-Path $root 'include')) ('/D'+$definition) ('/Fi'+(Join-Path $generated ($name+'.i'))) $gateSource *> $log
+   $code=$LASTEXITCODE
+@@ -58,7 +58,7 @@ try {
+  Invoke-Static 'imports' $dump @('/nologo','/imports',$exe)
+  Invoke-Static 'headers' $dump @('/nologo','/headers',$exe)
+  Copy-Item -LiteralPath (Join-Path $root 'package\Package.appxmanifest') -Destination (Join-Path $stage 'AppxManifest.xml')
+- Copy-Item -LiteralPath (Join-Path $root 'profiles\D06-RES01a.json') -Destination (Join-Path $stage 'profiles\D06-RES01a.json')
++ Copy-Item -LiteralPath (Join-Path $root 'profiles\D06-SRV01.json') -Destination (Join-Path $stage 'profiles\D06-SRV01.json')
+  Copy-Item -LiteralPath (Join-Path $root 'contracts\native-receipt.schema.json') -Destination (Join-Path $stage 'contracts\native-receipt.schema.json')
+  Copy-Item -LiteralPath (Join-Path $root 'native-inventory.json') -Destination (Join-Path $stage 'native-inventory.json')
+  Copy-Item -LiteralPath (Join-Path (Split-Path (Split-Path $root -Parent) -Parent) 'LICENSE') -Destination (Join-Path $stage 'LICENSE.txt')
+diff --git a/diagnostics/NativeCapabilities/contracts/native-receipt.schema.json b/diagnostics/NativeCapabilities/contracts/native-receipt.schema.json
+index 63d2f86..1d9b5f4 100644
+--- a/diagnostics/NativeCapabilities/contracts/native-receipt.schema.json
++++ b/diagnostics/NativeCapabilities/contracts/native-receipt.schema.json
+@@ -1,7 +1,7 @@
+ {
+   "$schema": "https://json-schema.org/draft/2020-12/schema",
+-  "$id": "urn:legacyforge:native-capability-receipt:v3",
+-  "title": "D06-RES01a one 1x1 RGBA8 texture creation/GetDesc/release only",
++  "$id": "urn:legacyforge:native-capability-receipt:v4",
++  "title": "D06-SRV01 one explicit RGBA8 texture2D shader-resource view creation/GetDesc/release only",
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+@@ -37,14 +37,15 @@
+     "receipt_persistence_result",
+     "details",
+     "frozen_hw01_reference_commit",
+-    "frozen_fmt01_reference_commit"
++    "frozen_fmt01_reference_commit",
++    "frozen_res01a_reference_commit"
+   ],
+   "properties": {
+     "schema": {
+-      "const": "legacyforge-native-capability-receipt-v3"
++      "const": "legacyforge-native-capability-receipt-v4"
+     },
+     "case_id": {
+-      "const": "D06-RES01a"
++      "const": "D06-SRV01"
+     },
+     "source_commit": {
+       "type": "string",
+@@ -67,7 +68,7 @@
+       "const": "CN=LegacyForgeDiagnostics"
+     },
+     "package_version": {
+-      "const": "0.2.2.0"
++      "const": "0.2.3.0"
+     },
+     "architecture": {
+       "const": "x64"
+@@ -152,6 +153,7 @@
+         "STARTED",
+         "BEFORE_CREATE_DEVICE",
+         "BEFORE_CREATE_TEXTURE",
++        "BEFORE_CREATE_SRV",
+         "FINAL"
+       ]
+     },
+@@ -178,7 +180,8 @@
+         "",
+         "STARTED",
+         "BEFORE_CREATE_DEVICE",
+-        "BEFORE_CREATE_TEXTURE"
++        "BEFORE_CREATE_TEXTURE",
++        "BEFORE_CREATE_SRV"
+       ]
+     },
+     "receipt_persistence_result": {
+@@ -295,6 +298,41 @@
+         },
+         "nonnull_output_pointer": {
+           "const": true
++        },
++        "srv_attempted": {
++          "type": "boolean"
++        },
++        "srv_hresult": {
++          "$ref": "#/$defs/hresult"
++        },
++        "srv_hresult_signed": {
++          "type": "integer",
++          "minimum": -2147483648,
++          "maximum": 2147483647
++        },
++        "srv_returned": {
++          "type": "boolean"
++        },
++        "srv_get_desc_called": {
++          "type": "boolean"
++        },
++        "srv_descriptors_match": {
++          "type": "boolean"
++        },
++        "srv_reference_released": {
++          "type": "boolean"
++        },
++        "srv_released_before_texture": {
++          "type": "boolean"
++        },
++        "srv_nonnull_output_pointer": {
++          "const": true
++        },
++        "srv_requested_descriptor": {
++          "$ref": "#/$defs/srv_requested_descriptor"
++        },
++        "srv_returned_descriptor": {
++          "$ref": "#/$defs/srv_descriptor"
+         }
+       }
+     },
+@@ -303,6 +341,9 @@
+     },
+     "frozen_fmt01_reference_commit": {
+       "const": "bbe3a42c422e4328d5f98c07a9370fa948d0cbbf"
++    },
++    "frozen_res01a_reference_commit": {
++      "const": "4457142ff1fd9e01371eb446612c70162ce93357"
+     }
+   },
+   "$defs": {
+@@ -473,7 +514,65 @@
+           "const": 0
+         }
+       }
++    },
++    "srv_requested_descriptor": {
++      "type": "object",
++      "additionalProperties": false,
++      "required": [
++        "format",
++        "view_dimension",
++        "most_detailed_mip",
++        "mip_levels"
++      ],
++      "properties": {
++        "format": {
++          "type": "integer",
++          "const": 28
++        },
++        "view_dimension": {
++          "type": "integer",
++          "const": 4
++        },
++        "most_detailed_mip": {
++          "type": "integer",
++          "const": 0
++        },
++        "mip_levels": {
++          "type": "integer",
++          "const": 1
++        }
++      }
++    },
++    "srv_descriptor": {
++      "type": "object",
++      "additionalProperties": false,
++      "required": [
++        "format",
++        "view_dimension"
++      ],
++      "properties": {
++        "format": {
++          "type": "integer",
++          "minimum": 0,
++          "maximum": 4294967295
++        },
++        "view_dimension": {
++          "type": "integer",
++          "minimum": 0,
++          "maximum": 4294967295
++        },
++        "most_detailed_mip": {
++          "type": "integer",
++          "minimum": 0,
++          "maximum": 4294967295
++        },
++        "mip_levels": {
++          "type": "integer",
++          "minimum": 0,
++          "maximum": 4294967295
++        }
++      }
+     }
+   },
+-  "$comment": "Structure plus receipt_contract.py oracle; actual allocation needs S_OK AND nonnull texture, GetDesc all11 fields exact, scoped release, memory/deadline and independent payload binding/retrieval. S_FALSE is never allocation PASS. Earlier cases not dispatched. Persistence cannot be self-predicted; blocked GPU/I/O cannot be cancelled."
++  "$comment": "Structure plus independent case oracle; SRV fields require valid texture, S_OK/non-null view and exact active descriptor fields; no inactive union reads. PASS needs texture+SRV release in order, device cleanup, memory/deadline and original receipt retrieval/independent hashes. S_FALSE is not allocation. No pipeline binding or texel reads."
+ }
+diff --git a/diagnostics/NativeCapabilities/include/build_config.h b/diagnostics/NativeCapabilities/include/build_config.h
+index 476da89..b7207e2 100644
+--- a/diagnostics/NativeCapabilities/include/build_config.h
++++ b/diagnostics/NativeCapabilities/include/build_config.h
+@@ -9,12 +9,12 @@
+ #ifndef LFD_D00_ONLY
+ #define LFD_D00_ONLY 1
+ #endif
+-#ifndef LFN_CASE_D06_RES01A
+-#define LFN_CASE_D06_RES01A 1
++#ifndef LFN_CASE_D06_SRV01
++#define LFN_CASE_D06_SRV01 1
+ #endif
+-#if defined(LFN_CASE_D06_HW01) || defined(LFN_CASE_D06_FMT01)
+-#error The accepted HW01/FMT01 cases are excluded from this RES01a build
++#if defined(LFN_CASE_D06_HW01) || defined(LFN_CASE_D06_FMT01) || defined(LFN_CASE_D06_RES01A)
++#error The accepted HW01/FMT01/RES01a cases are excluded from this SRV01 build
+ #endif
+-#if LFN_NATIVE_ONLY != 1 || LFN_JNI_ENABLED != 0 || LFD_D00_ONLY != 1 || LFN_CASE_D06_RES01A != 1
+-#error This project permits only native D06-RES01a; Java and additional cases are forbidden
++#if LFN_NATIVE_ONLY != 1 || LFN_JNI_ENABLED != 0 || LFD_D00_ONLY != 1 || LFN_CASE_D06_SRV01 != 1
++#error This project permits only native D06-SRV01; Java and additional cases are forbidden
+ #endif
+diff --git a/diagnostics/NativeCapabilities/include/native.h b/diagnostics/NativeCapabilities/include/native.h
+index a63876a..0880e6f 100644
+--- a/diagnostics/NativeCapabilities/include/native.h
++++ b/diagnostics/NativeCapabilities/include/native.h
+@@ -13,7 +13,7 @@
+ 
+ namespace lfn {
+ using Json = winrt::Windows::Data::Json::JsonObject;
+-inline constexpr wchar_t Case[] = L"D06-RES01a";
++inline constexpr wchar_t Case[] = L"D06-SRV01";
+ inline constexpr wchar_t Identity[] = L"AlgorHome.LegacyForge.NativeDiagnostics";
+ inline constexpr uint64_t DeadlineMs = 10000;
+ void Text(Json const&, wchar_t const*, std::wstring const&);
+diff --git a/diagnostics/NativeCapabilities/native-inventory.json b/diagnostics/NativeCapabilities/native-inventory.json
+index 909854b..54f1714 100644
+--- a/diagnostics/NativeCapabilities/native-inventory.json
++++ b/diagnostics/NativeCapabilities/native-inventory.json
+@@ -1 +1 @@
+-{"schema":"legacyforge-native-inventory-v1","case_id":"D06-RES01a","native_only":true,"java_jni_enabled":false,"runtime_files":[],"fixtures":[],"extra_modules":[],"executable":"NativeCapabilities.exe"}
++{"schema":"legacyforge-native-inventory-v1","case_id":"D06-SRV01","native_only":true,"java_jni_enabled":false,"runtime_files":[],"fixtures":[],"extra_modules":[],"executable":"NativeCapabilities.exe"}
+diff --git a/diagnostics/NativeCapabilities/package/Package.appxmanifest b/diagnostics/NativeCapabilities/package/Package.appxmanifest
+index 21fd5a8..533b325 100644
+--- a/diagnostics/NativeCapabilities/package/Package.appxmanifest
++++ b/diagnostics/NativeCapabilities/package/Package.appxmanifest
+@@ -1,8 +1,8 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap">
+- <Identity Name="AlgorHome.LegacyForge.NativeDiagnostics" Publisher="CN=LegacyForgeDiagnostics" Version="0.2.2.0" ProcessorArchitecture="x64"/>
+- <Properties><DisplayName>Native Diagnostics â€” D06-RES01a</DisplayName><PublisherDisplayName>Independent Native Diagnostics</PublisherDisplayName><Logo>Assets/StoreLogo.png</Logo></Properties>
++ <Identity Name="AlgorHome.LegacyForge.NativeDiagnostics" Publisher="CN=LegacyForgeDiagnostics" Version="0.2.3.0" ProcessorArchitecture="x64"/>
++ <Properties><DisplayName>Native Diagnostics â€” D06-SRV01</DisplayName><PublisherDisplayName>Independent Native Diagnostics</PublisherDisplayName><Logo>Assets/StoreLogo.png</Logo></Properties>
+  <Dependencies><TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.26100.0"/><PackageDependency Name="Microsoft.VCLibs.140.00" MinVersion="14.0.0.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"/></Dependencies>
+  <Resources><Resource Language="en-us"/></Resources>
+- <Applications><Application Id="App" Executable="NativeCapabilities.exe" EntryPoint="LegacyForgeNativeDiagnostics.App"><uap:VisualElements DisplayName="Native Diagnostics â€” D06-RES01a" Description="One 1x1 RGBA8 texture allocation only; no rendering or Java" BackgroundColor="#162030" Square150x150Logo="Assets/Square150x150Logo.png" Square44x44Logo="Assets/Square44x44Logo.png"><uap:SplashScreen Image="Assets/SplashScreen.png" BackgroundColor="#162030"/></uap:VisualElements></Application></Applications>
++ <Applications><Application Id="App" Executable="NativeCapabilities.exe" EntryPoint="LegacyForgeNativeDiagnostics.App"><uap:VisualElements DisplayName="Native Diagnostics â€” D06-SRV01" Description="One RGBA8 shader resource view only; no shader execution or rendering" BackgroundColor="#162030" Square150x150Logo="Assets/Square150x150Logo.png" Square44x44Logo="Assets/Square44x44Logo.png"><uap:SplashScreen Image="Assets/SplashScreen.png" BackgroundColor="#162030"/></uap:VisualElements></Application></Applications>
+ </Package>
+diff --git a/diagnostics/NativeCapabilities/profiles/D06-RES01a.json b/diagnostics/NativeCapabilities/profiles/D06-SRV01.json
+similarity index 72%
+rename from diagnostics/NativeCapabilities/profiles/D06-RES01a.json
+rename to diagnostics/NativeCapabilities/profiles/D06-SRV01.json
+index d9a5789..db55f9d 100644
+--- a/diagnostics/NativeCapabilities/profiles/D06-RES01a.json
++++ b/diagnostics/NativeCapabilities/profiles/D06-SRV01.json
+@@ -1,6 +1,6 @@
+ {
+   "schema": "legacyforge-native-case-policy-v1",
+-  "case_id": "D06-RES01a",
++  "case_id": "D06-SRV01",
+   "deadline_ms": 10000,
+   "owner_observation_ms": 30000,
+   "minimum_headroom_bytes": 268435456,
+@@ -36,7 +36,18 @@
+   "initial_data_supplied": false,
+   "nonnull_output_pointer": true,
+   "nominal_texel_bytes": 4,
+-  "texture_views_created": false,
++  "texture_views_created": true,
+   "buffer_creation": false,
+-  "descriptor_match_required": true
++  "descriptor_match_required": true,
++  "srv_attempts_maximum": 1,
++  "srv_requested_descriptor": {
++    "format": 28,
++    "view_dimension": 4,
++    "most_detailed_mip": 0,
++    "mip_levels": 1
++  },
++  "srv_nonnull_output_pointer": true,
++  "srv_descriptor_explicit": true,
++  "srv_release_before_texture": true,
++  "pipeline_binding": false
+ }
+diff --git a/diagnostics/NativeCapabilities/src/app.cpp b/diagnostics/NativeCapabilities/src/app.cpp
+index 4f9968f..d0df921 100644
+--- a/diagnostics/NativeCapabilities/src/app.cpp
++++ b/diagnostics/NativeCapabilities/src/app.cpp
+@@ -23,8 +23,8 @@ struct View : implements<View,IFrameworkView> {
+     Windows::Foundation::IAsyncOperation<IUICommand> dialogOperation_{nullptr};
+     void Show(std::wstring const& content) {
+         // Platform UI owns drawing; this program has no swapchain/target/presentation code.
+-        try {MessageDialog dialog{content,L"Native Diagnostics â€” D06-RES01a"};dialogOperation_=dialog.ShowAsync();}
+-        catch(...) {try {Windows::UI::ViewManagement::ApplicationView::GetForCurrentView().Title(L"Native Diagnostics â€” D06-RES01a: UI unavailable; inspect receipt");}catch(...) {}}
++        try {MessageDialog dialog{content,L"Native Diagnostics â€” D06-SRV01"};dialogOperation_=dialog.ShowAsync();}
++        catch(...) {try {Windows::UI::ViewManagement::ApplicationView::GetForCurrentView().Title(L"Native Diagnostics â€” D06-SRV01: UI unavailable; inspect receipt");}catch(...) {}}
+     }
+     void Initialize(CoreApplicationView const& view) {
+         view_=view;
+@@ -55,7 +55,7 @@ struct View : implements<View,IFrameworkView> {
+             try {dispatcher.RunAsync(CoreDispatcherPriority::Normal,[state,weak]{
+                 if(auto self=weak.get()) {
+                     auto result=state->receipt->Snapshot();
+-                    std::wstring text=L"Case: D06-RES01a / package 0.2.2.0\nTest status: "+result.status+L"\nReason: "+result.reason+L"\nHardware request: yes; no software fallback\nDevice creation HRESULT: "+result.creation+L"\nFeature level: "+result.feature+L"\nReceipt persistence: "+(result.persistence==0?std::wstring(L"saved; verify downloaded JSON"):std::wstring(L"NOT CONFIRMED / error ")+std::to_wstring(result.persistence))+L"\nRun: "+state->receipt->RunId()+L"\nJava/JNI excluded. One 1x1 RGBA8 texture only; no rendering/presentation. Verify texture HRESULT and descriptors in JSON.\nClose this message; no additional test will run.";
++                    std::wstring text=L"Case: D06-SRV01 / package 0.2.3.0\nTest status: "+result.status+L"\nReason: "+result.reason+L"\nHardware request: yes; no software fallback\nDevice creation HRESULT: "+result.creation+L"\nFeature level: "+result.feature+L"\nReceipt persistence: "+(result.persistence==0?std::wstring(L"saved; verify downloaded JSON"):std::wstring(L"NOT CONFIRMED / error ")+std::to_wstring(result.persistence))+L"\nRun: "+state->receipt->RunId()+L"\nJava/JNI excluded. One texture and one SRV only; no shader binding/execution or rendering. Verify both resource HRESULTs and descriptors in JSON.\nClose this message; no additional test will run.";
+                     self->Show(text);
+                 }
+             });}catch(...){}
+diff --git a/diagnostics/NativeCapabilities/src/probe.cpp b/diagnostics/NativeCapabilities/src/probe.cpp
+index 85c7119..31cb498 100644
+--- a/diagnostics/NativeCapabilities/src/probe.cpp
++++ b/diagnostics/NativeCapabilities/src/probe.cpp
+@@ -5,6 +5,8 @@
+ 
+ namespace lfn {
+ namespace {
++static_assert(D3D11_SRV_DIMENSION_TEXTURE2D==4 && DXGI_FORMAT_R8G8B8A8_UNORM==28);
++static_assert(D3D11_BIND_SHADER_RESOURCE==8 && D3D11_USAGE_DEFAULT==0);
+ D3D11_TEXTURE2D_DESC RequestedDescriptor() {
+     D3D11_TEXTURE2D_DESC value{};
+     value.Width=1;value.Height=1;value.MipLevels=1;value.ArraySize=1;
+@@ -30,6 +32,60 @@ bool SameDescriptor(D3D11_TEXTURE2D_DESC const& a,D3D11_TEXTURE2D_DESC const& b)
+         a.Format==b.Format && a.SampleDesc.Count==b.SampleDesc.Count && a.SampleDesc.Quality==b.SampleDesc.Quality &&
+         a.Usage==b.Usage && a.BindFlags==b.BindFlags && a.CPUAccessFlags==b.CPUAccessFlags && a.MiscFlags==b.MiscFlags;
+ }
++D3D11_SHADER_RESOURCE_VIEW_DESC RequestedSrvDescriptor() {
++    D3D11_SHADER_RESOURCE_VIEW_DESC value{};
++    value.Format=DXGI_FORMAT_R8G8B8A8_UNORM;
++    value.ViewDimension=D3D11_SRV_DIMENSION_TEXTURE2D;
++    value.Texture2D.MostDetailedMip=0;value.Texture2D.MipLevels=1;
++    return value;
++}
++Json SrvDescriptor(D3D11_SHADER_RESOURCE_VIEW_DESC const& value) {
++    Json result;
++    Number(result,L"format",static_cast<unsigned>(value.Format));
++    Number(result,L"view_dimension",static_cast<unsigned>(value.ViewDimension));
++    // Never inspect Texture2D union members for a different returned dimension.
++    if(value.ViewDimension==D3D11_SRV_DIMENSION_TEXTURE2D) {
++        Number(result,L"most_detailed_mip",value.Texture2D.MostDetailedMip);
++        Number(result,L"mip_levels",value.Texture2D.MipLevels);
++    }
++    return result;
++}
++bool SameSrvDescriptor(D3D11_SHADER_RESOURCE_VIEW_DESC const& a,D3D11_SHADER_RESOURCE_VIEW_DESC const& b) {
++    return a.Format==b.Format && a.ViewDimension==b.ViewDimension &&
++        b.ViewDimension==D3D11_SRV_DIMENSION_TEXTURE2D &&
++        a.Texture2D.MostDetailedMip==b.Texture2D.MostDetailedMip && a.Texture2D.MipLevels==b.Texture2D.MipLevels;
++}
++void CreateOneSrv(ID3D11Device* device,ID3D11Texture2D* texture,
++    std::shared_ptr<Receipt> const& receipt,Json const& details,std::wstring& status,std::wstring& reason) {
++    if(!receipt->Checkpoint(L"BEFORE_CREATE_SRV",details)){status=L"BLOCKED";reason=L"SRV_CHECKPOINT_FAILED";return;}
++    if(receipt->Expired() || receipt->Terminal()){status=L"INCONCLUSIVE";reason=L"DEADLINE_BEFORE_SRV_CALL";return;}
++    auto requested=RequestedSrvDescriptor();
++    {
++        winrt::com_ptr<ID3D11ShaderResourceView> srv;
++        Flag(details,L"srv_attempted",true);
++        // Exactly one view factory call, explicit descriptor, nonnull output storage.
++        HRESULT srvHr=device->CreateShaderResourceView(texture,&requested,srv.put());
++        Text(details,L"srv_hresult",Hex(srvHr));Number(details,L"srv_hresult_signed",srvHr);
++        Flag(details,L"srv_returned",bool(srv));
++        if(srvHr!=S_OK) {
++            status=L"FAILED";reason=L"SRV_CREATION_FAILED";
++            if(srvHr==E_ACCESSDENIED || srvHr==E_NOTIMPL || srvHr==E_NOINTERFACE || srvHr==DXGI_ERROR_UNSUPPORTED){status=L"BLOCKED";reason=L"SRV_API_OR_POLICY_UNAVAILABLE";}
++            else if(SUCCEEDED(srvHr)){reason=L"SRV_ALLOCATION_NOT_CONFIRMED";}
++        } else if(!srv){status=L"FAILED";reason=L"SRV_OUTPUT_MISSING";}
++        else if(receipt->Expired() || receipt->Terminal()){status=L"INCONCLUSIVE";reason=L"SRV_CALL_RETURNED_LATE";}
++        else {
++            D3D11_SHADER_RESOURCE_VIEW_DESC returned{};
++            srv->GetDesc(&returned); // void metadata query, no invented HRESULT.
++            Flag(details,L"srv_get_desc_called",true);details.Insert(L"srv_returned_descriptor",SrvDescriptor(returned));
++            bool matches=SameSrvDescriptor(requested,returned);Flag(details,L"srv_descriptors_match",matches);
++            status=matches?L"PASS":L"FAILED";
++            reason=matches?L"RGBA8_SRV_CREATED_DESCRIPTOR_MATCH":L"SRV_DESCRIPTOR_MISMATCH";
++        }
++        // SRV reference leaves scope while the caller still owns the texture.
++    }
++    Flag(details,L"srv_reference_released",true);
++    if(receipt->Expired() || receipt->Terminal()){status=L"INCONCLUSIVE";reason=L"SRV_OPERATION_RETURNED_LATE";}
++}
+ void CreateOneTexture(ID3D11Device* device,D3D11_TEXTURE2D_DESC const& requested,
+     std::shared_ptr<Receipt> const& receipt,Json const& details,std::wstring& status,std::wstring& reason) {
+     if(!receipt->Checkpoint(L"BEFORE_CREATE_TEXTURE",details)){status=L"BLOCKED";reason=L"TEXTURE_CHECKPOINT_FAILED";return;}
+@@ -52,12 +108,13 @@ void CreateOneTexture(ID3D11Device* device,D3D11_TEXTURE2D_DESC const& requested
+             texture->GetDesc(&returned); // void API; no invented GetDesc HRESULT.
+             Flag(details,L"get_desc_called",true);details.Insert(L"returned_descriptor",Descriptor(returned));
+             bool matches=SameDescriptor(requested,returned);Flag(details,L"descriptors_match",matches);
+-            status=matches?L"PASS":L"FAILED";
+-            reason=matches?L"RGBA8_TEXTURE_CREATED_DESCRIPTOR_MATCH":L"TEXTURE_DESCRIPTOR_MISMATCH";
++            if(matches){CreateOneSrv(device,texture.get(),receipt,details,status,reason);}
++            else {status=L"FAILED";reason=L"TEXTURE_DESCRIPTOR_MISMATCH";}
+         }
+         // Scoped texture reference releases even on unexpected HRESULT/non-null output.
+     }
+     Flag(details,L"texture_reference_released",true);
++    if(details.GetNamedBoolean(L"srv_reference_released",false))Flag(details,L"srv_released_before_texture",true);
+     if(receipt->Expired() || receipt->Terminal()){status=L"INCONCLUSIVE";reason=L"TEXTURE_OPERATION_RETURNED_LATE";}
+ }
+ }
+@@ -69,6 +126,8 @@ void Probe(std::shared_ptr<Receipt> const& receipt) {
+     Text(details,L"format_name",L"DXGI_FORMAT_R8G8B8A8_UNORM");Number(details,L"format_value",DXGI_FORMAT_R8G8B8A8_UNORM);
+     Flag(details,L"initial_data_supplied",false);Flag(details,L"nonnull_output_pointer",true);
+     Flag(details,L"texture_attempted",false);Flag(details,L"get_desc_called",false);
++    details.Insert(L"srv_requested_descriptor",SrvDescriptor(RequestedSrvDescriptor()));
++    Flag(details,L"srv_nonnull_output_pointer",true);Flag(details,L"srv_attempted",false);Flag(details,L"srv_get_desc_called",false);
+     auto before=Memory();details.Insert(L"memory_before",before);
+     if(!before.GetNamedBoolean(L"available",false)){receipt->Finish(L"BLOCKED",L"MEMORY_OBSERVATION_UNAVAILABLE",details);return;}
+     double usage=before.GetNamedNumber(L"usage_bytes"),limit=before.GetNamedNumber(L"limit_bytes");
+diff --git a/diagnostics/NativeCapabilities/src/report.cpp b/diagnostics/NativeCapabilities/src/report.cpp
+index 2704afd..8a206b2 100644
+--- a/diagnostics/NativeCapabilities/src/report.cpp
++++ b/diagnostics/NativeCapabilities/src/report.cpp
+@@ -50,21 +50,22 @@ Json Memory() {
+ Receipt::Receipt() {
+     static std::wstring const processId=NewId(); process_=processId;run_=NewId();
+     auto package=winrt::Windows::ApplicationModel::Package::Current(); auto id=package.Id(); auto v=id.Version();
+-    if(id.Name()!=Identity || id.Publisher()!=L"CN=LegacyForgeDiagnostics" || v.Major!=0 || v.Minor!=2 || v.Build!=2 || v.Revision!=0 || id.Architecture()!=winrt::Windows::System::ProcessorArchitecture::X64) winrt::throw_hresult(E_ACCESSDENIED);
+-    Json binding;Text(binding,L"schema",L"legacyforge-native-capability-receipt-v3");Text(binding,L"case_id",Case);Text(binding,L"source_commit",SourceCommit);Text(binding,L"build_id",BuildId);
++    if(id.Name()!=Identity || id.Publisher()!=L"CN=LegacyForgeDiagnostics" || v.Major!=0 || v.Minor!=2 || v.Build!=3 || v.Revision!=0 || id.Architecture()!=winrt::Windows::System::ProcessorArchitecture::X64) winrt::throw_hresult(E_ACCESSDENIED);
++    Json binding;Text(binding,L"schema",L"legacyforge-native-capability-receipt-v4");Text(binding,L"case_id",Case);Text(binding,L"source_commit",SourceCommit);Text(binding,L"build_id",BuildId);
+     Text(binding,L"production_comparison_commit",L"d1453434ceefe73bef5aff497194e09f39dde7e1");Text(binding,L"frozen_d00_reference_commit",L"553c6554f40f1372b0ea09f6badbbb98e133a9ab");
+     Text(binding,L"frozen_hw01_reference_commit",L"a3f72874241914f6048d4ca9ec4fc0edc978625d");
+     Text(binding,L"frozen_fmt01_reference_commit",L"bbe3a42c422e4328d5f98c07a9370fa948d0cbbf");
+-    Text(binding,L"package_name",Identity);Text(binding,L"package_publisher",L"CN=LegacyForgeDiagnostics");Text(binding,L"package_version",L"0.2.2.0");Text(binding,L"architecture",L"x64");Text(binding,L"application_id",L"App");Flag(binding,L"expected_package_identity",true);
++    Text(binding,L"frozen_res01a_reference_commit",L"4457142ff1fd9e01371eb446612c70162ce93357");
++    Text(binding,L"package_name",Identity);Text(binding,L"package_publisher",L"CN=LegacyForgeDiagnostics");Text(binding,L"package_version",L"0.2.3.0");Text(binding,L"architecture",L"x64");Text(binding,L"application_id",L"App");Flag(binding,L"expected_package_identity",true);
+     Text(binding,L"run_id",run_);Text(binding,L"process_instance_id",process_);Flag(binding,L"java_jni_enabled",false);Flag(binding,L"minecraft_or_gameplay_tested",false);Flag(binding,L"all_d06_certified",false);Flag(binding,L"hardware_device_requested",true);Flag(binding,L"watchdog_cancels_native_calls",false);
+     Json hashes;std::wstring root=package.InstalledLocation().Path().c_str();
+-    const struct{wchar_t const* role;wchar_t const* relative;} roles[]={{L"executable_sha256",L"NativeCapabilities.exe"},{L"manifest_sha256",L"AppxManifest.xml"},{L"build_inputs_sha256",L"native-inputs.json"},{L"policy_sha256",L"profiles\\D06-RES01a.json"},{L"schema_sha256",L"contracts\\native-receipt.schema.json"},{L"inventory_sha256",L"native-inventory.json"}};
++    const struct{wchar_t const* role;wchar_t const* relative;} roles[]={{L"executable_sha256",L"NativeCapabilities.exe"},{L"manifest_sha256",L"AppxManifest.xml"},{L"build_inputs_sha256",L"native-inputs.json"},{L"policy_sha256",L"profiles\\D06-SRV01.json"},{L"schema_sha256",L"contracts\\native-receipt.schema.json"},{L"inventory_sha256",L"native-inventory.json"}};
+     for(auto const& role:roles){DWORD error=0;auto digest=HashFile(root+L"\\"+role.relative,&error);if(error || digest.size()!=64)winrt::throw_hresult(HRESULT_FROM_WIN32(error?error:ERROR_INVALID_DATA));Text(hashes,role.role,digest);}
+     binding.Insert(L"payload_hashes",hashes);binding_=binding.Stringify().c_str();
+     std::wstring local=winrt::Windows::Storage::ApplicationData::Current().LocalFolder().Path().c_str();local+=L"\\NativeCapabilityReceipts";
+     if(!CreateDirectoryW(local.c_str(),nullptr) && GetLastError()!=ERROR_ALREADY_EXISTS) winrt::throw_last_error();
+     DWORD attr=GetFileAttributesW(local.c_str());if(attr==INVALID_FILE_ATTRIBUTES || !(attr&FILE_ATTRIBUTE_DIRECTORY) || (attr&FILE_ATTRIBUTE_REPARSE_POINT))winrt::throw_hresult(E_ACCESSDENIED);
+-    path_=local+L"\\D06-RES01a-"+run_+L".json";
++    path_=local+L"\\D06-SRV01-"+run_+L".json";
+ }
+ void Receipt::ArmDeadline(){deadline_=GetTickCount64()+DeadlineMs;}
+ bool Receipt::Expired()const{auto d=deadline_.load();return d && GetTickCount64()>=d;}
+diff --git a/diagnostics/NativeCapabilities/tools/receipt_contract.py b/diagnostics/NativeCapabilities/tools/receipt_contract.py
+index c752b86..989f6f2 100644
+--- a/diagnostics/NativeCapabilities/tools/receipt_contract.py
++++ b/diagnostics/NativeCapabilities/tools/receipt_contract.py
+@@ -1,9 +1,11 @@
+-"""Original offline RES01a receipt/schema oracle; never runs native target code.
++"""Original offline SRV01 receipt/schema oracle; never runs native target code.
+ Synthetic fixtures are contract tests only, not console observations.
+ """
+ import copy,datetime,hashlib,json,re,uuid
+ DESC=dict(width=1,height=1,mip_levels=1,array_size=1,format=28,sample_count=1,
+           sample_quality=0,usage=0,bind_flags=8,cpu_access_flags=0,misc_flags=0)
++SRV_DESC=dict(format=28,view_dimension=4,most_detailed_mip=0,mip_levels=1)
++
+ def read_json(data):
+     def unique(pairs):
+         result = {}
+@@ -53,7 +55,7 @@ def validate(receipt,schema):
+     structure(receipt,schema)
+     assert receipt['run_id'].lower()!=receipt['process_instance_id'].lower()
+     d=receipt['details']
+-    for stem in ['creation','texture']:
++    for stem in ['creation','texture','srv']:
+         if stem+'_hresult' in d:
+             value=int(d[stem+'_hresult'],16)
+             assert d[stem+'_hresult_signed']==(value if value<2**31 else value-2**32)
+@@ -66,12 +68,29 @@ def validate(receipt,schema):
+         assert d['descriptors_match']==(d['requested_descriptor']==d['returned_descriptor'])
+     else:
+         assert not {'returned_descriptor','descriptors_match'}&set(d)
++    if 'srv_requested_descriptor' in d:assert d['srv_requested_descriptor']==SRV_DESC
++    if d.get('srv_attempted',False):
++        assert d['texture_hresult']=='0x00000000' and d['texture_returned'] is True
++        assert d['get_desc_called'] and d['descriptors_match'] and d['returned_descriptor']==DESC
++    else:
++        assert not {'srv_hresult','srv_hresult_signed','srv_returned','srv_returned_descriptor','srv_descriptors_match'}&set(d)
++    if 'srv_hresult' in d:assert d.get('srv_attempted') is True
++    if d.get('srv_get_desc_called',False):
++        assert d['srv_hresult']=='0x00000000' and d['srv_returned'] is True
++        returned=d['srv_returned_descriptor']
++        if returned['view_dimension']==4:
++            assert set(returned)==set(SRV_DESC),'all four Texture2D view fields required'
++        else:
++            assert set(returned)=={'format','view_dimension'},'inactive union must not be read'
++        assert d['srv_descriptors_match']==(d['srv_requested_descriptor']==returned)
++    else:
++        assert not {'srv_returned_descriptor','srv_descriptors_match'}&set(d)
+     if receipt['status']=='NOT EXECUTED':
+         assert receipt['terminal'] is False and not d.get('texture_attempted',False)
+-        assert 'creation_hresult' not in d
++        assert 'creation_hresult' not in d and not d.get('srv_attempted',False)
+     if receipt['status']=='PASS':
+         assert receipt['terminal'] is True and receipt['stage']=='FINAL'
+-        assert receipt['reason']=='RGBA8_TEXTURE_CREATED_DESCRIPTOR_MATCH'
++        assert receipt['reason']=='RGBA8_SRV_CREATED_DESCRIPTOR_MATCH'
+         assert d['texture_attempted'] and d['texture_hresult']=='0x00000000'
+         assert d['texture_returned'] and d['get_desc_called'] and d['descriptors_match']
+         assert d['requested_descriptor']==d['returned_descriptor']==DESC
+@@ -80,13 +99,18 @@ def validate(receipt,schema):
+         assert d['creation_hresult']=='0x00000000'
+         assert d['device_returned'] and d['context_returned']
+         assert d['texture_reference_released'] and d['test_resources_released']
++        assert d['srv_attempted'] and d['srv_hresult']=='0x00000000' and d['srv_returned']
++        assert d['srv_get_desc_called'] and d['srv_descriptors_match']
++        assert d['srv_requested_descriptor']==d['srv_returned_descriptor']==SRV_DESC
++        assert d['srv_nonnull_output_pointer'] is True
++        assert d['srv_reference_released'] and d['srv_released_before_texture']
+         assert d['selected_feature_level']==d['requested_feature_level']==45056
+         assert d['requested_driver_type']=='HARDWARE' and d['requested_driver_type_value']==1
+         assert d['creation_flags']==32 and d['software_fallback_allowed'] is False
+         assert d['render_or_present_tested'] is False
+         assert d['get_adapter_hresult']==d['get_desc_hresult']=='0x00000000'
+         assert d['adapter_software_flag'] is False and not d['adapter_flags']&2
+-        assert receipt['sequence']==4 and receipt['last_durable_checkpoint_stage']=='BEFORE_CREATE_TEXTURE'
++        assert receipt['sequence']==5 and receipt['last_durable_checkpoint_stage']=='BEFORE_CREATE_SRV'
+         assert receipt['elapsed_monotonic_ms']<receipt['deadline_ms']
+         before,after=d['memory_before'],d['memory_after_release']
+         assert before['available'] and after['available']
+@@ -95,7 +119,7 @@ def validate(receipt,schema):
+ 
+ def bind_payload(receipt,stage):
+     roles={'executable_sha256':'NativeCapabilities.exe','manifest_sha256':'AppxManifest.xml',
+-           'build_inputs_sha256':'native-inputs.json','policy_sha256':'profiles/D06-RES01a.json',
++           'build_inputs_sha256':'native-inputs.json','policy_sha256':'profiles/D06-SRV01.json',
+            'schema_sha256':'contracts/native-receipt.schema.json','inventory_sha256':'native-inventory.json'}
+     assert receipt['payload_hashes']=={k:hashlib.sha256((stage/v).read_bytes()).hexdigest() for k,v in roles.items()}
+     inputs=read_json((stage/'native-inputs.json').read_bytes())
+@@ -106,61 +130,76 @@ def self_test(schema,stage):
+     r={k:s['const'] for k,s in schema['properties'].items() if 'const' in s}
+     r.update(source_commit='0'*40,build_id='20261017-000000-00000000',
+              run_id='11111111-1111-4111-8111-111111111111',process_instance_id='22222222-2222-4222-8222-222222222222',
+-             status='PASS',reason='RGBA8_TEXTURE_CREATED_DESCRIPTOR_MATCH',stage='FINAL',terminal=True,
+-             sequence=4,elapsed_monotonic_ms=100,observed_at_utc='2026-10-17T00:00:00Z',
+-             last_durable_checkpoint_stage='BEFORE_CREATE_TEXTURE',
++             status='PASS',reason='RGBA8_SRV_CREATED_DESCRIPTOR_MATCH',stage='FINAL',terminal=True,
++             sequence=5,elapsed_monotonic_ms=100,observed_at_utc='2026-10-17T00:00:00Z',
++             last_durable_checkpoint_stage='BEFORE_CREATE_SRV',
+              payload_hashes={k:'0'*64 for k in schema['properties']['payload_hashes']['required']})
+     d=dict(format_name='DXGI_FORMAT_R8G8B8A8_UNORM',format_value=28,texture_attempted=True,
+            texture_hresult='0x00000000',texture_hresult_signed=0,texture_returned=True,
+            get_desc_called=True,descriptors_match=True,requested_descriptor=DESC.copy(),returned_descriptor=DESC.copy(),
+            initial_data_supplied=False,nonnull_output_pointer=True,creation_hresult='0x00000000',creation_hresult_signed=0,
+            device_returned=True,context_returned=True,texture_reference_released=True,test_resources_released=True,
++           srv_attempted=True,srv_hresult='0x00000000',srv_hresult_signed=0,srv_returned=True,
++           srv_get_desc_called=True,srv_descriptors_match=True,srv_requested_descriptor=SRV_DESC.copy(),
++           srv_returned_descriptor=SRV_DESC.copy(),srv_reference_released=True,srv_released_before_texture=True,srv_nonnull_output_pointer=True,
+            selected_feature_level=45056,requested_feature_level=45056,requested_driver_type='HARDWARE',requested_driver_type_value=1,
+            creation_flags=32,software_fallback_allowed=False,render_or_present_tested=False,
+            get_adapter_hresult='0x00000000',get_desc_hresult='0x00000000',adapter_flags=0,adapter_software_flag=False,
+            memory_before=dict(available=True,usage_bytes=1000000,limit_bytes=1073741824),
+            memory_after_release=dict(available=True,usage_bytes=2000000,limit_bytes=1073741824))
+-    r['details']=d;validate(r,schema)
+-    valid_names=['PASS exact descriptor']
+-    def no_desc(status,reason,hr,signed,returned):
++    r['details']=d;validate(r,schema);valid=['PASS exact texture and SRV']
++    def no_srv_desc(status,reason,hr,signed,returned):
+         v=copy.deepcopy(r);v.update(status=status,reason=reason)
+-        v['details'].update(texture_hresult=hr,texture_hresult_signed=signed,texture_returned=returned,get_desc_called=False)
+-        for k in ['returned_descriptor','descriptors_match']:v['details'].pop(k)
+-        validate(v,schema);valid_names.append(reason);return v
+-    sf=no_desc('FAILED','TEXTURE_ALLOCATION_NOT_CONFIRMED','0x00000001',1,True)
+-    no_desc('FAILED','TEXTURE_OUTPUT_MISSING','0x00000000',0,False)
+-    no_desc('BLOCKED','TEXTURE_API_OR_POLICY_UNAVAILABLE','0x80070005',-2147024891,False)
+-    mismatch=copy.deepcopy(r);mismatch.update(status='FAILED',reason='TEXTURE_DESCRIPTOR_MISMATCH')
+-    mismatch['details']['returned_descriptor']['width']=2;mismatch['details']['descriptors_match']=False
+-    validate(mismatch,schema);valid_names.append('FAILED descriptor mismatch')
++        v['details'].update(srv_hresult=hr,srv_hresult_signed=signed,srv_returned=returned,srv_get_desc_called=False)
++        for k in ['srv_returned_descriptor','srv_descriptors_match']:v['details'].pop(k)
++        validate(v,schema);valid.append(reason);return v
++    sf=no_srv_desc('FAILED','SRV_ALLOCATION_NOT_CONFIRMED','0x00000001',1,True)
++    no_srv_desc('FAILED','SRV_OUTPUT_MISSING','0x00000000',0,False)
++    no_srv_desc('BLOCKED','SRV_API_OR_POLICY_UNAVAILABLE','0x80070005',-2147024891,False)
++    no_srv_desc('FAILED','SRV_CREATION_FAILED','0x80004005',-2147467259,False)
++    mismatch=copy.deepcopy(r);mismatch.update(status='FAILED',reason='SRV_DESCRIPTOR_MISMATCH')
++    mismatch['details']['srv_returned_descriptor']['mip_levels']=2;mismatch['details']['srv_descriptors_match']=False
++    validate(mismatch,schema);valid.append('FAILED active SRV mismatch')
++    dimension=copy.deepcopy(mismatch);dimension['details']['srv_returned_descriptor']=dict(format=28,view_dimension=3)
++    validate(dimension,schema);valid.append('FAILED wrong dimension, no inactive union values')
++    texture_fail=copy.deepcopy(r);texture_fail.update(status='FAILED',reason='TEXTURE_OUTPUT_MISSING')
++    for k in list(texture_fail['details']):
++        if k.startswith('srv_'):texture_fail['details'].pop(k)
++    texture_fail['details'].update(srv_attempted=False,srv_get_desc_called=False,texture_returned=False,get_desc_called=False)
++    for k in ['returned_descriptor','descriptors_match']:texture_fail['details'].pop(k)
++    validate(texture_fail,schema);valid.append('FAILED prerequisite texture, no SRV attempt')
+     timeout=copy.deepcopy(r);timeout.update(status='INCONCLUSIVE',reason='NATIVE_CALL_DEADLINE',details={})
+-    validate(timeout,schema);valid_names.append('INCONCLUSIVE no returned driver data')
++    validate(timeout,schema);valid.append('INCONCLUSIVE no returned driver data')
+     not_run=copy.deepcopy(r);not_run.update(status='NOT EXECUTED',reason='NOT_EXECUTED',terminal=False,stage='STARTED',sequence=1,last_durable_checkpoint_stage='',details={})
+-    validate(not_run,schema);valid_names.append('NOT EXECUTED no API result')
++    validate(not_run,schema);valid.append('NOT EXECUTED')
+     checkpoint=copy.deepcopy(not_run);checkpoint.update(status='RUNNING',reason='STARTED')
+-    validate(checkpoint,schema);valid_names.append('RUNNING initial checkpoint')
++    validate(checkpoint,schema);valid.append('RUNNING')
+     rejected=[]
+     def bad(name,v):
+         try:validate(v,schema)
+         except (AssertionError,KeyError,ValueError):rejected.append(name);return
+         raise AssertionError('accepted malformed fixture: '+name)
+     for field in DESC:
+-        v=copy.deepcopy(r);v['details']['returned_descriptor'][field]+=1
+-        bad('returned descriptor '+field,v)
+-    for k,value in [('texture_returned',False),('get_desc_called',False),('texture_hresult','0x00000001'),
+-                    ('texture_attempted',False),('texture_reference_released',False),('test_resources_released',False),
+-                    ('adapter_software_flag',True),('initial_data_supplied',True),('nonnull_output_pointer',False)]:
+-        v=copy.deepcopy(r);v['details'][k]=value;bad(k,v)
+-    v=copy.deepcopy(sf);v.update(status='PASS',reason=r['reason']);bad('S_FALSE cannot be allocation PASS',v)
+-    for k,value in [('case_id','D06-FMT01'),('package_version','0.2.1.0'),('elapsed_monotonic_ms',10000),
+-                    ('terminal',False),('process_instance_id',r['run_id']),('sequence',3)]:
+-        v=copy.deepcopy(r);v[k]=value;bad(k,v)
+-    v=copy.deepcopy(r);v['details']['returned_descriptor'].pop('sample_quality');bad('missing descriptor member',v)
++        v=copy.deepcopy(r);v['details']['returned_descriptor'][field]+=1;bad('texture field '+field,v)
++    for field in SRV_DESC:
++        v=copy.deepcopy(r);v['details']['srv_returned_descriptor'][field]+=1;bad('SRV field '+field,v)
++    for field,value in [('srv_attempted',False),('srv_returned',False),('srv_get_desc_called',False),
++                        ('srv_reference_released',False),('srv_released_before_texture',False),
++                        ('srv_nonnull_output_pointer',False),('texture_reference_released',False),
++                        ('test_resources_released',False),('adapter_software_flag',True),('texture_returned',False)]:
++        v=copy.deepcopy(r);v['details'][field]=value;bad(field,v)
++    v=copy.deepcopy(sf);v.update(status='PASS',reason=r['reason']);bad('S_FALSE is not SRV allocation PASS',v)
++    v=copy.deepcopy(r);v['details']['srv_hresult']='0x80004005';bad('failed SRV HRESULT cannot have a valid descriptor',v)
++    for field,value in [('case_id','D06-RES01a'),('package_version','0.2.2.0'),('elapsed_monotonic_ms',10000),
++                        ('terminal',False),('process_instance_id',r['run_id']),('sequence',4)]:
++        v=copy.deepcopy(r);v[field]=value;bad(field,v)
++    v=copy.deepcopy(r);v['details']['srv_returned_descriptor'].pop('most_detailed_mip');bad('missing active SRV field',v)
++    v=copy.deepcopy(dimension);v['details']['srv_returned_descriptor']['mip_levels']=1;bad('inactive union field retained',v)
+     try:bind_payload(r,stage)
+     except AssertionError:rejected.append('forged payload binding')
+     else:raise AssertionError('accepted forged payload')
+     try:read_json(b'{"status":"PASS","status":"FAILED"}')
+     except AssertionError:rejected.append('duplicate JSON keys')
+     else:raise AssertionError('accepted duplicate JSON')
+-    return dict(syntheticValidCases=len(valid_names),validCases=valid_names,syntheticRejectedCases=rejected,
+-                executedTarget=False,scope='offline structure and semantic oracle; no native API execution')
++    return dict(syntheticValidCases=len(valid),validCases=valid,syntheticRejectedCases=rejected,
++                executedTarget=False,scope='offline structure/semantic oracle; no native API execution')
+diff --git a/diagnostics/NativeCapabilities/tools/static_verify.py b/diagnostics/NativeCapabilities/tools/static_verify.py
+index f5219df..491a0f4 100644
+--- a/diagnostics/NativeCapabilities/tools/static_verify.py
++++ b/diagnostics/NativeCapabilities/tools/static_verify.py
+@@ -1,7 +1,7 @@
+ """Original static build/package auditor; never loads or executes target code."""
+ from pathlib import Path
+ import argparse,hashlib,json,re,struct,zlib,zipfile,xml.etree.ElementTree as ET
+-from receipt_contract import read_json, self_test, DESC
++from receipt_contract import read_json, self_test, DESC, SRV_DESC
+ 
+ def sha(data):return hashlib.sha256(data).hexdigest()
+ def assets(root):
+@@ -39,24 +39,24 @@ def pe_imports(data):
+ 
+ def verify(build):
+     stage=build/'package';root=Path(__file__).resolve().parents[1]
+-    expected={'NativeCapabilities.exe','AppxManifest.xml','native-inputs.json','native-inventory.json','LICENSE.txt','profiles/D06-RES01a.json','contracts/native-receipt.schema.json','Assets/StoreLogo.png','Assets/Square150x150Logo.png','Assets/Square44x44Logo.png','Assets/SplashScreen.png'}
++    expected={'NativeCapabilities.exe','AppxManifest.xml','native-inputs.json','native-inventory.json','LICENSE.txt','profiles/D06-SRV01.json','contracts/native-receipt.schema.json','Assets/StoreLogo.png','Assets/Square150x150Logo.png','Assets/Square44x44Logo.png','Assets/SplashScreen.png'}
+     assert {p.relative_to(stage).as_posix() for p in stage.rglob('*') if p.is_file()}==expected
+     ns={'p':'http://schemas.microsoft.com/appx/manifest/foundation/windows10'};manifest=ET.parse(stage/'AppxManifest.xml').getroot()
+     ident=manifest.find('p:Identity',ns).attrib
+-    assert ident=={'Name':'AlgorHome.LegacyForge.NativeDiagnostics','Publisher':'CN=LegacyForgeDiagnostics','Version':'0.2.2.0','ProcessorArchitecture':'x64'}
++    assert ident=={'Name':'AlgorHome.LegacyForge.NativeDiagnostics','Publisher':'CN=LegacyForgeDiagnostics','Version':'0.2.3.0','ProcessorArchitecture':'x64'}
+     assert manifest.find('p:Applications/p:Application',ns).attrib=={'Id':'App','Executable':'NativeCapabilities.exe','EntryPoint':'LegacyForgeNativeDiagnostics.App'}
+     assert not any(n.tag.rsplit('}',1)[-1] in ('Capability','DeviceCapability') for n in manifest.iter())
+     dependencies=[dict(n.attrib) for n in manifest.find('p:Dependencies',ns)]
+     assert dependencies==[{'Name':'Windows.Universal','MinVersion':'10.0.17763.0','MaxVersionTested':'10.0.26100.0'},{'Name':'Microsoft.VCLibs.140.00','MinVersion':'14.0.0.0','Publisher':'CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US'}]
+     inventory=json.loads((stage/'native-inventory.json').read_text())
+     assert inventory['native_only'] and not inventory['java_jni_enabled'] and all(not inventory[k] for k in ('runtime_files','fixtures','extra_modules'))
+-    policy=json.loads((stage/'profiles/D06-RES01a.json').read_text())
+-    assert policy['case_id']=='D06-RES01a' and policy['feature_levels']==[45056] and policy['creation_flags']==32 and policy['deadline_ms']==10000
++    policy=json.loads((stage/'profiles/D06-SRV01.json').read_text())
++    assert policy['case_id']=='D06-SRV01' and policy['feature_levels']==[45056] and policy['creation_flags']==32 and policy['deadline_ms']==10000
+     assert policy['minimum_headroom_bytes']==268435456 and policy['maximum_observed_growth_bytes']==67108864 and policy['device_attempts_maximum']==1 and not policy['software_fallback'] and not policy['swapchain_or_presentation']
+     inputs=json.loads((stage/'native-inputs.json').read_text(encoding='utf-8-sig'))
+-    assert inputs['caseId']=='D06-RES01a' and inputs['nativeOnly'] and not inputs['jniEnabled'] and inputs['sourceCommit']==inputs['compiledSourceCommit']
++    assert inputs['caseId']=='D06-SRV01' and inputs['nativeOnly'] and not inputs['jniEnabled'] and inputs['sourceCommit']==inputs['compiledSourceCommit']
+     assert set(inputs['compiledSources'])=={'src/app.cpp','src/report.cpp','src/probe.cpp'}
+-    assert inputs['definitions']==['LFN_NATIVE_ONLY=1','LFN_JNI_ENABLED=0','LFD_D00_ONLY=1','LFN_CASE_D06_RES01A=1']
++    assert inputs['definitions']==['LFN_NATIVE_ONLY=1','LFN_JNI_ENABLED=0','LFD_D00_ONLY=1','LFN_CASE_D06_SRV01=1']
+     assert set(e['path'] for e in inputs['packageFiles'])==expected-{'native-inputs.json'}
+     for item in inputs['packageFiles']:assert sha((stage/item['path']).read_bytes())==item['sha256']
+     for item in inputs['sourceFiles']:assert sha((root/item['path']).read_bytes())==item['sha256']
+@@ -64,9 +64,18 @@ def verify(build):
+     forbidden=['JNI_CreateJavaVM','JNI_GetDefaultJavaVMInitArgs','RequestJavaSmoke','RunJava21Smoke','CreateSwapChain','CreateRenderTargetView','Present(','CheckFormatSupport(','CreateTexture1D','CreateTexture3D','CreateBuffer','CreateVertexShader','CreatePixelShader','D3DCompile','Draw(','DrawIndexed(','Map(','CopyResource','ReadFromSubresource','D3D_DRIVER_TYPE_WARP','D3D_DRIVER_TYPE_REFERENCE','TerminateProcess','TerminateThread','CreateProcess']
+     for token in forbidden:assert token not in source,token
+     assert source.count('D3D11CreateDevice(')==1
+-    assert not re.search(r'\b(?:CreateBuffer|Create\w*Shader|Create(?:RenderTarget|DepthStencil|ShaderResource|UnorderedAccess)View|CreateSwapChain\w*|Draw\w*|Dispatch|Clear\w*|Copy\w*|Map|Unmap|Present\w*)\s*\(',source)
++    assert not re.search(r'\b(?:CreateBuffer|Create\w*Shader|Create(?:RenderTarget|DepthStencil|UnorderedAccess)View|CreateSwapChain\w*|Draw\w*|Dispatch|Clear\w*|Copy\w*|Map|Unmap|Present\w*)\s*\(',source)
+     assert source.count('->CreateTexture2D(')==1 and 'CreateTexture2D(&requested,nullptr,texture.put())' in source
+-    assert source.count('->GetDesc(&returned)')==1
++    assert source.count('->GetDesc(&returned)')==2
++    assert source.count('->CreateShaderResourceView(')==1 and 'CreateShaderResourceView(texture,&requested,srv.put())' in source
++    assert 'if(srvHr!=S_OK)' in source and 'else if(!srv)' in source
++    assert 'BEFORE_CREATE_SRV' in source and 'srv_released_before_texture' in source
++    assert not re.search(r'\b(?:[A-Z]{2}Set\w*|OMSet\w*|IASet\w*|CreateShaderResourceView[0-9]+)\s*\(',source)
++    for field in ['Format','ViewDimension','Texture2D.MostDetailedMip','Texture2D.MipLevels']:
++        assert 'a.'+field+'==b.'+field in source
++    assert 'if(value.ViewDimension==D3D11_SRV_DIMENSION_TEXTURE2D)' in source
++    assert source.index('winrt::com_ptr<ID3D11ShaderResourceView> srv')<source.index('Flag(details,L"srv_reference_released",true)')
++    assert source.index('CreateOneSrv(device,texture.get()')<source.index('Flag(details,L"texture_reference_released",true)')
+     assert 'if(textureHr!=S_OK)' in source and 'else if(!texture)' in source and 'SameDescriptor(requested,returned)' in source
+     assert 'BEFORE_CREATE_TEXTURE' in source and 'texture_reference_released' in source
+     probe=(root/'src/probe.cpp').read_text()
+@@ -75,9 +84,12 @@ def verify(build):
+         assert 'a.'+field+'==b.'+field in probe
+     assert policy['requested_descriptor']==DESC and policy['texture_attempts_maximum']==1
+     assert policy['initial_data_supplied'] is False and policy['nonnull_output_pointer'] is True
+-    assert not policy['texture_views_created'] and not policy['buffer_creation'] and not policy['shader_execution']
++    assert policy['texture_views_created'] is True and not policy['buffer_creation'] and not policy['shader_execution']
++    assert policy['srv_requested_descriptor']==SRV_DESC and policy['srv_attempts_maximum']==1
++    assert policy['srv_descriptor_explicit'] and policy['srv_nonnull_output_pointer'] and policy['srv_release_before_texture']
++    assert policy['pipeline_binding'] is False
+     schema=read_json((stage/'contracts/native-receipt.schema.json').read_bytes())
+-    assert schema['properties']['schema']['const']=='legacyforge-native-capability-receipt-v3'
++    assert schema['properties']['schema']['const']=='legacyforge-native-capability-receipt-v4'
+     contract_tests=self_test(schema,stage)
+     assert 'command!=lfn::Case' in source and 'ActivationKind::Launch' in source and 'started.exchange(true)' in source
+     assert 'init_apartment(winrt::apartment_type::multi_threaded)' in source
+@@ -103,10 +115,10 @@ def verify(build):
+         assert set(z.namelist())==expected|{'AppxBlockMap.xml','[Content_Types].xml'}
+         for name in sorted(expected):
+             b=z.read(name);assert b==(stage/name).read_bytes();payload.append({'path':name,'bytes':len(b),'sha256':sha(b)})
+-    return {'verdict':'PASS_STATIC_ONLY','sourceCommit':inputs['sourceCommit'],'identity':ident,'entryPoint':'LegacyForgeNativeDiagnostics.App','capabilities':[],'dependencies':dependencies,'payload':payload,'nativeImports':imports,'nativeImportClosure':'System/API-set/framework references require target loader validation; no claim of complete Xbox closure','unsignedAppxSha256':sha(package.read_bytes()),'jniExcluded':True,'oneHardwareCallSite':True,'oneTextureCreationCallSite':True,'requestedDescriptor':DESC,'oneGetDescCallSite':True,'receiptContractTests':contract_tests,'noSwapchainOrPresentationCode':True,'executed':False,'signed':False,'ui':'Platform MessageDialog; Xbox behavior NOT EXECUTED','limits':['Source/race/failure review is static, not a runtime test','Blocked native and file calls cannot be cancelled','First terminal ownership and late-PASS guard inspected only']}
++    return {'verdict':'PASS_STATIC_ONLY','sourceCommit':inputs['sourceCommit'],'identity':ident,'entryPoint':'LegacyForgeNativeDiagnostics.App','capabilities':[],'dependencies':dependencies,'payload':payload,'nativeImports':imports,'nativeImportClosure':'System/API-set/framework references require target loader validation; no claim of complete Xbox closure','unsignedAppxSha256':sha(package.read_bytes()),'jniExcluded':True,'oneHardwareCallSite':True,'oneTextureCreationCallSite':True,'requestedDescriptor':DESC,'oneSrvCreationCallSite':True,'requestedSrvDescriptor':SRV_DESC,'twoResourceGetDescCallSites':True,'receiptContractTests':contract_tests,'noSwapchainOrPresentationCode':True,'executed':False,'signed':False,'ui':'Platform MessageDialog; Xbox behavior NOT EXECUTED','limits':['Source/race/failure review is static, not a runtime test','Blocked native and file calls cannot be cancelled','First terminal ownership and late-PASS guard inspected only']}
+ 
+ if __name__=='__main__':
+     p=argparse.ArgumentParser();p.add_argument('--assets',type=Path);p.add_argument('--build',type=Path);p.add_argument('--output',type=Path);a=p.parse_args()
+     if a.assets:assets(a.assets)
+     else:
+-        result=verify(a.build);a.output.write_text(json.dumps(result,indent=2));print('PASS: native D06-RES01a static artifact audit; target not executed')
++        result=verify(a.build);a.output.write_text(json.dumps(result,indent=2));print('PASS: native D06-SRV01 static artifact audit; target not executed')

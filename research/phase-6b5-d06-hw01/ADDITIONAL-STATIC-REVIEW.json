@@ -1,0 +1,57 @@
+{
+  "mode": "STATIC_REVIEW_ONLY",
+  "verdict": "PASS_STATIC_ONLY",
+  "source_commit": "a3f72874241914f6048d4ca9ec4fc0edc978625d",
+  "unsigned_appx": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\NativeCapabilities\\out\\20261017-173106-d79a3eae\\NativeCapabilities.unsigned.appx",
+  "unsigned_sha256": "79722c961dd677a2c89610599aec2e9537727dead6d66e2e3e8ff522da8b2501",
+  "changes_confined_to_new_project": true,
+  "frozen_baseline_artifacts_and_sources_unchanged": true,
+  "CRT_export_comparison": [
+    {
+      "module": "MSVCP140_APP.dll",
+      "required_exports": [
+        "_Mtx_unlock",
+        "_Query_perf_counter",
+        "_Query_perf_frequency",
+        "?_Xlength_error@std@@YAXPEBD@Z",
+        "?_Syserror_map@std@@YAPEBDH@Z",
+        "?_Throw_Cpp_error@std@@YAXH@Z",
+        "_Thrd_detach",
+        "_Cnd_signal",
+        "_Mtx_lock",
+        "_Cnd_do_broadcast_at_thread_exit"
+      ],
+      "all_present": true,
+      "framework_module_sha256": "40d3e4997d76ee34c3c3b276dc146b9feb8b7ac0032d2adccce1e81e481c9381"
+    },
+    {
+      "module": "VCRUNTIME140_APP.dll",
+      "required_exports": [
+        "memset",
+        "memcpy",
+        "__std_exception_copy",
+        "_CxxThrowException",
+        "__C_specific_handler",
+        "__std_exception_destroy",
+        "__std_terminate",
+        "memmove"
+      ],
+      "all_present": true,
+      "framework_module_sha256": "b8acc56e87437e2dfbb6dfac36b99ee41562da1727dbc95535c2cd8ed3a538ad"
+    },
+    {
+      "module": "VCRUNTIME140_1_APP.dll",
+      "required_exports": [
+        "__CxxFrameHandler4"
+      ],
+      "all_present": true,
+      "framework_module_sha256": "db894749cf8c88fe40057bb486415ca7f7a5988e7fa593070266682a93d9d858"
+    }
+  ],
+  "framework_reference_sha256": "9c17b521f9d690a1f504da5108ed6eec5669eb3a8fd1331eef43e40d84e74283",
+  "system_api_sets": "Unresolved against Xbox; Microsoft contract review plus exact direct symbol inventory, not complete transitive loader proof",
+  "receipt_schema": "JSON syntax, local references, required/property consistency and case/native flags checked; no target receipt produced",
+  "signed": false,
+  "installed": false,
+  "executed": false
+}

@@ -1,0 +1,75 @@
+{
+  "verdict": "PASS_D06_HW01_ONLY",
+  "receipt_sha256": "14d609bddfe39019ed4808a23190319895a4b9d4d7117eb072c6f74014a49bc7",
+  "original_receipt": "C:\\Users\\arinze\\Desktop\\D06-HW01-594ACA53-FC63-4709-9C8B-BE96BEDD84BD.json",
+  "preserved_receipt": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b5-hw01-acceptance\\originals\\D06-HW01-594ACA53-FC63-4709-9C8B-BE96BEDD84BD.json",
+  "photo_sha256": "335a12b5cd31ab42d0a32e131c968b0a9549d0eb0cb1b26b1c83bcbbe9e15eff",
+  "preserved_photo": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b5-hw01-acceptance\\originals\\Xbox-D06-HW01-PASS.png",
+  "schema_validation": "PASS: all used schema keywords, local refs, formats, field restrictions; duplicate keys rejected",
+  "source_commit": "a3f72874241914f6048d4ca9ec4fc0edc978625d",
+  "build_id": "20261017-173106-d79a3eae",
+  "run_id": "594ACA53-FC63-4709-9C8B-BE96BEDD84BD",
+  "process_instance_id": "FB83C3BE-785B-4D9F-98CF-444025A0C12D",
+  "observed_at_utc": "2026-10-17T22:42:23.639Z",
+  "observed_at_America_Chicago": "2026-10-17 17:42:23.639 CDT",
+  "sequence": 3,
+  "elapsed_monotonic_ms": 94,
+  "headroom_before_bytes": 1068830720,
+  "observed_growth_bytes": 4571136,
+  "payload_comparison": [
+    {
+      "role": "executable_sha256",
+      "member": "NativeCapabilities.exe",
+      "independently_pinned_sha256": "61ba742e8022c6874af7364c022289157c887da5d6035201f4aa61dba7ca02d0",
+      "receipt_match": true,
+      "signed_payload_match": true
+    },
+    {
+      "role": "manifest_sha256",
+      "member": "AppxManifest.xml",
+      "independently_pinned_sha256": "b107ba9665b0eb35d640cb5f7ff43b96ec2071d341feca0d5bfc3343eb98b7a4",
+      "receipt_match": true,
+      "signed_payload_match": true
+    },
+    {
+      "role": "build_inputs_sha256",
+      "member": "native-inputs.json",
+      "independently_pinned_sha256": "13a52990281afbbbca0c2e83f903216e7dd46791253f5e7154f6a16757d1c03b",
+      "receipt_match": true,
+      "signed_payload_match": true
+    },
+    {
+      "role": "policy_sha256",
+      "member": "profiles/D06-HW01.json",
+      "independently_pinned_sha256": "01561fdb7ff95df0d502659b7ab3c5065a8c9f681c4d5ed38db7053a9f837cac",
+      "receipt_match": true,
+      "signed_payload_match": true
+    },
+    {
+      "role": "schema_sha256",
+      "member": "contracts/native-receipt.schema.json",
+      "independently_pinned_sha256": "db311c43104e3940cd7299a495b3ac2a5a0440cb8b3af06cbb5ba1314a4331e1",
+      "receipt_match": true,
+      "signed_payload_match": true
+    },
+    {
+      "role": "inventory_sha256",
+      "member": "native-inventory.json",
+      "independently_pinned_sha256": "642a0d0826deb138fb61fdbcedf02718e83d0938b3960a00c0c1ffc848354bb4",
+      "receipt_match": true,
+      "signed_payload_match": true
+    }
+  ],
+  "photo_match": "Visually inspected supplied image: exact run ID, case, version, PASS/reason, HRESULT0, level0xB000 and saved-receipt message match",
+  "persistence": "PASS for retrieved final original and matching UI saved message; no power-loss guarantee",
+  "frozen_D00_unchanged": true,
+  "limits": [
+    "Xbox hardware origin and retrieval route owner-attested; raw receipt is not signed",
+    "Clock accuracy/remote file listing not independently verified",
+    "Scoped reference release asserted by source/receipt, not proof driver frees every allocation",
+    "Photo contains exact run ID but no capture time; matching run is stronger than a timestamp guess",
+    "Rendering/presentation/OpenGL/LWJGL/Java/JNI/Minecraft untested"
+  ],
+  "new_diagnostic_execution": false,
+  "console_access": false
+}

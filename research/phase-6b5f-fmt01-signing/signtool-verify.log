@@ -1,0 +1,29 @@
+
+
+Verifying: C:\Users\arinze\Desktop\ReverseLegacyCraft\analysis-local\phase6b5f-signing\20261017-180640-31684a3e\NativeDiagnostics.D06-FMT01.0.2.1.0.signed.appx
+
+
+Signature Index: 0 (Primary Signature)
+Hash of file (sha256): 4150505841585043CB0BFD4D6E283409AE9ECA4E96303F2E0C8F8C279CB2126842E3DCC65B1A374A41584344A566DB488541833AF82B21047A98C0C3704DE0D387D8A897830D931D904B35F64158435477DE7E92E6ADEC54A320E44CA291DBE278D7BFCB3293263FA39634CDEA5EC29C4158424D11BEF6E765D90F4E23AADA98BAF8B0A1BDFEF92B79076A2CD0A323DFF94F3E5F415843496D4B73A54BA5613BC19EA2D7F067315361AE74E35E54F6128262B4CE493058FB
+
+Signing Certificate Chain:
+    Issued to: LegacyForgeDiagnostics
+
+    Issued by: LegacyForgeDiagnostics
+
+    Expires:   Sun Oct 17 13:08:48 2027
+
+    SHA1 hash: D6245FB640D520EDED8F8A987B364BCADE01D01D
+
+
+File is not timestamped.
+
+
+Number of files successfully Verified: 0
+
+Number of warnings: 0
+
+Number of errors: 1
+
+SignTool Error: A certificate chain processed, but terminated in a root
+	certificate which is not trusted by the trust provider.

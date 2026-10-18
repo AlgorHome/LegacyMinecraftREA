@@ -1,0 +1,37 @@
+{
+  "verdict": "PASS_CRYPTOGRAPHIC_INTEGRITY_WINDOWS_CHAIN_UNTRUSTED",
+  "sourceCommit": "bbe3a42c422e4328d5f98c07a9370fa948d0cbbf",
+  "signedPath": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b5f-signing\\20261017-180640-31684a3e\\NativeDiagnostics.D06-FMT01.0.2.1.0.signed.appx",
+  "signedSha256": "ae19e5ff93438bcf8a3c9e0d42ad0323908ee83d95231cba9dcd9a319fd5d8ef",
+  "unsignedPath": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\NativeCapabilities\\out\\20261017-180047-9ad3700d\\NativeCapabilities.unsigned.appx",
+  "unsignedSha256": "24dc6835408f9a5d38d1ab56ec82dfd550cf0dc183e495defa836299d77dd03d",
+  "signAttempts": 1,
+  "signerThumbprint": "D6245FB640D520EDED8F8A987B364BCADE01D01D",
+  "cmsIntegrity": "PASS",
+  "appxDigest": "PASS",
+  "digestNegativeControl": "REJECTED_0x80096010_EXPECTED",
+  "payloadBytes": "PASS",
+  "blockmap": "PASS_11_FILES",
+  "nativeImports": "MATCH_APPROVED_BUILD",
+  "receiptSchema": "MATCH_APPROVED_V2",
+  "singleCase": "D06-FMT01",
+  "jniEnabled": false,
+  "standardWindowsVerification": {
+    "command": "signtool verify /pa /v \"C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b5f-signing\\20261017-180640-31684a3e\\NativeDiagnostics.D06-FMT01.0.2.1.0.signed.appx\"",
+    "exitCode": 1,
+    "cacheOnlyWinVerifyTrust": "0x800B0109",
+    "name": "CERT_E_UNTRUSTEDROOT"
+  },
+  "preservedFilesVerified": 84,
+  "trustInventoriesUnchanged": true,
+  "signatureVerifier": {
+    "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b3e-trust-investigation\\ReadOnlySignatureChecks.cs",
+    "sha256": "58e9ce919ac90b073fb5a5d9e2a17bbf10dc0a4e7cd99fa3b0f14a58711001c3",
+    "method": "SignedCms.CheckSignature(true) and CryptSIPVerifyIndirectData; trust separately evaluated"
+  },
+  "consoleClassification": "App required, NOT OBSERVED; no console access",
+  "certificatePrivateMaterialExported": false,
+  "targetExecuted": false,
+  "consoleAccess": false,
+  "installed": false
+}
