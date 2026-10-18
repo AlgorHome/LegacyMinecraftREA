@@ -1,0 +1,309 @@
+{
+  "schema": "legacyforge-diagnostic-build-v1",
+  "mode": "COMPILE_AND_STATIC_PACKAGE_ONLY",
+  "targetExecuted": false,
+  "baseline": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+  "buildId": "20261017-112815-34043e7b",
+  "status": "BUILD_STATIC_CHECK_PASS_NOT_EXECUTED",
+  "runtimeStatus": "BLOCKED_RUNTIME_NOT_SUPPLIED",
+  "commands": [
+    {
+      "exitCode": 0,
+      "log": "logs/java-fixture.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "java-fixture"
+    },
+    {
+      "exitCode": 0,
+      "log": "logs/cpp-app.log",
+      "logSha256": "2cfd29eed153fc4be8dec0f6ad434df5acd289005e0a7e798ab39e1644dcba03",
+      "role": "cpp-app"
+    },
+    {
+      "exitCode": 0,
+      "log": "logs/cpp-report.log",
+      "logSha256": "a10ee989a627ea977e6e2fcc2cfb3ac7e59c276ac40f97d2cdac8417721131d7",
+      "role": "cpp-report"
+    },
+    {
+      "exitCode": 0,
+      "log": "logs/cpp-native_control.log",
+      "logSha256": "5963c40daf80fdd71182076dcac9d55c748c82af07ea739be0cee04d05bb0d02",
+      "role": "cpp-native_control"
+    },
+    {
+      "exitCode": 0,
+      "log": "logs/cpp-jni_smoke.log",
+      "logSha256": "6c28f2e4050b47b067482d011288d87139498ff0eaba60a1da8c00b84f103f1b",
+      "role": "cpp-jni_smoke"
+    },
+    {
+      "exitCode": 0,
+      "log": "logs/link.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "link"
+    },
+    {
+      "exitCode": 0,
+      "log": "logs/static-imports.log",
+      "logSha256": "124d5b8641091958af72a195e2a99bd7351c6f450f28bc7c99f269413623aca2",
+      "role": "static-imports"
+    },
+    {
+      "exitCode": 0,
+      "log": "logs/generate-original-assets.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "generate-original-assets"
+    },
+    {
+      "exitCode": 0,
+      "log": "logs/static-package-check.log",
+      "logSha256": "7f788fe16a09455855267a18340ef2f3049179a64d7012642caebe80e42fee40",
+      "role": "static-package-check"
+    },
+    {
+      "exitCode": 0,
+      "log": "logs/makeappx-unsigned.log",
+      "logSha256": "7f77ec15df695d868d609e3754740c7ca5b65e376f1f1b8fdfa92da214c513d5",
+      "role": "makeappx-unsigned"
+    }
+  ],
+  "tools": [
+    {
+      "fileVersion": "21.0.12.1",
+      "role": "javac",
+      "path": "<USERPROFILE>\\AppData\\Local\\Programs\\Ghidra\\jdk-21.0.12.1+1\\bin\\javac.exe",
+      "sha256": "00f7c6f9ec89ebba4bb96cf8760403cccf1268df2eae8685900ba38e58a7aff9"
+    },
+    {
+      "fileVersion": "19.44.35229.0",
+      "role": "cl",
+      "path": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+      "sha256": "fe251ef50a1545b1b0835ee17b1e785459712b38d79e45b5c1d3d28970a36619"
+    },
+    {
+      "fileVersion": "14.44.35229.0",
+      "role": "link",
+      "path": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\link.exe",
+      "sha256": "a364af801a8539e4324d9489313dbf001d959128451fc99a27b24676bbac058f"
+    },
+    {
+      "fileVersion": "14.44.35229.0",
+      "role": "dumpbin",
+      "path": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\dumpbin.exe",
+      "sha256": "cfee7ed764b7b0866aae0be12f9c0ad2a7f5aecc4046ba2b7de26335827ca815"
+    },
+    {
+      "fileVersion": "3.14.7",
+      "role": "python",
+      "path": "<USERPROFILE>\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+      "sha256": "4942b86a6597e5aee0128daa00050ed79bc21f6e709a78eb19cbfeb0c2f39ac9"
+    },
+    {
+      "fileVersion": "10.0.26100.7705 (WinBuild.160101.0800)",
+      "role": "makeappx",
+      "path": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\makeappx.exe",
+      "sha256": "00fff202b71c1266b8c3899701e42b5468ea153b2b33a0a47215fe27695f16d0"
+    },
+    {
+      "role": "jni-header",
+      "path": "EXPLICIT_JAVA21/include/jni.h",
+      "sha256": "99e64ebbe749e6df284f852f11b3c73f6ea97baf15120428f40f887fe0616e61"
+    },
+    {
+      "role": "jdk-release",
+      "path": "EXPLICIT_JAVA21/release",
+      "sha256": "07117c72ce033949c14878e07fbf2fe23f59a1f8c90a6d1351b5c89099847ce7"
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "build.ps1",
+      "sha256": "730ffa06828760946b3245491bfdbd59dab7eaa3eb6108b4ff888c6eab77ab60"
+    },
+    {
+      "path": "package/Package.appxmanifest",
+      "sha256": "4a64d9982cd48e07da857ddad21510cc12b4725f1a14b3a279207ade27da9dd6"
+    },
+    {
+      "path": "runtime-inventory.template.json",
+      "sha256": "280d9b53fd911a2e6d6c3c346f323c2a7c7d57d98c4f612fc0c4f544c2f9ac3f"
+    },
+    {
+      "path": "tools/verify_artifacts.py",
+      "sha256": "544c9446bc6376e4d1b805633bb8383ef2bdeab5c2bb68d2d97d17155e30c841"
+    },
+    {
+      "path": "include/diagnostics.h",
+      "sha256": "294fdd876b57a6b33438246d4f53151c5df3e766974c543b2137bcdbdae5bc47"
+    },
+    {
+      "path": "src/app.cpp",
+      "sha256": "5aed1bcc4532ca000aa5a31e5dd83971075f226576ed5110b380f3045513ad7b"
+    },
+    {
+      "path": "src/report.cpp",
+      "sha256": "60a968b794dad204fa21c1a1a9240b02b930e744046a04abdde9a8f6a684afc6"
+    },
+    {
+      "path": "src/native_control.cpp",
+      "sha256": "4da7baac93fbe08a6889743ba4264e7d49247892331a4b94a2f34e0f8fb1c6bc"
+    },
+    {
+      "path": "src/jni_smoke.cpp",
+      "sha256": "dffd08f8d78b03f1fddfa2008d7dd513d69b81475431268ba064c4f2cd5150d7"
+    },
+    {
+      "path": "java/diagnostic/JniSmoke.java",
+      "sha256": "9019697261e7741e817f7178850ed38097df792b29d7d045c0f4b1576090510d"
+    }
+  ],
+  "artifacts": [
+    {
+      "bytes": 89373,
+      "path": "RuntimeDiagnostics.unsigned.appx",
+      "sha256": "0f0cd25a65763852e0b4c1fd49aeea3ba53a1d4cc8051390e7175dd63fde1a39"
+    },
+    {
+      "bytes": 198,
+      "path": "static-verification.json",
+      "sha256": "da5abede5a0eef814b44e3891b5db106052ad89a1c3f8fce50520a1c9333d6a7"
+    },
+    {
+      "bytes": 9,
+      "path": "logs/cpp-app.log",
+      "sha256": "2cfd29eed153fc4be8dec0f6ad434df5acd289005e0a7e798ab39e1644dcba03"
+    },
+    {
+      "bytes": 15,
+      "path": "logs/cpp-jni_smoke.log",
+      "sha256": "6c28f2e4050b47b067482d011288d87139498ff0eaba60a1da8c00b84f103f1b"
+    },
+    {
+      "bytes": 20,
+      "path": "logs/cpp-native_control.log",
+      "sha256": "5963c40daf80fdd71182076dcac9d55c748c82af07ea739be0cee04d05bb0d02"
+    },
+    {
+      "bytes": 12,
+      "path": "logs/cpp-report.log",
+      "sha256": "a10ee989a627ea977e6e2fcc2cfb3ac7e59c276ac40f97d2cdac8417721131d7"
+    },
+    {
+      "bytes": 0,
+      "path": "logs/generate-original-assets.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "logs/java-fixture.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "logs/link.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 4124,
+      "path": "logs/makeappx-unsigned.log",
+      "sha256": "7f77ec15df695d868d609e3754740c7ca5b65e376f1f1b8fdfa92da214c513d5"
+    },
+    {
+      "bytes": 13140,
+      "path": "logs/static-imports.log",
+      "sha256": "124d5b8641091958af72a195e2a99bd7351c6f450f28bc7c99f269413623aca2"
+    },
+    {
+      "bytes": 182,
+      "path": "logs/static-package-check.log",
+      "sha256": "7f788fe16a09455855267a18340ef2f3049179a64d7012642caebe80e42fee40"
+    },
+    {
+      "bytes": 1109763,
+      "path": "objects/app.obj",
+      "sha256": "cd0f8b9d9f461ffc5a8f9a0c550aa182d47fd5b30689fbb2bba83c920b9e1c27"
+    },
+    {
+      "bytes": 743217,
+      "path": "objects/jni_smoke.obj",
+      "sha256": "bf092c5452d29526abab61e1385e63042031d4ae423949e665b12ef8d55ca74f"
+    },
+    {
+      "bytes": 293670,
+      "path": "objects/native_control.obj",
+      "sha256": "bfb79a9e91a27173bc857c15e6c095197832d18733ececb773ea0968e19a1e92"
+    },
+    {
+      "bytes": 651372,
+      "path": "objects/report.obj",
+      "sha256": "c6762ce7142f8cbdc51e30da08ba98c7838084855ecbff6aabf464a44ece0e96"
+    },
+    {
+      "bytes": 1405,
+      "path": "package/AppxManifest.xml",
+      "sha256": "4a64d9982cd48e07da857ddad21510cc12b4725f1a14b3a279207ade27da9dd6"
+    },
+    {
+      "bytes": 3252,
+      "path": "package/diagnostic-inputs.json",
+      "sha256": "5f06497d0cf339cad4e8f9661469b358178ad5bd0c5da4ec947e3fda2d927600"
+    },
+    {
+      "bytes": 11558,
+      "path": "package/LICENSE.txt",
+      "sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6"
+    },
+    {
+      "bytes": 553,
+      "path": "package/runtime-inventory.json",
+      "sha256": "08ef8e9235a43dbac8d7badad2054b52136ea1355202d4c444388abcc99ae56e"
+    },
+    {
+      "bytes": 181760,
+      "path": "package/RuntimeDiagnostics.exe",
+      "sha256": "ad68d0ba073b55f4abfc04bf7a1c8ef8ec0e9ce4ceaddf1e26de23b9b337cf2b"
+    },
+    {
+      "bytes": 2518,
+      "path": "package/Assets/SplashScreen.png",
+      "sha256": "f88748811206edee8116b16e660b3ec91018f0a0fe7ec377dce521ee37e0399a"
+    },
+    {
+      "bytes": 570,
+      "path": "package/Assets/Square150x150Logo.png",
+      "sha256": "0406b630403d089059e2a7eb114bb6e4bc18cc4e85382cf2f3353cbcb389a680"
+    },
+    {
+      "bytes": 142,
+      "path": "package/Assets/Square44x44Logo.png",
+      "sha256": "1986f83bbe595418567c5fb9e84b937acd928de61c9711c726725ff0e1c47611"
+    },
+    {
+      "bytes": 153,
+      "path": "package/Assets/StoreLogo.png",
+      "sha256": "593d708a5fcbd0b802c25202f4e7d16b74f7d02a453e34fd8d5bb9cc686b2e18"
+    },
+    {
+      "bytes": 1417,
+      "path": "package/Fixtures/classes/diagnostic/JniSmoke.class",
+      "sha256": "33cfb26683923979bf734c1b9a20f90872b958294425e4e993b3839ff3565b50"
+    },
+    {
+      "bytes": 144,
+      "path": "package/profiles/java21-smoke.json",
+      "sha256": "8da0488de996f87135ce2ad3315e015d720616d62e51dc4f7c956e5fb14932b0"
+    },
+    {
+      "bytes": 154,
+      "path": "package/profiles/native-control.json",
+      "sha256": "10426def1325307eec86ba0598f9b331c84db8652eb27f74a5ccee3e719056e1"
+    }
+  ],
+  "licenseFiles": [
+    {
+      "path": "LICENSE.txt",
+      "sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "legacyforge-runtime-inventory-v1",
+  "available": false,
+  "approvedForDiagnosticPackaging": false,
+  "expectedJavaMajor": 21,
+  "architecture": "x64",
+  "files": [],
+  "loadOrder": [
+    "bin/vcruntime140.dll",
+    "bin/vcruntime140_1.dll",
+    "bin/msvcp140.dll",
+    "bin/jli.dll",
+    "bin/server/jvm.dll",
+    "bin/java.dll"
+  ],
+  "fixtureFiles": [
+    {
+      "path": "Fixtures/classes/diagnostic/JniSmoke.class",
+      "sha256": "33cfb26683923979bf734c1b9a20f90872b958294425e4e993b3839ff3565b50"
+    }
+  ]
+}

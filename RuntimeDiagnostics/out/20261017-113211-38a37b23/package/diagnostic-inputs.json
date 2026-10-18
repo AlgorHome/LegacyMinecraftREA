@@ -1,0 +1,94 @@
+{
+  "schema": "legacyforge-diagnostic-inputs-v1",
+  "baseline": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+  "buildId": "20261017-113211-38a37b23",
+  "sourceFiles": [
+    {
+      "sha256": "730ffa06828760946b3245491bfdbd59dab7eaa3eb6108b4ff888c6eab77ab60",
+      "path": "build.ps1"
+    },
+    {
+      "sha256": "4a64d9982cd48e07da857ddad21510cc12b4725f1a14b3a279207ade27da9dd6",
+      "path": "package/Package.appxmanifest"
+    },
+    {
+      "sha256": "280d9b53fd911a2e6d6c3c346f323c2a7c7d57d98c4f612fc0c4f544c2f9ac3f",
+      "path": "runtime-inventory.template.json"
+    },
+    {
+      "sha256": "544c9446bc6376e4d1b805633bb8383ef2bdeab5c2bb68d2d97d17155e30c841",
+      "path": "tools/verify_artifacts.py"
+    },
+    {
+      "sha256": "294fdd876b57a6b33438246d4f53151c5df3e766974c543b2137bcdbdae5bc47",
+      "path": "include/diagnostics.h"
+    },
+    {
+      "sha256": "5aed1bcc4532ca000aa5a31e5dd83971075f226576ed5110b380f3045513ad7b",
+      "path": "src/app.cpp"
+    },
+    {
+      "sha256": "60a968b794dad204fa21c1a1a9240b02b930e744046a04abdde9a8f6a684afc6",
+      "path": "src/report.cpp"
+    },
+    {
+      "sha256": "4da7baac93fbe08a6889743ba4264e7d49247892331a4b94a2f34e0f8fb1c6bc",
+      "path": "src/native_control.cpp"
+    },
+    {
+      "sha256": "6cdebd2ef6888ef761b460a33b159ec40e4ceac4af5881e1f6c173c8d993b434",
+      "path": "src/jni_smoke.cpp"
+    },
+    {
+      "sha256": "9019697261e7741e817f7178850ed38097df792b29d7d045c0f4b1576090510d",
+      "path": "java/diagnostic/JniSmoke.java"
+    }
+  ],
+  "runtimeInventorySha256": "3b11ccbbb180568ea82cd728bb737c5a09deee9f7860856bf33ec8d7c3bc2553",
+  "packageFiles": [
+    {
+      "sha256": "4a64d9982cd48e07da857ddad21510cc12b4725f1a14b3a279207ade27da9dd6",
+      "path": "AppxManifest.xml"
+    },
+    {
+      "sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6",
+      "path": "LICENSE.txt"
+    },
+    {
+      "sha256": "3b11ccbbb180568ea82cd728bb737c5a09deee9f7860856bf33ec8d7c3bc2553",
+      "path": "runtime-inventory.json"
+    },
+    {
+      "sha256": "b02a490853ae224e23c8f311f744045f2e9871b1a71a809d409f38b52dbd3b90",
+      "path": "RuntimeDiagnostics.exe"
+    },
+    {
+      "sha256": "f88748811206edee8116b16e660b3ec91018f0a0fe7ec377dce521ee37e0399a",
+      "path": "Assets/SplashScreen.png"
+    },
+    {
+      "sha256": "0406b630403d089059e2a7eb114bb6e4bc18cc4e85382cf2f3353cbcb389a680",
+      "path": "Assets/Square150x150Logo.png"
+    },
+    {
+      "sha256": "1986f83bbe595418567c5fb9e84b937acd928de61c9711c726725ff0e1c47611",
+      "path": "Assets/Square44x44Logo.png"
+    },
+    {
+      "sha256": "593d708a5fcbd0b802c25202f4e7d16b74f7d02a453e34fd8d5bb9cc686b2e18",
+      "path": "Assets/StoreLogo.png"
+    },
+    {
+      "sha256": "33cfb26683923979bf734c1b9a20f90872b958294425e4e993b3839ff3565b50",
+      "path": "Fixtures/classes/diagnostic/JniSmoke.class"
+    },
+    {
+      "sha256": "634ca4acd39f87a3165626dcdf0050af2f8e791ab01e1a6eb529d3e4ee6eee9b",
+      "path": "profiles/java21-smoke.json"
+    },
+    {
+      "sha256": "77e725b4b407f6b675b7bcb148c0b2e124d82c1dc9b8feaa38fd00c7fc2a8d9d",
+      "path": "profiles/native-control.json"
+    }
+  ]
+}

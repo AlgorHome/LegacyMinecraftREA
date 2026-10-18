@@ -1,0 +1,7 @@
+{
+  "schema": "legacyforge-diagnostic-profile-v1",
+  "id": "S21",
+  "network": false,
+  "execution": "NOT_EXECUTED",
+  "javaMajor": 21
+}
