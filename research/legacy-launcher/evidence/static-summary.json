@@ -1,0 +1,3493 @@
+{
+  "research_date": "2026-10-17",
+  "legacyforge_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+  "inventory_captured_utc": "2026-10-17T06:07:27.608364+00:00",
+  "selected_files": [
+    {
+      "path": "LegacyLauncher_Installer_legacy.exe",
+      "bytes": 117751681,
+      "sha256": "a7c997ba3c3e91c048f80f96f08754948428f6d3fe4001bab79c4ae09d06c5e0",
+      "pe": {
+        "format": "PE32",
+        "machine": "0x14c",
+        "architecture": "x86",
+        "subsystem": 2,
+        "entry_rva": "0xb5eec",
+        "timestamp_raw": 1676472856,
+        "sections": 10,
+        "inno_markers": [
+          "Inno Setup Setup Data",
+          "Inno Setup"
+        ]
+      }
+    },
+    {
+      "path": "legacy\\Minecraft\\TL.exe",
+      "bytes": 409088,
+      "sha256": "2b11f487e853e952dc677071202cbe25d6800ccaf3f93a3232c5eed715a1c033",
+      "pe": {
+        "format": "PE32",
+        "machine": "0x14c",
+        "architecture": "x86",
+        "subsystem": 2,
+        "entry_rva": "0x1590",
+        "timestamp_raw": 1653381278,
+        "sections": 9,
+        "inno_markers": []
+      }
+    },
+    {
+      "path": "legacy\\Minecraft\\unins000.exe",
+      "bytes": 3593603,
+      "sha256": "46b85011af3c4fb909e6795cb4d87cb72f7814f81bde4507ce1eea4e3bebf781",
+      "pe": {
+        "format": "PE32",
+        "machine": "0x14c",
+        "architecture": "x86",
+        "subsystem": 2,
+        "entry_rva": "0x2c6668",
+        "timestamp_raw": 1676472857,
+        "sections": 10,
+        "inno_markers": [
+          "Inno Setup Setup Data",
+          "Inno Setup"
+        ]
+      }
+    },
+    {
+      "path": "legacy\\Minecraft\\launcher\\bootstrap.jar",
+      "bytes": 11026138,
+      "sha256": "09ba7517c8a9b30780ff9a6de230b8905247835ae0da914d66991e2b3b4b6c4e",
+      "pe": null
+    },
+    {
+      "path": "legacy\\Minecraft\\launcher\\launcher.jar",
+      "bytes": 5496812,
+      "sha256": "364b9add9a3b0e74e553439b3f0e33a573bb5d28667adc028180d509b0459eec",
+      "pe": null
+    },
+    {
+      "path": "legacy\\Minecraft\\jre\\bin\\java.exe",
+      "bytes": 47344,
+      "sha256": "88929241f30cbb0ba439bfab1cd82cf6d092f776e5c73a452f80ed465355adec",
+      "pe": {
+        "format": "PE32+",
+        "machine": "0x8664",
+        "architecture": "x86_64",
+        "subsystem": 3,
+        "entry_rva": "0x1420",
+        "timestamp_raw": 3467587068,
+        "sections": 6,
+        "inno_markers": []
+      }
+    },
+    {
+      "path": "legacy\\Minecraft\\jre\\bin\\javaw.exe",
+      "bytes": 47344,
+      "sha256": "3850d4f443b2a97014a1dcb94db893f0b3396201a8573aa4c4b967ff61528ac6",
+      "pe": {
+        "format": "PE32+",
+        "machine": "0x8664",
+        "architecture": "x86_64",
+        "subsystem": 2,
+        "entry_rva": "0x1428",
+        "timestamp_raw": 1912555943,
+        "sections": 6,
+        "inno_markers": []
+      }
+    },
+    {
+      "path": "legacy\\Minecraft\\jre\\bin\\server\\jvm.dll",
+      "bytes": 12665584,
+      "sha256": "064a55423c55802d3ae7147c4f33d30d79d9b7f4f339c99fcb30c8759d0f8268",
+      "pe": {
+        "format": "PE32+",
+        "machine": "0x8664",
+        "architecture": "x86_64",
+        "subsystem": 2,
+        "entry_rva": "0x892afc",
+        "timestamp_raw": 155529455,
+        "sections": 6,
+        "inno_markers": []
+      }
+    },
+    {
+      "path": "legacy\\Minecraft\\game\\versions\\1.21.11\\natives\\glfw.dll",
+      "bytes": 496128,
+      "sha256": "affa7e54eb0dedce4a5721c327c1a16035edbbd039cd402e08107d6d2d55eb1a",
+      "pe": {
+        "format": "PE32+",
+        "machine": "0x8664",
+        "architecture": "x86_64",
+        "subsystem": 3,
+        "entry_rva": "0x151c0",
+        "timestamp_raw": 1692362470,
+        "sections": 7,
+        "inno_markers": []
+      }
+    },
+    {
+      "path": "legacy\\Minecraft\\game\\versions\\1.21.11\\natives\\jemalloc.dll",
+      "bytes": 398336,
+      "sha256": "9abf0095066ebab37b78968e11370a8078313e48cb5be8eda01f67623c6a6248",
+      "pe": {
+        "format": "PE32+",
+        "machine": "0x8664",
+        "architecture": "x86_64",
+        "subsystem": 2,
+        "entry_rva": "0x359bc",
+        "timestamp_raw": 1694802646,
+        "sections": 6,
+        "inno_markers": []
+      }
+    },
+    {
+      "path": "legacy\\Minecraft\\game\\versions\\1.21.11\\natives\\jna4102832794457777779.dll",
+      "bytes": 273408,
+      "sha256": "5a7ff949f6d93d86491eb5b26b1cfc60051168a60622650224b89995ac420023",
+      "pe": {
+        "format": "PE32+",
+        "machine": "0x8664",
+        "architecture": "x86_64",
+        "subsystem": 2,
+        "entry_rva": "0x198e0",
+        "timestamp_raw": 1714803378,
+        "sections": 7,
+        "inno_markers": []
+      }
+    },
+    {
+      "path": "legacy\\Minecraft\\game\\versions\\1.21.11\\natives\\lwjgl.dll",
+      "bytes": 479232,
+      "sha256": "a39adf52947fafd954c2a86ce031abb8c59825f7ee50337ac8c41e4280abe82d",
+      "pe": {
+        "format": "PE32+",
+        "machine": "0x8664",
+        "architecture": "x86_64",
+        "subsystem": 2,
+        "entry_rva": "0x257e0",
+        "timestamp_raw": 1694871707,
+        "sections": 6,
+        "inno_markers": []
+      }
+    },
+    {
+      "path": "legacy\\Minecraft\\game\\versions\\1.21.11\\natives\\lwjgl_opengl.dll",
+      "bytes": 364032,
+      "sha256": "fe200dc96ab31237a52facd6345d31f9740ef16dd411e5f9be014eaa30f89fb6",
+      "pe": {
+        "format": "PE32+",
+        "machine": "0x8664",
+        "architecture": "x86_64",
+        "subsystem": 2,
+        "entry_rva": "0x18bf4",
+        "timestamp_raw": 1694871730,
+        "sections": 6,
+        "inno_markers": []
+      }
+    },
+    {
+      "path": "legacy\\Minecraft\\game\\versions\\1.21.11\\natives\\lwjgl_stb.dll",
+      "bytes": 510464,
+      "sha256": "de03f38f8c7471b4924aa8bdf8724c181d1a7c20428dbce2ed301877e1d387e4",
+      "pe": {
+        "format": "PE32+",
+        "machine": "0x8664",
+        "architecture": "x86_64",
+        "subsystem": 2,
+        "entry_rva": "0x42898",
+        "timestamp_raw": 1694871738,
+        "sections": 6,
+        "inno_markers": []
+      }
+    },
+    {
+      "path": "legacy\\Minecraft\\game\\versions\\1.21.11\\natives\\OpenAL.dll",
+      "bytes": 1338368,
+      "sha256": "0630aa42492f78126da1c4d99769632e03c55b2e63b050efe7e3005e07e3e6fc",
+      "pe": {
+        "format": "PE32+",
+        "machine": "0x8664",
+        "architecture": "x86_64",
+        "subsystem": 3,
+        "entry_rva": "0x9a200",
+        "timestamp_raw": 1685468577,
+        "sections": 7,
+        "inno_markers": []
+      }
+    },
+    {
+      "path": "legacy\\Minecraft\\game\\versions\\1.21.11\\1.21.11.jar",
+      "bytes": 31152600,
+      "sha256": "1473c9489ac50fda3c435049a76a70d61a10b8610db27f5ba9d8756b686cd3bd",
+      "pe": null
+    },
+    {
+      "path": "legacy\\Minecraft\\game\\versions\\1.21.11\\1.21.11.jar.bak",
+      "bytes": 31152600,
+      "sha256": "1473c9489ac50fda3c435049a76a70d61a10b8610db27f5ba9d8756b686cd3bd",
+      "pe": null
+    },
+    {
+      "path": "legacy\\Minecraft\\jre\\java-runtime-delta\\windows-x64\\java-runtime-delta\\bin\\java.exe",
+      "bytes": 39424,
+      "sha256": "0afb1170b83c156dfdb7f54bb34c9b058064175c329a5d80b782bcc9dbaa2164",
+      "pe": {
+        "format": "PE32+",
+        "machine": "0x8664",
+        "architecture": "x86_64",
+        "subsystem": 3,
+        "entry_rva": "0x1434",
+        "timestamp_raw": 3518432371,
+        "sections": 6,
+        "inno_markers": []
+      }
+    },
+    {
+      "path": "legacy\\Minecraft\\jre\\java-runtime-delta\\windows-x64\\java-runtime-delta\\bin\\server\\jvm.dll",
+      "bytes": 13870080,
+      "sha256": "8b2da3280a300fc5d183da24cb578fa29d59f26c25ad29fcbdd0cc525a75cf26",
+      "pe": {
+        "format": "PE32+",
+        "machine": "0x8664",
+        "architecture": "x86_64",
+        "subsystem": 2,
+        "entry_rva": "0x94ee2c",
+        "timestamp_raw": 570255879,
+        "sections": 6,
+        "inno_markers": []
+      }
+    }
+  ],
+  "directory_summary": {
+    "legacy.properties": {
+      "files": 1,
+      "bytes": 96
+    },
+    "logs": {
+      "files": 4,
+      "bytes": 2284766
+    },
+    "legacy/Minecraft/tl.args": {
+      "files": 1,
+      "bytes": 125
+    },
+    "legacy/Minecraft/TL.exe": {
+      "files": 1,
+      "bytes": 409088
+    },
+    "legacy/Minecraft/tl.properties": {
+      "files": 1,
+      "bytes": 1880
+    },
+    "legacy/Minecraft/unins000.dat": {
+      "files": 1,
+      "bytes": 141107
+    },
+    "legacy/Minecraft/unins000.exe": {
+      "files": 1,
+      "bytes": 3593603
+    },
+    "legacy/Minecraft/game": {
+      "files": 4688,
+      "bytes": 588291591
+    },
+    "legacy/Minecraft/jre": {
+      "files": 774,
+      "bytes": 315398146
+    },
+    "legacy/Minecraft/launcher": {
+      "files": 74,
+      "bytes": 47507825
+    }
+  },
+  "installed_launcher": {
+    "version": "1.169.4+legacy",
+    "shortBrand": "legacy",
+    "brand": "Stable",
+    "javaVersion": "[11,)",
+    "entryPoint": "net.legacylauncher.LegacyLauncherEntrypoint",
+    "bridgedEntryPoint": "net.legacylauncher.LegacyLauncherBridged",
+    "entrypoints": {
+      "bridge": {
+        "type": "net.legacylauncher.LegacyLauncherBridged",
+        "method": "launch"
+      },
+      "dbusP2P": {
+        "type": "net.legacylauncher.LegacyLauncherEntrypoint",
+        "method": "launchP2P"
+      },
+      "dbusSession": {
+        "type": "net.legacylauncher.LegacyLauncherEntrypoint",
+        "method": "launchSession"
+      }
+    }
+  },
+  "installed_bootstrap": {
+    "version": "1.40.3+legacy",
+    "shortBrand": "legacy",
+    "brand": "Stable"
+  },
+  "selected_game": {
+    "id": "1.21.11",
+    "mainClass": "net.minecraft.client.main.Main",
+    "javaVersion": {
+      "component": "java-runtime-delta",
+      "majorVersion": 21
+    },
+    "assetIndex": {
+      "totalSize": 452678632,
+      "id": "29",
+      "known": true,
+      "url": "https://piston-meta.mojang.com/v1/packages/e81d9e2536723a11eb68e11c5642708926b8be5f/29.json",
+      "sha1": "e81d9e2536723a11eb68e11c5642708926b8be5f",
+      "size": 529966
+    }
+  },
+  "client_sha1_valid": true,
+  "asset_verification": [
+    {
+      "index": "29.json",
+      "sha256": "f92b2a637abd71661ae5846717a187606be13a13d6162fcf6ebd45df465114e5",
+      "objects": 4591,
+      "present": 4591,
+      "sha1_valid": 4591
+    }
+  ],
+  "library_verification": [
+    {
+      "name": "at.yawk.lz4:lz4-java:1.8.1",
+      "role": "artifact",
+      "path": "at/yawk/lz4/lz4-java/1.8.1/lz4-java-1.8.1.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "ca.weblite:java-objc-bridge:1.1",
+      "role": "artifact",
+      "path": "ca/weblite/java-objc-bridge/1.1/java-objc-bridge-1.1.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "osx"
+          }
+        }
+      ],
+      "present": false,
+      "sha1_valid": null
+    },
+    {
+      "name": "com.azure:azure-json:1.4.0",
+      "role": "artifact",
+      "path": "com/azure/azure-json/1.4.0/azure-json-1.4.0.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "com.github.oshi:oshi-core:6.9.0",
+      "role": "artifact",
+      "path": "com/github/oshi/oshi-core/6.9.0/oshi-core-6.9.0.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "com.google.code.gson:gson:2.13.2",
+      "role": "artifact",
+      "path": "com/google/code/gson/gson/2.13.2/gson-2.13.2.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "com.google.guava:failureaccess:1.0.3",
+      "role": "artifact",
+      "path": "com/google/guava/failureaccess/1.0.3/failureaccess-1.0.3.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "com.google.guava:guava:33.5.0-jre",
+      "role": "artifact",
+      "path": "com/google/guava/guava/33.5.0-jre/guava-33.5.0-jre.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "com.ibm.icu:icu4j:77.1",
+      "role": "artifact",
+      "path": "com/ibm/icu/icu4j/77.1/icu4j-77.1.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "com.microsoft.azure:msal4j:1.23.1",
+      "role": "artifact",
+      "path": "com/microsoft/azure/msal4j/1.23.1/msal4j-1.23.1.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "com.mojang:authlib:7.0.61",
+      "role": "artifact",
+      "path": "com/mojang/authlib/7.0.61/authlib-7.0.61.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "com.mojang:blocklist:1.0.10",
+      "role": "artifact",
+      "path": "com/mojang/blocklist/1.0.10/blocklist-1.0.10.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "com.mojang:brigadier:1.3.10",
+      "role": "artifact",
+      "path": "com/mojang/brigadier/1.3.10/brigadier-1.3.10.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "com.mojang:datafixerupper:9.0.19",
+      "role": "artifact",
+      "path": "com/mojang/datafixerupper/9.0.19/datafixerupper-9.0.19.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "com.mojang:jtracy:1.0.37",
+      "role": "artifact",
+      "path": "com/mojang/jtracy/1.0.37/jtracy-1.0.37.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "com.mojang:jtracy:1.0.37:natives-linux",
+      "role": "artifact",
+      "path": "com/mojang/jtracy/1.0.37/jtracy-1.0.37-natives-linux.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "linux"
+          }
+        }
+      ],
+      "present": false,
+      "sha1_valid": null
+    },
+    {
+      "name": "com.mojang:jtracy:1.0.37:natives-macos",
+      "role": "artifact",
+      "path": "com/mojang/jtracy/1.0.37/jtracy-1.0.37-natives-macos.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "osx"
+          }
+        }
+      ],
+      "present": false,
+      "sha1_valid": null
+    },
+    {
+      "name": "com.mojang:jtracy:1.0.37:natives-macos-arm64",
+      "role": "artifact",
+      "path": "com/mojang/jtracy/1.0.37/jtracy-1.0.37-natives-macos-arm64.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "osx"
+          }
+        }
+      ],
+      "present": false,
+      "sha1_valid": null
+    },
+    {
+      "name": "com.mojang:jtracy:1.0.37:natives-windows",
+      "role": "artifact",
+      "path": "com/mojang/jtracy/1.0.37/jtracy-1.0.37-natives-windows.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "windows"
+          }
+        }
+      ],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "com.mojang:logging:1.6.11",
+      "role": "artifact",
+      "path": "com/mojang/logging/1.6.11/logging-1.6.11.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "com.mojang:patchy:2.2.10",
+      "role": "artifact",
+      "path": "com/mojang/patchy/2.2.10/patchy-2.2.10.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "com.mojang:text2speech:1.18.11",
+      "role": "artifact",
+      "path": "com/mojang/text2speech/1.18.11/text2speech-1.18.11.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "commons-codec:commons-codec:1.19.0",
+      "role": "artifact",
+      "path": "commons-codec/commons-codec/1.19.0/commons-codec-1.19.0.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "commons-io:commons-io:2.20.0",
+      "role": "artifact",
+      "path": "commons-io/commons-io/2.20.0/commons-io-2.20.0.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "io.netty:netty-buffer:4.2.7.Final",
+      "role": "artifact",
+      "path": "io/netty/netty-buffer/4.2.7.Final/netty-buffer-4.2.7.Final.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "io.netty:netty-codec-base:4.2.7.Final",
+      "role": "artifact",
+      "path": "io/netty/netty-codec-base/4.2.7.Final/netty-codec-base-4.2.7.Final.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "io.netty:netty-codec-compression:4.2.7.Final",
+      "role": "artifact",
+      "path": "io/netty/netty-codec-compression/4.2.7.Final/netty-codec-compression-4.2.7.Final.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "io.netty:netty-codec-http:4.2.7.Final",
+      "role": "artifact",
+      "path": "io/netty/netty-codec-http/4.2.7.Final/netty-codec-http-4.2.7.Final.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "io.netty:netty-common:4.2.7.Final",
+      "role": "artifact",
+      "path": "io/netty/netty-common/4.2.7.Final/netty-common-4.2.7.Final.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "io.netty:netty-handler:4.2.7.Final",
+      "role": "artifact",
+      "path": "io/netty/netty-handler/4.2.7.Final/netty-handler-4.2.7.Final.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "io.netty:netty-resolver:4.2.7.Final",
+      "role": "artifact",
+      "path": "io/netty/netty-resolver/4.2.7.Final/netty-resolver-4.2.7.Final.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "io.netty:netty-transport-classes-epoll:4.2.7.Final",
+      "role": "artifact",
+      "path": "io/netty/netty-transport-classes-epoll/4.2.7.Final/netty-transport-classes-epoll-4.2.7.Final.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "io.netty:netty-transport-classes-kqueue:4.2.7.Final",
+      "role": "artifact",
+      "path": "io/netty/netty-transport-classes-kqueue/4.2.7.Final/netty-transport-classes-kqueue-4.2.7.Final.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "io.netty:netty-transport-native-epoll:4.2.7.Final:linux-aarch_64",
+      "role": "artifact",
+      "path": "io/netty/netty-transport-native-epoll/4.2.7.Final/netty-transport-native-epoll-4.2.7.Final-linux-aarch_64.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "linux"
+          }
+        }
+      ],
+      "present": false,
+      "sha1_valid": null
+    },
+    {
+      "name": "io.netty:netty-transport-native-epoll:4.2.7.Final:linux-x86_64",
+      "role": "artifact",
+      "path": "io/netty/netty-transport-native-epoll/4.2.7.Final/netty-transport-native-epoll-4.2.7.Final-linux-x86_64.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "linux"
+          }
+        }
+      ],
+      "present": false,
+      "sha1_valid": null
+    },
+    {
+      "name": "io.netty:netty-transport-native-kqueue:4.2.7.Final:osx-aarch_64",
+      "role": "artifact",
+      "path": "io/netty/netty-transport-native-kqueue/4.2.7.Final/netty-transport-native-kqueue-4.2.7.Final-osx-aarch_64.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "osx"
+          }
+        }
+      ],
+      "present": false,
+      "sha1_valid": null
+    },
+    {
+      "name": "io.netty:netty-transport-native-kqueue:4.2.7.Final:osx-x86_64",
+      "role": "artifact",
+      "path": "io/netty/netty-transport-native-kqueue/4.2.7.Final/netty-transport-native-kqueue-4.2.7.Final-osx-x86_64.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "osx"
+          }
+        }
+      ],
+      "present": false,
+      "sha1_valid": null
+    },
+    {
+      "name": "io.netty:netty-transport-native-unix-common:4.2.7.Final",
+      "role": "artifact",
+      "path": "io/netty/netty-transport-native-unix-common/4.2.7.Final/netty-transport-native-unix-common-4.2.7.Final.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "io.netty:netty-transport:4.2.7.Final",
+      "role": "artifact",
+      "path": "io/netty/netty-transport/4.2.7.Final/netty-transport-4.2.7.Final.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "it.unimi.dsi:fastutil:8.5.18",
+      "role": "artifact",
+      "path": "it/unimi/dsi/fastutil/8.5.18/fastutil-8.5.18.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "net.java.dev.jna:jna-platform:5.17.0",
+      "role": "artifact",
+      "path": "net/java/dev/jna/jna-platform/5.17.0/jna-platform-5.17.0.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "net.java.dev.jna:jna:5.17.0",
+      "role": "artifact",
+      "path": "net/java/dev/jna/jna/5.17.0/jna-5.17.0.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "net.sf.jopt-simple:jopt-simple:5.0.4",
+      "role": "artifact",
+      "path": "net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.apache.commons:commons-compress:1.28.0",
+      "role": "artifact",
+      "path": "org/apache/commons/commons-compress/1.28.0/commons-compress-1.28.0.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.apache.commons:commons-lang3:3.19.0",
+      "role": "artifact",
+      "path": "org/apache/commons/commons-lang3/3.19.0/commons-lang3-3.19.0.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.apache.logging.log4j:log4j-api:2.25.2",
+      "role": "artifact",
+      "path": "org/apache/logging/log4j/log4j-api/2.25.2/log4j-api-2.25.2.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.apache.logging.log4j:log4j-core:2.25.2",
+      "role": "artifact",
+      "path": "org/apache/logging/log4j/log4j-core/2.25.2/log4j-core-2.25.2.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.apache.logging.log4j:log4j-slf4j2-impl:2.25.2",
+      "role": "artifact",
+      "path": "org/apache/logging/log4j/log4j-slf4j2-impl/2.25.2/log4j-slf4j2-impl-2.25.2.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.jcraft:jorbis:0.0.17",
+      "role": "artifact",
+      "path": "org/jcraft/jorbis/0.0.17/jorbis-0.0.17.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.joml:joml:1.10.8",
+      "role": "artifact",
+      "path": "org/joml/joml/1.10.8/joml-1.10.8.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.jspecify:jspecify:1.0.0",
+      "role": "artifact",
+      "path": "org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.lwjgl:lwjgl-freetype:3.3.3",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-freetype/3.3.3/lwjgl-freetype-3.3.3.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.lwjgl:lwjgl-freetype:3.3.3:natives-linux",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-freetype/3.3.3/lwjgl-freetype-3.3.3-natives-linux.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "linux"
+          }
+        }
+      ],
+      "present": false,
+      "sha1_valid": null
+    },
+    {
+      "name": "org.lwjgl:lwjgl-freetype:3.3.3:natives-macos-arm64",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-freetype/3.3.3/lwjgl-freetype-3.3.3-natives-macos-arm64.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "osx"
+          }
+        }
+      ],
+      "present": false,
+      "sha1_valid": null
+    },
+    {
+      "name": "org.lwjgl:lwjgl-freetype:3.3.3:natives-macos-patch",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-freetype/3.3.3/lwjgl-freetype-3.3.3-natives-macos-patch.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "osx"
+          }
+        }
+      ],
+      "present": false,
+      "sha1_valid": null
+    },
+    {
+      "name": "org.lwjgl:lwjgl-freetype:3.3.3:natives-windows",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-freetype/3.3.3/lwjgl-freetype-3.3.3-natives-windows.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "windows"
+          }
+        }
+      ],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.lwjgl:lwjgl-freetype:3.3.3:natives-windows-arm64",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-freetype/3.3.3/lwjgl-freetype-3.3.3-natives-windows-arm64.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "windows"
+          }
+        }
+      ],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.lwjgl:lwjgl-freetype:3.3.3:natives-windows-x86",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-freetype/3.3.3/lwjgl-freetype-3.3.3-natives-windows-x86.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "windows"
+          }
+        }
+      ],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.lwjgl:lwjgl-glfw:3.3.3",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-glfw/3.3.3/lwjgl-glfw-3.3.3.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.lwjgl:lwjgl-glfw:3.3.3:natives-linux",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-glfw/3.3.3/lwjgl-glfw-3.3.3-natives-linux.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "linux"
+          }
+        }
+      ],
+      "present": false,
+      "sha1_valid": null
+    },
+    {
+      "name": "org.lwjgl:lwjgl-glfw:3.3.3:natives-macos",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-glfw/3.3.3/lwjgl-glfw-3.3.3-natives-macos.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "osx"
+          }
+        }
+      ],
+      "present": false,
+      "sha1_valid": null
+    },
+    {
+      "name": "org.lwjgl:lwjgl-glfw:3.3.3:natives-macos-arm64",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-glfw/3.3.3/lwjgl-glfw-3.3.3-natives-macos-arm64.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "osx"
+          }
+        }
+      ],
+      "present": false,
+      "sha1_valid": null
+    },
+    {
+      "name": "org.lwjgl:lwjgl-glfw:3.3.3:natives-windows",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-glfw/3.3.3/lwjgl-glfw-3.3.3-natives-windows.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "windows"
+          }
+        }
+      ],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.lwjgl:lwjgl-glfw:3.3.3:natives-windows-arm64",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-glfw/3.3.3/lwjgl-glfw-3.3.3-natives-windows-arm64.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "windows"
+          }
+        }
+      ],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.lwjgl:lwjgl-glfw:3.3.3:natives-windows-x86",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-glfw/3.3.3/lwjgl-glfw-3.3.3-natives-windows-x86.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "windows"
+          }
+        }
+      ],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.lwjgl:lwjgl-jemalloc:3.3.3",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-jemalloc/3.3.3/lwjgl-jemalloc-3.3.3.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.lwjgl:lwjgl-jemalloc:3.3.3:natives-linux",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-jemalloc/3.3.3/lwjgl-jemalloc-3.3.3-natives-linux.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "linux"
+          }
+        }
+      ],
+      "present": false,
+      "sha1_valid": null
+    },
+    {
+      "name": "org.lwjgl:lwjgl-jemalloc:3.3.3:natives-macos",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-jemalloc/3.3.3/lwjgl-jemalloc-3.3.3-natives-macos.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "osx"
+          }
+        }
+      ],
+      "present": false,
+      "sha1_valid": null
+    },
+    {
+      "name": "org.lwjgl:lwjgl-jemalloc:3.3.3:natives-macos-arm64",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-jemalloc/3.3.3/lwjgl-jemalloc-3.3.3-natives-macos-arm64.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "osx"
+          }
+        }
+      ],
+      "present": false,
+      "sha1_valid": null
+    },
+    {
+      "name": "org.lwjgl:lwjgl-jemalloc:3.3.3:natives-windows",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-jemalloc/3.3.3/lwjgl-jemalloc-3.3.3-natives-windows.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "windows"
+          }
+        }
+      ],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.lwjgl:lwjgl-jemalloc:3.3.3:natives-windows-arm64",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-jemalloc/3.3.3/lwjgl-jemalloc-3.3.3-natives-windows-arm64.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "windows"
+          }
+        }
+      ],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.lwjgl:lwjgl-jemalloc:3.3.3:natives-windows-x86",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-jemalloc/3.3.3/lwjgl-jemalloc-3.3.3-natives-windows-x86.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "windows"
+          }
+        }
+      ],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.lwjgl:lwjgl-openal:3.3.3",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-openal/3.3.3/lwjgl-openal-3.3.3.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.lwjgl:lwjgl-openal:3.3.3:natives-linux",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-openal/3.3.3/lwjgl-openal-3.3.3-natives-linux.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "linux"
+          }
+        }
+      ],
+      "present": false,
+      "sha1_valid": null
+    },
+    {
+      "name": "org.lwjgl:lwjgl-openal:3.3.3:natives-macos",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-openal/3.3.3/lwjgl-openal-3.3.3-natives-macos.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "osx"
+          }
+        }
+      ],
+      "present": false,
+      "sha1_valid": null
+    },
+    {
+      "name": "org.lwjgl:lwjgl-openal:3.3.3:natives-macos-arm64",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-openal/3.3.3/lwjgl-openal-3.3.3-natives-macos-arm64.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "osx"
+          }
+        }
+      ],
+      "present": false,
+      "sha1_valid": null
+    },
+    {
+      "name": "org.lwjgl:lwjgl-openal:3.3.3:natives-windows",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-openal/3.3.3/lwjgl-openal-3.3.3-natives-windows.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "windows"
+          }
+        }
+      ],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.lwjgl:lwjgl-openal:3.3.3:natives-windows-arm64",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-openal/3.3.3/lwjgl-openal-3.3.3-natives-windows-arm64.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "windows"
+          }
+        }
+      ],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.lwjgl:lwjgl-openal:3.3.3:natives-windows-x86",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-openal/3.3.3/lwjgl-openal-3.3.3-natives-windows-x86.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "windows"
+          }
+        }
+      ],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.lwjgl:lwjgl-opengl:3.3.3",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-opengl/3.3.3/lwjgl-opengl-3.3.3.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.lwjgl:lwjgl-opengl:3.3.3:natives-linux",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-opengl/3.3.3/lwjgl-opengl-3.3.3-natives-linux.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "linux"
+          }
+        }
+      ],
+      "present": false,
+      "sha1_valid": null
+    },
+    {
+      "name": "org.lwjgl:lwjgl-opengl:3.3.3:natives-macos",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-opengl/3.3.3/lwjgl-opengl-3.3.3-natives-macos.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "osx"
+          }
+        }
+      ],
+      "present": false,
+      "sha1_valid": null
+    },
+    {
+      "name": "org.lwjgl:lwjgl-opengl:3.3.3:natives-macos-arm64",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-opengl/3.3.3/lwjgl-opengl-3.3.3-natives-macos-arm64.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "osx"
+          }
+        }
+      ],
+      "present": false,
+      "sha1_valid": null
+    },
+    {
+      "name": "org.lwjgl:lwjgl-opengl:3.3.3:natives-windows",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-opengl/3.3.3/lwjgl-opengl-3.3.3-natives-windows.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "windows"
+          }
+        }
+      ],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.lwjgl:lwjgl-opengl:3.3.3:natives-windows-arm64",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-opengl/3.3.3/lwjgl-opengl-3.3.3-natives-windows-arm64.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "windows"
+          }
+        }
+      ],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.lwjgl:lwjgl-opengl:3.3.3:natives-windows-x86",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-opengl/3.3.3/lwjgl-opengl-3.3.3-natives-windows-x86.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "windows"
+          }
+        }
+      ],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.lwjgl:lwjgl-stb:3.3.3",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-stb/3.3.3/lwjgl-stb-3.3.3.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.lwjgl:lwjgl-stb:3.3.3:natives-linux",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-stb/3.3.3/lwjgl-stb-3.3.3-natives-linux.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "linux"
+          }
+        }
+      ],
+      "present": false,
+      "sha1_valid": null
+    },
+    {
+      "name": "org.lwjgl:lwjgl-stb:3.3.3:natives-macos",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-stb/3.3.3/lwjgl-stb-3.3.3-natives-macos.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "osx"
+          }
+        }
+      ],
+      "present": false,
+      "sha1_valid": null
+    },
+    {
+      "name": "org.lwjgl:lwjgl-stb:3.3.3:natives-macos-arm64",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-stb/3.3.3/lwjgl-stb-3.3.3-natives-macos-arm64.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "osx"
+          }
+        }
+      ],
+      "present": false,
+      "sha1_valid": null
+    },
+    {
+      "name": "org.lwjgl:lwjgl-stb:3.3.3:natives-windows",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-stb/3.3.3/lwjgl-stb-3.3.3-natives-windows.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "windows"
+          }
+        }
+      ],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.lwjgl:lwjgl-stb:3.3.3:natives-windows-arm64",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-stb/3.3.3/lwjgl-stb-3.3.3-natives-windows-arm64.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "windows"
+          }
+        }
+      ],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.lwjgl:lwjgl-stb:3.3.3:natives-windows-x86",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-stb/3.3.3/lwjgl-stb-3.3.3-natives-windows-x86.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "windows"
+          }
+        }
+      ],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.lwjgl:lwjgl-tinyfd:3.3.3",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-tinyfd/3.3.3/lwjgl-tinyfd-3.3.3.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.lwjgl:lwjgl-tinyfd:3.3.3:natives-linux",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-tinyfd/3.3.3/lwjgl-tinyfd-3.3.3-natives-linux.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "linux"
+          }
+        }
+      ],
+      "present": false,
+      "sha1_valid": null
+    },
+    {
+      "name": "org.lwjgl:lwjgl-tinyfd:3.3.3:natives-macos",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-tinyfd/3.3.3/lwjgl-tinyfd-3.3.3-natives-macos.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "osx"
+          }
+        }
+      ],
+      "present": false,
+      "sha1_valid": null
+    },
+    {
+      "name": "org.lwjgl:lwjgl-tinyfd:3.3.3:natives-macos-arm64",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-tinyfd/3.3.3/lwjgl-tinyfd-3.3.3-natives-macos-arm64.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "osx"
+          }
+        }
+      ],
+      "present": false,
+      "sha1_valid": null
+    },
+    {
+      "name": "org.lwjgl:lwjgl-tinyfd:3.3.3:natives-windows",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-tinyfd/3.3.3/lwjgl-tinyfd-3.3.3-natives-windows.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "windows"
+          }
+        }
+      ],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.lwjgl:lwjgl-tinyfd:3.3.3:natives-windows-arm64",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-tinyfd/3.3.3/lwjgl-tinyfd-3.3.3-natives-windows-arm64.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "windows"
+          }
+        }
+      ],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.lwjgl:lwjgl-tinyfd:3.3.3:natives-windows-x86",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl-tinyfd/3.3.3/lwjgl-tinyfd-3.3.3-natives-windows-x86.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "windows"
+          }
+        }
+      ],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.lwjgl:lwjgl:3.3.3",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl/3.3.3/lwjgl-3.3.3.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.lwjgl:lwjgl:3.3.3:natives-linux",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl/3.3.3/lwjgl-3.3.3-natives-linux.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "linux"
+          }
+        }
+      ],
+      "present": false,
+      "sha1_valid": null
+    },
+    {
+      "name": "org.lwjgl:lwjgl:3.3.3:natives-macos",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl/3.3.3/lwjgl-3.3.3-natives-macos.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "osx"
+          }
+        }
+      ],
+      "present": false,
+      "sha1_valid": null
+    },
+    {
+      "name": "org.lwjgl:lwjgl:3.3.3:natives-macos-arm64",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl/3.3.3/lwjgl-3.3.3-natives-macos-arm64.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "osx"
+          }
+        }
+      ],
+      "present": false,
+      "sha1_valid": null
+    },
+    {
+      "name": "org.lwjgl:lwjgl:3.3.3:natives-windows",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl/3.3.3/lwjgl-3.3.3-natives-windows.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "windows"
+          }
+        }
+      ],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.lwjgl:lwjgl:3.3.3:natives-windows-arm64",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl/3.3.3/lwjgl-3.3.3-natives-windows-arm64.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "windows"
+          }
+        }
+      ],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.lwjgl:lwjgl:3.3.3:natives-windows-x86",
+      "role": "artifact",
+      "path": "org/lwjgl/lwjgl/3.3.3/lwjgl-3.3.3-natives-windows-x86.jar",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "windows"
+          }
+        }
+      ],
+      "present": true,
+      "sha1_valid": true
+    },
+    {
+      "name": "org.slf4j:slf4j-api:2.0.17",
+      "role": "artifact",
+      "path": "org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar",
+      "rules": [],
+      "present": true,
+      "sha1_valid": true
+    }
+  ],
+  "native_static_imports": [
+    {
+      "path": "TL.exe",
+      "sha256": "2b11f487e853e952dc677071202cbe25d6800ccaf3f93a3232c5eed715a1c033",
+      "imports": [
+        {
+          "module": "advapi32.dll",
+          "functions": [
+            "RegCloseKey",
+            "RegEnumKeyExA",
+            "RegOpenKeyExA",
+            "RegQueryValueExA"
+          ]
+        },
+        {
+          "module": "kernel32.dll",
+          "functions": [
+            "CloseHandle",
+            "CreateMutexA",
+            "CreateProcessA",
+            "DeleteCriticalSection",
+            "EnterCriticalSection",
+            "ExitProcess",
+            "FindResourceExA",
+            "FormatMessageA",
+            "GetBinaryTypeA",
+            "GetCommandLineA",
+            "GetCurrentDirectoryA",
+            "GetCurrentProcess",
+            "GetEnvironmentVariableA",
+            "GetExitCodeProcess",
+            "GetLastError",
+            "GetModuleFileNameA",
+            "GetModuleHandleA",
+            "GetProcAddress",
+            "GetStartupInfoA",
+            "GlobalMemoryStatusEx",
+            "InitializeCriticalSection",
+            "LeaveCriticalSection",
+            "LoadResource",
+            "LocalFree",
+            "LockResource",
+            "SetEnvironmentVariableA",
+            "SetLastError",
+            "SetUnhandledExceptionFilter",
+            "TlsGetValue",
+            "VirtualProtect",
+            "VirtualQuery",
+            "WaitForSingleObject"
+          ]
+        },
+        {
+          "module": "msvcrt.dll",
+          "functions": [
+            "_strdup",
+            "_stricoll"
+          ]
+        },
+        {
+          "module": "msvcrt.dll",
+          "functions": [
+            "__getmainargs",
+            "__p__environ",
+            "__p__fmode",
+            "__set_app_type",
+            "_cexit",
+            "_chdir",
+            "_close",
+            "_errno",
+            "_findclose",
+            "_findfirst",
+            "_findnext",
+            "_fullpath",
+            "_iob",
+            "_itoa",
+            "_onexit",
+            "_open",
+            "_read",
+            "_setmode",
+            "_stat",
+            "_stricmp",
+            "abort",
+            "atexit",
+            "atoi",
+            "calloc",
+            "fclose",
+            "fopen",
+            "fprintf",
+            "free",
+            "fwrite",
+            "isspace",
+            "malloc",
+            "mbstowcs",
+            "memcpy",
+            "memset",
+            "printf",
+            "puts",
+            "realloc",
+            "setlocale",
+            "signal",
+            "strcat",
+            "strchr",
+            "strcmp",
+            "strcoll",
+            "strcpy",
+            "strlen",
+            "strncat",
+            "strncpy",
+            "strpbrk",
+            "strrchr",
+            "strstr",
+            "strtok",
+            "tolower",
+            "vfprintf",
+            "wcstombs"
+          ]
+        },
+        {
+          "module": "shell32.dll",
+          "functions": [
+            "ShellExecuteA"
+          ]
+        },
+        {
+          "module": "user32.dll",
+          "functions": [
+            "CreateWindowExA",
+            "DispatchMessageA",
+            "EnumWindows",
+            "FindWindowExA",
+            "GetMessageA",
+            "GetSystemMetrics",
+            "GetWindowLongA",
+            "GetWindowRect",
+            "GetWindowTextA",
+            "GetWindowThreadProcessId",
+            "KillTimer",
+            "LoadImageA",
+            "MessageBoxA",
+            "PostQuitMessage",
+            "SendMessageA",
+            "SetForegroundWindow",
+            "SetTimer",
+            "SetWindowPos",
+            "ShowWindow",
+            "TranslateMessage",
+            "UpdateWindow"
+          ]
+        }
+      ],
+      "limitations": "Static standard imports only; delay imports and dynamically resolved functions not covered."
+    },
+    {
+      "path": "jre\\bin\\server\\jvm.dll",
+      "sha256": "064a55423c55802d3ae7147c4f33d30d79d9b7f4f339c99fcb30c8759d0f8268",
+      "imports": [
+        {
+          "module": "KERNEL32.dll",
+          "functions": [
+            "ResetEvent",
+            "OpenProcess",
+            "GetModuleFileNameA",
+            "WideCharToMultiByte",
+            "K32EnumProcessModules",
+            "K32GetModuleFileNameExA",
+            "CreateToolhelp32Snapshot",
+            "Process32First",
+            "Process32Next",
+            "RtlCaptureStackBackTrace",
+            "SetEnvironmentVariableA",
+            "CreateFileW",
+            "FindClose",
+            "FindFirstFileA",
+            "FindFirstFileW",
+            "FindNextFileA",
+            "FindNextFileW",
+            "GetFileAttributesA",
+            "GetFileAttributesExW",
+            "GetFileInformationByHandle",
+            "GetFullPathNameW",
+            "ReadFile",
+            "SetEndOfFile",
+            "SetFilePointer",
+            "GetTempPathA",
+            "IsDebuggerPresent",
+            "DebugBreak",
+            "DuplicateHandle",
+            "RaiseException",
+            "SetLastError",
+            "QueryPerformanceCounter",
+            "QueryPerformanceFrequency",
+            "InitOnceExecuteOnce",
+            "SleepConditionVariableCS",
+            "CreateEventA",
+            "WaitForMultipleObjects",
+            "GetProcessTimes",
+            "GetCurrentProcess",
+            "GetCurrentProcessId",
+            "GetExitCodeProcess",
+            "SwitchToThread",
+            "GetCurrentThread",
+            "GetCurrentThreadId",
+            "OpenThread",
+            "SetThreadPriority",
+            "GetThreadPriority",
+            "SuspendThread",
+            "ResumeThread",
+            "SetEvent",
+            "GetThreadContext",
+            "GetThreadTimes",
+            "GetCurrentProcessorNumber",
+            "GlobalMemoryStatusEx",
+            "GetSystemInfo",
+            "GetSystemTimeAsFileTime",
+            "GetLocalTime",
+            "GetTickCount64",
+            "GetSystemDirectoryA",
+            "GetWindowsDirectoryA",
+            "GetComputerNameExA",
+            "GetVersionExA",
+            "GetNativeSystemInfo",
+            "VirtualAlloc",
+            "VirtualProtect",
+            "VirtualFree",
+            "VirtualQuery",
+            "MapViewOfFileEx",
+            "UnmapViewOfFile",
+            "GetLargePageMinimum",
+            "VirtualAllocExNuma",
+            "GetModuleHandleA",
+            "LoadLibraryA",
+            "GetNumaHighestNodeNumber",
+            "GetProcessAffinityMask",
+            "FormatMessageA",
+            "CreateFileMappingA",
+            "GetNumaNodeProcessorMask",
+            "MultiByteToWideChar",
+            "IsDBCSLeadByte",
+            "SetConsoleCtrlHandler",
+            "RtlCaptureContext",
+            "RtlAddFunctionTable",
+            "CreateDirectoryA",
+            "GetVolumeInformationA",
+            "MapViewOfFile",
+            "OpenFileMappingA",
+            "TlsAlloc",
+            "TlsGetValue",
+            "TlsSetValue",
+            "SetUnhandledExceptionFilter",
+            "AllocateUserPhysicalPages",
+            "FreeUserPhysicalPages",
+            "MapUserPhysicalPages",
+            "IsProcessorFeaturePresent",
+            "TerminateProcess",
+            "UnhandledExceptionFilter",
+            "RtlVirtualUnwind",
+            "WakeAllConditionVariable",
+            "TryEnterCriticalSection",
+            "GetEnvironmentVariableA",
+            "WakeConditionVariable",
+            "InitializeConditionVariable",
+            "DeleteCriticalSection",
+            "LeaveCriticalSection",
+            "EnterCriticalSection",
+            "InitializeCriticalSection",
+            "GetProcAddress",
+            "FreeLibrary",
+            "CreateSemaphoreA",
+            "Sleep",
+            "CreateMutexA",
+            "WaitForSingleObject",
+            "ReleaseMutex",
+            "ReleaseSemaphore",
+            "GetLastError",
+            "CloseHandle",
+            "WriteFile",
+            "FlushFileBuffers",
+            "CreateProcessA",
+            "CreateFileA",
+            "RtlLookupFunctionEntry",
+            "GetModuleHandleW",
+            "CreateEventW",
+            "WaitForSingleObjectEx",
+            "InitializeCriticalSectionAndSpinCount",
+            "InitializeSListHead"
+          ]
+        },
+        {
+          "module": "USER32.dll",
+          "functions": [
+            "GetUserObjectInformationA",
+            "MessageBoxA",
+            "GetProcessWindowStation"
+          ]
+        },
+        {
+          "module": "ADVAPI32.dll",
+          "functions": [
+            "GetUserNameA",
+            "SetFileSecurityA",
+            "SetSecurityDescriptorDacl",
+            "InitializeSecurityDescriptor",
+            "InitializeAcl",
+            "GetTokenInformation",
+            "GetSecurityDescriptorDacl",
+            "GetLengthSid",
+            "GetAclInformation",
+            "GetAce",
+            "FreeSid",
+            "EqualSid",
+            "CopySid",
+            "AllocateAndInitializeSid",
+            "AddAce",
+            "AddAccessAllowedAce",
+            "RegQueryValueExA",
+            "RegOpenKeyA",
+            "RegCloseKey",
+            "LookupPrivilegeValueA",
+            "AdjustTokenPrivileges",
+            "OpenProcessToken"
+          ]
+        },
+        {
+          "module": "WSOCK32.dll",
+          "functions": [
+            "ordinal:13",
+            "ordinal:23",
+            "ordinal:19",
+            "ordinal:16",
+            "ordinal:15",
+            "ordinal:1",
+            "ordinal:2",
+            "ordinal:6",
+            "ordinal:8",
+            "ordinal:9",
+            "ordinal:115"
+          ]
+        },
+        {
+          "module": "WINMM.dll",
+          "functions": [
+            "timeBeginPeriod",
+            "timeEndPeriod"
+          ]
+        },
+        {
+          "module": "VERSION.dll",
+          "functions": [
+            "GetFileVersionInfoSizeA",
+            "GetFileVersionInfoA",
+            "VerQueryValueA"
+          ]
+        },
+        {
+          "module": "PSAPI.DLL",
+          "functions": [
+            "GetProcessMemoryInfo",
+            "GetModuleFileNameExA",
+            "GetModuleInformation",
+            "EnumProcessModules"
+          ]
+        },
+        {
+          "module": "VCRUNTIME140.dll",
+          "functions": [
+            "strchr",
+            "__C_specific_handler",
+            "memchr",
+            "memcmp",
+            "strstr",
+            "strrchr",
+            "memset",
+            "_purecall",
+            "__std_type_info_destroy_list",
+            "memcpy",
+            "memmove"
+          ]
+        },
+        {
+          "module": "VCRUNTIME140_1.dll",
+          "functions": [
+            "__CxxFrameHandler4"
+          ]
+        },
+        {
+          "module": "api-ms-win-crt-stdio-l1-1-0.dll",
+          "functions": [
+            "fgetc",
+            "fflush",
+            "__stdio_common_vswprintf",
+            "_wsopen_dispatch",
+            "_read",
+            "_get_osfhandle",
+            "_mktemp",
+            "_setmode",
+            "_lseeki64",
+            "_close",
+            "__acrt_iob_func",
+            "__stdio_common_vsscanf",
+            "_getcwd",
+            "fputc",
+            "_sopen_dispatch",
+            "__stdio_common_vfprintf",
+            "fwrite",
+            "fopen",
+            "__stdio_common_vsprintf",
+            "fgets",
+            "fclose",
+            "_lseek",
+            "_write",
+            "_fileno",
+            "getc"
+          ]
+        },
+        {
+          "module": "api-ms-win-crt-string-l1-1-0.dll",
+          "functions": [
+            "_strdup",
+            "strtok_s",
+            "isalpha",
+            "iswalpha",
+            "strncat",
+            "_strnicmp",
+            "strncpy",
+            "strcmp",
+            "strncmp",
+            "strpbrk",
+            "strcspn",
+            "isalnum",
+            "_stricmp",
+            "isspace",
+            "isdigit",
+            "isprint",
+            "strlen"
+          ]
+        },
+        {
+          "module": "api-ms-win-crt-math-l1-1-0.dll",
+          "functions": [
+            "_finite",
+            "frexp",
+            "fmod",
+            "exp",
+            "log2",
+            "ceil",
+            "floor",
+            "log",
+            "sqrt",
+            "log2f",
+            "_isnan",
+            "pow",
+            "_fdopen"
+          ]
+        },
+        {
+          "module": "api-ms-win-crt-utility-l1-1-0.dll",
+          "functions": [
+            "qsort"
+          ]
+        },
+        {
+          "module": "api-ms-win-crt-runtime-l1-1-0.dll",
+          "functions": [
+            "_initialize_narrow_environment",
+            "_errno",
+            "_configure_narrow_argv",
+            "_initialize_onexit_table",
+            "raise",
+            "_seh_filter_dll",
+            "_execute_onexit_table",
+            "_crt_atexit",
+            "_getpid",
+            "_endthreadex",
+            "_beginthreadex",
+            "_register_onexit_function",
+            "signal",
+            "_exit",
+            "strerror",
+            "_initterm_e",
+            "_initterm",
+            "_cexit",
+            "exit"
+          ]
+        },
+        {
+          "module": "api-ms-win-crt-convert-l1-1-0.dll",
+          "functions": [
+            "atoi",
+            "wcstombs",
+            "strtol",
+            "_itoa",
+            "strtod",
+            "strtoull",
+            "atof"
+          ]
+        },
+        {
+          "module": "api-ms-win-crt-environment-l1-1-0.dll",
+          "functions": [
+            "getenv",
+            "__p__environ"
+          ]
+        },
+        {
+          "module": "api-ms-win-crt-filesystem-l1-1-0.dll",
+          "functions": [
+            "rename",
+            "_stat64i32",
+            "remove",
+            "_unlink",
+            "_access",
+            "_chmod",
+            "_getdrive",
+            "_lock_file",
+            "_unlock_file"
+          ]
+        },
+        {
+          "module": "api-ms-win-crt-time-l1-1-0.dll",
+          "functions": [
+            "wcsftime",
+            "strftime",
+            "_localtime64",
+            "_gmtime64",
+            "_time64",
+            "_ctime64",
+            "_get_timezone"
+          ]
+        },
+        {
+          "module": "api-ms-win-crt-heap-l1-1-0.dll",
+          "functions": [
+            "_aligned_malloc",
+            "malloc",
+            "realloc",
+            "free"
+          ]
+        }
+      ],
+      "limitations": "Static standard imports only; delay imports and dynamically resolved functions not covered."
+    },
+    {
+      "path": "jre\\java-runtime-delta\\windows-x64\\java-runtime-delta\\bin\\server\\jvm.dll",
+      "sha256": "8b2da3280a300fc5d183da24cb578fa29d59f26c25ad29fcbdd0cc525a75cf26",
+      "imports": [
+        {
+          "module": "KERNEL32.dll",
+          "functions": [
+            "OpenProcess",
+            "GetModuleFileNameA",
+            "WideCharToMultiByte",
+            "K32EnumProcessModules",
+            "K32GetModuleFileNameExA",
+            "CreateToolhelp32Snapshot",
+            "Process32First",
+            "Process32Next",
+            "RtlCaptureStackBackTrace",
+            "VerSetConditionMask",
+            "CreateFileW",
+            "FindClose",
+            "FindFirstFileA",
+            "FindFirstFileW",
+            "FindNextFileA",
+            "FindNextFileW",
+            "GetFileAttributesA",
+            "GetFileAttributesExW",
+            "GetFileInformationByHandle",
+            "GetFullPathNameW",
+            "ReadFile",
+            "SetEndOfFile",
+            "SetFilePointer",
+            "GetTempPathA",
+            "IsDebuggerPresent",
+            "DebugBreak",
+            "DuplicateHandle",
+            "RaiseException",
+            "SetLastError",
+            "QueryPerformanceCounter",
+            "QueryPerformanceFrequency",
+            "InitOnceExecuteOnce",
+            "SleepConditionVariableCS",
+            "WaitForMultipleObjects",
+            "GetProcessTimes",
+            "GetCurrentProcess",
+            "GetCurrentProcessId",
+            "GetExitCodeProcess",
+            "SwitchToThread",
+            "GetCurrentThread",
+            "GetCurrentThreadId",
+            "OpenThread",
+            "SetThreadPriority",
+            "GetThreadPriority",
+            "SuspendThread",
+            "ResumeThread",
+            "CreateProcessA",
+            "GetThreadContext",
+            "GetThreadTimes",
+            "GetCurrentProcessorNumber",
+            "GlobalMemoryStatusEx",
+            "ResetEvent",
+            "GetSystemTimeAsFileTime",
+            "GetLocalTime",
+            "GetTickCount64",
+            "GetSystemDirectoryA",
+            "GetWindowsDirectoryA",
+            "GetComputerNameExA",
+            "GetNativeSystemInfo",
+            "VirtualAlloc",
+            "VirtualProtect",
+            "VirtualFree",
+            "VirtualQuery",
+            "MapViewOfFileEx",
+            "UnmapViewOfFile",
+            "GetLargePageMinimum",
+            "VirtualAllocExNuma",
+            "IsProcessInJob",
+            "QueryInformationJobObject",
+            "GetModuleHandleA",
+            "LoadLibraryA",
+            "GetNumaHighestNodeNumber",
+            "GetProcessGroupAffinity",
+            "GetProcessAffinityMask",
+            "FormatMessageA",
+            "CreateFileMappingA",
+            "VerifyVersionInfoW",
+            "GetActiveProcessorCount",
+            "GetNumaNodeProcessorMask",
+            "MultiByteToWideChar",
+            "IsDBCSLeadByte",
+            "SetConsoleCtrlHandler",
+            "K32GetModuleInformation",
+            "K32GetProcessMemoryInfo",
+            "RtlCaptureContext",
+            "RtlAddFunctionTable",
+            "CreateDirectoryA",
+            "GetVolumeInformationA",
+            "MapViewOfFile",
+            "OpenFileMappingA",
+            "FlushProcessWriteBuffers",
+            "TlsAlloc",
+            "TlsGetValue",
+            "TlsSetValue",
+            "SetUnhandledExceptionFilter",
+            "RaiseFailFastException",
+            "AllocateUserPhysicalPages",
+            "FreeUserPhysicalPages",
+            "MapUserPhysicalPages",
+            "IsProcessorFeaturePresent",
+            "TerminateProcess",
+            "UnhandledExceptionFilter",
+            "SetEvent",
+            "WakeAllConditionVariable",
+            "TryEnterCriticalSection",
+            "WakeConditionVariable",
+            "InitializeConditionVariable",
+            "DeleteCriticalSection",
+            "LeaveCriticalSection",
+            "EnterCriticalSection",
+            "InitializeCriticalSection",
+            "CreateEventA",
+            "GetProcAddress",
+            "FreeLibrary",
+            "CreateSemaphoreA",
+            "Sleep",
+            "CreateMutexA",
+            "WaitForSingleObject",
+            "ReleaseMutex",
+            "ReleaseSemaphore",
+            "GetLastError",
+            "CloseHandle",
+            "WriteFile",
+            "FlushFileBuffers",
+            "GetSystemInfo",
+            "CreateFileA",
+            "RtlVirtualUnwind",
+            "RtlLookupFunctionEntry",
+            "SleepConditionVariableSRW",
+            "AcquireSRWLockExclusive",
+            "ReleaseSRWLockExclusive",
+            "InitializeSListHead"
+          ]
+        },
+        {
+          "module": "USER32.dll",
+          "functions": [
+            "MessageBoxA",
+            "GetUserObjectInformationA",
+            "GetProcessWindowStation"
+          ]
+        },
+        {
+          "module": "ADVAPI32.dll",
+          "functions": [
+            "GetUserNameA",
+            "SetFileSecurityA",
+            "SetSecurityDescriptorDacl",
+            "InitializeSecurityDescriptor",
+            "InitializeAcl",
+            "GetTokenInformation",
+            "GetSecurityDescriptorDacl",
+            "GetLengthSid",
+            "GetAclInformation",
+            "GetAce",
+            "FreeSid",
+            "EqualSid",
+            "CopySid",
+            "AllocateAndInitializeSid",
+            "AddAce",
+            "AddAccessAllowedAce",
+            "RegQueryValueExA",
+            "RegOpenKeyExA",
+            "RegOpenKeyA",
+            "RegCloseKey",
+            "LookupPrivilegeValueA",
+            "AdjustTokenPrivileges",
+            "OpenProcessToken"
+          ]
+        },
+        {
+          "module": "POWRPROF.dll",
+          "functions": [
+            "CallNtPowerInformation"
+          ]
+        },
+        {
+          "module": "WS2_32.dll",
+          "functions": [
+            "ordinal:115",
+            "ordinal:111"
+          ]
+        },
+        {
+          "module": "WINMM.dll",
+          "functions": [
+            "timeEndPeriod",
+            "timeBeginPeriod"
+          ]
+        },
+        {
+          "module": "VERSION.dll",
+          "functions": [
+            "GetFileVersionInfoA",
+            "VerQueryValueA",
+            "GetFileVersionInfoSizeA"
+          ]
+        },
+        {
+          "module": "VCRUNTIME140.dll",
+          "functions": [
+            "__std_type_info_destroy_list",
+            "memcpy",
+            "memmove",
+            "_purecall",
+            "memset",
+            "strchr",
+            "strrchr",
+            "strstr",
+            "memcmp",
+            "memchr",
+            "__C_specific_handler"
+          ]
+        },
+        {
+          "module": "VCRUNTIME140_1.dll",
+          "functions": [
+            "__CxxFrameHandler4"
+          ]
+        },
+        {
+          "module": "api-ms-win-crt-stdio-l1-1-0.dll",
+          "functions": [
+            "_lseeki64",
+            "_sopen_dispatch",
+            "_mktemp",
+            "_get_osfhandle",
+            "_open",
+            "__stdio_common_vsscanf",
+            "_getcwd",
+            "_read",
+            "_fileno",
+            "fgetc",
+            "fwrite",
+            "__stdio_common_vswprintf",
+            "_close",
+            "_write",
+            "fflush",
+            "__acrt_iob_func",
+            "__stdio_common_vsprintf",
+            "fgets",
+            "getc",
+            "fclose",
+            "fputc",
+            "fopen",
+            "__stdio_common_vfprintf",
+            "_setmode",
+            "_wsopen_dispatch"
+          ]
+        },
+        {
+          "module": "api-ms-win-crt-string-l1-1-0.dll",
+          "functions": [
+            "strncpy",
+            "isdigit",
+            "isprint",
+            "strncat",
+            "isalpha",
+            "strcmp",
+            "iswalpha",
+            "strtok_s",
+            "tolower",
+            "strncmp",
+            "strcspn",
+            "_strnicmp",
+            "strpbrk",
+            "_stricmp",
+            "isalnum",
+            "isspace",
+            "strlen"
+          ]
+        },
+        {
+          "module": "api-ms-win-crt-math-l1-1-0.dll",
+          "functions": [
+            "log",
+            "floor",
+            "exp",
+            "_isnan",
+            "round",
+            "sqrt",
+            "ceil",
+            "fmod",
+            "frexp",
+            "_finite",
+            "_fdopen",
+            "log2f",
+            "pow",
+            "log2"
+          ]
+        },
+        {
+          "module": "api-ms-win-crt-utility-l1-1-0.dll",
+          "functions": [
+            "qsort"
+          ]
+        },
+        {
+          "module": "api-ms-win-crt-runtime-l1-1-0.dll",
+          "functions": [
+            "_cexit",
+            "_initialize_onexit_table",
+            "_seh_filter_dll",
+            "_configure_narrow_argv",
+            "_register_onexit_function",
+            "_getpid",
+            "_endthreadex",
+            "_execute_onexit_table",
+            "_crt_atexit",
+            "_errno",
+            "_beginthreadex",
+            "raise",
+            "signal",
+            "exit",
+            "_exit",
+            "_initterm_e",
+            "_initialize_narrow_environment",
+            "_initterm"
+          ]
+        },
+        {
+          "module": "api-ms-win-crt-convert-l1-1-0.dll",
+          "functions": [
+            "atoi",
+            "strtol",
+            "atof",
+            "strtod",
+            "strtoll",
+            "strtoull",
+            "wcstombs",
+            "_itoa"
+          ]
+        },
+        {
+          "module": "api-ms-win-crt-environment-l1-1-0.dll",
+          "functions": [
+            "getenv",
+            "__p__environ"
+          ]
+        },
+        {
+          "module": "api-ms-win-crt-filesystem-l1-1-0.dll",
+          "functions": [
+            "_access",
+            "_chmod",
+            "_getdrive",
+            "remove",
+            "_unlock_file",
+            "_lock_file",
+            "_stat64i32",
+            "_unlink",
+            "rename"
+          ]
+        },
+        {
+          "module": "api-ms-win-crt-time-l1-1-0.dll",
+          "functions": [
+            "wcsftime",
+            "strftime",
+            "_gmtime64",
+            "_localtime64",
+            "_get_timezone",
+            "_time64",
+            "_ctime64"
+          ]
+        },
+        {
+          "module": "api-ms-win-crt-heap-l1-1-0.dll",
+          "functions": [
+            "malloc",
+            "_aligned_malloc",
+            "free",
+            "calloc",
+            "realloc"
+          ]
+        }
+      ],
+      "limitations": "Static standard imports only; delay imports and dynamically resolved functions not covered."
+    },
+    {
+      "path": "game\\versions\\1.21.11\\natives\\glfw.dll",
+      "sha256": "affa7e54eb0dedce4a5721c327c1a16035edbbd039cd402e08107d6d2d55eb1a",
+      "imports": [
+        {
+          "module": "KERNEL32.dll",
+          "functions": [
+            "GetLastError",
+            "GetModuleHandleExW",
+            "FormatMessageW",
+            "MultiByteToWideChar",
+            "WideCharToMultiByte",
+            "GetModuleHandleW",
+            "GlobalAlloc",
+            "GlobalUnlock",
+            "GlobalLock",
+            "GlobalFree",
+            "SetThreadExecutionState",
+            "CreateFileW",
+            "CloseHandle",
+            "GetConsoleMode",
+            "GetConsoleOutputCP",
+            "WriteFile",
+            "FlushFileBuffers",
+            "HeapSize",
+            "SetFilePointerEx",
+            "SetStdHandle",
+            "GetStringTypeW",
+            "GetProcessHeap",
+            "LCMapStringW",
+            "FlsFree",
+            "FlsSetValue",
+            "FlsGetValue",
+            "FlsAlloc",
+            "FreeEnvironmentStringsW",
+            "TlsFree",
+            "GetCommandLineW",
+            "GetCommandLineA",
+            "GetCPInfo",
+            "GetOEMCP",
+            "GetACP",
+            "IsValidCodePage",
+            "FindNextFileW",
+            "FindFirstFileExW",
+            "FindClose",
+            "HeapReAlloc",
+            "GetFileType",
+            "GetStdHandle",
+            "HeapFree",
+            "HeapAlloc",
+            "GetModuleFileNameW",
+            "ExitProcess",
+            "RtlPcToFileHeader",
+            "RaiseException",
+            "EncodePointer",
+            "LoadLibraryExW",
+            "InitializeCriticalSectionAndSpinCount",
+            "SetLastError",
+            "InterlockedFlushSList",
+            "RtlUnwindEx",
+            "GetStartupInfoW",
+            "IsDebuggerPresent",
+            "InitializeSListHead",
+            "GetSystemTimeAsFileTime",
+            "GetCurrentThreadId",
+            "GetCurrentProcessId",
+            "IsProcessorFeaturePresent",
+            "TerminateProcess",
+            "GetCurrentProcess",
+            "SetUnhandledExceptionFilter",
+            "UnhandledExceptionFilter",
+            "RtlVirtualUnwind",
+            "RtlLookupFunctionEntry",
+            "RtlCaptureContext",
+            "VerSetConditionMask",
+            "TlsSetValue",
+            "TlsGetValue",
+            "WriteConsoleW",
+            "TlsAlloc",
+            "DeleteCriticalSection",
+            "LeaveCriticalSection",
+            "EnterCriticalSection",
+            "InitializeCriticalSection",
+            "QueryPerformanceFrequency",
+            "QueryPerformanceCounter",
+            "LoadLibraryA",
+            "GetProcAddress",
+            "GetEnvironmentStringsW",
+            "FreeLibrary"
+          ]
+        },
+        {
+          "module": "USER32.dll",
+          "functions": [
+            "LoadImageW",
+            "DestroyIcon",
+            "CreateIconIndirect",
+            "SetWindowLongPtrW",
+            "GetWindowLongPtrW",
+            "SystemParametersInfoW",
+            "MonitorFromWindow",
+            "GetRawInputData",
+            "RegisterRawInputDevices",
+            "GetClassLongPtrW",
+            "SetWindowLongW",
+            "GetWindowLongW",
+            "PtInRect",
+            "OffsetRect",
+            "SetRect",
+            "ClipCursor",
+            "WindowFromPoint",
+            "ScreenToClient",
+            "ClientToScreen",
+            "GetCursorPos",
+            "SetCursor",
+            "SetCursorPos",
+            "AdjustWindowRectEx",
+            "GetWindowRect",
+            "GetClientRect",
+            "SetWindowTextW",
+            "RemovePropW",
+            "GetPropW",
+            "SetPropW",
+            "SetForegroundWindow",
+            "GetSystemMetrics",
+            "MsgWaitForMultipleObjects",
+            "ReleaseCapture",
+            "SetCapture",
+            "GetKeyState",
+            "GetActiveWindow",
+            "SetFocus",
+            "EmptyClipboard",
+            "LoadCursorW",
+            "SetClipboardData",
+            "CloseClipboard",
+            "OpenClipboard",
+            "IsZoomed",
+            "BringWindowToTop",
+            "IsIconic",
+            "IsWindowVisible",
+            "SetWindowPlacement",
+            "GetWindowPlacement",
+            "SetWindowPos",
+            "MoveWindow",
+            "FlashWindow",
+            "SetLayeredWindowAttributes",
+            "GetLayeredWindowAttributes",
+            "WaitMessage",
+            "PostMessageW",
+            "SendMessageW",
+            "GetMessageTime",
+            "TrackMouseEvent",
+            "EnumDisplayMonitors",
+            "GetMonitorInfoW",
+            "EnumDisplayDevicesW",
+            "EnumDisplaySettingsExW",
+            "EnumDisplaySettingsW",
+            "ChangeDisplaySettingsExW",
+            "ReleaseDC",
+            "GetDC",
+            "GetRawInputDeviceList",
+            "GetRawInputDeviceInfoA",
+            "MapVirtualKeyW",
+            "ToUnicode",
+            "ShowWindow",
+            "DestroyWindow",
+            "CreateWindowExW",
+            "RegisterClassExW",
+            "UnregisterClassW",
+            "DefWindowProcW",
+            "UnregisterDeviceNotification",
+            "RegisterDeviceNotificationW",
+            "PeekMessageW",
+            "DispatchMessageW",
+            "TranslateMessage",
+            "GetClipboardData"
+          ]
+        },
+        {
+          "module": "GDI32.dll",
+          "functions": [
+            "GetDeviceCaps",
+            "CreateDCW",
+            "GetDeviceGammaRamp",
+            "SetDeviceGammaRamp",
+            "CreateBitmap",
+            "CreateRectRgn",
+            "DeleteObject",
+            "CreateDIBSection",
+            "ChoosePixelFormat",
+            "DescribePixelFormat",
+            "SetPixelFormat",
+            "SwapBuffers",
+            "DeleteDC"
+          ]
+        },
+        {
+          "module": "SHELL32.dll",
+          "functions": [
+            "DragFinish",
+            "DragQueryPoint",
+            "DragQueryFileW",
+            "DragAcceptFiles"
+          ]
+        }
+      ],
+      "limitations": "Static standard imports only; delay imports and dynamically resolved functions not covered."
+    },
+    {
+      "path": "game\\versions\\1.21.11\\natives\\jemalloc.dll",
+      "sha256": "9abf0095066ebab37b78968e11370a8078313e48cb5be8eda01f67623c6a6248",
+      "imports": [
+        {
+          "module": "KERNEL32.dll",
+          "functions": [
+            "TlsSetValue",
+            "SetLastError",
+            "TryAcquireSRWLockExclusive",
+            "GetLastError",
+            "ReleaseSRWLockExclusive",
+            "GetSystemInfo",
+            "GetCurrentProcessorNumber",
+            "TlsGetValue",
+            "FormatMessageA",
+            "InitializeSRWLock",
+            "AcquireSRWLockExclusive",
+            "GetSystemTimeAsFileTime",
+            "VirtualFree",
+            "VirtualAlloc",
+            "GetCurrentProcessId",
+            "TlsAlloc",
+            "RtlCaptureContext",
+            "RtlLookupFunctionEntry",
+            "RtlVirtualUnwind",
+            "IsDebuggerPresent",
+            "UnhandledExceptionFilter",
+            "SetUnhandledExceptionFilter",
+            "GetStartupInfoW",
+            "IsProcessorFeaturePresent",
+            "GetModuleHandleW",
+            "QueryPerformanceCounter",
+            "GetCurrentThreadId",
+            "InitializeSListHead",
+            "RtlUnwindEx",
+            "InterlockedFlushSList",
+            "EnterCriticalSection",
+            "LeaveCriticalSection",
+            "DeleteCriticalSection",
+            "InitializeCriticalSectionAndSpinCount",
+            "TlsFree",
+            "FreeLibrary",
+            "GetProcAddress",
+            "LoadLibraryExW",
+            "EncodePointer",
+            "RaiseException",
+            "RtlPcToFileHeader",
+            "GetCurrentProcess",
+            "ExitProcess",
+            "TerminateProcess",
+            "GetModuleHandleExW",
+            "GetModuleFileNameW",
+            "WriteFile",
+            "GetConsoleOutputCP",
+            "GetConsoleMode",
+            "CloseHandle",
+            "ReadFile",
+            "ReadConsoleW",
+            "HeapAlloc",
+            "HeapFree",
+            "FindClose",
+            "FindFirstFileExW",
+            "FindNextFileW",
+            "IsValidCodePage",
+            "GetACP",
+            "GetOEMCP",
+            "GetCPInfo",
+            "GetCommandLineA",
+            "GetCommandLineW",
+            "MultiByteToWideChar",
+            "WideCharToMultiByte",
+            "GetEnvironmentStringsW",
+            "FreeEnvironmentStringsW",
+            "SetEnvironmentVariableW",
+            "FlsAlloc",
+            "FlsGetValue",
+            "FlsSetValue",
+            "FlsFree",
+            "CompareStringW",
+            "LCMapStringW",
+            "GetProcessHeap",
+            "GetStdHandle",
+            "GetFileType",
+            "SetStdHandle",
+            "SetFilePointerEx",
+            "CreateFileW",
+            "GetStringTypeW",
+            "HeapSize",
+            "HeapReAlloc",
+            "FlushFileBuffers",
+            "WriteConsoleW",
+            "SetEndOfFile"
+          ]
+        }
+      ],
+      "limitations": "Static standard imports only; delay imports and dynamically resolved functions not covered."
+    },
+    {
+      "path": "game\\versions\\1.21.11\\natives\\jna4102832794457777779.dll",
+      "sha256": "5a7ff949f6d93d86491eb5b26b1cfc60051168a60622650224b89995ac420023",
+      "imports": [
+        {
+          "module": "PSAPI.DLL",
+          "functions": [
+            "EnumProcessModules"
+          ]
+        },
+        {
+          "module": "KERNEL32.dll",
+          "functions": [
+            "GetModuleFileNameW",
+            "GetShortPathNameW",
+            "GetLastError",
+            "SetLastError",
+            "GetCurrentProcess",
+            "FreeLibrary",
+            "GetModuleHandleW",
+            "GetProcAddress",
+            "LoadLibraryExW",
+            "LocalFree",
+            "FormatMessageW",
+            "WideCharToMultiByte",
+            "TlsAlloc",
+            "TlsGetValue",
+            "TlsSetValue",
+            "TlsFree",
+            "Sleep",
+            "GetSystemInfo",
+            "VirtualAlloc",
+            "VirtualFree",
+            "VirtualQuery",
+            "RtlCaptureContext",
+            "RtlLookupFunctionEntry",
+            "RtlVirtualUnwind",
+            "UnhandledExceptionFilter",
+            "SetUnhandledExceptionFilter",
+            "TerminateProcess",
+            "IsProcessorFeaturePresent",
+            "QueryPerformanceCounter",
+            "GetCurrentProcessId",
+            "GetCurrentThreadId",
+            "GetSystemTimeAsFileTime",
+            "InitializeSListHead",
+            "IsDebuggerPresent",
+            "GetStartupInfoW",
+            "WriteConsoleW",
+            "RtlUnwindEx",
+            "InterlockedFlushSList",
+            "EnterCriticalSection",
+            "LeaveCriticalSection",
+            "DeleteCriticalSection",
+            "InitializeCriticalSectionAndSpinCount",
+            "EncodePointer",
+            "RaiseException",
+            "RtlPcToFileHeader",
+            "ExitProcess",
+            "GetModuleHandleExW",
+            "HeapAlloc",
+            "HeapFree",
+            "FlsAlloc",
+            "FlsGetValue",
+            "FlsSetValue",
+            "FlsFree",
+            "LCMapStringW",
+            "GetStdHandle",
+            "GetFileType",
+            "FindClose",
+            "FindFirstFileExW",
+            "FindNextFileW",
+            "IsValidCodePage",
+            "GetACP",
+            "GetOEMCP",
+            "GetCPInfo",
+            "GetCommandLineA",
+            "GetCommandLineW",
+            "MultiByteToWideChar",
+            "GetEnvironmentStringsW",
+            "FreeEnvironmentStringsW",
+            "GetProcessHeap",
+            "FlushFileBuffers",
+            "WriteFile",
+            "GetConsoleOutputCP",
+            "GetConsoleMode",
+            "SetStdHandle",
+            "GetFileSizeEx",
+            "SetFilePointerEx",
+            "GetStringTypeW",
+            "HeapSize",
+            "HeapReAlloc",
+            "CloseHandle",
+            "CreateFileW"
+          ]
+        }
+      ],
+      "limitations": "Static standard imports only; delay imports and dynamically resolved functions not covered."
+    },
+    {
+      "path": "game\\versions\\1.21.11\\natives\\lwjgl.dll",
+      "sha256": "a39adf52947fafd954c2a86ce031abb8c59825f7ee50337ac8c41e4280abe82d",
+      "imports": [
+        {
+          "module": "KERNEL32.dll",
+          "functions": [
+            "TlsSetValue",
+            "TlsAlloc",
+            "TlsGetValue",
+            "TlsFree",
+            "GetLastError",
+            "GetModuleFileNameW",
+            "LoadLibraryW",
+            "GetProcAddress",
+            "LocalFree",
+            "GetModuleHandleW",
+            "FreeLibrary",
+            "Sleep",
+            "GetSystemInfo",
+            "VirtualAlloc",
+            "VirtualFree",
+            "VirtualQuery",
+            "QueryPerformanceCounter",
+            "GetCurrentProcessId",
+            "GetCurrentThreadId",
+            "GetSystemTimeAsFileTime",
+            "InitializeSListHead",
+            "RtlCaptureContext",
+            "RtlLookupFunctionEntry",
+            "RtlVirtualUnwind",
+            "IsDebuggerPresent",
+            "UnhandledExceptionFilter",
+            "SetUnhandledExceptionFilter",
+            "GetStartupInfoW",
+            "IsProcessorFeaturePresent",
+            "GetCurrentProcess",
+            "TerminateProcess",
+            "WriteConsoleW",
+            "RtlUnwindEx",
+            "InterlockedFlushSList",
+            "SetLastError",
+            "EnterCriticalSection",
+            "LeaveCriticalSection",
+            "DeleteCriticalSection",
+            "InitializeCriticalSectionAndSpinCount",
+            "LoadLibraryExW",
+            "EncodePointer",
+            "RaiseException",
+            "RtlPcToFileHeader",
+            "ExitProcess",
+            "GetModuleHandleExW",
+            "HeapAlloc",
+            "HeapFree",
+            "FlsAlloc",
+            "FlsGetValue",
+            "FlsSetValue",
+            "FlsFree",
+            "LCMapStringW",
+            "GetLocaleInfoW",
+            "IsValidLocale",
+            "GetUserDefaultLCID",
+            "EnumSystemLocalesW",
+            "GetStdHandle",
+            "GetFileType",
+            "FlushFileBuffers",
+            "WriteFile",
+            "GetConsoleOutputCP",
+            "GetConsoleMode",
+            "HeapReAlloc",
+            "HeapSize",
+            "FindClose",
+            "FindFirstFileExW",
+            "FindNextFileW",
+            "IsValidCodePage",
+            "GetACP",
+            "GetOEMCP",
+            "GetCPInfo",
+            "GetCommandLineA",
+            "GetCommandLineW",
+            "MultiByteToWideChar",
+            "WideCharToMultiByte",
+            "GetEnvironmentStringsW",
+            "FreeEnvironmentStringsW",
+            "GetProcessHeap",
+            "SetStdHandle",
+            "SetFilePointerEx",
+            "GetStringTypeW",
+            "GetFileSizeEx",
+            "CloseHandle",
+            "CreateFileW"
+          ]
+        }
+      ],
+      "limitations": "Static standard imports only; delay imports and dynamically resolved functions not covered."
+    },
+    {
+      "path": "game\\versions\\1.21.11\\natives\\lwjgl_opengl.dll",
+      "sha256": "fe200dc96ab31237a52facd6345d31f9740ef16dd411e5f9be014eaa30f89fb6",
+      "imports": [
+        {
+          "module": "KERNEL32.dll",
+          "functions": [
+            "GetLastError",
+            "QueryPerformanceCounter",
+            "GetCurrentProcessId",
+            "GetCurrentThreadId",
+            "GetSystemTimeAsFileTime",
+            "InitializeSListHead",
+            "RtlCaptureContext",
+            "RtlLookupFunctionEntry",
+            "RtlVirtualUnwind",
+            "IsDebuggerPresent",
+            "UnhandledExceptionFilter",
+            "SetUnhandledExceptionFilter",
+            "GetStartupInfoW",
+            "IsProcessorFeaturePresent",
+            "GetModuleHandleW",
+            "CloseHandle",
+            "RtlUnwindEx",
+            "InterlockedFlushSList",
+            "SetLastError",
+            "EnterCriticalSection",
+            "LeaveCriticalSection",
+            "DeleteCriticalSection",
+            "InitializeCriticalSectionAndSpinCount",
+            "TlsAlloc",
+            "TlsGetValue",
+            "TlsSetValue",
+            "TlsFree",
+            "FreeLibrary",
+            "GetProcAddress",
+            "LoadLibraryExW",
+            "EncodePointer",
+            "RaiseException",
+            "RtlPcToFileHeader",
+            "GetCurrentProcess",
+            "ExitProcess",
+            "TerminateProcess",
+            "GetModuleHandleExW",
+            "GetModuleFileNameW",
+            "HeapAlloc",
+            "HeapFree",
+            "FindClose",
+            "FindFirstFileExW",
+            "FindNextFileW",
+            "IsValidCodePage",
+            "GetACP",
+            "GetOEMCP",
+            "GetCPInfo",
+            "GetCommandLineA",
+            "GetCommandLineW",
+            "MultiByteToWideChar",
+            "WideCharToMultiByte",
+            "GetEnvironmentStringsW",
+            "FreeEnvironmentStringsW",
+            "FlsAlloc",
+            "FlsGetValue",
+            "FlsSetValue",
+            "FlsFree",
+            "LCMapStringW",
+            "GetProcessHeap",
+            "GetStdHandle",
+            "GetFileType",
+            "GetStringTypeW",
+            "HeapSize",
+            "HeapReAlloc",
+            "SetStdHandle",
+            "FlushFileBuffers",
+            "WriteFile",
+            "GetConsoleOutputCP",
+            "GetConsoleMode",
+            "SetFilePointerEx",
+            "CreateFileW",
+            "WriteConsoleW"
+          ]
+        }
+      ],
+      "limitations": "Static standard imports only; delay imports and dynamically resolved functions not covered."
+    },
+    {
+      "path": "game\\versions\\1.21.11\\natives\\lwjgl_stb.dll",
+      "sha256": "de03f38f8c7471b4924aa8bdf8724c181d1a7c20428dbce2ed301877e1d387e4",
+      "imports": [
+        {
+          "module": "KERNEL32.dll",
+          "functions": [
+            "MultiByteToWideChar",
+            "QueryPerformanceCounter",
+            "GetCurrentProcessId",
+            "GetCurrentThreadId",
+            "GetSystemTimeAsFileTime",
+            "InitializeSListHead",
+            "RtlCaptureContext",
+            "RtlLookupFunctionEntry",
+            "RtlVirtualUnwind",
+            "IsDebuggerPresent",
+            "UnhandledExceptionFilter",
+            "SetUnhandledExceptionFilter",
+            "GetStartupInfoW",
+            "IsProcessorFeaturePresent",
+            "GetModuleHandleW",
+            "WriteConsoleW",
+            "RtlUnwindEx",
+            "InterlockedFlushSList",
+            "GetLastError",
+            "SetLastError",
+            "EnterCriticalSection",
+            "LeaveCriticalSection",
+            "DeleteCriticalSection",
+            "InitializeCriticalSectionAndSpinCount",
+            "TlsAlloc",
+            "TlsGetValue",
+            "TlsSetValue",
+            "TlsFree",
+            "FreeLibrary",
+            "GetProcAddress",
+            "LoadLibraryExW",
+            "EncodePointer",
+            "RaiseException",
+            "RtlPcToFileHeader",
+            "RtlUnwind",
+            "ReadFile",
+            "GetCurrentProcess",
+            "ExitProcess",
+            "TerminateProcess",
+            "GetModuleHandleExW",
+            "GetModuleFileNameW",
+            "SetFilePointerEx",
+            "GetConsoleMode",
+            "ReadConsoleW",
+            "GetStdHandle",
+            "GetFileType",
+            "HeapFree",
+            "CloseHandle",
+            "WriteFile",
+            "GetConsoleOutputCP",
+            "GetFileSizeEx",
+            "HeapAlloc",
+            "HeapReAlloc",
+            "FindClose",
+            "FindFirstFileExW",
+            "FindNextFileW",
+            "IsValidCodePage",
+            "GetACP",
+            "GetOEMCP",
+            "GetCPInfo",
+            "GetCommandLineA",
+            "GetCommandLineW",
+            "WideCharToMultiByte",
+            "GetEnvironmentStringsW",
+            "FreeEnvironmentStringsW",
+            "FlsAlloc",
+            "FlsGetValue",
+            "FlsSetValue",
+            "FlsFree",
+            "LCMapStringW",
+            "GetProcessHeap",
+            "SetStdHandle",
+            "GetStringTypeW",
+            "CreateFileW",
+            "FlushFileBuffers",
+            "HeapSize",
+            "SetEndOfFile"
+          ]
+        }
+      ],
+      "limitations": "Static standard imports only; delay imports and dynamically resolved functions not covered."
+    },
+    {
+      "path": "game\\versions\\1.21.11\\natives\\OpenAL.dll",
+      "sha256": "0630aa42492f78126da1c4d99769632e03c55b2e63b050efe7e3005e07e3e6fc",
+      "imports": [
+        {
+          "module": "WINMM.dll",
+          "functions": [
+            "waveInReset",
+            "waveInStop",
+            "waveInStart",
+            "waveInAddBuffer",
+            "waveInUnprepareHeader",
+            "waveInPrepareHeader",
+            "waveInClose",
+            "waveInOpen",
+            "waveInGetDevCapsW",
+            "waveInGetNumDevs",
+            "waveOutWrite",
+            "waveOutUnprepareHeader",
+            "waveOutPrepareHeader",
+            "waveOutClose",
+            "waveOutOpen",
+            "waveOutGetDevCapsW",
+            "waveOutGetNumDevs"
+          ]
+        },
+        {
+          "module": "KERNEL32.dll",
+          "functions": [
+            "FlsFree",
+            "GetOEMCP",
+            "GetACP",
+            "IsValidCodePage",
+            "FindFirstFileExW",
+            "HeapSize",
+            "HeapReAlloc",
+            "GetCurrentDirectoryW",
+            "ReadConsoleW",
+            "SetFilePointerEx",
+            "GetFileSizeEx",
+            "GetConsoleMode",
+            "GetConsoleOutputCP",
+            "WriteFile",
+            "IsDebuggerPresent",
+            "DebugBreak",
+            "GetModuleHandleExW",
+            "CloseHandle",
+            "ResetEvent",
+            "WaitForSingleObjectEx",
+            "CreateEventW",
+            "GetLastError",
+            "FindClose",
+            "FindFirstFileW",
+            "FindNextFileW",
+            "GetCurrentThread",
+            "SetThreadPriority",
+            "GetModuleFileNameW",
+            "RaiseException",
+            "ReleaseSemaphore",
+            "WaitForSingleObject",
+            "CreateSemaphoreA",
+            "MultiByteToWideChar",
+            "WideCharToMultiByte",
+            "FreeLibrary",
+            "GetProcAddress",
+            "LoadLibraryW",
+            "FlushFileBuffers",
+            "EnumSystemLocalesW",
+            "GetUserDefaultLCID",
+            "IsValidLocale",
+            "GetLocaleInfoW",
+            "WriteConsoleW",
+            "SetEndOfFile",
+            "CreateFileW",
+            "SetStdHandle",
+            "GetProcessHeap",
+            "SetEnvironmentVariableW",
+            "FreeEnvironmentStringsW",
+            "GetEnvironmentStringsW",
+            "GetCommandLineW",
+            "InitializeSRWLock",
+            "ReleaseSRWLockExclusive",
+            "AcquireSRWLockExclusive",
+            "TryAcquireSRWLockExclusive",
+            "GetCurrentThreadId",
+            "Sleep",
+            "SwitchToThread",
+            "GetExitCodeThread",
+            "InitOnceBeginInitialize",
+            "InitOnceComplete",
+            "RtlPcToFileHeader",
+            "InitializeConditionVariable",
+            "WakeConditionVariable",
+            "WakeAllConditionVariable",
+            "SleepConditionVariableSRW",
+            "FreeLibraryWhenCallbackReturns",
+            "CreateThreadpoolWork",
+            "SubmitThreadpoolWork",
+            "CloseThreadpoolWork",
+            "IsProcessorFeaturePresent",
+            "QueryPerformanceCounter",
+            "QueryPerformanceFrequency",
+            "EnterCriticalSection",
+            "LeaveCriticalSection",
+            "InitializeCriticalSectionEx",
+            "DeleteCriticalSection",
+            "EncodePointer",
+            "DecodePointer",
+            "LCMapStringEx",
+            "FlsAlloc",
+            "FlsGetValue",
+            "FlsSetValue",
+            "LCMapStringW",
+            "GetSystemTimeAsFileTime",
+            "GetModuleHandleW",
+            "GetStringTypeW",
+            "GetCPInfo",
+            "InitializeCriticalSectionAndSpinCount",
+            "SetEvent",
+            "RtlCaptureContext",
+            "RtlLookupFunctionEntry",
+            "RtlVirtualUnwind",
+            "UnhandledExceptionFilter",
+            "SetUnhandledExceptionFilter",
+            "GetCurrentProcess",
+            "TerminateProcess",
+            "GetStartupInfoW",
+            "GetCurrentProcessId",
+            "InitializeSListHead",
+            "RtlUnwindEx",
+            "InterlockedFlushSList",
+            "SetLastError",
+            "TlsAlloc",
+            "TlsGetValue",
+            "TlsSetValue",
+            "TlsFree",
+            "LoadLibraryExW",
+            "RtlUnwind",
+            "CreateThread",
+            "ExitThread",
+            "FreeLibraryAndExitThread",
+            "ReadFile",
+            "GetDriveTypeW",
+            "GetFullPathNameW",
+            "ExitProcess",
+            "HeapFree",
+            "HeapAlloc",
+            "GetStdHandle",
+            "GetFileType",
+            "CompareStringW",
+            "GetCommandLineA"
+          ]
+        },
+        {
+          "module": "USER32.dll",
+          "functions": [
+            "GetForegroundWindow",
+            "GetDesktopWindow"
+          ]
+        },
+        {
+          "module": "SHELL32.dll",
+          "functions": [
+            "SHGetSpecialFolderPathW"
+          ]
+        },
+        {
+          "module": "ole32.dll",
+          "functions": [
+            "PropVariantClear",
+            "CoCreateInstance",
+            "CoInitializeEx",
+            "CoInitialize",
+            "CoTaskMemFree",
+            "CoGetObjectContext",
+            "StringFromCLSID",
+            "CoUninitialize",
+            "CLSIDFromString",
+            "CoGetApartmentType"
+          ]
+        }
+      ],
+      "limitations": "Static standard imports only; delay imports and dynamically resolved functions not covered."
+    }
+  ],
+  "runtime_releases": [
+    {
+      "path": "jre\\release",
+      "sha256": "5d0c1f83d53afc7cfeca3308967f36eece8f2fa64478378c2dff037330aa91ef",
+      "values": {
+        "IMPLEMENTOR": "Azul Systems, Inc.",
+        "IMPLEMENTOR_VERSION": "Zulu17.34+19-CA",
+        "JAVA_VERSION": "17.0.3",
+        "OS_ARCH": "x86_64",
+        "OS_NAME": "Windows"
+      }
+    },
+    {
+      "path": "jre\\java-runtime-delta\\windows-x64\\java-runtime-delta\\release",
+      "sha256": "8e1a257d58c3c0b4a246753a819cf9c0244232c0e34d0c029e79038d41c01b1f",
+      "values": {
+        "JAVA_VERSION": "21.0.7"
+      }
+    }
+  ],
+  "archive": {
+    "RetrievedUtc": "2026-10-17T06:08:15.8835620Z",
+    "Identifier": "legacy-launcher-for-minecraft",
+    "Title": "Legacy Launcher for Minecraft",
+    "CreatorClaim": "Legacy Launcher Team",
+    "PublicDate": "2024-02-26 21:00:34",
+    "ArchiveLicenseField": null,
+    "Installer": {
+      "name": "LegacyLauncher_Installer_legacy.exe",
+      "size": "117751681",
+      "mtime": "1708981418",
+      "sha1": "00bddca8bba387a76d6f18fc942859acf9ff5a60",
+      "md5": "53eea8664d54198e1989301b12f795da",
+      "format": "Windows Executable",
+      "source": "original"
+    }
+  },
+  "source_hashes": [
+    {
+      "sha256": "fad066071b9c8914350d719fd08e2ea516daa59b6087b83ba45c96bb4787eeaf",
+      "path": "MC.Xbox/launch/runtime_manager.cpp"
+    },
+    {
+      "sha256": "c37eade570d45fbdad0ba876be3347729b1000e579692c1819d059dbf80b5b12",
+      "path": "MC.Xbox/launch/minecraft_launch.cpp"
+    },
+    {
+      "sha256": "71873d00ddffae104a252497db098ace1634da6204b81a9d9c71b0fc56cefa95",
+      "path": "MC.Xbox/auth/minecraft_auth.cpp"
+    },
+    {
+      "sha256": "f33e679e9f120a9b7f66800c89fdbddaf938664449de729da96e09e3ca054261",
+      "path": "MC.Xbox/common/launch_diagnostics.h"
+    },
+    {
+      "sha256": "843bde309ed1b1a32a06e7f11430d93f8a63d485c79ca6677886fdce57954b32",
+      "path": "scripts/new-download-manifest.ps1"
+    },
+    {
+      "sha256": "0dde9a0c2e0e9b6f028fae5efe9d45a8a81a1e26e330bb72d42cacc3a4ad4d10",
+      "path": "glfw_shim/glfw_uwp.cpp"
+    },
+    {
+      "sha256": "34476f79eeb64dd71a1d6f9e92c99cf507466d42b78f33ba158eae68dbeff5c5",
+      "path": "MC.Xbox/ui/launcher_ui.cpp"
+    },
+    {
+      "sha256": "d8e39662957e68eacee24ae0abfa2dec85ede34cf2561e909a9db2f65def954f",
+      "path": "MC.Xbox/launch/loaders/fabric.cpp"
+    },
+    {
+      "sha256": "467e46d864fa9c4868bd5d8da5ab9ef23be6a681c136831dae273378769da001",
+      "path": "MC.Xbox/launch/loaders/forge.cpp"
+    },
+    {
+      "sha256": "343741ddc54ade76d25725e56e35b89ad169c160772ab5f514d93ccf4847eaf3",
+      "path": "MC.Xbox/launch/loaders/neoforge.cpp"
+    },
+    {
+      "sha256": "7dd25ee8a02f8e347c3bf718f8b615b48c30a0a03f1a5d118e082fdb4fa3916e",
+      "path": "MC.Xbox/mods/mods_browser.cpp"
+    },
+    {
+      "sha256": "acbd5fca365058b94dc5d01aacd13b5a67373eb8b5611b17cd5f539a4dba2a55",
+      "path": "config/versions.tsv"
+    }
+  ],
+  "limitations": [
+    "Static findings, no new target execution",
+    "Native parser covers standard imports only",
+    "Local metadata is not authenticated upstream metadata",
+    "No account data or token values collected"
+  ]
+}

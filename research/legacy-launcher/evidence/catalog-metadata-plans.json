@@ -1,0 +1,2339 @@
+{
+  "schema": "legacyforge-phase6a-catalog-metadata-plans-v1",
+  "evidence_id": "E21",
+  "started_at_utc": "2026-10-17T06:57:10.757039Z",
+  "completed_at_utc": "2026-10-17T06:57:13.691931Z",
+  "approved_source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+  "analyst_tool": {
+    "path": "analysis-local/final-audit/completion/check_catalog_metadata.py",
+    "sha256": "e3a7cabb070f523e40bc0894da0d41886d4302af5c7bd70f16081fafa83bdc99",
+    "python_version": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]"
+  },
+  "catalog_source": {
+    "path": "config/versions.tsv",
+    "sha256": "acbd5fca365058b94dc5d01aacd13b5a67373eb8b5611b17cd5f539a4dba2a55",
+    "rows": 56
+  },
+  "generator_source": {
+    "path": "scripts/new-download-manifest.ps1",
+    "sha256": "843bde309ed1b1a32a06e7f11430d93f8a63d485c79ca6677886fdce57954b32",
+    "locators": {
+      "forge_coordinate_join": "371-375",
+      "fabric_endpoint": "380",
+      "forge_endpoint": "388",
+      "neoforge_endpoint": "398",
+      "mojang_endpoint": "547"
+    },
+    "maven_index_derivation": "Standard maven-metadata.xml sidecars at the same inspected group/artifact repository bases"
+  },
+  "request_policy": {
+    "public_unauthenticated_https_only": true,
+    "timeout_seconds": 12,
+    "max_response_bytes": 6291456,
+    "max_response_wall_seconds": 30,
+    "workers": 4,
+    "retries": 0,
+    "binary_downloads": 0,
+    "target_execution": 0,
+    "account_or_device_connections": 0,
+    "allowed_hosts": [
+      "launcher.mojang.com",
+      "launchermeta.mojang.com",
+      "maven.minecraftforge.net",
+      "maven.neoforged.net",
+      "meta.fabricmc.net",
+      "piston-meta.mojang.com"
+    ]
+  },
+  "summary": {
+    "target_rows": 56,
+    "unique_minecraft_versions": 22,
+    "minecraft_metadata_status_counts": {
+      "FOUND_HASH_VERIFIED_METADATA": 22
+    },
+    "fabric_profile_status_counts": {
+      "FOUND_EXACT_PROFILE": 20
+    },
+    "loader_status_counts": {
+      "FOUND_EXACT_PROFILE": 20,
+      "EXACT_RELEASE_LISTED": 34,
+      "UNRESOLVED_SOURCE_LOADER_VERSION": 1,
+      "NOT_APPLICABLE_VANILLA": 1
+    },
+    "new_runtime_test_status_counts": {
+      "BLOCKED": 56
+    }
+  },
+  "mojang_catalog": {
+    "url": "https://piston-meta.mojang.com/mc/game/version_manifest_v2.json",
+    "retrieved_at_utc": "2026-10-17T06:57:10.796251Z",
+    "status": "FETCHED",
+    "http_status": 200,
+    "final_url": "https://piston-meta.mojang.com/mc/game/version_manifest_v2.json",
+    "content_type": "application/json",
+    "bytes": 277821,
+    "response_sha256": "ac37f92737df1a9d7660047136fedd3edebd90bd6e552f53ddc3f222079bc8fa",
+    "response_sha1": "f9e02be69ab99dcd2626c25fc4263cbe3276c285"
+  },
+  "minecraft_versions": {
+    "1.12.2": {
+      "requested_id": "1.12.2",
+      "source": {
+        "url": "https://piston-meta.mojang.com/v1/packages/832d95b9f40699d4961394dcf6cf549e65f15dc5/1.12.2.json",
+        "retrieved_at_utc": "2026-10-17T06:57:11.229622Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://piston-meta.mojang.com/v1/packages/832d95b9f40699d4961394dcf6cf549e65f15dc5/1.12.2.json",
+        "content_type": "application/json",
+        "bytes": 18416,
+        "response_sha256": "56dac2e1caa872d7e37a7b5523056cd812dca94f912ad2bd652817bee60edca4",
+        "response_sha1": "832d95b9f40699d4961394dcf6cf549e65f15dc5"
+      },
+      "status": "FOUND_HASH_VERIFIED_METADATA",
+      "catalog_declared_sha1": "832d95b9f40699d4961394dcf6cf549e65f15dc5",
+      "catalog_sha1_matches": true,
+      "id": "1.12.2",
+      "main_class": "net.minecraft.client.main.Main",
+      "java_requirement_declared": {
+        "component": "jre-legacy",
+        "majorVersion": 8
+      },
+      "client_descriptor": {
+        "sha1": "0f275bc1547d01fa5f56ba34bdc87d981ee12daf",
+        "size": 10180113,
+        "url": "https://piston-data.mojang.com/v1/objects/0f275bc1547d01fa5f56ba34bdc87d981ee12daf/client.jar"
+      },
+      "asset_index_descriptor": {
+        "id": "1.12",
+        "sha1": "a21e1ded1a24ea1548dd8db0cf30b6acb02655a9",
+        "size": 143136,
+        "totalSize": 129843781,
+        "url": "https://piston-meta.mojang.com/v1/packages/a21e1ded1a24ea1548dd8db0cf30b6acb02655a9/1.12.json"
+      },
+      "libraries": {
+        "total": 39,
+        "artifact_descriptors": 37,
+        "native_classifier_descriptors": 12,
+        "rule_bearing_libraries": 8
+      },
+      "client_and_assets_downloaded": false
+    },
+    "1.16.5": {
+      "requested_id": "1.16.5",
+      "source": {
+        "url": "https://piston-meta.mojang.com/v1/packages/fba9f7833e858a1257d810d21a3a9e3c967f9077/1.16.5.json",
+        "retrieved_at_utc": "2026-10-17T06:57:11.230422Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://piston-meta.mojang.com/v1/packages/fba9f7833e858a1257d810d21a3a9e3c967f9077/1.16.5.json",
+        "content_type": "application/json",
+        "bytes": 29287,
+        "response_sha256": "3eeeab7b3165cc5263dc26ff8fe114fdb718b75a0244efead9d19635d090ba72",
+        "response_sha1": "fba9f7833e858a1257d810d21a3a9e3c967f9077"
+      },
+      "status": "FOUND_HASH_VERIFIED_METADATA",
+      "catalog_declared_sha1": "fba9f7833e858a1257d810d21a3a9e3c967f9077",
+      "catalog_sha1_matches": true,
+      "id": "1.16.5",
+      "main_class": "net.minecraft.client.main.Main",
+      "java_requirement_declared": {
+        "component": "jre-legacy",
+        "majorVersion": 8
+      },
+      "client_descriptor": {
+        "sha1": "37fd3c903861eeff3bc24b71eed48f828b5269c8",
+        "size": 17547153,
+        "url": "https://piston-data.mojang.com/v1/objects/37fd3c903861eeff3bc24b71eed48f828b5269c8/client.jar"
+      },
+      "asset_index_descriptor": {
+        "id": "1.16",
+        "sha1": "f3c4aa96e12951cd2781b3e1c0e8ab82bf719cf2",
+        "size": 295227,
+        "totalSize": 334438503,
+        "url": "https://piston-meta.mojang.com/v1/packages/f3c4aa96e12951cd2781b3e1c0e8ab82bf719cf2/1.16.json"
+      },
+      "libraries": {
+        "total": 57,
+        "artifact_descriptors": 57,
+        "native_classifier_descriptors": 24,
+        "rule_bearing_libraries": 30
+      },
+      "client_and_assets_downloaded": false
+    },
+    "1.18.2": {
+      "requested_id": "1.18.2",
+      "source": {
+        "url": "https://piston-meta.mojang.com/v1/packages/334b33fcba3c9be4b7514624c965256535bd7eba/1.18.2.json",
+        "retrieved_at_utc": "2026-10-17T06:57:11.244657Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://piston-meta.mojang.com/v1/packages/334b33fcba3c9be4b7514624c965256535bd7eba/1.18.2.json",
+        "content_type": "application/json",
+        "bytes": 30469,
+        "response_sha256": "3df8f7b5e0ae5ccfd73adc9e00daf407a7274b138daab5793e58d14f2ab74144",
+        "response_sha1": "334b33fcba3c9be4b7514624c965256535bd7eba"
+      },
+      "status": "FOUND_HASH_VERIFIED_METADATA",
+      "catalog_declared_sha1": "334b33fcba3c9be4b7514624c965256535bd7eba",
+      "catalog_sha1_matches": true,
+      "id": "1.18.2",
+      "main_class": "net.minecraft.client.main.Main",
+      "java_requirement_declared": {
+        "component": "java-runtime-beta",
+        "majorVersion": 17
+      },
+      "client_descriptor": {
+        "sha1": "2e9a3e3107cca00d6bc9c97bf7d149cae163ef21",
+        "size": 20259661,
+        "url": "https://piston-data.mojang.com/v1/objects/2e9a3e3107cca00d6bc9c97bf7d149cae163ef21/client.jar"
+      },
+      "asset_index_descriptor": {
+        "id": "1.18",
+        "sha1": "d31a2e85ae149dd1b1a7070b22cb8887892fda6c",
+        "size": 348724,
+        "totalSize": 468892705,
+        "url": "https://piston-meta.mojang.com/v1/packages/d31a2e85ae149dd1b1a7070b22cb8887892fda6c/1.18.json"
+      },
+      "libraries": {
+        "total": 60,
+        "artifact_descriptors": 60,
+        "native_classifier_descriptors": 24,
+        "rule_bearing_libraries": 30
+      },
+      "client_and_assets_downloaded": false
+    },
+    "1.19.2": {
+      "requested_id": "1.19.2",
+      "source": {
+        "url": "https://piston-meta.mojang.com/v1/packages/ed548106acf3ac7e8205a6ee8fd2710facfa164f/1.19.2.json",
+        "retrieved_at_utc": "2026-10-17T06:57:11.257683Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://piston-meta.mojang.com/v1/packages/ed548106acf3ac7e8205a6ee8fd2710facfa164f/1.19.2.json",
+        "content_type": "application/json",
+        "bytes": 34505,
+        "response_sha256": "daa5085a617194df8ab930c0b03161ef01a654ccd15cc57f97c659f4c96e986f",
+        "response_sha1": "ed548106acf3ac7e8205a6ee8fd2710facfa164f"
+      },
+      "status": "FOUND_HASH_VERIFIED_METADATA",
+      "catalog_declared_sha1": "ed548106acf3ac7e8205a6ee8fd2710facfa164f",
+      "catalog_sha1_matches": true,
+      "id": "1.19.2",
+      "main_class": "net.minecraft.client.main.Main",
+      "java_requirement_declared": {
+        "component": "java-runtime-gamma",
+        "majorVersion": 17
+      },
+      "client_descriptor": {
+        "sha1": "055b30d860ead928cba3849ba920c88b6950b654",
+        "size": 21644740,
+        "url": "https://piston-data.mojang.com/v1/objects/055b30d860ead928cba3849ba920c88b6950b654/client.jar"
+      },
+      "asset_index_descriptor": {
+        "id": "1.19",
+        "sha1": "a9c8b05a8082a65678beda6dfa2b8f21fa627bce",
+        "size": 385608,
+        "totalSize": 557023211,
+        "url": "https://piston-meta.mojang.com/v1/packages/a9c8b05a8082a65678beda6dfa2b8f21fa627bce/1.19.json"
+      },
+      "libraries": {
+        "total": 88,
+        "artifact_descriptors": 88,
+        "native_classifier_descriptors": 0,
+        "rule_bearing_libraries": 45
+      },
+      "client_and_assets_downloaded": false
+    },
+    "1.20.1": {
+      "requested_id": "1.20.1",
+      "source": {
+        "url": "https://piston-meta.mojang.com/v1/packages/a5cf661d31d9dfcd3d1645be80f43954f63f63b0/1.20.1.json",
+        "retrieved_at_utc": "2026-10-17T06:57:11.444978Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://piston-meta.mojang.com/v1/packages/a5cf661d31d9dfcd3d1645be80f43954f63f63b0/1.20.1.json",
+        "content_type": "application/json",
+        "bytes": 34974,
+        "response_sha256": "e50169ba5c14ce07c82fb638118449c24f5eb5082e95005c480917aae3635be3",
+        "response_sha1": "a5cf661d31d9dfcd3d1645be80f43954f63f63b0"
+      },
+      "status": "FOUND_HASH_VERIFIED_METADATA",
+      "catalog_declared_sha1": "a5cf661d31d9dfcd3d1645be80f43954f63f63b0",
+      "catalog_sha1_matches": true,
+      "id": "1.20.1",
+      "main_class": "net.minecraft.client.main.Main",
+      "java_requirement_declared": {
+        "component": "java-runtime-gamma",
+        "majorVersion": 17
+      },
+      "client_descriptor": {
+        "sha1": "0c3ec587af28e5a785c0b4a7b8a30f9a8f78f838",
+        "size": 23028853,
+        "url": "https://piston-data.mojang.com/v1/objects/0c3ec587af28e5a785c0b4a7b8a30f9a8f78f838/client.jar"
+      },
+      "asset_index_descriptor": {
+        "id": "5",
+        "sha1": "50ce48459eb9e29836662862273d7b15d41c2c33",
+        "size": 413067,
+        "totalSize": 651664560,
+        "url": "https://piston-meta.mojang.com/v1/packages/50ce48459eb9e29836662862273d7b15d41c2c33/5.json"
+      },
+      "libraries": {
+        "total": 88,
+        "artifact_descriptors": 88,
+        "native_classifier_descriptors": 0,
+        "rule_bearing_libraries": 45
+      },
+      "client_and_assets_downloaded": false
+    },
+    "1.20.4": {
+      "requested_id": "1.20.4",
+      "source": {
+        "url": "https://piston-meta.mojang.com/v1/packages/2c592ccd71ca2d5dadebeb6543ad6b18e6f43305/1.20.4.json",
+        "retrieved_at_utc": "2026-10-17T06:57:11.459169Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://piston-meta.mojang.com/v1/packages/2c592ccd71ca2d5dadebeb6543ad6b18e6f43305/1.20.4.json",
+        "content_type": "application/json",
+        "bytes": 35014,
+        "response_sha256": "cc81633f25e8e412a94dfb953a7b91702714e1e9ed1b680f520495d56d1ea301",
+        "response_sha1": "2c592ccd71ca2d5dadebeb6543ad6b18e6f43305"
+      },
+      "status": "FOUND_HASH_VERIFIED_METADATA",
+      "catalog_declared_sha1": "2c592ccd71ca2d5dadebeb6543ad6b18e6f43305",
+      "catalog_sha1_matches": true,
+      "id": "1.20.4",
+      "main_class": "net.minecraft.client.main.Main",
+      "java_requirement_declared": {
+        "component": "java-runtime-gamma",
+        "majorVersion": 17
+      },
+      "client_descriptor": {
+        "sha1": "fd19469fed4a4b4c15b2d5133985f0e3e7816a8a",
+        "size": 24445539,
+        "url": "https://piston-data.mojang.com/v1/objects/fd19469fed4a4b4c15b2d5133985f0e3e7816a8a/client.jar"
+      },
+      "asset_index_descriptor": {
+        "id": "12",
+        "sha1": "129fc8163fdedb50c886731a839751c22aa0dbc6",
+        "size": 437886,
+        "totalSize": 656562487,
+        "url": "https://piston-meta.mojang.com/v1/packages/129fc8163fdedb50c886731a839751c22aa0dbc6/12.json"
+      },
+      "libraries": {
+        "total": 88,
+        "artifact_descriptors": 88,
+        "native_classifier_descriptors": 0,
+        "rule_bearing_libraries": 45
+      },
+      "client_and_assets_downloaded": false
+    },
+    "1.21": {
+      "requested_id": "1.21",
+      "source": {
+        "url": "https://piston-meta.mojang.com/v1/packages/c47b4c513b2883240565102b076054e347eac738/1.21.json",
+        "retrieved_at_utc": "2026-10-17T06:57:11.459643Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://piston-meta.mojang.com/v1/packages/c47b4c513b2883240565102b076054e347eac738/1.21.json",
+        "content_type": "application/json",
+        "bytes": 38401,
+        "response_sha256": "cdd1a44db7b5e8787723c1f6c7c7dc3a4638d96a31ddc84aeb27d3f30efa802a",
+        "response_sha1": "c47b4c513b2883240565102b076054e347eac738"
+      },
+      "status": "FOUND_HASH_VERIFIED_METADATA",
+      "catalog_declared_sha1": "c47b4c513b2883240565102b076054e347eac738",
+      "catalog_sha1_matches": true,
+      "id": "1.21",
+      "main_class": "net.minecraft.client.main.Main",
+      "java_requirement_declared": {
+        "component": "java-runtime-delta",
+        "majorVersion": 21
+      },
+      "client_descriptor": {
+        "sha1": "0e9a07b9bb3390602f977073aa12884a4ce12431",
+        "size": 26836080,
+        "url": "https://piston-data.mojang.com/v1/objects/0e9a07b9bb3390602f977073aa12884a4ce12431/client.jar"
+      },
+      "asset_index_descriptor": {
+        "id": "17",
+        "sha1": "15200809663f45954c2c9a33ce88849e61aaaecc",
+        "size": 449557,
+        "totalSize": 826050937,
+        "url": "https://piston-meta.mojang.com/v1/packages/15200809663f45954c2c9a33ce88849e61aaaecc/17.json"
+      },
+      "libraries": {
+        "total": 97,
+        "artifact_descriptors": 97,
+        "native_classifier_descriptors": 0,
+        "rule_bearing_libraries": 51
+      },
+      "client_and_assets_downloaded": false
+    },
+    "1.21.1": {
+      "requested_id": "1.21.1",
+      "source": {
+        "url": "https://piston-meta.mojang.com/v1/packages/499680d659b7a0ccb2fa9a809c345c5baf2ace7d/1.21.1.json",
+        "retrieved_at_utc": "2026-10-17T06:57:11.460406Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://piston-meta.mojang.com/v1/packages/499680d659b7a0ccb2fa9a809c345c5baf2ace7d/1.21.1.json",
+        "content_type": "application/json",
+        "bytes": 38408,
+        "response_sha256": "8047141a4d8de5ce23cc8390df56373b3a6c10f063d47b7bf3ea64e8c84666e9",
+        "response_sha1": "499680d659b7a0ccb2fa9a809c345c5baf2ace7d"
+      },
+      "status": "FOUND_HASH_VERIFIED_METADATA",
+      "catalog_declared_sha1": "499680d659b7a0ccb2fa9a809c345c5baf2ace7d",
+      "catalog_sha1_matches": true,
+      "id": "1.21.1",
+      "main_class": "net.minecraft.client.main.Main",
+      "java_requirement_declared": {
+        "component": "java-runtime-delta",
+        "majorVersion": 21
+      },
+      "client_descriptor": {
+        "sha1": "30c73b1c5da787909b2f73340419fdf13b9def88",
+        "size": 26836906,
+        "url": "https://piston-data.mojang.com/v1/objects/30c73b1c5da787909b2f73340419fdf13b9def88/client.jar"
+      },
+      "asset_index_descriptor": {
+        "id": "17",
+        "sha1": "15200809663f45954c2c9a33ce88849e61aaaecc",
+        "size": 449557,
+        "totalSize": 826050937,
+        "url": "https://piston-meta.mojang.com/v1/packages/15200809663f45954c2c9a33ce88849e61aaaecc/17.json"
+      },
+      "libraries": {
+        "total": 97,
+        "artifact_descriptors": 97,
+        "native_classifier_descriptors": 0,
+        "rule_bearing_libraries": 51
+      },
+      "client_and_assets_downloaded": false
+    },
+    "1.21.10": {
+      "requested_id": "1.21.10",
+      "source": {
+        "url": "https://piston-meta.mojang.com/v1/packages/b14d03617088d907aef01138b042e8e5c1ab35d4/1.21.10.json",
+        "retrieved_at_utc": "2026-10-17T06:57:11.620277Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://piston-meta.mojang.com/v1/packages/b14d03617088d907aef01138b042e8e5c1ab35d4/1.21.10.json",
+        "content_type": "application/json",
+        "bytes": 44432,
+        "response_sha256": "3680286cdcfde9f4c540938a20d7fe917f5f189bf326791f6a9fc9d8798aea29",
+        "response_sha1": "b14d03617088d907aef01138b042e8e5c1ab35d4"
+      },
+      "status": "FOUND_HASH_VERIFIED_METADATA",
+      "catalog_declared_sha1": "b14d03617088d907aef01138b042e8e5c1ab35d4",
+      "catalog_sha1_matches": true,
+      "id": "1.21.10",
+      "main_class": "net.minecraft.client.main.Main",
+      "java_requirement_declared": {
+        "component": "java-runtime-delta",
+        "majorVersion": 21
+      },
+      "client_descriptor": {
+        "sha1": "d3bdf582a7fa723ce199f3665588dcfe6bf9aca8",
+        "size": 30592168,
+        "url": "https://piston-data.mojang.com/v1/objects/d3bdf582a7fa723ce199f3665588dcfe6bf9aca8/client.jar"
+      },
+      "asset_index_descriptor": {
+        "id": "27",
+        "sha1": "386e028bd0edd81bb95b232eb8c4cb0bbfa69b37",
+        "size": 507956,
+        "totalSize": 449049910,
+        "url": "https://piston-meta.mojang.com/v1/packages/386e028bd0edd81bb95b232eb8c4cb0bbfa69b37/27.json"
+      },
+      "libraries": {
+        "total": 115,
+        "artifact_descriptors": 115,
+        "native_classifier_descriptors": 0,
+        "rule_bearing_libraries": 55
+      },
+      "client_and_assets_downloaded": false
+    },
+    "1.21.11": {
+      "requested_id": "1.21.11",
+      "source": {
+        "url": "https://piston-meta.mojang.com/v1/packages/718cd84b4912691fe5de829aab6876a4b7f6c5c4/1.21.11.json",
+        "retrieved_at_utc": "2026-10-17T06:57:11.666266Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://piston-meta.mojang.com/v1/packages/718cd84b4912691fe5de829aab6876a4b7f6c5c4/1.21.11.json",
+        "content_type": "application/json",
+        "bytes": 42184,
+        "response_sha256": "471a6eeadf1c74f84ed5d4290fb7234b746373478a4d6ac651962b93f0cb36d9",
+        "response_sha1": "718cd84b4912691fe5de829aab6876a4b7f6c5c4"
+      },
+      "status": "FOUND_HASH_VERIFIED_METADATA",
+      "catalog_declared_sha1": "718cd84b4912691fe5de829aab6876a4b7f6c5c4",
+      "catalog_sha1_matches": true,
+      "id": "1.21.11",
+      "main_class": "net.minecraft.client.main.Main",
+      "java_requirement_declared": {
+        "component": "java-runtime-delta",
+        "majorVersion": 21
+      },
+      "client_descriptor": {
+        "sha1": "ba2df812c2d12e0219c489c4cd9a5e1f0760f5bd",
+        "size": 31152600,
+        "url": "https://piston-data.mojang.com/v1/objects/ba2df812c2d12e0219c489c4cd9a5e1f0760f5bd/client.jar"
+      },
+      "asset_index_descriptor": {
+        "id": "29",
+        "sha1": "e81d9e2536723a11eb68e11c5642708926b8be5f",
+        "size": 529966,
+        "totalSize": 452678632,
+        "url": "https://piston-meta.mojang.com/v1/packages/e81d9e2536723a11eb68e11c5642708926b8be5f/29.json"
+      },
+      "libraries": {
+        "total": 107,
+        "artifact_descriptors": 107,
+        "native_classifier_descriptors": 0,
+        "rule_bearing_libraries": 57
+      },
+      "client_and_assets_downloaded": false
+    },
+    "1.21.2": {
+      "requested_id": "1.21.2",
+      "source": {
+        "url": "https://piston-meta.mojang.com/v1/packages/c14db17c663edf3d7a698488263a21b1df6d02af/1.21.2.json",
+        "retrieved_at_utc": "2026-10-17T06:57:11.677545Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://piston-meta.mojang.com/v1/packages/c14db17c663edf3d7a698488263a21b1df6d02af/1.21.2.json",
+        "content_type": "application/json",
+        "bytes": 43664,
+        "response_sha256": "793e3fd0451354a26aaa00253dcb6600add11f9d2a90f7bdef75ddf5b38c2b45",
+        "response_sha1": "c14db17c663edf3d7a698488263a21b1df6d02af"
+      },
+      "status": "FOUND_HASH_VERIFIED_METADATA",
+      "catalog_declared_sha1": "c14db17c663edf3d7a698488263a21b1df6d02af",
+      "catalog_sha1_matches": true,
+      "id": "1.21.2",
+      "main_class": "net.minecraft.client.main.Main",
+      "java_requirement_declared": {
+        "component": "java-runtime-delta",
+        "majorVersion": 21
+      },
+      "client_descriptor": {
+        "sha1": "c7ac2d0d86f4ca416cab9064ff8a281852ad0c7b",
+        "size": 27842947,
+        "url": "https://piston-data.mojang.com/v1/objects/c7ac2d0d86f4ca416cab9064ff8a281852ad0c7b/client.jar"
+      },
+      "asset_index_descriptor": {
+        "id": "18",
+        "sha1": "9b61350ce21099b533509ff4d922252f6700b169",
+        "size": 457929,
+        "totalSize": 422125646,
+        "url": "https://piston-meta.mojang.com/v1/packages/9b61350ce21099b533509ff4d922252f6700b169/18.json"
+      },
+      "libraries": {
+        "total": 113,
+        "artifact_descriptors": 113,
+        "native_classifier_descriptors": 0,
+        "rule_bearing_libraries": 54
+      },
+      "client_and_assets_downloaded": false
+    },
+    "1.21.3": {
+      "requested_id": "1.21.3",
+      "source": {
+        "url": "https://piston-meta.mojang.com/v1/packages/05284f7158ec319013fa51f7ff44f8132dc9f428/1.21.3.json",
+        "retrieved_at_utc": "2026-10-17T06:57:11.701725Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://piston-meta.mojang.com/v1/packages/05284f7158ec319013fa51f7ff44f8132dc9f428/1.21.3.json",
+        "content_type": "application/json",
+        "bytes": 43664,
+        "response_sha256": "624e04bd23311f4a66a5226ee48d9642398a3adeadd43dbd81b037712d98e774",
+        "response_sha1": "05284f7158ec319013fa51f7ff44f8132dc9f428"
+      },
+      "status": "FOUND_HASH_VERIFIED_METADATA",
+      "catalog_declared_sha1": "05284f7158ec319013fa51f7ff44f8132dc9f428",
+      "catalog_sha1_matches": true,
+      "id": "1.21.3",
+      "main_class": "net.minecraft.client.main.Main",
+      "java_requirement_declared": {
+        "component": "java-runtime-delta",
+        "majorVersion": 21
+      },
+      "client_descriptor": {
+        "sha1": "6f67d19b4467240639cb2c368ffd4b94ba889705",
+        "size": 27844259,
+        "url": "https://piston-data.mojang.com/v1/objects/6f67d19b4467240639cb2c368ffd4b94ba889705/client.jar"
+      },
+      "asset_index_descriptor": {
+        "id": "18",
+        "sha1": "9b61350ce21099b533509ff4d922252f6700b169",
+        "size": 457929,
+        "totalSize": 422125646,
+        "url": "https://piston-meta.mojang.com/v1/packages/9b61350ce21099b533509ff4d922252f6700b169/18.json"
+      },
+      "libraries": {
+        "total": 113,
+        "artifact_descriptors": 113,
+        "native_classifier_descriptors": 0,
+        "rule_bearing_libraries": 54
+      },
+      "client_and_assets_downloaded": false
+    },
+    "1.21.4": {
+      "requested_id": "1.21.4",
+      "source": {
+        "url": "https://piston-meta.mojang.com/v1/packages/a1cebdbaa1a44b7d8214a81be1d94316a8404d87/1.21.4.json",
+        "retrieved_at_utc": "2026-10-17T06:57:11.792786Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://piston-meta.mojang.com/v1/packages/a1cebdbaa1a44b7d8214a81be1d94316a8404d87/1.21.4.json",
+        "content_type": "application/json",
+        "bytes": 43714,
+        "response_sha256": "4a1ab6e4e22a01c1144c0c6d61081fefaedb1b6d837f93b47973313f459632fc",
+        "response_sha1": "a1cebdbaa1a44b7d8214a81be1d94316a8404d87"
+      },
+      "status": "FOUND_HASH_VERIFIED_METADATA",
+      "catalog_declared_sha1": "a1cebdbaa1a44b7d8214a81be1d94316a8404d87",
+      "catalog_sha1_matches": true,
+      "id": "1.21.4",
+      "main_class": "net.minecraft.client.main.Main",
+      "java_requirement_declared": {
+        "component": "java-runtime-delta",
+        "majorVersion": 21
+      },
+      "client_descriptor": {
+        "sha1": "a7e5a6024bfd3cd614625aa05629adf760020304",
+        "size": 28335587,
+        "url": "https://piston-data.mojang.com/v1/objects/a7e5a6024bfd3cd614625aa05629adf760020304/client.jar"
+      },
+      "asset_index_descriptor": {
+        "id": "19",
+        "sha1": "e61d8cebcd9d4721421c60cc35960da0e6487117",
+        "size": 464718,
+        "totalSize": 422648086,
+        "url": "https://piston-meta.mojang.com/v1/packages/e61d8cebcd9d4721421c60cc35960da0e6487117/19.json"
+      },
+      "libraries": {
+        "total": 113,
+        "artifact_descriptors": 113,
+        "native_classifier_descriptors": 0,
+        "rule_bearing_libraries": 54
+      },
+      "client_and_assets_downloaded": false
+    },
+    "1.21.5": {
+      "requested_id": "1.21.5",
+      "source": {
+        "url": "https://piston-meta.mojang.com/v1/packages/b341cd0e91419ab72b5d9dadad8d86a045d6b9a7/1.21.5.json",
+        "retrieved_at_utc": "2026-10-17T06:57:11.836626Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://piston-meta.mojang.com/v1/packages/b341cd0e91419ab72b5d9dadad8d86a045d6b9a7/1.21.5.json",
+        "content_type": "application/json",
+        "bytes": 43719,
+        "response_sha256": "1751e36c5dda2bbf847d543d4f9a59c51035fe474b8528aca7f76c688f32fe88",
+        "response_sha1": "b341cd0e91419ab72b5d9dadad8d86a045d6b9a7"
+      },
+      "status": "FOUND_HASH_VERIFIED_METADATA",
+      "catalog_declared_sha1": "b341cd0e91419ab72b5d9dadad8d86a045d6b9a7",
+      "catalog_sha1_matches": true,
+      "id": "1.21.5",
+      "main_class": "net.minecraft.client.main.Main",
+      "java_requirement_declared": {
+        "component": "java-runtime-delta",
+        "majorVersion": 21
+      },
+      "client_descriptor": {
+        "sha1": "b88808bbb3da8d9f453694b5d8f74a3396f1a533",
+        "size": 28984409,
+        "url": "https://piston-data.mojang.com/v1/objects/b88808bbb3da8d9f453694b5d8f74a3396f1a533/client.jar"
+      },
+      "asset_index_descriptor": {
+        "id": "24",
+        "sha1": "d3a84a9c68942feeabcc802bc2309ab3311dbe11",
+        "size": 483183,
+        "totalSize": 427860817,
+        "url": "https://piston-meta.mojang.com/v1/packages/d3a84a9c68942feeabcc802bc2309ab3311dbe11/24.json"
+      },
+      "libraries": {
+        "total": 113,
+        "artifact_descriptors": 113,
+        "native_classifier_descriptors": 0,
+        "rule_bearing_libraries": 54
+      },
+      "client_and_assets_downloaded": false
+    },
+    "1.21.6": {
+      "requested_id": "1.21.6",
+      "source": {
+        "url": "https://piston-meta.mojang.com/v1/packages/8dd125560431a618094435343acccd45191bb006/1.21.6.json",
+        "retrieved_at_utc": "2026-10-17T06:57:11.883989Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://piston-meta.mojang.com/v1/packages/8dd125560431a618094435343acccd45191bb006/1.21.6.json",
+        "content_type": "application/json",
+        "bytes": 43719,
+        "response_sha256": "ea1c91ccb9760c9f7e697c29ed679427dd20cdac9ce35937125e5690973df6dd",
+        "response_sha1": "8dd125560431a618094435343acccd45191bb006"
+      },
+      "status": "FOUND_HASH_VERIFIED_METADATA",
+      "catalog_declared_sha1": "8dd125560431a618094435343acccd45191bb006",
+      "catalog_sha1_matches": true,
+      "id": "1.21.6",
+      "main_class": "net.minecraft.client.main.Main",
+      "java_requirement_declared": {
+        "component": "java-runtime-delta",
+        "majorVersion": 21
+      },
+      "client_descriptor": {
+        "sha1": "740a125b83dd3447feaa3c5e891ead7fbb21ae28",
+        "size": 29516555,
+        "url": "https://piston-data.mojang.com/v1/objects/740a125b83dd3447feaa3c5e891ead7fbb21ae28/client.jar"
+      },
+      "asset_index_descriptor": {
+        "id": "26",
+        "sha1": "037ce141c0bf90c4a9061b6109210aba47f3bfcc",
+        "size": 491670,
+        "totalSize": 450107716,
+        "url": "https://piston-meta.mojang.com/v1/packages/037ce141c0bf90c4a9061b6109210aba47f3bfcc/26.json"
+      },
+      "libraries": {
+        "total": 113,
+        "artifact_descriptors": 113,
+        "native_classifier_descriptors": 0,
+        "rule_bearing_libraries": 54
+      },
+      "client_and_assets_downloaded": false
+    },
+    "1.21.7": {
+      "requested_id": "1.21.7",
+      "source": {
+        "url": "https://piston-meta.mojang.com/v1/packages/24c116056f9d403403d7b7c06fe018e75aaca464/1.21.7.json",
+        "retrieved_at_utc": "2026-10-17T06:57:11.895119Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://piston-meta.mojang.com/v1/packages/24c116056f9d403403d7b7c06fe018e75aaca464/1.21.7.json",
+        "content_type": "application/json",
+        "bytes": 43719,
+        "response_sha256": "b7ebf2fb9a9cc655f874386a55731e87fa20d35fcbae43bb92ddb4df081fc51a",
+        "response_sha1": "24c116056f9d403403d7b7c06fe018e75aaca464"
+      },
+      "status": "FOUND_HASH_VERIFIED_METADATA",
+      "catalog_declared_sha1": "24c116056f9d403403d7b7c06fe018e75aaca464",
+      "catalog_sha1_matches": true,
+      "id": "1.21.7",
+      "main_class": "net.minecraft.client.main.Main",
+      "java_requirement_declared": {
+        "component": "java-runtime-delta",
+        "majorVersion": 21
+      },
+      "client_descriptor": {
+        "sha1": "a2db1ea98c37b2d00c83f6867fb8bb581a593e07",
+        "size": 29522178,
+        "url": "https://piston-data.mojang.com/v1/objects/a2db1ea98c37b2d00c83f6867fb8bb581a593e07/client.jar"
+      },
+      "asset_index_descriptor": {
+        "id": "26",
+        "sha1": "037ce141c0bf90c4a9061b6109210aba47f3bfcc",
+        "size": 491670,
+        "totalSize": 450107716,
+        "url": "https://piston-meta.mojang.com/v1/packages/037ce141c0bf90c4a9061b6109210aba47f3bfcc/26.json"
+      },
+      "libraries": {
+        "total": 113,
+        "artifact_descriptors": 113,
+        "native_classifier_descriptors": 0,
+        "rule_bearing_libraries": 54
+      },
+      "client_and_assets_downloaded": false
+    },
+    "1.21.8": {
+      "requested_id": "1.21.8",
+      "source": {
+        "url": "https://piston-meta.mojang.com/v1/packages/5d557fffba309d5d68efa24a42bf73856008c5e3/1.21.8.json",
+        "retrieved_at_utc": "2026-10-17T06:57:11.982300Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://piston-meta.mojang.com/v1/packages/5d557fffba309d5d68efa24a42bf73856008c5e3/1.21.8.json",
+        "content_type": "application/json",
+        "bytes": 43719,
+        "response_sha256": "d439baefd3a0a208a3784d473e24ef8e92388a38afa2770af7723c9508d6366e",
+        "response_sha1": "5d557fffba309d5d68efa24a42bf73856008c5e3"
+      },
+      "status": "FOUND_HASH_VERIFIED_METADATA",
+      "catalog_declared_sha1": "5d557fffba309d5d68efa24a42bf73856008c5e3",
+      "catalog_sha1_matches": true,
+      "id": "1.21.8",
+      "main_class": "net.minecraft.client.main.Main",
+      "java_requirement_declared": {
+        "component": "java-runtime-delta",
+        "majorVersion": 21
+      },
+      "client_descriptor": {
+        "sha1": "a19d9badbea944a4369fd0059e53bf7286597576",
+        "size": 29525242,
+        "url": "https://piston-data.mojang.com/v1/objects/a19d9badbea944a4369fd0059e53bf7286597576/client.jar"
+      },
+      "asset_index_descriptor": {
+        "id": "26",
+        "sha1": "037ce141c0bf90c4a9061b6109210aba47f3bfcc",
+        "size": 491670,
+        "totalSize": 450107716,
+        "url": "https://piston-meta.mojang.com/v1/packages/037ce141c0bf90c4a9061b6109210aba47f3bfcc/26.json"
+      },
+      "libraries": {
+        "total": 113,
+        "artifact_descriptors": 113,
+        "native_classifier_descriptors": 0,
+        "rule_bearing_libraries": 54
+      },
+      "client_and_assets_downloaded": false
+    },
+    "1.21.9": {
+      "requested_id": "1.21.9",
+      "source": {
+        "url": "https://piston-meta.mojang.com/v1/packages/91f383c21d8cd06abc9a569f2976b58da192a642/1.21.9.json",
+        "retrieved_at_utc": "2026-10-17T06:57:12.004751Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://piston-meta.mojang.com/v1/packages/91f383c21d8cd06abc9a569f2976b58da192a642/1.21.9.json",
+        "content_type": "application/json",
+        "bytes": 44431,
+        "response_sha256": "3cca801f41f83059092c88f7de3ea74247da4c394f3e672b7a41451151c293d5",
+        "response_sha1": "91f383c21d8cd06abc9a569f2976b58da192a642"
+      },
+      "status": "FOUND_HASH_VERIFIED_METADATA",
+      "catalog_declared_sha1": "91f383c21d8cd06abc9a569f2976b58da192a642",
+      "catalog_sha1_matches": true,
+      "id": "1.21.9",
+      "main_class": "net.minecraft.client.main.Main",
+      "java_requirement_declared": {
+        "component": "java-runtime-delta",
+        "majorVersion": 21
+      },
+      "client_descriptor": {
+        "sha1": "ce92fd8d1b2460c41ceda07ae7b3fe863a80d045",
+        "size": 30591861,
+        "url": "https://piston-data.mojang.com/v1/objects/ce92fd8d1b2460c41ceda07ae7b3fe863a80d045/client.jar"
+      },
+      "asset_index_descriptor": {
+        "id": "27",
+        "sha1": "386e028bd0edd81bb95b232eb8c4cb0bbfa69b37",
+        "size": 507956,
+        "totalSize": 449049910,
+        "url": "https://piston-meta.mojang.com/v1/packages/386e028bd0edd81bb95b232eb8c4cb0bbfa69b37/27.json"
+      },
+      "libraries": {
+        "total": 115,
+        "artifact_descriptors": 115,
+        "native_classifier_descriptors": 0,
+        "rule_bearing_libraries": 55
+      },
+      "client_and_assets_downloaded": false
+    },
+    "26.1": {
+      "requested_id": "26.1",
+      "source": {
+        "url": "https://piston-meta.mojang.com/v1/packages/8667c5278895a6ae31e05ab99ba044ef33fca092/26.1.json",
+        "retrieved_at_utc": "2026-10-17T06:57:12.038541Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://piston-meta.mojang.com/v1/packages/8667c5278895a6ae31e05ab99ba044ef33fca092/26.1.json",
+        "content_type": "application/json",
+        "bytes": 42489,
+        "response_sha256": "c4c4fc8662cc7023213adb94bd38c113730c663df594e548b99f53409365021b",
+        "response_sha1": "8667c5278895a6ae31e05ab99ba044ef33fca092"
+      },
+      "status": "FOUND_HASH_VERIFIED_METADATA",
+      "catalog_declared_sha1": "8667c5278895a6ae31e05ab99ba044ef33fca092",
+      "catalog_sha1_matches": true,
+      "id": "26.1",
+      "main_class": "net.minecraft.client.main.Main",
+      "java_requirement_declared": {
+        "component": "java-runtime-epsilon",
+        "majorVersion": 25
+      },
+      "client_descriptor": {
+        "sha1": "191771837687b766537a8c4607cb6fad79c533a1",
+        "size": 38113398,
+        "url": "https://piston-data.mojang.com/v1/objects/191771837687b766537a8c4607cb6fad79c533a1/client.jar"
+      },
+      "asset_index_descriptor": {
+        "id": "30",
+        "sha1": "191104515165d806db18f954694a4407a1b0ccd9",
+        "size": 548391,
+        "totalSize": 457666598,
+        "url": "https://piston-meta.mojang.com/v1/packages/191104515165d806db18f954694a4407a1b0ccd9/30.json"
+      },
+      "libraries": {
+        "total": 107,
+        "artifact_descriptors": 107,
+        "native_classifier_descriptors": 0,
+        "rule_bearing_libraries": 57
+      },
+      "client_and_assets_downloaded": false
+    },
+    "26.1.1": {
+      "requested_id": "26.1.1",
+      "source": {
+        "url": "https://piston-meta.mojang.com/v1/packages/3a5e8b26e76711c22ce8391be68ada73983f2b95/26.1.1.json",
+        "retrieved_at_utc": "2026-10-17T06:57:12.057425Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://piston-meta.mojang.com/v1/packages/3a5e8b26e76711c22ce8391be68ada73983f2b95/26.1.1.json",
+        "content_type": "application/json",
+        "bytes": 42491,
+        "response_sha256": "94e2daa407e6fa9d3c9eac6bba11ef189dd9de1e87abb9b2cda59c2fbf3826bf",
+        "response_sha1": "3a5e8b26e76711c22ce8391be68ada73983f2b95"
+      },
+      "status": "FOUND_HASH_VERIFIED_METADATA",
+      "catalog_declared_sha1": "3a5e8b26e76711c22ce8391be68ada73983f2b95",
+      "catalog_sha1_matches": true,
+      "id": "26.1.1",
+      "main_class": "net.minecraft.client.main.Main",
+      "java_requirement_declared": {
+        "component": "java-runtime-epsilon",
+        "majorVersion": 25
+      },
+      "client_descriptor": {
+        "sha1": "377031a9e733ba8ab4d355959a8f6fb8eb707556",
+        "size": 38113231,
+        "url": "https://piston-data.mojang.com/v1/objects/377031a9e733ba8ab4d355959a8f6fb8eb707556/client.jar"
+      },
+      "asset_index_descriptor": {
+        "id": "30",
+        "sha1": "191104515165d806db18f954694a4407a1b0ccd9",
+        "size": 548391,
+        "totalSize": 457666598,
+        "url": "https://piston-meta.mojang.com/v1/packages/191104515165d806db18f954694a4407a1b0ccd9/30.json"
+      },
+      "libraries": {
+        "total": 107,
+        "artifact_descriptors": 107,
+        "native_classifier_descriptors": 0,
+        "rule_bearing_libraries": 57
+      },
+      "client_and_assets_downloaded": false
+    },
+    "26.1.2": {
+      "requested_id": "26.1.2",
+      "source": {
+        "url": "https://piston-meta.mojang.com/v1/packages/8cca2c0efc47ef22351e5073bb1f5e7ab339279b/26.1.2.json",
+        "retrieved_at_utc": "2026-10-17T06:57:12.169656Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://piston-meta.mojang.com/v1/packages/8cca2c0efc47ef22351e5073bb1f5e7ab339279b/26.1.2.json",
+        "content_type": "application/json",
+        "bytes": 42491,
+        "response_sha256": "eda7bac4a0a1ff847efccf5a51f66e990521b2c09320fecd3679bc6921c7623e",
+        "response_sha1": "8cca2c0efc47ef22351e5073bb1f5e7ab339279b"
+      },
+      "status": "FOUND_HASH_VERIFIED_METADATA",
+      "catalog_declared_sha1": "8cca2c0efc47ef22351e5073bb1f5e7ab339279b",
+      "catalog_sha1_matches": true,
+      "id": "26.1.2",
+      "main_class": "net.minecraft.client.main.Main",
+      "java_requirement_declared": {
+        "component": "java-runtime-epsilon",
+        "majorVersion": 25
+      },
+      "client_descriptor": {
+        "sha1": "4e618f09a0c649dde3fdf829df443ce0b8831e65",
+        "size": 38113927,
+        "url": "https://piston-data.mojang.com/v1/objects/4e618f09a0c649dde3fdf829df443ce0b8831e65/client.jar"
+      },
+      "asset_index_descriptor": {
+        "id": "30",
+        "sha1": "191104515165d806db18f954694a4407a1b0ccd9",
+        "size": 548391,
+        "totalSize": 457666598,
+        "url": "https://piston-meta.mojang.com/v1/packages/191104515165d806db18f954694a4407a1b0ccd9/30.json"
+      },
+      "libraries": {
+        "total": 107,
+        "artifact_descriptors": 107,
+        "native_classifier_descriptors": 0,
+        "rule_bearing_libraries": 57
+      },
+      "client_and_assets_downloaded": false
+    },
+    "26.2": {
+      "requested_id": "26.2",
+      "source": {
+        "url": "https://piston-meta.mojang.com/v1/packages/91ef51b7d36ca092c5c02aba42f0f40c7cc1db84/26.2.json",
+        "retrieved_at_utc": "2026-10-17T06:57:12.190594Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://piston-meta.mojang.com/v1/packages/91ef51b7d36ca092c5c02aba42f0f40c7cc1db84/26.2.json",
+        "content_type": "application/json",
+        "bytes": 51781,
+        "response_sha256": "8d009c6ed0b7b8c65bfff515a1ff8b12cc8df72627bb0e355ecbce9f7bc34f9c",
+        "response_sha1": "91ef51b7d36ca092c5c02aba42f0f40c7cc1db84"
+      },
+      "status": "FOUND_HASH_VERIFIED_METADATA",
+      "catalog_declared_sha1": "91ef51b7d36ca092c5c02aba42f0f40c7cc1db84",
+      "catalog_sha1_matches": true,
+      "id": "26.2",
+      "main_class": "net.minecraft.client.main.Main",
+      "java_requirement_declared": {
+        "component": "java-runtime-epsilon",
+        "majorVersion": 25
+      },
+      "client_descriptor": {
+        "sha1": "2dc72797acbc1b63fc16a11c4ac393605f453754",
+        "size": 39193383,
+        "url": "https://piston-data.mojang.com/v1/objects/2dc72797acbc1b63fc16a11c4ac393605f453754/client.jar"
+      },
+      "asset_index_descriptor": {
+        "id": "32",
+        "sha1": "edb1c85bb6a1227c35194c715f1687d6e52d125d",
+        "size": 586366,
+        "totalSize": 481626248,
+        "url": "https://piston-meta.mojang.com/v1/packages/edb1c85bb6a1227c35194c715f1687d6e52d125d/32.json"
+      },
+      "libraries": {
+        "total": 131,
+        "artifact_descriptors": 131,
+        "native_classifier_descriptors": 0,
+        "rule_bearing_libraries": 77
+      },
+      "client_and_assets_downloaded": false
+    }
+  },
+  "fabric_profiles": {
+    "1.16.5-fabric-0.14.25": {
+      "target_id": "1.16.5-fabric-0.14.25",
+      "source": {
+        "url": "https://meta.fabricmc.net/v2/versions/loader/1.16.5/0.14.25/profile/json",
+        "retrieved_at_utc": "2026-10-17T06:57:12.877369Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://meta.fabricmc.net/v2/versions/loader/1.16.5/0.14.25/profile/json",
+        "content_type": "application/json",
+        "bytes": 1183,
+        "response_sha256": "9914d5d219bf7ff78dbb4bfb01d84303e4542442d287db941ea0501290b2c4af",
+        "response_sha1": "d1a32388168de77cc3982ffad3cf7a5f0356e470"
+      },
+      "status": "FOUND_EXACT_PROFILE",
+      "profile_id": "fabric-loader-0.14.25-1.16.5",
+      "inherits_from": "1.16.5",
+      "main_class": "net.fabricmc.loader.impl.launch.knot.KnotClient",
+      "library_count": 11,
+      "exact_loader_coordinate_present": true,
+      "exact_intermediary_coordinate_present": true,
+      "argument_group_counts": {
+        "game": 0,
+        "jvm": 1
+      },
+      "intermediary_presence_is_not_required_for_tuple_identity": true
+    },
+    "1.19.2-fabric-0.14.25": {
+      "target_id": "1.19.2-fabric-0.14.25",
+      "source": {
+        "url": "https://meta.fabricmc.net/v2/versions/loader/1.19.2/0.14.25/profile/json",
+        "retrieved_at_utc": "2026-10-17T06:57:12.858506Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://meta.fabricmc.net/v2/versions/loader/1.19.2/0.14.25/profile/json",
+        "content_type": "application/json",
+        "bytes": 1183,
+        "response_sha256": "43be48c0148fba9db302e7f43ca6a1b3e64553f1a5540c51364aa0568940389d",
+        "response_sha1": "5932f5c0a7d5a3b7b9a447378bf78ffaf94c73cb"
+      },
+      "status": "FOUND_EXACT_PROFILE",
+      "profile_id": "fabric-loader-0.14.25-1.19.2",
+      "inherits_from": "1.19.2",
+      "main_class": "net.fabricmc.loader.impl.launch.knot.KnotClient",
+      "library_count": 11,
+      "exact_loader_coordinate_present": true,
+      "exact_intermediary_coordinate_present": true,
+      "argument_group_counts": {
+        "game": 0,
+        "jvm": 1
+      },
+      "intermediary_presence_is_not_required_for_tuple_identity": true
+    },
+    "1.20.1-fabric-0.19.5": {
+      "target_id": "1.20.1-fabric-0.19.5",
+      "source": {
+        "url": "https://meta.fabricmc.net/v2/versions/loader/1.20.1/0.19.5/profile/json",
+        "retrieved_at_utc": "2026-10-17T06:57:12.795017Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://meta.fabricmc.net/v2/versions/loader/1.20.1/0.19.5/profile/json",
+        "content_type": "application/json",
+        "bytes": 2862,
+        "response_sha256": "c377ce45e0539b899e23ff1e21862892265c4360a60380faac6931d6c6566841",
+        "response_sha1": "b33d072de9ec6dc46b2f87866a5ed20f05273a3f"
+      },
+      "status": "FOUND_EXACT_PROFILE",
+      "profile_id": "fabric-loader-0.19.5-1.20.1",
+      "inherits_from": "1.20.1",
+      "main_class": "net.fabricmc.loader.impl.launch.knot.KnotClient",
+      "library_count": 8,
+      "exact_loader_coordinate_present": true,
+      "exact_intermediary_coordinate_present": true,
+      "argument_group_counts": {
+        "game": 0,
+        "jvm": 1
+      },
+      "intermediary_presence_is_not_required_for_tuple_identity": true
+    },
+    "1.20.4-fabric-0.19.5": {
+      "target_id": "1.20.4-fabric-0.19.5",
+      "source": {
+        "url": "https://meta.fabricmc.net/v2/versions/loader/1.20.4/0.19.5/profile/json",
+        "retrieved_at_utc": "2026-10-17T06:57:12.747331Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://meta.fabricmc.net/v2/versions/loader/1.20.4/0.19.5/profile/json",
+        "content_type": "application/json",
+        "bytes": 2862,
+        "response_sha256": "e59989fd491a4c3bc54fd30cd3a9c44b89a19e0bebd1418906e5540b9bb7aec0",
+        "response_sha1": "1f8ba898058e40ee715ef4dec1f5a483bbaa54be"
+      },
+      "status": "FOUND_EXACT_PROFILE",
+      "profile_id": "fabric-loader-0.19.5-1.20.4",
+      "inherits_from": "1.20.4",
+      "main_class": "net.fabricmc.loader.impl.launch.knot.KnotClient",
+      "library_count": 8,
+      "exact_loader_coordinate_present": true,
+      "exact_intermediary_coordinate_present": true,
+      "argument_group_counts": {
+        "game": 0,
+        "jvm": 1
+      },
+      "intermediary_presence_is_not_required_for_tuple_identity": true
+    },
+    "1.21-fabric-0.19.5": {
+      "target_id": "1.21-fabric-0.19.5",
+      "source": {
+        "url": "https://meta.fabricmc.net/v2/versions/loader/1.21/0.19.5/profile/json",
+        "retrieved_at_utc": "2026-10-17T06:57:12.725542Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://meta.fabricmc.net/v2/versions/loader/1.21/0.19.5/profile/json",
+        "content_type": "application/json",
+        "bytes": 2856,
+        "response_sha256": "8195dc3a3388118a238463f66b36ce4d51e3606f1c5b6a6c40dd116e61cafd29",
+        "response_sha1": "2506b22cd72aaa57008b21172941634a2705f2d8"
+      },
+      "status": "FOUND_EXACT_PROFILE",
+      "profile_id": "fabric-loader-0.19.5-1.21",
+      "inherits_from": "1.21",
+      "main_class": "net.fabricmc.loader.impl.launch.knot.KnotClient",
+      "library_count": 8,
+      "exact_loader_coordinate_present": true,
+      "exact_intermediary_coordinate_present": true,
+      "argument_group_counts": {
+        "game": 0,
+        "jvm": 1
+      },
+      "intermediary_presence_is_not_required_for_tuple_identity": true
+    },
+    "1.21.1-fabric-0.19.5": {
+      "target_id": "1.21.1-fabric-0.19.5",
+      "source": {
+        "url": "https://meta.fabricmc.net/v2/versions/loader/1.21.1/0.19.5/profile/json",
+        "retrieved_at_utc": "2026-10-17T06:57:12.684168Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://meta.fabricmc.net/v2/versions/loader/1.21.1/0.19.5/profile/json",
+        "content_type": "application/json",
+        "bytes": 2862,
+        "response_sha256": "deeaad9592bf8e47e8f9d9578cf03bd2f45f2895eb698560460e3533562ea5dc",
+        "response_sha1": "9b38f8a274225c7f438b98f66a1eb0288f05fa28"
+      },
+      "status": "FOUND_EXACT_PROFILE",
+      "profile_id": "fabric-loader-0.19.5-1.21.1",
+      "inherits_from": "1.21.1",
+      "main_class": "net.fabricmc.loader.impl.launch.knot.KnotClient",
+      "library_count": 8,
+      "exact_loader_coordinate_present": true,
+      "exact_intermediary_coordinate_present": true,
+      "argument_group_counts": {
+        "game": 0,
+        "jvm": 1
+      },
+      "intermediary_presence_is_not_required_for_tuple_identity": true
+    },
+    "1.21.10-fabric-0.19.5": {
+      "target_id": "1.21.10-fabric-0.19.5",
+      "source": {
+        "url": "https://meta.fabricmc.net/v2/versions/loader/1.21.10/0.19.5/profile/json",
+        "retrieved_at_utc": "2026-10-17T06:57:12.379944Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://meta.fabricmc.net/v2/versions/loader/1.21.10/0.19.5/profile/json",
+        "content_type": "application/json",
+        "bytes": 2865,
+        "response_sha256": "5669a0d8483a93d05ecd6473992e4d187fdb2a323ee012bab829121b73ca896b",
+        "response_sha1": "270d7b2ef9c83ea3c97f209285ea86dd61c4e2cd"
+      },
+      "status": "FOUND_EXACT_PROFILE",
+      "profile_id": "fabric-loader-0.19.5-1.21.10",
+      "inherits_from": "1.21.10",
+      "main_class": "net.fabricmc.loader.impl.launch.knot.KnotClient",
+      "library_count": 8,
+      "exact_loader_coordinate_present": true,
+      "exact_intermediary_coordinate_present": true,
+      "argument_group_counts": {
+        "game": 0,
+        "jvm": 1
+      },
+      "intermediary_presence_is_not_required_for_tuple_identity": true
+    },
+    "1.21.11-fabric-0.19.5": {
+      "target_id": "1.21.11-fabric-0.19.5",
+      "source": {
+        "url": "https://meta.fabricmc.net/v2/versions/loader/1.21.11/0.19.5/profile/json",
+        "retrieved_at_utc": "2026-10-17T06:57:12.355340Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://meta.fabricmc.net/v2/versions/loader/1.21.11/0.19.5/profile/json",
+        "content_type": "application/json",
+        "bytes": 2865,
+        "response_sha256": "5f5f7769b2305da29cb73c19c3e5698c9dc6813326a13c373d7dda5be64827b3",
+        "response_sha1": "9962d2da962136a7ad8764c6b6bdb99e221b0be3"
+      },
+      "status": "FOUND_EXACT_PROFILE",
+      "profile_id": "fabric-loader-0.19.5-1.21.11",
+      "inherits_from": "1.21.11",
+      "main_class": "net.fabricmc.loader.impl.launch.knot.KnotClient",
+      "library_count": 8,
+      "exact_loader_coordinate_present": true,
+      "exact_intermediary_coordinate_present": true,
+      "argument_group_counts": {
+        "game": 0,
+        "jvm": 1
+      },
+      "intermediary_presence_is_not_required_for_tuple_identity": true
+    },
+    "1.21.2-fabric-0.19.5": {
+      "target_id": "1.21.2-fabric-0.19.5",
+      "source": {
+        "url": "https://meta.fabricmc.net/v2/versions/loader/1.21.2/0.19.5/profile/json",
+        "retrieved_at_utc": "2026-10-17T06:57:12.657845Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://meta.fabricmc.net/v2/versions/loader/1.21.2/0.19.5/profile/json",
+        "content_type": "application/json",
+        "bytes": 2862,
+        "response_sha256": "6a3214bbf836e4535fcf12f1c3ae2c4f7abd8b8d73c2241d2e9405d8fdb011c1",
+        "response_sha1": "0d7bae381fae0f17d7d6691cafd5abe630606a72"
+      },
+      "status": "FOUND_EXACT_PROFILE",
+      "profile_id": "fabric-loader-0.19.5-1.21.2",
+      "inherits_from": "1.21.2",
+      "main_class": "net.fabricmc.loader.impl.launch.knot.KnotClient",
+      "library_count": 8,
+      "exact_loader_coordinate_present": true,
+      "exact_intermediary_coordinate_present": true,
+      "argument_group_counts": {
+        "game": 0,
+        "jvm": 1
+      },
+      "intermediary_presence_is_not_required_for_tuple_identity": true
+    },
+    "1.21.3-fabric-0.19.5": {
+      "target_id": "1.21.3-fabric-0.19.5",
+      "source": {
+        "url": "https://meta.fabricmc.net/v2/versions/loader/1.21.3/0.19.5/profile/json",
+        "retrieved_at_utc": "2026-10-17T06:57:12.606437Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://meta.fabricmc.net/v2/versions/loader/1.21.3/0.19.5/profile/json",
+        "content_type": "application/json",
+        "bytes": 2862,
+        "response_sha256": "145b43b1071f3043e2d9b72be242ccd16bbc6c14cbb7c5874c51ed6950261571",
+        "response_sha1": "b58869d70981648749687470a2191166b9910db7"
+      },
+      "status": "FOUND_EXACT_PROFILE",
+      "profile_id": "fabric-loader-0.19.5-1.21.3",
+      "inherits_from": "1.21.3",
+      "main_class": "net.fabricmc.loader.impl.launch.knot.KnotClient",
+      "library_count": 8,
+      "exact_loader_coordinate_present": true,
+      "exact_intermediary_coordinate_present": true,
+      "argument_group_counts": {
+        "game": 0,
+        "jvm": 1
+      },
+      "intermediary_presence_is_not_required_for_tuple_identity": true
+    },
+    "1.21.4-fabric-0.19.5": {
+      "target_id": "1.21.4-fabric-0.19.5",
+      "source": {
+        "url": "https://meta.fabricmc.net/v2/versions/loader/1.21.4/0.19.5/profile/json",
+        "retrieved_at_utc": "2026-10-17T06:57:12.584980Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://meta.fabricmc.net/v2/versions/loader/1.21.4/0.19.5/profile/json",
+        "content_type": "application/json",
+        "bytes": 2862,
+        "response_sha256": "907f6c8c519edee4c289a6c44874caa8ba4482f655c22b31002a8f004d91f21e",
+        "response_sha1": "f0fe7f51aabfb3769fd17e09a777ddbbb00adb05"
+      },
+      "status": "FOUND_EXACT_PROFILE",
+      "profile_id": "fabric-loader-0.19.5-1.21.4",
+      "inherits_from": "1.21.4",
+      "main_class": "net.fabricmc.loader.impl.launch.knot.KnotClient",
+      "library_count": 8,
+      "exact_loader_coordinate_present": true,
+      "exact_intermediary_coordinate_present": true,
+      "argument_group_counts": {
+        "game": 0,
+        "jvm": 1
+      },
+      "intermediary_presence_is_not_required_for_tuple_identity": true
+    },
+    "1.21.5-fabric-0.19.5": {
+      "target_id": "1.21.5-fabric-0.19.5",
+      "source": {
+        "url": "https://meta.fabricmc.net/v2/versions/loader/1.21.5/0.19.5/profile/json",
+        "retrieved_at_utc": "2026-10-17T06:57:12.567809Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://meta.fabricmc.net/v2/versions/loader/1.21.5/0.19.5/profile/json",
+        "content_type": "application/json",
+        "bytes": 2862,
+        "response_sha256": "c61078f1786089d9b04f19428b350ffbf2a85bee7847c6e30d3cbf5f5cb293d2",
+        "response_sha1": "7bd68ed3e0170b9e5ba00c2261cc4a289bccf7c9"
+      },
+      "status": "FOUND_EXACT_PROFILE",
+      "profile_id": "fabric-loader-0.19.5-1.21.5",
+      "inherits_from": "1.21.5",
+      "main_class": "net.fabricmc.loader.impl.launch.knot.KnotClient",
+      "library_count": 8,
+      "exact_loader_coordinate_present": true,
+      "exact_intermediary_coordinate_present": true,
+      "argument_group_counts": {
+        "game": 0,
+        "jvm": 1
+      },
+      "intermediary_presence_is_not_required_for_tuple_identity": true
+    },
+    "1.21.6-fabric-0.19.5": {
+      "target_id": "1.21.6-fabric-0.19.5",
+      "source": {
+        "url": "https://meta.fabricmc.net/v2/versions/loader/1.21.6/0.19.5/profile/json",
+        "retrieved_at_utc": "2026-10-17T06:57:12.530732Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://meta.fabricmc.net/v2/versions/loader/1.21.6/0.19.5/profile/json",
+        "content_type": "application/json",
+        "bytes": 2862,
+        "response_sha256": "206f383f6edc01328d8bcc5825d7b82ed3662748a066893f82c19be29a15f75d",
+        "response_sha1": "f932932589ca3f90c97954d1e6bce0d631b5328e"
+      },
+      "status": "FOUND_EXACT_PROFILE",
+      "profile_id": "fabric-loader-0.19.5-1.21.6",
+      "inherits_from": "1.21.6",
+      "main_class": "net.fabricmc.loader.impl.launch.knot.KnotClient",
+      "library_count": 8,
+      "exact_loader_coordinate_present": true,
+      "exact_intermediary_coordinate_present": true,
+      "argument_group_counts": {
+        "game": 0,
+        "jvm": 1
+      },
+      "intermediary_presence_is_not_required_for_tuple_identity": true
+    },
+    "1.21.7-fabric-0.19.5": {
+      "target_id": "1.21.7-fabric-0.19.5",
+      "source": {
+        "url": "https://meta.fabricmc.net/v2/versions/loader/1.21.7/0.19.5/profile/json",
+        "retrieved_at_utc": "2026-10-17T06:57:12.474648Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://meta.fabricmc.net/v2/versions/loader/1.21.7/0.19.5/profile/json",
+        "content_type": "application/json",
+        "bytes": 2862,
+        "response_sha256": "548c76fc4700490f711ec3247fbb6d0eb481539f3e2d595d54b6cdc03f95c7a4",
+        "response_sha1": "21376a35163b821b1f1928e376b9051c2a669073"
+      },
+      "status": "FOUND_EXACT_PROFILE",
+      "profile_id": "fabric-loader-0.19.5-1.21.7",
+      "inherits_from": "1.21.7",
+      "main_class": "net.fabricmc.loader.impl.launch.knot.KnotClient",
+      "library_count": 8,
+      "exact_loader_coordinate_present": true,
+      "exact_intermediary_coordinate_present": true,
+      "argument_group_counts": {
+        "game": 0,
+        "jvm": 1
+      },
+      "intermediary_presence_is_not_required_for_tuple_identity": true
+    },
+    "1.21.8-fabric-0.19.5": {
+      "target_id": "1.21.8-fabric-0.19.5",
+      "source": {
+        "url": "https://meta.fabricmc.net/v2/versions/loader/1.21.8/0.19.5/profile/json",
+        "retrieved_at_utc": "2026-10-17T06:57:12.464083Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://meta.fabricmc.net/v2/versions/loader/1.21.8/0.19.5/profile/json",
+        "content_type": "application/json",
+        "bytes": 2862,
+        "response_sha256": "06c3d3cf64ec47c220c81eef2763fe5e7a9fe438a8d2c2aef71b0d4b486174ea",
+        "response_sha1": "5bb5331fef25375e4b8fe9cbb19d6ab887a13652"
+      },
+      "status": "FOUND_EXACT_PROFILE",
+      "profile_id": "fabric-loader-0.19.5-1.21.8",
+      "inherits_from": "1.21.8",
+      "main_class": "net.fabricmc.loader.impl.launch.knot.KnotClient",
+      "library_count": 8,
+      "exact_loader_coordinate_present": true,
+      "exact_intermediary_coordinate_present": true,
+      "argument_group_counts": {
+        "game": 0,
+        "jvm": 1
+      },
+      "intermediary_presence_is_not_required_for_tuple_identity": true
+    },
+    "1.21.9-fabric-0.19.5": {
+      "target_id": "1.21.9-fabric-0.19.5",
+      "source": {
+        "url": "https://meta.fabricmc.net/v2/versions/loader/1.21.9/0.19.5/profile/json",
+        "retrieved_at_utc": "2026-10-17T06:57:12.448419Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://meta.fabricmc.net/v2/versions/loader/1.21.9/0.19.5/profile/json",
+        "content_type": "application/json",
+        "bytes": 2862,
+        "response_sha256": "702bb9412188bea7be8b1e45614a1d18894f8ce653e35509a50f17c1e630467e",
+        "response_sha1": "fabca6500449b813bb8fd5113e7be8c19231fef6"
+      },
+      "status": "FOUND_EXACT_PROFILE",
+      "profile_id": "fabric-loader-0.19.5-1.21.9",
+      "inherits_from": "1.21.9",
+      "main_class": "net.fabricmc.loader.impl.launch.knot.KnotClient",
+      "library_count": 8,
+      "exact_loader_coordinate_present": true,
+      "exact_intermediary_coordinate_present": true,
+      "argument_group_counts": {
+        "game": 0,
+        "jvm": 1
+      },
+      "intermediary_presence_is_not_required_for_tuple_identity": true
+    },
+    "26.1-fabric-0.19.5": {
+      "target_id": "26.1-fabric-0.19.5",
+      "source": {
+        "url": "https://meta.fabricmc.net/v2/versions/loader/26.1/0.19.5/profile/json",
+        "retrieved_at_utc": "2026-10-17T06:57:12.333343Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://meta.fabricmc.net/v2/versions/loader/26.1/0.19.5/profile/json",
+        "content_type": "application/json",
+        "bytes": 2778,
+        "response_sha256": "9acf81691e951c20629fcbfe20645f5a9f7edf8daa2197baba9865a2fb9a86e4",
+        "response_sha1": "042228a30f09f3e2114e360099f626d171c56515"
+      },
+      "status": "FOUND_EXACT_PROFILE",
+      "profile_id": "fabric-loader-0.19.5-26.1",
+      "inherits_from": "26.1",
+      "main_class": "net.fabricmc.loader.impl.launch.knot.KnotClient",
+      "library_count": 7,
+      "exact_loader_coordinate_present": true,
+      "exact_intermediary_coordinate_present": false,
+      "argument_group_counts": {
+        "game": 0,
+        "jvm": 1
+      },
+      "intermediary_presence_is_not_required_for_tuple_identity": true
+    },
+    "26.1.1-fabric-0.19.5": {
+      "target_id": "26.1.1-fabric-0.19.5",
+      "source": {
+        "url": "https://meta.fabricmc.net/v2/versions/loader/26.1.1/0.19.5/profile/json",
+        "retrieved_at_utc": "2026-10-17T06:57:12.319528Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://meta.fabricmc.net/v2/versions/loader/26.1.1/0.19.5/profile/json",
+        "content_type": "application/json",
+        "bytes": 2782,
+        "response_sha256": "0458109c8c4f7f669a0ebb3493639a10035a6cd95659818d1cb6cb93066df59d",
+        "response_sha1": "c53024bef93620501f4107b6a3f3b4b0a6f1125c"
+      },
+      "status": "FOUND_EXACT_PROFILE",
+      "profile_id": "fabric-loader-0.19.5-26.1.1",
+      "inherits_from": "26.1.1",
+      "main_class": "net.fabricmc.loader.impl.launch.knot.KnotClient",
+      "library_count": 7,
+      "exact_loader_coordinate_present": true,
+      "exact_intermediary_coordinate_present": false,
+      "argument_group_counts": {
+        "game": 0,
+        "jvm": 1
+      },
+      "intermediary_presence_is_not_required_for_tuple_identity": true
+    },
+    "26.1.2-fabric-0.19.5": {
+      "target_id": "26.1.2-fabric-0.19.5",
+      "source": {
+        "url": "https://meta.fabricmc.net/v2/versions/loader/26.1.2/0.19.5/profile/json",
+        "retrieved_at_utc": "2026-10-17T06:57:12.231589Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://meta.fabricmc.net/v2/versions/loader/26.1.2/0.19.5/profile/json",
+        "content_type": "application/json",
+        "bytes": 2782,
+        "response_sha256": "013349e571eaf9c4ccb5a05c27e741bd99c2f352d57ffa96cb48af9f44e312cf",
+        "response_sha1": "ec8e3a1568db631d4bd8f703da65a9a5c825b289"
+      },
+      "status": "FOUND_EXACT_PROFILE",
+      "profile_id": "fabric-loader-0.19.5-26.1.2",
+      "inherits_from": "26.1.2",
+      "main_class": "net.fabricmc.loader.impl.launch.knot.KnotClient",
+      "library_count": 7,
+      "exact_loader_coordinate_present": true,
+      "exact_intermediary_coordinate_present": false,
+      "argument_group_counts": {
+        "game": 0,
+        "jvm": 1
+      },
+      "intermediary_presence_is_not_required_for_tuple_identity": true
+    },
+    "26.2-fabric-0.19.5": {
+      "target_id": "26.2-fabric-0.19.5",
+      "source": {
+        "url": "https://meta.fabricmc.net/v2/versions/loader/26.2/0.19.5/profile/json",
+        "retrieved_at_utc": "2026-10-17T06:57:12.206714Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://meta.fabricmc.net/v2/versions/loader/26.2/0.19.5/profile/json",
+        "content_type": "application/json",
+        "bytes": 2778,
+        "response_sha256": "7570c8a71e01817674afeb6d43975c163893384935345de0bad88298d8e7b53f",
+        "response_sha1": "7f0efa686bd10d05dbb0a2ab992ad7a758e76391"
+      },
+      "status": "FOUND_EXACT_PROFILE",
+      "profile_id": "fabric-loader-0.19.5-26.2",
+      "inherits_from": "26.2",
+      "main_class": "net.fabricmc.loader.impl.launch.knot.KnotClient",
+      "library_count": 7,
+      "exact_loader_coordinate_present": true,
+      "exact_intermediary_coordinate_present": false,
+      "argument_group_counts": {
+        "game": 0,
+        "jvm": 1
+      },
+      "intermediary_presence_is_not_required_for_tuple_identity": true
+    }
+  },
+  "maven_indexes": {
+    "forge": {
+      "source": {
+        "url": "https://maven.minecraftforge.net/net/minecraftforge/forge/maven-metadata.xml",
+        "retrieved_at_utc": "2026-10-17T06:57:12.887047Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://maven.minecraftforge.net/net/minecraftforge/forge/maven-metadata.xml",
+        "content_type": "text/xml",
+        "bytes": 213257,
+        "response_sha256": "197cb8638bfa8cda3c807785e465971de3d71506ceee689f4661495de041215c",
+        "response_sha1": "50d3c8cc9ce0243a53e25498dde1e736a1cfb2c6"
+      },
+      "status": "FOUND_MAVEN_VERSION_INDEX",
+      "group_id": "net.minecraftforge",
+      "artifact_id": "forge",
+      "listed_version_count": 5093,
+      "last_updated": "20261016204415"
+    },
+    "neoforge": {
+      "source": {
+        "url": "https://maven.neoforged.net/releases/net/neoforged/neoforge/maven-metadata.xml",
+        "retrieved_at_utc": "2026-10-17T06:57:12.957228Z",
+        "status": "FETCHED",
+        "http_status": 200,
+        "final_url": "https://maven.neoforged.net/releases/net/neoforged/neoforge/maven-metadata.xml",
+        "content_type": "text/xml",
+        "bytes": 68098,
+        "response_sha256": "27766ff635d5a28e1bf339caa9bd0c78e0a3abc09254534a133dbfd0936df468",
+        "response_sha1": "3bd41b247d77ae9a7bdcd3bd2e15f8382bbc9210"
+      },
+      "status": "FOUND_MAVEN_VERSION_INDEX",
+      "group_id": "net.neoforged",
+      "artifact_id": "neoforge",
+      "listed_version_count": 1835,
+      "last_updated": "20261016154143"
+    }
+  },
+  "target_plans": [
+    {
+      "target_id": "26.2-fabric-0.19.5",
+      "minecraft_version": "26.2",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "source_runtime": "current",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "26.2",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "26.2-fabric-0.19.5",
+      "loader_metadata_status": "FOUND_EXACT_PROFILE"
+    },
+    {
+      "target_id": "26.2-forge-65.1.3",
+      "minecraft_version": "26.2",
+      "loader": "forge",
+      "loader_version": "65.1.3",
+      "source_runtime": "current",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "26.2",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "maven_forge",
+      "maven_coordinate_version": "26.2-65.1.3",
+      "loader_metadata_status": "EXACT_RELEASE_LISTED"
+    },
+    {
+      "target_id": "26.2-neoforge-26.2.0.82",
+      "minecraft_version": "26.2",
+      "loader": "neoforge",
+      "loader_version": "26.2.0.82",
+      "source_runtime": "current",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "26.2",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "maven_neoforge",
+      "maven_coordinate_version": "26.2.0.82",
+      "loader_metadata_status": "EXACT_RELEASE_LISTED"
+    },
+    {
+      "target_id": "26.1.2-fabric-0.19.5",
+      "minecraft_version": "26.1.2",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "source_runtime": "current",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "26.1.2",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "26.1.2-fabric-0.19.5",
+      "loader_metadata_status": "FOUND_EXACT_PROFILE"
+    },
+    {
+      "target_id": "26.1.2-forge-64.1.3",
+      "minecraft_version": "26.1.2",
+      "loader": "forge",
+      "loader_version": "64.1.3",
+      "source_runtime": "current",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "26.1.2",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "maven_forge",
+      "maven_coordinate_version": "26.1.2-64.1.3",
+      "loader_metadata_status": "EXACT_RELEASE_LISTED"
+    },
+    {
+      "target_id": "26.1.2-neoforge-26.1.2.107",
+      "minecraft_version": "26.1.2",
+      "loader": "neoforge",
+      "loader_version": "26.1.2.107",
+      "source_runtime": "current",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "26.1.2",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "maven_neoforge",
+      "maven_coordinate_version": "26.1.2.107",
+      "loader_metadata_status": "EXACT_RELEASE_LISTED"
+    },
+    {
+      "target_id": "26.1.1-fabric-0.19.5",
+      "minecraft_version": "26.1.1",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "source_runtime": "current",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "26.1.1",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "26.1.1-fabric-0.19.5",
+      "loader_metadata_status": "FOUND_EXACT_PROFILE"
+    },
+    {
+      "target_id": "26.1.1-forge-63.0.2",
+      "minecraft_version": "26.1.1",
+      "loader": "forge",
+      "loader_version": "63.0.2",
+      "source_runtime": "current",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "26.1.1",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "maven_forge",
+      "maven_coordinate_version": "26.1.1-63.0.2",
+      "loader_metadata_status": "EXACT_RELEASE_LISTED"
+    },
+    {
+      "target_id": "26.1.1-neoforge-26.1.1.15-beta",
+      "minecraft_version": "26.1.1",
+      "loader": "neoforge",
+      "loader_version": "26.1.1.15-beta",
+      "source_runtime": "current",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "26.1.1",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "maven_neoforge",
+      "maven_coordinate_version": "26.1.1.15-beta",
+      "loader_metadata_status": "EXACT_RELEASE_LISTED"
+    },
+    {
+      "target_id": "26.1-fabric-0.19.5",
+      "minecraft_version": "26.1",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "source_runtime": "current",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "26.1",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "26.1-fabric-0.19.5",
+      "loader_metadata_status": "FOUND_EXACT_PROFILE"
+    },
+    {
+      "target_id": "26.1-forge-62.0.9",
+      "minecraft_version": "26.1",
+      "loader": "forge",
+      "loader_version": "62.0.9",
+      "source_runtime": "current",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "26.1",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "maven_forge",
+      "maven_coordinate_version": "26.1-62.0.9",
+      "loader_metadata_status": "EXACT_RELEASE_LISTED"
+    },
+    {
+      "target_id": "26.1-neoforge-26.1.0.19-beta",
+      "minecraft_version": "26.1",
+      "loader": "neoforge",
+      "loader_version": "26.1.0.19-beta",
+      "source_runtime": "current",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "26.1",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "maven_neoforge",
+      "maven_coordinate_version": "26.1.0.19-beta",
+      "loader_metadata_status": "EXACT_RELEASE_LISTED"
+    },
+    {
+      "target_id": "1.21.11-fabric-0.19.5",
+      "minecraft_version": "1.21.11",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.21.11",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "1.21.11-fabric-0.19.5",
+      "loader_metadata_status": "FOUND_EXACT_PROFILE"
+    },
+    {
+      "target_id": "1.21.11-forge-61.2.1",
+      "minecraft_version": "1.21.11",
+      "loader": "forge",
+      "loader_version": "61.2.1",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.21.11",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "maven_forge",
+      "maven_coordinate_version": "1.21.11-61.2.1",
+      "loader_metadata_status": "EXACT_RELEASE_LISTED"
+    },
+    {
+      "target_id": "1.21.11-neoforge-21.11.45",
+      "minecraft_version": "1.21.11",
+      "loader": "neoforge",
+      "loader_version": "21.11.45",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.21.11",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "maven_neoforge",
+      "maven_coordinate_version": "21.11.45",
+      "loader_metadata_status": "EXACT_RELEASE_LISTED"
+    },
+    {
+      "target_id": "1.21.10-fabric-0.19.5",
+      "minecraft_version": "1.21.10",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.21.10",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "1.21.10-fabric-0.19.5",
+      "loader_metadata_status": "FOUND_EXACT_PROFILE"
+    },
+    {
+      "target_id": "1.21.10-forge-60.1.15",
+      "minecraft_version": "1.21.10",
+      "loader": "forge",
+      "loader_version": "60.1.15",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.21.10",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "maven_forge",
+      "maven_coordinate_version": "1.21.10-60.1.15",
+      "loader_metadata_status": "EXACT_RELEASE_LISTED"
+    },
+    {
+      "target_id": "1.21.10-neoforge-21.10.64",
+      "minecraft_version": "1.21.10",
+      "loader": "neoforge",
+      "loader_version": "21.10.64",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.21.10",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "maven_neoforge",
+      "maven_coordinate_version": "21.10.64",
+      "loader_metadata_status": "EXACT_RELEASE_LISTED"
+    },
+    {
+      "target_id": "1.21.9-fabric-0.19.5",
+      "minecraft_version": "1.21.9",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.21.9",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "1.21.9-fabric-0.19.5",
+      "loader_metadata_status": "FOUND_EXACT_PROFILE"
+    },
+    {
+      "target_id": "1.21.9-forge-59.0.5",
+      "minecraft_version": "1.21.9",
+      "loader": "forge",
+      "loader_version": "59.0.5",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.21.9",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "maven_forge",
+      "maven_coordinate_version": "1.21.9-59.0.5",
+      "loader_metadata_status": "EXACT_RELEASE_LISTED"
+    },
+    {
+      "target_id": "1.21.9-neoforge-21.9.16-beta",
+      "minecraft_version": "1.21.9",
+      "loader": "neoforge",
+      "loader_version": "21.9.16-beta",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.21.9",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "maven_neoforge",
+      "maven_coordinate_version": "21.9.16-beta",
+      "loader_metadata_status": "EXACT_RELEASE_LISTED"
+    },
+    {
+      "target_id": "1.21.8-fabric-0.19.5",
+      "minecraft_version": "1.21.8",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.21.8",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "1.21.8-fabric-0.19.5",
+      "loader_metadata_status": "FOUND_EXACT_PROFILE"
+    },
+    {
+      "target_id": "1.21.8-forge-58.1.22",
+      "minecraft_version": "1.21.8",
+      "loader": "forge",
+      "loader_version": "58.1.22",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.21.8",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "maven_forge",
+      "maven_coordinate_version": "1.21.8-58.1.22",
+      "loader_metadata_status": "EXACT_RELEASE_LISTED"
+    },
+    {
+      "target_id": "1.21.8-neoforge-21.8.54",
+      "minecraft_version": "1.21.8",
+      "loader": "neoforge",
+      "loader_version": "21.8.54",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.21.8",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "maven_neoforge",
+      "maven_coordinate_version": "21.8.54",
+      "loader_metadata_status": "EXACT_RELEASE_LISTED"
+    },
+    {
+      "target_id": "1.21.7-fabric-0.19.5",
+      "minecraft_version": "1.21.7",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.21.7",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "1.21.7-fabric-0.19.5",
+      "loader_metadata_status": "FOUND_EXACT_PROFILE"
+    },
+    {
+      "target_id": "1.21.7-forge-57.0.3",
+      "minecraft_version": "1.21.7",
+      "loader": "forge",
+      "loader_version": "57.0.3",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.21.7",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "maven_forge",
+      "maven_coordinate_version": "1.21.7-57.0.3",
+      "loader_metadata_status": "EXACT_RELEASE_LISTED"
+    },
+    {
+      "target_id": "1.21.7-neoforge-21.7.25-beta",
+      "minecraft_version": "1.21.7",
+      "loader": "neoforge",
+      "loader_version": "21.7.25-beta",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.21.7",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "maven_neoforge",
+      "maven_coordinate_version": "21.7.25-beta",
+      "loader_metadata_status": "EXACT_RELEASE_LISTED"
+    },
+    {
+      "target_id": "1.21.6-fabric-0.19.5",
+      "minecraft_version": "1.21.6",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.21.6",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "1.21.6-fabric-0.19.5",
+      "loader_metadata_status": "FOUND_EXACT_PROFILE"
+    },
+    {
+      "target_id": "1.21.6-forge-56.0.9",
+      "minecraft_version": "1.21.6",
+      "loader": "forge",
+      "loader_version": "56.0.9",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.21.6",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "maven_forge",
+      "maven_coordinate_version": "1.21.6-56.0.9",
+      "loader_metadata_status": "EXACT_RELEASE_LISTED"
+    },
+    {
+      "target_id": "1.21.6-neoforge-21.6.20-beta",
+      "minecraft_version": "1.21.6",
+      "loader": "neoforge",
+      "loader_version": "21.6.20-beta",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.21.6",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "maven_neoforge",
+      "maven_coordinate_version": "21.6.20-beta",
+      "loader_metadata_status": "EXACT_RELEASE_LISTED"
+    },
+    {
+      "target_id": "1.21.5-fabric-0.19.5",
+      "minecraft_version": "1.21.5",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.21.5",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "1.21.5-fabric-0.19.5",
+      "loader_metadata_status": "FOUND_EXACT_PROFILE"
+    },
+    {
+      "target_id": "1.21.5-forge-55.1.13",
+      "minecraft_version": "1.21.5",
+      "loader": "forge",
+      "loader_version": "55.1.13",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.21.5",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "maven_forge",
+      "maven_coordinate_version": "1.21.5-55.1.13",
+      "loader_metadata_status": "EXACT_RELEASE_LISTED"
+    },
+    {
+      "target_id": "1.21.5-neoforge-21.5.98",
+      "minecraft_version": "1.21.5",
+      "loader": "neoforge",
+      "loader_version": "21.5.98",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.21.5",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "maven_neoforge",
+      "maven_coordinate_version": "21.5.98",
+      "loader_metadata_status": "EXACT_RELEASE_LISTED"
+    },
+    {
+      "target_id": "1.21.4-fabric-0.19.5",
+      "minecraft_version": "1.21.4",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.21.4",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "1.21.4-fabric-0.19.5",
+      "loader_metadata_status": "FOUND_EXACT_PROFILE"
+    },
+    {
+      "target_id": "1.21.4-forge-54.1.18",
+      "minecraft_version": "1.21.4",
+      "loader": "forge",
+      "loader_version": "54.1.18",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.21.4",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "maven_forge",
+      "maven_coordinate_version": "1.21.4-54.1.18",
+      "loader_metadata_status": "EXACT_RELEASE_LISTED"
+    },
+    {
+      "target_id": "1.21.4-neoforge-21.4.157",
+      "minecraft_version": "1.21.4",
+      "loader": "neoforge",
+      "loader_version": "21.4.157",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.21.4",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "maven_neoforge",
+      "maven_coordinate_version": "21.4.157",
+      "loader_metadata_status": "EXACT_RELEASE_LISTED"
+    },
+    {
+      "target_id": "1.21.3-fabric-0.19.5",
+      "minecraft_version": "1.21.3",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.21.3",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "1.21.3-fabric-0.19.5",
+      "loader_metadata_status": "FOUND_EXACT_PROFILE"
+    },
+    {
+      "target_id": "1.21.3-forge-53.1.12",
+      "minecraft_version": "1.21.3",
+      "loader": "forge",
+      "loader_version": "53.1.12",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.21.3",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "maven_forge",
+      "maven_coordinate_version": "1.21.3-53.1.12",
+      "loader_metadata_status": "EXACT_RELEASE_LISTED"
+    },
+    {
+      "target_id": "1.21.3-neoforge-21.3.97",
+      "minecraft_version": "1.21.3",
+      "loader": "neoforge",
+      "loader_version": "21.3.97",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.21.3",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "maven_neoforge",
+      "maven_coordinate_version": "21.3.97",
+      "loader_metadata_status": "EXACT_RELEASE_LISTED"
+    },
+    {
+      "target_id": "1.21.2-fabric-0.19.5",
+      "minecraft_version": "1.21.2",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.21.2",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "1.21.2-fabric-0.19.5",
+      "loader_metadata_status": "FOUND_EXACT_PROFILE"
+    },
+    {
+      "target_id": "1.21.2-neoforge-21.2.1-beta",
+      "minecraft_version": "1.21.2",
+      "loader": "neoforge",
+      "loader_version": "21.2.1-beta",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.21.2",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "maven_neoforge",
+      "maven_coordinate_version": "21.2.1-beta",
+      "loader_metadata_status": "EXACT_RELEASE_LISTED"
+    },
+    {
+      "target_id": "1.21.1-fabric-0.19.5",
+      "minecraft_version": "1.21.1",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.21.1",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "1.21.1-fabric-0.19.5",
+      "loader_metadata_status": "FOUND_EXACT_PROFILE"
+    },
+    {
+      "target_id": "1.21.1-forge-52.1.16",
+      "minecraft_version": "1.21.1",
+      "loader": "forge",
+      "loader_version": "52.1.16",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.21.1",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "maven_forge",
+      "maven_coordinate_version": "1.21.1-52.1.16",
+      "loader_metadata_status": "EXACT_RELEASE_LISTED"
+    },
+    {
+      "target_id": "1.21.1-neoforge-21.1.250",
+      "minecraft_version": "1.21.1",
+      "loader": "neoforge",
+      "loader_version": "21.1.250",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.21.1",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "maven_neoforge",
+      "maven_coordinate_version": "21.1.250",
+      "loader_metadata_status": "EXACT_RELEASE_LISTED"
+    },
+    {
+      "target_id": "1.21-fabric-0.19.5",
+      "minecraft_version": "1.21",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.21",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "1.21-fabric-0.19.5",
+      "loader_metadata_status": "FOUND_EXACT_PROFILE"
+    },
+    {
+      "target_id": "1.21-forge-51.0.33",
+      "minecraft_version": "1.21",
+      "loader": "forge",
+      "loader_version": "51.0.33",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.21",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "maven_forge",
+      "maven_coordinate_version": "1.21-51.0.33",
+      "loader_metadata_status": "EXACT_RELEASE_LISTED"
+    },
+    {
+      "target_id": "1.21-neoforge-21.0.167",
+      "minecraft_version": "1.21",
+      "loader": "neoforge",
+      "loader_version": "21.0.167",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.21",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "maven_neoforge",
+      "maven_coordinate_version": "21.0.167",
+      "loader_metadata_status": "EXACT_RELEASE_LISTED"
+    },
+    {
+      "target_id": "1.20.4-fabric-0.19.5",
+      "minecraft_version": "1.20.4",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "source_runtime": "java21",
+      "source_support_label": "testing",
+      "minecraft_metadata_ref": "1.20.4",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "1.20.4-fabric-0.19.5",
+      "loader_metadata_status": "FOUND_EXACT_PROFILE"
+    },
+    {
+      "target_id": "1.20.4-neoforge-20.4.237",
+      "minecraft_version": "1.20.4",
+      "loader": "neoforge",
+      "loader_version": "20.4.237",
+      "source_runtime": "java17",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.20.4",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "maven_neoforge",
+      "maven_coordinate_version": "20.4.237",
+      "loader_metadata_status": "EXACT_RELEASE_LISTED"
+    },
+    {
+      "target_id": "1.20.1-fabric-0.19.5",
+      "minecraft_version": "1.20.1",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "source_runtime": "java21",
+      "source_support_label": "testing",
+      "minecraft_metadata_ref": "1.20.1",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "1.20.1-fabric-0.19.5",
+      "loader_metadata_status": "FOUND_EXACT_PROFILE"
+    },
+    {
+      "target_id": "1.20.1-forge-47.4.20",
+      "minecraft_version": "1.20.1",
+      "loader": "forge",
+      "loader_version": "47.4.20",
+      "source_runtime": "java21",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.20.1",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "maven_forge",
+      "maven_coordinate_version": "1.20.1-47.4.20",
+      "loader_metadata_status": "EXACT_RELEASE_LISTED"
+    },
+    {
+      "target_id": "1.19.2-fabric-0.14.25",
+      "minecraft_version": "1.19.2",
+      "loader": "fabric",
+      "loader_version": "0.14.25",
+      "source_runtime": "java21",
+      "source_support_label": "testing",
+      "minecraft_metadata_ref": "1.19.2",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "1.19.2-fabric-0.14.25",
+      "loader_metadata_status": "FOUND_EXACT_PROFILE"
+    },
+    {
+      "target_id": "1.18.2-forge-40.2.27",
+      "minecraft_version": "1.18.2",
+      "loader": "forge",
+      "loader_version": "40.2.27",
+      "source_runtime": "java17",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.18.2",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "maven_forge",
+      "maven_coordinate_version": "1.18.2-40.2.27",
+      "loader_metadata_status": "EXACT_RELEASE_LISTED"
+    },
+    {
+      "target_id": "1.16.5-fabric-0.14.25",
+      "minecraft_version": "1.16.5",
+      "loader": "fabric",
+      "loader_version": "0.14.25",
+      "source_runtime": "java21",
+      "source_support_label": "testing",
+      "minecraft_metadata_ref": "1.16.5",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "1.16.5-fabric-0.14.25",
+      "loader_metadata_status": "FOUND_EXACT_PROFILE"
+    },
+    {
+      "target_id": "1.12.2-forge-selected",
+      "minecraft_version": "1.12.2",
+      "loader": "forge",
+      "loader_version": "selected",
+      "source_runtime": "legacy",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.12.2",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_ref": "maven_forge",
+      "maven_coordinate_version": "selected",
+      "loader_metadata_status": "UNRESOLVED_SOURCE_LOADER_VERSION",
+      "source_provider_status": "UNSUPPORTED_PROVIDER_IN_APPROVED_SOURCE"
+    },
+    {
+      "target_id": "1.12.2-vanilla-none",
+      "minecraft_version": "1.12.2",
+      "loader": "vanilla",
+      "loader_version": "none",
+      "source_runtime": "legacy",
+      "source_support_label": "experimental",
+      "minecraft_metadata_ref": "1.12.2",
+      "minecraft_metadata_status": "FOUND_HASH_VERIFIED_METADATA",
+      "new_runtime_test_status": "BLOCKED",
+      "loader_metadata_status": "NOT_APPLICABLE_VANILLA",
+      "source_provider_status": "UNSUPPORTED_PROVIDER_IN_APPROVED_SOURCE"
+    }
+  ],
+  "limitations": [
+    "Metadata/index observations only; all runtime outcomes BLOCKED.",
+    "Client/asset hashes and sizes are upstream descriptors; binary content was not downloaded or validated.",
+    "Maven version presence does not resolve installer contents, processors, output hashes, classpaths or Xbox support.",
+    "NOT_LISTED means absent from this returned index, not proof a release never existed.",
+    "HTTP_FAILURE/NETWORK_UNKNOWN are distinct from absence and unresolved loader identity.",
+    "Declared Java requirement is not measured package runtime/JNI compatibility.",
+    "Public metadata does not authenticate archived Legacy Launcher or reconstruct historical events."
+  ]
+}

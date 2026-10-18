@@ -1,0 +1,62 @@
+{
+  "schema": "legacyforge-phase6a-test-receipt-v1",
+  "test_id": "X01",
+  "status": "BLOCKED",
+  "reason": "Approved isolated environment or console/package evidence unavailable",
+  "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+  "environment": {
+    "type": null,
+    "os_build": null,
+    "console_model": null,
+    "debugger_attached": null,
+    "network_mode": null,
+    "isolation_type": null,
+    "isolation_approved": false
+  },
+  "artifacts": {
+    "appx_sha256": null,
+    "launcher_sha256": null,
+    "jvm_sha256": null,
+    "glfw_sha256": null,
+    "mesa_sha256": null,
+    "manifest_sha256": null,
+    "installer_sha256": null,
+    "valid_publisher_fixture_sha256": null,
+    "native_inventory_sha256": null,
+    "graphics_provider_sha256": null,
+    "loader_inventory_sha256": null
+  },
+  "target": {
+    "minecraft_version": null,
+    "loader": null,
+    "loader_version": null,
+    "runtime_id": null,
+    "java_major": null,
+    "jni_requested": null,
+    "jni_accepted": null
+  },
+  "observation": {
+    "exit_or_hresult": null,
+    "duration_ms": null,
+    "memory_peak_bytes": null,
+    "checked_files": null,
+    "reused_files": null,
+    "downloaded_files": null,
+    "hash_failures": null,
+    "graphics_version": null,
+    "presented_frames": null,
+    "symptom": null
+  },
+  "constraints": [
+    "No credentials, tokens, device codes, account identifiers or raw authenticated URLs",
+    "PASS requires actual evidence; use FAILED/BLOCKED/INCONCLUSIVE appropriately"
+  ],
+  "evidence": {
+    "kind": null,
+    "observed_at_utc": null,
+    "observer_role": null,
+    "criteria_results": {},
+    "attachments": [],
+    "prerequisite_receipts": []
+  }
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "path": "analysis-local/add_metadata_evidence.py",
+    "sha256": "c9c4fcddf35e972ee2fbf6c17ef47a9e4dd7784381a076cd1e7aee36cfd170d5"
+  },
+  {
+    "path": "analysis-local/continue_reports.py",
+    "sha256": "bfefdf38cf7271dcc25a0811d706ca72f21ebfbf79d7f6e4277cf9fdaeae2d76"
+  },
+  {
+    "path": "analysis-local/extended_static.py",
+    "sha256": "b7f24a0f91e981c23a8cb73084610fdcd0f313b38fc4ef84f28d02d46b49c222"
+  },
+  {
+    "path": "analysis-local/final-audit/completion/check_catalog_metadata.py",
+    "sha256": "e3a7cabb070f523e40bc0894da0d41886d4302af5c7bd70f16081fafa83bdc99"
+  },
+  {
+    "path": "analysis-local/final-audit/completion/compare_catalog_runtimes.py",
+    "sha256": "cdf6dfb6e497108f7d470d3206a0ea3d13ff159905e9f31dbbb53e947c7202c9"
+  },
+  {
+    "path": "analysis-local/final-audit/completion/validator_control_checks.py",
+    "sha256": "d9757fb721221a4e46e4cc694f327741abf917a36f65acf8accbb98ddee58db6"
+  },
+  {
+    "path": "analysis-local/final-audit/finalize_publication.py",
+    "sha256": "122a1551475df662e204ecfd4e56ad73a168be85fec372b69505fc4108cc4a13"
+  },
+  {
+    "path": "analysis-local/final-audit/history/collect_history.py",
+    "sha256": "dea8e40c6936d1f81f131f6dadc82e41b709fabc16fb645dc59e842137ed5204"
+  },
+  {
+    "path": "analysis-local/final-audit/history/summarize_history.py",
+    "sha256": "5fd6be18ace0047926fe492911dd9a8777138e72d0fb7adfa6695f5fb8bea607"
+  },
+  {
+    "path": "analysis-local/final-audit/history/validate_history.py",
+    "sha256": "8218afe86f8d90cefad335250000173a2425b6f026c4b4ec7a5f598b93957ae8"
+  },
+  {
+    "path": "analysis-local/final-audit/signed-update/check_fixture.py",
+    "sha256": "b145a4ce8f71a25526aa71e6da540300292ec84f5d62cba90cd4714f79bc2034"
+  },
+  {
+    "path": "analysis-local/final-audit/update_acceptance.py",
+    "sha256": "4aadbdb2bc62aef42cdedbc9b30f4a213d08559a8ea44b3a508d4c8f8278d34e"
+  },
+  {
+    "path": "analysis-local/finalize_continuation.py",
+    "sha256": "30a5b8e8847f1188bdece9d5e06cc5bc98771d3dd858d46c7694e313203069a4"
+  },
+  {
+    "path": "analysis-local/installer_payload.py",
+    "sha256": "9df40731629e3db2482547414622cd9ec6aae8c49bc60e76114c4d841b634cb1"
+  },
+  {
+    "path": "analysis-local/installer_static.py",
+    "sha256": "d97a159c6f4a36d935926cd5c36471bd4739d91727883c10c1f343f373719c65"
+  },
+  {
+    "path": "analysis-local/jar-static/continuation/analyze.py",
+    "sha256": "1d572335b57596cafcfce878443074c8df9524e3ac66bec27df5f52f89107ccb"
+  },
+  {
+    "path": "analysis-local/jar-static/continuation/query.py",
+    "sha256": "1f6feb0e2560979693df179a8791117a79ed2f800765039cc3a9fcca3f2ffad3"
+  },
+  {
+    "path": "analysis-local/native_audit.py",
+    "sha256": "cb40a8af9318cfb48439d51e50c3b59a4be06d4b676543638be65cf310d786cd"
+  },
+  {
+    "path": "analysis-local/official_metadata_check.py",
+    "sha256": "d575df8b1528f7706584497d6f6ce5037dbbff1c17eeed56bf3b41579d675614"
+  },
+  {
+    "path": "analysis-local/query_extended.py",
+    "sha256": "47d32552a336e87fd8cc7298b251793b174c02a545f371327d6188dd7ba41ff3"
+  },
+  {
+    "path": "analysis-local/verify_static_decoders.py",
+    "sha256": "0286b2b80e55bdb4da8542b17f38709f3fd7e4a4efcc71e58f447b19a9f3fdb3"
+  },
+  {
+    "path": "analysis-local/wrapper_strings.py",
+    "sha256": "e270e2b040152e3753d0b82fdc4bfa74eacd964ee666f98ff2750facae2d8ec4"
+  },
+  {
+    "path": "docs/research/legacy-launcher/tests/probes/RuntimeProbe.java",
+    "sha256": "56a6250ddf494136c6214fab269966ec2c099b60642002a28becd543ec58ddfd"
+  },
+  {
+    "path": "docs/research/legacy-launcher/tools/verify-test-receipts.py",
+    "sha256": "8ae33dca3eb3b63742e977e972e6795183edaac6d2bfd55325c04b8783f2d255"
+  }
+]

@@ -1,0 +1,3811 @@
+{
+  "continuation_scan": {
+    "classes": 400,
+    "methods": 2170
+  },
+  "archive_and_installed_scan": {
+    "classes": 2296,
+    "methods": 14160
+  },
+  "artifact_identities": [
+    {
+      "role": "archived-launcher",
+      "bytes": 5441684,
+      "sha256": "5f1f1b8ef187c5fcea69830d4dec87c84447a6c134c314fe5a840340e4ee5e6c"
+    },
+    {
+      "role": "archived-bootstrap",
+      "bytes": 9612033,
+      "sha256": "df2d2516e905cdc87a68ec456f881664a5b158ba810934251d7b70a740679588"
+    },
+    {
+      "role": "installed-launcher",
+      "bytes": 5496812,
+      "sha256": "364b9add9a3b0e74e553439b3f0e33a573bb5d28667adc028180d509b0459eec"
+    }
+  ],
+  "selected_class_locations": [
+    {
+      "artifact": "installed-bootstrap-or-launcher",
+      "class": "net/legacylauncher/configuration/SimpleConfiguration",
+      "class_sha256": "17030dce52c8695bb597c8d413617c998a6bdfffa36a1eb19d38c4ce992b6644",
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "()V",
+          "bytecode_length": 16
+        },
+        {
+          "name": "<init>",
+          "descriptor": "(Ljava/io/InputStream;)V",
+          "bytecode_length": 18
+        },
+        {
+          "name": "<init>",
+          "descriptor": "(Ljava/io/File;)V",
+          "bytecode_length": 34
+        },
+        {
+          "name": "<init>",
+          "descriptor": "(Ljava/net/URL;)V",
+          "bytecode_length": 18
+        },
+        {
+          "name": "get",
+          "descriptor": "(Ljava/lang/String;)Ljava/lang/String;",
+          "bytecode_length": 13
+        },
+        {
+          "name": "getStringOf",
+          "descriptor": "(Ljava/lang/Object;)Ljava/lang/String;",
+          "bytecode_length": 25
+        },
+        {
+          "name": "set",
+          "descriptor": "(Ljava/lang/String;Ljava/lang/Object;Z)V",
+          "bytecode_length": 57
+        },
+        {
+          "name": "set",
+          "descriptor": "(Ljava/lang/String;Ljava/lang/Object;)V",
+          "bytecode_length": 8
+        },
+        {
+          "name": "set",
+          "descriptor": "(Ljava/util/Map;Z)V",
+          "bytecode_length": 105
+        },
+        {
+          "name": "set",
+          "descriptor": "(Ljava/util/Map;)V",
+          "bytecode_length": 7
+        },
+        {
+          "name": "getKeys",
+          "descriptor": "()Ljava/util/Set;",
+          "bytecode_length": 57
+        },
+        {
+          "name": "getDefault",
+          "descriptor": "(Ljava/lang/String;)Ljava/lang/String;",
+          "bytecode_length": 2
+        },
+        {
+          "name": "getInteger",
+          "descriptor": "(Ljava/lang/String;I)I",
+          "bytecode_length": 11
+        },
+        {
+          "name": "getInteger",
+          "descriptor": "(Ljava/lang/String;)I",
+          "bytecode_length": 7
+        },
+        {
+          "name": "getIntegerOf",
+          "descriptor": "(Ljava/lang/Object;I)I",
+          "bytecode_length": 11
+        },
+        {
+          "name": "getDouble",
+          "descriptor": "(Ljava/lang/String;)D",
+          "bytecode_length": 11
+        },
+        {
+          "name": "getDoubleOf",
+          "descriptor": "(Ljava/lang/Object;D)D",
+          "bytecode_length": 12
+        },
+        {
+          "name": "getFloat",
+          "descriptor": "(Ljava/lang/String;)F",
+          "bytecode_length": 11
+        },
+        {
+          "name": "getFloatOf",
+          "descriptor": "(Ljava/lang/Object;F)F",
+          "bytecode_length": 11
+        },
+        {
+          "name": "getLong",
+          "descriptor": "(Ljava/lang/String;)J",
+          "bytecode_length": 11
+        },
+        {
+          "name": "getLongOf",
+          "descriptor": "(Ljava/lang/Object;J)J",
+          "bytecode_length": 12
+        },
+        {
+          "name": "getBoolean",
+          "descriptor": "(Ljava/lang/String;)Z",
+          "bytecode_length": 11
+        },
+        {
+          "name": "getBooleanOf",
+          "descriptor": "(Ljava/lang/Object;Z)Z",
+          "bytecode_length": 11
+        },
+        {
+          "name": "getDefaultInteger",
+          "descriptor": "(Ljava/lang/String;)I",
+          "bytecode_length": 2
+        },
+        {
+          "name": "getDefaultDouble",
+          "descriptor": "(Ljava/lang/String;)D",
+          "bytecode_length": 2
+        },
+        {
+          "name": "getDefaultFloat",
+          "descriptor": "(Ljava/lang/String;)F",
+          "bytecode_length": 2
+        },
+        {
+          "name": "getDefaultLong",
+          "descriptor": "(Ljava/lang/String;)J",
+          "bytecode_length": 2
+        },
+        {
+          "name": "getDefaultBoolean",
+          "descriptor": "(Ljava/lang/String;)Z",
+          "bytecode_length": 2
+        },
+        {
+          "name": "save",
+          "descriptor": "()V",
+          "bytecode_length": 139
+        },
+        {
+          "name": "processSavingProperties",
+          "descriptor": "(Ljava/util/Properties;)Ljava/util/Properties;",
+          "bytecode_length": 2
+        },
+        {
+          "name": "store",
+          "descriptor": "()V",
+          "bytecode_length": 25
+        },
+        {
+          "name": "size",
+          "descriptor": "()I",
+          "bytecode_length": 8
+        },
+        {
+          "name": "isEmpty",
+          "descriptor": "()Z",
+          "bytecode_length": 8
+        },
+        {
+          "name": "containsKey",
+          "descriptor": "(Ljava/lang/Object;)Z",
+          "bytecode_length": 9
+        },
+        {
+          "name": "containsValue",
+          "descriptor": "(Ljava/lang/Object;)Z",
+          "bytecode_length": 9
+        },
+        {
+          "name": "get",
+          "descriptor": "(Ljava/lang/Object;)Ljava/lang/String;",
+          "bytecode_length": 9
+        },
+        {
+          "name": "put",
+          "descriptor": "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+          "bytecode_length": 8
+        },
+        {
+          "name": "remove",
+          "descriptor": "(Ljava/lang/Object;)Ljava/lang/String;",
+          "bytecode_length": 11
+        },
+        {
+          "name": "putAll",
+          "descriptor": "(Ljava/util/Map;)V",
+          "bytecode_length": 54
+        },
+        {
+          "name": "clear",
+          "descriptor": "()V",
+          "bytecode_length": 8
+        },
+        {
+          "name": "keySet",
+          "descriptor": "()Ljava/util/Set;",
+          "bytecode_length": 34
+        },
+        {
+          "name": "values",
+          "descriptor": "()Ljava/util/Collection;",
+          "bytecode_length": 34
+        },
+        {
+          "name": "entrySet",
+          "descriptor": "()Ljava/util/Set;",
+          "bytecode_length": 2
+        },
+        {
+          "name": "isSaveable",
+          "descriptor": "()Z",
+          "bytecode_length": 23
+        },
+        {
+          "name": "loadFromStream",
+          "descriptor": "(Ljava/util/Properties;Ljava/io/InputStream;)V",
+          "bytecode_length": 41
+        },
+        {
+          "name": "loadFromStream",
+          "descriptor": "(Ljava/io/InputStream;)Ljava/util/Properties;",
+          "bytecode_length": 15
+        },
+        {
+          "name": "loadFromFile",
+          "descriptor": "(Ljava/util/Properties;Ljava/io/File;)V",
+          "bytecode_length": 52
+        },
+        {
+          "name": "loadFromFile",
+          "descriptor": "(Ljava/io/File;)Ljava/util/Properties;",
+          "bytecode_length": 15
+        },
+        {
+          "name": "loadFromURL",
+          "descriptor": "(Ljava/util/Properties;Ljava/net/URL;)V",
+          "bytecode_length": 23
+        },
+        {
+          "name": "loadFromURL",
+          "descriptor": "(Ljava/net/URL;)Ljava/util/Properties;",
+          "bytecode_length": 15
+        },
+        {
+          "name": "copyProperties",
+          "descriptor": "(Ljava/util/Properties;Ljava/util/Properties;Z)V",
+          "bytecode_length": 133
+        },
+        {
+          "name": "copyProperties",
+          "descriptor": "(Ljava/util/Properties;)Ljava/util/Properties;",
+          "bytecode_length": 16
+        },
+        {
+          "name": "remove",
+          "descriptor": "(Ljava/lang/Object;)Ljava/lang/Object;",
+          "bytecode_length": 6
+        },
+        {
+          "name": "put",
+          "descriptor": "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;",
+          "bytecode_length": 13
+        },
+        {
+          "name": "get",
+          "descriptor": "(Ljava/lang/Object;)Ljava/lang/Object;",
+          "bytecode_length": 6
+        },
+        {
+          "name": "<clinit>",
+          "descriptor": "()V",
+          "bytecode_length": 9
+        }
+      ]
+    },
+    {
+      "artifact": "installed-bootstrap-or-launcher",
+      "class": "net/legacylauncher/managers/ProfileManager",
+      "class_sha256": "1acda227f6fb341291158374d13028e4159202d159eb167bac97c00e74618211",
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "(Lnet/legacylauncher/managers/ComponentManager;Ljava/io/File;)V",
+          "bytecode_length": 170
+        },
+        {
+          "name": "<init>",
+          "descriptor": "(Lnet/legacylauncher/managers/ComponentManager;)V",
+          "bytecode_length": 10
+        },
+        {
+          "name": "recreate",
+          "descriptor": "()V",
+          "bytecode_length": 17
+        },
+        {
+          "name": "refresh",
+          "descriptor": "()Z",
+          "bytecode_length": 58
+        },
+        {
+          "name": "loadProfiles",
+          "descriptor": "()V",
+          "bytecode_length": 569
+        },
+        {
+          "name": "saveProfiles",
+          "descriptor": "()V",
+          "bytecode_length": 142
+        },
+        {
+          "name": "getAccountManager",
+          "descriptor": "()Lnet/legacylauncher/managers/AccountManager;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getAuthDatabase",
+          "descriptor": "()Lnet/legacylauncher/minecraft/auth/AuthenticatorDatabase;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getFile",
+          "descriptor": "()Ljava/io/File;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "setFile",
+          "descriptor": "(Ljava/io/File;)V",
+          "bytecode_length": 57
+        },
+        {
+          "name": "addListener",
+          "descriptor": "(Lnet/legacylauncher/managers/ProfileManagerListener;)V",
+          "bytecode_length": 37
+        },
+        {
+          "name": "getDefaultFile",
+          "descriptor": "(Lnet/legacylauncher/managers/ComponentManager;)Ljava/io/File;",
+          "bytecode_length": 46
+        },
+        {
+          "name": "lambda$new$0",
+          "descriptor": "(Lnet/legacylauncher/user/UserSet;)V",
+          "bytecode_length": 78
+        },
+        {
+          "name": "<clinit>",
+          "descriptor": "()V",
+          "bytecode_length": 9
+        }
+      ]
+    },
+    {
+      "artifact": "installed-bootstrap-or-launcher",
+      "class": "net/legacylauncher/repository/RepositoryProxy",
+      "class_sha256": "fab5d84c7537634964c56cac3313daa64a0f4c5cddc23293f2fd234ffa2dcefa",
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "()V",
+          "bytecode_length": 5
+        },
+        {
+          "name": "canBeProxied",
+          "descriptor": "(Ljava/net/URL;)Z",
+          "bytecode_length": 20
+        },
+        {
+          "name": "requestMaybeProxy",
+          "descriptor": "(Ljava/lang/String;)Ljava/lang/String;",
+          "bytecode_length": 210
+        },
+        {
+          "name": "getProxyRepoList",
+          "descriptor": "()Lnet/legacylauncher/repository/RepositoryProxy$ProxyRepoList;",
+          "bytecode_length": 21
+        },
+        {
+          "name": "lambda$requestMaybeProxy$2",
+          "descriptor": "(Ljava/net/URL;Lnet/legacylauncher/repository/IRepo;)Ljava/net/URL;",
+          "bytecode_length": 9
+        },
+        {
+          "name": "lambda$requestMaybeProxy$1",
+          "descriptor": "(Lnet/legacylauncher/repository/IRepo;)Z",
+          "bytecode_length": 5
+        },
+        {
+          "name": "lambda$canBeProxied$0",
+          "descriptor": "(Ljava/net/URL;Ljava/lang/String;)Z",
+          "bytecode_length": 9
+        },
+        {
+          "name": "access$100",
+          "descriptor": "()Z",
+          "bytecode_length": 4
+        },
+        {
+          "name": "access$102",
+          "descriptor": "(Z)Z",
+          "bytecode_length": 6
+        },
+        {
+          "name": "<clinit>",
+          "descriptor": "()V",
+          "bytecode_length": 93
+        }
+      ]
+    },
+    {
+      "artifact": "installed-bootstrap-or-launcher",
+      "class": "net/legacylauncher/user/MinecraftUserJsonizer",
+      "class_sha256": "baf4fb62b3d071912ad3b3f857af6e615fa67e74d2fc2b35bba776ee33b77817",
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "()V",
+          "bytecode_length": 5
+        },
+        {
+          "name": "serialize",
+          "descriptor": "(Lnet/legacylauncher/user/MinecraftUser;Lcom/google/gson/JsonSerializationContext;)Lcom/google/gson/JsonObject;",
+          "bytecode_length": 18
+        },
+        {
+          "name": "deserialize",
+          "descriptor": "(Lcom/google/gson/JsonObject;Lcom/google/gson/JsonDeserializationContext;)Lnet/legacylauncher/user/MinecraftUser;",
+          "bytecode_length": 16
+        },
+        {
+          "name": "deserialize",
+          "descriptor": "(Lcom/google/gson/JsonObject;Lcom/google/gson/JsonDeserializationContext;)Lnet/legacylauncher/user/User;",
+          "bytecode_length": 7
+        },
+        {
+          "name": "serialize",
+          "descriptor": "(Lnet/legacylauncher/user/User;Lcom/google/gson/JsonSerializationContext;)Lcom/google/gson/JsonObject;",
+          "bytecode_length": 10
+        }
+      ]
+    },
+    {
+      "artifact": "installed-bootstrap-or-launcher",
+      "class": "net/legacylauncher/user/minecraft/MinecraftOAuthRefresh",
+      "class_sha256": "3fbfea6f47b37def7d681735c8c684465750d26a807da00fcde87a4d092ace66",
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "(Lnet/legacylauncher/user/minecraft/strategy/oatoken/refresh/MicrosoftOAuthTokenRefresher;Lnet/legacylauncher/user/minecraft/strategy/xb/auth/XboxLiveAuthenticator;Lnet/legacylauncher/user/minecraft/strategy/xb/xsts/XSTSAuthenticator;Lnet/legacylauncher/user/minecraft/strategy/mcsauth/MinecraftServicesAuthenticator;Lnet/legacylauncher/user/minecraft/strategy/gos/GameOwnershipValidator;Lnet/legacylauncher/user/minecraft/strategy/preq/MinecraftProfileRequester;Lnet/legacylauncher/user/minecraft/strategy/pconv/MinecraftProfileConverter;)V",
+          "bytecode_length": 44
+        },
+        {
+          "name": "refreshIfNeeded",
+          "descriptor": "(Lnet/legacylauncher/user/minecraft/strategy/oatoken/MicrosoftOAuthToken;Lnet/legacylauncher/user/minecraft/strategy/mcsauth/MinecraftServicesToken;)Lnet/legacylauncher/user/MinecraftUser;",
+          "bytecode_length": 31
+        },
+        {
+          "name": "refreshExplicitly",
+          "descriptor": "(Lnet/legacylauncher/user/minecraft/strategy/oatoken/MicrosoftOAuthToken;)Lnet/legacylauncher/user/MinecraftUser;",
+          "bytecode_length": 75
+        }
+      ]
+    },
+    {
+      "artifact": "installed-bootstrap-or-launcher",
+      "class": "net/legacylauncher/bootstrap/Updater",
+      "class_sha256": "bea852a9e00d1af800edfac6b2d198b42ad1d117922ceb23bf07139b12280fad",
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "(Ljava/lang/String;Ljava/nio/file/Path;Lnet/legacylauncher/bootstrap/meta/DownloadEntry;)V",
+          "bytecode_length": 58
+        },
+        {
+          "name": "restartOnFinish",
+          "descriptor": "(Ljava/util/List;)V",
+          "bytecode_length": 25
+        },
+        {
+          "name": "execute",
+          "descriptor": "()Ljava/lang/Void;",
+          "bytecode_length": 58
+        },
+        {
+          "name": "doUpdate",
+          "descriptor": "()V",
+          "bytecode_length": 165
+        },
+        {
+          "name": "showUIMessage",
+          "descriptor": "(Z)V",
+          "bytecode_length": 67
+        },
+        {
+          "name": "execute",
+          "descriptor": "()Ljava/lang/Object;",
+          "bytecode_length": 5
+        }
+      ]
+    },
+    {
+      "artifact": "installed-bootstrap-or-launcher",
+      "class": "net/legacylauncher/bootstrap/meta/UpdateMeta",
+      "class_sha256": "ccb5eb9dfd35ac9550596a2dcdc3be01ed675a25d3b501457dbdfbc117e99010",
+      "methods": [
+        {
+          "name": "fetchFor",
+          "descriptor": "(Ljava/lang/String;Lnet/legacylauncher/bootstrap/meta/UpdateMeta$ConnectionInterrupter;)Lnet/legacylauncher/bootstrap/task/Task;",
+          "bytecode_length": 19
+        },
+        {
+          "name": "readQueue",
+          "descriptor": "(Lnet/legacylauncher/connection/ConnectionQueue;ILcom/google/gson/Gson;J)Lnet/legacylauncher/bootstrap/meta/UpdateMeta;",
+          "bytecode_length": 388
+        },
+        {
+          "name": "createGson",
+          "descriptor": "(Ljava/lang/String;)Lcom/google/gson/Gson;",
+          "bytecode_length": 45
+        },
+        {
+          "name": "fetchFrom",
+          "descriptor": "(Lcom/google/gson/Gson;Ljava/io/InputStream;)Lnet/legacylauncher/bootstrap/meta/UpdateMeta;",
+          "bytecode_length": 137
+        },
+        {
+          "name": "fetchFrom",
+          "descriptor": "(Ljava/io/InputStream;Ljava/lang/String;)Lnet/legacylauncher/bootstrap/meta/UpdateMeta;",
+          "bytecode_length": 9
+        },
+        {
+          "name": "<init>",
+          "descriptor": "(Lnet/legacylauncher/bootstrap/meta/RemoteBootstrapMeta;Lnet/legacylauncher/bootstrap/meta/RemoteLauncherMeta;Lnet/legacylauncher/bootstrap/meta/RemoteLauncherMeta;Ljava/lang/String;)V",
+          "bytecode_length": 34
+        },
+        {
+          "name": "getLauncher",
+          "descriptor": "(Z)Lnet/legacylauncher/bootstrap/meta/RemoteLauncherMeta;",
+          "bytecode_length": 35
+        },
+        {
+          "name": "getBootstrap",
+          "descriptor": "()Lnet/legacylauncher/bootstrap/meta/RemoteBootstrapMeta;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getOptions",
+          "descriptor": "()Ljava/lang/String;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "lambda$readQueue$0",
+          "descriptor": "()Ljava/io/IOException;",
+          "bytecode_length": 11
+        },
+        {
+          "name": "access$000",
+          "descriptor": "()Lorg/slf4j/Logger;",
+          "bytecode_length": 4
+        },
+        {
+          "name": "access$100",
+          "descriptor": "(Ljava/lang/String;)Lcom/google/gson/Gson;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "access$200",
+          "descriptor": "(Lnet/legacylauncher/connection/ConnectionQueue;ILcom/google/gson/Gson;J)Lnet/legacylauncher/bootstrap/meta/UpdateMeta;",
+          "bytecode_length": 8
+        },
+        {
+          "name": "<clinit>",
+          "descriptor": "()V",
+          "bytecode_length": 12
+        }
+      ]
+    },
+    {
+      "artifact": "installed-bootstrap-or-launcher",
+      "class": "net/legacylauncher/bootstrap/task/DownloadTask",
+      "class_sha256": "4ae8041e3b605e0862db6ecefd069b0b4f732f8780d68a197767dc6090c5d91c",
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "(Ljava/lang/String;Ljava/util/List;Ljava/nio/file/Path;Ljava/lang/String;)V",
+          "bytecode_length": 56
+        },
+        {
+          "name": "<init>",
+          "descriptor": "(Ljava/lang/String;Ljava/net/URL;Ljava/nio/file/Path;Ljava/lang/String;)V",
+          "bytecode_length": 13
+        },
+        {
+          "name": "execute",
+          "descriptor": "()Ljava/lang/Void;",
+          "bytecode_length": 209
+        },
+        {
+          "name": "downloadUrl",
+          "descriptor": "(Ljava/net/URL;)V",
+          "bytecode_length": 590
+        },
+        {
+          "name": "execute",
+          "descriptor": "()Ljava/lang/Object;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "<clinit>",
+          "descriptor": "()V",
+          "bytecode_length": 9
+        }
+      ]
+    },
+    {
+      "artifact": "installed-bootstrap-or-launcher",
+      "class": "net/legacylauncher/bootstrap/transport/ChecksumStream",
+      "class_sha256": "cbf343e1d779d49edb05b5a5a61b8e5a0544f98dd64f4752b893dbddd896fea7",
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "(Ljava/io/InputStream;)V",
+          "bytecode_length": 30
+        },
+        {
+          "name": "digest",
+          "descriptor": "()[B",
+          "bytecode_length": 39
+        },
+        {
+          "name": "read",
+          "descriptor": "()I",
+          "bytecode_length": 24
+        },
+        {
+          "name": "read",
+          "descriptor": "([B)I",
+          "bytecode_length": 26
+        },
+        {
+          "name": "read",
+          "descriptor": "([BII)I",
+          "bytecode_length": 32
+        },
+        {
+          "name": "close",
+          "descriptor": "()V",
+          "bytecode_length": 16
+        }
+      ]
+    },
+    {
+      "artifact": "installed-bootstrap-or-launcher",
+      "class": "net/legacylauncher/bootstrap/transport/SignedStream",
+      "class_sha256": "612128aa31d747fd944c0b6bb382ca1090f79aeec43277d5429147d429e15955",
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "(Ljava/io/InputStream;)V",
+          "bytecode_length": 6
+        },
+        {
+          "name": "read",
+          "descriptor": "()I",
+          "bytecode_length": 21
+        },
+        {
+          "name": "read",
+          "descriptor": "([B)I",
+          "bytecode_length": 22
+        },
+        {
+          "name": "read",
+          "descriptor": "([BII)I",
+          "bytecode_length": 27
+        },
+        {
+          "name": "readSignature",
+          "descriptor": "()Z",
+          "bytecode_length": 65
+        },
+        {
+          "name": "validateSignature",
+          "descriptor": "()V",
+          "bytecode_length": 67
+        },
+        {
+          "name": "verify",
+          "descriptor": "([B[B)Z",
+          "bytecode_length": 50
+        },
+        {
+          "name": "<clinit>",
+          "descriptor": "()V",
+          "bytecode_length": 67
+        }
+      ]
+    },
+    {
+      "artifact": "archived-launcher",
+      "class": "net/minecraft/launcher/updater/ExtraVersionList",
+      "class_sha256": "6219fc861b409c67f019d9a66db1553e509bd3dd8f67c2445d31bc1b41bb9079",
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "()V",
+          "bytecode_length": 8
+        },
+        {
+          "name": "getCompleteVersion",
+          "descriptor": "(Lnet/minecraft/launcher/versions/Version;)Lnet/minecraft/launcher/versions/CompleteVersion;",
+          "bytecode_length": 144
+        }
+      ]
+    },
+    {
+      "artifact": "archived-launcher",
+      "class": "net/minecraft/launcher/updater/OfficialVersionList",
+      "class_sha256": "76bb110bb914d813f6a3cc002bc51ed0e8f20693615bb52d82e3b9a0af634351",
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "()V",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getRawList",
+          "descriptor": "()Lnet/minecraft/launcher/updater/RawVersionList;",
+          "bytecode_length": 331
+        },
+        {
+          "name": "process",
+          "descriptor": "(Lnet/minecraft/launcher/updater/RawVersionList;)Lnet/minecraft/launcher/updater/RawVersionList;",
+          "bytecode_length": 39
+        },
+        {
+          "name": "hasAllFiles",
+          "descriptor": "(Lnet/minecraft/launcher/versions/CompleteVersion;Lru/turikhay/util/OS;)Z",
+          "bytecode_length": 2
+        },
+        {
+          "name": "getUrl",
+          "descriptor": "(Ljava/lang/String;)Ljava/io/InputStreamReader;",
+          "bytecode_length": 26
+        },
+        {
+          "name": "lambda$getRawList$1",
+          "descriptor": "(Ljava/net/URL;Lru/turikhay/tlauncher/repository/IRepo;)Ljava/lang/String;",
+          "bytecode_length": 9
+        },
+        {
+          "name": "lambda$getRawList$0",
+          "descriptor": "(Lru/turikhay/tlauncher/repository/IRepo;)Z",
+          "bytecode_length": 5
+        },
+        {
+          "name": "<clinit>",
+          "descriptor": "()V",
+          "bytecode_length": 9
+        }
+      ]
+    },
+    {
+      "artifact": "archived-launcher",
+      "class": "net/minecraft/launcher/versions/CompleteVersion",
+      "class_sha256": "a9a616c53bb7f4ddb3db56bd030bb721311e9c55c261478d0d41f39ae8f3dd16",
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "()V",
+          "bytecode_length": 43
+        },
+        {
+          "name": "<init>",
+          "descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;Ljava/util/Date;Ljava/lang/Integer;Ljava/util/List;)V",
+          "bytecode_length": 94
+        },
+        {
+          "name": "getID",
+          "descriptor": "()Ljava/lang/String;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "setID",
+          "descriptor": "(Ljava/lang/String;)V",
+          "bytecode_length": 30
+        },
+        {
+          "name": "getUrl",
+          "descriptor": "()Ljava/lang/String;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getFamily",
+          "descriptor": "()Ljava/lang/String;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "setFamily",
+          "descriptor": "(Ljava/lang/String;)V",
+          "bytecode_length": 6
+        },
+        {
+          "name": "getReleaseType",
+          "descriptor": "()Lnet/minecraft/launcher/versions/ReleaseType;",
+          "bytecode_length": 8
+        },
+        {
+          "name": "getType",
+          "descriptor": "()Ljava/lang/String;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getSource",
+          "descriptor": "()Lru/turikhay/tlauncher/repository/Repository;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "setSource",
+          "descriptor": "(Lru/turikhay/tlauncher/repository/Repository;)V",
+          "bytecode_length": 18
+        },
+        {
+          "name": "getUpdatedTime",
+          "descriptor": "()Ljava/util/Date;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "setUpdatedTime",
+          "descriptor": "(Ljava/util/Date;)V",
+          "bytecode_length": 20
+        },
+        {
+          "name": "getReleaseTime",
+          "descriptor": "()Ljava/util/Date;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getVersionList",
+          "descriptor": "()Lnet/minecraft/launcher/updater/VersionList;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "setVersionList",
+          "descriptor": "(Lnet/minecraft/launcher/updater/VersionList;)V",
+          "bytecode_length": 20
+        },
+        {
+          "name": "getModpackType",
+          "descriptor": "()Lnet/minecraft/launcher/versions/ModpackType;",
+          "bytecode_length": 33
+        },
+        {
+          "name": "getJavaVersion",
+          "descriptor": "()Lnet/minecraft/launcher/versions/CompleteVersion$JavaVersion;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getJar",
+          "descriptor": "()Ljava/lang/String;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getInheritsFrom",
+          "descriptor": "()Ljava/lang/String;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getJVMArguments",
+          "descriptor": "()Ljava/lang/String;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getMinecraftArguments",
+          "descriptor": "()Ljava/lang/String;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "setMinecraftArguments",
+          "descriptor": "(Ljava/lang/String;)V",
+          "bytecode_length": 6
+        },
+        {
+          "name": "getMainClass",
+          "descriptor": "()Ljava/lang/String;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "setMainClass",
+          "descriptor": "(Ljava/lang/String;)V",
+          "bytecode_length": 6
+        },
+        {
+          "name": "getLibraries",
+          "descriptor": "()Ljava/util/List;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getRules",
+          "descriptor": "()Ljava/util/List;",
+          "bytecode_length": 8
+        },
+        {
+          "name": "getDeleteEntries",
+          "descriptor": "()Ljava/util/List;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getMinimumLauncherVersion",
+          "descriptor": "()I",
+          "bytecode_length": 8
+        },
+        {
+          "name": "getMinimumCustomLauncherVersion",
+          "descriptor": "()I",
+          "bytecode_length": 8
+        },
+        {
+          "name": "getAssetIndex",
+          "descriptor": "()Lnet/minecraft/launcher/updater/AssetIndexInfo;",
+          "bytecode_length": 50
+        },
+        {
+          "name": "getDownloadURL",
+          "descriptor": "(Ljava/lang/String;)Lnet/minecraft/launcher/updater/DownloadInfo;",
+          "bytecode_length": 14
+        },
+        {
+          "name": "isProceededFor",
+          "descriptor": "(Ljava/lang/String;)Z",
+          "bytecode_length": 11
+        },
+        {
+          "name": "setProceededFor",
+          "descriptor": "(Ljava/lang/String;)V",
+          "bytecode_length": 12
+        },
+        {
+          "name": "equals",
+          "descriptor": "(Ljava/lang/Object;)Z",
+          "bytecode_length": 71
+        },
+        {
+          "name": "toString",
+          "descriptor": "()Ljava/lang/String;",
+          "bytecode_length": 28
+        },
+        {
+          "name": "debugString",
+          "descriptor": "()Ljava/lang/String;",
+          "bytecode_length": 153
+        },
+        {
+          "name": "getFile",
+          "descriptor": "(Ljava/io/File;)Ljava/io/File;",
+          "bytecode_length": 51
+        },
+        {
+          "name": "appliesToCurrentEnvironment",
+          "descriptor": "(Lnet/minecraft/launcher/versions/Rule$FeatureMatcher;)Z",
+          "bytecode_length": 58
+        },
+        {
+          "name": "getRelevantLibraries",
+          "descriptor": "(Lnet/minecraft/launcher/versions/Rule$FeatureMatcher;)Ljava/util/Collection;",
+          "bytecode_length": 59
+        },
+        {
+          "name": "streamLibraries",
+          "descriptor": "(Lnet/minecraft/launcher/versions/LibraryType;Lnet/minecraft/launcher/versions/Rule$FeatureMatcher;)Ljava/util/stream/Stream;",
+          "bytecode_length": 22
+        },
+        {
+          "name": "getClassPath",
+          "descriptor": "(Lru/turikhay/util/OS;Lnet/minecraft/launcher/versions/Rule$FeatureMatcher;Ljava/io/File;)Ljava/util/Collection;",
+          "bytecode_length": 58
+        },
+        {
+          "name": "getJarFile",
+          "descriptor": "(Ljava/io/File;)Ljava/io/File;",
+          "bytecode_length": 51
+        },
+        {
+          "name": "getMods",
+          "descriptor": "(Lnet/minecraft/launcher/versions/Rule$FeatureMatcher;)Ljava/util/List;",
+          "bytecode_length": 20
+        },
+        {
+          "name": "getTransformers",
+          "descriptor": "(Lnet/minecraft/launcher/versions/Rule$FeatureMatcher;)Ljava/util/List;",
+          "bytecode_length": 20
+        },
+        {
+          "name": "getClassPath",
+          "descriptor": "(Lnet/minecraft/launcher/versions/Rule$FeatureMatcher;Ljava/io/File;)Ljava/util/Collection;",
+          "bytecode_length": 10
+        },
+        {
+          "name": "getNatives",
+          "descriptor": "(Lru/turikhay/util/OS;Lnet/minecraft/launcher/versions/Rule$FeatureMatcher;)Ljava/util/Collection;",
+          "bytecode_length": 115
+        },
+        {
+          "name": "getNatives",
+          "descriptor": "(Lnet/minecraft/launcher/versions/Rule$FeatureMatcher;)Ljava/util/Collection;",
+          "bytecode_length": 9
+        },
+        {
+          "name": "getRequiredFiles",
+          "descriptor": "(Lru/turikhay/util/OS;Lnet/minecraft/launcher/versions/Rule$FeatureMatcher;)Ljava/util/Set;",
+          "bytecode_length": 139
+        },
+        {
+          "name": "getExtractFiles",
+          "descriptor": "(Lru/turikhay/util/OS;Lnet/minecraft/launcher/versions/Rule$FeatureMatcher;)Ljava/util/Collection;",
+          "bytecode_length": 54
+        },
+        {
+          "name": "resolve",
+          "descriptor": "(Lru/turikhay/tlauncher/managers/VersionManager;Z)Lnet/minecraft/launcher/versions/CompleteVersion;",
+          "bytecode_length": 14
+        },
+        {
+          "name": "resolveFamily",
+          "descriptor": "(Ljava/lang/String;)V",
+          "bytecode_length": 136
+        },
+        {
+          "name": "resolve",
+          "descriptor": "(Lru/turikhay/tlauncher/managers/VersionManager;ZLjava/util/List;)Lnet/minecraft/launcher/versions/CompleteVersion;",
+          "bytecode_length": 276
+        },
+        {
+          "name": "copyInto",
+          "descriptor": "(Lnet/minecraft/launcher/versions/CompleteVersion;)Lnet/minecraft/launcher/versions/CompleteVersion;",
+          "bytecode_length": 598
+        },
+        {
+          "name": "createFeatureMatcher",
+          "descriptor": "()Lnet/minecraft/launcher/versions/Rule$FeatureMatcher;",
+          "bytecode_length": 8
+        },
+        {
+          "name": "hasModernArguments",
+          "descriptor": "()Z",
+          "bytecode_length": 13
+        },
+        {
+          "name": "addArguments",
+          "descriptor": "(Lnet/minecraft/launcher/versions/ArgumentType;Lnet/minecraft/launcher/versions/Rule$FeatureMatcher;Lorg/apache/commons/lang3/text/StrSubstitutor;)Ljava/util/List;",
+          "bytecode_length": 453
+        },
+        {
+          "name": "getLogging",
+          "descriptor": "()Ljava/util/Map;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "validate",
+          "descriptor": "()V",
+          "bytecode_length": 59
+        },
+        {
+          "name": "getFamilyOf",
+          "descriptor": "(Ljava/lang/String;)Ljava/lang/String;",
+          "bytecode_length": 28
+        },
+        {
+          "name": "clone",
+          "descriptor": "()Lnet/minecraft/launcher/versions/CompleteVersion;",
+          "bytecode_length": 116
+        },
+        {
+          "name": "clone",
+          "descriptor": "()Ljava/lang/Object;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "lambda$copyInto$6",
+          "descriptor": "(Lnet/minecraft/launcher/versions/ArgumentType;)Ljava/util/List;",
+          "bytecode_length": 8
+        },
+        {
+          "name": "lambda$getExtractFiles$5",
+          "descriptor": "(Lru/turikhay/util/OS;Lnet/minecraft/launcher/versions/Library;)Ljava/lang/String;",
+          "bytecode_length": 37
+        },
+        {
+          "name": "lambda$getExtractFiles$4",
+          "descriptor": "(Lru/turikhay/util/OS;Lnet/minecraft/launcher/versions/Library;)Z",
+          "bytecode_length": 11
+        },
+        {
+          "name": "lambda$getExtractFiles$3",
+          "descriptor": "(Lnet/minecraft/launcher/versions/Library;)Z",
+          "bytecode_length": 13
+        },
+        {
+          "name": "lambda$getClassPath$2",
+          "descriptor": "(Ljava/io/File;Lnet/minecraft/launcher/versions/Library;)Ljava/io/File;",
+          "bytecode_length": 32
+        },
+        {
+          "name": "lambda$getClassPath$1",
+          "descriptor": "(Lnet/minecraft/launcher/versions/Library;)Z",
+          "bytecode_length": 13
+        },
+        {
+          "name": "lambda$streamLibraries$0",
+          "descriptor": "(Lnet/minecraft/launcher/versions/LibraryType;Lnet/minecraft/launcher/versions/Library;)Z",
+          "bytecode_length": 14
+        },
+        {
+          "name": "<clinit>",
+          "descriptor": "()V",
+          "bytecode_length": 16
+        }
+      ]
+    },
+    {
+      "artifact": "archived-launcher",
+      "class": "ru/turikhay/tlauncher/configuration/SimpleConfiguration",
+      "class_sha256": "8c7142fc1bc953de1aa9334c22152950a5c9ba731a782be8373f73f522e108a6",
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "()V",
+          "bytecode_length": 16
+        },
+        {
+          "name": "<init>",
+          "descriptor": "(Ljava/io/InputStream;)V",
+          "bytecode_length": 18
+        },
+        {
+          "name": "<init>",
+          "descriptor": "(Ljava/io/File;)V",
+          "bytecode_length": 34
+        },
+        {
+          "name": "<init>",
+          "descriptor": "(Ljava/net/URL;)V",
+          "bytecode_length": 18
+        },
+        {
+          "name": "get",
+          "descriptor": "(Ljava/lang/String;)Ljava/lang/String;",
+          "bytecode_length": 13
+        },
+        {
+          "name": "getStringOf",
+          "descriptor": "(Ljava/lang/Object;)Ljava/lang/String;",
+          "bytecode_length": 25
+        },
+        {
+          "name": "set",
+          "descriptor": "(Ljava/lang/String;Ljava/lang/Object;Z)V",
+          "bytecode_length": 57
+        },
+        {
+          "name": "set",
+          "descriptor": "(Ljava/lang/String;Ljava/lang/Object;)V",
+          "bytecode_length": 8
+        },
+        {
+          "name": "set",
+          "descriptor": "(Ljava/util/Map;Z)V",
+          "bytecode_length": 105
+        },
+        {
+          "name": "set",
+          "descriptor": "(Ljava/util/Map;)V",
+          "bytecode_length": 7
+        },
+        {
+          "name": "getKeys",
+          "descriptor": "()Ljava/util/Set;",
+          "bytecode_length": 57
+        },
+        {
+          "name": "getDefault",
+          "descriptor": "(Ljava/lang/String;)Ljava/lang/String;",
+          "bytecode_length": 2
+        },
+        {
+          "name": "getInteger",
+          "descriptor": "(Ljava/lang/String;I)I",
+          "bytecode_length": 11
+        },
+        {
+          "name": "getInteger",
+          "descriptor": "(Ljava/lang/String;)I",
+          "bytecode_length": 7
+        },
+        {
+          "name": "getIntegerOf",
+          "descriptor": "(Ljava/lang/Object;I)I",
+          "bytecode_length": 11
+        },
+        {
+          "name": "getDouble",
+          "descriptor": "(Ljava/lang/String;)D",
+          "bytecode_length": 11
+        },
+        {
+          "name": "getDoubleOf",
+          "descriptor": "(Ljava/lang/Object;D)D",
+          "bytecode_length": 12
+        },
+        {
+          "name": "getFloat",
+          "descriptor": "(Ljava/lang/String;)F",
+          "bytecode_length": 11
+        },
+        {
+          "name": "getFloatOf",
+          "descriptor": "(Ljava/lang/Object;F)F",
+          "bytecode_length": 11
+        },
+        {
+          "name": "getLong",
+          "descriptor": "(Ljava/lang/String;)J",
+          "bytecode_length": 11
+        },
+        {
+          "name": "getLongOf",
+          "descriptor": "(Ljava/lang/Object;J)J",
+          "bytecode_length": 12
+        },
+        {
+          "name": "getBoolean",
+          "descriptor": "(Ljava/lang/String;)Z",
+          "bytecode_length": 11
+        },
+        {
+          "name": "getBooleanOf",
+          "descriptor": "(Ljava/lang/Object;Z)Z",
+          "bytecode_length": 11
+        },
+        {
+          "name": "getDefaultInteger",
+          "descriptor": "(Ljava/lang/String;)I",
+          "bytecode_length": 2
+        },
+        {
+          "name": "getDefaultDouble",
+          "descriptor": "(Ljava/lang/String;)D",
+          "bytecode_length": 2
+        },
+        {
+          "name": "getDefaultFloat",
+          "descriptor": "(Ljava/lang/String;)F",
+          "bytecode_length": 2
+        },
+        {
+          "name": "getDefaultLong",
+          "descriptor": "(Ljava/lang/String;)J",
+          "bytecode_length": 2
+        },
+        {
+          "name": "getDefaultBoolean",
+          "descriptor": "(Ljava/lang/String;)Z",
+          "bytecode_length": 2
+        },
+        {
+          "name": "save",
+          "descriptor": "()V",
+          "bytecode_length": 139
+        },
+        {
+          "name": "processSavingProperties",
+          "descriptor": "(Ljava/util/Properties;)Ljava/util/Properties;",
+          "bytecode_length": 2
+        },
+        {
+          "name": "store",
+          "descriptor": "()V",
+          "bytecode_length": 25
+        },
+        {
+          "name": "size",
+          "descriptor": "()I",
+          "bytecode_length": 8
+        },
+        {
+          "name": "isEmpty",
+          "descriptor": "()Z",
+          "bytecode_length": 8
+        },
+        {
+          "name": "containsKey",
+          "descriptor": "(Ljava/lang/Object;)Z",
+          "bytecode_length": 9
+        },
+        {
+          "name": "containsValue",
+          "descriptor": "(Ljava/lang/Object;)Z",
+          "bytecode_length": 9
+        },
+        {
+          "name": "get",
+          "descriptor": "(Ljava/lang/Object;)Ljava/lang/String;",
+          "bytecode_length": 9
+        },
+        {
+          "name": "put",
+          "descriptor": "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+          "bytecode_length": 8
+        },
+        {
+          "name": "remove",
+          "descriptor": "(Ljava/lang/Object;)Ljava/lang/String;",
+          "bytecode_length": 11
+        },
+        {
+          "name": "putAll",
+          "descriptor": "(Ljava/util/Map;)V",
+          "bytecode_length": 54
+        },
+        {
+          "name": "clear",
+          "descriptor": "()V",
+          "bytecode_length": 8
+        },
+        {
+          "name": "keySet",
+          "descriptor": "()Ljava/util/Set;",
+          "bytecode_length": 34
+        },
+        {
+          "name": "values",
+          "descriptor": "()Ljava/util/Collection;",
+          "bytecode_length": 34
+        },
+        {
+          "name": "entrySet",
+          "descriptor": "()Ljava/util/Set;",
+          "bytecode_length": 2
+        },
+        {
+          "name": "isSaveable",
+          "descriptor": "()Z",
+          "bytecode_length": 23
+        },
+        {
+          "name": "loadFromStream",
+          "descriptor": "(Ljava/util/Properties;Ljava/io/InputStream;)V",
+          "bytecode_length": 41
+        },
+        {
+          "name": "loadFromStream",
+          "descriptor": "(Ljava/io/InputStream;)Ljava/util/Properties;",
+          "bytecode_length": 15
+        },
+        {
+          "name": "loadFromFile",
+          "descriptor": "(Ljava/util/Properties;Ljava/io/File;)V",
+          "bytecode_length": 52
+        },
+        {
+          "name": "loadFromFile",
+          "descriptor": "(Ljava/io/File;)Ljava/util/Properties;",
+          "bytecode_length": 15
+        },
+        {
+          "name": "loadFromURL",
+          "descriptor": "(Ljava/util/Properties;Ljava/net/URL;)V",
+          "bytecode_length": 23
+        },
+        {
+          "name": "loadFromURL",
+          "descriptor": "(Ljava/net/URL;)Ljava/util/Properties;",
+          "bytecode_length": 15
+        },
+        {
+          "name": "copyProperties",
+          "descriptor": "(Ljava/util/Properties;Ljava/util/Properties;Z)V",
+          "bytecode_length": 133
+        },
+        {
+          "name": "copyProperties",
+          "descriptor": "(Ljava/util/Properties;)Ljava/util/Properties;",
+          "bytecode_length": 16
+        },
+        {
+          "name": "remove",
+          "descriptor": "(Ljava/lang/Object;)Ljava/lang/Object;",
+          "bytecode_length": 6
+        },
+        {
+          "name": "put",
+          "descriptor": "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;",
+          "bytecode_length": 13
+        },
+        {
+          "name": "get",
+          "descriptor": "(Ljava/lang/Object;)Ljava/lang/Object;",
+          "bytecode_length": 6
+        },
+        {
+          "name": "<clinit>",
+          "descriptor": "()V",
+          "bytecode_length": 7
+        }
+      ]
+    },
+    {
+      "artifact": "archived-launcher",
+      "class": "ru/turikhay/tlauncher/managers/ProfileManager",
+      "class_sha256": "fd68fc58226db1b112319cdf8ff89d098b615ce1d3240b763bb4455ce1949833",
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "(Lru/turikhay/tlauncher/managers/ComponentManager;Ljava/io/File;)V",
+          "bytecode_length": 170
+        },
+        {
+          "name": "<init>",
+          "descriptor": "(Lru/turikhay/tlauncher/managers/ComponentManager;)V",
+          "bytecode_length": 10
+        },
+        {
+          "name": "recreate",
+          "descriptor": "()V",
+          "bytecode_length": 17
+        },
+        {
+          "name": "refresh",
+          "descriptor": "()Z",
+          "bytecode_length": 58
+        },
+        {
+          "name": "loadProfiles",
+          "descriptor": "()V",
+          "bytecode_length": 674
+        },
+        {
+          "name": "saveProfiles",
+          "descriptor": "()V",
+          "bytecode_length": 142
+        },
+        {
+          "name": "getAccountManager",
+          "descriptor": "()Lru/turikhay/tlauncher/managers/AccountManager;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getAuthDatabase",
+          "descriptor": "()Lru/turikhay/tlauncher/minecraft/auth/AuthenticatorDatabase;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getFile",
+          "descriptor": "()Ljava/io/File;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "setFile",
+          "descriptor": "(Ljava/io/File;)V",
+          "bytecode_length": 57
+        },
+        {
+          "name": "addListener",
+          "descriptor": "(Lru/turikhay/tlauncher/managers/ProfileManagerListener;)V",
+          "bytecode_length": 37
+        },
+        {
+          "name": "getDefaultFile",
+          "descriptor": "(Lru/turikhay/tlauncher/managers/ComponentManager;)Ljava/io/File;",
+          "bytecode_length": 46
+        },
+        {
+          "name": "lambda$new$0",
+          "descriptor": "(Lru/turikhay/tlauncher/user/UserSet;)V",
+          "bytecode_length": 78
+        },
+        {
+          "name": "<clinit>",
+          "descriptor": "()V",
+          "bytecode_length": 9
+        }
+      ]
+    },
+    {
+      "artifact": "archived-launcher",
+      "class": "ru/turikhay/tlauncher/minecraft/launcher/MinecraftLauncher",
+      "class_sha256": "8f6c865bc5a8236928fb855869115df30fdde984c2a27727f7df11eeaccce0a9",
+      "methods": [
+        {
+          "name": "getProcessLogger",
+          "descriptor": "()Lru/turikhay/tlauncher/minecraft/launcher/ChildProcessLogger;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getCharset",
+          "descriptor": "()Ljava/nio/charset/Charset;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getJreType",
+          "descriptor": "()Lru/turikhay/tlauncher/managers/JavaManagerConfig$JreType;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getDownloader",
+          "descriptor": "()Lru/turikhay/tlauncher/downloader/Downloader;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getConfiguration",
+          "descriptor": "()Lru/turikhay/tlauncher/configuration/Configuration;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "isForceUpdate",
+          "descriptor": "()Z",
+          "bytecode_length": 5
+        },
+        {
+          "name": "isLaunchAssist",
+          "descriptor": "()Z",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getStep",
+          "descriptor": "()Lru/turikhay/tlauncher/minecraft/launcher/MinecraftLauncher$MinecraftLauncherStep;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "isWorking",
+          "descriptor": "()Z",
+          "bytecode_length": 5
+        },
+        {
+          "name": "isMinecraftRunning",
+          "descriptor": "()Z",
+          "bytecode_length": 27
+        },
+        {
+          "name": "<init>",
+          "descriptor": "(Lru/turikhay/tlauncher/managers/ComponentManager;Lru/turikhay/tlauncher/downloader/Downloader;Lru/turikhay/tlauncher/configuration/Configuration;ZZ)V",
+          "bytecode_length": 256
+        },
+        {
+          "name": "<init>",
+          "descriptor": "(Lru/turikhay/tlauncher/TLauncher;Z)V",
+          "bytecode_length": 36
+        },
+        {
+          "name": "addListener",
+          "descriptor": "(Lru/turikhay/tlauncher/minecraft/launcher/MinecraftListener;)V",
+          "bytecode_length": 45
+        },
+        {
+          "name": "start",
+          "descriptor": "()V",
+          "bytecode_length": 225
+        },
+        {
+          "name": "stop",
+          "descriptor": "()V",
+          "bytecode_length": 41
+        },
+        {
+          "name": "getVersion",
+          "descriptor": "()Ljava/lang/String;",
+          "bytecode_length": 8
+        },
+        {
+          "name": "getCompleteVersion",
+          "descriptor": "()Lnet/minecraft/launcher/versions/CompleteVersion;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "setVersion",
+          "descriptor": "(Ljava/lang/String;)V",
+          "bytecode_length": 10
+        },
+        {
+          "name": "getExitCode",
+          "descriptor": "()I",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getServer",
+          "descriptor": "()Lru/turikhay/tlauncher/minecraft/Server;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "setServer",
+          "descriptor": "(Lru/turikhay/tlauncher/minecraft/Server;I)V",
+          "bytecode_length": 15
+        },
+        {
+          "name": "setPromotedServers",
+          "descriptor": "(Ljava/util/List;Ljava/util/List;)V",
+          "bytecode_length": 25
+        },
+        {
+          "name": "getOptionsFile",
+          "descriptor": "()Lnet/minecraft/options/OptionsFile;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "collectInfo",
+          "descriptor": "()V",
+          "bytecode_length": 1981
+        },
+        {
+          "name": "getGameDir",
+          "descriptor": "(Ljava/io/File;Ljava/lang/String;Ljava/lang/String;Lru/turikhay/tlauncher/configuration/Configuration$SeparateDirs;)Ljava/io/File;",
+          "bytecode_length": 124
+        },
+        {
+          "name": "detectCharsetOnWindows",
+          "descriptor": "()V",
+          "bytecode_length": 81
+        },
+        {
+          "name": "useSystemCharsetFromSysProp",
+          "descriptor": "(Ljava/lang/String;)V",
+          "bytecode_length": 100
+        },
+        {
+          "name": "detectUsingCharsetDetectTool",
+          "descriptor": "()V",
+          "bytecode_length": 114
+        },
+        {
+          "name": "getRootDir",
+          "descriptor": "()Ljava/io/File;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getGameDir",
+          "descriptor": "()Ljava/io/File;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "downloadResources",
+          "descriptor": "()V",
+          "bytecode_length": 1286
+        },
+        {
+          "name": "constructProcess",
+          "descriptor": "()V",
+          "bytecode_length": 1969
+        },
+        {
+          "name": "fixArguments",
+          "descriptor": "(Ljava/util/List;Lnet/minecraft/launcher/versions/ArgumentType;)V",
+          "bytecode_length": 40
+        },
+        {
+          "name": "deleteMod",
+          "descriptor": "([Ljava/lang/String;)V",
+          "bytecode_length": 98
+        },
+        {
+          "name": "reconstructAssets",
+          "descriptor": "()Ljava/io/File;",
+          "bytecode_length": 419
+        },
+        {
+          "name": "unpackNatives",
+          "descriptor": "(Z)V",
+          "bytecode_length": 475
+        },
+        {
+          "name": "deleteEntries",
+          "descriptor": "()V",
+          "bytecode_length": 51
+        },
+        {
+          "name": "deleteLibraryEntries",
+          "descriptor": "()V",
+          "bytecode_length": 108
+        },
+        {
+          "name": "constructClassPath",
+          "descriptor": "(Lnet/minecraft/launcher/versions/CompleteVersion;)Ljava/lang/String;",
+          "bytecode_length": 155
+        },
+        {
+          "name": "fixForNewerVersions",
+          "descriptor": "()V",
+          "bytecode_length": 67
+        },
+        {
+          "name": "makeLegacyArgumentString",
+          "descriptor": "(Lnet/minecraft/launcher/versions/ArgumentType;)Ljava/lang/String;",
+          "bytecode_length": 24
+        },
+        {
+          "name": "removeOldModlistFiles",
+          "descriptor": "()V",
+          "bytecode_length": 74
+        },
+        {
+          "name": "processModpack",
+          "descriptor": "()Ljava/util/List;",
+          "bytecode_length": 287
+        },
+        {
+          "name": "joinList",
+          "descriptor": "(Ljava/util/Collection;Ljava/util/Collection;I)Ljava/lang/String;",
+          "bytecode_length": 147
+        },
+        {
+          "name": "addCMSOptimizedArguments",
+          "descriptor": "(Ljava/util/List;)V",
+          "bytecode_length": 96
+        },
+        {
+          "name": "addG1OptimizedArguments",
+          "descriptor": "(Ljava/util/List;)V",
+          "bytecode_length": 91
+        },
+        {
+          "name": "addZGCOptimizedArguments",
+          "descriptor": "(Ljava/util/List;)V",
+          "bytecode_length": 81
+        },
+        {
+          "name": "addOptimizedArguments",
+          "descriptor": "(Ljava/util/List;)V",
+          "bytecode_length": 106
+        },
+        {
+          "name": "createJvmArgs",
+          "descriptor": "(Ljava/util/List;)V",
+          "bytecode_length": 260
+        },
+        {
+          "name": "compareAssets",
+          "descriptor": "(Z)Ljava/util/List;",
+          "bytecode_length": 263
+        },
+        {
+          "name": "fixResourceFolder",
+          "descriptor": "()V",
+          "bytecode_length": 113
+        },
+        {
+          "name": "launchMinecraft",
+          "descriptor": "()V",
+          "bytecode_length": 451
+        },
+        {
+          "name": "updateLoggerActions",
+          "descriptor": "()V",
+          "bytecode_length": 7
+        },
+        {
+          "name": "postLaunch",
+          "descriptor": "()V",
+          "bytecode_length": 135
+        },
+        {
+          "name": "killProcess",
+          "descriptor": "()V",
+          "bytecode_length": 42
+        },
+        {
+          "name": "checkThread",
+          "descriptor": "()V",
+          "bytecode_length": 25
+        },
+        {
+          "name": "checkStep",
+          "descriptor": "(Lru/turikhay/tlauncher/minecraft/launcher/MinecraftLauncher$MinecraftLauncherStep;Lru/turikhay/tlauncher/minecraft/launcher/MinecraftLauncher$MinecraftLauncherStep;)V",
+          "bytecode_length": 105
+        },
+        {
+          "name": "checkAborted",
+          "descriptor": "()V",
+          "bytecode_length": 39
+        },
+        {
+          "name": "checkWorking",
+          "descriptor": "()V",
+          "bytecode_length": 19
+        },
+        {
+          "name": "onJavaProcessPrint",
+          "descriptor": "(Lnet/minecraft/launcher/process/JavaProcess;Lnet/minecraft/launcher/process/PrintStreamType;Ljava/lang/String;)V",
+          "bytecode_length": 40
+        },
+        {
+          "name": "onJavaProcessEnded",
+          "descriptor": "(Lnet/minecraft/launcher/process/JavaProcess;)V",
+          "bytecode_length": 213
+        },
+        {
+          "name": "onJavaProcessError",
+          "descriptor": "(Lnet/minecraft/launcher/process/JavaProcess;Ljava/lang/Throwable;)V",
+          "bytecode_length": 46
+        },
+        {
+          "name": "waitForClose",
+          "descriptor": "()V",
+          "bytecode_length": 19
+        },
+        {
+          "name": "notifyClose",
+          "descriptor": "()V",
+          "bytecode_length": 72
+        },
+        {
+          "name": "removeFrom",
+          "descriptor": "(Ljava/io/File;Ljava/util/List;)V",
+          "bytecode_length": 281
+        },
+        {
+          "name": "createFeatureMatcher",
+          "descriptor": "()Lnet/minecraft/launcher/versions/Rule$FeatureMatcher;",
+          "bytecode_length": 8
+        },
+        {
+          "name": "createArgumentsSubstitutor",
+          "descriptor": "()Lorg/apache/commons/lang3/text/StrSubstitutor;",
+          "bytecode_length": 634
+        },
+        {
+          "name": "getJreMajorVersion",
+          "descriptor": "()I",
+          "bytecode_length": 157
+        },
+        {
+          "name": "findLog4j2Library",
+          "descriptor": "()Lnet/minecraft/launcher/versions/Library;",
+          "bytecode_length": 35
+        },
+        {
+          "name": "parseLog4jVersion",
+          "descriptor": "(Lnet/minecraft/launcher/versions/Library;)Lru/turikhay/tlauncher/minecraft/launcher/MinecraftLauncher$Log4jVersion;",
+          "bytecode_length": 127
+        },
+        {
+          "name": "savePatchedConfiguration",
+          "descriptor": "(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;",
+          "bytecode_length": 172
+        },
+        {
+          "name": "executeJarScanner",
+          "descriptor": "()V",
+          "bytecode_length": 396
+        },
+        {
+          "name": "scanJarFile",
+          "descriptor": "(Ljava/util/jar/JarFile;Ljava/util/function/Consumer;)V",
+          "bytecode_length": 31
+        },
+        {
+          "name": "scanJarFile0",
+          "descriptor": "(Ljava/util/jar/JarFile;Ljava/util/function/Consumer;)V",
+          "bytecode_length": 185
+        },
+        {
+          "name": "lambda$findLog4j2Library$10",
+          "descriptor": "(Lnet/minecraft/launcher/versions/Library;)Z",
+          "bytecode_length": 11
+        },
+        {
+          "name": "lambda$compareAssets$9",
+          "descriptor": "()V",
+          "bytecode_length": 7
+        },
+        {
+          "name": "lambda$createJvmArgs$8",
+          "descriptor": "(Ljava/util/List;Ljava/lang/String;)V",
+          "bytecode_length": 31
+        },
+        {
+          "name": "lambda$addOptimizedArguments$7",
+          "descriptor": "(Ljava/lang/Integer;)Z",
+          "bytecode_length": 16
+        },
+        {
+          "name": "lambda$deleteMod$6",
+          "descriptor": "([Ljava/lang/String;Ljava/io/File;)Z",
+          "bytecode_length": 45
+        },
+        {
+          "name": "lambda$fixArguments$5",
+          "descriptor": "(Ljava/lang/String;)Z",
+          "bytecode_length": 8
+        },
+        {
+          "name": "lambda$constructProcess$4",
+          "descriptor": "(Lru/turikhay/tlauncher/managers/GPUManager$GPU;)V",
+          "bytecode_length": 16
+        },
+        {
+          "name": "lambda$constructProcess$3",
+          "descriptor": "(Ljava/lang/String;Lru/turikhay/tlauncher/managers/GPUManager$GPU;)V",
+          "bytecode_length": 17
+        },
+        {
+          "name": "lambda$constructProcess$2",
+          "descriptor": "(Ljava/lang/String;Lru/turikhay/tlauncher/managers/GPUManager$GPU;)V",
+          "bytecode_length": 17
+        },
+        {
+          "name": "lambda$constructProcess$1",
+          "descriptor": "(Ljava/util/ArrayList;Ljava/lang/String;)V",
+          "bytecode_length": 29
+        },
+        {
+          "name": "lambda$detectUsingCharsetDetectTool$0",
+          "descriptor": "()Ljava/nio/charset/Charset;",
+          "bytecode_length": 7
+        },
+        {
+          "name": "access$000",
+          "descriptor": "()Lorg/apache/logging/log4j/Logger;",
+          "bytecode_length": 4
+        },
+        {
+          "name": "access$100",
+          "descriptor": "(Lru/turikhay/tlauncher/minecraft/launcher/MinecraftLauncher;Ljava/util/jar/JarFile;Ljava/util/function/Consumer;)V",
+          "bytecode_length": 7
+        },
+        {
+          "name": "<clinit>",
+          "descriptor": "()V",
+          "bytecode_length": 217
+        }
+      ]
+    },
+    {
+      "artifact": "archived-launcher",
+      "class": "ru/turikhay/tlauncher/repository/RepositoryProxy",
+      "class_sha256": "a56062a128cbb2656172e6e7698254b0d9ed1933f0dd2978910c19e390705ac1",
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "()V",
+          "bytecode_length": 5
+        },
+        {
+          "name": "canBeProxied",
+          "descriptor": "(Ljava/net/URL;)Z",
+          "bytecode_length": 20
+        },
+        {
+          "name": "requestMaybeProxy",
+          "descriptor": "(Ljava/lang/String;)Ljava/lang/String;",
+          "bytecode_length": 179
+        },
+        {
+          "name": "getProxyRepoList",
+          "descriptor": "()Lru/turikhay/tlauncher/repository/RepositoryProxy$ProxyRepoList;",
+          "bytecode_length": 21
+        },
+        {
+          "name": "lambda$requestMaybeProxy$3",
+          "descriptor": "(Ljava/net/URL;Lru/turikhay/tlauncher/repository/IRepo;)Ljava/lang/String;",
+          "bytecode_length": 9
+        },
+        {
+          "name": "lambda$requestMaybeProxy$2",
+          "descriptor": "(Lru/turikhay/tlauncher/repository/IRepo;)Z",
+          "bytecode_length": 5
+        },
+        {
+          "name": "lambda$canBeProxied$1",
+          "descriptor": "(Ljava/net/URL;Ljava/lang/String;)Z",
+          "bytecode_length": 9
+        },
+        {
+          "name": "lambda$static$0",
+          "descriptor": "(Ljava/lang/String;)Ljava/lang/String;",
+          "bytecode_length": 17
+        },
+        {
+          "name": "access$100",
+          "descriptor": "()Z",
+          "bytecode_length": 4
+        },
+        {
+          "name": "access$102",
+          "descriptor": "(Z)Z",
+          "bytecode_length": 6
+        },
+        {
+          "name": "access$200",
+          "descriptor": "()Ljava/util/List;",
+          "bytecode_length": 4
+        },
+        {
+          "name": "<clinit>",
+          "descriptor": "()V",
+          "bytecode_length": 104
+        }
+      ]
+    },
+    {
+      "artifact": "archived-launcher",
+      "class": "ru/turikhay/tlauncher/user/MinecraftUserJsonizer",
+      "class_sha256": "b3871f62b34a0c50f8e2454f21810b217f584755bed67bb2b38da1e5888bb635",
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "()V",
+          "bytecode_length": 5
+        },
+        {
+          "name": "serialize",
+          "descriptor": "(Lru/turikhay/tlauncher/user/MinecraftUser;Lcom/google/gson/JsonSerializationContext;)Lcom/google/gson/JsonObject;",
+          "bytecode_length": 18
+        },
+        {
+          "name": "deserialize",
+          "descriptor": "(Lcom/google/gson/JsonObject;Lcom/google/gson/JsonDeserializationContext;)Lru/turikhay/tlauncher/user/MinecraftUser;",
+          "bytecode_length": 16
+        },
+        {
+          "name": "deserialize",
+          "descriptor": "(Lcom/google/gson/JsonObject;Lcom/google/gson/JsonDeserializationContext;)Lru/turikhay/tlauncher/user/User;",
+          "bytecode_length": 7
+        },
+        {
+          "name": "serialize",
+          "descriptor": "(Lru/turikhay/tlauncher/user/User;Lcom/google/gson/JsonSerializationContext;)Lcom/google/gson/JsonObject;",
+          "bytecode_length": 10
+        }
+      ]
+    },
+    {
+      "artifact": "archived-launcher",
+      "class": "ru/turikhay/tlauncher/user/minecraft/MinecraftOAuthRefresh",
+      "class_sha256": "bc1a3782ef10f357fe44ae7a5d5a621e9ff8f84e47aec9a90733e2b62a6d3a44",
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "(Lru/turikhay/tlauncher/user/minecraft/strategy/oatoken/refresh/MicrosoftOAuthTokenRefresher;Lru/turikhay/tlauncher/user/minecraft/strategy/xb/auth/XboxLiveAuthenticator;Lru/turikhay/tlauncher/user/minecraft/strategy/xb/xsts/XSTSAuthenticator;Lru/turikhay/tlauncher/user/minecraft/strategy/mcsauth/MinecraftServicesAuthenticator;Lru/turikhay/tlauncher/user/minecraft/strategy/gos/GameOwnershipValidator;Lru/turikhay/tlauncher/user/minecraft/strategy/preq/MinecraftProfileRequester;Lru/turikhay/tlauncher/user/minecraft/strategy/pconv/MinecraftProfileConverter;)V",
+          "bytecode_length": 44
+        },
+        {
+          "name": "refreshIfNeeded",
+          "descriptor": "(Lru/turikhay/tlauncher/user/minecraft/strategy/oatoken/MicrosoftOAuthToken;Lru/turikhay/tlauncher/user/minecraft/strategy/mcsauth/MinecraftServicesToken;)Lru/turikhay/tlauncher/user/MinecraftUser;",
+          "bytecode_length": 31
+        },
+        {
+          "name": "refreshExplicitly",
+          "descriptor": "(Lru/turikhay/tlauncher/user/minecraft/strategy/oatoken/MicrosoftOAuthToken;)Lru/turikhay/tlauncher/user/MinecraftUser;",
+          "bytecode_length": 75
+        }
+      ]
+    },
+    {
+      "artifact": "archived-bootstrap",
+      "class": "ru/turikhay/tlauncher/bootstrap/Updater",
+      "class_sha256": "6914a09ccf4e439a4b71cc780240dc8d0ad27c57f4f2b58499ec9f39f9cb9797",
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "(Ljava/lang/String;Ljava/nio/file/Path;Lru/turikhay/tlauncher/bootstrap/meta/DownloadEntry;)V",
+          "bytecode_length": 58
+        },
+        {
+          "name": "restartOnFinish",
+          "descriptor": "(Ljava/util/List;)V",
+          "bytecode_length": 25
+        },
+        {
+          "name": "execute",
+          "descriptor": "()Ljava/lang/Void;",
+          "bytecode_length": 65
+        },
+        {
+          "name": "doWork",
+          "descriptor": "(Ljava/lang/String;)V",
+          "bytecode_length": 174
+        },
+        {
+          "name": "getAnyDownloadUrl",
+          "descriptor": "()Ljava/lang/String;",
+          "bytecode_length": 41
+        },
+        {
+          "name": "showUIMessage",
+          "descriptor": "(Ljava/lang/String;Z)V",
+          "bytecode_length": 67
+        },
+        {
+          "name": "execute",
+          "descriptor": "()Ljava/lang/Object;",
+          "bytecode_length": 5
+        }
+      ]
+    },
+    {
+      "artifact": "archived-bootstrap",
+      "class": "ru/turikhay/tlauncher/bootstrap/meta/UpdateMeta",
+      "class_sha256": "9be040125884421d191a41fe877726db811c74787024c5f8ddb89e203cf26217",
+      "methods": [
+        {
+          "name": "fetchFor",
+          "descriptor": "(Ljava/lang/String;Lru/turikhay/tlauncher/bootstrap/meta/UpdateMeta$ConnectionInterrupter;)Lru/turikhay/tlauncher/bootstrap/task/Task;",
+          "bytecode_length": 19
+        },
+        {
+          "name": "createGson",
+          "descriptor": "(Ljava/lang/String;)Lshaded/com/google/gson/Gson;",
+          "bytecode_length": 45
+        },
+        {
+          "name": "fetchAttempts",
+          "descriptor": "(Ljava/lang/String;Lshaded/com/google/gson/Gson;I)Lru/turikhay/tlauncher/bootstrap/meta/UpdateMeta;",
+          "bytecode_length": 497
+        },
+        {
+          "name": "fetchFrom",
+          "descriptor": "(Lshaded/com/google/gson/Gson;Ljava/io/InputStream;)Lru/turikhay/tlauncher/bootstrap/meta/UpdateMeta;",
+          "bytecode_length": 140
+        },
+        {
+          "name": "fetchFrom",
+          "descriptor": "(Ljava/io/InputStream;Ljava/lang/String;)Lru/turikhay/tlauncher/bootstrap/meta/UpdateMeta;",
+          "bytecode_length": 9
+        },
+        {
+          "name": "setupConnection",
+          "descriptor": "(Ljava/net/URL;I)Ljava/io/InputStream;",
+          "bytecode_length": 26
+        },
+        {
+          "name": "<init>",
+          "descriptor": "(Lru/turikhay/tlauncher/bootstrap/meta/RemoteBootstrapMeta;Lru/turikhay/tlauncher/bootstrap/meta/RemoteLauncherMeta;Lru/turikhay/tlauncher/bootstrap/meta/RemoteLauncherMeta;Ljava/lang/String;)V",
+          "bytecode_length": 35
+        },
+        {
+          "name": "getBootstrap",
+          "descriptor": "()Lru/turikhay/tlauncher/bootstrap/meta/RemoteBootstrapMeta;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getLauncher",
+          "descriptor": "(Z)Lru/turikhay/tlauncher/bootstrap/meta/RemoteLauncherMeta;",
+          "bytecode_length": 23
+        },
+        {
+          "name": "getOptions",
+          "descriptor": "()Ljava/lang/String;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "access$000",
+          "descriptor": "(Ljava/lang/String;)Lshaded/com/google/gson/Gson;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "access$100",
+          "descriptor": "()Lorg/slf4j/Logger;",
+          "bytecode_length": 4
+        },
+        {
+          "name": "access$200",
+          "descriptor": "(Ljava/lang/String;Lshaded/com/google/gson/Gson;I)Lru/turikhay/tlauncher/bootstrap/meta/UpdateMeta;",
+          "bytecode_length": 7
+        },
+        {
+          "name": "<clinit>",
+          "descriptor": "()V",
+          "bytecode_length": 12
+        }
+      ]
+    },
+    {
+      "artifact": "archived-bootstrap",
+      "class": "ru/turikhay/tlauncher/bootstrap/task/DownloadTask",
+      "class_sha256": "43151494741e95cf72ca282926bcec5c615e2f674d064e4a1c3ff2014e89b185",
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "(Ljava/lang/String;Ljava/util/List;Ljava/nio/file/Path;Ljava/lang/String;)V",
+          "bytecode_length": 56
+        },
+        {
+          "name": "<init>",
+          "descriptor": "(Ljava/lang/String;Ljava/net/URL;Ljava/nio/file/Path;Ljava/lang/String;)V",
+          "bytecode_length": 13
+        },
+        {
+          "name": "execute",
+          "descriptor": "()Ljava/lang/Void;",
+          "bytecode_length": 222
+        },
+        {
+          "name": "downloadUrl",
+          "descriptor": "(Ljava/net/URL;)V",
+          "bytecode_length": 559
+        },
+        {
+          "name": "execute",
+          "descriptor": "()Ljava/lang/Object;",
+          "bytecode_length": 5
+        }
+      ]
+    },
+    {
+      "artifact": "archived-bootstrap",
+      "class": "ru/turikhay/tlauncher/bootstrap/transport/ChecksumStream",
+      "class_sha256": "8ecbd9491b74ac6edc51fcffefcc4a3970fd058df4f69f8b1cb8599d98be150d",
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "(Ljava/io/InputStream;)V",
+          "bytecode_length": 35
+        },
+        {
+          "name": "digest",
+          "descriptor": "()[B",
+          "bytecode_length": 39
+        },
+        {
+          "name": "read",
+          "descriptor": "()I",
+          "bytecode_length": 24
+        },
+        {
+          "name": "read",
+          "descriptor": "([B)I",
+          "bytecode_length": 26
+        },
+        {
+          "name": "read",
+          "descriptor": "([BII)I",
+          "bytecode_length": 32
+        },
+        {
+          "name": "close",
+          "descriptor": "()V",
+          "bytecode_length": 28
+        }
+      ]
+    },
+    {
+      "artifact": "archived-bootstrap",
+      "class": "ru/turikhay/tlauncher/bootstrap/transport/SignedStream",
+      "class_sha256": "52bf21c72e1ccc1aca8dde85e2f9add1bc50b182af4205d4278268d9217612bb",
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "(Ljava/io/InputStream;)V",
+          "bytecode_length": 6
+        },
+        {
+          "name": "read",
+          "descriptor": "()I",
+          "bytecode_length": 21
+        },
+        {
+          "name": "read",
+          "descriptor": "([B)I",
+          "bytecode_length": 22
+        },
+        {
+          "name": "read",
+          "descriptor": "([BII)I",
+          "bytecode_length": 27
+        },
+        {
+          "name": "readSignature",
+          "descriptor": "()Z",
+          "bytecode_length": 65
+        },
+        {
+          "name": "validateSignature",
+          "descriptor": "()V",
+          "bytecode_length": 67
+        },
+        {
+          "name": "verify",
+          "descriptor": "([B[B)Z",
+          "bytecode_length": 52
+        },
+        {
+          "name": "<clinit>",
+          "descriptor": "()V",
+          "bytecode_length": 59
+        }
+      ]
+    },
+    {
+      "artifact": "installed-launcher",
+      "class": "net/legacylauncher/configuration/SimpleConfiguration",
+      "class_sha256": "17030dce52c8695bb597c8d413617c998a6bdfffa36a1eb19d38c4ce992b6644",
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "()V",
+          "bytecode_length": 16
+        },
+        {
+          "name": "<init>",
+          "descriptor": "(Ljava/io/InputStream;)V",
+          "bytecode_length": 18
+        },
+        {
+          "name": "<init>",
+          "descriptor": "(Ljava/io/File;)V",
+          "bytecode_length": 34
+        },
+        {
+          "name": "<init>",
+          "descriptor": "(Ljava/net/URL;)V",
+          "bytecode_length": 18
+        },
+        {
+          "name": "get",
+          "descriptor": "(Ljava/lang/String;)Ljava/lang/String;",
+          "bytecode_length": 13
+        },
+        {
+          "name": "getStringOf",
+          "descriptor": "(Ljava/lang/Object;)Ljava/lang/String;",
+          "bytecode_length": 25
+        },
+        {
+          "name": "set",
+          "descriptor": "(Ljava/lang/String;Ljava/lang/Object;Z)V",
+          "bytecode_length": 57
+        },
+        {
+          "name": "set",
+          "descriptor": "(Ljava/lang/String;Ljava/lang/Object;)V",
+          "bytecode_length": 8
+        },
+        {
+          "name": "set",
+          "descriptor": "(Ljava/util/Map;Z)V",
+          "bytecode_length": 105
+        },
+        {
+          "name": "set",
+          "descriptor": "(Ljava/util/Map;)V",
+          "bytecode_length": 7
+        },
+        {
+          "name": "getKeys",
+          "descriptor": "()Ljava/util/Set;",
+          "bytecode_length": 57
+        },
+        {
+          "name": "getDefault",
+          "descriptor": "(Ljava/lang/String;)Ljava/lang/String;",
+          "bytecode_length": 2
+        },
+        {
+          "name": "getInteger",
+          "descriptor": "(Ljava/lang/String;I)I",
+          "bytecode_length": 11
+        },
+        {
+          "name": "getInteger",
+          "descriptor": "(Ljava/lang/String;)I",
+          "bytecode_length": 7
+        },
+        {
+          "name": "getIntegerOf",
+          "descriptor": "(Ljava/lang/Object;I)I",
+          "bytecode_length": 11
+        },
+        {
+          "name": "getDouble",
+          "descriptor": "(Ljava/lang/String;)D",
+          "bytecode_length": 11
+        },
+        {
+          "name": "getDoubleOf",
+          "descriptor": "(Ljava/lang/Object;D)D",
+          "bytecode_length": 12
+        },
+        {
+          "name": "getFloat",
+          "descriptor": "(Ljava/lang/String;)F",
+          "bytecode_length": 11
+        },
+        {
+          "name": "getFloatOf",
+          "descriptor": "(Ljava/lang/Object;F)F",
+          "bytecode_length": 11
+        },
+        {
+          "name": "getLong",
+          "descriptor": "(Ljava/lang/String;)J",
+          "bytecode_length": 11
+        },
+        {
+          "name": "getLongOf",
+          "descriptor": "(Ljava/lang/Object;J)J",
+          "bytecode_length": 12
+        },
+        {
+          "name": "getBoolean",
+          "descriptor": "(Ljava/lang/String;)Z",
+          "bytecode_length": 11
+        },
+        {
+          "name": "getBooleanOf",
+          "descriptor": "(Ljava/lang/Object;Z)Z",
+          "bytecode_length": 11
+        },
+        {
+          "name": "getDefaultInteger",
+          "descriptor": "(Ljava/lang/String;)I",
+          "bytecode_length": 2
+        },
+        {
+          "name": "getDefaultDouble",
+          "descriptor": "(Ljava/lang/String;)D",
+          "bytecode_length": 2
+        },
+        {
+          "name": "getDefaultFloat",
+          "descriptor": "(Ljava/lang/String;)F",
+          "bytecode_length": 2
+        },
+        {
+          "name": "getDefaultLong",
+          "descriptor": "(Ljava/lang/String;)J",
+          "bytecode_length": 2
+        },
+        {
+          "name": "getDefaultBoolean",
+          "descriptor": "(Ljava/lang/String;)Z",
+          "bytecode_length": 2
+        },
+        {
+          "name": "save",
+          "descriptor": "()V",
+          "bytecode_length": 139
+        },
+        {
+          "name": "processSavingProperties",
+          "descriptor": "(Ljava/util/Properties;)Ljava/util/Properties;",
+          "bytecode_length": 2
+        },
+        {
+          "name": "store",
+          "descriptor": "()V",
+          "bytecode_length": 25
+        },
+        {
+          "name": "size",
+          "descriptor": "()I",
+          "bytecode_length": 8
+        },
+        {
+          "name": "isEmpty",
+          "descriptor": "()Z",
+          "bytecode_length": 8
+        },
+        {
+          "name": "containsKey",
+          "descriptor": "(Ljava/lang/Object;)Z",
+          "bytecode_length": 9
+        },
+        {
+          "name": "containsValue",
+          "descriptor": "(Ljava/lang/Object;)Z",
+          "bytecode_length": 9
+        },
+        {
+          "name": "get",
+          "descriptor": "(Ljava/lang/Object;)Ljava/lang/String;",
+          "bytecode_length": 9
+        },
+        {
+          "name": "put",
+          "descriptor": "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+          "bytecode_length": 8
+        },
+        {
+          "name": "remove",
+          "descriptor": "(Ljava/lang/Object;)Ljava/lang/String;",
+          "bytecode_length": 11
+        },
+        {
+          "name": "putAll",
+          "descriptor": "(Ljava/util/Map;)V",
+          "bytecode_length": 54
+        },
+        {
+          "name": "clear",
+          "descriptor": "()V",
+          "bytecode_length": 8
+        },
+        {
+          "name": "keySet",
+          "descriptor": "()Ljava/util/Set;",
+          "bytecode_length": 34
+        },
+        {
+          "name": "values",
+          "descriptor": "()Ljava/util/Collection;",
+          "bytecode_length": 34
+        },
+        {
+          "name": "entrySet",
+          "descriptor": "()Ljava/util/Set;",
+          "bytecode_length": 2
+        },
+        {
+          "name": "isSaveable",
+          "descriptor": "()Z",
+          "bytecode_length": 23
+        },
+        {
+          "name": "loadFromStream",
+          "descriptor": "(Ljava/util/Properties;Ljava/io/InputStream;)V",
+          "bytecode_length": 41
+        },
+        {
+          "name": "loadFromStream",
+          "descriptor": "(Ljava/io/InputStream;)Ljava/util/Properties;",
+          "bytecode_length": 15
+        },
+        {
+          "name": "loadFromFile",
+          "descriptor": "(Ljava/util/Properties;Ljava/io/File;)V",
+          "bytecode_length": 52
+        },
+        {
+          "name": "loadFromFile",
+          "descriptor": "(Ljava/io/File;)Ljava/util/Properties;",
+          "bytecode_length": 15
+        },
+        {
+          "name": "loadFromURL",
+          "descriptor": "(Ljava/util/Properties;Ljava/net/URL;)V",
+          "bytecode_length": 23
+        },
+        {
+          "name": "loadFromURL",
+          "descriptor": "(Ljava/net/URL;)Ljava/util/Properties;",
+          "bytecode_length": 15
+        },
+        {
+          "name": "copyProperties",
+          "descriptor": "(Ljava/util/Properties;Ljava/util/Properties;Z)V",
+          "bytecode_length": 133
+        },
+        {
+          "name": "copyProperties",
+          "descriptor": "(Ljava/util/Properties;)Ljava/util/Properties;",
+          "bytecode_length": 16
+        },
+        {
+          "name": "remove",
+          "descriptor": "(Ljava/lang/Object;)Ljava/lang/Object;",
+          "bytecode_length": 6
+        },
+        {
+          "name": "put",
+          "descriptor": "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;",
+          "bytecode_length": 13
+        },
+        {
+          "name": "get",
+          "descriptor": "(Ljava/lang/Object;)Ljava/lang/Object;",
+          "bytecode_length": 6
+        },
+        {
+          "name": "<clinit>",
+          "descriptor": "()V",
+          "bytecode_length": 9
+        }
+      ]
+    },
+    {
+      "artifact": "installed-launcher",
+      "class": "net/legacylauncher/managers/ProfileManager",
+      "class_sha256": "1acda227f6fb341291158374d13028e4159202d159eb167bac97c00e74618211",
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "(Lnet/legacylauncher/managers/ComponentManager;Ljava/io/File;)V",
+          "bytecode_length": 170
+        },
+        {
+          "name": "<init>",
+          "descriptor": "(Lnet/legacylauncher/managers/ComponentManager;)V",
+          "bytecode_length": 10
+        },
+        {
+          "name": "recreate",
+          "descriptor": "()V",
+          "bytecode_length": 17
+        },
+        {
+          "name": "refresh",
+          "descriptor": "()Z",
+          "bytecode_length": 58
+        },
+        {
+          "name": "loadProfiles",
+          "descriptor": "()V",
+          "bytecode_length": 569
+        },
+        {
+          "name": "saveProfiles",
+          "descriptor": "()V",
+          "bytecode_length": 142
+        },
+        {
+          "name": "getAccountManager",
+          "descriptor": "()Lnet/legacylauncher/managers/AccountManager;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getAuthDatabase",
+          "descriptor": "()Lnet/legacylauncher/minecraft/auth/AuthenticatorDatabase;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getFile",
+          "descriptor": "()Ljava/io/File;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "setFile",
+          "descriptor": "(Ljava/io/File;)V",
+          "bytecode_length": 57
+        },
+        {
+          "name": "addListener",
+          "descriptor": "(Lnet/legacylauncher/managers/ProfileManagerListener;)V",
+          "bytecode_length": 37
+        },
+        {
+          "name": "getDefaultFile",
+          "descriptor": "(Lnet/legacylauncher/managers/ComponentManager;)Ljava/io/File;",
+          "bytecode_length": 46
+        },
+        {
+          "name": "lambda$new$0",
+          "descriptor": "(Lnet/legacylauncher/user/UserSet;)V",
+          "bytecode_length": 78
+        },
+        {
+          "name": "<clinit>",
+          "descriptor": "()V",
+          "bytecode_length": 9
+        }
+      ]
+    },
+    {
+      "artifact": "installed-launcher",
+      "class": "net/legacylauncher/minecraft/launcher/MinecraftLauncher",
+      "class_sha256": "f2162a3dcae82b696fda7b95469310e5491f5fe15016b2c3872b67539dac309a",
+      "methods": [
+        {
+          "name": "getProcessLogger",
+          "descriptor": "()Lnet/legacylauncher/minecraft/launcher/ChildProcessLogger;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getCharset",
+          "descriptor": "()Ljava/nio/charset/Charset;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getJreType",
+          "descriptor": "()Lnet/legacylauncher/managers/JavaManagerConfig$JreType;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getDownloader",
+          "descriptor": "()Lnet/legacylauncher/downloader/Downloader;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getConfiguration",
+          "descriptor": "()Lnet/legacylauncher/configuration/Configuration;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "isForceUpdate",
+          "descriptor": "()Z",
+          "bytecode_length": 5
+        },
+        {
+          "name": "isLaunchAssist",
+          "descriptor": "()Z",
+          "bytecode_length": 5
+        },
+        {
+          "name": "isExperimentEnabled",
+          "descriptor": "(Lnet/legacylauncher/configuration/Configuration$Experiments;)Z",
+          "bytecode_length": 11
+        },
+        {
+          "name": "getStep",
+          "descriptor": "()Lnet/legacylauncher/minecraft/launcher/MinecraftLauncher$MinecraftLauncherStep;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "isWorking",
+          "descriptor": "()Z",
+          "bytecode_length": 5
+        },
+        {
+          "name": "isMinecraftRunning",
+          "descriptor": "()Z",
+          "bytecode_length": 27
+        },
+        {
+          "name": "<init>",
+          "descriptor": "(Lnet/legacylauncher/managers/ComponentManager;Lnet/legacylauncher/downloader/Downloader;Lnet/legacylauncher/configuration/Configuration;ZZ)V",
+          "bytecode_length": 314
+        },
+        {
+          "name": "<init>",
+          "descriptor": "(Lnet/legacylauncher/LegacyLauncher;Z)V",
+          "bytecode_length": 36
+        },
+        {
+          "name": "addListener",
+          "descriptor": "(Lnet/legacylauncher/minecraft/launcher/MinecraftListener;)V",
+          "bytecode_length": 45
+        },
+        {
+          "name": "start",
+          "descriptor": "()V",
+          "bytecode_length": 196
+        },
+        {
+          "name": "stop",
+          "descriptor": "()V",
+          "bytecode_length": 41
+        },
+        {
+          "name": "getVersion",
+          "descriptor": "()Ljava/lang/String;",
+          "bytecode_length": 8
+        },
+        {
+          "name": "getCompleteVersion",
+          "descriptor": "()Lnet/minecraft/launcher/versions/CompleteVersion;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "setVersion",
+          "descriptor": "(Ljava/lang/String;)V",
+          "bytecode_length": 10
+        },
+        {
+          "name": "getExitCode",
+          "descriptor": "()I",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getServer",
+          "descriptor": "()Lnet/legacylauncher/minecraft/Server;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "setServer",
+          "descriptor": "(Lnet/legacylauncher/minecraft/Server;I)V",
+          "bytecode_length": 15
+        },
+        {
+          "name": "setPromotedServers",
+          "descriptor": "(Ljava/util/List;)V",
+          "bytecode_length": 20
+        },
+        {
+          "name": "getOptionsFile",
+          "descriptor": "()Lnet/minecraft/options/OptionsFile;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "collectInfo",
+          "descriptor": "()V",
+          "bytecode_length": 2228
+        },
+        {
+          "name": "getGameDir",
+          "descriptor": "(Ljava/io/File;Ljava/lang/String;Ljava/lang/String;Lnet/legacylauncher/configuration/Configuration$SeparateDirs;)Ljava/io/File;",
+          "bytecode_length": 124
+        },
+        {
+          "name": "detectCharsetOnWindows",
+          "descriptor": "()V",
+          "bytecode_length": 81
+        },
+        {
+          "name": "useSystemCharsetFromSysProp",
+          "descriptor": "(Ljava/lang/String;)V",
+          "bytecode_length": 44
+        },
+        {
+          "name": "detectUsingCharsetDetectTool",
+          "descriptor": "()V",
+          "bytecode_length": 74
+        },
+        {
+          "name": "getRootDir",
+          "descriptor": "()Ljava/io/File;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getGameDir",
+          "descriptor": "()Ljava/io/File;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "downloadResources",
+          "descriptor": "()V",
+          "bytecode_length": 1368
+        },
+        {
+          "name": "constructProcess",
+          "descriptor": "()V",
+          "bytecode_length": 1817
+        },
+        {
+          "name": "fixArguments",
+          "descriptor": "(Ljava/util/List;Lnet/minecraft/launcher/versions/ArgumentType;)V",
+          "bytecode_length": 40
+        },
+        {
+          "name": "deleteMod",
+          "descriptor": "([Ljava/lang/String;)V",
+          "bytecode_length": 98
+        },
+        {
+          "name": "reconstructAssets",
+          "descriptor": "()Ljava/io/File;",
+          "bytecode_length": 419
+        },
+        {
+          "name": "unpackNatives",
+          "descriptor": "(Z)V",
+          "bytecode_length": 505
+        },
+        {
+          "name": "deleteEntries",
+          "descriptor": "()V",
+          "bytecode_length": 51
+        },
+        {
+          "name": "deleteLibraryEntries",
+          "descriptor": "()V",
+          "bytecode_length": 108
+        },
+        {
+          "name": "constructClassPath",
+          "descriptor": "(Lnet/minecraft/launcher/versions/CompleteVersion;)Ljava/lang/String;",
+          "bytecode_length": 152
+        },
+        {
+          "name": "fixForNewerVersions",
+          "descriptor": "()V",
+          "bytecode_length": 67
+        },
+        {
+          "name": "makeLegacyArgumentString",
+          "descriptor": "(Lnet/minecraft/launcher/versions/ArgumentType;)Ljava/lang/String;",
+          "bytecode_length": 24
+        },
+        {
+          "name": "removeOldModlistFiles",
+          "descriptor": "()V",
+          "bytecode_length": 74
+        },
+        {
+          "name": "processModpack",
+          "descriptor": "()Ljava/util/List;",
+          "bytecode_length": 287
+        },
+        {
+          "name": "joinList",
+          "descriptor": "(Ljava/util/Collection;Ljava/util/Collection;I)Ljava/lang/String;",
+          "bytecode_length": 147
+        },
+        {
+          "name": "addCommonOptimizedArguments",
+          "descriptor": "(Ljava/util/List;)V",
+          "bytecode_length": 382
+        },
+        {
+          "name": "addCMSOptimizedArguments",
+          "descriptor": "(Ljava/util/List;)V",
+          "bytecode_length": 96
+        },
+        {
+          "name": "addG1OptimizedArguments",
+          "descriptor": "(Ljava/util/List;)V",
+          "bytecode_length": 204
+        },
+        {
+          "name": "addZGCOptimizedArguments",
+          "descriptor": "(Ljava/util/List;I)V",
+          "bytecode_length": 112
+        },
+        {
+          "name": "addShenandoahOptimizedArguments",
+          "descriptor": "(Ljava/util/List;I)V",
+          "bytecode_length": 80
+        },
+        {
+          "name": "addOptimizedArguments",
+          "descriptor": "(Ljava/util/List;Lnet/legacylauncher/managers/JavaManagerConfig$OptimizedArgsType;)V",
+          "bytecode_length": 296
+        },
+        {
+          "name": "addReplaceTrustStoreArgs",
+          "descriptor": "(Ljava/util/List;)V",
+          "bytecode_length": 174
+        },
+        {
+          "name": "createJvmArgs",
+          "descriptor": "(Ljava/util/List;)V",
+          "bytecode_length": 125
+        },
+        {
+          "name": "compareAssets",
+          "descriptor": "(Z)Ljava/util/List;",
+          "bytecode_length": 263
+        },
+        {
+          "name": "fixResourceFolder",
+          "descriptor": "()V",
+          "bytecode_length": 113
+        },
+        {
+          "name": "launchMinecraft",
+          "descriptor": "()V",
+          "bytecode_length": 392
+        },
+        {
+          "name": "updateLoggerActions",
+          "descriptor": "()V",
+          "bytecode_length": 7
+        },
+        {
+          "name": "postLaunch",
+          "descriptor": "()V",
+          "bytecode_length": 135
+        },
+        {
+          "name": "killProcess",
+          "descriptor": "()V",
+          "bytecode_length": 42
+        },
+        {
+          "name": "checkThread",
+          "descriptor": "()V",
+          "bytecode_length": 25
+        },
+        {
+          "name": "checkStep",
+          "descriptor": "(Lnet/legacylauncher/minecraft/launcher/MinecraftLauncher$MinecraftLauncherStep;Lnet/legacylauncher/minecraft/launcher/MinecraftLauncher$MinecraftLauncherStep;)V",
+          "bytecode_length": 105
+        },
+        {
+          "name": "checkAborted",
+          "descriptor": "()V",
+          "bytecode_length": 39
+        },
+        {
+          "name": "checkWorking",
+          "descriptor": "()V",
+          "bytecode_length": 19
+        },
+        {
+          "name": "onJavaProcessPrint",
+          "descriptor": "(Lnet/minecraft/launcher/process/JavaProcess;Lnet/minecraft/launcher/process/PrintStreamType;Ljava/lang/String;)V",
+          "bytecode_length": 40
+        },
+        {
+          "name": "onJavaProcessEnded",
+          "descriptor": "(Lnet/minecraft/launcher/process/JavaProcess;)V",
+          "bytecode_length": 213
+        },
+        {
+          "name": "onJavaProcessError",
+          "descriptor": "(Lnet/minecraft/launcher/process/JavaProcess;Ljava/lang/Throwable;)V",
+          "bytecode_length": 46
+        },
+        {
+          "name": "waitForClose",
+          "descriptor": "()V",
+          "bytecode_length": 19
+        },
+        {
+          "name": "notifyClose",
+          "descriptor": "()V",
+          "bytecode_length": 72
+        },
+        {
+          "name": "removeFrom",
+          "descriptor": "(Ljava/io/File;Ljava/util/List;)V",
+          "bytecode_length": 287
+        },
+        {
+          "name": "createFeatureMatcher",
+          "descriptor": "()Lnet/minecraft/launcher/versions/CurrentLaunchFeatureMatcher;",
+          "bytecode_length": 8
+        },
+        {
+          "name": "createArgumentsSubstitutor",
+          "descriptor": "()Lorg/apache/commons/lang3/text/StrSubstitutor;",
+          "bytecode_length": 658
+        },
+        {
+          "name": "getJreMajorVersion",
+          "descriptor": "()I",
+          "bytecode_length": 157
+        },
+        {
+          "name": "findLog4j2Library",
+          "descriptor": "()Lnet/minecraft/launcher/versions/Library;",
+          "bytecode_length": 35
+        },
+        {
+          "name": "parseLog4jVersion",
+          "descriptor": "(Lnet/minecraft/launcher/versions/Library;)Lnet/legacylauncher/minecraft/launcher/MinecraftLauncher$Log4jVersion;",
+          "bytecode_length": 88
+        },
+        {
+          "name": "savePatchedConfiguration",
+          "descriptor": "(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;",
+          "bytecode_length": 172
+        },
+        {
+          "name": "executeJarScanner",
+          "descriptor": "()V",
+          "bytecode_length": 396
+        },
+        {
+          "name": "scanJarFile",
+          "descriptor": "(Ljava/util/jar/JarFile;Ljava/util/function/Consumer;)V",
+          "bytecode_length": 31
+        },
+        {
+          "name": "scanJarFile0",
+          "descriptor": "(Ljava/util/jar/JarFile;Ljava/util/function/Consumer;)V",
+          "bytecode_length": 185
+        },
+        {
+          "name": "showNoArm64NativeSupportMessage",
+          "descriptor": "(Ljava/lang/String;)V",
+          "bytecode_length": 118
+        },
+        {
+          "name": "lambda$findLog4j2Library$20",
+          "descriptor": "(Lnet/minecraft/launcher/versions/Library;)Z",
+          "bytecode_length": 11
+        },
+        {
+          "name": "lambda$compareAssets$19",
+          "descriptor": "()V",
+          "bytecode_length": 7
+        },
+        {
+          "name": "lambda$createJvmArgs$18",
+          "descriptor": "(Ljava/util/List;Ljava/lang/String;)V",
+          "bytecode_length": 31
+        },
+        {
+          "name": "lambda$addOptimizedArguments$17",
+          "descriptor": "(Ljava/lang/Integer;)Z",
+          "bytecode_length": 16
+        },
+        {
+          "name": "lambda$deleteMod$16",
+          "descriptor": "([Ljava/lang/String;Ljava/io/File;)Z",
+          "bytecode_length": 45
+        },
+        {
+          "name": "lambda$fixArguments$15",
+          "descriptor": "(Ljava/lang/String;)Z",
+          "bytecode_length": 8
+        },
+        {
+          "name": "lambda$constructProcess$14",
+          "descriptor": "(Lnet/legacylauncher/managers/GPUManager$GPU;)V",
+          "bytecode_length": 16
+        },
+        {
+          "name": "lambda$constructProcess$13",
+          "descriptor": "(Ljava/lang/String;Lnet/legacylauncher/managers/GPUManager$GPU;)V",
+          "bytecode_length": 17
+        },
+        {
+          "name": "lambda$constructProcess$12",
+          "descriptor": "(Ljava/lang/String;Lnet/legacylauncher/managers/GPUManager$GPU;)V",
+          "bytecode_length": 17
+        },
+        {
+          "name": "lambda$constructProcess$11",
+          "descriptor": "(Lnet/minecraft/launcher/versions/Argument;)Z",
+          "bytecode_length": 20
+        },
+        {
+          "name": "lambda$constructProcess$10",
+          "descriptor": "(Lnet/minecraft/launcher/versions/Rule;)Z",
+          "bytecode_length": 8
+        },
+        {
+          "name": "lambda$constructProcess$9",
+          "descriptor": "(Lnet/legacylauncher/minecraft/NBTServer;)Z",
+          "bytecode_length": 29
+        },
+        {
+          "name": "lambda$constructProcess$8",
+          "descriptor": "(Ljava/lang/String;)V",
+          "bytecode_length": 74
+        },
+        {
+          "name": "lambda$constructProcess$7",
+          "descriptor": "(Ljava/util/ArrayList;Ljava/lang/String;)V",
+          "bytecode_length": 29
+        },
+        {
+          "name": "lambda$downloadResources$6",
+          "descriptor": "(Lnet/legacylauncher/downloader/Downloadable;)V",
+          "bytecode_length": 23
+        },
+        {
+          "name": "lambda$downloadResources$5",
+          "descriptor": "(Lnet/legacylauncher/downloader/Downloadable;)Z",
+          "bytecode_length": 13
+        },
+        {
+          "name": "lambda$downloadResources$4",
+          "descriptor": "(Lnet/legacylauncher/jre/JavaRuntimeLocal;)V",
+          "bytecode_length": 13
+        },
+        {
+          "name": "lambda$detectUsingCharsetDetectTool$3",
+          "descriptor": "()Ljava/nio/charset/Charset;",
+          "bytecode_length": 7
+        },
+        {
+          "name": "lambda$collectInfo$2",
+          "descriptor": "(Ljava/lang/String;Lnet/minecraft/launcher/versions/Library;)Z",
+          "bytecode_length": 28
+        },
+        {
+          "name": "lambda$collectInfo$1",
+          "descriptor": "(Lnet/minecraft/launcher/versions/Library;)Z",
+          "bytecode_length": 9
+        },
+        {
+          "name": "lambda$new$0",
+          "descriptor": "(Lnet/legacylauncher/configuration/Configuration$Experiments;)Ljava/lang/String;",
+          "bytecode_length": 11
+        },
+        {
+          "name": "access$000",
+          "descriptor": "()Lorg/slf4j/Logger;",
+          "bytecode_length": 4
+        },
+        {
+          "name": "access$100",
+          "descriptor": "(Lnet/legacylauncher/minecraft/launcher/MinecraftLauncher;Ljava/util/jar/JarFile;Ljava/util/function/Consumer;)V",
+          "bytecode_length": 7
+        },
+        {
+          "name": "<clinit>",
+          "descriptor": "()V",
+          "bytecode_length": 217
+        }
+      ]
+    },
+    {
+      "artifact": "installed-launcher",
+      "class": "net/legacylauncher/repository/RepositoryProxy",
+      "class_sha256": "fab5d84c7537634964c56cac3313daa64a0f4c5cddc23293f2fd234ffa2dcefa",
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "()V",
+          "bytecode_length": 5
+        },
+        {
+          "name": "canBeProxied",
+          "descriptor": "(Ljava/net/URL;)Z",
+          "bytecode_length": 20
+        },
+        {
+          "name": "requestMaybeProxy",
+          "descriptor": "(Ljava/lang/String;)Ljava/lang/String;",
+          "bytecode_length": 210
+        },
+        {
+          "name": "getProxyRepoList",
+          "descriptor": "()Lnet/legacylauncher/repository/RepositoryProxy$ProxyRepoList;",
+          "bytecode_length": 21
+        },
+        {
+          "name": "lambda$requestMaybeProxy$2",
+          "descriptor": "(Ljava/net/URL;Lnet/legacylauncher/repository/IRepo;)Ljava/net/URL;",
+          "bytecode_length": 9
+        },
+        {
+          "name": "lambda$requestMaybeProxy$1",
+          "descriptor": "(Lnet/legacylauncher/repository/IRepo;)Z",
+          "bytecode_length": 5
+        },
+        {
+          "name": "lambda$canBeProxied$0",
+          "descriptor": "(Ljava/net/URL;Ljava/lang/String;)Z",
+          "bytecode_length": 9
+        },
+        {
+          "name": "access$100",
+          "descriptor": "()Z",
+          "bytecode_length": 4
+        },
+        {
+          "name": "access$102",
+          "descriptor": "(Z)Z",
+          "bytecode_length": 6
+        },
+        {
+          "name": "<clinit>",
+          "descriptor": "()V",
+          "bytecode_length": 93
+        }
+      ]
+    },
+    {
+      "artifact": "installed-launcher",
+      "class": "net/legacylauncher/ui/LegacyLauncherFrame$TitleUpdater",
+      "class_sha256": "1782e836dec4bc6a01dc936280728f8e49444a422cb6802e90dc43b6d455d94a",
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "(Lnet/legacylauncher/ui/LegacyLauncherFrame;)V",
+          "bytecode_length": 10
+        },
+        {
+          "name": "run",
+          "descriptor": "()V",
+          "bytecode_length": 10
+        },
+        {
+          "name": "lambda$run$0",
+          "descriptor": "()V",
+          "bytecode_length": 44
+        },
+        {
+          "name": "<init>",
+          "descriptor": "(Lnet/legacylauncher/ui/LegacyLauncherFrame;Lnet/legacylauncher/ui/LegacyLauncherFrame$1;)V",
+          "bytecode_length": 6
+        },
+        {
+          "name": "access$402",
+          "descriptor": "(Lnet/legacylauncher/ui/LegacyLauncherFrame$TitleUpdater;Ljava/util/concurrent/ScheduledFuture;)Ljava/util/concurrent/ScheduledFuture;",
+          "bytecode_length": 7
+        }
+      ]
+    },
+    {
+      "artifact": "installed-launcher",
+      "class": "net/legacylauncher/user/MinecraftUserJsonizer",
+      "class_sha256": "baf4fb62b3d071912ad3b3f857af6e615fa67e74d2fc2b35bba776ee33b77817",
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "()V",
+          "bytecode_length": 5
+        },
+        {
+          "name": "serialize",
+          "descriptor": "(Lnet/legacylauncher/user/MinecraftUser;Lcom/google/gson/JsonSerializationContext;)Lcom/google/gson/JsonObject;",
+          "bytecode_length": 18
+        },
+        {
+          "name": "deserialize",
+          "descriptor": "(Lcom/google/gson/JsonObject;Lcom/google/gson/JsonDeserializationContext;)Lnet/legacylauncher/user/MinecraftUser;",
+          "bytecode_length": 16
+        },
+        {
+          "name": "deserialize",
+          "descriptor": "(Lcom/google/gson/JsonObject;Lcom/google/gson/JsonDeserializationContext;)Lnet/legacylauncher/user/User;",
+          "bytecode_length": 7
+        },
+        {
+          "name": "serialize",
+          "descriptor": "(Lnet/legacylauncher/user/User;Lcom/google/gson/JsonSerializationContext;)Lcom/google/gson/JsonObject;",
+          "bytecode_length": 10
+        }
+      ]
+    },
+    {
+      "artifact": "installed-launcher",
+      "class": "net/legacylauncher/user/minecraft/MinecraftOAuthRefresh",
+      "class_sha256": "3fbfea6f47b37def7d681735c8c684465750d26a807da00fcde87a4d092ace66",
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "(Lnet/legacylauncher/user/minecraft/strategy/oatoken/refresh/MicrosoftOAuthTokenRefresher;Lnet/legacylauncher/user/minecraft/strategy/xb/auth/XboxLiveAuthenticator;Lnet/legacylauncher/user/minecraft/strategy/xb/xsts/XSTSAuthenticator;Lnet/legacylauncher/user/minecraft/strategy/mcsauth/MinecraftServicesAuthenticator;Lnet/legacylauncher/user/minecraft/strategy/gos/GameOwnershipValidator;Lnet/legacylauncher/user/minecraft/strategy/preq/MinecraftProfileRequester;Lnet/legacylauncher/user/minecraft/strategy/pconv/MinecraftProfileConverter;)V",
+          "bytecode_length": 44
+        },
+        {
+          "name": "refreshIfNeeded",
+          "descriptor": "(Lnet/legacylauncher/user/minecraft/strategy/oatoken/MicrosoftOAuthToken;Lnet/legacylauncher/user/minecraft/strategy/mcsauth/MinecraftServicesToken;)Lnet/legacylauncher/user/MinecraftUser;",
+          "bytecode_length": 31
+        },
+        {
+          "name": "refreshExplicitly",
+          "descriptor": "(Lnet/legacylauncher/user/minecraft/strategy/oatoken/MicrosoftOAuthToken;)Lnet/legacylauncher/user/MinecraftUser;",
+          "bytecode_length": 75
+        }
+      ]
+    },
+    {
+      "artifact": "installed-launcher",
+      "class": "net/minecraft/launcher/updater/ExtraVersionList",
+      "class_sha256": "12a18c16e4880a8c06078f093120185c36c03ed0cebea2f68afd697057c9bead",
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "()V",
+          "bytecode_length": 8
+        },
+        {
+          "name": "getCompleteVersion",
+          "descriptor": "(Lnet/minecraft/launcher/versions/Version;)Lnet/minecraft/launcher/versions/CompleteVersion;",
+          "bytecode_length": 150
+        }
+      ]
+    },
+    {
+      "artifact": "installed-launcher",
+      "class": "net/minecraft/launcher/updater/OfficialVersionList",
+      "class_sha256": "013ab4f6cad0940867b4373577a60f34da53016288ce1389f7c0ac1da192ba0f",
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "()V",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getRawList",
+          "descriptor": "()Lnet/minecraft/launcher/updater/RawVersionList;",
+          "bytecode_length": 360
+        },
+        {
+          "name": "process",
+          "descriptor": "(Lnet/minecraft/launcher/updater/RawVersionList;)Lnet/minecraft/launcher/updater/RawVersionList;",
+          "bytecode_length": 39
+        },
+        {
+          "name": "hasAllFiles",
+          "descriptor": "(Lnet/minecraft/launcher/versions/CompleteVersion;Lnet/legacylauncher/util/OS;)Z",
+          "bytecode_length": 2
+        },
+        {
+          "name": "getUrl",
+          "descriptor": "(Ljava/lang/String;)Ljava/io/InputStreamReader;",
+          "bytecode_length": 27
+        },
+        {
+          "name": "lambda$getRawList$1",
+          "descriptor": "(Ljava/net/URL;Lnet/legacylauncher/repository/IRepo;)Ljava/net/URL;",
+          "bytecode_length": 9
+        },
+        {
+          "name": "lambda$getRawList$0",
+          "descriptor": "(Lnet/legacylauncher/repository/IRepo;)Z",
+          "bytecode_length": 5
+        },
+        {
+          "name": "<clinit>",
+          "descriptor": "()V",
+          "bytecode_length": 9
+        }
+      ]
+    },
+    {
+      "artifact": "installed-launcher",
+      "class": "net/minecraft/launcher/versions/CompleteVersion",
+      "class_sha256": "b4b5f937a6d8e1551a5da0dc70287d56a3fcd3115eb3a33d7868570b08146d39",
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "()V",
+          "bytecode_length": 54
+        },
+        {
+          "name": "<init>",
+          "descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;Ljava/util/Date;Ljava/lang/Integer;Ljava/util/List;)V",
+          "bytecode_length": 105
+        },
+        {
+          "name": "getID",
+          "descriptor": "()Ljava/lang/String;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "setID",
+          "descriptor": "(Ljava/lang/String;)V",
+          "bytecode_length": 30
+        },
+        {
+          "name": "getUrl",
+          "descriptor": "()Ljava/lang/String;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getFamily",
+          "descriptor": "()Ljava/lang/String;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "setFamily",
+          "descriptor": "(Ljava/lang/String;)V",
+          "bytecode_length": 6
+        },
+        {
+          "name": "getReleaseType",
+          "descriptor": "()Lnet/minecraft/launcher/versions/ReleaseType;",
+          "bytecode_length": 8
+        },
+        {
+          "name": "getType",
+          "descriptor": "()Ljava/lang/String;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getSource",
+          "descriptor": "()Lnet/legacylauncher/repository/Repository;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "setSource",
+          "descriptor": "(Lnet/legacylauncher/repository/Repository;)V",
+          "bytecode_length": 18
+        },
+        {
+          "name": "getUpdatedTime",
+          "descriptor": "()Ljava/util/Date;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "setUpdatedTime",
+          "descriptor": "(Ljava/util/Date;)V",
+          "bytecode_length": 20
+        },
+        {
+          "name": "getReleaseTime",
+          "descriptor": "()Ljava/util/Date;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getVersionList",
+          "descriptor": "()Lnet/minecraft/launcher/updater/VersionList;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "setVersionList",
+          "descriptor": "(Lnet/minecraft/launcher/updater/VersionList;)V",
+          "bytecode_length": 20
+        },
+        {
+          "name": "getModpackType",
+          "descriptor": "()Lnet/minecraft/launcher/versions/ModpackType;",
+          "bytecode_length": 33
+        },
+        {
+          "name": "getJavaVersion",
+          "descriptor": "()Lnet/minecraft/launcher/versions/CompleteVersion$JavaVersion;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getJar",
+          "descriptor": "()Ljava/lang/String;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getInheritsFrom",
+          "descriptor": "()Ljava/lang/String;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getJVMArguments",
+          "descriptor": "()Ljava/lang/String;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getMinecraftArguments",
+          "descriptor": "()Ljava/lang/String;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "setMinecraftArguments",
+          "descriptor": "(Ljava/lang/String;)V",
+          "bytecode_length": 6
+        },
+        {
+          "name": "getMainClass",
+          "descriptor": "()Ljava/lang/String;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "setMainClass",
+          "descriptor": "(Ljava/lang/String;)V",
+          "bytecode_length": 6
+        },
+        {
+          "name": "getLibraries",
+          "descriptor": "()Ljava/util/List;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getRules",
+          "descriptor": "()Ljava/util/List;",
+          "bytecode_length": 8
+        },
+        {
+          "name": "getDeleteEntries",
+          "descriptor": "()Ljava/util/List;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getMinimumLauncherVersion",
+          "descriptor": "()I",
+          "bytecode_length": 8
+        },
+        {
+          "name": "getMinimumCustomLauncherVersion",
+          "descriptor": "()I",
+          "bytecode_length": 8
+        },
+        {
+          "name": "getAssetIndex",
+          "descriptor": "()Lnet/minecraft/launcher/updater/AssetIndexInfo;",
+          "bytecode_length": 50
+        },
+        {
+          "name": "getDownloadURL",
+          "descriptor": "(Ljava/lang/String;)Lnet/minecraft/launcher/updater/DownloadInfo;",
+          "bytecode_length": 14
+        },
+        {
+          "name": "isProceededFor",
+          "descriptor": "(Ljava/lang/String;)Z",
+          "bytecode_length": 11
+        },
+        {
+          "name": "setProceededFor",
+          "descriptor": "(Ljava/lang/String;)V",
+          "bytecode_length": 12
+        },
+        {
+          "name": "equals",
+          "descriptor": "(Ljava/lang/Object;)Z",
+          "bytecode_length": 71
+        },
+        {
+          "name": "toString",
+          "descriptor": "()Ljava/lang/String;",
+          "bytecode_length": 28
+        },
+        {
+          "name": "debugString",
+          "descriptor": "()Ljava/lang/String;",
+          "bytecode_length": 169
+        },
+        {
+          "name": "getFile",
+          "descriptor": "(Ljava/io/File;)Ljava/io/File;",
+          "bytecode_length": 51
+        },
+        {
+          "name": "appliesToCurrentEnvironment",
+          "descriptor": "(Lnet/minecraft/launcher/versions/Rule$FeatureMatcher;)Z",
+          "bytecode_length": 58
+        },
+        {
+          "name": "getRelevantLibraries",
+          "descriptor": "(Lnet/minecraft/launcher/versions/Rule$FeatureMatcher;)Ljava/util/Collection;",
+          "bytecode_length": 32
+        },
+        {
+          "name": "getRelevantLibraries",
+          "descriptor": "(Lnet/minecraft/launcher/versions/Rule$FeatureMatcher;Z)Ljava/util/Collection;",
+          "bytecode_length": 54
+        },
+        {
+          "name": "getRelevantLibrariesDeduplicated",
+          "descriptor": "(Lnet/minecraft/launcher/versions/Rule$FeatureMatcher;Z)Ljava/util/Collection;",
+          "bytecode_length": 109
+        },
+        {
+          "name": "streamLibraries",
+          "descriptor": "(Lnet/minecraft/launcher/versions/LibraryType;Lnet/minecraft/launcher/versions/Rule$FeatureMatcher;)Ljava/util/stream/Stream;",
+          "bytecode_length": 23
+        },
+        {
+          "name": "getClassPath",
+          "descriptor": "(Lnet/legacylauncher/util/OS;Lnet/minecraft/launcher/versions/Rule$FeatureMatcher;Ljava/io/File;)Ljava/util/Collection;",
+          "bytecode_length": 58
+        },
+        {
+          "name": "getJarFile",
+          "descriptor": "(Ljava/io/File;)Ljava/io/File;",
+          "bytecode_length": 51
+        },
+        {
+          "name": "getMods",
+          "descriptor": "(Lnet/minecraft/launcher/versions/Rule$FeatureMatcher;)Ljava/util/List;",
+          "bytecode_length": 20
+        },
+        {
+          "name": "getTransformers",
+          "descriptor": "(Lnet/minecraft/launcher/versions/Rule$FeatureMatcher;)Ljava/util/List;",
+          "bytecode_length": 20
+        },
+        {
+          "name": "getClassPath",
+          "descriptor": "(Lnet/minecraft/launcher/versions/Rule$FeatureMatcher;Ljava/io/File;)Ljava/util/Collection;",
+          "bytecode_length": 10
+        },
+        {
+          "name": "getNatives",
+          "descriptor": "(Lnet/legacylauncher/util/OS;Lnet/minecraft/launcher/versions/Rule$FeatureMatcher;)Ljava/util/Collection;",
+          "bytecode_length": 115
+        },
+        {
+          "name": "getNatives",
+          "descriptor": "(Lnet/minecraft/launcher/versions/Rule$FeatureMatcher;)Ljava/util/Collection;",
+          "bytecode_length": 9
+        },
+        {
+          "name": "getRequiredFiles",
+          "descriptor": "(Lnet/legacylauncher/util/OS;Lnet/minecraft/launcher/versions/Rule$FeatureMatcher;)Ljava/util/Set;",
+          "bytecode_length": 139
+        },
+        {
+          "name": "getExtractFiles",
+          "descriptor": "(Lnet/legacylauncher/util/OS;Lnet/minecraft/launcher/versions/Rule$FeatureMatcher;)Ljava/util/Collection;",
+          "bytecode_length": 54
+        },
+        {
+          "name": "resolve",
+          "descriptor": "(Lnet/legacylauncher/managers/VersionManager;Z)Lnet/minecraft/launcher/versions/CompleteVersion;",
+          "bytecode_length": 14
+        },
+        {
+          "name": "resolveFamily",
+          "descriptor": "(Ljava/lang/String;)V",
+          "bytecode_length": 136
+        },
+        {
+          "name": "resolve",
+          "descriptor": "(Lnet/legacylauncher/managers/VersionManager;ZLjava/util/List;)Lnet/minecraft/launcher/versions/CompleteVersion;",
+          "bytecode_length": 276
+        },
+        {
+          "name": "copyInto",
+          "descriptor": "(Lnet/minecraft/launcher/versions/CompleteVersion;)Lnet/minecraft/launcher/versions/CompleteVersion;",
+          "bytecode_length": 624
+        },
+        {
+          "name": "createFeatureMatcher",
+          "descriptor": "()Lnet/minecraft/launcher/versions/Rule$FeatureMatcher;",
+          "bytecode_length": 8
+        },
+        {
+          "name": "hasModernArguments",
+          "descriptor": "()Z",
+          "bytecode_length": 13
+        },
+        {
+          "name": "addArguments",
+          "descriptor": "(Lnet/minecraft/launcher/versions/ArgumentType;Lnet/minecraft/launcher/versions/Rule$FeatureMatcher;Lorg/apache/commons/lang3/text/StrSubstitutor;)Ljava/util/List;",
+          "bytecode_length": 453
+        },
+        {
+          "name": "getLogging",
+          "descriptor": "()Ljava/util/Map;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "getArgumentOfType",
+          "descriptor": "(Lnet/minecraft/launcher/versions/ArgumentType;)Ljava/util/List;",
+          "bytecode_length": 30
+        },
+        {
+          "name": "validate",
+          "descriptor": "()V",
+          "bytecode_length": 59
+        },
+        {
+          "name": "getFamilyOf",
+          "descriptor": "(Ljava/lang/String;)Ljava/lang/String;",
+          "bytecode_length": 46
+        },
+        {
+          "name": "clone",
+          "descriptor": "()Lnet/minecraft/launcher/versions/CompleteVersion;",
+          "bytecode_length": 116
+        },
+        {
+          "name": "getRemovedLibraries",
+          "descriptor": "()Ljava/util/List;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "clone",
+          "descriptor": "()Ljava/lang/Object;",
+          "bytecode_length": 5
+        },
+        {
+          "name": "lambda$copyInto$8",
+          "descriptor": "(Lnet/minecraft/launcher/versions/ArgumentType;)Ljava/util/List;",
+          "bytecode_length": 8
+        },
+        {
+          "name": "lambda$getExtractFiles$7",
+          "descriptor": "(Lnet/legacylauncher/util/OS;Lnet/minecraft/launcher/versions/Library;)Ljava/lang/String;",
+          "bytecode_length": 37
+        },
+        {
+          "name": "lambda$getExtractFiles$6",
+          "descriptor": "(Lnet/legacylauncher/util/OS;Lnet/minecraft/launcher/versions/Library;)Z",
+          "bytecode_length": 11
+        },
+        {
+          "name": "lambda$getExtractFiles$5",
+          "descriptor": "(Lnet/minecraft/launcher/versions/Library;)Z",
+          "bytecode_length": 13
+        },
+        {
+          "name": "lambda$getClassPath$4",
+          "descriptor": "(Ljava/io/File;Lnet/minecraft/launcher/versions/Library;)Ljava/io/File;",
+          "bytecode_length": 32
+        },
+        {
+          "name": "lambda$getClassPath$3",
+          "descriptor": "(Lnet/minecraft/launcher/versions/Library;)Z",
+          "bytecode_length": 13
+        },
+        {
+          "name": "lambda$streamLibraries$2",
+          "descriptor": "(Lnet/minecraft/launcher/versions/LibraryType;Lnet/minecraft/launcher/versions/Library;)Z",
+          "bytecode_length": 14
+        },
+        {
+          "name": "lambda$getRelevantLibraries$1",
+          "descriptor": "(Lnet/minecraft/launcher/versions/Rule$FeatureMatcher;Lnet/minecraft/launcher/versions/Library;)Z",
+          "bytecode_length": 6
+        },
+        {
+          "name": "lambda$getRelevantLibraries$0",
+          "descriptor": "(Lnet/minecraft/launcher/versions/Rule$FeatureMatcher;Lnet/minecraft/launcher/versions/Library;)Z",
+          "bytecode_length": 6
+        },
+        {
+          "name": "<clinit>",
+          "descriptor": "()V",
+          "bytecode_length": 18
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Counts describe indexed structure, not manual inspection of every method or executed coverage",
+    "Instruction observations and raw class data remain local; methods/offset conclusions are documented in reports"
+  ]
+}

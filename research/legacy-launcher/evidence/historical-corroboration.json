@@ -1,0 +1,77 @@
+{
+  "evidence_id": "E18",
+  "schema": "legacyforge-phase6a-public-historical-corroboration-v1",
+  "evidence_type": "recorded_historical_messages_only",
+  "target_execution": false,
+  "execution_pass_claimed": false,
+  "archived_to_installed_update_transition_proven": false,
+  "scope": ["logs/launcher.log*", "legacy/Minecraft/game/logs/*.log*"],
+  "counts": {
+    "source_files": 6,
+    "source_lines": 26994,
+    "local_allowlisted_records": 16372,
+    "sensitive_matching_lines_omitted_in_full": 5,
+    "unique_allowlisted_public_endpoints": 4835,
+    "unique_catalog_endpoints": 1,
+    "unique_version_asset_runtime_metadata_endpoints": 3,
+    "unique_runtime_or_other_content_endpoints_excluding_client": 196,
+    "unique_asset_endpoints": 4591,
+    "unique_library_endpoints_partial_allowlist": 43,
+    "unique_client_jar_endpoints": 1
+  },
+  "sources": [
+    {"path": "logs/launcher.log", "line_count": 223, "sha256": "4c9e0489a1c7e4e42a9e70299e842a411f96539cef42706785c2c0e5d9edfb62"},
+    {"path": "logs/launcher.log.1", "line_count": 162, "sha256": "cc8a61c5ac5f9e560faefd23d1629b0d05032f815d2f5a3e4500e7a815d905e0"},
+    {"path": "logs/launcher.log.2", "line_count": 47, "sha256": "9165f4817a047d5eb31ad3dfc944f89c693c6a248f04008b47d9619b461e78fb"},
+    {"path": "logs/launcher.log.3", "line_count": 26447, "sha256": "d0c00a3357727c644fdf176f0f367cbe9cda3337f9423826705d612bbdd008f3"},
+    {"path": "legacy/Minecraft/game/logs/2026-10-17-1.log.gz", "line_count": 48, "sha256": "b625a78bcaaa2142a4372d9d75b6badd2041c69d715b47b683f91a0e36c824b9", "line_number_basis": "decompressed_utf8_text"},
+    {"path": "legacy/Minecraft/game/logs/latest.log", "line_count": 67, "sha256": "9585099fff1b81224ddf9d396fa2ca0f62b2c5c4a4900ce4ba2ae6dd517d97f2"}
+  ],
+  "version_mentions": {
+    "launcher": {"version": "1.169.4", "sources": ["logs/launcher.log", "logs/launcher.log.1", "logs/launcher.log.2", "logs/launcher.log.3"], "line_in_each_source": 2},
+    "bootstrap": {"version": "1.40.3", "sources": ["logs/launcher.log", "logs/launcher.log.1", "logs/launcher.log.2", "logs/launcher.log.3"], "line_in_each_source": 3},
+    "archived_versions_not_mentioned_in_retained_records": ["1.159.2", "1.32.2"],
+    "negative_search_boundary": "six listed log files after explicit sensitive-line exclusions"
+  },
+  "sequence_source": "logs/launcher.log.3",
+  "sequence_order_basis": "source_line_order_with_overlapping_runtime_and_asset_messages",
+  "sequence": [
+    {"stage": "version_catalog_endpoint_mention", "lines": [31, 36], "clock_first": "00:51:08,810", "clock_last": "00:51:08,943", "public_endpoint": "https://launchermeta.mojang.com/mc/game/version_manifest.json"},
+    {"stage": "selected_version_profile_endpoint_mention", "lines": [80, 81, 82], "clock_first": "00:52:31,437", "clock_last": "00:52:32,604", "minecraft_version": "1.21.11", "public_endpoint": "https://piston-meta.mojang.com/v1/packages/718cd84b4912691fe5de829aab6876a4b7f6c5c4/1.21.11.json"},
+    {"stage": "asset_index_endpoint_mention", "lines": [113, 114], "clock_first": "00:52:32,774", "clock_last": "00:52:32,782", "public_endpoint": "https://piston-meta.mojang.com/v1/packages/e81d9e2536723a11eb68e11c5642708926b8be5f/29.json"},
+    {"stage": "runtime_manifest_endpoint_mention", "lines": [124], "clock_first": "00:52:34,187", "public_endpoint": "https://piston-meta.mojang.com/v1/packages/cb4394a27089d19f65d5baa6cf0482c27c3c7865/manifest.json"},
+    {"stage": "runtime_or_other_content_endpoint_mentions", "first_line": 142, "last_line": 5154, "clock_first": "00:52:34,441", "clock_last": "00:52:53,873", "unique_endpoint_count": 196, "public_origin": "https://piston-data.mojang.com", "public_path_pattern": "/v1/objects/{sha1}/{public_artifact_basename}"},
+    {"stage": "asset_endpoint_mentions", "first_line": 2926, "last_line": 25875, "clock_first": "00:52:39,053", "clock_last": "00:54:38,523", "unique_endpoint_count": 4591, "public_origin": "https://resources.download.minecraft.net", "public_path_pattern": "/{first_two_sha1_characters}/{sha1}"},
+    {"stage": "partial_allowlisted_library_endpoint_mentions", "first_line": 25884, "last_line": 26335, "clock_first": "00:54:38,541", "clock_last": "00:54:49,134", "unique_endpoint_count": 43, "public_origin": "https://libraries.minecraft.net"},
+    {"stage": "client_jar_endpoint_mention", "lines": [26342, 26343], "clock_first": "00:54:49,144", "artifact_basename": "client.jar", "public_endpoint": "https://piston-data.mojang.com/v1/objects/ba2df812c2d12e0219c489c4cd9a5e1f0760f5bd/client.jar"},
+    {"stage": "download_completion_recorded", "lines": [26360], "clock_first": "00:54:59,510"},
+    {"stage": "java_version_recorded", "lines": [26372, 26373], "clock_first": "00:55:01,631", "technology": "Java", "version": "21.0.7"},
+    {"stage": "backend_version_recorded", "lines": [26393], "clock_first": "00:55:10", "technology": "LWJGL", "version": "3.3.3+5", "duplicate_game_log_citation": {"source": "legacy/Minecraft/game/logs/2026-10-17-1.log.gz", "lines": [4]}},
+    {"stage": "openal_initialization_and_sound_engine_startup_recorded", "lines": [26408, 26409], "clock_first": "00:55:14", "technology": "OpenAL", "duplicate_game_log_citation": {"source": "legacy/Minecraft/game/logs/2026-10-17-1.log.gz", "lines": [19, 20]}},
+    {"stage": "game_stopping_recorded", "lines": [26437], "clock_first": "00:56:04"},
+    {"stage": "process_exit_code_recorded", "lines": [26439], "clock_first": "00:56:04,603", "exit_code": 0}
+  ],
+  "additional_bounded_citations": [
+    {"source": "logs/launcher.log", "technology": "LWJGL", "version": "3.3.3+5", "lines": [150]},
+    {"source": "logs/launcher.log", "stage": "openal_initialization_and_sound_engine_startup_recorded", "lines": [165, 166, 196, 197]},
+    {"source": "logs/launcher.log", "stage": "game_stopping_recorded", "lines": [213]},
+    {"source": "logs/launcher.log", "stage": "process_exit_code_recorded", "lines": [215], "exit_code": 0},
+    {"source": "legacy/Minecraft/game/logs/latest.log", "technology": "LWJGL", "version": "3.3.3+5", "lines": [4]},
+    {"source": "legacy/Minecraft/game/logs/latest.log", "stage": "openal_initialization_and_sound_engine_startup_recorded", "lines": [19, 20, 50, 51]},
+    {"source": "legacy/Minecraft/game/logs/latest.log", "stage": "game_stopping_recorded", "lines": [67]},
+    {"source": "logs/launcher.log.3", "stage": "http_status_recorded_without_request_attribution", "lines": [26446], "http_status": 502},
+    {"source": "logs/launcher.log", "stage": "http_status_recorded_without_request_attribution", "lines": [142], "http_status": 502}
+  ],
+  "validation": {"output_schema_privacy_allowlist_passed": true, "source_hashes_stable_at_local_validation": true, "raw_line_retention": false, "url_queries_retained": false, "credentials_or_account_device_identifiers_retained": false, "complete_asset_url_list_published": false},
+  "limitations": [
+    "All findings are recorded historical messages, not freshly observed execution, independently authenticated operations, or dynamic test passes.",
+    "Logs can be edited, rotated, incomplete, duplicated, or affected by clock changes; no timezone or cross-file chronological assumption is made.",
+    "Endpoint presence alone does not prove a successful response, complete transfer, integrity check, or ownership authorization.",
+    "The 43-library count is limited by the public endpoint allowlist and is not the complete library inventory.",
+    "Runtime-or-other content endpoint grouping does not independently identify every transfer as a runtime file.",
+    "Launcher and game logs duplicate messages; record counts and audio/backend messages are not independent session counts.",
+    "Archived-to-installed update transition, intermediate versions, acquisition history, and publisher authenticity remain unproven.",
+    "Disposable-Windows installer, interruption, repair, update, and recovery tests; present account authentication and entitlement tests; and packaged Xbox tests across all 56 targets remain unresolved or blocked by the existing environment and execution constraints.",
+    "No production code, authentication, entitlement check, account, device, or software installation was changed by this audit."
+  ]
+}

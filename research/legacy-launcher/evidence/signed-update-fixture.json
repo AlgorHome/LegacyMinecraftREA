@@ -1,0 +1,71 @@
+{
+  "evidence_id": "E20",
+  "schema": "legacyforge-phase6a-public-signed-metadata-fixture-v1",
+  "evidence_type": "public_metadata_fetch_and_independent_offline_cryptographic_check",
+  "fixture_availability": "CONFIRMED_FOR_EXACT_RECORDED_RESPONSE",
+  "actual_updater_acceptance": "NOT_TESTED",
+  "actual_updater_execution": "BLOCKED",
+  "target_execution": false,
+  "requested_url": "https://bootstrap.llaun.ch/legacy/bootstrap.json.mgz.signed",
+  "request_started_utc": "2026-10-17T06:55:03.762603+00:00",
+  "request_finished_utc": "2026-10-17T06:55:04.023990+00:00",
+  "http_status": 200,
+  "authentication_used": false,
+  "redirects_allowed": false,
+  "dns_addresses_checked_public_without_retaining_addresses": true,
+  "maximum_response_bytes": 1048576,
+  "socket_timeout_seconds": 15,
+  "response_bytes": 72164,
+  "response_sha256": "9081bab55e8c8ba72ff3c63a1c2cbb85ba523bd2ef357b94e272ba913cf5c52c",
+  "signature_prefix_bytes": 256,
+  "payload_bytes": 71908,
+  "payload_sha256": "7f90a5642b01ccc77bfa79acde3229e36ce874219de77636a2ae637ca494e827",
+  "payload_compression_marker": "gzip:",
+  "bounded_gzip_json_parse_valid": true,
+  "maximum_decompressed_bytes": 4194304,
+  "decompressed_json_bytes": 316400,
+  "decompressed_json_sha256": "22155baa1562d52a04574b80a4e668c3fe017bbd5e81529e12c1b95db359159f",
+  "key": {
+    "installed_member": "BOOT-INF/lib/bootstrap-1.40.3-plain.jar!net/legacylauncher/bootstrap/transport/public.der",
+    "archived_member": "public.der",
+    "der_bytes": 294,
+    "der_sha256": "4fd4703ee5c9f4339bfc5e7ea7aa36eb0ffa6e6f6915df0ec5563ac0835a294c",
+    "archived_and_installed_keys_identical": true,
+    "format": "DER SubjectPublicKeyInfo",
+    "algorithm": "RSA",
+    "modulus_bits": 2048,
+    "public_exponent": 65537
+  },
+  "artifact_identities": {
+    "installed_bootstrap_sha256": "09ba7517c8a9b30780ff9a6de230b8905247835ae0da914d66991e2b3b4b6c4e",
+    "archived_bootstrap_sha256": "df2d2516e905cdc87a68ec456f881664a5b158ba810934251d7b70a740679588",
+    "installed_nested_bootstrap_sha256": "ebd3531f0b341c2ac67d71e1ad1ce7e2c318a58df092fe72401e3df60e5aa720",
+    "installed_common_jar_sha256": "360a7321fdd080c13ca6b2150a27da8e55ea7521401a5d00322b70189e12b398"
+  },
+  "verification": {
+    "scheme": "RSASSA-PKCS1-v1_5",
+    "signature_hash": "SHA-1",
+    "signed_message": "UTF-8 lowercase hexadecimal SHA-256 digest of complete payload after the 256-byte signature prefix, including compression marker",
+    "implementation": "Independent Python standard-library ASN.1 parser, modular exponentiation, hashes, and strict constant-time encoded-message comparison",
+    "result": "VALID",
+    "local_payload_one_bit_change_rejected": true,
+    "local_signature_one_bit_change_rejected": true,
+    "altered_input_sent_to_service_or_launcher": false
+  },
+  "static_citations": [
+    {"class": "net/legacylauncher/repository/HostsV1", "sha256": "0ccff82a855984693a90f167ef1b750eedfa001851c0f01bf9bd48211edfe127", "method": "<clinit>", "bytecode_offsets": [6, 11], "public_bootstrap_hosts": ["bootstrap.llaun.ch", "bootstrap.legacylauncher.ru"]},
+    {"resource": "META-INF/bootstrap-meta.json", "enclosing_artifact": "installed_bootstrap", "shortBrand": "legacy"},
+    {"class": "net/legacylauncher/bootstrap/meta/UpdateMeta$1", "sha256": "9de9540367a568e91212868dfcfd66d48a9ff7f30a3d31d2c0420bea244260f8", "methods": [{"name": "fetchUpdateMeta", "bytecode_offsets": [22]}, {"name": "lambda$fetchUpdateMeta$0", "bytecode_offsets": [3]}], "public_url_template": "https://%s/%s/bootstrap.json.mgz.signed"},
+    {"class": "net/legacylauncher/bootstrap/transport/SignedStream", "sha256": "612128aa31d747fd944c0b6bb382ca1090f79aeec43277d5429147d429e15955", "methods": [{"name": "readSignature", "bytecode_offsets": [9, 25]}, {"name": "validateSignature", "bytecode_offsets": [18, 37, 43, 52]}, {"name": "verify", "bytecode_offsets": [0]}]},
+    {"class": "net/legacylauncher/bootstrap/transport/ChecksumStream", "sha256": "cbf343e1d779d49edb05b5a5a61b8e5a0544f98dd64f4752b893dbddd896fea7", "method": "<init>", "bytecode_offsets": [6]},
+    {"class": "net/legacylauncher/bootstrap/util/Sha256Sign", "sha256": "af9b4025b7d754403dd83c90ed6495fd0b26f1dcd995ca09a66e4ceffb436b83", "method": "toString", "bytecode_offsets": [40]}
+  ],
+  "publication_boundary": {"metadata_bytes_published": false, "decoded_metadata_published": false, "key_bytes_published": false, "referenced_binaries_fetched": false, "credentials_or_query_values_collected": false},
+  "limitations": [
+    "Signature correspondence establishes matching the embedded trust anchor, not independent installer publisher identity, archival authenticity, historical acquisition/update chain, or present key ownership.",
+    "No target verifier, launcher, updater, installer, game, guest, or Xbox execution occurred.",
+    "Independent verifier acceptance and local negative controls do not demonstrate actual updater acceptance or rejection behavior.",
+    "Windows guest infrastructure and actual updater tamper, malformed-input, interrupted-update, rollback, and recovery tests remain blocked.",
+    "Only the exact public metadata response is evidenced; availability and response bytes can change later."
+  ]
+}

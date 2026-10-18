@@ -1,0 +1,3699 @@
+{
+  "schema": "legacyforge-phase6a-test-cases-v1",
+  "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+  "observation_policy": "No PASS without actual corresponding target/device observation; static/analyzer/synthetic control checks do not substitute.",
+  "cases": [
+    {
+      "test_id": "W01",
+      "scope": "actual Windows target",
+      "action": "Verify guest isolation and hashes before launching",
+      "criteria": [
+        {
+          "id": "W01.result",
+          "requirement": "Guest OS/build/account class; no personal stores/mappings; exact installer SHA256; network-disabled state"
+        }
+      ],
+      "required_pass_fields": [
+        "environment.os_build",
+        "observation.exit_or_hresult",
+        "environment.isolation_type",
+        "environment.isolation_approved",
+        "artifacts.installer_sha256"
+      ],
+      "current_status": "BLOCKED",
+      "blockers": [
+        "APPROVED_ISOLATED_WINDOWS_GUEST_UNAVAILABLE"
+      ]
+    },
+    {
+      "test_id": "W02",
+      "scope": "actual Windows target",
+      "action": "Snapshot guest, run installer offline into guest-only location",
+      "criteria": [
+        {
+          "id": "W02.result",
+          "requirement": "Installation receipt/exit, guest-only file inventory/hashes, uninstall/shortcut/config changes; compare770 payload identities; do not execute uninstaller implicitly"
+        }
+      ],
+      "required_pass_fields": [
+        "environment.os_build",
+        "observation.exit_or_hresult",
+        "environment.isolation_type",
+        "environment.isolation_approved",
+        "artifacts.installer_sha256"
+      ],
+      "current_status": "BLOCKED",
+      "blockers": [
+        "APPROVED_ISOLATED_WINDOWS_GUEST_UNAVAILABLE"
+      ]
+    },
+    {
+      "test_id": "W03",
+      "scope": "actual Windows target",
+      "action": "Launch archived launcher offline",
+      "criteria": [
+        {
+          "id": "W03.result",
+          "requirement": "Actual wrapper\u2192bootstrap\u2192launcher process tree and JVM command identities; no successful network calls; missing-cache errors/cancellation visible"
+        }
+      ],
+      "required_pass_fields": [
+        "environment.os_build",
+        "observation.exit_or_hresult",
+        "environment.isolation_type",
+        "environment.isolation_approved",
+        "artifacts.installer_sha256"
+      ],
+      "current_status": "BLOCKED",
+      "blockers": [
+        "APPROVED_ISOLATED_WINDOWS_GUEST_UNAVAILABLE"
+      ]
+    },
+    {
+      "test_id": "W04",
+      "scope": "actual Windows target",
+      "action": "Start from empty guest game cache; approve narrowly scoped public network downloads",
+      "criteria": [
+        {
+          "id": "W04.result",
+          "requirement": "Recorded catalog\u2192version JSON\u2192client/library/native/asset/runtime requests, status/size/hash and destination; no Microsoft sign-in"
+        }
+      ],
+      "required_pass_fields": [
+        "environment.os_build",
+        "observation.exit_or_hresult",
+        "environment.isolation_type",
+        "environment.isolation_approved",
+        "artifacts.installer_sha256"
+      ],
+      "current_status": "BLOCKED",
+      "blockers": [
+        "APPROVED_ISOLATED_WINDOWS_GUEST_UNAVAILABLE"
+      ]
+    },
+    {
+      "test_id": "W05",
+      "scope": "actual Windows target",
+      "action": "Compare warm-cache versus empty-cache preparation",
+      "criteria": [
+        {
+          "id": "W05.result",
+          "requirement": "Existing valid content reused, missing/corrupt synthetic copies re-fetched; complete receipts; only guest test files may be altered"
+        }
+      ],
+      "required_pass_fields": [
+        "environment.os_build",
+        "observation.exit_or_hresult",
+        "environment.isolation_type",
+        "environment.isolation_approved",
+        "artifacts.installer_sha256"
+      ],
+      "current_status": "BLOCKED",
+      "blockers": [
+        "APPROVED_ISOLATED_WINDOWS_GUEST_UNAVAILABLE"
+      ]
+    },
+    {
+      "test_id": "W06",
+      "scope": "actual Windows target",
+      "action": "Interrupt transfer and resume using guest snapshot/test copies",
+      "criteria": [
+        {
+          "id": "W06.result",
+          "requirement": "Bounded retries, partial-range behavior, final hash checking, no success for truncated output"
+        }
+      ],
+      "required_pass_fields": [
+        "environment.os_build",
+        "observation.exit_or_hresult",
+        "environment.isolation_type",
+        "environment.isolation_approved",
+        "artifacts.installer_sha256"
+      ],
+      "current_status": "BLOCKED",
+      "blockers": [
+        "APPROVED_ISOLATED_WINDOWS_GUEST_UNAVAILABLE"
+      ]
+    },
+    {
+      "test_id": "W07",
+      "scope": "actual Windows target",
+      "action": "Simulate full/readonly guest test volume and cancellation",
+      "criteria": [
+        {
+          "id": "W07.result",
+          "requirement": "Explicit error and recoverable state; no false install completion; preserve snapshot for comparison"
+        }
+      ],
+      "required_pass_fields": [
+        "environment.os_build",
+        "observation.exit_or_hresult",
+        "environment.isolation_type",
+        "environment.isolation_approved",
+        "artifacts.installer_sha256"
+      ],
+      "current_status": "BLOCKED",
+      "blockers": [
+        "APPROVED_ISOLATED_WINDOWS_GUEST_UNAVAILABLE"
+      ]
+    },
+    {
+      "test_id": "W08",
+      "scope": "actual Windows target",
+      "action": "Exercise configuration/profile migration with synthetic empty accounts only",
+      "criteria": [
+        {
+          "id": "W08.result",
+          "requirement": "Settings precedence, temporary-file and replace behavior, malformed JSON/error backup, restart persistence; no real token values"
+        }
+      ],
+      "required_pass_fields": [
+        "environment.os_build",
+        "observation.exit_or_hresult",
+        "environment.isolation_type",
+        "environment.isolation_approved",
+        "artifacts.installer_sha256"
+      ],
+      "current_status": "BLOCKED",
+      "blockers": [
+        "APPROVED_ISOLATED_WINDOWS_GUEST_UNAVAILABLE"
+      ]
+    },
+    {
+      "test_id": "W09",
+      "scope": "actual Windows target",
+      "action": "Hash-pinned E20 signed metadata plus corrupted/truncated copies; run only in approved guest",
+      "criteria": [
+        {
+          "id": "W09.result",
+          "requirement": "Check matching embedded-key fixture origin/hash; actual signed-path acceptance and corrupted/truncated rejection receipts; never substitute an analyst key or change the target trust anchor"
+        }
+      ],
+      "required_pass_fields": [
+        "environment.os_build",
+        "observation.exit_or_hresult",
+        "environment.isolation_type",
+        "environment.isolation_approved",
+        "artifacts.installer_sha256",
+        "artifacts.valid_publisher_fixture_sha256",
+        "observation.signature_acceptance",
+        "observation.signature_rejections"
+      ],
+      "current_status": "BLOCKED",
+      "blockers": [
+        "APPROVED_ISOLATED_WINDOWS_GUEST_UNAVAILABLE"
+      ],
+      "available_positive_fixture": {
+        "evidence_id": "E20",
+        "response_sha256": "9081bab55e8c8ba72ff3c63a1c2cbb85ba523bd2ef357b94e272ba913cf5c52c",
+        "embedded_key_der_sha256": "4fd4703ee5c9f4339bfc5e7ea7aa36eb0ffa6e6f6915df0ec5563ac0835a294c",
+        "url": "https://bootstrap.llaun.ch/legacy/bootstrap.json.mgz.signed",
+        "independent_verification": "VALID",
+        "actual_target_acceptance": "BLOCKED",
+        "raw_fixture_published": false
+      }
+    },
+    {
+      "test_id": "W10",
+      "scope": "actual Windows target",
+      "action": "Test each loader path identified from exact metadata",
+      "criteria": [
+        {
+          "id": "W10.result",
+          "requirement": "Parent/duplicate resolution, native/classpath/options and processor behavior; pin every artifact; no blanket Forge/Fabric parity result"
+        }
+      ],
+      "required_pass_fields": [
+        "environment.os_build",
+        "observation.exit_or_hresult",
+        "environment.isolation_type",
+        "environment.isolation_approved",
+        "artifacts.installer_sha256",
+        "artifacts.jvm_sha256",
+        "target.runtime_id",
+        "target.java_major",
+        "target.minecraft_version",
+        "target.loader",
+        "target.loader_version",
+        "artifacts.manifest_sha256",
+        "artifacts.native_inventory_sha256",
+        "artifacts.graphics_provider_sha256",
+        "artifacts.loader_inventory_sha256"
+      ],
+      "current_status": "BLOCKED",
+      "blockers": [
+        "APPROVED_ISOLATED_WINDOWS_GUEST_UNAVAILABLE"
+      ]
+    },
+    {
+      "test_id": "W11",
+      "scope": "actual Windows target",
+      "action": "Game process/exit/error controls after explicit game-execution approval",
+      "criteria": [
+        {
+          "id": "W11.result",
+          "requirement": "Correct JVM major, args/native identities, exit handling and UI restore; game/account requirements respected"
+        }
+      ],
+      "required_pass_fields": [
+        "environment.os_build",
+        "observation.exit_or_hresult",
+        "environment.isolation_type",
+        "environment.isolation_approved",
+        "artifacts.installer_sha256",
+        "artifacts.jvm_sha256",
+        "target.runtime_id",
+        "target.java_major",
+        "target.minecraft_version",
+        "target.loader",
+        "target.loader_version",
+        "artifacts.manifest_sha256",
+        "artifacts.native_inventory_sha256",
+        "artifacts.graphics_provider_sha256",
+        "artifacts.loader_inventory_sha256"
+      ],
+      "current_status": "BLOCKED",
+      "blockers": [
+        "APPROVED_ISOLATED_WINDOWS_GUEST_UNAVAILABLE"
+      ]
+    },
+    {
+      "test_id": "W12",
+      "scope": "actual Windows target",
+      "action": "Owner-controlled account tests, separately authorized",
+      "criteria": [
+        {
+          "id": "W12.result",
+          "requirement": "Microsoft/XBL/XSTS/Minecraft/ownership/profile outcomes only; no account names, tokens, device codes or raw auth traffic retained"
+        }
+      ],
+      "required_pass_fields": [
+        "environment.os_build",
+        "observation.exit_or_hresult",
+        "environment.isolation_type",
+        "environment.isolation_approved",
+        "artifacts.installer_sha256",
+        "observation.auth_stage_results",
+        "observation.ownership_result"
+      ],
+      "current_status": "BLOCKED",
+      "blockers": [
+        "APPROVED_ISOLATED_WINDOWS_GUEST_UNAVAILABLE",
+        "OWNER_ACCOUNT_ACTION_NOT_PERFORMED"
+      ]
+    },
+    {
+      "test_id": "X01",
+      "scope": "actual Xbox Series X package",
+      "action": "Owner installs approved exact package; record identity/build/dependencies",
+      "criteria": [
+        {
+          "id": "X01.result",
+          "requirement": "Package activates on Series X; actual executable/runtime hashes match receipt"
+        }
+      ],
+      "required_pass_fields": [
+        "environment.os_build",
+        "observation.exit_or_hresult",
+        "environment.console_model",
+        "environment.debugger_attached",
+        "artifacts.appx_sha256"
+      ],
+      "current_status": "BLOCKED",
+      "blockers": [
+        "CONSOLE_ACCESS_OR_OWNER_RECEIPT_UNAVAILABLE",
+        "EXACT_APPROVED_APPX_RUNTIME_PACKAGE_NOT_SUPPLIED"
+      ]
+    },
+    {
+      "test_id": "X02",
+      "scope": "actual Xbox Series X package",
+      "action": "Run outside debugger and measure memory/CPU/GPU during launcher idle/load",
+      "criteria": [
+        {
+          "id": "X02.result",
+          "requirement": "Actual package resource budget recorded; no inference from historical generic limits or expandedResources declaration"
+        }
+      ],
+      "required_pass_fields": [
+        "environment.os_build",
+        "observation.exit_or_hresult",
+        "environment.console_model",
+        "environment.debugger_attached",
+        "artifacts.appx_sha256",
+        "observation.memory_peak_bytes",
+        "observation.resource_samples"
+      ],
+      "current_status": "BLOCKED",
+      "blockers": [
+        "CONSOLE_ACCESS_OR_OWNER_RECEIPT_UNAVAILABLE",
+        "EXACT_APPROVED_APPX_RUNTIME_PACKAGE_NOT_SUPPLIED"
+      ]
+    },
+    {
+      "test_id": "X03",
+      "scope": "actual Xbox Series X package",
+      "action": "Synthetic JVM invocation for each current/java21/java17/legacy package",
+      "criteria": [
+        {
+          "id": "X03.result",
+          "requirement": "LoadPackagedLibrary/JNI API result, requested/accepted JNI version, Java major and exception result captured; no game/account required"
+        }
+      ],
+      "required_pass_fields": [
+        "environment.os_build",
+        "observation.exit_or_hresult",
+        "environment.console_model",
+        "environment.debugger_attached",
+        "artifacts.appx_sha256",
+        "artifacts.jvm_sha256",
+        "target.runtime_id",
+        "target.java_major",
+        "target.jni_requested",
+        "target.jni_accepted",
+        "observation.synthetic_java_result"
+      ],
+      "current_status": "BLOCKED",
+      "blockers": [
+        "CONSOLE_ACCESS_OR_OWNER_RECEIPT_UNAVAILABLE",
+        "EXACT_APPROVED_APPX_RUNTIME_PACKAGE_NOT_SUPPLIED",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ]
+    },
+    {
+      "test_id": "X04",
+      "scope": "actual Xbox Series X package",
+      "action": "Synthetic filesystem/thread/ZIPFS tests using app-local data",
+      "criteria": [
+        {
+          "id": "X04.result",
+          "requirement": "Read/write/rename/ZIP behavior within allowed roots; no broad-file capability assumption"
+        }
+      ],
+      "required_pass_fields": [
+        "environment.os_build",
+        "observation.exit_or_hresult",
+        "environment.console_model",
+        "environment.debugger_attached",
+        "artifacts.appx_sha256",
+        "artifacts.jvm_sha256",
+        "target.runtime_id",
+        "target.java_major"
+      ],
+      "current_status": "BLOCKED",
+      "blockers": [
+        "CONSOLE_ACCESS_OR_OWNER_RECEIPT_UNAVAILABLE",
+        "EXACT_APPROVED_APPX_RUNTIME_PACKAGE_NOT_SUPPLIED",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ]
+    },
+    {
+      "test_id": "X05",
+      "scope": "actual Xbox Series X package",
+      "action": "JNI/native load probe against exact packaged/selected modules",
+      "criteria": [
+        {
+          "id": "X05.result",
+          "requirement": "Every required module/dependency/symbol resolves through actual package policy; full errors retained without credentials"
+        }
+      ],
+      "required_pass_fields": [
+        "environment.os_build",
+        "observation.exit_or_hresult",
+        "environment.console_model",
+        "environment.debugger_attached",
+        "artifacts.appx_sha256",
+        "artifacts.jvm_sha256",
+        "target.runtime_id",
+        "target.java_major",
+        "target.minecraft_version",
+        "target.loader",
+        "target.loader_version",
+        "artifacts.glfw_sha256",
+        "artifacts.mesa_sha256",
+        "artifacts.manifest_sha256"
+      ],
+      "current_status": "BLOCKED",
+      "blockers": [
+        "CONSOLE_ACCESS_OR_OWNER_RECEIPT_UNAVAILABLE",
+        "EXACT_APPROVED_APPX_RUNTIME_PACKAGE_NOT_SUPPLIED",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ]
+    },
+    {
+      "test_id": "X06",
+      "scope": "actual Xbox Series X package",
+      "action": "Graphics probe: context version/profile/extensions, shader compile/link, draw/present",
+      "criteria": [
+        {
+          "id": "X06.result",
+          "requirement": "Required backend/capabilities verified; compare actual GL extensions with glfwExtensionSupported behavior; no success from an empty window alone"
+        }
+      ],
+      "required_pass_fields": [
+        "environment.os_build",
+        "observation.exit_or_hresult",
+        "environment.console_model",
+        "environment.debugger_attached",
+        "artifacts.appx_sha256",
+        "artifacts.jvm_sha256",
+        "target.runtime_id",
+        "target.java_major",
+        "target.minecraft_version",
+        "target.loader",
+        "target.loader_version",
+        "artifacts.glfw_sha256",
+        "artifacts.mesa_sha256",
+        "artifacts.manifest_sha256",
+        "observation.graphics_version",
+        "observation.presented_frames",
+        "observation.graphics_capability_results"
+      ],
+      "current_status": "BLOCKED",
+      "blockers": [
+        "CONSOLE_ACCESS_OR_OWNER_RECEIPT_UNAVAILABLE",
+        "EXACT_APPROVED_APPX_RUNTIME_PACKAGE_NOT_SUPPLIED",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ]
+    },
+    {
+      "test_id": "X07",
+      "scope": "actual Xbox Series X package",
+      "action": "Controller, keyboard, pointer/focus/disconnect/reconnect",
+      "criteria": [
+        {
+          "id": "X07.result",
+          "requirement": "Button/axis/mouse/UI behavior matches explicit expectations; test mapping/hats/Win32-HWND-dependent consumers separately"
+        }
+      ],
+      "required_pass_fields": [
+        "environment.os_build",
+        "observation.exit_or_hresult",
+        "environment.console_model",
+        "environment.debugger_attached",
+        "artifacts.appx_sha256",
+        "artifacts.jvm_sha256",
+        "target.runtime_id",
+        "target.java_major",
+        "target.minecraft_version",
+        "target.loader",
+        "target.loader_version",
+        "artifacts.glfw_sha256",
+        "artifacts.mesa_sha256",
+        "artifacts.manifest_sha256"
+      ],
+      "current_status": "BLOCKED",
+      "blockers": [
+        "CONSOLE_ACCESS_OR_OWNER_RECEIPT_UNAVAILABLE",
+        "EXACT_APPROVED_APPX_RUNTIME_PACKAGE_NOT_SUPPLIED",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ]
+    },
+    {
+      "test_id": "X08",
+      "scope": "actual Xbox Series X package",
+      "action": "Audio probe including device loss",
+      "criteria": [
+        {
+          "id": "X08.result",
+          "requirement": "Playback/capture policy, device switching, latency/failure result measured; historical desktop OpenAL log is insufficient"
+        }
+      ],
+      "required_pass_fields": [
+        "environment.os_build",
+        "observation.exit_or_hresult",
+        "environment.console_model",
+        "environment.debugger_attached",
+        "artifacts.appx_sha256",
+        "artifacts.jvm_sha256",
+        "target.runtime_id",
+        "target.java_major",
+        "target.minecraft_version",
+        "target.loader",
+        "target.loader_version",
+        "artifacts.glfw_sha256",
+        "artifacts.mesa_sha256",
+        "artifacts.manifest_sha256"
+      ],
+      "current_status": "BLOCKED",
+      "blockers": [
+        "CONSOLE_ACCESS_OR_OWNER_RECEIPT_UNAVAILABLE",
+        "EXACT_APPROVED_APPX_RUNTIME_PACKAGE_NOT_SUPPLIED",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ]
+    },
+    {
+      "test_id": "X09",
+      "scope": "actual Xbox Series X package",
+      "action": "Suspend/resume and terminate/relaunch",
+      "criteria": [
+        {
+          "id": "X09.result",
+          "requirement": "No stuck keys, invalid context/audio, save loss or unsafe second-JVM reuse; record lifecycle markers and frame/resource changes"
+        }
+      ],
+      "required_pass_fields": [
+        "environment.os_build",
+        "observation.exit_or_hresult",
+        "environment.console_model",
+        "environment.debugger_attached",
+        "artifacts.appx_sha256",
+        "artifacts.jvm_sha256",
+        "target.runtime_id",
+        "target.java_major",
+        "target.minecraft_version",
+        "target.loader",
+        "target.loader_version",
+        "artifacts.glfw_sha256",
+        "artifacts.mesa_sha256",
+        "artifacts.manifest_sha256"
+      ],
+      "current_status": "BLOCKED",
+      "blockers": [
+        "CONSOLE_ACCESS_OR_OWNER_RECEIPT_UNAVAILABLE",
+        "EXACT_APPROVED_APPX_RUNTIME_PACKAGE_NOT_SUPPLIED"
+      ]
+    },
+    {
+      "test_id": "X10",
+      "scope": "actual Xbox Series X package",
+      "action": "Download/repair of approved target with existing account gate respected",
+      "criteria": [
+        {
+          "id": "X10.result",
+          "requirement": "Exact manifest/counters/hashes; no bypass to make Local Launcher Mode repair/play succeed"
+        }
+      ],
+      "required_pass_fields": [
+        "environment.os_build",
+        "observation.exit_or_hresult",
+        "environment.console_model",
+        "environment.debugger_attached",
+        "artifacts.appx_sha256",
+        "artifacts.jvm_sha256",
+        "target.runtime_id",
+        "target.java_major",
+        "target.minecraft_version",
+        "target.loader",
+        "target.loader_version",
+        "artifacts.glfw_sha256",
+        "artifacts.mesa_sha256",
+        "artifacts.manifest_sha256",
+        "artifacts.loader_inventory_sha256"
+      ],
+      "current_status": "BLOCKED",
+      "blockers": [
+        "CONSOLE_ACCESS_OR_OWNER_RECEIPT_UNAVAILABLE",
+        "EXACT_APPROVED_APPX_RUNTIME_PACKAGE_NOT_SUPPLIED"
+      ]
+    },
+    {
+      "test_id": "X11",
+      "scope": "actual Xbox Series X package",
+      "action": "Owner-authorized legitimate owned target launch",
+      "criteria": [
+        {
+          "id": "X11.result",
+          "requirement": "Existing entitlement/profile checks pass legitimately; exact version/loader/runtime/native/graphics tuple recorded; gameplay observable"
+        }
+      ],
+      "required_pass_fields": [
+        "environment.os_build",
+        "observation.exit_or_hresult",
+        "environment.console_model",
+        "environment.debugger_attached",
+        "artifacts.appx_sha256",
+        "artifacts.jvm_sha256",
+        "target.runtime_id",
+        "target.java_major",
+        "target.minecraft_version",
+        "target.loader",
+        "target.loader_version",
+        "artifacts.glfw_sha256",
+        "artifacts.mesa_sha256",
+        "artifacts.manifest_sha256",
+        "observation.auth_stage_results",
+        "observation.ownership_result",
+        "artifacts.loader_inventory_sha256"
+      ],
+      "current_status": "BLOCKED",
+      "blockers": [
+        "CONSOLE_ACCESS_OR_OWNER_RECEIPT_UNAVAILABLE",
+        "EXACT_APPROVED_APPX_RUNTIME_PACKAGE_NOT_SUPPLIED",
+        "OWNER_ACCOUNT_ACTION_NOT_PERFORMED"
+      ]
+    },
+    {
+      "test_id": "X12",
+      "scope": "actual Xbox Series X package",
+      "action": "Repeat per catalog row and regression profile",
+      "criteria": [
+        {
+          "id": "X12.result",
+          "requirement": "Each of 56 rows independently PASSED/FAILED/BLOCKED/INCONCLUSIVE; unsupported legacy provider remains explicit"
+        }
+      ],
+      "required_pass_fields": [
+        "environment.os_build",
+        "observation.exit_or_hresult",
+        "environment.console_model",
+        "environment.debugger_attached",
+        "artifacts.appx_sha256",
+        "artifacts.jvm_sha256",
+        "target.runtime_id",
+        "target.java_major",
+        "target.minecraft_version",
+        "target.loader",
+        "target.loader_version",
+        "artifacts.glfw_sha256",
+        "artifacts.mesa_sha256",
+        "artifacts.manifest_sha256",
+        "artifacts.loader_inventory_sha256"
+      ],
+      "current_status": "BLOCKED",
+      "blockers": [
+        "CONSOLE_ACCESS_OR_OWNER_RECEIPT_UNAVAILABLE",
+        "EXACT_APPROVED_APPX_RUNTIME_PACKAGE_NOT_SUPPLIED"
+      ]
+    },
+    {
+      "test_id": "X13",
+      "scope": "actual Xbox Series X package",
+      "action": "Phase 5F.2 UI regression",
+      "criteria": [
+        {
+          "id": "X13.result",
+          "requirement": "Installed/Installed-Off persistence, no duplicate install, correct active profile, failed download and account gates retained"
+        }
+      ],
+      "required_pass_fields": [
+        "environment.os_build",
+        "observation.exit_or_hresult",
+        "environment.console_model",
+        "environment.debugger_attached",
+        "artifacts.appx_sha256"
+      ],
+      "current_status": "BLOCKED",
+      "blockers": [
+        "CONSOLE_ACCESS_OR_OWNER_RECEIPT_UNAVAILABLE",
+        "EXACT_APPROVED_APPX_RUNTIME_PACKAGE_NOT_SUPPLIED"
+      ]
+    }
+  ],
+  "target_plans": [
+    {
+      "target_id": "26.2-fabric-0.19.5",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "26.2",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "runtime_id": "current",
+      "java_major_expected": 25,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact inherited Fabric profile JSON",
+        "Fabric loader and intermediary JAR hashes",
+        "compatible patched filesystem/remap components"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "java_major_expected_basis": "E21_UPSTREAM_VANILLA_DECLARED_REQUIREMENT_NOT_PACKAGED_RUNTIME_OBSERVATION",
+      "observed_upstream_java_major": 25,
+      "observed_upstream_java_component": "java-runtime-epsilon",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/91ef51b7d36ca092c5c02aba42f0f40c7cc1db84/26.2.json",
+      "observed_upstream_metadata_sha1": "91ef51b7d36ca092c5c02aba42f0f40c7cc1db84",
+      "observed_upstream_metadata_sha256": "8d009c6ed0b7b8c65bfff515a1ff8b12cc8df72627bb0e355ecbce9f7bc34f9c",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "26.2-forge-65.1.3",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "26.2",
+      "loader": "forge",
+      "loader_version": "65.1.3",
+      "runtime_id": "current",
+      "java_major_expected": 25,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact installer/profile metadata",
+        "client processor input/output hashes",
+        "final main/module/classpath arguments"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "java_major_expected_basis": "E21_UPSTREAM_VANILLA_DECLARED_REQUIREMENT_NOT_PACKAGED_RUNTIME_OBSERVATION",
+      "observed_upstream_java_major": 25,
+      "observed_upstream_java_component": "java-runtime-epsilon",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/91ef51b7d36ca092c5c02aba42f0f40c7cc1db84/26.2.json",
+      "observed_upstream_metadata_sha1": "91ef51b7d36ca092c5c02aba42f0f40c7cc1db84",
+      "observed_upstream_metadata_sha256": "8d009c6ed0b7b8c65bfff515a1ff8b12cc8df72627bb0e355ecbce9f7bc34f9c",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "26.2-neoforge-26.2.0.82",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "26.2",
+      "loader": "neoforge",
+      "loader_version": "26.2.0.82",
+      "runtime_id": "current",
+      "java_major_expected": 25,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact installer/install profile",
+        "NeoForm and tool processor input/output hashes",
+        "final main/module/classpath arguments"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "java_major_expected_basis": "E21_UPSTREAM_VANILLA_DECLARED_REQUIREMENT_NOT_PACKAGED_RUNTIME_OBSERVATION",
+      "observed_upstream_java_major": 25,
+      "observed_upstream_java_component": "java-runtime-epsilon",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/91ef51b7d36ca092c5c02aba42f0f40c7cc1db84/26.2.json",
+      "observed_upstream_metadata_sha1": "91ef51b7d36ca092c5c02aba42f0f40c7cc1db84",
+      "observed_upstream_metadata_sha256": "8d009c6ed0b7b8c65bfff515a1ff8b12cc8df72627bb0e355ecbce9f7bc34f9c",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "26.1.2-fabric-0.19.5",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "26.1.2",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "runtime_id": "current",
+      "java_major_expected": 25,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact inherited Fabric profile JSON",
+        "Fabric loader and intermediary JAR hashes",
+        "compatible patched filesystem/remap components"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "java_major_expected_basis": "E21_UPSTREAM_VANILLA_DECLARED_REQUIREMENT_NOT_PACKAGED_RUNTIME_OBSERVATION",
+      "observed_upstream_java_major": 25,
+      "observed_upstream_java_component": "java-runtime-epsilon",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/8cca2c0efc47ef22351e5073bb1f5e7ab339279b/26.1.2.json",
+      "observed_upstream_metadata_sha1": "8cca2c0efc47ef22351e5073bb1f5e7ab339279b",
+      "observed_upstream_metadata_sha256": "eda7bac4a0a1ff847efccf5a51f66e990521b2c09320fecd3679bc6921c7623e",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "26.1.2-forge-64.1.3",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "26.1.2",
+      "loader": "forge",
+      "loader_version": "64.1.3",
+      "runtime_id": "current",
+      "java_major_expected": 25,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact installer/profile metadata",
+        "client processor input/output hashes",
+        "final main/module/classpath arguments"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "java_major_expected_basis": "E21_UPSTREAM_VANILLA_DECLARED_REQUIREMENT_NOT_PACKAGED_RUNTIME_OBSERVATION",
+      "observed_upstream_java_major": 25,
+      "observed_upstream_java_component": "java-runtime-epsilon",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/8cca2c0efc47ef22351e5073bb1f5e7ab339279b/26.1.2.json",
+      "observed_upstream_metadata_sha1": "8cca2c0efc47ef22351e5073bb1f5e7ab339279b",
+      "observed_upstream_metadata_sha256": "eda7bac4a0a1ff847efccf5a51f66e990521b2c09320fecd3679bc6921c7623e",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "26.1.2-neoforge-26.1.2.107",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "26.1.2",
+      "loader": "neoforge",
+      "loader_version": "26.1.2.107",
+      "runtime_id": "current",
+      "java_major_expected": 25,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact installer/install profile",
+        "NeoForm and tool processor input/output hashes",
+        "final main/module/classpath arguments"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "java_major_expected_basis": "E21_UPSTREAM_VANILLA_DECLARED_REQUIREMENT_NOT_PACKAGED_RUNTIME_OBSERVATION",
+      "observed_upstream_java_major": 25,
+      "observed_upstream_java_component": "java-runtime-epsilon",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/8cca2c0efc47ef22351e5073bb1f5e7ab339279b/26.1.2.json",
+      "observed_upstream_metadata_sha1": "8cca2c0efc47ef22351e5073bb1f5e7ab339279b",
+      "observed_upstream_metadata_sha256": "eda7bac4a0a1ff847efccf5a51f66e990521b2c09320fecd3679bc6921c7623e",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "26.1.1-fabric-0.19.5",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "26.1.1",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "runtime_id": "current",
+      "java_major_expected": 25,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact inherited Fabric profile JSON",
+        "Fabric loader and intermediary JAR hashes",
+        "compatible patched filesystem/remap components"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "java_major_expected_basis": "E21_UPSTREAM_VANILLA_DECLARED_REQUIREMENT_NOT_PACKAGED_RUNTIME_OBSERVATION",
+      "observed_upstream_java_major": 25,
+      "observed_upstream_java_component": "java-runtime-epsilon",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/3a5e8b26e76711c22ce8391be68ada73983f2b95/26.1.1.json",
+      "observed_upstream_metadata_sha1": "3a5e8b26e76711c22ce8391be68ada73983f2b95",
+      "observed_upstream_metadata_sha256": "94e2daa407e6fa9d3c9eac6bba11ef189dd9de1e87abb9b2cda59c2fbf3826bf",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "26.1.1-forge-63.0.2",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "26.1.1",
+      "loader": "forge",
+      "loader_version": "63.0.2",
+      "runtime_id": "current",
+      "java_major_expected": 25,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact installer/profile metadata",
+        "client processor input/output hashes",
+        "final main/module/classpath arguments"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "java_major_expected_basis": "E21_UPSTREAM_VANILLA_DECLARED_REQUIREMENT_NOT_PACKAGED_RUNTIME_OBSERVATION",
+      "observed_upstream_java_major": 25,
+      "observed_upstream_java_component": "java-runtime-epsilon",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/3a5e8b26e76711c22ce8391be68ada73983f2b95/26.1.1.json",
+      "observed_upstream_metadata_sha1": "3a5e8b26e76711c22ce8391be68ada73983f2b95",
+      "observed_upstream_metadata_sha256": "94e2daa407e6fa9d3c9eac6bba11ef189dd9de1e87abb9b2cda59c2fbf3826bf",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "26.1.1-neoforge-26.1.1.15-beta",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "26.1.1",
+      "loader": "neoforge",
+      "loader_version": "26.1.1.15-beta",
+      "runtime_id": "current",
+      "java_major_expected": 25,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact installer/install profile",
+        "NeoForm and tool processor input/output hashes",
+        "final main/module/classpath arguments"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "java_major_expected_basis": "E21_UPSTREAM_VANILLA_DECLARED_REQUIREMENT_NOT_PACKAGED_RUNTIME_OBSERVATION",
+      "observed_upstream_java_major": 25,
+      "observed_upstream_java_component": "java-runtime-epsilon",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/3a5e8b26e76711c22ce8391be68ada73983f2b95/26.1.1.json",
+      "observed_upstream_metadata_sha1": "3a5e8b26e76711c22ce8391be68ada73983f2b95",
+      "observed_upstream_metadata_sha256": "94e2daa407e6fa9d3c9eac6bba11ef189dd9de1e87abb9b2cda59c2fbf3826bf",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "26.1-fabric-0.19.5",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "26.1",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "runtime_id": "current",
+      "java_major_expected": 25,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact inherited Fabric profile JSON",
+        "Fabric loader and intermediary JAR hashes",
+        "compatible patched filesystem/remap components"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "java_major_expected_basis": "E21_UPSTREAM_VANILLA_DECLARED_REQUIREMENT_NOT_PACKAGED_RUNTIME_OBSERVATION",
+      "observed_upstream_java_major": 25,
+      "observed_upstream_java_component": "java-runtime-epsilon",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/8667c5278895a6ae31e05ab99ba044ef33fca092/26.1.json",
+      "observed_upstream_metadata_sha1": "8667c5278895a6ae31e05ab99ba044ef33fca092",
+      "observed_upstream_metadata_sha256": "c4c4fc8662cc7023213adb94bd38c113730c663df594e548b99f53409365021b",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "26.1-forge-62.0.9",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "26.1",
+      "loader": "forge",
+      "loader_version": "62.0.9",
+      "runtime_id": "current",
+      "java_major_expected": 25,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact installer/profile metadata",
+        "client processor input/output hashes",
+        "final main/module/classpath arguments"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "java_major_expected_basis": "E21_UPSTREAM_VANILLA_DECLARED_REQUIREMENT_NOT_PACKAGED_RUNTIME_OBSERVATION",
+      "observed_upstream_java_major": 25,
+      "observed_upstream_java_component": "java-runtime-epsilon",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/8667c5278895a6ae31e05ab99ba044ef33fca092/26.1.json",
+      "observed_upstream_metadata_sha1": "8667c5278895a6ae31e05ab99ba044ef33fca092",
+      "observed_upstream_metadata_sha256": "c4c4fc8662cc7023213adb94bd38c113730c663df594e548b99f53409365021b",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "26.1-neoforge-26.1.0.19-beta",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "26.1",
+      "loader": "neoforge",
+      "loader_version": "26.1.0.19-beta",
+      "runtime_id": "current",
+      "java_major_expected": 25,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact installer/install profile",
+        "NeoForm and tool processor input/output hashes",
+        "final main/module/classpath arguments"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "java_major_expected_basis": "E21_UPSTREAM_VANILLA_DECLARED_REQUIREMENT_NOT_PACKAGED_RUNTIME_OBSERVATION",
+      "observed_upstream_java_major": 25,
+      "observed_upstream_java_component": "java-runtime-epsilon",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/8667c5278895a6ae31e05ab99ba044ef33fca092/26.1.json",
+      "observed_upstream_metadata_sha1": "8667c5278895a6ae31e05ab99ba044ef33fca092",
+      "observed_upstream_metadata_sha256": "c4c4fc8662cc7023213adb94bd38c113730c663df594e548b99f53409365021b",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.21.11-fabric-0.19.5",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.21.11",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact inherited Fabric profile JSON",
+        "Fabric loader and intermediary JAR hashes",
+        "compatible patched filesystem/remap components"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 21,
+      "observed_upstream_java_component": "java-runtime-delta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/718cd84b4912691fe5de829aab6876a4b7f6c5c4/1.21.11.json",
+      "observed_upstream_metadata_sha1": "718cd84b4912691fe5de829aab6876a4b7f6c5c4",
+      "observed_upstream_metadata_sha256": "471a6eeadf1c74f84ed5d4290fb7234b746373478a4d6ac651962b93f0cb36d9",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.21.11-forge-61.2.1",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.21.11",
+      "loader": "forge",
+      "loader_version": "61.2.1",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact installer/profile metadata",
+        "client processor input/output hashes",
+        "final main/module/classpath arguments"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 21,
+      "observed_upstream_java_component": "java-runtime-delta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/718cd84b4912691fe5de829aab6876a4b7f6c5c4/1.21.11.json",
+      "observed_upstream_metadata_sha1": "718cd84b4912691fe5de829aab6876a4b7f6c5c4",
+      "observed_upstream_metadata_sha256": "471a6eeadf1c74f84ed5d4290fb7234b746373478a4d6ac651962b93f0cb36d9",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.21.11-neoforge-21.11.45",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.21.11",
+      "loader": "neoforge",
+      "loader_version": "21.11.45",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact installer/install profile",
+        "NeoForm and tool processor input/output hashes",
+        "final main/module/classpath arguments"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 21,
+      "observed_upstream_java_component": "java-runtime-delta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/718cd84b4912691fe5de829aab6876a4b7f6c5c4/1.21.11.json",
+      "observed_upstream_metadata_sha1": "718cd84b4912691fe5de829aab6876a4b7f6c5c4",
+      "observed_upstream_metadata_sha256": "471a6eeadf1c74f84ed5d4290fb7234b746373478a4d6ac651962b93f0cb36d9",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.21.10-fabric-0.19.5",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.21.10",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact inherited Fabric profile JSON",
+        "Fabric loader and intermediary JAR hashes",
+        "compatible patched filesystem/remap components"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 21,
+      "observed_upstream_java_component": "java-runtime-delta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/b14d03617088d907aef01138b042e8e5c1ab35d4/1.21.10.json",
+      "observed_upstream_metadata_sha1": "b14d03617088d907aef01138b042e8e5c1ab35d4",
+      "observed_upstream_metadata_sha256": "3680286cdcfde9f4c540938a20d7fe917f5f189bf326791f6a9fc9d8798aea29",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.21.10-forge-60.1.15",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.21.10",
+      "loader": "forge",
+      "loader_version": "60.1.15",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact installer/profile metadata",
+        "client processor input/output hashes",
+        "final main/module/classpath arguments"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 21,
+      "observed_upstream_java_component": "java-runtime-delta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/b14d03617088d907aef01138b042e8e5c1ab35d4/1.21.10.json",
+      "observed_upstream_metadata_sha1": "b14d03617088d907aef01138b042e8e5c1ab35d4",
+      "observed_upstream_metadata_sha256": "3680286cdcfde9f4c540938a20d7fe917f5f189bf326791f6a9fc9d8798aea29",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.21.10-neoforge-21.10.64",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.21.10",
+      "loader": "neoforge",
+      "loader_version": "21.10.64",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact installer/install profile",
+        "NeoForm and tool processor input/output hashes",
+        "final main/module/classpath arguments"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 21,
+      "observed_upstream_java_component": "java-runtime-delta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/b14d03617088d907aef01138b042e8e5c1ab35d4/1.21.10.json",
+      "observed_upstream_metadata_sha1": "b14d03617088d907aef01138b042e8e5c1ab35d4",
+      "observed_upstream_metadata_sha256": "3680286cdcfde9f4c540938a20d7fe917f5f189bf326791f6a9fc9d8798aea29",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.21.9-fabric-0.19.5",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.21.9",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact inherited Fabric profile JSON",
+        "Fabric loader and intermediary JAR hashes",
+        "compatible patched filesystem/remap components"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 21,
+      "observed_upstream_java_component": "java-runtime-delta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/91f383c21d8cd06abc9a569f2976b58da192a642/1.21.9.json",
+      "observed_upstream_metadata_sha1": "91f383c21d8cd06abc9a569f2976b58da192a642",
+      "observed_upstream_metadata_sha256": "3cca801f41f83059092c88f7de3ea74247da4c394f3e672b7a41451151c293d5",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.21.9-forge-59.0.5",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.21.9",
+      "loader": "forge",
+      "loader_version": "59.0.5",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact installer/profile metadata",
+        "client processor input/output hashes",
+        "final main/module/classpath arguments"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 21,
+      "observed_upstream_java_component": "java-runtime-delta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/91f383c21d8cd06abc9a569f2976b58da192a642/1.21.9.json",
+      "observed_upstream_metadata_sha1": "91f383c21d8cd06abc9a569f2976b58da192a642",
+      "observed_upstream_metadata_sha256": "3cca801f41f83059092c88f7de3ea74247da4c394f3e672b7a41451151c293d5",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.21.9-neoforge-21.9.16-beta",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.21.9",
+      "loader": "neoforge",
+      "loader_version": "21.9.16-beta",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact installer/install profile",
+        "NeoForm and tool processor input/output hashes",
+        "final main/module/classpath arguments"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 21,
+      "observed_upstream_java_component": "java-runtime-delta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/91f383c21d8cd06abc9a569f2976b58da192a642/1.21.9.json",
+      "observed_upstream_metadata_sha1": "91f383c21d8cd06abc9a569f2976b58da192a642",
+      "observed_upstream_metadata_sha256": "3cca801f41f83059092c88f7de3ea74247da4c394f3e672b7a41451151c293d5",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.21.8-fabric-0.19.5",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.21.8",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact inherited Fabric profile JSON",
+        "Fabric loader and intermediary JAR hashes",
+        "compatible patched filesystem/remap components"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 21,
+      "observed_upstream_java_component": "java-runtime-delta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/5d557fffba309d5d68efa24a42bf73856008c5e3/1.21.8.json",
+      "observed_upstream_metadata_sha1": "5d557fffba309d5d68efa24a42bf73856008c5e3",
+      "observed_upstream_metadata_sha256": "d439baefd3a0a208a3784d473e24ef8e92388a38afa2770af7723c9508d6366e",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.21.8-forge-58.1.22",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.21.8",
+      "loader": "forge",
+      "loader_version": "58.1.22",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact installer/profile metadata",
+        "client processor input/output hashes",
+        "final main/module/classpath arguments"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 21,
+      "observed_upstream_java_component": "java-runtime-delta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/5d557fffba309d5d68efa24a42bf73856008c5e3/1.21.8.json",
+      "observed_upstream_metadata_sha1": "5d557fffba309d5d68efa24a42bf73856008c5e3",
+      "observed_upstream_metadata_sha256": "d439baefd3a0a208a3784d473e24ef8e92388a38afa2770af7723c9508d6366e",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.21.8-neoforge-21.8.54",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.21.8",
+      "loader": "neoforge",
+      "loader_version": "21.8.54",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact installer/install profile",
+        "NeoForm and tool processor input/output hashes",
+        "final main/module/classpath arguments"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 21,
+      "observed_upstream_java_component": "java-runtime-delta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/5d557fffba309d5d68efa24a42bf73856008c5e3/1.21.8.json",
+      "observed_upstream_metadata_sha1": "5d557fffba309d5d68efa24a42bf73856008c5e3",
+      "observed_upstream_metadata_sha256": "d439baefd3a0a208a3784d473e24ef8e92388a38afa2770af7723c9508d6366e",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.21.7-fabric-0.19.5",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.21.7",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact inherited Fabric profile JSON",
+        "Fabric loader and intermediary JAR hashes",
+        "compatible patched filesystem/remap components"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 21,
+      "observed_upstream_java_component": "java-runtime-delta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/24c116056f9d403403d7b7c06fe018e75aaca464/1.21.7.json",
+      "observed_upstream_metadata_sha1": "24c116056f9d403403d7b7c06fe018e75aaca464",
+      "observed_upstream_metadata_sha256": "b7ebf2fb9a9cc655f874386a55731e87fa20d35fcbae43bb92ddb4df081fc51a",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.21.7-forge-57.0.3",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.21.7",
+      "loader": "forge",
+      "loader_version": "57.0.3",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact installer/profile metadata",
+        "client processor input/output hashes",
+        "final main/module/classpath arguments"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 21,
+      "observed_upstream_java_component": "java-runtime-delta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/24c116056f9d403403d7b7c06fe018e75aaca464/1.21.7.json",
+      "observed_upstream_metadata_sha1": "24c116056f9d403403d7b7c06fe018e75aaca464",
+      "observed_upstream_metadata_sha256": "b7ebf2fb9a9cc655f874386a55731e87fa20d35fcbae43bb92ddb4df081fc51a",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.21.7-neoforge-21.7.25-beta",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.21.7",
+      "loader": "neoforge",
+      "loader_version": "21.7.25-beta",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact installer/install profile",
+        "NeoForm and tool processor input/output hashes",
+        "final main/module/classpath arguments"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 21,
+      "observed_upstream_java_component": "java-runtime-delta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/24c116056f9d403403d7b7c06fe018e75aaca464/1.21.7.json",
+      "observed_upstream_metadata_sha1": "24c116056f9d403403d7b7c06fe018e75aaca464",
+      "observed_upstream_metadata_sha256": "b7ebf2fb9a9cc655f874386a55731e87fa20d35fcbae43bb92ddb4df081fc51a",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.21.6-fabric-0.19.5",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.21.6",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact inherited Fabric profile JSON",
+        "Fabric loader and intermediary JAR hashes",
+        "compatible patched filesystem/remap components"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 21,
+      "observed_upstream_java_component": "java-runtime-delta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/8dd125560431a618094435343acccd45191bb006/1.21.6.json",
+      "observed_upstream_metadata_sha1": "8dd125560431a618094435343acccd45191bb006",
+      "observed_upstream_metadata_sha256": "ea1c91ccb9760c9f7e697c29ed679427dd20cdac9ce35937125e5690973df6dd",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.21.6-forge-56.0.9",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.21.6",
+      "loader": "forge",
+      "loader_version": "56.0.9",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact installer/profile metadata",
+        "client processor input/output hashes",
+        "final main/module/classpath arguments"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 21,
+      "observed_upstream_java_component": "java-runtime-delta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/8dd125560431a618094435343acccd45191bb006/1.21.6.json",
+      "observed_upstream_metadata_sha1": "8dd125560431a618094435343acccd45191bb006",
+      "observed_upstream_metadata_sha256": "ea1c91ccb9760c9f7e697c29ed679427dd20cdac9ce35937125e5690973df6dd",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.21.6-neoforge-21.6.20-beta",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.21.6",
+      "loader": "neoforge",
+      "loader_version": "21.6.20-beta",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact installer/install profile",
+        "NeoForm and tool processor input/output hashes",
+        "final main/module/classpath arguments"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 21,
+      "observed_upstream_java_component": "java-runtime-delta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/8dd125560431a618094435343acccd45191bb006/1.21.6.json",
+      "observed_upstream_metadata_sha1": "8dd125560431a618094435343acccd45191bb006",
+      "observed_upstream_metadata_sha256": "ea1c91ccb9760c9f7e697c29ed679427dd20cdac9ce35937125e5690973df6dd",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.21.5-fabric-0.19.5",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.21.5",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact inherited Fabric profile JSON",
+        "Fabric loader and intermediary JAR hashes",
+        "compatible patched filesystem/remap components"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 21,
+      "observed_upstream_java_component": "java-runtime-delta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/b341cd0e91419ab72b5d9dadad8d86a045d6b9a7/1.21.5.json",
+      "observed_upstream_metadata_sha1": "b341cd0e91419ab72b5d9dadad8d86a045d6b9a7",
+      "observed_upstream_metadata_sha256": "1751e36c5dda2bbf847d543d4f9a59c51035fe474b8528aca7f76c688f32fe88",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.21.5-forge-55.1.13",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.21.5",
+      "loader": "forge",
+      "loader_version": "55.1.13",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact installer/profile metadata",
+        "client processor input/output hashes",
+        "final main/module/classpath arguments"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 21,
+      "observed_upstream_java_component": "java-runtime-delta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/b341cd0e91419ab72b5d9dadad8d86a045d6b9a7/1.21.5.json",
+      "observed_upstream_metadata_sha1": "b341cd0e91419ab72b5d9dadad8d86a045d6b9a7",
+      "observed_upstream_metadata_sha256": "1751e36c5dda2bbf847d543d4f9a59c51035fe474b8528aca7f76c688f32fe88",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.21.5-neoforge-21.5.98",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.21.5",
+      "loader": "neoforge",
+      "loader_version": "21.5.98",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact installer/install profile",
+        "NeoForm and tool processor input/output hashes",
+        "final main/module/classpath arguments"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 21,
+      "observed_upstream_java_component": "java-runtime-delta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/b341cd0e91419ab72b5d9dadad8d86a045d6b9a7/1.21.5.json",
+      "observed_upstream_metadata_sha1": "b341cd0e91419ab72b5d9dadad8d86a045d6b9a7",
+      "observed_upstream_metadata_sha256": "1751e36c5dda2bbf847d543d4f9a59c51035fe474b8528aca7f76c688f32fe88",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.21.4-fabric-0.19.5",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.21.4",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact inherited Fabric profile JSON",
+        "Fabric loader and intermediary JAR hashes",
+        "compatible patched filesystem/remap components"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 21,
+      "observed_upstream_java_component": "java-runtime-delta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/a1cebdbaa1a44b7d8214a81be1d94316a8404d87/1.21.4.json",
+      "observed_upstream_metadata_sha1": "a1cebdbaa1a44b7d8214a81be1d94316a8404d87",
+      "observed_upstream_metadata_sha256": "4a1ab6e4e22a01c1144c0c6d61081fefaedb1b6d837f93b47973313f459632fc",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.21.4-forge-54.1.18",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.21.4",
+      "loader": "forge",
+      "loader_version": "54.1.18",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact installer/profile metadata",
+        "client processor input/output hashes",
+        "final main/module/classpath arguments"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 21,
+      "observed_upstream_java_component": "java-runtime-delta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/a1cebdbaa1a44b7d8214a81be1d94316a8404d87/1.21.4.json",
+      "observed_upstream_metadata_sha1": "a1cebdbaa1a44b7d8214a81be1d94316a8404d87",
+      "observed_upstream_metadata_sha256": "4a1ab6e4e22a01c1144c0c6d61081fefaedb1b6d837f93b47973313f459632fc",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.21.4-neoforge-21.4.157",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.21.4",
+      "loader": "neoforge",
+      "loader_version": "21.4.157",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact installer/install profile",
+        "NeoForm and tool processor input/output hashes",
+        "final main/module/classpath arguments"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 21,
+      "observed_upstream_java_component": "java-runtime-delta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/a1cebdbaa1a44b7d8214a81be1d94316a8404d87/1.21.4.json",
+      "observed_upstream_metadata_sha1": "a1cebdbaa1a44b7d8214a81be1d94316a8404d87",
+      "observed_upstream_metadata_sha256": "4a1ab6e4e22a01c1144c0c6d61081fefaedb1b6d837f93b47973313f459632fc",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.21.3-fabric-0.19.5",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.21.3",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact inherited Fabric profile JSON",
+        "Fabric loader and intermediary JAR hashes",
+        "compatible patched filesystem/remap components"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 21,
+      "observed_upstream_java_component": "java-runtime-delta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/05284f7158ec319013fa51f7ff44f8132dc9f428/1.21.3.json",
+      "observed_upstream_metadata_sha1": "05284f7158ec319013fa51f7ff44f8132dc9f428",
+      "observed_upstream_metadata_sha256": "624e04bd23311f4a66a5226ee48d9642398a3adeadd43dbd81b037712d98e774",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.21.3-forge-53.1.12",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.21.3",
+      "loader": "forge",
+      "loader_version": "53.1.12",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact installer/profile metadata",
+        "client processor input/output hashes",
+        "final main/module/classpath arguments"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 21,
+      "observed_upstream_java_component": "java-runtime-delta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/05284f7158ec319013fa51f7ff44f8132dc9f428/1.21.3.json",
+      "observed_upstream_metadata_sha1": "05284f7158ec319013fa51f7ff44f8132dc9f428",
+      "observed_upstream_metadata_sha256": "624e04bd23311f4a66a5226ee48d9642398a3adeadd43dbd81b037712d98e774",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.21.3-neoforge-21.3.97",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.21.3",
+      "loader": "neoforge",
+      "loader_version": "21.3.97",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact installer/install profile",
+        "NeoForm and tool processor input/output hashes",
+        "final main/module/classpath arguments"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 21,
+      "observed_upstream_java_component": "java-runtime-delta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/05284f7158ec319013fa51f7ff44f8132dc9f428/1.21.3.json",
+      "observed_upstream_metadata_sha1": "05284f7158ec319013fa51f7ff44f8132dc9f428",
+      "observed_upstream_metadata_sha256": "624e04bd23311f4a66a5226ee48d9642398a3adeadd43dbd81b037712d98e774",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.21.2-fabric-0.19.5",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.21.2",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact inherited Fabric profile JSON",
+        "Fabric loader and intermediary JAR hashes",
+        "compatible patched filesystem/remap components"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 21,
+      "observed_upstream_java_component": "java-runtime-delta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/c14db17c663edf3d7a698488263a21b1df6d02af/1.21.2.json",
+      "observed_upstream_metadata_sha1": "c14db17c663edf3d7a698488263a21b1df6d02af",
+      "observed_upstream_metadata_sha256": "793e3fd0451354a26aaa00253dcb6600add11f9d2a90f7bdef75ddf5b38c2b45",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.21.2-neoforge-21.2.1-beta",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.21.2",
+      "loader": "neoforge",
+      "loader_version": "21.2.1-beta",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact installer/install profile",
+        "NeoForm and tool processor input/output hashes",
+        "final main/module/classpath arguments"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 21,
+      "observed_upstream_java_component": "java-runtime-delta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/c14db17c663edf3d7a698488263a21b1df6d02af/1.21.2.json",
+      "observed_upstream_metadata_sha1": "c14db17c663edf3d7a698488263a21b1df6d02af",
+      "observed_upstream_metadata_sha256": "793e3fd0451354a26aaa00253dcb6600add11f9d2a90f7bdef75ddf5b38c2b45",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.21.1-fabric-0.19.5",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.21.1",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact inherited Fabric profile JSON",
+        "Fabric loader and intermediary JAR hashes",
+        "compatible patched filesystem/remap components"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 21,
+      "observed_upstream_java_component": "java-runtime-delta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/499680d659b7a0ccb2fa9a809c345c5baf2ace7d/1.21.1.json",
+      "observed_upstream_metadata_sha1": "499680d659b7a0ccb2fa9a809c345c5baf2ace7d",
+      "observed_upstream_metadata_sha256": "8047141a4d8de5ce23cc8390df56373b3a6c10f063d47b7bf3ea64e8c84666e9",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.21.1-forge-52.1.16",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.21.1",
+      "loader": "forge",
+      "loader_version": "52.1.16",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact installer/profile metadata",
+        "client processor input/output hashes",
+        "final main/module/classpath arguments"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 21,
+      "observed_upstream_java_component": "java-runtime-delta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/499680d659b7a0ccb2fa9a809c345c5baf2ace7d/1.21.1.json",
+      "observed_upstream_metadata_sha1": "499680d659b7a0ccb2fa9a809c345c5baf2ace7d",
+      "observed_upstream_metadata_sha256": "8047141a4d8de5ce23cc8390df56373b3a6c10f063d47b7bf3ea64e8c84666e9",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.21.1-neoforge-21.1.250",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.21.1",
+      "loader": "neoforge",
+      "loader_version": "21.1.250",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact installer/install profile",
+        "NeoForm and tool processor input/output hashes",
+        "final main/module/classpath arguments"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 21,
+      "observed_upstream_java_component": "java-runtime-delta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/499680d659b7a0ccb2fa9a809c345c5baf2ace7d/1.21.1.json",
+      "observed_upstream_metadata_sha1": "499680d659b7a0ccb2fa9a809c345c5baf2ace7d",
+      "observed_upstream_metadata_sha256": "8047141a4d8de5ce23cc8390df56373b3a6c10f063d47b7bf3ea64e8c84666e9",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.21-fabric-0.19.5",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.21",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact inherited Fabric profile JSON",
+        "Fabric loader and intermediary JAR hashes",
+        "compatible patched filesystem/remap components"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 21,
+      "observed_upstream_java_component": "java-runtime-delta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/c47b4c513b2883240565102b076054e347eac738/1.21.json",
+      "observed_upstream_metadata_sha1": "c47b4c513b2883240565102b076054e347eac738",
+      "observed_upstream_metadata_sha256": "cdd1a44db7b5e8787723c1f6c7c7dc3a4638d96a31ddc84aeb27d3f30efa802a",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.21-forge-51.0.33",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.21",
+      "loader": "forge",
+      "loader_version": "51.0.33",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact installer/profile metadata",
+        "client processor input/output hashes",
+        "final main/module/classpath arguments"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 21,
+      "observed_upstream_java_component": "java-runtime-delta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/c47b4c513b2883240565102b076054e347eac738/1.21.json",
+      "observed_upstream_metadata_sha1": "c47b4c513b2883240565102b076054e347eac738",
+      "observed_upstream_metadata_sha256": "cdd1a44db7b5e8787723c1f6c7c7dc3a4638d96a31ddc84aeb27d3f30efa802a",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.21-neoforge-21.0.167",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.21",
+      "loader": "neoforge",
+      "loader_version": "21.0.167",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact installer/install profile",
+        "NeoForm and tool processor input/output hashes",
+        "final main/module/classpath arguments"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 21,
+      "observed_upstream_java_component": "java-runtime-delta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/c47b4c513b2883240565102b076054e347eac738/1.21.json",
+      "observed_upstream_metadata_sha1": "c47b4c513b2883240565102b076054e347eac738",
+      "observed_upstream_metadata_sha256": "cdd1a44db7b5e8787723c1f6c7c7dc3a4638d96a31ddc84aeb27d3f30efa802a",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.20.4-fabric-0.19.5",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.20.4",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "testing",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact inherited Fabric profile JSON",
+        "Fabric loader and intermediary JAR hashes",
+        "compatible patched filesystem/remap components"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 17,
+      "observed_upstream_java_component": "java-runtime-gamma",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/2c592ccd71ca2d5dadebeb6543ad6b18e6f43305/1.20.4.json",
+      "observed_upstream_metadata_sha1": "2c592ccd71ca2d5dadebeb6543ad6b18e6f43305",
+      "observed_upstream_metadata_sha256": "cc81633f25e8e412a94dfb953a7b91702714e1e9ed1b680f520495d56d1ea301",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "ABOVE_VANILLA_BASELINE_LOADER_AND_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.20.4-neoforge-20.4.237",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.20.4",
+      "loader": "neoforge",
+      "loader_version": "20.4.237",
+      "runtime_id": "java17",
+      "java_major_expected": 17,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact installer/install profile",
+        "NeoForm and tool processor input/output hashes",
+        "final main/module/classpath arguments"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "JNI_21_REQUEST_VS_OLDER_RUNTIME_AGREEMENT_UNVERIFIED",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 17,
+      "observed_upstream_java_component": "java-runtime-gamma",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/2c592ccd71ca2d5dadebeb6543ad6b18e6f43305/1.20.4.json",
+      "observed_upstream_metadata_sha1": "2c592ccd71ca2d5dadebeb6543ad6b18e6f43305",
+      "observed_upstream_metadata_sha256": "cc81633f25e8e412a94dfb953a7b91702714e1e9ed1b680f520495d56d1ea301",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.20.1-fabric-0.19.5",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.20.1",
+      "loader": "fabric",
+      "loader_version": "0.19.5",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "testing",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact inherited Fabric profile JSON",
+        "Fabric loader and intermediary JAR hashes",
+        "compatible patched filesystem/remap components"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 17,
+      "observed_upstream_java_component": "java-runtime-gamma",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/a5cf661d31d9dfcd3d1645be80f43954f63f63b0/1.20.1.json",
+      "observed_upstream_metadata_sha1": "a5cf661d31d9dfcd3d1645be80f43954f63f63b0",
+      "observed_upstream_metadata_sha256": "e50169ba5c14ce07c82fb638118449c24f5eb5082e95005c480917aae3635be3",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "ABOVE_VANILLA_BASELINE_LOADER_AND_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.20.1-forge-47.4.20",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.20.1",
+      "loader": "forge",
+      "loader_version": "47.4.20",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact installer/profile metadata",
+        "client processor input/output hashes",
+        "final main/module/classpath arguments"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 17,
+      "observed_upstream_java_component": "java-runtime-gamma",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/a5cf661d31d9dfcd3d1645be80f43954f63f63b0/1.20.1.json",
+      "observed_upstream_metadata_sha1": "a5cf661d31d9dfcd3d1645be80f43954f63f63b0",
+      "observed_upstream_metadata_sha256": "e50169ba5c14ce07c82fb638118449c24f5eb5082e95005c480917aae3635be3",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "ABOVE_VANILLA_BASELINE_LOADER_AND_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.19.2-fabric-0.14.25",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.19.2",
+      "loader": "fabric",
+      "loader_version": "0.14.25",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "testing",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact inherited Fabric profile JSON",
+        "Fabric loader and intermediary JAR hashes",
+        "compatible patched filesystem/remap components"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 17,
+      "observed_upstream_java_component": "java-runtime-gamma",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/ed548106acf3ac7e8205a6ee8fd2710facfa164f/1.19.2.json",
+      "observed_upstream_metadata_sha1": "ed548106acf3ac7e8205a6ee8fd2710facfa164f",
+      "observed_upstream_metadata_sha256": "daa5085a617194df8ab930c0b03161ef01a654ccd15cc57f97c659f4c96e986f",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "ABOVE_VANILLA_BASELINE_LOADER_AND_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.18.2-forge-40.2.27",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.18.2",
+      "loader": "forge",
+      "loader_version": "40.2.27",
+      "runtime_id": "java17",
+      "java_major_expected": 17,
+      "source_support_label": "experimental",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact installer/profile metadata",
+        "client processor input/output hashes",
+        "final main/module/classpath arguments"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "JNI_21_REQUEST_VS_OLDER_RUNTIME_AGREEMENT_UNVERIFIED",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 17,
+      "observed_upstream_java_component": "java-runtime-beta",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/334b33fcba3c9be4b7514624c965256535bd7eba/1.18.2.json",
+      "observed_upstream_metadata_sha1": "334b33fcba3c9be4b7514624c965256535bd7eba",
+      "observed_upstream_metadata_sha256": "3df8f7b5e0ae5ccfd73adc9e00daf407a7274b138daab5793e58d14f2ab74144",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.16.5-fabric-0.14.25",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.16.5",
+      "loader": "fabric",
+      "loader_version": "0.14.25",
+      "runtime_id": "java21",
+      "java_major_expected": 21,
+      "source_support_label": "testing",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact inherited Fabric profile JSON",
+        "Fabric loader and intermediary JAR hashes",
+        "compatible patched filesystem/remap components"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 8,
+      "observed_upstream_java_component": "jre-legacy",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/fba9f7833e858a1257d810d21a3a9e3c967f9077/1.16.5.json",
+      "observed_upstream_metadata_sha1": "fba9f7833e858a1257d810d21a3a9e3c967f9077",
+      "observed_upstream_metadata_sha256": "3eeeab7b3165cc5263dc26ff8fe114fdb718b75a0244efead9d19635d090ba72",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "ABOVE_VANILLA_BASELINE_LOADER_AND_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.12.2-forge-selected",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.12.2",
+      "loader": "forge",
+      "loader_version": "selected",
+      "runtime_id": "legacy",
+      "java_major_expected": 8,
+      "source_support_label": "experimental",
+      "source_implementation_status": "UNSUPPORTED_PROVIDER",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact installer/profile metadata",
+        "client processor input/output hashes",
+        "final main/module/classpath arguments"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "PROVIDER_NOT_IMPLEMENTED_IN_APPROVED_CATALOG",
+        "JNI_21_REQUEST_VS_OLDER_RUNTIME_AGREEMENT_UNVERIFIED",
+        "EXACT_LOADER_VERSION_UNRESOLVED_IN_APPROVED_SOURCE",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 8,
+      "observed_upstream_java_component": "jre-legacy",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/832d95b9f40699d4961394dcf6cf549e65f15dc5/1.12.2.json",
+      "observed_upstream_metadata_sha1": "832d95b9f40699d4961394dcf6cf549e65f15dc5",
+      "observed_upstream_metadata_sha256": "56dac2e1caa872d7e37a7b5523056cd812dca94f912ad2bd652817bee60edca4",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    },
+    {
+      "target_id": "1.12.2-vanilla-none",
+      "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+      "minecraft_version": "1.12.2",
+      "loader": "vanilla",
+      "loader_version": "none",
+      "runtime_id": "legacy",
+      "java_major_expected": 8,
+      "source_support_label": "experimental",
+      "source_implementation_status": "UNSUPPORTED_PROVIDER",
+      "required_test_ids": [
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13"
+      ],
+      "required_artifact_hashes": [
+        "appx",
+        "jvm",
+        "glfw",
+        "mesa",
+        "manifest",
+        "loader-artifacts"
+      ],
+      "loader_preparation_requirements": [
+        "exact vanilla metadata/client hashes",
+        "supported vanilla launch provider"
+      ],
+      "blockers": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "PROVIDER_NOT_IMPLEMENTED_IN_APPROVED_CATALOG",
+        "JNI_21_REQUEST_VS_OLDER_RUNTIME_AGREEMENT_UNVERIFIED",
+        "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED"
+      ],
+      "new_runtime_status": "BLOCKED",
+      "accepted_receipts": [],
+      "observed_upstream_java_major": 8,
+      "observed_upstream_java_component": "jre-legacy",
+      "observed_upstream_metadata_url": "https://piston-meta.mojang.com/v1/packages/832d95b9f40699d4961394dcf6cf549e65f15dc5/1.12.2.json",
+      "observed_upstream_metadata_sha1": "832d95b9f40699d4961394dcf6cf549e65f15dc5",
+      "observed_upstream_metadata_sha256": "56dac2e1caa872d7e37a7b5523056cd812dca94f912ad2bd652817bee60edca4",
+      "upstream_java_requirement_evidence_id": "E21",
+      "runtime_baseline_comparison": "MATCHES_DECLARED_VANILLA_BASELINE_RUNTIME_UNVERIFIED"
+    }
+  ],
+  "limitations": [
+    "Receipt validation checks completeness and hash references; it cannot certify observation truth",
+    "Every current behavioral case and target remains BLOCKED",
+    "All 56 approved targets are retained; unsupported legacy providers are not silently counted as tested",
+    "Nested field names are restricted; free text and attachment bytes still require manual privacy review",
+    "X12 receipt validation binds exact tuples and predecessor receipts; aggregate 56-target and four-runtime-family completeness requires a separate coverage review",
+    "Synthetic checker controls and compilation of independently written probes are analyst checks, never behavioral target passes"
+  ]
+}
