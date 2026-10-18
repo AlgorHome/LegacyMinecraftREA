@@ -1,0 +1,30 @@
+{
+  "recorded_utc": "2026-10-17T16:08:10.173013+00:00",
+  "scope": "Planning structure, links, source identity and sealed evidence integrity only; not runtime validation",
+  "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+  "production_source_clean": true,
+  "sealed_phase6a_manifest_sha256": "99aba532715ad90415381015da6f3b01058a20ffe1fac380c35e3445366ad04c",
+  "sealed_phase6a_entries_checked": 45,
+  "sealed_phase6a_unchanged": true,
+  "required_planning_documents_and_template": 9,
+  "local_links_checked": 55,
+  "mapped_diagnostic_case_count": 19,
+  "initial_profiles": [
+    "NATIVE-CONTROL",
+    "S21"
+  ],
+  "deferred_profiles": [
+    "S17",
+    "S8",
+    "S25"
+  ],
+  "implementation_created": false,
+  "builds_performed": 0,
+  "target_executions": 0,
+  "production_changes": false,
+  "authentication_or_entitlement_changes": false,
+  "third_party_binary_downloads": 0,
+  "actual_hardware_passes": 0,
+  "approval_state": "AWAITING_EXPLICIT_APPROVAL_FOR_IMPLEMENTATION_AND_EXECUTION",
+  "errors": []
+}

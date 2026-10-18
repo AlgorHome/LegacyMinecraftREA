@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap">
+ <Identity Name="AlgorHome.LegacyForge.NativeDiagnostics" Publisher="CN=LegacyForgeDiagnostics" Version="0.2.2.0" ProcessorArchitecture="x64"/>
+ <Properties><DisplayName>Native Diagnostics — D06-RES01a</DisplayName><PublisherDisplayName>Independent Native Diagnostics</PublisherDisplayName><Logo>Assets/StoreLogo.png</Logo></Properties>
+ <Dependencies><TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.26100.0"/><PackageDependency Name="Microsoft.VCLibs.140.00" MinVersion="14.0.0.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"/></Dependencies>
+ <Resources><Resource Language="en-us"/></Resources>
+ <Applications><Application Id="App" Executable="NativeCapabilities.exe" EntryPoint="LegacyForgeNativeDiagnostics.App"><uap:VisualElements DisplayName="Native Diagnostics — D06-RES01a" Description="One 1x1 RGBA8 texture allocation only; no rendering or Java" BackgroundColor="#162030" Square150x150Logo="Assets/Square150x150Logo.png" Square44x44Logo="Assets/Square44x44Logo.png"><uap:SplashScreen Image="Assets/SplashScreen.png" BackgroundColor="#162030"/></uap:VisualElements></Application></Applications>
+</Package>

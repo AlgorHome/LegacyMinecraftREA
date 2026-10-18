@@ -1,0 +1,16 @@
+# Primary contracts checked for the Phase 6B plan
+
+Checked 2026-10-17. These are platform contracts and design references, not observations of the proposed package on Series X. Source-dossier evidence remains independently identified in the Phase6A summary. Only primary Microsoft/Oracle material supports the technical API choices below.
+
+| Reference | Narrow use in this plan | What it does not establish |
+|---|---|---|
+| [Microsoft LoadPackagedLibrary](https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-loadpackagedlibrary) | Load approved package-relative modules through the package dependency graph; record NULL/GetLastError separately from export lookup. | Every desktop DLL's compatibility, correct ABI, or actual successful Xbox loading |
+| [Oracle Java21 Invocation API](https://docs.oracle.com/en/java/javase/21/docs/specs/jni/invocation.html) | Distinguish JNI version query, VM creation, worker-thread attachment, exceptions and deterministic Java execution; keep one VM configuration per process. | The supplied runtime's supported behavior, version/option compatibility or package policy |
+| [Microsoft Sandbox configuration](https://learn.microsoft.com/en-us/windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-configure-using-wsb-file) | Review networking, redirection, mapped-folder and logon-command controls for a disposable approved guest. | Installed Sandbox availability, approval to enable/install it, or approval to execute the archive |
+| [Microsoft VirtualAllocFromApp](https://learn.microsoft.com/en-us/windows/win32/api/memoryapi/nf-memoryapi-virtualallocfromapp) | Treat code-generation capability and memory protection as explicit reviewed runtime/API contracts, with observed failure codes. | A blanket Xbox JIT prohibition, capability grant, or proof that arbitrary runtime-generated code works |
+| [Microsoft UWP audio](https://learn.microsoft.com/en-us/windows/uwp/gaming/working-with-audio-in-your-directx-game) | XAudio2/AudioGraph-style platform output control separates base audio from the OpenAL/JNI integration question. | Selected OpenAL module compatibility, audible output or device-loss recovery |
+| [Microsoft UWP/DirectX app model](https://learn.microsoft.com/en-us/windows/uwp/gaming/about-the-uwp-user-interface-and-directx) | CoreWindow/view and render lifecycle design reference; actual presentation/suspend behavior measured. | Hardware context/graphics feature level or a right to reuse another package's swapchain |
+
+Memory usage/limit measurement is part of the proposed probe; unavailable counters must be marked unavailable. A direct Learn API reference request for `MemoryManager.AppMemoryUsageLimit` returned a renderer internal error during planning; no numeric platform quota or API-availability conclusion depends on that failed request. E19 and pinned source's existing `ReadAppMemoryBudget` are the source anchors; current device/package values remain to be measured outside a debugger. Historical XboxOne resource guidance is not substituted for Series X measurements.
+
+No API-documentation read downloaded an executable or required network authentication. These links should be rechecked against the chosen SDK, manifest and console OS during implementation review.

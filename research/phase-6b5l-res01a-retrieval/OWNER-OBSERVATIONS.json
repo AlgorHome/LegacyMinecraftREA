@@ -1,0 +1,17 @@
+{
+  "phase": "6B.5l",
+  "provenance": "OWNER_REPORTED",
+  "package": "AlgorHome.LegacyForge.NativeDiagnostics",
+  "version": "0.2.2.0",
+  "case": "D06-RES01a",
+  "activation": "PASS_OWNER_REPORTED",
+  "visibleTestStatus": "PASS_OWNER_REPORTED",
+  "errors": "NONE_REPORTED",
+  "runId": null,
+  "photograph": "NOT_SUPPLIED",
+  "receipt": "AWAITING_ORIGINAL",
+  "receiptPass": "NOT_VERIFIED",
+  "formalAcceptance": "PENDING_RECEIPT_AND_ATTRIBUTION_REVIEW",
+  "furtherLaunchAuthorized": false,
+  "consoleAccess": false
+}

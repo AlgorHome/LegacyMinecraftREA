@@ -1,0 +1,117 @@
+{
+  "verdict": "PASS_D06_SRV02_ONLY",
+  "receipt": {
+    "path": "C:\\Users\\arinze\\Desktop\\D06-SRV02-8A125555-353C-4C3D-AD19-D8849FD138A8.json",
+    "sha256": "307dde1773ff9f5aba5b44862c7e9ef1c4179d97035161d873d832364a6e0436",
+    "bytes": 4378,
+    "schema": "legacyforge-native-capability-receipt-v5",
+    "terminalSequence": 6,
+    "elapsedMs": 62,
+    "runId": "8A125555-353C-4C3D-AD19-D8849FD138A8",
+    "processInstanceId": "31218D4A-0751-426A-9239-DC244FF507B2",
+    "observedAtUtcUnverified": "2026-10-18T00:37:35.918Z"
+  },
+  "photograph": {
+    "path": "C:\\Users\\arinze\\Desktop\\IMG_5565.JPG",
+    "sha256": "6f71797139b62009b9a353877b0db42aa1091211cb028edd79a03ade28293f18",
+    "bytes": 1531981,
+    "visuallyReviewed": true,
+    "exactRunIdMatch": true,
+    "savedReceiptMessageVisible": true,
+    "versionAndCaseMatch": true
+  },
+  "sourceCommit": "c81d0f48286513f7a7579a1d2d786cca4f5e60e2",
+  "buildId": "20261017-192156-1c3f66cf",
+  "unsignedSha256": "88cde899358b6eaade1658802831c5a914b8e637cf1466321b233fa8a2788c31",
+  "signedSha256": "a77e31a5922bca35a09084dbe885b5d13ed1207571f66458644d5ac7ee8738d5",
+  "sixRoleChecks": [
+    {
+      "role": "executable_sha256",
+      "member": "NativeCapabilities.exe",
+      "independentSha256": "4e9e8a5563c8b4eaa0aff8d36695c03b29af7a127d5437997b4e579bbdd749b2",
+      "receiptMatches": true,
+      "pinnedBuildMatches": true,
+      "signedBytesMatch": true
+    },
+    {
+      "role": "manifest_sha256",
+      "member": "AppxManifest.xml",
+      "independentSha256": "cb09200058bafb97974ff366231fb4eca0829abc264e5aeb218bc4e4c6140550",
+      "receiptMatches": true,
+      "pinnedBuildMatches": true,
+      "signedBytesMatch": true
+    },
+    {
+      "role": "build_inputs_sha256",
+      "member": "native-inputs.json",
+      "independentSha256": "f6eb65349dd42b8192415b3147405d86093bc84f392180bcfe8199acc60c18d9",
+      "receiptMatches": true,
+      "pinnedBuildMatches": true,
+      "signedBytesMatch": true
+    },
+    {
+      "role": "policy_sha256",
+      "member": "profiles/D06-SRV02.json",
+      "independentSha256": "d81e3edf4de37d1fa699ac6af207f84d429a9391215d1b593e36d314017b4594",
+      "receiptMatches": true,
+      "pinnedBuildMatches": true,
+      "signedBytesMatch": true
+    },
+    {
+      "role": "schema_sha256",
+      "member": "contracts/native-receipt.schema.json",
+      "independentSha256": "4ab9dfbbf345704a846945d1c6609952b937f80949409c91fdf549be1cf71d36",
+      "receiptMatches": true,
+      "pinnedBuildMatches": true,
+      "signedBytesMatch": true
+    },
+    {
+      "role": "inventory_sha256",
+      "member": "native-inventory.json",
+      "independentSha256": "b30d732ac7093e8b54ad188658072de50aa3eb2a6bcabb69115f6dd6c96bcb54",
+      "receiptMatches": true,
+      "pinnedBuildMatches": true,
+      "signedBytesMatch": true
+    }
+  ],
+  "schemaAndSemanticValidation": "PASS",
+  "creationAndDescriptorPolicy": "PASS",
+  "voidGetResourceSingleSourceCall": "PASS",
+  "canonicalIdentityQueries": "PASS",
+  "releaseOrderSourceAndReceipt": "PASS",
+  "memory": {
+    "before": {
+      "usage_bytes": 4931584,
+      "limit_bytes": 1073741824,
+      "available": true
+    },
+    "afterRelease": {
+      "usage_bytes": 9887744,
+      "limit_bytes": 1073741824,
+      "available": true
+    },
+    "headroomBytes": 1068810240,
+    "growthBytes": 4956160,
+    "growthMiB": 4.7265625,
+    "policyPass": true
+  },
+  "deadline": "PASS: 62ms below 10000ms, no native cancellation claim",
+  "persistence": "PASS: owner-retrieved matching run final JSON; no independent console read performed",
+  "checkpoints": "Final sequence 6 and predecessor BEFORE_GET_RESOURCE consistent with pinned source; earlier checkpoint bytes not supplied",
+  "frozenBaselineFilesVerified": 175,
+  "totalPreservedFilesVerified": 199,
+  "originalEvidenceUnchanged": true,
+  "sourceUnchanged": true,
+  "targetExecutedByReviewer": false,
+  "consoleAccess": false,
+  "stages": {
+    "registration": "Owner-attested through matching running package identity; no independent portal inspection",
+    "activation": "PASS: photograph and terminal run evidence",
+    "visibleStatus": "PASS",
+    "nativeCase": "PASS",
+    "receipt": "PASS",
+    "persistence": "PASS within retrieval provenance limits",
+    "overall": "PASS_D06_SRV02_ONLY"
+  },
+  "chainTrust": "Prior SignTool verification FAILED CERT_E_UNTRUSTEDROOT; unchanged, independent of acceptance"
+}

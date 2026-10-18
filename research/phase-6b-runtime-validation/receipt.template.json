@@ -1,0 +1,18 @@
+{
+  "schema": "legacyforge-phase6b-diagnostic-proposal-v1",
+  "schema_status": "PROPOSED_NOT_IMPLEMENTED",
+  "source_baseline": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+  "case_id": "D03",
+  "subcase_id": "S21-JNI21",
+  "status": "PLANNED",
+  "reason": "No approved diagnostic package or execution surface; no observation recorded",
+  "profile": {"id": "S21", "expected_java_major": 21, "requested_jni_hex": "0x00150000"},
+  "environment": {"surface": "Xbox Series X", "os_build": null, "debugger_attached": null, "approved_execution_reference": null},
+  "identities": {"diagnostic_source_commit": null, "source_tree_sha256": null, "appx_sha256": null, "manifest_sha256": null, "profile_sha256": null, "fixture_sha256": null, "runtime_module_sha256": null, "native_inventory_sha256": null},
+  "observation": {"utc_started": null, "elapsed_monotonic_ms": null, "stage": null, "win32_error": null, "hresult": null, "jni_return": null, "observed_jni_hex": null, "observed_java_major": null, "synthetic_result": null, "compiled_method_observed": null, "measurements": null},
+  "criterion_results": [],
+  "prerequisite_receipts": [],
+  "attachments": [],
+  "claims": {"target_executed": false, "minecraft_or_gameplay_tested": false, "auth_or_entitlements_modified": false},
+  "privacy": "Only allowlisted technical outcomes; manual review required for free text and attachments. No credentials, account/device identifiers, personal paths, raw command lines or authenticated URLs."
+}

@@ -1,0 +1,248 @@
+{
+  "formalVerdict": "PASS_D06_RES01A_ONLY",
+  "receiptVerdict": "PASS",
+  "receiptPath": "C:\\Users\\arinze\\Desktop\\D06-RES01a-7A897A91-DE14-4A33-82AE-4737F5575C6D.json",
+  "receiptSha256": "10081860917f805a82f366d0e2e9ddccb11a07deb330e16643bda68e55227fe9",
+  "preservedOriginal": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b5m-res01a-hardware-acceptance\\originals\\D06-RES01a-7A897A91-DE14-4A33-82AE-4737F5575C6D.json",
+  "schema": "PASS_PINNED_V3_AND_CASE_SEMANTICS_USING_PREPARED_VERIFIER",
+  "sourceCommit": "4457142ff1fd9e01371eb446612c70162ce93357",
+  "buildId": "20261017-183031-15ba7835",
+  "runId": "7A897A91-DE14-4A33-82AE-4737F5575C6D",
+  "processId": "12DB5ECA-0A71-4310-BB19-E8E1B64FA742",
+  "receipt": {
+    "schema": "legacyforge-native-capability-receipt-v3",
+    "case_id": "D06-RES01a",
+    "source_commit": "4457142ff1fd9e01371eb446612c70162ce93357",
+    "build_id": "20261017-183031-15ba7835",
+    "production_comparison_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+    "frozen_d00_reference_commit": "553c6554f40f1372b0ea09f6badbbb98e133a9ab",
+    "frozen_hw01_reference_commit": "a3f72874241914f6048d4ca9ec4fc0edc978625d",
+    "frozen_fmt01_reference_commit": "bbe3a42c422e4328d5f98c07a9370fa948d0cbbf",
+    "package_name": "AlgorHome.LegacyForge.NativeDiagnostics",
+    "package_publisher": "CN=LegacyForgeDiagnostics",
+    "package_version": "0.2.2.0",
+    "architecture": "x64",
+    "application_id": "App",
+    "expected_package_identity": true,
+    "run_id": "7A897A91-DE14-4A33-82AE-4737F5575C6D",
+    "process_instance_id": "12DB5ECA-0A71-4310-BB19-E8E1B64FA742",
+    "java_jni_enabled": false,
+    "minecraft_or_gameplay_tested": false,
+    "all_d06_certified": false,
+    "hardware_device_requested": true,
+    "watchdog_cancels_native_calls": false,
+    "payload_hashes": {
+      "executable_sha256": "cb08435285c6dad6f0eba7b0be955f4243d52d29bf575cacfcef4aa6facfbd67",
+      "manifest_sha256": "82f0b634c4343a5272af9f873d1accc528970407da0dce1913deeb1704ccc3c0",
+      "build_inputs_sha256": "d7fcb2e1ac04e3013a37dcca473ea24e402ce165de1f7460efbd7924de9b8a1e",
+      "policy_sha256": "ec8a12dda98ecfbcaac14ff647c329867d7e386aebcf4d6d0d4e48812348c0e2",
+      "schema_sha256": "cd2ba13e2da44ead0cb3f421d88138596cca6541e86105daed7e892883029180",
+      "inventory_sha256": "d5abc15a2bd38f06d749fd371855302b74861eebc8f46ddab0d03e9bdf42fbe4"
+    },
+    "status": "PASS",
+    "reason": "RGBA8_TEXTURE_CREATED_DESCRIPTOR_MATCH",
+    "stage": "FINAL",
+    "terminal": true,
+    "sequence": 4,
+    "elapsed_monotonic_ms": 62,
+    "deadline_ms": 10000,
+    "observed_at_utc": "2026-10-17T23:43:07.619Z",
+    "last_durable_checkpoint_stage": "BEFORE_CREATE_TEXTURE",
+    "receipt_persistence_result": "VERIFY_BY_RETRIEVAL",
+    "details": {
+      "requested_driver_type": "HARDWARE",
+      "requested_driver_type_value": 1,
+      "requested_feature_level": 45056,
+      "creation_flags": 32,
+      "software_fallback_allowed": false,
+      "render_or_present_tested": false,
+      "requested_descriptor": {
+        "width": 1,
+        "height": 1,
+        "mip_levels": 1,
+        "array_size": 1,
+        "format": 28,
+        "sample_count": 1,
+        "sample_quality": 0,
+        "usage": 0,
+        "bind_flags": 8,
+        "cpu_access_flags": 0,
+        "misc_flags": 0
+      },
+      "format_name": "DXGI_FORMAT_R8G8B8A8_UNORM",
+      "format_value": 28,
+      "initial_data_supplied": false,
+      "nonnull_output_pointer": true,
+      "texture_attempted": true,
+      "get_desc_called": true,
+      "memory_before": {
+        "usage_bytes": 4927488,
+        "limit_bytes": 1073741824,
+        "available": true
+      },
+      "creation_hresult": "0x00000000",
+      "creation_hresult_signed": 0,
+      "selected_feature_level": 45056,
+      "device_returned": true,
+      "context_returned": true,
+      "get_adapter_hresult": "0x00000000",
+      "get_desc_hresult": "0x00000000",
+      "adapter_flags": 0,
+      "adapter_software_flag": false,
+      "texture_hresult": "0x00000000",
+      "texture_hresult_signed": 0,
+      "texture_returned": true,
+      "returned_descriptor": {
+        "width": 1,
+        "height": 1,
+        "mip_levels": 1,
+        "array_size": 1,
+        "format": 28,
+        "sample_count": 1,
+        "sample_quality": 0,
+        "usage": 0,
+        "bind_flags": 8,
+        "cpu_access_flags": 0,
+        "misc_flags": 0
+      },
+      "descriptors_match": true,
+      "texture_reference_released": true,
+      "test_resources_released": true,
+      "memory_after_release": {
+        "usage_bytes": 9994240,
+        "limit_bytes": 1073741824,
+        "available": true
+      }
+    }
+  },
+  "payloadComparisons": [
+    {
+      "role": "executable_sha256",
+      "member": "NativeCapabilities.exe",
+      "independentUnsignedSha256": "cb08435285c6dad6f0eba7b0be955f4243d52d29bf575cacfcef4aa6facfbd67",
+      "receiptMatch": true,
+      "signedBytesMatch": true
+    },
+    {
+      "role": "manifest_sha256",
+      "member": "AppxManifest.xml",
+      "independentUnsignedSha256": "82f0b634c4343a5272af9f873d1accc528970407da0dce1913deeb1704ccc3c0",
+      "receiptMatch": true,
+      "signedBytesMatch": true
+    },
+    {
+      "role": "build_inputs_sha256",
+      "member": "native-inputs.json",
+      "independentUnsignedSha256": "d7fcb2e1ac04e3013a37dcca473ea24e402ce165de1f7460efbd7924de9b8a1e",
+      "receiptMatch": true,
+      "signedBytesMatch": true
+    },
+    {
+      "role": "policy_sha256",
+      "member": "profiles/D06-RES01a.json",
+      "independentUnsignedSha256": "ec8a12dda98ecfbcaac14ff647c329867d7e386aebcf4d6d0d4e48812348c0e2",
+      "receiptMatch": true,
+      "signedBytesMatch": true
+    },
+    {
+      "role": "schema_sha256",
+      "member": "contracts/native-receipt.schema.json",
+      "independentUnsignedSha256": "cd2ba13e2da44ead0cb3f421d88138596cca6541e86105daed7e892883029180",
+      "receiptMatch": true,
+      "signedBytesMatch": true
+    },
+    {
+      "role": "inventory_sha256",
+      "member": "native-inventory.json",
+      "independentUnsignedSha256": "d5abc15a2bd38f06d749fd371855302b74861eebc8f46ddab0d03e9bdf42fbe4",
+      "receiptMatch": true,
+      "signedBytesMatch": true
+    }
+  ],
+  "originalMembersByteIdentical": [
+    {
+      "member": "LICENSE.txt",
+      "sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6"
+    },
+    {
+      "member": "native-inventory.json",
+      "sha256": "d5abc15a2bd38f06d749fd371855302b74861eebc8f46ddab0d03e9bdf42fbe4"
+    },
+    {
+      "member": "profiles/D06-RES01a.json",
+      "sha256": "ec8a12dda98ecfbcaac14ff647c329867d7e386aebcf4d6d0d4e48812348c0e2"
+    },
+    {
+      "member": "contracts/native-receipt.schema.json",
+      "sha256": "cd2ba13e2da44ead0cb3f421d88138596cca6541e86105daed7e892883029180"
+    },
+    {
+      "member": "NativeCapabilities.exe",
+      "sha256": "cb08435285c6dad6f0eba7b0be955f4243d52d29bf575cacfcef4aa6facfbd67"
+    },
+    {
+      "member": "Assets/Square150x150Logo.png",
+      "sha256": "cfce78a93197c46c8ffb95ab85f183a8b4c070b3092a8b04b1a88910096ddb82"
+    },
+    {
+      "member": "Assets/StoreLogo.png",
+      "sha256": "8c66ace1328b014584aa938a2039b57cdf2065b606825508688c2ea235468ffc"
+    },
+    {
+      "member": "Assets/Square44x44Logo.png",
+      "sha256": "fae939abf1e0864326180b17ddd82cc618ce1512be5810db8f1de29249dd3cf0"
+    },
+    {
+      "member": "Assets/SplashScreen.png",
+      "sha256": "d195f3ffb31e2b9c0381d8aeafb4c0649360dc46939525cb275062f03641d923"
+    },
+    {
+      "member": "native-inputs.json",
+      "sha256": "d7fcb2e1ac04e3013a37dcca473ea24e402ce165de1f7460efbd7924de9b8a1e"
+    },
+    {
+      "member": "AppxManifest.xml",
+      "sha256": "82f0b634c4343a5272af9f873d1accc528970407da0dce1913deeb1704ccc3c0"
+    },
+    {
+      "member": "AppxBlockMap.xml",
+      "sha256": "241e8db2c1981c0a0fb93982a8fb72ac6df6eeaba0e3dc634e1f57b82e87dade"
+    }
+  ],
+  "blockmapFilesChecked": [
+    "LICENSE.txt",
+    "native-inventory.json",
+    "profiles/D06-RES01a.json",
+    "contracts/native-receipt.schema.json",
+    "NativeCapabilities.exe",
+    "Assets/Square150x150Logo.png",
+    "Assets/StoreLogo.png",
+    "Assets/Square44x44Logo.png",
+    "Assets/SplashScreen.png",
+    "native-inputs.json",
+    "AppxManifest.xml"
+  ],
+  "headroomBytes": 1068814336,
+  "observedGrowthBytes": 5066752,
+  "elapsedMs": 62,
+  "frozenFilesUnchanged": 107,
+  "totalPreservedFilesReverified": 118,
+  "photoStatus": "PASS_ORIGINAL_JPEG_VISUALLY_INSPECTED",
+  "photoRunMatch": "PASS_EXACT_7A897A91-DE14-4A33-82AE-4737F5575C6D",
+  "consoleAccess": false,
+  "newTargetExecution": false,
+  "sourceChanged": false,
+  "photoPath": "C:\\Users\\arinze\\Downloads\\IMG_5563.JPG",
+  "photoPreservedOriginal": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b5m-res01a-hardware-acceptance\\originals\\IMG_5563.JPG",
+  "photoSha256": "d62d1121b060179d27790454fc9165e26cc6fe4abfba7ab9c08c0723e740aee8",
+  "photoBytes": 1623686,
+  "photoObservation": "Exact case/version/PASS/reason/device HRESULT0/feature0xB000/saved receipt/run UUID match; texture HRESULT and descriptors are verified from JSON, not visibly displayed in photo",
+  "persistence": "PASS original terminal JSON retrieved and verified; exact photo run/saved message match",
+  "limitations": [
+    "Owner-attested Series X origin/retrieval; receipt/photo not hardware-attested or independently signed",
+    "Receipt UTC and remote file timestamps not independently synchronized; photo metadata/capture clock not used",
+    "Sequence4 and checkpoint consistent with source; earlier overwritten checkpoint bytes not supplied",
+    "Scoped reference release plus memory samples do not prove driver frees all allocations or leak freedom",
+    "No texture content/view/shader/render/present/readback/OpenGL/LWJGL/Java/JNI/Minecraft tested"
+  ]
+}

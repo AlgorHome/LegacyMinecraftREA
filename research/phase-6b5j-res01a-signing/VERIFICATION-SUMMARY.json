@@ -1,0 +1,52 @@
+{
+  "verdict": "PASS_INTEGRITY_WINDOWS_CHAIN_UNTRUSTED",
+  "sourceCommit": "4457142ff1fd9e01371eb446612c70162ce93357",
+  "unsignedPath": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\NativeCapabilities\\out\\20261017-183031-15ba7835\\NativeCapabilities.unsigned.appx",
+  "unsignedSha256": "526c7fe24950a1084e592c2df3d020c82aa1d15cd330b4b7fd5612e82191d7e8",
+  "signedPath": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b5j-signing\\20261017-183700-68e8cd8f\\NativeDiagnostics.D06-RES01a.0.2.2.0.signed.appx",
+  "signedSha256": "ead7016c94e551fac43e2b622b323354bfa4506fe507f44bf5e98f112b8f0c3f",
+  "signAttempts": 1,
+  "signerThumbprint": "D6245FB640D520EDED8F8A987B364BCADE01D01D",
+  "certificate": {
+    "endEntity": true,
+    "key": {
+      "provider": "Microsoft Software Key Storage Provider",
+      "keySize": 2048,
+      "exportPolicy": "None"
+    },
+    "notAfterUtc": "2027-10-17T18:08:48.0000000Z",
+    "signatureAlgorithm": "1.2.840.113549.1.1.11",
+    "notBeforeUtc": "2026-10-17T17:58:48.0000000Z",
+    "keyUsage": "DigitalSignature",
+    "subject": "CN=LegacyForgeDiagnostics",
+    "eku": [
+      "1.3.6.1.5.5.7.3.3"
+    ],
+    "issuer": "CN=LegacyForgeDiagnostics",
+    "thumbprint": "D6245FB640D520EDED8F8A987B364BCADE01D01D"
+  },
+  "privateKeyAvailableVerified": true,
+  "privateMaterialExported": false,
+  "cmsIntegrity": "PASS",
+  "appxContentDigest": "PASS",
+  "negativeControl": "In-memory expected digest mutation rejected with0x80096010",
+  "payloadBytes": "PASS_12_ORIGINAL_MEMBERS_EXCEPT_EXPECTED_CONTENT_TYPES_CHANGES",
+  "blockmap": "PASS_11_FILES",
+  "singleEnabledCase": "D06-RES01a",
+  "schema": "legacyforge-native-capability-receipt-v3",
+  "zeroCapabilities": true,
+  "consoleClassification": "App intended/required; not observable from host-only manifest",
+  "standardWindowsVerification": {
+    "command": "signtool verify /pa /v \"C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b5j-signing\\20261017-183700-68e8cd8f\\NativeDiagnostics.D06-RES01a.0.2.2.0.signed.appx\"",
+    "exitCode": 1,
+    "cacheOnlyWinVerifyTrust": "0x800B0109",
+    "error": "CERT_E_UNTRUSTEDROOT"
+  },
+  "originalFrozenFilesVerified": 107,
+  "totalOriginalFilesReverified": 118,
+  "trustStoreInventoriesUnchanged": true,
+  "targetExecuted": false,
+  "consoleAccess": false,
+  "installed": false,
+  "sourceChanged": false
+}
