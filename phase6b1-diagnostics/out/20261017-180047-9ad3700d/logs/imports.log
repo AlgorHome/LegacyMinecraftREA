@@ -1,0 +1,319 @@
+
+Dump of file C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\NativeCapabilities\out\20261017-180047-9ad3700d\package\NativeCapabilities.exe
+
+File Type: EXECUTABLE IMAGE
+
+  Section contains the following imports:
+
+    api-ms-win-core-file-l1-1-0.dll
+             140011118 Import Address Table
+             14001B030 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          51 ReadFile
+                          32 GetFileAttributesW
+                          24 FlushFileBuffers
+                          65 WriteFile
+                           6 CreateDirectoryW
+
+    api-ms-win-core-file-l1-2-0.dll
+             140011148 Import Address Table
+             14001B060 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           7 CreateFile2
+
+    api-ms-win-core-handle-l1-1-0.dll
+             140011168 Import Address Table
+             14001B080 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           0 CloseHandle
+
+    api-ms-win-core-errorhandling-l1-1-0.dll
+             140011108 Import Address Table
+             14001B020 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           5 GetLastError
+
+    api-ms-win-core-sysinfo-l1-1-0.dll
+             140011248 Import Address Table
+             14001B160 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          18 GetSystemTimeAsFileTime
+                          1D GetTickCount64
+                          15 GetSystemTime
+
+    api-ms-win-core-file-l2-1-0.dll
+             140011158 Import Address Table
+             14001B070 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           9 MoveFileExW
+
+    bcrypt.dll
+             1400113C8 Import Address Table
+             14001B2E0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          1D BCryptFinishHash
+                           E BCryptDestroyHash
+                           2 BCryptCloseAlgorithmProvider
+                           6 BCryptCreateHash
+                          29 BCryptOpenAlgorithmProvider
+                          23 BCryptGetProperty
+                          25 BCryptHashData
+
+    api-ms-win-core-com-l1-1-0.dll
+             1400110D8 Import Address Table
+             14001AFF0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          42 CoTaskMemAlloc
+                           7 CoCreateFreeThreadedMarshaler
+                           8 CoCreateGuid
+                          54 StringFromGUID2
+                          28 CoInitializeEx
+
+    d3d11.dll
+             140011408 Import Address Table
+             14001B320 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           6 D3D11CreateDevice
+
+    MSVCP140_APP.dll
+             140011000 Import Address Table
+             14001AF18 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         589 _Mtx_unlock
+                         590 _Query_perf_counter
+                         591 _Query_perf_frequency
+                         28E ?_Xlength_error@std@@YAXPEBD@Z
+                         273 ?_Syserror_map@std@@YAPEBDH@Z
+                         275 ?_Throw_Cpp_error@std@@YAXH@Z
+                         5B0 _Thrd_detach
+                         552 _Cnd_signal
+                         585 _Mtx_lock
+                         54E _Cnd_do_broadcast_at_thread_exit
+
+    VCRUNTIME140_APP.dll
+             140011090 Import Address Table
+             14001AFA8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          3E memset
+                          3C memcpy
+                          21 __std_exception_copy
+                           1 _CxxThrowException
+                           8 __C_specific_handler
+                          22 __std_exception_destroy
+                          23 __std_terminate
+                          3D memmove
+
+    VCRUNTIME140_1_APP.dll
+             140011080 Import Address Table
+             14001AF98 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           0 __CxxFrameHandler4
+
+    api-ms-win-crt-runtime-l1-1-0.dll
+             1400112D8 Import Address Table
+             14001B1F0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          3C _register_onexit_function
+                          23 _exit
+                          55 exit
+                          15 _c_exit
+                          36 _initterm
+                          2F _get_wide_winmain_command_line
+                          35 _initialize_wide_environment
+                          19 _configure_wide_argv
+                          37 _initterm_e
+                          42 _set_app_type
+                          40 _seh_filter_exe
+                          16 _cexit
+                          1E _crt_atexit
+                          34 _initialize_onexit_table
+                          14 _beginthreadex
+                          67 terminate
+                          54 abort
+                          21 _errno
+                          3A _invoke_watson
+                          38 _invalid_parameter_noinfo
+                          3D _register_thread_local_exe_atexit_callback
+
+    api-ms-win-crt-string-l1-1-0.dll
+             1400113A8 Import Address Table
+             14001B2C0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          8B strlen
+                          7B iswspace
+                          A3 wcslen
+
+    api-ms-win-crt-stdio-l1-1-0.dll
+             140011388 Import Address Table
+             14001B2A0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          54 _set_fmode
+                           1 __p__commode
+                          13 __stdio_common_vswprintf_s
+
+    api-ms-win-crt-heap-l1-1-0.dll
+             140011290 Import Address Table
+             14001B1A8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          16 _set_new_mode
+                           8 _callnewh
+                          19 malloc
+                          18 free
+
+    api-ms-win-crt-math-l1-1-0.dll
+             1400112C8 Import Address Table
+             14001B1E0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           9 __setusermatherr
+
+    api-ms-win-crt-locale-l1-1-0.dll
+             1400112B8 Import Address Table
+             14001B1D0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           8 _configthreadlocale
+
+    api-ms-win-core-synch-l1-1-0.dll
+             140011210 Import Address Table
+             14001B128 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          24 ReleaseSRWLockExclusive
+                           0 AcquireSRWLockExclusive
+
+    api-ms-win-core-synch-l1-2-0.dll
+             140011228 Import Address Table
+             14001B140 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          39 WakeAllConditionVariable
+                          2F SleepConditionVariableSRW
+                          2D Sleep
+
+    api-ms-win-core-processthreads-l1-1-0.dll
+             1400111D0 Import Address Table
+             14001B0E8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          11 GetCurrentThreadId
+                           D GetCurrentProcessId
+
+    api-ms-win-core-winrt-l1-1-0.dll
+             140011278 Import Address Table
+             14001B190 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           3 RoInitialize
+                           1 RoGetActivationFactory
+
+    api-ms-win-core-profile-l1-1-0.dll
+             1400111E8 Import Address Table
+             14001B100 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           0 QueryPerformanceCounter
+
+    api-ms-win-core-interlocked-l1-1-0.dll
+             140011198 Import Address Table
+             14001B0B0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           0 InitializeSListHead
+                           3 InterlockedPushEntrySList
+
+    api-ms-win-core-winrt-error-l1-1-1.dll
+             140011268 Import Address Table
+             14001B180 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           B RoOriginateLanguageException
+
+    api-ms-win-core-libraryloader-l1-2-0.dll
+             1400111B0 Import Address Table
+             14001B0C8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          16 GetProcAddress
+                          19 LoadLibraryExW
+                           D FreeLibrary
+
+    OLEAUT32.dll
+             140011058 Import Address Table
+             14001AF70 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                             Ordinal   201
+                             Ordinal     7
+                             Ordinal     6
+                             Ordinal   200
+
+    api-ms-win-core-string-l1-1-0.dll
+             1400111F8 Import Address Table
+             14001B110 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           7 WideCharToMultiByte
+                           6 MultiByteToWideChar
+
+    api-ms-win-core-heap-l1-1-0.dll
+             140011178 Import Address Table
+             14001B090 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           0 GetProcessHeap
+                           6 HeapFree
+                           2 HeapAlloc
+
+  Summary
+
+        3000 .data
+        1000 .pdata
+        B000 .rdata
+        1000 .reloc
+       10000 .text

@@ -1,0 +1,429 @@
+{
+  "schema": "legacyforge-native-build-v1",
+  "sourceCommit": "bbe3a42c422e4328d5f98c07a9370fa948d0cbbf",
+  "buildId": "20261017-180047-9ad3700d",
+  "caseId": "D06-FMT01",
+  "definitions": [
+    "LFN_NATIVE_ONLY=1",
+    "LFN_JNI_ENABLED=0",
+    "LFD_D00_ONLY=1",
+    "LFN_CASE_D06_FMT01=1"
+  ],
+  "compiledSources": [
+    "src/app.cpp",
+    "src/report.cpp",
+    "src/probe.cpp"
+  ],
+  "nativeOnly": true,
+  "jniEnabled": false,
+  "status": "BUILD_STATIC_PASS_NOT_EXECUTED",
+  "targetExecuted": false,
+  "signed": false,
+  "commands": [
+    {
+      "exitCode": 2,
+      "sha256": "1afe15d1330607f67cca4025ae9982c4344be58ab6cf3d50ae2a99210b075b7d",
+      "expected": "nonzero preprocessor rejection",
+      "role": "gate-LFN_NATIVE_ONLY-0",
+      "log": "logs/gate-LFN_NATIVE_ONLY-0.log"
+    },
+    {
+      "exitCode": 2,
+      "sha256": "1afe15d1330607f67cca4025ae9982c4344be58ab6cf3d50ae2a99210b075b7d",
+      "expected": "nonzero preprocessor rejection",
+      "role": "gate-LFN_JNI_ENABLED-1",
+      "log": "logs/gate-LFN_JNI_ENABLED-1.log"
+    },
+    {
+      "exitCode": 2,
+      "sha256": "1afe15d1330607f67cca4025ae9982c4344be58ab6cf3d50ae2a99210b075b7d",
+      "expected": "nonzero preprocessor rejection",
+      "role": "gate-LFD_D00_ONLY-0",
+      "log": "logs/gate-LFD_D00_ONLY-0.log"
+    },
+    {
+      "exitCode": 2,
+      "sha256": "1afe15d1330607f67cca4025ae9982c4344be58ab6cf3d50ae2a99210b075b7d",
+      "expected": "nonzero preprocessor rejection",
+      "role": "gate-LFN_CASE_D06_FMT01-0",
+      "log": "logs/gate-LFN_CASE_D06_FMT01-0.log"
+    },
+    {
+      "exitCode": 2,
+      "sha256": "38e55c66efaa3e92ab345b1101c791818d68167ce8bd330fc0061c6bbda91678",
+      "expected": "nonzero preprocessor rejection",
+      "role": "gate-LFN_CASE_D06_HW01-1",
+      "log": "logs/gate-LFN_CASE_D06_HW01-1.log"
+    },
+    {
+      "exitCode": 0,
+      "sha256": "2cfd29eed153fc4be8dec0f6ad434df5acd289005e0a7e798ab39e1644dcba03",
+      "role": "cpp-app",
+      "log": "logs/cpp-app.log"
+    },
+    {
+      "exitCode": 0,
+      "sha256": "2cfd29eed153fc4be8dec0f6ad434df5acd289005e0a7e798ab39e1644dcba03",
+      "role": "preprocess-app",
+      "log": "logs/preprocess-app.log"
+    },
+    {
+      "exitCode": 0,
+      "sha256": "a10ee989a627ea977e6e2fcc2cfb3ac7e59c276ac40f97d2cdac8417721131d7",
+      "role": "cpp-report",
+      "log": "logs/cpp-report.log"
+    },
+    {
+      "exitCode": 0,
+      "sha256": "a10ee989a627ea977e6e2fcc2cfb3ac7e59c276ac40f97d2cdac8417721131d7",
+      "role": "preprocess-report",
+      "log": "logs/preprocess-report.log"
+    },
+    {
+      "exitCode": 0,
+      "sha256": "25d4f66c7c01d5b35c220cb97ffdd1608405f4ab45160497e6cc7ea3079676cf",
+      "role": "cpp-probe",
+      "log": "logs/cpp-probe.log"
+    },
+    {
+      "exitCode": 0,
+      "sha256": "25d4f66c7c01d5b35c220cb97ffdd1608405f4ab45160497e6cc7ea3079676cf",
+      "role": "preprocess-probe",
+      "log": "logs/preprocess-probe.log"
+    },
+    {
+      "exitCode": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "link",
+      "log": "logs/link.log"
+    },
+    {
+      "exitCode": 0,
+      "sha256": "808a12ef0680996ff0cd156f79fdeeb0c3bc341b5ca3ffc42d55a0e4584cf76d",
+      "role": "imports",
+      "log": "logs/imports.log"
+    },
+    {
+      "exitCode": 0,
+      "sha256": "e9a74119db73ea3063b1f183244832271ad040ceed43c0139d935da47edc14d9",
+      "role": "headers",
+      "log": "logs/headers.log"
+    },
+    {
+      "exitCode": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "assets",
+      "log": "logs/assets.log"
+    },
+    {
+      "exitCode": 0,
+      "sha256": "727cd1b0e1517da4e85097fbebafbbaa18fcb7d12f4b50d015ecc363f70bfd76",
+      "role": "makeappx",
+      "log": "logs/makeappx.log"
+    },
+    {
+      "exitCode": 0,
+      "sha256": "a9ae6b2969ddfbceff58bdf3412631ffec6a3d076f947c10349cd53a2fbe61cf",
+      "role": "static-safety",
+      "log": "logs/static-safety.log"
+    }
+  ],
+  "tools": [
+    {
+      "path": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+      "sha256": "fe251ef50a1545b1b0835ee17b1e785459712b38d79e45b5c1d3d28970a36619"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\link.exe",
+      "sha256": "a364af801a8539e4324d9489313dbf001d959128451fc99a27b24676bbac058f"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\dumpbin.exe",
+      "sha256": "cfee7ed764b7b0866aae0be12f9c0ad2a7f5aecc4046ba2b7de26335827ca815"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\makeappx.exe",
+      "sha256": "00fff202b71c1266b8c3899701e42b5468ea153b2b33a0a47215fe27695f16d0"
+    },
+    {
+      "path": "C:\\Users\\arinze\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+      "sha256": "4942b86a6597e5aee0128daa00050ed79bc21f6e709a78eb19cbfeb0c2f39ac9"
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": ".gitignore",
+      "sha256": "744a1502c1d7ad664e0677975e40beb6cf6abfe3f49da5311af22b109a50af68"
+    },
+    {
+      "path": "build.ps1",
+      "sha256": "983d4e50a1f153a16db2aba0e5cc0ab6f2537de33c82fff137d3f929f921ae5b"
+    },
+    {
+      "path": "native-inventory.json",
+      "sha256": "37cc66fcd8abd77fce39b6d488ac822e196ced3bf91cb1a7835ec90976d1f1b6"
+    },
+    {
+      "path": "README.md",
+      "sha256": "25f0a4ea9e6585e7e35d933df00a20ae9c5add89bd1e550ccfa18b403a26fab5"
+    },
+    {
+      "path": "contracts/native-receipt.schema.json",
+      "sha256": "3373265fb3aa787a375e4edc1da54e4807793bf4151d645519d9c45b5cdbb6b7"
+    },
+    {
+      "path": "include/build_config.h",
+      "sha256": "90644b27ddc2213f8e7941e995c55f15b767fa73190e486ca0241e822d2bc91a"
+    },
+    {
+      "path": "include/native.h",
+      "sha256": "fec0a2e3502777c2df8c781e1c61fb927fc533f912586aabe674338e74c68450"
+    },
+    {
+      "path": "package/Package.appxmanifest",
+      "sha256": "593fbda9d0dce1ac6b6f12a96e187d5b1c2d0d4aaced9accdadb7cf806807fd0"
+    },
+    {
+      "path": "profiles/D06-FMT01.json",
+      "sha256": "57f849c631ba5fd2de08e6d6eda593eccd81f7cba485212b99f7665b86f0a845"
+    },
+    {
+      "path": "src/app.cpp",
+      "sha256": "f103c0be4e67d1428c901d4c8ac6d33a49f2a287a2de1e6d8b1c57a4e18ee925"
+    },
+    {
+      "path": "src/probe.cpp",
+      "sha256": "16b6726216eec497ce61d85f602abef7f0281b75aeb734674ae69eb9f0d75166"
+    },
+    {
+      "path": "src/report.cpp",
+      "sha256": "012398c1163b039105d3860f95615317d1c513a48df3f5e310e1a85a100a0268"
+    },
+    {
+      "path": "tools/receipt_contract.py",
+      "sha256": "1d2ce21b7d67c7ad86566fcb58fd722a43619c358712748eed697883b98a513c"
+    },
+    {
+      "path": "tools/static_verify.py",
+      "sha256": "ff9154493912b63c6ee46d57e0824e48c2f587f22881da6a91b1a8f9d29b445b"
+    }
+  ],
+  "artifacts": [
+    {
+      "bytes": 62115,
+      "sha256": "24dc6835408f9a5d38d1ab56ec82dfd550cf0dc183e495defa836299d77dd03d",
+      "path": "NativeCapabilities.unsigned.appx"
+    },
+    {
+      "bytes": 9658,
+      "sha256": "61b4ee99b6e747caa522d9efadcabb41ffe778952adccb035366e9842c8d9073",
+      "path": "static-safety.json"
+    },
+    {
+      "bytes": 186,
+      "sha256": "ee419af80c076f37233e149ff898070cd712a505a912afc71c944b5459519b12",
+      "path": "generated/build_identity.h"
+    },
+    {
+      "bytes": 897,
+      "sha256": "634196bf8ef1698ab2168fbc688d740f67aa2d50e3e20ca35af21664d4c5b48d",
+      "path": "generated/gate-LFD_D00_ONLY-0.i"
+    },
+    {
+      "bytes": 897,
+      "sha256": "29e7950a024f055a754385282bc482c63133dfd3a33c27553a9a8539b93d86fa",
+      "path": "generated/gate-LFN_CASE_D06_FMT01-0.i"
+    },
+    {
+      "bytes": 891,
+      "sha256": "be97788a0a81ad64ec6f5f1bb7ce037d259b24e5400081c18334504236c322cd",
+      "path": "generated/gate-LFN_CASE_D06_HW01-1.i"
+    },
+    {
+      "bytes": 898,
+      "sha256": "c6bad469804b82c8e5a2ca465dc15c0334cc13e3edc2fe7807299785dc077785",
+      "path": "generated/gate-LFN_JNI_ENABLED-1.i"
+    },
+    {
+      "bytes": 898,
+      "sha256": "157b74c45adaf4bf4c9252fd3eda9fed7a1e187441b89c964802701497f088ad",
+      "path": "generated/gate-LFN_NATIVE_ONLY-0.i"
+    },
+    {
+      "bytes": 27,
+      "sha256": "f09799c67ecb2944d316a701c57f83e4bbb0b0628a93e5f32c8fc3e09efe27c2",
+      "path": "generated/gate.cpp"
+    },
+    {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": "logs/assets.log"
+    },
+    {
+      "bytes": 9,
+      "sha256": "2cfd29eed153fc4be8dec0f6ad434df5acd289005e0a7e798ab39e1644dcba03",
+      "path": "logs/cpp-app.log"
+    },
+    {
+      "bytes": 11,
+      "sha256": "25d4f66c7c01d5b35c220cb97ffdd1608405f4ab45160497e6cc7ea3079676cf",
+      "path": "logs/cpp-probe.log"
+    },
+    {
+      "bytes": 12,
+      "sha256": "a10ee989a627ea977e6e2fcc2cfb3ac7e59c276ac40f97d2cdac8417721131d7",
+      "path": "logs/cpp-report.log"
+    },
+    {
+      "bytes": 246,
+      "sha256": "1afe15d1330607f67cca4025ae9982c4344be58ab6cf3d50ae2a99210b075b7d",
+      "path": "logs/gate-LFD_D00_ONLY-0.log"
+    },
+    {
+      "bytes": 246,
+      "sha256": "1afe15d1330607f67cca4025ae9982c4344be58ab6cf3d50ae2a99210b075b7d",
+      "path": "logs/gate-LFN_CASE_D06_FMT01-0.log"
+    },
+    {
+      "bytes": 219,
+      "sha256": "38e55c66efaa3e92ab345b1101c791818d68167ce8bd330fc0061c6bbda91678",
+      "path": "logs/gate-LFN_CASE_D06_HW01-1.log"
+    },
+    {
+      "bytes": 246,
+      "sha256": "1afe15d1330607f67cca4025ae9982c4344be58ab6cf3d50ae2a99210b075b7d",
+      "path": "logs/gate-LFN_JNI_ENABLED-1.log"
+    },
+    {
+      "bytes": 246,
+      "sha256": "1afe15d1330607f67cca4025ae9982c4344be58ab6cf3d50ae2a99210b075b7d",
+      "path": "logs/gate-LFN_NATIVE_ONLY-0.log"
+    },
+    {
+      "bytes": 5246,
+      "sha256": "e9a74119db73ea3063b1f183244832271ad040ceed43c0139d935da47edc14d9",
+      "path": "logs/headers.log"
+    },
+    {
+      "bytes": 11687,
+      "sha256": "808a12ef0680996ff0cd156f79fdeeb0c3bc341b5ca3ffc42d55a0e4584cf76d",
+      "path": "logs/imports.log"
+    },
+    {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": "logs/link.log"
+    },
+    {
+      "bytes": 3831,
+      "sha256": "727cd1b0e1517da4e85097fbebafbbaa18fcb7d12f4b50d015ecc363f70bfd76",
+      "path": "logs/makeappx.log"
+    },
+    {
+      "bytes": 9,
+      "sha256": "2cfd29eed153fc4be8dec0f6ad434df5acd289005e0a7e798ab39e1644dcba03",
+      "path": "logs/preprocess-app.log"
+    },
+    {
+      "bytes": 11,
+      "sha256": "25d4f66c7c01d5b35c220cb97ffdd1608405f4ab45160497e6cc7ea3079676cf",
+      "path": "logs/preprocess-probe.log"
+    },
+    {
+      "bytes": 12,
+      "sha256": "a10ee989a627ea977e6e2fcc2cfb3ac7e59c276ac40f97d2cdac8417721131d7",
+      "path": "logs/preprocess-report.log"
+    },
+    {
+      "bytes": 67,
+      "sha256": "a9ae6b2969ddfbceff58bdf3412631ffec6a3d076f947c10349cd53a2fbe61cf",
+      "path": "logs/static-safety.log"
+    },
+    {
+      "bytes": 14254212,
+      "sha256": "582ab834f5cddc88f3f52e3614220cfaef32333638edac17e02a3823d83ee09d",
+      "path": "objects/app.i"
+    },
+    {
+      "bytes": 900224,
+      "sha256": "a9ecab874d9a8a767a1d39d82d79c96d2cd36488e8df00e37d776cd13d5be849",
+      "path": "objects/app.obj"
+    },
+    {
+      "bytes": 7998598,
+      "sha256": "13dc1015dde7f1c850729ba55c7d72ede962f3e9b953f1d0188c74435d58e1f0",
+      "path": "objects/probe.i"
+    },
+    {
+      "bytes": 311372,
+      "sha256": "c933afe76fd1c50060a17bde319bf9010fcaf90f3d2ee4b831cd590e52b3f3b7",
+      "path": "objects/probe.obj"
+    },
+    {
+      "bytes": 10702780,
+      "sha256": "e81bb2ab7a2ec3c323a4b26ae14598cbebf4889382929f150d479960fcc87558",
+      "path": "objects/report.i"
+    },
+    {
+      "bytes": 601607,
+      "sha256": "a75009ca1c487dcb7cd2f60255486a5b1cef5b72b2b56dbaf489251743298d37",
+      "path": "objects/report.obj"
+    },
+    {
+      "bytes": 1429,
+      "sha256": "593fbda9d0dce1ac6b6f12a96e187d5b1c2d0d4aaced9accdadb7cf806807fd0",
+      "path": "package/AppxManifest.xml"
+    },
+    {
+      "bytes": 11558,
+      "sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6",
+      "path": "package/LICENSE.txt"
+    },
+    {
+      "bytes": 3988,
+      "sha256": "5cb62bbacce8b7000099f9432c285bbb71b8b3e26fd50876878f1db1a89cc21a",
+      "path": "package/native-inputs.json"
+    },
+    {
+      "bytes": 202,
+      "sha256": "37cc66fcd8abd77fce39b6d488ac822e196ced3bf91cb1a7835ec90976d1f1b6",
+      "path": "package/native-inventory.json"
+    },
+    {
+      "bytes": 121344,
+      "sha256": "eda70661b4f0ec6b7df6e08b81c8e42f7ee2f6f11acc8f3c3be69a5872f43de1",
+      "path": "package/NativeCapabilities.exe"
+    },
+    {
+      "bytes": 1477,
+      "sha256": "d195f3ffb31e2b9c0381d8aeafb4c0649360dc46939525cb275062f03641d923",
+      "path": "package/Assets/SplashScreen.png"
+    },
+    {
+      "bytes": 469,
+      "sha256": "cfce78a93197c46c8ffb95ab85f183a8b4c070b3092a8b04b1a88910096ddb82",
+      "path": "package/Assets/Square150x150Logo.png"
+    },
+    {
+      "bytes": 125,
+      "sha256": "fae939abf1e0864326180b17ddd82cc618ce1512be5810db8f1de29249dd3cf0",
+      "path": "package/Assets/Square44x44Logo.png"
+    },
+    {
+      "bytes": 150,
+      "sha256": "8c66ace1328b014584aa938a2039b57cdf2065b606825508688c2ea235468ffc",
+      "path": "package/Assets/StoreLogo.png"
+    },
+    {
+      "bytes": 8468,
+      "sha256": "3373265fb3aa787a375e4edc1da54e4807793bf4151d645519d9c45b5cdbb6b7",
+      "path": "package/contracts/native-receipt.schema.json"
+    },
+    {
+      "bytes": 906,
+      "sha256": "57f849c631ba5fd2de08e6d6eda593eccd81f7cba485212b99f7665b86f0a845",
+      "path": "package/profiles/D06-FMT01.json"
+    }
+  ],
+  "generatedIdentitySha256": "ee419af80c076f37233e149ff898070cd712a505a912afc71c944b5459519b12"
+}
