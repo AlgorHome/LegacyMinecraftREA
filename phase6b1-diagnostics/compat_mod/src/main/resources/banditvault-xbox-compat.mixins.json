@@ -1,0 +1,21 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "banditvault.xboxcompat.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "BanditMouseCursorRecipeBookScreenMixin",
+    "BanditMouseCursorScreenMixin",
+    "CobblemonShowdownFileSystemMixin",
+    "MinecraftClientExitMixin",
+    "MinecraftClientProbeMixin",
+    "PathUtilBypassMixin",
+    "SystemDetailsOshiBypassMixin",
+    "WorldLoadProgressTrackerMixin",
+    "ZipFsBypass121Mixin",
+    "ZipFsBypassMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
