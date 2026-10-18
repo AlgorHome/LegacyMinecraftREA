@@ -1,0 +1,3368 @@
+{
+  "schema": "legacyforge-phase6a-completion-audit-v1",
+  "audited_at_utc": "2026-10-17T06:47:36.8716140Z",
+  "scope": "Independent read-only mission/deliverable/completion review; writes restricted to analysis-local/final-audit/completion.",
+  "approved_source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+  "source_checkout_verified_head": true,
+  "source_checkout_status_short": "",
+  "outcome": "STATIC_DELIVERABLE_COVERAGE_CONFIRMED_BEHAVIORAL_COMPLETION_BLOCKED",
+  "observations": {
+    "gate_count": 25,
+    "gate_id_diff": [],
+    "source_target_count": 56,
+    "plan_target_count": 56,
+    "csv_target_count": 56,
+    "plan_source_diffs": [],
+    "csv_source_diffs": [],
+    "unique_target_ids": 56,
+    "case_statuses": [
+      "BLOCKED"
+    ],
+    "plan_statuses": [
+      "BLOCKED"
+    ],
+    "missing_mission_docs": [],
+    "static_finding_promoted_to_observed_runtime_in_reviewed_prose": false,
+    "new_target_or_device_tests_executed_by_auditor": 0,
+    "provenance_claims": "Reviewed prose correctly distinguishes archive byte match, unsigned publisher authenticity and mutable timestamps; external historical facts not re-established by this audit.",
+    "mission_completion_boundary": "Mission's static as-far-as-evidence-permits deliverables are present. Subsequent requested dynamic Windows,hardware,account and all-target completion is not achieved."
+  },
+  "findings": [
+    {
+      "id": "C01",
+      "severity": "completion-blocker",
+      "state": "OPEN_ENVIRONMENT",
+      "source": [
+        "WINDOWS-SANDBOX-TESTS.md:5",
+        "XBOX-SERIES-X-TESTS.md:5",
+        "PHASE-STATUS.md:26"
+      ],
+      "finding": "No configured approved Windows guest, no remote console access/new owner hardware receipt, and no supplied approved exact package. The requested actual tests cannot be truthfully completed from static bytes.",
+      "action": "Keep every behavioral test BLOCKED until the owner supplies those prerequisites and the relevant execution approval; do not fabricate success."
+    },
+    {
+      "id": "C02",
+      "severity": "procedure-correctness",
+      "state": "REPORTED_TO_PARENT",
+      "source": [
+        "tests/test-cases.json:185",
+        "WINDOWS-SANDBOX-TESTS.md:25",
+        "WINDOWS-SANDBOX-TESTS.md:48"
+      ],
+      "finding": "At audited snapshot W09 JSON still describes synthetic valid signatures although prose correctly requires a genuine publisher-signed positive fixture.",
+      "action": "Make JSON match prose and preserve fixture/key/origin/hash blocker. Analyst-key success cannot establish target-key acceptance."
+    },
+    {
+      "id": "C03",
+      "severity": "procedure-correctness",
+      "state": "REPORTED_TO_PARENT",
+      "source": [
+        "tests/test-cases.json:231",
+        "tests/test-cases.json:262"
+      ],
+      "finding": "W10/W11 require Mesa hash even for actual Windows launcher tests. Those desktop tests should record the actual selected graphics/native providers, which need not include Xbox's Mesa adaptation.",
+      "action": "Require applicable desktop provider identity/hashes; keep Mesa mandatory only where selected by the tested package."
+    },
+    {
+      "id": "C04",
+      "severity": "receipt-coverage",
+      "state": "REPORTED_TO_PARENT",
+      "source": [
+        "tools/verify-test-receipts.py:25",
+        "tools/verify-test-receipts.py:46",
+        "tools/verify-test-receipts.py:105",
+        "tests/test-cases.json:629",
+        "tests/test-cases.json:684"
+      ],
+      "finding": "At audited snapshot the receipt checker consumes cases only and does not enforce target_plans, exact target tuple, predecessor receipt linkage or complete56-target/four-runtime coverage.",
+      "action": "Either explicitly limit it to format/reference integrity and separately review coverage, or add exact tuple/required-gate/aggregate enforcement. A validator exit0 never independently confirms execution."
+    },
+    {
+      "id": "C05",
+      "severity": "receipt-privacy",
+      "state": "REPORTED_TO_PARENT",
+      "source": [
+        "tools/verify-test-receipts.py:15",
+        "tools/verify-test-receipts.py:31",
+        "XBOX-SERIES-X-TESTS.md:39"
+      ],
+      "finding": "Only top-level fields are allowlisted; nested arbitrary fields are accepted. The tool does not automatically prove attachments or receipts contain no credentials.",
+      "action": "Use manual redaction review and say so; consider nested schema allowlists. Never present validator success as privacy certification."
+    },
+    {
+      "id": "C06",
+      "severity": "target-precision",
+      "state": "REPORTED_TO_PARENT",
+      "source": [
+        "evidence/target-validation-matrix.csv:56",
+        "tests/test-cases.json:3122"
+      ],
+      "finding": "The approved source retains1.12.2 Forge loader_version='selected', not a resolved exact Forge release. It also declares the legacy provider absent.",
+      "action": "Preserve the approved catalog row; separately record unresolved loader-version and absent-provider blockers. Require actual resolved version/profile/artifact hashes before any execution verdict."
+    },
+    {
+      "id": "C07",
+      "severity": "probe-reproducibility",
+      "state": "OPEN_ARTIFACT_PREREQUISITE",
+      "source": [
+        "XBOX-SERIES-X-TESTS.md:33",
+        "tests/test-cases.json:344"
+      ],
+      "finding": "X03-X08 specify useful probe outcomes but no independently built diagnostic package/probe source is supplied at the audited snapshot. The main APPX alone is not evidence that these probes exist.",
+      "action": "List separately approved diagnostic source/build/package as prerequisites; source-only preparation remains feasible but hardware probe outcomes stay blocked."
+    },
+    {
+      "id": "C08",
+      "severity": "publication-hygiene",
+      "state": "REPORTED_TO_PARENT",
+      "source": [
+        "tools/__pycache__/verify-test-receipts.cpython-314.pyc",
+        "evidence/SHA256SUMS.txt"
+      ],
+      "finding": "Generated analyst Python bytecode appeared inside the publication folder while the new receipt checker was being inspected.",
+      "action": "Exclude generated cache from publication, suppress future cache writes and regenerate publication hashes after all final edits. This is analyst cache, not a recovered proprietary binary."
+    }
+  ],
+  "feasible_static_remaining": [
+    "Resolve procedure/schema findings reported above",
+    "Prepare independently written source-only probe specification/fixtures in a separate approved research area, without changing production or target trust keys",
+    "Retain exact public metadata/profile/artifact hashes for every loader target before owner execution",
+    "Finalize reproducible receipt indexing and publication hashes"
+  ],
+  "unavailable_required_evidence": [
+    "Approved configured disposable Windows guest",
+    "Explicit target execution approval tied to that guest",
+    "Trusted publisher-signed positive update fixture",
+    "Exact approved APPX/dependencies/packaged JVM/shim identities",
+    "Approved diagnostic package for X03-X08",
+    "Owner-operated real Series X observations",
+    "Owner-controlled legitimate authentication/ownership outcomes",
+    "Contemporaneous historical acquisition/update evidence or independently authenticated publisher release identity"
+  ],
+  "gate_audit": [
+    {
+      "test_id": "W01",
+      "status": "BLOCKED",
+      "source": "tests/test-cases.json#W01",
+      "action": "Verify guest isolation and hashes before launching",
+      "documented_blockers": [
+        "APPROVED_ISOLATED_WINDOWS_GUEST_UNAVAILABLE"
+      ],
+      "remaining_prerequisites": [
+        "Owner-approved disposable Windows guest and explicit isolation configuration",
+        "Fixed archived installer identity; no target execution for this preliminary gate"
+      ],
+      "acceptance_evidence": [
+        "Guest OS/build and disposable account class",
+        "Isolation settings and approved network-disabled mode",
+        "SHA256 equal to archived installer research identity"
+      ],
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "test_id": "W02",
+      "status": "BLOCKED",
+      "source": "tests/test-cases.json#W02",
+      "action": "Snapshot guest, run installer offline into guest-only location",
+      "documented_blockers": [
+        "APPROVED_ISOLATED_WINDOWS_GUEST_UNAVAILABLE"
+      ],
+      "remaining_prerequisites": [
+        "W01 satisfied",
+        "Explicit installer-execution approval in disposable guest",
+        "Guest checkpoint and guest-only destination"
+      ],
+      "acceptance_evidence": [
+        "Installer exit/outcome and installation file/shortcut/config inventory",
+        "Comparison with all770 statically decoded payload records, explaining conditional files"
+      ],
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "test_id": "W03",
+      "status": "BLOCKED",
+      "source": "tests/test-cases.json#W03",
+      "action": "Launch archived launcher offline",
+      "documented_blockers": [
+        "APPROVED_ISOLATED_WINDOWS_GUEST_UNAVAILABLE"
+      ],
+      "remaining_prerequisites": [
+        "W01/W02 evidence",
+        "Archived-wrapper execution approval; network disabled"
+      ],
+      "acceptance_evidence": [
+        "Observed wrapper/bootstrap/launcher process identities and sanitized JVM properties",
+        "Missing-cache/error/cancellation behavior and absence of successful network calls"
+      ],
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "test_id": "W04",
+      "status": "BLOCKED",
+      "source": "tests/test-cases.json#W04",
+      "action": "Start from empty guest game cache; approve narrowly scoped public network downloads",
+      "documented_blockers": [
+        "APPROVED_ISOLATED_WINDOWS_GUEST_UNAVAILABLE"
+      ],
+      "remaining_prerequisites": [
+        "Approved isolated guest",
+        "Separately approved narrowly scoped guest networking and public endpoint capture",
+        "Pinned empty-cache version and download metadata"
+      ],
+      "acceptance_evidence": [
+        "Catalog/version/client/library/native/asset/runtime request sequence with response status,size,hash,destination",
+        "No sign-in or authentication capture"
+      ],
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "test_id": "W05",
+      "status": "BLOCKED",
+      "source": "tests/test-cases.json#W05",
+      "action": "Compare warm-cache versus empty-cache preparation",
+      "documented_blockers": [
+        "APPROVED_ISOLATED_WINDOWS_GUEST_UNAVAILABLE"
+      ],
+      "remaining_prerequisites": [
+        "W04 completed",
+        "Hash-bound valid/missing/corrupt guest fixture copies; host files excluded"
+      ],
+      "acceptance_evidence": [
+        "Compared checked/reused/downloaded/hash-failure counts",
+        "All promoted files match expected hashes; corrupt files do not count as completed"
+      ],
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "test_id": "W06",
+      "status": "BLOCKED",
+      "source": "tests/test-cases.json#W06",
+      "action": "Interrupt transfer and resume using guest snapshot/test copies",
+      "documented_blockers": [
+        "APPROVED_ISOLATED_WINDOWS_GUEST_UNAVAILABLE"
+      ],
+      "remaining_prerequisites": [
+        "Approved guest networking",
+        "Pinned interrupt/resume fixture and documented interruption points",
+        "Bounded timeout/retry expectations"
+      ],
+      "acceptance_evidence": [
+        "Partial length,Range/206 behavior,retry timing and final content hash",
+        "No truncated output marked installed; cancellation state documented"
+      ],
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "test_id": "W07",
+      "status": "BLOCKED",
+      "source": "tests/test-cases.json#W07",
+      "action": "Simulate full/readonly guest test volume and cancellation",
+      "documented_blockers": [
+        "APPROVED_ISOLATED_WINDOWS_GUEST_UNAVAILABLE"
+      ],
+      "remaining_prerequisites": [
+        "Disposable guest test volume and checkpoint",
+        "Explicit owner-approved guest-only fault setup"
+      ],
+      "acceptance_evidence": [
+        "Disk-full/read-only/cancellation error and recoverable state",
+        "No false success, host modification or implicit uninstaller execution"
+      ],
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "test_id": "W08",
+      "status": "BLOCKED",
+      "source": "tests/test-cases.json#W08",
+      "action": "Exercise configuration/profile migration with synthetic empty accounts only",
+      "documented_blockers": [
+        "APPROVED_ISOLATED_WINDOWS_GUEST_UNAVAILABLE"
+      ],
+      "remaining_prerequisites": [
+        "Approved guest launcher execution",
+        "Hash-bound synthetic empty-account valid/malformed/older-schema configurations",
+        "Documented expected migrated settings"
+      ],
+      "acceptance_evidence": [
+        "Before/after configuration,backup/temp/replace observations",
+        "Restart persistence and error recovery; no token/account values"
+      ],
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "test_id": "W09",
+      "status": "BLOCKED",
+      "source": "tests/test-cases.json#W09",
+      "action": "Isolated synthetic update fixtures with valid/invalid/truncated signatures",
+      "documented_blockers": [
+        "APPROVED_ISOLATED_WINDOWS_GUEST_UNAVAILABLE",
+        "TRUSTED_CORRECTLY_PUBLISHER_SIGNED_FIXTURE_UNAVAILABLE"
+      ],
+      "remaining_prerequisites": [
+        "Approved guest target execution",
+        "Retained genuine publisher-signed positive metadata fixture with independent origin,key identity and original hash",
+        "Hash-bound corrupted/truncated variants; integration route without changing target key"
+      ],
+      "acceptance_evidence": [
+        "Actual original-key positive acceptance",
+        "Actual malformed/signature-failure rejection",
+        "Failure receipts identify exact fixture and target versions"
+      ],
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "test_id": "W10",
+      "status": "BLOCKED",
+      "source": "tests/test-cases.json#W10",
+      "action": "Test each loader path identified from exact metadata",
+      "documented_blockers": [
+        "APPROVED_ISOLATED_WINDOWS_GUEST_UNAVAILABLE"
+      ],
+      "remaining_prerequisites": [
+        "Approved guest execution/networking if necessary",
+        "Enumerated exact upstream loader versions and metadata/artifact identities",
+        "Pinned loader-specific parent/duplicate/classpath/native/processor expectations"
+      ],
+      "acceptance_evidence": [
+        "Separate Fabric/Forge branches and exact artifact identities",
+        "Actual processor input/output and launch-plan results where that path exists",
+        "Actual selected Windows native/graphics provider identity; no assumed Mesa dependency"
+      ],
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "test_id": "W11",
+      "status": "BLOCKED",
+      "source": "tests/test-cases.json#W11",
+      "action": "Game process/exit/error controls after explicit game-execution approval",
+      "documented_blockers": [
+        "APPROVED_ISOLATED_WINDOWS_GUEST_UNAVAILABLE"
+      ],
+      "remaining_prerequisites": [
+        "Explicit guest game-execution approval",
+        "Pinned actual game/loader/JVM/native tuple",
+        "Existing legitimate account requirements met by owner where needed"
+      ],
+      "acceptance_evidence": [
+        "Actual JVM major/sanitized arguments,process exit/error/UI restoration",
+        "Applicable desktop graphics/native provider hashes"
+      ],
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "test_id": "W12",
+      "status": "BLOCKED",
+      "source": "tests/test-cases.json#W12",
+      "action": "Optional owner-controlled account tests, separately authorized",
+      "documented_blockers": [
+        "APPROVED_ISOLATED_WINDOWS_GUEST_UNAVAILABLE",
+        "OWNER_ACCOUNT_ACTION_NOT_PERFORMED"
+      ],
+      "remaining_prerequisites": [
+        "Explicit owner-controlled account-test approval",
+        "Approved isolated guest",
+        "Owner performs account actions without sharing credentials or raw authenticated traffic"
+      ],
+      "acceptance_evidence": [
+        "Sanitized Microsoft/XBL/XSTS/Minecraft/ownership/profile stage outcomes",
+        "Refresh/signout/failure boundaries where authorized; no tokens or account identifiers"
+      ],
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "test_id": "X01",
+      "status": "BLOCKED",
+      "source": "tests/test-cases.json#X01",
+      "action": "Owner installs approved exact package; record identity/build/dependencies",
+      "documented_blockers": [
+        "CONSOLE_ACCESS_OR_OWNER_RECEIPT_UNAVAILABLE",
+        "EXACT_APPROVED_APPX_RUNTIME_PACKAGE_NOT_SUPPLIED"
+      ],
+      "remaining_prerequisites": [
+        "Exact approved signed package and dependencies",
+        "Owner-operated real Series X Developer Mode deployment/access"
+      ],
+      "acceptance_evidence": [
+        "Console OS/build,package identity/version/hash and activation result",
+        "Exact executable/JVM/shim/Mesa identities"
+      ],
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "test_id": "X02",
+      "status": "BLOCKED",
+      "source": "tests/test-cases.json#X02",
+      "action": "Run outside debugger and measure memory/CPU/GPU during launcher idle/load",
+      "documented_blockers": [
+        "CONSOLE_ACCESS_OR_OWNER_RECEIPT_UNAVAILABLE",
+        "EXACT_APPROVED_APPX_RUNTIME_PACKAGE_NOT_SUPPLIED"
+      ],
+      "remaining_prerequisites": [
+        "X01 satisfied",
+        "Owner capture outside debugger with declared workload/duration"
+      ],
+      "acceptance_evidence": [
+        "Measured idle/load memory/CPU/GPU sample series and peak",
+        "Actual package resource budget; no generic limit inference"
+      ],
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "test_id": "X03",
+      "status": "BLOCKED",
+      "source": "tests/test-cases.json#X03",
+      "action": "Synthetic JVM invocation for each current/java21/java17/legacy package",
+      "documented_blockers": [
+        "CONSOLE_ACCESS_OR_OWNER_RECEIPT_UNAVAILABLE",
+        "EXACT_APPROVED_APPX_RUNTIME_PACKAGE_NOT_SUPPLIED"
+      ],
+      "remaining_prerequisites": [
+        "Owner-operated Series X and exact package",
+        "Separately approved synthetic diagnostic package/source/build",
+        "Exact current/java21/java17/legacy runtime artifacts"
+      ],
+      "acceptance_evidence": [
+        "One actual invocation result for each of four runtime families",
+        "Requested/accepted JNI version,Java major,exception and synthetic entrypoint outcome",
+        "No desktop runtime substitution"
+      ],
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "test_id": "X04",
+      "status": "BLOCKED",
+      "source": "tests/test-cases.json#X04",
+      "action": "Synthetic filesystem/thread/ZIPFS tests using app-local data",
+      "documented_blockers": [
+        "CONSOLE_ACCESS_OR_OWNER_RECEIPT_UNAVAILABLE",
+        "EXACT_APPROVED_APPX_RUNTIME_PACKAGE_NOT_SUPPLIED"
+      ],
+      "remaining_prerequisites": [
+        "Exact runtime diagnostic package",
+        "Owner-operated Series X app-local test data"
+      ],
+      "acceptance_evidence": [
+        "Actual read/write/rename/thread/ZIPFS probe results",
+        "Allowed-root identities and errors; no broad-file grant assumption"
+      ],
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "test_id": "X05",
+      "status": "BLOCKED",
+      "source": "tests/test-cases.json#X05",
+      "action": "JNI/native load probe against exact packaged/selected modules",
+      "documented_blockers": [
+        "CONSOLE_ACCESS_OR_OWNER_RECEIPT_UNAVAILABLE",
+        "EXACT_APPROVED_APPX_RUNTIME_PACKAGE_NOT_SUPPLIED"
+      ],
+      "remaining_prerequisites": [
+        "Exact package diagnostic probe",
+        "Selected x64 native files plus standard/delay/dynamic dependency requirements"
+      ],
+      "acceptance_evidence": [
+        "Actual module load and required symbol resolution per selected module",
+        "Full sanitized loader/JNI errors and module identities"
+      ],
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "test_id": "X06",
+      "status": "BLOCKED",
+      "source": "tests/test-cases.json#X06",
+      "action": "Graphics probe: context version/profile/extensions, shader compile/link, draw/present",
+      "documented_blockers": [
+        "CONSOLE_ACCESS_OR_OWNER_RECEIPT_UNAVAILABLE",
+        "EXACT_APPROVED_APPX_RUNTIME_PACKAGE_NOT_SUPPLIED"
+      ],
+      "remaining_prerequisites": [
+        "Exact graphics probe/package and per-target required GL capability list",
+        "Owner-operated console driver/backend"
+      ],
+      "acceptance_evidence": [
+        "Context/profile/extensions,shader compile/link results",
+        "Actual draw/present frame receipt plus expected image/counters",
+        "Behavior of required extension queries"
+      ],
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "test_id": "X07",
+      "status": "BLOCKED",
+      "source": "tests/test-cases.json#X07",
+      "action": "Controller, keyboard, pointer/focus/disconnect/reconnect",
+      "documented_blockers": [
+        "CONSOLE_ACCESS_OR_OWNER_RECEIPT_UNAVAILABLE",
+        "EXACT_APPROVED_APPX_RUNTIME_PACKAGE_NOT_SUPPLIED"
+      ],
+      "remaining_prerequisites": [
+        "Exact input probe/package",
+        "Owner-attached controller/keyboard/pointer and explicit expected mapping/event plan"
+      ],
+      "acceptance_evidence": [
+        "Button/axis/pointer/focus and disconnect/reconnect observations",
+        "Hat/mapping/HWND-dependent consumer results separately identified"
+      ],
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "test_id": "X08",
+      "status": "BLOCKED",
+      "source": "tests/test-cases.json#X08",
+      "action": "Audio probe including device loss",
+      "documented_blockers": [
+        "CONSOLE_ACCESS_OR_OWNER_RECEIPT_UNAVAILABLE",
+        "EXACT_APPROVED_APPX_RUNTIME_PACKAGE_NOT_SUPPLIED"
+      ],
+      "remaining_prerequisites": [
+        "Exact audio probe/package",
+        "Owner-controlled output/device-loss setup; capture permission only if that case is authorized"
+      ],
+      "acceptance_evidence": [
+        "Measured playback,latency and error/device-loss recovery",
+        "Capture-policy result only when actually exercised"
+      ],
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "test_id": "X09",
+      "status": "BLOCKED",
+      "source": "tests/test-cases.json#X09",
+      "action": "Suspend/resume and terminate/relaunch",
+      "documented_blockers": [
+        "CONSOLE_ACCESS_OR_OWNER_RECEIPT_UNAVAILABLE",
+        "EXACT_APPROVED_APPX_RUNTIME_PACKAGE_NOT_SUPPLIED"
+      ],
+      "remaining_prerequisites": [
+        "Exact package and owner-operated lifecycle transitions",
+        "Known synthetic or legitimately owned saved-state baseline"
+      ],
+      "acceptance_evidence": [
+        "Suspend/resume/terminate/relaunch markers",
+        "Resource,graphics,audio,input,persistence and repeat-JVM outcomes"
+      ],
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "test_id": "X10",
+      "status": "BLOCKED",
+      "source": "tests/test-cases.json#X10",
+      "action": "Download/repair of approved target with existing account gate respected",
+      "documented_blockers": [
+        "CONSOLE_ACCESS_OR_OWNER_RECEIPT_UNAVAILABLE",
+        "EXACT_APPROVED_APPX_RUNTIME_PACKAGE_NOT_SUPPLIED"
+      ],
+      "remaining_prerequisites": [
+        "Exact approved target/package manifest",
+        "Owner satisfies unchanged account/ownership gate",
+        "Approved console networking"
+      ],
+      "acceptance_evidence": [
+        "Actual checked/reused/downloaded/hash-failure counts and promoted-file identities",
+        "Failure/cancellation/repair state; gate retained"
+      ],
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "test_id": "X11",
+      "status": "BLOCKED",
+      "source": "tests/test-cases.json#X11",
+      "action": "Owner-authorized legitimate owned target launch",
+      "documented_blockers": [
+        "CONSOLE_ACCESS_OR_OWNER_RECEIPT_UNAVAILABLE",
+        "EXACT_APPROVED_APPX_RUNTIME_PACKAGE_NOT_SUPPLIED",
+        "OWNER_ACCOUNT_ACTION_NOT_PERFORMED"
+      ],
+      "remaining_prerequisites": [
+        "Owner-approved account use with legitimate entitlement/profile",
+        "Exact version/loader/runtime/native/graphics package",
+        "Prior package/runtime/native/graphics gates satisfied for that tuple"
+      ],
+      "acceptance_evidence": [
+        "Actual sanitized ownership/profile stage results",
+        "Actual title/world/gameplay observation and exact tuple/resource/error receipt"
+      ],
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "test_id": "X12",
+      "status": "BLOCKED",
+      "source": "tests/test-cases.json#X12",
+      "action": "Repeat per catalog row and regression profile",
+      "documented_blockers": [
+        "CONSOLE_ACCESS_OR_OWNER_RECEIPT_UNAVAILABLE",
+        "EXACT_APPROVED_APPX_RUNTIME_PACKAGE_NOT_SUPPLIED"
+      ],
+      "remaining_prerequisites": [
+        "All56 source catalog rows retained",
+        "Resolved exact loader version and package/artifacts per row",
+        "Independent owner observations for applicable X01-X13 gates; no source label promotion"
+      ],
+      "acceptance_evidence": [
+        "One indexed PASSED/FAILED/BLOCKED/INCONCLUSIVE result for each56 target ID",
+        "Hash-bound predecessor receipts linked to exact package/runtime tuple",
+        "Absent legacy providers and unresolved JNI families stay unsupported/blocked"
+      ],
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "test_id": "X13",
+      "status": "BLOCKED",
+      "source": "tests/test-cases.json#X13",
+      "action": "Phase 5F.2 UI regression",
+      "documented_blockers": [
+        "CONSOLE_ACCESS_OR_OWNER_RECEIPT_UNAVAILABLE",
+        "EXACT_APPROVED_APPX_RUNTIME_PACKAGE_NOT_SUPPLIED"
+      ],
+      "remaining_prerequisites": [
+        "Exact approved pinned package",
+        "Owner-operated controller/UI and account-gated test states"
+      ],
+      "acceptance_evidence": [
+        "Installed/Installed-Off restart persistence,no duplicate install,active-profile state",
+        "Failed download/account boundary behavior; no extrapolation from historical report"
+      ],
+      "actual_observation_verified_by_this_audit": false
+    }
+  ],
+  "target_audit": [
+    {
+      "target_id": "26.2-fabric-0.19.5",
+      "tuple": {
+        "minecraft_version": "26.2",
+        "loader": "fabric",
+        "loader_version": "0.19.5",
+        "runtime_id": "current",
+        "java_major_expected": null
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact inherited Fabric profile JSON",
+          "Fabric loader and intermediary JAR hashes",
+          "compatible patched filesystem/remap components"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "26.2-forge-65.1.3",
+      "tuple": {
+        "minecraft_version": "26.2",
+        "loader": "forge",
+        "loader_version": "65.1.3",
+        "runtime_id": "current",
+        "java_major_expected": null
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact installer/profile metadata",
+          "client processor input/output hashes",
+          "final main/module/classpath arguments"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "26.2-neoforge-26.2.0.82",
+      "tuple": {
+        "minecraft_version": "26.2",
+        "loader": "neoforge",
+        "loader_version": "26.2.0.82",
+        "runtime_id": "current",
+        "java_major_expected": null
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact installer/install profile",
+          "NeoForm and tool processor input/output hashes",
+          "final main/module/classpath arguments"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "26.1.2-fabric-0.19.5",
+      "tuple": {
+        "minecraft_version": "26.1.2",
+        "loader": "fabric",
+        "loader_version": "0.19.5",
+        "runtime_id": "current",
+        "java_major_expected": null
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact inherited Fabric profile JSON",
+          "Fabric loader and intermediary JAR hashes",
+          "compatible patched filesystem/remap components"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "26.1.2-forge-64.1.3",
+      "tuple": {
+        "minecraft_version": "26.1.2",
+        "loader": "forge",
+        "loader_version": "64.1.3",
+        "runtime_id": "current",
+        "java_major_expected": null
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact installer/profile metadata",
+          "client processor input/output hashes",
+          "final main/module/classpath arguments"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "26.1.2-neoforge-26.1.2.107",
+      "tuple": {
+        "minecraft_version": "26.1.2",
+        "loader": "neoforge",
+        "loader_version": "26.1.2.107",
+        "runtime_id": "current",
+        "java_major_expected": null
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact installer/install profile",
+          "NeoForm and tool processor input/output hashes",
+          "final main/module/classpath arguments"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "26.1.1-fabric-0.19.5",
+      "tuple": {
+        "minecraft_version": "26.1.1",
+        "loader": "fabric",
+        "loader_version": "0.19.5",
+        "runtime_id": "current",
+        "java_major_expected": null
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact inherited Fabric profile JSON",
+          "Fabric loader and intermediary JAR hashes",
+          "compatible patched filesystem/remap components"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "26.1.1-forge-63.0.2",
+      "tuple": {
+        "minecraft_version": "26.1.1",
+        "loader": "forge",
+        "loader_version": "63.0.2",
+        "runtime_id": "current",
+        "java_major_expected": null
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact installer/profile metadata",
+          "client processor input/output hashes",
+          "final main/module/classpath arguments"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "26.1.1-neoforge-26.1.1.15-beta",
+      "tuple": {
+        "minecraft_version": "26.1.1",
+        "loader": "neoforge",
+        "loader_version": "26.1.1.15-beta",
+        "runtime_id": "current",
+        "java_major_expected": null
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact installer/install profile",
+          "NeoForm and tool processor input/output hashes",
+          "final main/module/classpath arguments"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "26.1-fabric-0.19.5",
+      "tuple": {
+        "minecraft_version": "26.1",
+        "loader": "fabric",
+        "loader_version": "0.19.5",
+        "runtime_id": "current",
+        "java_major_expected": null
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact inherited Fabric profile JSON",
+          "Fabric loader and intermediary JAR hashes",
+          "compatible patched filesystem/remap components"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "26.1-forge-62.0.9",
+      "tuple": {
+        "minecraft_version": "26.1",
+        "loader": "forge",
+        "loader_version": "62.0.9",
+        "runtime_id": "current",
+        "java_major_expected": null
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact installer/profile metadata",
+          "client processor input/output hashes",
+          "final main/module/classpath arguments"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "26.1-neoforge-26.1.0.19-beta",
+      "tuple": {
+        "minecraft_version": "26.1",
+        "loader": "neoforge",
+        "loader_version": "26.1.0.19-beta",
+        "runtime_id": "current",
+        "java_major_expected": null
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact installer/install profile",
+          "NeoForm and tool processor input/output hashes",
+          "final main/module/classpath arguments"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.21.11-fabric-0.19.5",
+      "tuple": {
+        "minecraft_version": "1.21.11",
+        "loader": "fabric",
+        "loader_version": "0.19.5",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact inherited Fabric profile JSON",
+          "Fabric loader and intermediary JAR hashes",
+          "compatible patched filesystem/remap components"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.21.11-forge-61.2.1",
+      "tuple": {
+        "minecraft_version": "1.21.11",
+        "loader": "forge",
+        "loader_version": "61.2.1",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact installer/profile metadata",
+          "client processor input/output hashes",
+          "final main/module/classpath arguments"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.21.11-neoforge-21.11.45",
+      "tuple": {
+        "minecraft_version": "1.21.11",
+        "loader": "neoforge",
+        "loader_version": "21.11.45",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact installer/install profile",
+          "NeoForm and tool processor input/output hashes",
+          "final main/module/classpath arguments"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.21.10-fabric-0.19.5",
+      "tuple": {
+        "minecraft_version": "1.21.10",
+        "loader": "fabric",
+        "loader_version": "0.19.5",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact inherited Fabric profile JSON",
+          "Fabric loader and intermediary JAR hashes",
+          "compatible patched filesystem/remap components"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.21.10-forge-60.1.15",
+      "tuple": {
+        "minecraft_version": "1.21.10",
+        "loader": "forge",
+        "loader_version": "60.1.15",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact installer/profile metadata",
+          "client processor input/output hashes",
+          "final main/module/classpath arguments"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.21.10-neoforge-21.10.64",
+      "tuple": {
+        "minecraft_version": "1.21.10",
+        "loader": "neoforge",
+        "loader_version": "21.10.64",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact installer/install profile",
+          "NeoForm and tool processor input/output hashes",
+          "final main/module/classpath arguments"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.21.9-fabric-0.19.5",
+      "tuple": {
+        "minecraft_version": "1.21.9",
+        "loader": "fabric",
+        "loader_version": "0.19.5",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact inherited Fabric profile JSON",
+          "Fabric loader and intermediary JAR hashes",
+          "compatible patched filesystem/remap components"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.21.9-forge-59.0.5",
+      "tuple": {
+        "minecraft_version": "1.21.9",
+        "loader": "forge",
+        "loader_version": "59.0.5",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact installer/profile metadata",
+          "client processor input/output hashes",
+          "final main/module/classpath arguments"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.21.9-neoforge-21.9.16-beta",
+      "tuple": {
+        "minecraft_version": "1.21.9",
+        "loader": "neoforge",
+        "loader_version": "21.9.16-beta",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact installer/install profile",
+          "NeoForm and tool processor input/output hashes",
+          "final main/module/classpath arguments"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.21.8-fabric-0.19.5",
+      "tuple": {
+        "minecraft_version": "1.21.8",
+        "loader": "fabric",
+        "loader_version": "0.19.5",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact inherited Fabric profile JSON",
+          "Fabric loader and intermediary JAR hashes",
+          "compatible patched filesystem/remap components"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.21.8-forge-58.1.22",
+      "tuple": {
+        "minecraft_version": "1.21.8",
+        "loader": "forge",
+        "loader_version": "58.1.22",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact installer/profile metadata",
+          "client processor input/output hashes",
+          "final main/module/classpath arguments"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.21.8-neoforge-21.8.54",
+      "tuple": {
+        "minecraft_version": "1.21.8",
+        "loader": "neoforge",
+        "loader_version": "21.8.54",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact installer/install profile",
+          "NeoForm and tool processor input/output hashes",
+          "final main/module/classpath arguments"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.21.7-fabric-0.19.5",
+      "tuple": {
+        "minecraft_version": "1.21.7",
+        "loader": "fabric",
+        "loader_version": "0.19.5",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact inherited Fabric profile JSON",
+          "Fabric loader and intermediary JAR hashes",
+          "compatible patched filesystem/remap components"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.21.7-forge-57.0.3",
+      "tuple": {
+        "minecraft_version": "1.21.7",
+        "loader": "forge",
+        "loader_version": "57.0.3",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact installer/profile metadata",
+          "client processor input/output hashes",
+          "final main/module/classpath arguments"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.21.7-neoforge-21.7.25-beta",
+      "tuple": {
+        "minecraft_version": "1.21.7",
+        "loader": "neoforge",
+        "loader_version": "21.7.25-beta",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact installer/install profile",
+          "NeoForm and tool processor input/output hashes",
+          "final main/module/classpath arguments"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.21.6-fabric-0.19.5",
+      "tuple": {
+        "minecraft_version": "1.21.6",
+        "loader": "fabric",
+        "loader_version": "0.19.5",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact inherited Fabric profile JSON",
+          "Fabric loader and intermediary JAR hashes",
+          "compatible patched filesystem/remap components"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.21.6-forge-56.0.9",
+      "tuple": {
+        "minecraft_version": "1.21.6",
+        "loader": "forge",
+        "loader_version": "56.0.9",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact installer/profile metadata",
+          "client processor input/output hashes",
+          "final main/module/classpath arguments"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.21.6-neoforge-21.6.20-beta",
+      "tuple": {
+        "minecraft_version": "1.21.6",
+        "loader": "neoforge",
+        "loader_version": "21.6.20-beta",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact installer/install profile",
+          "NeoForm and tool processor input/output hashes",
+          "final main/module/classpath arguments"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.21.5-fabric-0.19.5",
+      "tuple": {
+        "minecraft_version": "1.21.5",
+        "loader": "fabric",
+        "loader_version": "0.19.5",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact inherited Fabric profile JSON",
+          "Fabric loader and intermediary JAR hashes",
+          "compatible patched filesystem/remap components"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.21.5-forge-55.1.13",
+      "tuple": {
+        "minecraft_version": "1.21.5",
+        "loader": "forge",
+        "loader_version": "55.1.13",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact installer/profile metadata",
+          "client processor input/output hashes",
+          "final main/module/classpath arguments"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.21.5-neoforge-21.5.98",
+      "tuple": {
+        "minecraft_version": "1.21.5",
+        "loader": "neoforge",
+        "loader_version": "21.5.98",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact installer/install profile",
+          "NeoForm and tool processor input/output hashes",
+          "final main/module/classpath arguments"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.21.4-fabric-0.19.5",
+      "tuple": {
+        "minecraft_version": "1.21.4",
+        "loader": "fabric",
+        "loader_version": "0.19.5",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact inherited Fabric profile JSON",
+          "Fabric loader and intermediary JAR hashes",
+          "compatible patched filesystem/remap components"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.21.4-forge-54.1.18",
+      "tuple": {
+        "minecraft_version": "1.21.4",
+        "loader": "forge",
+        "loader_version": "54.1.18",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact installer/profile metadata",
+          "client processor input/output hashes",
+          "final main/module/classpath arguments"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.21.4-neoforge-21.4.157",
+      "tuple": {
+        "minecraft_version": "1.21.4",
+        "loader": "neoforge",
+        "loader_version": "21.4.157",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact installer/install profile",
+          "NeoForm and tool processor input/output hashes",
+          "final main/module/classpath arguments"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.21.3-fabric-0.19.5",
+      "tuple": {
+        "minecraft_version": "1.21.3",
+        "loader": "fabric",
+        "loader_version": "0.19.5",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact inherited Fabric profile JSON",
+          "Fabric loader and intermediary JAR hashes",
+          "compatible patched filesystem/remap components"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.21.3-forge-53.1.12",
+      "tuple": {
+        "minecraft_version": "1.21.3",
+        "loader": "forge",
+        "loader_version": "53.1.12",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact installer/profile metadata",
+          "client processor input/output hashes",
+          "final main/module/classpath arguments"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.21.3-neoforge-21.3.97",
+      "tuple": {
+        "minecraft_version": "1.21.3",
+        "loader": "neoforge",
+        "loader_version": "21.3.97",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact installer/install profile",
+          "NeoForm and tool processor input/output hashes",
+          "final main/module/classpath arguments"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.21.2-fabric-0.19.5",
+      "tuple": {
+        "minecraft_version": "1.21.2",
+        "loader": "fabric",
+        "loader_version": "0.19.5",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact inherited Fabric profile JSON",
+          "Fabric loader and intermediary JAR hashes",
+          "compatible patched filesystem/remap components"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.21.2-neoforge-21.2.1-beta",
+      "tuple": {
+        "minecraft_version": "1.21.2",
+        "loader": "neoforge",
+        "loader_version": "21.2.1-beta",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact installer/install profile",
+          "NeoForm and tool processor input/output hashes",
+          "final main/module/classpath arguments"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.21.1-fabric-0.19.5",
+      "tuple": {
+        "minecraft_version": "1.21.1",
+        "loader": "fabric",
+        "loader_version": "0.19.5",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact inherited Fabric profile JSON",
+          "Fabric loader and intermediary JAR hashes",
+          "compatible patched filesystem/remap components"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.21.1-forge-52.1.16",
+      "tuple": {
+        "minecraft_version": "1.21.1",
+        "loader": "forge",
+        "loader_version": "52.1.16",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact installer/profile metadata",
+          "client processor input/output hashes",
+          "final main/module/classpath arguments"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.21.1-neoforge-21.1.250",
+      "tuple": {
+        "minecraft_version": "1.21.1",
+        "loader": "neoforge",
+        "loader_version": "21.1.250",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact installer/install profile",
+          "NeoForm and tool processor input/output hashes",
+          "final main/module/classpath arguments"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.21-fabric-0.19.5",
+      "tuple": {
+        "minecraft_version": "1.21",
+        "loader": "fabric",
+        "loader_version": "0.19.5",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact inherited Fabric profile JSON",
+          "Fabric loader and intermediary JAR hashes",
+          "compatible patched filesystem/remap components"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.21-forge-51.0.33",
+      "tuple": {
+        "minecraft_version": "1.21",
+        "loader": "forge",
+        "loader_version": "51.0.33",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact installer/profile metadata",
+          "client processor input/output hashes",
+          "final main/module/classpath arguments"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.21-neoforge-21.0.167",
+      "tuple": {
+        "minecraft_version": "1.21",
+        "loader": "neoforge",
+        "loader_version": "21.0.167",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact installer/install profile",
+          "NeoForm and tool processor input/output hashes",
+          "final main/module/classpath arguments"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.20.4-fabric-0.19.5",
+      "tuple": {
+        "minecraft_version": "1.20.4",
+        "loader": "fabric",
+        "loader_version": "0.19.5",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact inherited Fabric profile JSON",
+          "Fabric loader and intermediary JAR hashes",
+          "compatible patched filesystem/remap components"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.20.4-neoforge-20.4.237",
+      "tuple": {
+        "minecraft_version": "1.20.4",
+        "loader": "neoforge",
+        "loader_version": "20.4.237",
+        "runtime_id": "java17",
+        "java_major_expected": 17
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "JNI_21_REQUEST_VS_OLDER_RUNTIME_AGREEMENT_UNVERIFIED"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact installer/install profile",
+          "NeoForm and tool processor input/output hashes",
+          "final main/module/classpath arguments"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.20.1-fabric-0.19.5",
+      "tuple": {
+        "minecraft_version": "1.20.1",
+        "loader": "fabric",
+        "loader_version": "0.19.5",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact inherited Fabric profile JSON",
+          "Fabric loader and intermediary JAR hashes",
+          "compatible patched filesystem/remap components"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.20.1-forge-47.4.20",
+      "tuple": {
+        "minecraft_version": "1.20.1",
+        "loader": "forge",
+        "loader_version": "47.4.20",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact installer/profile metadata",
+          "client processor input/output hashes",
+          "final main/module/classpath arguments"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.19.2-fabric-0.14.25",
+      "tuple": {
+        "minecraft_version": "1.19.2",
+        "loader": "fabric",
+        "loader_version": "0.14.25",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact inherited Fabric profile JSON",
+          "Fabric loader and intermediary JAR hashes",
+          "compatible patched filesystem/remap components"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.18.2-forge-40.2.27",
+      "tuple": {
+        "minecraft_version": "1.18.2",
+        "loader": "forge",
+        "loader_version": "40.2.27",
+        "runtime_id": "java17",
+        "java_major_expected": 17
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "JNI_21_REQUEST_VS_OLDER_RUNTIME_AGREEMENT_UNVERIFIED"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact installer/profile metadata",
+          "client processor input/output hashes",
+          "final main/module/classpath arguments"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.16.5-fabric-0.14.25",
+      "tuple": {
+        "minecraft_version": "1.16.5",
+        "loader": "fabric",
+        "loader_version": "0.14.25",
+        "runtime_id": "java21",
+        "java_major_expected": 21
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "SOURCE_PRESENT_RUNTIME_UNVERIFIED",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact inherited Fabric profile JSON",
+          "Fabric loader and intermediary JAR hashes",
+          "compatible patched filesystem/remap components"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.12.2-forge-selected",
+      "tuple": {
+        "minecraft_version": "1.12.2",
+        "loader": "forge",
+        "loader_version": "selected",
+        "runtime_id": "legacy",
+        "java_major_expected": 8
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "UNSUPPORTED_PROVIDER",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "PROVIDER_NOT_IMPLEMENTED_IN_APPROVED_CATALOG",
+        "JNI_21_REQUEST_VS_OLDER_RUNTIME_AGREEMENT_UNVERIFIED",
+        "RESOLVED_LOADER_VERSION_UNAVAILABLE"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact installer/profile metadata",
+          "client processor input/output hashes",
+          "final main/module/classpath arguments"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    },
+    {
+      "target_id": "1.12.2-vanilla-none",
+      "tuple": {
+        "minecraft_version": "1.12.2",
+        "loader": "vanilla",
+        "loader_version": "none",
+        "runtime_id": "legacy",
+        "java_major_expected": 8
+      },
+      "status": "BLOCKED",
+      "source_implementation_status": "UNSUPPORTED_PROVIDER",
+      "remaining_prerequisites": [
+        "APPROVED_XBOX_PACKAGE_NOT_SUPPLIED",
+        "NO_NEW_OWNER_HARDWARE_RECEIPT",
+        "PROVIDER_NOT_IMPLEMENTED_IN_APPROVED_CATALOG",
+        "JNI_21_REQUEST_VS_OLDER_RUNTIME_AGREEMENT_UNVERIFIED"
+      ],
+      "acceptance_evidence": {
+        "required_test_ids": [
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13"
+        ],
+        "required_artifact_hashes": [
+          "appx",
+          "jvm",
+          "glfw",
+          "mesa",
+          "manifest",
+          "loader-artifacts"
+        ],
+        "loader_preparation": [
+          "exact vanilla metadata/client hashes",
+          "supported vanilla launch provider"
+        ],
+        "per_gate_acceptance_reference": "gate_audit[X01-X13]; one observed result for this exact tuple/package; no inferred PASS"
+      },
+      "actual_observation_verified_by_this_audit": false
+    }
+  ],
+  "audited_publication_snapshots": [
+    {
+      "path": "WINDOWS-SANDBOX-TESTS.md",
+      "sha256": "2be9f84ac4bf46d742f6af42cd50957a49ef96b23f51113c7abf2133c33ba528"
+    },
+    {
+      "path": "XBOX-SERIES-X-TESTS.md",
+      "sha256": "85225a684fde587d003a9300b61646ff491e48f4d108555e783fbd724a6712f0"
+    },
+    {
+      "path": "tests/test-cases.json",
+      "sha256": "8aa2424c804966a73805cb3f9f5ed0eb79076eb5ffec50a3c77b92db0a1b13eb"
+    },
+    {
+      "path": "tests/result.template.json",
+      "sha256": "401580c2faf86e3084f56db89098e86e5583039043147ed0a6c332e4f7cb1371"
+    },
+    {
+      "path": "tools/verify-test-receipts.py",
+      "sha256": "eacdfe6f8358be568b040b2e393695d80849e4565e900d0e7227907e105d3a4a"
+    },
+    {
+      "path": "evidence/target-validation-matrix.csv",
+      "sha256": "ca5b8e359c031404828c80321cfab731bf825f66b99036eca7187a73fcaefadc"
+    },
+    {
+      "path": "PHASE-STATUS.md",
+      "sha256": "9a6bd45a0885aac78467dc4efe8a32bf75fb11a7d60581e449ffce701717bbcf"
+    },
+    {
+      "path": "PROVENANCE.md",
+      "sha256": "d2624c25152cbae09e24ddc6f57a7e4b8a27b5f34f0567ecdaf4deb2febd7fc1"
+    },
+    {
+      "path": "README.md",
+      "sha256": "81ca95880082325d79af012cf05f56a1b242f6ae7baf5bb8a4c16766b6500c77"
+    }
+  ],
+  "limitations": [
+    "No target executable,JAR,bundled JVM,installer or game was executed by this audit.",
+    "No software installed; no device connected; no authentication or credentials requested.",
+    "Document/schema existence and structural coverage are not execution evidence.",
+    "Snapshot findings may be superseded by parent edits; compare audited hashes and closure notes before finalizing."
+  ]
+}

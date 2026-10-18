@@ -1,0 +1,275 @@
+{
+  "schema": "phase6a-receipt-validator-controls-v1",
+  "phase": "baseline",
+  "meaning": "Synthetic format/reference controls only. No target, guest, hardware or account test ran.",
+  "control_count": 27,
+  "satisfied": 21,
+  "validator_sha256": "c81113104dc68bb9cf70a9b5419c85f9888de8ad76dbb6f46c4f0754426e1ee3",
+  "test_plan_sha256": "8aa2424c804966a73805cb3f9f5ed0eb79076eb5ffec50a3c77b92db0a1b13eb",
+  "results": [
+    {
+      "name": "valid_blocked_template_is_not_pass",
+      "expected_valid": true,
+      "observed_valid": true,
+      "control_satisfied": true,
+      "errors": [],
+      "exception": null
+    },
+    {
+      "name": "well_formed_synthetic_windows_receipt",
+      "expected_valid": true,
+      "observed_valid": true,
+      "control_satisfied": true,
+      "errors": [],
+      "exception": null
+    },
+    {
+      "name": "well_formed_synthetic_x12_linked_receipts",
+      "expected_valid": true,
+      "observed_valid": true,
+      "control_satisfied": true,
+      "errors": [],
+      "exception": null
+    },
+    {
+      "name": "wrong_source_commit",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "source_commit does not match approved pin"
+      ],
+      "exception": null
+    },
+    {
+      "name": "unknown_top_level_field",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "unknown top-level fields"
+      ],
+      "exception": null
+    },
+    {
+      "name": "unknown_nested_field",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "invalid or unknown fields in section: target"
+      ],
+      "exception": null
+    },
+    {
+      "name": "wrong_console",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "Xbox PASS requires the specified Xbox Series X hardware"
+      ],
+      "exception": null
+    },
+    {
+      "name": "unapproved_isolation",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "Windows PASS requires approved guest isolation"
+      ],
+      "exception": null
+    },
+    {
+      "name": "nonisolated_windows",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "Windows PASS requires virtual-machine or windows-sandbox isolation"
+      ],
+      "exception": null
+    },
+    {
+      "name": "debugger_resource_measurement",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "resource measurement must occur outside a debugger"
+      ],
+      "exception": null
+    },
+    {
+      "name": "non_utc_observation",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "observation timestamp must include UTC timezone"
+      ],
+      "exception": null
+    },
+    {
+      "name": "static_evidence_kind",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "PASS requires actual-test-observation evidence"
+      ],
+      "exception": null
+    },
+    {
+      "name": "missing_passing_criterion",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "criterion has no passing observation: X12.result"
+      ],
+      "exception": null
+    },
+    {
+      "name": "outside_attachment",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "attachment must be a confined relative path"
+      ],
+      "exception": null
+    },
+    {
+      "name": "bad_attachment_hash",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "attachment hash mismatch"
+      ],
+      "exception": null
+    },
+    {
+      "name": "unknown_target_tuple",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "X12 PASS must match one exact approved catalog target"
+      ],
+      "exception": null
+    },
+    {
+      "name": "wrong_target_java_major",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "Java major does not match target runtime family"
+      ],
+      "exception": null
+    },
+    {
+      "name": "missing_predecessors",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "missing validated prerequisite gates: X01,X02,X03,X04,X05,X06,X07,X08,X09,X10,X11,X13"
+      ],
+      "exception": null
+    },
+    {
+      "name": "malformed_target_null",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": false,
+      "errors": [],
+      "exception": "AttributeError: 'NoneType' object has no attribute 'get'"
+    },
+    {
+      "name": "malformed_target_list",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": false,
+      "errors": [],
+      "exception": "AttributeError: 'list' object has no attribute 'get'"
+    },
+    {
+      "name": "unsupported_catalog_provider",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "approved source does not support a runnable resolved provider for this target",
+        "prerequisite target tuple differs",
+        "prerequisite target tuple differs",
+        "prerequisite target tuple differs",
+        "prerequisite target tuple differs",
+        "prerequisite target tuple differs",
+        "prerequisite target tuple differs",
+        "prerequisite target tuple differs",
+        "prerequisite target tuple differs",
+        "prerequisite target tuple differs",
+        "missing validated prerequisite gates: X03,X04,X05,X06,X07,X08,X09,X10,X11"
+      ],
+      "exception": null
+    },
+    {
+      "name": "predecessor_package_mismatch",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "prerequisite package hash differs",
+        "missing validated prerequisite gates: X03"
+      ],
+      "exception": null
+    },
+    {
+      "name": "predecessor_tuple_mismatch",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "prerequisite target tuple differs",
+        "missing validated prerequisite gates: X05"
+      ],
+      "exception": null
+    },
+    {
+      "name": "predecessor_jvm_identity_mismatch",
+      "expected_valid": false,
+      "observed_valid": true,
+      "control_satisfied": false,
+      "errors": [],
+      "exception": null
+    },
+    {
+      "name": "predecessor_native_identity_mismatch",
+      "expected_valid": false,
+      "observed_valid": true,
+      "control_satisfied": false,
+      "errors": [],
+      "exception": null
+    },
+    {
+      "name": "predecessor_manifest_identity_mismatch",
+      "expected_valid": false,
+      "observed_valid": true,
+      "control_satisfied": false,
+      "errors": [],
+      "exception": null
+    },
+    {
+      "name": "predecessor_java_major_mismatch",
+      "expected_valid": false,
+      "observed_valid": true,
+      "control_satisfied": false,
+      "errors": [],
+      "exception": null
+    }
+  ]
+}

@@ -1,0 +1,353 @@
+{
+  "schema": "phase6a-receipt-validator-controls-v1",
+  "phase": "patched",
+  "meaning": "Synthetic format/reference controls only. No target, guest, hardware or account test ran.",
+  "control_count": 31,
+  "satisfied": 31,
+  "validator_sha256": "8ae33dca3eb3b63742e977e972e6795183edaac6d2bfd55325c04b8783f2d255",
+  "test_plan_sha256": "77c62ebac147d64b1622c6983395c907b2858dd13c91b07909ef8203484f7174",
+  "results": [
+    {
+      "name": "valid_blocked_template_is_not_pass",
+      "expected_valid": true,
+      "observed_valid": true,
+      "control_satisfied": true,
+      "errors": [],
+      "exception": null
+    },
+    {
+      "name": "well_formed_synthetic_windows_receipt",
+      "expected_valid": true,
+      "observed_valid": true,
+      "control_satisfied": true,
+      "errors": [],
+      "exception": null
+    },
+    {
+      "name": "well_formed_synthetic_x12_linked_receipts",
+      "expected_valid": true,
+      "observed_valid": true,
+      "control_satisfied": true,
+      "errors": [],
+      "exception": null
+    },
+    {
+      "name": "desktop_loader_uses_actual_provider_not_assumed_mesa",
+      "expected_valid": true,
+      "observed_valid": true,
+      "control_satisfied": true,
+      "errors": [],
+      "exception": null
+    },
+    {
+      "name": "hex_hash_case_is_not_a_different_artifact",
+      "expected_valid": true,
+      "observed_valid": true,
+      "control_satisfied": true,
+      "errors": [],
+      "exception": null
+    },
+    {
+      "name": "wrong_source_commit",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "source_commit does not match approved pin"
+      ],
+      "exception": null
+    },
+    {
+      "name": "unknown_top_level_field",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "unknown top-level fields"
+      ],
+      "exception": null
+    },
+    {
+      "name": "unknown_nested_field",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "invalid or unknown fields in section: target"
+      ],
+      "exception": null
+    },
+    {
+      "name": "wrong_console",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "Xbox PASS requires the specified Xbox Series X hardware"
+      ],
+      "exception": null
+    },
+    {
+      "name": "unapproved_isolation",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "Windows PASS requires approved guest isolation"
+      ],
+      "exception": null
+    },
+    {
+      "name": "nonisolated_windows",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "Windows PASS requires virtual-machine or windows-sandbox isolation"
+      ],
+      "exception": null
+    },
+    {
+      "name": "debugger_resource_measurement",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "resource measurement must occur outside a debugger"
+      ],
+      "exception": null
+    },
+    {
+      "name": "non_utc_observation",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "observation timestamp must include UTC timezone"
+      ],
+      "exception": null
+    },
+    {
+      "name": "static_evidence_kind",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "PASS requires actual-test-observation evidence"
+      ],
+      "exception": null
+    },
+    {
+      "name": "missing_passing_criterion",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "criterion has no passing observation: X12.result"
+      ],
+      "exception": null
+    },
+    {
+      "name": "outside_attachment",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "attachment must be a confined relative path"
+      ],
+      "exception": null
+    },
+    {
+      "name": "bad_attachment_hash",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "attachment hash mismatch"
+      ],
+      "exception": null
+    },
+    {
+      "name": "unknown_target_tuple",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "X12 PASS must match one exact approved catalog target"
+      ],
+      "exception": null
+    },
+    {
+      "name": "wrong_target_java_major",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "Java major does not match target runtime family",
+        "prerequisite Java major differs",
+        "prerequisite Java major differs",
+        "prerequisite Java major differs",
+        "prerequisite Java major differs",
+        "prerequisite Java major differs",
+        "prerequisite Java major differs",
+        "prerequisite Java major differs",
+        "prerequisite Java major differs",
+        "prerequisite Java major differs",
+        "missing validated prerequisite gates: X03,X04,X05,X06,X07,X08,X09,X10,X11"
+      ],
+      "exception": null
+    },
+    {
+      "name": "missing_predecessors",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "missing validated prerequisite gates: X01,X02,X03,X04,X05,X06,X07,X08,X09,X10,X11,X13"
+      ],
+      "exception": null
+    },
+    {
+      "name": "missing_loader_inventory",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "missing field: artifacts.loader_inventory_sha256",
+        "invalid hash: artifacts.loader_inventory_sha256",
+        "prerequisite runtime/native/manifest identity differs",
+        "prerequisite runtime/native/manifest identity differs",
+        "missing validated prerequisite gates: X10,X11"
+      ],
+      "exception": null
+    },
+    {
+      "name": "malformed_target_null",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "missing field: target.runtime_id",
+        "missing field: target.java_major",
+        "missing field: target.minecraft_version",
+        "missing field: target.loader",
+        "missing field: target.loader_version",
+        "X12 PASS must match one exact approved catalog target"
+      ],
+      "exception": null
+    },
+    {
+      "name": "malformed_target_list",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "invalid or unknown fields in section: target",
+        "missing field: target.runtime_id",
+        "missing field: target.java_major",
+        "missing field: target.minecraft_version",
+        "missing field: target.loader",
+        "missing field: target.loader_version",
+        "X12 PASS must match one exact approved catalog target"
+      ],
+      "exception": null
+    },
+    {
+      "name": "unsupported_catalog_provider",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "approved source does not support a runnable resolved provider for this target",
+        "prerequisite target tuple differs",
+        "prerequisite target tuple differs",
+        "prerequisite target tuple differs",
+        "prerequisite target tuple differs",
+        "prerequisite target tuple differs",
+        "prerequisite target tuple differs",
+        "prerequisite target tuple differs",
+        "prerequisite target tuple differs",
+        "prerequisite target tuple differs",
+        "missing validated prerequisite gates: X03,X04,X05,X06,X07,X08,X09,X10,X11"
+      ],
+      "exception": null
+    },
+    {
+      "name": "predecessor_package_mismatch",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "prerequisite package hash differs",
+        "missing validated prerequisite gates: X03"
+      ],
+      "exception": null
+    },
+    {
+      "name": "predecessor_tuple_mismatch",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "prerequisite target tuple differs",
+        "missing validated prerequisite gates: X05"
+      ],
+      "exception": null
+    },
+    {
+      "name": "predecessor_jvm_identity_mismatch",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "prerequisite runtime/native/manifest identity differs",
+        "missing validated prerequisite gates: X03"
+      ],
+      "exception": null
+    },
+    {
+      "name": "predecessor_native_identity_mismatch",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "prerequisite runtime/native/manifest identity differs",
+        "missing validated prerequisite gates: X05"
+      ],
+      "exception": null
+    },
+    {
+      "name": "predecessor_manifest_identity_mismatch",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "prerequisite runtime/native/manifest identity differs",
+        "missing validated prerequisite gates: X05"
+      ],
+      "exception": null
+    },
+    {
+      "name": "predecessor_loader_inventory_mismatch",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "prerequisite runtime/native/manifest identity differs",
+        "missing validated prerequisite gates: X10"
+      ],
+      "exception": null
+    },
+    {
+      "name": "predecessor_java_major_mismatch",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_satisfied": true,
+      "errors": [
+        "prerequisite Java major differs",
+        "missing validated prerequisite gates: X03"
+      ],
+      "exception": null
+    }
+  ]
+}

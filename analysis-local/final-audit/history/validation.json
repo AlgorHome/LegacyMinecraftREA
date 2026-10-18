@@ -1,0 +1,21 @@
+{
+  "scope": "sanitized historical evidence only",
+  "record_count": 16372,
+  "source_count": 6,
+  "source_line_count": 26994,
+  "schema_allowlist_valid": true,
+  "source_hashes_stable_at_validation": true,
+  "no_raw_line_fields": true,
+  "no_endpoint_query_or_credentials": true,
+  "target_execution": false,
+  "dynamic_test_verdict": "NOT_PERFORMED",
+  "evidence_output_sha256": {
+    "collect_history.py": "dea8e40c6936d1f81f131f6dadc82e41b709fabc16fb645dc59e842137ed5204",
+    "historical-evidence-sanitized.json": "16a207201629e631780c4e3ae3749e7b632f5f56a66608f237c9352852714cba",
+    "historical-evidence-summary.json": "ecde474c78c4b0bb95c8607b40b4bfd00260cea06e1b9a52b1e9b095845277ee",
+    "historical-findings-index.json": "3b5c2719188d09eaea68af1c7cb48bbb864228927439b0272356be53ac06377f",
+    "HISTORICAL-FINDINGS.md": "cf7e6897868eaa79b09b01e9230178ba43597713aab8ed656498f1996cdc9f3c",
+    "summarize_history.py": "5fd6be18ace0047926fe492911dd9a8777138e72d0fb7adfa6695f5fb8bea607",
+    "validate_history.py": "8218afe86f8d90cefad335250000173a2425b6f026c4b4ec7a5f598b93957ae8"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "recorded_utc": "2026-10-17T06:46:24.371115+00:00",
+  "case_count": 25,
+  "target_count": 56,
+  "unsupported_provider_rows": 2,
+  "validator_self_checks": {
+    "blocked_template_accepted_as_blocked": true,
+    "unsupported_case_rejected": true,
+    "unsubstantiated_pass_rejected": true
+  },
+  "behavioral_tests_executed": 0,
+  "status": "BLOCKED_REQUIRES_REAL_ENVIRONMENT_AND_EVIDENCE"
+}

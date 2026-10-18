@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-10-17",
+  "observed_at_utc": "2026-10-17T06:45:46Z",
+  "scope": "Read-only local readiness checks; supplied ReverseLegacyCraft workspace and standard installed tool metadata only",
+  "pinned_source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+  "target_execution_performed": false,
+  "device_connection_attempted": false,
+  "features_services_boot_permissions_changed": false,
+  "software_installed": false,
+  "account_stores_inspected": false,
+  "windows": {
+    "edition": "Microsoft Windows 11 Pro",
+    "version": "10.0.26300",
+    "build": "26300",
+    "architecture": "64-bit",
+    "hypervisor_present": true,
+    "processor_flags": {
+      "vm_monitor_mode_extensions": false,
+      "virtualization_firmware_enabled": false,
+      "second_level_address_translation_extensions": false,
+      "interpretation": "These reported flags do not establish lack of virtualization when a hypervisor is already present. No BIOS, feature, or boot changes were attempted."
+    },
+    "sandbox": {
+      "standard_executable_present": false,
+      "optional_feature_state": "UNKNOWN_REQUIRES_ELEVATION",
+      "ready_guest_confirmed": false,
+      "status": "BLOCKED"
+    },
+    "hyper_v": {
+      "powershell_module_available": true,
+      "optional_feature_state": "UNKNOWN_REQUIRES_ELEVATION",
+      "get_vm_query": "DENIED_INSUFFICIENT_PERMISSION",
+      "vm_inventory_available": false,
+      "ready_guest_confirmed": false,
+      "status": "BLOCKED"
+    },
+    "virtual_machine_platform_feature_state": "UNKNOWN_REQUIRES_ELEVATION",
+    "alternative_hypervisor_standard_executables": {
+      "virtualbox": false,
+      "vmware_workstation_vmrun": false,
+      "interpretation": "Only standard executable locations were checked; absence is not a complete software inventory."
+    }
+  },
+  "workspace_inventory": {
+    "recursive_files_observed": 563,
+    "deployable_appx_appxbundle_msix_msixbundle_count": 0,
+    "vm_wsb_vmcx_vmrs_vhd_vhdx_vmdk_ova_ovf_iso_count": 0,
+    "pfx_file_count": 0,
+    "existing_offline_wsb_example_present": true,
+    "example_is_runnable_guest_or_execution_evidence": false,
+    "binary_files_in_pinned_source": [
+      "mesa-runtime/dxil.dll",
+      "mesa-runtime/libgallium_wgl.dll",
+      "mesa-runtime/opengl32.dll",
+      "mesa-runtime/spirv_to_dxil.dll",
+      "mesa-runtime/vulkan_dzn.dll",
+      "mesa-runtime/z-1.dll"
+    ],
+    "packaged_jvm_or_launcher_executable_in_pinned_source": false,
+    "scope_limit": "Only the supplied ReverseLegacyCraft workspace was recursively searched. File count is a time-of-observation value in a shared workspace."
+  },
+  "build_tools": {
+    "visual_studio_build_tools": {
+      "present": true,
+      "installation_version": "17.14.37710.0",
+      "product_display_version": "17.14.41 (September 2026)",
+      "complete": true,
+      "vc_x86_x64_component_present": true,
+      "msvc_tools_directory_version": "14.44.35207",
+      "x64_compiler_file_version": "19.44.35229.0",
+      "x64_linker_file_version": "14.44.35229.0",
+      "msbuild_file_version": "17.14.60.43110",
+      "uwp_workload_registration_found": false,
+      "uwp_workload_note": "The pinned build invokes cl.exe directly. Missing workload registration alone does not prove missing required headers or libraries."
+    },
+    "windows_sdk": {
+      "version_checked": "10.0.26100.0",
+      "x64_makeappx_present": true,
+      "x64_makepri_present": true,
+      "x64_signtool_present": true,
+      "cppwinrt_base_header_present": true,
+      "windows_header_present": true,
+      "windowsapp_library_present": true,
+      "runtimeobject_library_present": true,
+      "ucrt_library_present": true,
+      "msvc_store_vcruntime_library_present": true
+    },
+    "jdk": {
+      "installed_metadata_observed": [
+        {
+          "implementation": "Eclipse Adoptium",
+          "java_version": "25.0.4.1",
+          "runtime_version": "25.0.4.1+1-LTS",
+          "architecture": "x86_64",
+          "javac_present": true,
+          "jar_present": true,
+          "lib_src_zip_present": true
+        }
+      ],
+      "jdk_21_in_checked_standard_roots": false,
+      "known_trusted_analysis_jdk_21": {
+        "location_class": "Existing Ghidra toolchain outside standard Java vendor roots",
+        "implementation": "Eclipse Adoptium",
+        "java_version": "21.0.12.1",
+        "runtime_version": "21.0.12.1+1-LTS",
+        "architecture": "x86_64",
+        "java_present": true,
+        "javac_present": true,
+        "jar_present": true,
+        "lib_src_zip_present": true,
+        "build_path_configuration_compatibility": "UNVERIFIED",
+        "verification": "Release-file and tool-presence metadata only; this is not a LegacyForge build result"
+      },
+      "jdk_17_in_checked_standard_roots": false,
+      "java_home_or_21_17_versioned_variables_set": false,
+      "scope_limit": "Standard Java vendor roots, C:/ms-jdk21, C:/ms-jdk17, C:/ms-jdk25, Java home variable metadata, and the already-known Ghidra JDK21 release metadata. JDK21 exists outside the standard roots. The target-bundled Java17 desktop runtime does not establish a full build-compatible JDK17. No target-bundled JRE was executed.",
+      "target_runtime_executed": false,
+      "trusted_analyst_javac_invoked_for_original_probe_only": true
+    },
+    "source_build_executed": false,
+    "sdk_presence_establishes_successful_build": false,
+    "signing_private_keys_inspected": false,
+    "signing_readiness": "NOT_ESTABLISHED"
+  },
+  "xbox": {
+    "series_x_hardware_and_dev_mode": "OWNER_REPORTED",
+    "prior_appx_deployment": "OWNER_REPORTED",
+    "device_portal_address_available": false,
+    "codex_remote_access_configured": false,
+    "exact_test_package_available_in_workspace": false,
+    "owner_run_receipts_available_to_this_audit": false,
+    "hardware_validation_status": "BLOCKED",
+    "authentication_validation_status": "BLOCKED_OWNER_CONTROLLED_ACCOUNT_AND_RECEIPTS_REQUIRED"
+  },
+  "minimum_next_inputs": [
+    "Owner-prepared disposable isolated Windows guest plus explicit archived-target execution approval identifying the guest and artifacts",
+    "Exact approved signed LegacyForge APPX/dependencies with package, JVM, shim, Mesa and native hashes, or an independently approved separate build environment with required JDKs/caches",
+    "Owner-run Series X test and account outcome receipts without credentials, tokens, device codes, account identifiers or raw authentication traffic"
+  ],
+  "public_build_artifact_check": {
+    "source": "analysis-local/final-audit/public-build-artifact-check.json",
+    "scope": "Unauthenticated public GitHub exact-pin workflow runs and repository release metadata only",
+    "exact_pin_workflow_runs_returned": 0,
+    "public_releases_returned": 0,
+    "limits": "Does not exclude private artifacts, unpublished builds, owner-held packages, other commits, or other distribution channels"
+  },
+  "diagnostic_package_available": false,
+  "physical_or_dynamic_tests_passed_by_this_audit": 0,
+  "probe_compilation": {
+    "Mode": "COMPILATION_ONLY",
+    "Compiler": "Existing trusted Ghidra JDK21 javac",
+    "CompilerReleaseMetadata": "Adoptium 21.0.12.1+1-LTS x86_64",
+    "ReleaseTarget": 8,
+    "CompilerExitCode": 0,
+    "SourceSha256": "56a6250ddf494136c6214fab269966ec2c099b60642002a28becd543ec58ddfd",
+    "ClassFiles": [
+      {
+        "Name": "RuntimeProbe.class",
+        "Length": 10267,
+        "MajorVersion": 52,
+        "Sha256": "8725b1fef3ff31b2d7d8403f06e61d61f76c1edf5dc1f1aba82032ecd4c4fc9b"
+      },
+      {
+        "Name": "RuntimeProbe$1.class",
+        "Length": 707,
+        "MajorVersion": 52,
+        "Sha256": "a3148a91e3c1d171c1ff53f73914fb74de615df7c14cdc910cb83ff368d1278e"
+      }
+    ],
+    "ProbeExecuted": false,
+    "TargetExecuted": false,
+    "ExecutionPassEstablished": false
+  },
+  "evidence_id": "E19",
+  "source_only_fixture": "tests/probes/RuntimeProbe.java",
+  "probe_execution_status": "NOT_EXECUTED"
+}

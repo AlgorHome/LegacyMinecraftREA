@@ -1,0 +1,152 @@
+{
+  "Schema": "legacyforge-phase6a-readiness-final-crosscheck-v1",
+  "ReviewDate": "2026-10-17",
+  "Mode": "READ_ONLY_REVIEW",
+  "PublicationEditsMade": false,
+  "ProbeRun": false,
+  "ProbeRecompiled": false,
+  "TargetExecutionPerformed": false,
+  "SourceCommit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+  "ProbeSourceSha256": "56a6250ddf494136c6214fab269966ec2c099b60642002a28becd543ec58ddfd",
+  "ProbeSourceMatchesLocalCompileReceipt": true,
+  "ProbeSourceMatchesPublicCompileReceipt": true,
+  "PriorCompilationExitCode": 0,
+  "ClassChecks": [
+    {
+      "Name": "RuntimeProbe.class",
+      "RecordedSha256": "8725b1fef3ff31b2d7d8403f06e61d61f76c1edf5dc1f1aba82032ecd4c4fc9b",
+      "ActualHashMatches": true,
+      "ActualClassMajorVersion": 52
+    },
+    {
+      "Name": "RuntimeProbe$1.class",
+      "RecordedSha256": "a3148a91e3c1d171c1ff53f73914fb74de615df7c14cdc910cb83ff368d1278e",
+      "ActualHashMatches": true,
+      "ActualClassMajorVersion": 52
+    }
+  ],
+  "StaticProbeReview": {
+    "FreshUuidOwnedChild": true,
+    "CreateNewWrites": true,
+    "NoReplacementRename": true,
+    "ZipfsReadbackOnly": true,
+    "ExplicitDeleteProcessOrNativeLoadCallsFound": 0,
+    "AllowlistedJsonOnlyInSource": true,
+    "RawErrorPathOutputCallsFound": 0,
+    "PrivateRootAndNoConcurrentUntrustedWriterRequired": true,
+    "PackageJniNativeGraphicsInputAudioIntegration": "UNSATISFIED"
+  },
+  "RuntimeFamilyChecks": [
+    {
+      "SourceFamily": "current",
+      "TargetRows": 12,
+      "DeclaredVanillaRequirements": [
+        {
+          "DeclaredVanillaJavaMajor": 25,
+          "TargetRows": 12
+        }
+      ],
+      "ActualPackagedJavaMajor": "UNMEASURED"
+    },
+    {
+      "SourceFamily": "java21",
+      "TargetRows": 40,
+      "DeclaredVanillaRequirements": [
+        {
+          "DeclaredVanillaJavaMajor": 8,
+          "TargetRows": 1
+        },
+        {
+          "DeclaredVanillaJavaMajor": 17,
+          "TargetRows": 4
+        },
+        {
+          "DeclaredVanillaJavaMajor": 21,
+          "TargetRows": 35
+        }
+      ],
+      "ActualPackagedJavaMajor": "UNMEASURED"
+    },
+    {
+      "SourceFamily": "java17",
+      "TargetRows": 2,
+      "DeclaredVanillaRequirements": [
+        {
+          "DeclaredVanillaJavaMajor": 17,
+          "TargetRows": 2
+        }
+      ],
+      "ActualPackagedJavaMajor": "UNMEASURED"
+    },
+    {
+      "SourceFamily": "legacy",
+      "TargetRows": 2,
+      "DeclaredVanillaRequirements": [
+        {
+          "DeclaredVanillaJavaMajor": 8,
+          "TargetRows": 2
+        }
+      ],
+      "ActualPackagedJavaMajor": "UNMEASURED"
+    }
+  ],
+  "CatalogHashMatches": true,
+  "CatalogTargetCount": 56,
+  "PlanTargetCount": 56,
+  "TargetTupleRuntimeMismatches": [],
+  "PlanRuntimeVerdicts": [
+    {
+      "Name": "BLOCKED",
+      "Count": 56
+    }
+  ],
+  "MatrixRuntimeVerdicts": [
+    {
+      "Name": "BLOCKED",
+      "Count": 56
+    }
+  ],
+  "WindowsGateIds": [
+    "W01",
+    "W02",
+    "W03",
+    "W04",
+    "W05",
+    "W06",
+    "W07",
+    "W08",
+    "W09",
+    "W10",
+    "W11",
+    "W12"
+  ],
+  "XboxGateIds": [
+    "X01",
+    "X02",
+    "X03",
+    "X04",
+    "X05",
+    "X06",
+    "X07",
+    "X08",
+    "X09",
+    "X10",
+    "X11",
+    "X12",
+    "X13"
+  ],
+  "EveryTargetRetainsAllXboxGateIds": true,
+  "WindowsDocumentAllRowsBlocked": true,
+  "XboxDocumentAllGatesBlocked": true,
+  "NoRuntimeExecutionPassEstablished": true,
+  "NoDiagnosticPackageAssumed": true,
+  "Findings": [
+    {
+      "Severity": "DOC_CLARIFICATION",
+      "Locator": "CATALOG-METADATA-PLANS.md:149",
+      "Observation": "Closing paragraph still describes a genuine publisher-signed positive fixture as required without acknowledging E20 fixture availability. E20 now supplies an independently checked embedded-key-correlated response, while publisher identity remains unverified.",
+      "SuggestedRootEdit": "Refer to the hash-pinned E20 fixture and approved guest for actual updater tests; preserve the separate publisher-authenticity unknown."
+    }
+  ],
+  "Conclusion": "Consistent compile-only/no-execution evidence; all 56 runtime verdicts and W01-W12/X01-X13 remain blocked. Current26.x vanilla metadata requires Java25; actual packaged family majors remain unmeasured. One minor E20/E21 documentation clarification identified."
+}

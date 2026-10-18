@@ -1,0 +1,63 @@
+{
+  "review_kind": "bounded_publication_privacy_provenance_and_link_review",
+  "review_finished_utc": "2026-10-17T06:59:53.257217+00:00",
+  "scope": "current docs/research/legacy-launcher files only; trusted analyst reads; no target, network, account or device execution",
+  "file_count": 46,
+  "bytes_scanned": 2175563,
+  "snapshot_identity_sha256": "30a425b33ff9480bb069ebecb0917096ab793ef9818f164e638cb2a65578b070",
+  "source_files_stable_during_collection": true,
+  "methods": [
+    "UTF-8 and binary extension/magic checks",
+    "fixed regex candidates for personal absolute paths, UUIDs, sensitive assignments, PEM material and long base64",
+    "JSON syntax checks",
+    "local Markdown link existence and publication-folder containment checks",
+    "manual review of E18-E21 evidence boundaries and current status prose",
+    "W09 fixture/blocker consistency and retention of all 56 catalog rows"
+  ],
+  "pattern_or_binary_candidates": [],
+  "invalid_json": [],
+  "missing_local_links": [],
+  "out_of_folder_local_links": [],
+  "noncredential_query_references": [
+    {
+      "file": "AUTH-BOUNDARIES.md",
+      "line": 31,
+      "host": "learn.microsoft.com",
+      "query_key_names": [
+        "view"
+      ]
+    },
+    {
+      "file": "XBOX-UWP-COMPATIBILITY.md",
+      "line": 21,
+      "host": "learn.microsoft.com",
+      "query_key_names": [
+        "view"
+      ]
+    }
+  ],
+  "new_evidence_review": {
+    "E18": "recorded historical message scope is explicit; no live execution PASS or historical transition claim",
+    "E19": "readiness observations retain zero runtime/account passes and required guest/package/device limits",
+    "E20": "metadata/key bytes remain outside publication; embedded-trust-anchor correspondence is distinct from publisher identity and target updater acceptance",
+    "E21": "metadata descriptors/listings are distinct from loader installation/runtime compatibility; 56 targets retained"
+  },
+  "W09": "E20 positive fixture pinned; only approved guest blocker retained; actual target acceptance remains BLOCKED",
+  "material_issues": [],
+  "resolved_during_review": [
+    {
+      "file": "CATALOG-METADATA-PLANS.md",
+      "prior_line": 149,
+      "issue": "stale positive-fixture prerequisite",
+      "resolution": "root corrected prerequisite while preserving guest/actual-updater constraints"
+    }
+  ],
+  "publication_mutations_by_reviewer": false,
+  "hash_manifest_mutations_by_reviewer": false,
+  "limitations": [
+    "This is a bounded pattern/schema/manual review, not an absolute privacy, originality, authenticity or security certification.",
+    "Patterns can miss unlabeled identifiers, obfuscated secrets, embedded proprietary prose or facts requiring outside evidence.",
+    "Remote links were not fetched; relative-link fragments and non-Markdown plain-text references were not resolved.",
+    "Publication hash-manifest consistency is left to the root finalization pass; later edits are outside this snapshot."
+  ]
+}

@@ -1,0 +1,887 @@
+{
+  "evidence_type": "historical_recorded_message_only",
+  "endpoint_categories": [
+    {
+      "category": "minecraft_version_catalog",
+      "unique_endpoint_count": 1,
+      "endpoint_occurrence_count": 8,
+      "sources": [
+        {
+          "source": "logs/launcher.log",
+          "first": {
+            "line": 32,
+            "record": 9,
+            "timestamp_as_recorded": "00:56:57,347",
+            "public_endpoint": "https://launchermeta.mojang.com/mc/game/version_manifest.json"
+          },
+          "last": {
+            "line": 37,
+            "record": 10,
+            "timestamp_as_recorded": "00:56:57,477",
+            "public_endpoint": "https://launchermeta.mojang.com/mc/game/version_manifest.json"
+          }
+        },
+        {
+          "source": "logs/launcher.log.1",
+          "first": {
+            "line": 147,
+            "record": 145,
+            "timestamp_as_recorded": "00:40:40,059",
+            "public_endpoint": "https://launchermeta.mojang.com/mc/game/version_manifest.json"
+          },
+          "last": {
+            "line": 152,
+            "record": 146,
+            "timestamp_as_recorded": "00:40:40,168",
+            "public_endpoint": "https://launchermeta.mojang.com/mc/game/version_manifest.json"
+          }
+        },
+        {
+          "source": "logs/launcher.log.2",
+          "first": {
+            "line": 32,
+            "record": 156,
+            "timestamp_as_recorded": "00:44:23,994",
+            "public_endpoint": "https://launchermeta.mojang.com/mc/game/version_manifest.json"
+          },
+          "last": {
+            "line": 37,
+            "record": 157,
+            "timestamp_as_recorded": "00:44:24,138",
+            "public_endpoint": "https://launchermeta.mojang.com/mc/game/version_manifest.json"
+          }
+        },
+        {
+          "source": "logs/launcher.log.3",
+          "first": {
+            "line": 31,
+            "record": 168,
+            "timestamp_as_recorded": "00:51:08,810",
+            "public_endpoint": "https://launchermeta.mojang.com/mc/game/version_manifest.json"
+          },
+          "last": {
+            "line": 36,
+            "record": 169,
+            "timestamp_as_recorded": "00:51:08,943",
+            "public_endpoint": "https://launchermeta.mojang.com/mc/game/version_manifest.json"
+          }
+        }
+      ]
+    },
+    {
+      "category": "minecraft_or_runtime_metadata",
+      "unique_endpoint_count": 3,
+      "endpoint_occurrence_count": 9,
+      "sources": [
+        {
+          "source": "logs/launcher.log",
+          "first": {
+            "line": 88,
+            "record": 33,
+            "timestamp_as_recorded": "00:57:00,721",
+            "public_endpoint": "https://piston-meta.mojang.com/v1/packages/e81d9e2536723a11eb68e11c5642708926b8be5f/29.json"
+          },
+          "last": {
+            "line": 99,
+            "record": 40,
+            "timestamp_as_recorded": "00:57:02,103",
+            "public_endpoint": "https://piston-meta.mojang.com/v1/packages/cb4394a27089d19f65d5baa6cf0482c27c3c7865/manifest.json"
+          }
+        },
+        {
+          "source": "logs/launcher.log.3",
+          "first": {
+            "line": 80,
+            "record": 191,
+            "timestamp_as_recorded": "00:52:31,437",
+            "public_endpoint": "https://piston-meta.mojang.com/v1/packages/718cd84b4912691fe5de829aab6876a4b7f6c5c4/1.21.11.json"
+          },
+          "last": {
+            "line": 124,
+            "record": 210,
+            "timestamp_as_recorded": "00:52:34,187",
+            "public_endpoint": "https://piston-meta.mojang.com/v1/packages/cb4394a27089d19f65d5baa6cf0482c27c3c7865/manifest.json"
+          }
+        }
+      ]
+    },
+    {
+      "category": "mojang_runtime_or_other_content",
+      "unique_endpoint_count": 196,
+      "endpoint_occurrence_count": 845,
+      "sources": [
+        {
+          "source": "logs/launcher.log.3",
+          "first": {
+            "line": 142,
+            "record": 219,
+            "timestamp_as_recorded": "00:52:34,441",
+            "public_endpoint": "https://piston-data.mojang.com/v1/objects/6d5e52d85f68d73fcc776c576e97aeae76f5972b/api-ms-win-core-console-l1-2-0.dll"
+          },
+          "last": {
+            "line": 5154,
+            "record": 3504,
+            "timestamp_as_recorded": "00:52:53,873",
+            "public_endpoint": "https://piston-data.mojang.com/v1/objects/e8fba4c7ae588fdc6562f4e02d638b4d5e8ac524/modules"
+          }
+        }
+      ]
+    },
+    {
+      "category": "minecraft_asset_content",
+      "unique_endpoint_count": 4591,
+      "endpoint_occurrence_count": 4591,
+      "sources": [
+        {
+          "source": "logs/launcher.log.3",
+          "first": {
+            "line": 2926,
+            "record": 2166,
+            "timestamp_as_recorded": "00:52:39,053",
+            "public_endpoint": "https://resources.download.minecraft.net/43/43775d8586d4b3bfc71835b5f13b4f5983417973"
+          },
+          "last": {
+            "line": 25875,
+            "record": 15939,
+            "timestamp_as_recorded": "00:54:38,523",
+            "public_endpoint": "https://resources.download.minecraft.net/dd/dd8b95252bf92ca815d10c0f7c7fa004e60b8c35"
+          }
+        }
+      ]
+    },
+    {
+      "category": "minecraft_library_content",
+      "unique_endpoint_count": 43,
+      "endpoint_occurrence_count": 86,
+      "sources": [
+        {
+          "source": "logs/launcher.log.3",
+          "first": {
+            "line": 25884,
+            "record": 15942,
+            "timestamp_as_recorded": "00:54:38,541",
+            "public_endpoint": "https://libraries.minecraft.net/com/mojang/jtracy/1.0.37/jtracy-1.0.37.jar"
+          },
+          "last": {
+            "line": 26335,
+            "record": 16241,
+            "timestamp_as_recorded": "00:54:49,134",
+            "public_endpoint": "https://libraries.minecraft.net/com/mojang/blocklist/1.0.10/blocklist-1.0.10.jar"
+          }
+        }
+      ]
+    },
+    {
+      "category": "minecraft_client_jar",
+      "unique_endpoint_count": 1,
+      "endpoint_occurrence_count": 2,
+      "sources": [
+        {
+          "source": "logs/launcher.log.3",
+          "first": {
+            "line": 26342,
+            "record": 16248,
+            "timestamp_as_recorded": "00:54:49,144",
+            "public_endpoint": "https://piston-data.mojang.com/v1/objects/ba2df812c2d12e0219c489c4cd9a5e1f0760f5bd/client.jar"
+          },
+          "last": {
+            "line": 26343,
+            "record": 16249,
+            "timestamp_as_recorded": "00:54:49,144",
+            "public_endpoint": "https://piston-data.mojang.com/v1/objects/ba2df812c2d12e0219c489c4cd9a5e1f0760f5bd/client.jar"
+          }
+        }
+      ]
+    }
+  ],
+  "selected_events": [
+    {
+      "source": "logs/launcher.log",
+      "line": 2,
+      "timestamp_as_recorded": "00:56:55,082",
+      "event_tags": [
+        "process_launch_message"
+      ],
+      "known_public_version_mentions": [
+        {
+          "identity": "installed_launcher",
+          "version": "1.169.4"
+        }
+      ],
+      "sanitized_record_ordinal": 1
+    },
+    {
+      "source": "logs/launcher.log",
+      "line": 3,
+      "timestamp_as_recorded": "00:56:55,082",
+      "known_public_version_mentions": [
+        {
+          "identity": "installed_bootstrap",
+          "version": "1.40.3"
+        }
+      ],
+      "sanitized_record_ordinal": 2
+    },
+    {
+      "source": "logs/launcher.log",
+      "line": 94,
+      "timestamp_as_recorded": "00:57:01,357",
+      "versions": [
+        {
+          "technology": "bootstrap",
+          "version": "1.40.3"
+        }
+      ],
+      "known_public_version_mentions": [
+        {
+          "identity": "installed_launcher",
+          "version": "1.169.4"
+        },
+        {
+          "identity": "installed_bootstrap",
+          "version": "1.40.3"
+        }
+      ],
+      "sanitized_record_ordinal": 37
+    },
+    {
+      "source": "logs/launcher.log",
+      "line": 125,
+      "timestamp_as_recorded": "00:57:02,922",
+      "event_tags": [
+        "java_version_message",
+        "game_version_message"
+      ],
+      "versions": [
+        {
+          "technology": "Java",
+          "version": "21.0.7"
+        }
+      ],
+      "known_public_version_mentions": [
+        {
+          "identity": "game_java",
+          "version": "21.0.7"
+        }
+      ],
+      "sanitized_record_ordinal": 52
+    },
+    {
+      "source": "logs/launcher.log",
+      "line": 126,
+      "timestamp_as_recorded": "00:57:02,922",
+      "event_tags": [
+        "java_version_message",
+        "game_version_message"
+      ],
+      "versions": [
+        {
+          "technology": "Java",
+          "version": "21.0.7"
+        }
+      ],
+      "known_public_version_mentions": [
+        {
+          "identity": "game_java",
+          "version": "21.0.7"
+        }
+      ],
+      "sanitized_record_ordinal": 53
+    },
+    {
+      "source": "logs/launcher.log",
+      "line": 142,
+      "timestamp_as_recorded": "00:57:03,180",
+      "event_tags": [
+        "error_message"
+      ],
+      "status_codes": [
+        {
+          "kind": "http_status",
+          "value": 502
+        }
+      ],
+      "sanitized_record_ordinal": 59
+    },
+    {
+      "source": "logs/launcher.log",
+      "line": 150,
+      "timestamp_as_recorded": "00:57:10",
+      "event_tags": [
+        "graphics_message"
+      ],
+      "versions": [
+        {
+          "technology": "LWJGL",
+          "version": "3.3.3+5"
+        }
+      ],
+      "sanitized_record_ordinal": 60
+    },
+    {
+      "source": "logs/launcher.log",
+      "line": 165,
+      "timestamp_as_recorded": "00:57:14",
+      "event_tags": [
+        "audio_message"
+      ],
+      "technical_events": [
+        "openal_initialized_recorded"
+      ],
+      "sanitized_record_ordinal": 64
+    },
+    {
+      "source": "logs/launcher.log",
+      "line": 166,
+      "timestamp_as_recorded": "00:57:14",
+      "event_tags": [
+        "process_launch_message",
+        "audio_message"
+      ],
+      "technical_events": [
+        "sound_engine_started_recorded"
+      ],
+      "sanitized_record_ordinal": 65
+    },
+    {
+      "source": "logs/launcher.log",
+      "line": 196,
+      "timestamp_as_recorded": "00:57:34",
+      "event_tags": [
+        "audio_message"
+      ],
+      "technical_events": [
+        "openal_initialized_recorded"
+      ],
+      "sanitized_record_ordinal": 84
+    },
+    {
+      "source": "logs/launcher.log",
+      "line": 197,
+      "timestamp_as_recorded": "00:57:34",
+      "event_tags": [
+        "process_launch_message",
+        "audio_message"
+      ],
+      "technical_events": [
+        "sound_engine_started_recorded"
+      ],
+      "sanitized_record_ordinal": 85
+    },
+    {
+      "source": "logs/launcher.log",
+      "line": 213,
+      "timestamp_as_recorded": "00:58:36",
+      "event_tags": [
+        "shutdown_message"
+      ],
+      "technical_events": [
+        "game_stopping_recorded"
+      ],
+      "sanitized_record_ordinal": 101
+    },
+    {
+      "source": "logs/launcher.log",
+      "line": 215,
+      "timestamp_as_recorded": "00:58:36,963",
+      "event_tags": [
+        "process_exit_message"
+      ],
+      "status_codes": [
+        {
+          "kind": "process_exit_code",
+          "value": 0
+        }
+      ],
+      "sanitized_record_ordinal": 103
+    },
+    {
+      "source": "logs/launcher.log",
+      "line": 222,
+      "timestamp_as_recorded": "00:58:39,317",
+      "versions": [
+        {
+          "technology": "bootstrap",
+          "version": "1.40.3"
+        }
+      ],
+      "known_public_version_mentions": [
+        {
+          "identity": "installed_launcher",
+          "version": "1.169.4"
+        },
+        {
+          "identity": "installed_bootstrap",
+          "version": "1.40.3"
+        }
+      ],
+      "sanitized_record_ordinal": 106
+    },
+    {
+      "source": "logs/launcher.log.1",
+      "line": 2,
+      "timestamp_as_recorded": "00:40:33,266",
+      "event_tags": [
+        "process_launch_message"
+      ],
+      "known_public_version_mentions": [
+        {
+          "identity": "installed_launcher",
+          "version": "1.169.4"
+        }
+      ],
+      "sanitized_record_ordinal": 107
+    },
+    {
+      "source": "logs/launcher.log.1",
+      "line": 3,
+      "timestamp_as_recorded": "00:40:33,284",
+      "known_public_version_mentions": [
+        {
+          "identity": "installed_bootstrap",
+          "version": "1.40.3"
+        }
+      ],
+      "sanitized_record_ordinal": 108
+    },
+    {
+      "source": "logs/launcher.log.1",
+      "line": 161,
+      "timestamp_as_recorded": "00:40:52,713",
+      "versions": [
+        {
+          "technology": "bootstrap",
+          "version": "1.40.3"
+        }
+      ],
+      "known_public_version_mentions": [
+        {
+          "identity": "installed_launcher",
+          "version": "1.169.4"
+        },
+        {
+          "identity": "installed_bootstrap",
+          "version": "1.40.3"
+        }
+      ],
+      "sanitized_record_ordinal": 147
+    },
+    {
+      "source": "logs/launcher.log.2",
+      "line": 2,
+      "timestamp_as_recorded": "00:44:21,556",
+      "event_tags": [
+        "process_launch_message"
+      ],
+      "known_public_version_mentions": [
+        {
+          "identity": "installed_launcher",
+          "version": "1.169.4"
+        }
+      ],
+      "sanitized_record_ordinal": 148
+    },
+    {
+      "source": "logs/launcher.log.2",
+      "line": 3,
+      "timestamp_as_recorded": "00:44:21,556",
+      "known_public_version_mentions": [
+        {
+          "identity": "installed_bootstrap",
+          "version": "1.40.3"
+        }
+      ],
+      "sanitized_record_ordinal": 149
+    },
+    {
+      "source": "logs/launcher.log.2",
+      "line": 46,
+      "timestamp_as_recorded": "00:46:06,028",
+      "versions": [
+        {
+          "technology": "bootstrap",
+          "version": "1.40.3"
+        }
+      ],
+      "known_public_version_mentions": [
+        {
+          "identity": "installed_launcher",
+          "version": "1.169.4"
+        },
+        {
+          "identity": "installed_bootstrap",
+          "version": "1.40.3"
+        }
+      ],
+      "sanitized_record_ordinal": 159
+    },
+    {
+      "source": "logs/launcher.log.3",
+      "line": 2,
+      "timestamp_as_recorded": "00:51:06,678",
+      "event_tags": [
+        "process_launch_message"
+      ],
+      "known_public_version_mentions": [
+        {
+          "identity": "installed_launcher",
+          "version": "1.169.4"
+        }
+      ],
+      "sanitized_record_ordinal": 160
+    },
+    {
+      "source": "logs/launcher.log.3",
+      "line": 3,
+      "timestamp_as_recorded": "00:51:06,678",
+      "known_public_version_mentions": [
+        {
+          "identity": "installed_bootstrap",
+          "version": "1.40.3"
+        }
+      ],
+      "sanitized_record_ordinal": 161
+    },
+    {
+      "source": "logs/launcher.log.3",
+      "line": 26360,
+      "timestamp_as_recorded": "00:54:59,510",
+      "technical_events": [
+        "download_complete_recorded"
+      ],
+      "sanitized_record_ordinal": 16260
+    },
+    {
+      "source": "logs/launcher.log.3",
+      "line": 26372,
+      "timestamp_as_recorded": "00:55:01,631",
+      "event_tags": [
+        "java_version_message",
+        "game_version_message"
+      ],
+      "versions": [
+        {
+          "technology": "Java",
+          "version": "21.0.7"
+        }
+      ],
+      "known_public_version_mentions": [
+        {
+          "identity": "game_java",
+          "version": "21.0.7"
+        }
+      ],
+      "sanitized_record_ordinal": 16268
+    },
+    {
+      "source": "logs/launcher.log.3",
+      "line": 26373,
+      "timestamp_as_recorded": "00:55:01,631",
+      "event_tags": [
+        "java_version_message",
+        "game_version_message"
+      ],
+      "versions": [
+        {
+          "technology": "Java",
+          "version": "21.0.7"
+        }
+      ],
+      "known_public_version_mentions": [
+        {
+          "identity": "game_java",
+          "version": "21.0.7"
+        }
+      ],
+      "sanitized_record_ordinal": 16269
+    },
+    {
+      "source": "logs/launcher.log.3",
+      "line": 26389,
+      "timestamp_as_recorded": "00:55:02,346",
+      "versions": [
+        {
+          "technology": "bootstrap",
+          "version": "1.40.3"
+        }
+      ],
+      "known_public_version_mentions": [
+        {
+          "identity": "installed_launcher",
+          "version": "1.169.4"
+        },
+        {
+          "identity": "installed_bootstrap",
+          "version": "1.40.3"
+        },
+        {
+          "identity": "selected_minecraft",
+          "version": "1.21.11"
+        }
+      ],
+      "sanitized_record_ordinal": 16275
+    },
+    {
+      "source": "logs/launcher.log.3",
+      "line": 26393,
+      "timestamp_as_recorded": "00:55:10",
+      "event_tags": [
+        "graphics_message"
+      ],
+      "versions": [
+        {
+          "technology": "LWJGL",
+          "version": "3.3.3+5"
+        }
+      ],
+      "sanitized_record_ordinal": 16276
+    },
+    {
+      "source": "logs/launcher.log.3",
+      "line": 26408,
+      "timestamp_as_recorded": "00:55:14",
+      "event_tags": [
+        "audio_message"
+      ],
+      "technical_events": [
+        "openal_initialized_recorded"
+      ],
+      "sanitized_record_ordinal": 16280
+    },
+    {
+      "source": "logs/launcher.log.3",
+      "line": 26409,
+      "timestamp_as_recorded": "00:55:14",
+      "event_tags": [
+        "process_launch_message",
+        "audio_message"
+      ],
+      "technical_events": [
+        "sound_engine_started_recorded"
+      ],
+      "sanitized_record_ordinal": 16281
+    },
+    {
+      "source": "logs/launcher.log.3",
+      "line": 26437,
+      "timestamp_as_recorded": "00:56:04",
+      "event_tags": [
+        "shutdown_message"
+      ],
+      "technical_events": [
+        "game_stopping_recorded"
+      ],
+      "sanitized_record_ordinal": 16300
+    },
+    {
+      "source": "logs/launcher.log.3",
+      "line": 26439,
+      "timestamp_as_recorded": "00:56:04,603",
+      "event_tags": [
+        "process_exit_message"
+      ],
+      "status_codes": [
+        {
+          "kind": "process_exit_code",
+          "value": 0
+        }
+      ],
+      "sanitized_record_ordinal": 16302
+    },
+    {
+      "source": "logs/launcher.log.3",
+      "line": 26446,
+      "timestamp_as_recorded": "00:56:06,851",
+      "event_tags": [
+        "error_message"
+      ],
+      "status_codes": [
+        {
+          "kind": "http_status",
+          "value": 502
+        }
+      ],
+      "sanitized_record_ordinal": 16305
+    },
+    {
+      "source": "legacy/Minecraft/game/logs/2026-10-17-1.log.gz",
+      "line": 4,
+      "timestamp_as_recorded": "00:55:10",
+      "event_tags": [
+        "graphics_message"
+      ],
+      "versions": [
+        {
+          "technology": "LWJGL",
+          "version": "3.3.3+5"
+        }
+      ],
+      "sanitized_record_ordinal": 16306
+    },
+    {
+      "source": "legacy/Minecraft/game/logs/2026-10-17-1.log.gz",
+      "line": 19,
+      "timestamp_as_recorded": "00:55:14",
+      "event_tags": [
+        "audio_message"
+      ],
+      "technical_events": [
+        "openal_initialized_recorded"
+      ],
+      "sanitized_record_ordinal": 16310
+    },
+    {
+      "source": "legacy/Minecraft/game/logs/2026-10-17-1.log.gz",
+      "line": 20,
+      "timestamp_as_recorded": "00:55:14",
+      "event_tags": [
+        "process_launch_message",
+        "audio_message"
+      ],
+      "technical_events": [
+        "sound_engine_started_recorded"
+      ],
+      "sanitized_record_ordinal": 16311
+    },
+    {
+      "source": "legacy/Minecraft/game/logs/2026-10-17-1.log.gz",
+      "line": 48,
+      "timestamp_as_recorded": "00:56:04",
+      "event_tags": [
+        "shutdown_message"
+      ],
+      "technical_events": [
+        "game_stopping_recorded"
+      ],
+      "sanitized_record_ordinal": 16330
+    },
+    {
+      "source": "legacy/Minecraft/game/logs/latest.log",
+      "line": 4,
+      "timestamp_as_recorded": "00:57:10",
+      "event_tags": [
+        "graphics_message"
+      ],
+      "versions": [
+        {
+          "technology": "LWJGL",
+          "version": "3.3.3+5"
+        }
+      ],
+      "sanitized_record_ordinal": 16331
+    },
+    {
+      "source": "legacy/Minecraft/game/logs/latest.log",
+      "line": 19,
+      "timestamp_as_recorded": "00:57:14",
+      "event_tags": [
+        "audio_message"
+      ],
+      "technical_events": [
+        "openal_initialized_recorded"
+      ],
+      "sanitized_record_ordinal": 16335
+    },
+    {
+      "source": "legacy/Minecraft/game/logs/latest.log",
+      "line": 20,
+      "timestamp_as_recorded": "00:57:14",
+      "event_tags": [
+        "process_launch_message",
+        "audio_message"
+      ],
+      "technical_events": [
+        "sound_engine_started_recorded"
+      ],
+      "sanitized_record_ordinal": 16336
+    },
+    {
+      "source": "legacy/Minecraft/game/logs/latest.log",
+      "line": 50,
+      "timestamp_as_recorded": "00:57:34",
+      "event_tags": [
+        "audio_message"
+      ],
+      "technical_events": [
+        "openal_initialized_recorded"
+      ],
+      "sanitized_record_ordinal": 16355
+    },
+    {
+      "source": "legacy/Minecraft/game/logs/latest.log",
+      "line": 51,
+      "timestamp_as_recorded": "00:57:34",
+      "event_tags": [
+        "process_launch_message",
+        "audio_message"
+      ],
+      "technical_events": [
+        "sound_engine_started_recorded"
+      ],
+      "sanitized_record_ordinal": 16356
+    },
+    {
+      "source": "legacy/Minecraft/game/logs/latest.log",
+      "line": 67,
+      "timestamp_as_recorded": "00:58:36",
+      "event_tags": [
+        "shutdown_message"
+      ],
+      "technical_events": [
+        "game_stopping_recorded"
+      ],
+      "sanitized_record_ordinal": 16372
+    }
+  ],
+  "source_sha256": [
+    {
+      "path": "logs/launcher.log",
+      "sha256": "4c9e0489a1c7e4e42a9e70299e842a411f96539cef42706785c2c0e5d9edfb62",
+      "bytes": 42864,
+      "line_count": 223,
+      "matched_record_count": 106,
+      "sensitive_line_count_omitted": 1
+    },
+    {
+      "path": "logs/launcher.log.1",
+      "sha256": "cc8a61c5ac5f9e560faefd23d1629b0d05032f815d2f5a3e4500e7a815d905e0",
+      "bytes": 15165,
+      "line_count": 162,
+      "matched_record_count": 41,
+      "sensitive_line_count_omitted": 0
+    },
+    {
+      "path": "logs/launcher.log.2",
+      "sha256": "9165f4817a047d5eb31ad3dfc944f89c693c6a248f04008b47d9619b461e78fb",
+      "bytes": 5845,
+      "line_count": 47,
+      "matched_record_count": 12,
+      "sensitive_line_count_omitted": 0
+    },
+    {
+      "path": "logs/launcher.log.3",
+      "sha256": "d0c00a3357727c644fdf176f0f367cbe9cda3337f9423826705d612bbdd008f3",
+      "bytes": 2220892,
+      "line_count": 26447,
+      "matched_record_count": 16146,
+      "sensitive_line_count_omitted": 4
+    },
+    {
+      "path": "legacy/Minecraft/game/logs/2026-10-17-1.log.gz",
+      "sha256": "b625a78bcaaa2142a4372d9d75b6badd2041c69d715b47b683f91a0e36c824b9",
+      "bytes": 1156,
+      "line_count": 48,
+      "matched_record_count": 25,
+      "sensitive_line_count_omitted": 0,
+      "decompressed_sha256": "0a33c1bae8137c4e4fe92a1e740fc4418d706bcba2656c805ddcdb4f8f0b10c1"
+    },
+    {
+      "path": "legacy/Minecraft/game/logs/latest.log",
+      "sha256": "9585099fff1b81224ddf9d396fa2ca0f62b2c5c4a4900ce4ba2ae6dd517d97f2",
+      "bytes": 6195,
+      "line_count": 67,
+      "matched_record_count": 42,
+      "sensitive_line_count_omitted": 0
+    }
+  ]
+}

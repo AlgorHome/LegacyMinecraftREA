@@ -1,0 +1,27 @@
+{
+  "recorded_utc": "2026-10-17T06:59:33.874547+00:00",
+  "scope": "Publication structure, source pin, exact plan coverage and file integrity; not behavioral or privacy certification",
+  "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+  "production_source_clean": true,
+  "required_documents": 12,
+  "test_gate_count": 25,
+  "test_gate_statuses": {
+    "BLOCKED": 25
+  },
+  "target_rows": 56,
+  "exact_source_matrix_plan_tuples_equal": true,
+  "runtime_family_counts": {
+    "current": 12,
+    "java21": 40,
+    "java17": 2,
+    "legacy": 2
+  },
+  "target_statuses": {
+    "BLOCKED": 56
+  },
+  "actual_behavioral_tests_executed_by_investigation": 0,
+  "actual_behavioral_passes": 0,
+  "errors": [],
+  "publication_file_count": 46,
+  "publication_checksum_manifest_sha256": "99aba532715ad90415381015da6f3b01058a20ffe1fac380c35e3445366ad04c"
+}

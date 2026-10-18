@@ -1,0 +1,84 @@
+{
+  "schema": "legacyforge-phase6a-test-receipt-v1",
+  "test_id": "X06",
+  "status": "PASS",
+  "reason": "SYNTHETIC VALIDATOR CONTROL ONLY",
+  "source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+  "environment": {
+    "type": "synthetic-validator-control",
+    "os_build": "SYNTHETIC-NO-DEVICE",
+    "console_model": "Xbox Series X",
+    "debugger_attached": false,
+    "network_mode": "synthetic-no-network",
+    "isolation_type": "virtual-machine",
+    "isolation_approved": true
+  },
+  "artifacts": {
+    "glfw_sha256": "7984f4a9cd1cb50e8154b4ac72a553af68618958eee96493783e0ee06fff23ef",
+    "appx_sha256": "d08e3800c92693958edb0d3864b28d5d180c01f348a3e2f26778b498749d01a6",
+    "jvm_sha256": "69c3dcb36e74d04c63cec3af613a8d426638b0546bde80cd984aeaef3c2fd884",
+    "native_inventory_sha256": "87885ca1f11a8265634b5842a0bca4433a994c0eb56cbab6f7e79d08f93756c8",
+    "valid_publisher_fixture_sha256": "ed1ab71e7a8a4355fd1bad1bcdd4daa4bcb05a6d26a3e637186aa853b68b4ae6",
+    "loader_inventory_sha256": "080ef44d1d315063ea89cde25fb6ad6092f6de46f3cf60f97841616d75cfc5a2",
+    "launcher_sha256": "be1f345a78e2a16fd285e2d396b29bfb859032ed5a6491dfb7d108b80499d4dc",
+    "mesa_sha256": "4c5706e83f4d011b05357082aa60f37fef0ccdbda3f8674a7deef55042771dfa",
+    "installer_sha256": "fa141c4f292c631bb8d671b21b27e7e5f32155f51f99a55555a770e6356f1403",
+    "graphics_provider_sha256": "ae5a7c404142418872ddadb1359d448e5ce97639285781b15221e4e74937c531",
+    "manifest_sha256": "e0bb0c3b69eb1dc67fd1174409b8538e87c9b0e664186cd05fbfd825ce79488a"
+  },
+  "target": {
+    "minecraft_version": "1.21.11",
+    "loader": "fabric",
+    "loader_version": "0.19.5",
+    "runtime_id": "java21",
+    "java_major": 21,
+    "jni_requested": 21,
+    "jni_accepted": 21
+  },
+  "observation": {
+    "exit_or_hresult": 0,
+    "duration_ms": 1,
+    "memory_peak_bytes": 1,
+    "checked_files": 1,
+    "reused_files": 1,
+    "downloaded_files": 0,
+    "hash_failures": 0,
+    "graphics_version": "SYNTHETIC",
+    "presented_frames": 1,
+    "symptom": "SYNTHETIC CONTROL ONLY",
+    "signature_acceptance": true,
+    "signature_rejections": [
+      "synthetic-truncation"
+    ],
+    "synthetic_java_result": "fixture",
+    "resource_samples": [
+      {
+        "synthetic": true
+      }
+    ],
+    "graphics_capability_results": {
+      "synthetic": true
+    },
+    "auth_stage_results": {
+      "synthetic": true
+    },
+    "ownership_result": "SYNTHETIC-NO-ACCOUNT"
+  },
+  "constraints": [
+    "SYNTHETIC CONTROL. Never report as actual hardware or target evidence."
+  ],
+  "evidence": {
+    "kind": "actual-test-observation",
+    "observed_at_utc": "2026-10-17T00:00:00Z",
+    "observer_role": "SYNTHETIC validator control only; no hardware or target execution",
+    "criteria_results": {
+      "X06.result": true
+    },
+    "attachments": [
+      {
+        "path": "SYNTHETIC-CONTROL-ONLY.txt",
+        "sha256": "f0cea9954bd63bc61c724cdb11ff893926ef485c5e04bd7bf67b14033db816b1"
+      }
+    ]
+  }
+}

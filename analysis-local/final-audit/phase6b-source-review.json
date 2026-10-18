@@ -1,0 +1,142 @@
+{
+  "audit": "Independent read-only Phase6B source/planning review",
+  "created_utc": "2026-10-17T16:05:39.856762+00:00",
+  "source_head": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+  "source_clean": true,
+  "reviewed_files": [
+    {
+      "path": "docs\\research\\phase-6b-runtime-validation\\README.md",
+      "sha256": "c7fd3dc48f4b41780613661ab11ffbad4e41a48e9de9711c2c030bf61718584b"
+    },
+    {
+      "path": "docs\\research\\phase-6b-runtime-validation\\PHASE-6A-EVIDENCE-SUMMARY.md",
+      "sha256": "3e51a231cabed6c2eb6819628495fb8d2d4d966ce1b5467e231a359251fca48b"
+    },
+    {
+      "path": "docs\\research\\phase-6b-runtime-validation\\DIAGNOSTIC-MATRIX.md",
+      "sha256": "a50260bb7fb875aac8dd3ade691adeb3ef24a32ae3376ad5aaaaccd93f0e9761"
+    },
+    {
+      "path": "docs\\research\\phase-6b-runtime-validation\\HARDWARE-ACCEPTANCE.md",
+      "sha256": "134c77f7064359fce464799bbfc7e95cd19d4718643e3300169385830a543a5b"
+    },
+    {
+      "path": "docs\\research\\phase-6b-runtime-validation\\LEGACY-1.12.2-ASSESSMENT.md",
+      "sha256": "d96522d50d98ebd18e841065ff5fc9025f0d21759669ca1ac14c3be2fc848934"
+    },
+    {
+      "path": "docs\\research\\phase-6b-runtime-validation\\PLATFORM-REFERENCES.md",
+      "sha256": "350cabe75af42144de738c381a97105cec1ab68381243d13129de0ec32b4827a"
+    }
+  ],
+  "source_hash_checks": [
+    {
+      "path": "config/versions.tsv",
+      "expected": "acbd5fca365058b94dc5d01aacd13b5a67373eb8b5611b17cd5f539a4dba2a55",
+      "actual": "acbd5fca365058b94dc5d01aacd13b5a67373eb8b5611b17cd5f539a4dba2a55",
+      "matches": true
+    },
+    {
+      "path": "MC.Xbox/launch/loaders/loader_common.h",
+      "expected": "4a8713a339905c1b5f9cdb59c3db6f9c9016330b6149f904800f52a3ebc0db8c",
+      "actual": "4a8713a339905c1b5f9cdb59c3db6f9c9016330b6149f904800f52a3ebc0db8c",
+      "matches": true
+    },
+    {
+      "path": "MC.Xbox/launch/loaders/loader_common.cpp",
+      "expected": "b637905b5b5fdbfec40b364115d578bc24eb946e4620502b42996d6f88ae2b55",
+      "actual": "b637905b5b5fdbfec40b364115d578bc24eb946e4620502b42996d6f88ae2b55",
+      "matches": true
+    },
+    {
+      "path": "MC.Xbox/launch/loaders/loader.cpp",
+      "expected": "f40258d52e054db388244c3849fd67055cd62744a29c0c249be848cf73b8ccb5",
+      "actual": "f40258d52e054db388244c3849fd67055cd62744a29c0c249be848cf73b8ccb5",
+      "matches": true
+    },
+    {
+      "path": "MC.Xbox/launch/loaders/forge.cpp",
+      "expected": "467e46d864fa9c4868bd5d8da5ab9ef23be6a681c136831dae273378769da001",
+      "actual": "467e46d864fa9c4868bd5d8da5ab9ef23be6a681c136831dae273378769da001",
+      "matches": true
+    },
+    {
+      "path": "MC.Xbox/launch/runtime_manager.cpp",
+      "expected": "fad066071b9c8914350d719fd08e2ea516daa59b6087b83ba45c96bb4787eeaf",
+      "actual": "fad066071b9c8914350d719fd08e2ea516daa59b6087b83ba45c96bb4787eeaf",
+      "matches": true
+    },
+    {
+      "path": "MC.Xbox/launch/minecraft_launch.cpp",
+      "expected": "c37eade570d45fbdad0ba876be3347729b1000e579692c1819d059dbf80b5b12",
+      "actual": "c37eade570d45fbdad0ba876be3347729b1000e579692c1819d059dbf80b5b12",
+      "matches": true
+    },
+    {
+      "path": "scripts/new-download-manifest.ps1",
+      "expected": "843bde309ed1b1a32a06e7f11430d93f8a63d485c79ca6677886fdce57954b32",
+      "actual": "843bde309ed1b1a32a06e7f11430d93f8a63d485c79ca6677886fdce57954b32",
+      "matches": true
+    },
+    {
+      "path": "build.ps1",
+      "expected": "0e68582568ee6bd0f920e822c88ea8284d5f84d823b1d4597caa5e45ea7c6b8a",
+      "actual": "0e68582568ee6bd0f920e822c88ea8284d5f84d823b1d4597caa5e45ea7c6b8a",
+      "matches": true
+    },
+    {
+      "path": "glfw_shim/glfw_uwp.cpp",
+      "expected": "0dde9a0c2e0e9b6f028fae5efe9d45a8a81a1e26e330bb72d42cacc3a4ad4d10",
+      "actual": "0dde9a0c2e0e9b6f028fae5efe9d45a8a81a1e26e330bb72d42cacc3a4ad4d10",
+      "matches": true
+    },
+    {
+      "path": "MC.Xbox/launch/minecraft_launch.cpp",
+      "expected": "c37eade570d45fbdad0ba876be3347729b1000e579692c1819d059dbf80b5b12",
+      "actual": "c37eade570d45fbdad0ba876be3347729b1000e579692c1819d059dbf80b5b12",
+      "matches": true
+    },
+    {
+      "path": "MC.Xbox/launch/runtime_manager.cpp",
+      "expected": "fad066071b9c8914350d719fd08e2ea516daa59b6087b83ba45c96bb4787eeaf",
+      "actual": "fad066071b9c8914350d719fd08e2ea516daa59b6087b83ba45c96bb4787eeaf",
+      "matches": true
+    },
+    {
+      "path": "glfw_shim/glfw_uwp.cpp",
+      "expected": "0dde9a0c2e0e9b6f028fae5efe9d45a8a81a1e26e330bb72d42cacc3a4ad4d10",
+      "actual": "0dde9a0c2e0e9b6f028fae5efe9d45a8a81a1e26e330bb72d42cacc3a4ad4d10",
+      "matches": true
+    }
+  ],
+  "runtime_probe_hash_check": {
+    "expected": "56a6250ddf494136c6214fab269966ec2c099b60642002a28becd543ec58ddfd",
+    "actual": "56a6250ddf494136c6214fab269966ec2c099b60642002a28becd543ec58ddfd",
+    "matches": true
+  },
+  "phase6a_sealed_manifest": {
+    "checked_files": 45,
+    "mismatches": [],
+    "scope": "Current files compared with retained checksum manifest; no Phase6A edits by this reviewer."
+  },
+  "claims_review": {
+    "existing_generic_forge_acknowledged": true,
+    "vanilla_default_unsupported_dispatch_accurate": true,
+    "catalog_selected_placeholder_not_approved_release": true,
+    "legacy_installer_launchwrapper_lwjgl2_semantics_remain_unknown": true,
+    "fixed_jni21_discrepancy_impact_not_claimed_tested": true,
+    "initial_native_control_and_java21_only": true,
+    "java17_java8_current25_followups_conditional": true,
+    "current_label_not_assumed_java25_runtime_identity": true,
+    "no_game_auth_ownership_in_initial_acceptance": true,
+    "proposed_harness_not_claimed_implemented": true,
+    "source_paths_functions_crosschecked": true
+  },
+  "material_issues": [],
+  "limitations": [
+    "Archived executable and public fixture artifact hashes checked for consistency with sealed dossier, not rehashed from original carriers in this source-focused review.",
+    "No build, package activation, JVM execution, console test, download or production edit performed.",
+    "Current sealed checks establish retained-manifest agreement, not independent publisher authenticity."
+  ],
+  "verdict": "PASS_STATIC_PLANNING_REVIEW"
+}

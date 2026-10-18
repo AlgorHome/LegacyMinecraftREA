@@ -1,0 +1,11 @@
+{
+  "scope": "Static review only, no diagnostic execution",
+  "source_files": 20,
+  "local_links_checked": 6,
+  "sealed_phase6a_entries_checked": 45,
+  "baseline_clean": true,
+  "staged_scope_only_diagnostics": true,
+  "binary_files_staged": 0,
+  "target_executions": 0,
+  "errors": []
+}

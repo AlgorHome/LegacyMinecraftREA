@@ -1,0 +1,114 @@
+{
+  "Schema": "legacyforge-phase6b-windows-final-review-v1",
+  "ReviewDate": "2026-10-17",
+  "Mode": "READ_ONLY_DOCUMENT_REVIEW",
+  "PublicationEditsByReviewer": false,
+  "TargetsBuildsDownloadsInstallsRun": false,
+  "SourceBaseline": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+  "SnapshotFiles": [
+    {
+      "File": "WINDOWS-EXECUTION-PLAN.md",
+      "Sha256": "2476755436aad252b61e1b160655c5d5b902ff86083eb9495a53221f74b12dbb",
+      "PlanningOrProposalExplicit": true,
+      "NoObservedResultClaim": true
+    },
+    {
+      "File": "README.md",
+      "Sha256": "a556be9f89697cedf1c5e8cff01554d0a0255a04ee5197cb99ac03083e890e56",
+      "PlanningOrProposalExplicit": true,
+      "NoObservedResultClaim": true
+    },
+    {
+      "File": "HARDWARE-ACCEPTANCE.md",
+      "Sha256": "94c72b39876967bcb03726203730146fcb5a3e35b87cf77a502dc8538d5debff",
+      "PlanningOrProposalExplicit": true,
+      "NoObservedResultClaim": true
+    },
+    {
+      "File": "DIAGNOSTIC-MATRIX.md",
+      "Sha256": "01010d45e02e843642ecbabf28013922200b716be5a48ab17c648399bee55517",
+      "PlanningOrProposalExplicit": true,
+      "NoObservedResultClaim": true
+    },
+    {
+      "File": "XBOX-DIAGNOSTIC-HARNESS.md",
+      "Sha256": "3e3393a6bdb0133b5cc34711e25c74cea5af3d0727aa0376fc13056b45e71042",
+      "PlanningOrProposalExplicit": true,
+      "NoObservedResultClaim": true
+    },
+    {
+      "File": "receipt.template.json",
+      "Sha256": "fa780f79a30e5540c8ac0bbd0f8dd0b13f05af8282ba67268539bf573a9d23bf",
+      "PlanningOrProposalExplicit": true,
+      "NoObservedResultClaim": true
+    }
+  ],
+  "Checks": {
+    "InitialScopeOwnershipFree": true,
+    "ArchivedExecutionSeparateOptionalApproval": true,
+    "NoHostArchivedExecutionAuthorized": true,
+    "NoProductionChangesAuthorized": true,
+    "SeparateFutureHarnessSourceVsActualBehavior": true,
+    "AllW01ToW12Retained": true,
+    "Phase6AIdentitiesMatchDossier": true,
+    "UnknownDossierHashes": [],
+    "Phase6BStatusEnumNowUsesFailed": true,
+    "NoImplicitPackageOrRuntimeAvailable": true,
+    "NoMinecraftOwnershipOrGameplayInInitialHardwareScope": true,
+    "All56TargetsRetainedAsDeferredNotPassed": true
+  },
+  "Findings": [
+    {
+      "Id": "R1",
+      "Severity": "ACCEPTANCE_AMBIGUITY",
+      "Status": "RESOLVED_BY_ROOT_REPORTED_CORRECTION",
+      "Locators": [
+        "HARDWARE-ACCEPTANCE.md:15",
+        "DIAGNOSTIC-MATRIX.md:D01/D14/D17"
+      ],
+      "Issue": "Native-control sequence references full D01/D14/D17 IDs, while those cases also require runtime/shim/Java/VM observations. Native-only subcases must not satisfy full S21 cases.",
+      "Recommendation": "Name D01.NATIVE, D14.NATIVE and D17.NATIVE subsets, retain full S21 case receipts separately, and prohibit promotion of native-control PASS.",
+      "ResolutionSource": "Root completion message; no additional publication edits or execution by reviewer",
+      "Resolution": "Native-control subcases are explicit and cannot promote a native-only result into a full S21 case PASS."
+    },
+    {
+      "Id": "R2",
+      "Severity": "ORACLE_AMBIGUITY",
+      "Status": "RESOLVED_BY_ROOT_REPORTED_CORRECTION",
+      "Locators": [
+        "WINDOWS-EXECUTION-PLAN.md:65"
+      ],
+      "Issue": "Configuration acceptance broadly permits a preserved/saved document or recoverable error without distinguishing the normal writable positive baseline from deliberate faults.",
+      "Recommendation": "Positive valid+writable baseline must save the selected value and persist it after restart; fault subcases require explicit classified failure plus preservation/recovery of the last valid state. An unexpected normal-save error fails that baseline.",
+      "ResolutionSource": "Root completion message; no additional publication edits or execution by reviewer",
+      "Resolution": "Valid writable configuration baseline requires save and restart persistence; intentional fault cases use a separate classified-error/preserved-state oracle."
+    },
+    {
+      "Id": "R3",
+      "Severity": "BOUND_INCONSISTENCY",
+      "Status": "RESOLVED_BY_ROOT_REPORTED_CORRECTION",
+      "Locators": [
+        "DIAGNOSTIC-MATRIX.md:D01/D02/D12",
+        "XBOX-DIAGNOSTIC-HARNESS.md:timing budgets"
+      ],
+      "Issue": "Matrix proposes10s/module,5s/query,2s tone; harness generic timing paragraph proposes15s module/query and5s audio. These can yield different deadline observations unless authoritative per-case profiles are specified.",
+      "Recommendation": "Make matrix/profile budgets authoritative and align example prose, or harmonize before approval; freeze exact durations under profile hash.",
+      "ResolutionSource": "Root completion message; no additional publication edits or execution by reviewer",
+      "Resolution": "Matrix is authoritative:10s module load,5s query,30s VM,2s tone within30s case,60s input,10s resume; root aligned harness prose."
+    },
+    {
+      "Id": "R4",
+      "Severity": "ENUM_INCONSISTENCY",
+      "Status": "RESOLVED_IN_ROOT_DRAFT_DURING_REVIEW",
+      "Locators": [
+        "README.md:82",
+        "DIAGNOSTIC-MATRIX.md:48",
+        "XBOX-DIAGNOSTIC-HARNESS.md:state flow"
+      ],
+      "Issue": "Earlier snapshot mixed FAIL/FAILED.",
+      "Resolution": "Current README/matrix now explicitly use FAILED, matching Windows Phase6A spelling and Xbox flow; NOT_RUN is only an unreached-stage marker."
+    }
+  ],
+  "Conclusion": "No unsafe execution, implicit deployment, production edit, ownership bypass, or assumed package availability authorized. Source identity checks matched the dossier. Root addressed the three acceptance/oracle/budget clarifications and enum consistency issue. Read-only review complete; no tests or runtime PASS established.",
+  "ReviewStatus": "CLOSED_ALL_REPORTED_FINDINGS_ADDRESSED"
+}

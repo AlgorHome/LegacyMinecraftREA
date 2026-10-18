@@ -1,0 +1,131 @@
+{
+  "schema": "legacyforge-phase6a-completion-audit-closure-v1",
+  "audited_at_utc": "2026-10-17T06:52:41.7255837Z",
+  "supersedes": "Snapshot findings in completion-audit.json/md only as explicitly listed; no change to behavioral blocked status.",
+  "approved_source_commit": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+  "source_edits_authorized_by_parent": [
+    "docs/research/legacy-launcher/tools/verify-test-receipts.py"
+  ],
+  "corrections_by_auditor": [
+    "Malformed X12 target null/list now returns validation errors instead of AttributeError",
+    "Shared predecessor artifact identities and Java major must match X12 summary",
+    "Digest letter case is accepted without changing artifact identity",
+    "loader_inventory_sha256 is accepted and checked as a required shared identity",
+    "Docstring states all56/fourruntime coverage and manual privacy review remain separate"
+  ],
+  "controls": {
+    "kind": "synthetic-validator-controls-only",
+    "command": "python -B analysis-local/final-audit/completion/validator_control_checks.py patched",
+    "baseline": {
+      "count": 27,
+      "satisfied": 21,
+      "meaning": "Six independent checker faults/missing consistency checks reproduced; these were never target runtime failures."
+    },
+    "patched": {
+      "count": 31,
+      "satisfied": 31,
+      "failures": []
+    },
+    "cli_checks": "python -B validator CLI accepted a deliberately synthetic linked receipt and BLOCKED template as structurally valid. This validates checker operation only.",
+    "no_target_or_device_tests_executed": true,
+    "validator_sha256": "8ae33dca3eb3b63742e977e972e6795183edaac6d2bfd55325c04b8783f2d255",
+    "test_plan_sha256": "77c62ebac147d64b1622c6983395c907b2858dd13c91b07909ef8203484f7174",
+    "reproduction_files": [
+      "validator_control_checks.py",
+      "validator-controls-baseline.json",
+      "validator-controls-patched.json"
+    ],
+    "synthetic_fixture_location": "validator-controls/; all fixtures conspicuously marked synthetic and excluded from publication."
+  },
+  "structural_coverage": {
+    "gates": 25,
+    "target_plans": 56,
+    "new_target_statuses": [
+      "BLOCKED"
+    ]
+  },
+  "finding_closures": [
+    {
+      "id": "C01",
+      "status": "OPEN_ENVIRONMENT",
+      "resolution": "No configured approved Windows guest, actual owner console receipts, exact package or account execution evidence supplied. Every actual behavioral outcome remains BLOCKED."
+    },
+    {
+      "id": "C02",
+      "status": "CLOSED_DOCUMENTATION_AND_POSITIVE_FIXTURE_AVAILABLE",
+      "resolution": "Root E20 supplies a public publisher-signed positive fixture; auditor confirmed local fixture SHA256 matches the record, which reports independent static signature verification VALID. W09 actual target acceptance remains BLOCKED."
+    },
+    {
+      "id": "C03",
+      "status": "CLOSED_DOCUMENTATION_CORRECTION",
+      "resolution": "W10/W11 now require desktop native_inventory_sha256, graphics_provider_sha256 and loader_inventory_sha256 instead of mandatory Mesa/GLFW hashes."
+    },
+    {
+      "id": "C04",
+      "status": "CLOSED_FOR_SINGLE_TARGET_FORMAT_AND_REFERENCE_CHECKING",
+      "resolution": "X12 now checks one exact approved tuple, supported resolved provider, expected Java major, required passing X01-X11/X13 predecessors and consistent package/tuple/JVM/native/manifest/loader identities. All56-target/four-runtime aggregate coverage and truth of observations are still separate."
+    },
+    {
+      "id": "C05",
+      "status": "MITIGATED_MANUAL_REVIEW_REQUIRED",
+      "resolution": "Nested primary sections now reject unknown fields. Tool docstring explicitly disclaims privacy certification; arbitrary freeform values and attachment content still need owner/manual redaction review."
+    },
+    {
+      "id": "C06",
+      "status": "CLOSED_DOCUMENTATION_CORRECTION",
+      "resolution": "Legacy Forge-selected target explicitly records EXACT_LOADER_VERSION_UNRESOLVED_IN_APPROVED_SOURCE and UNSUPPORTED_PROVIDER; X12 rejects a PASS for it."
+    },
+    {
+      "id": "C07",
+      "status": "OPEN_ARTIFACT_PREREQUISITE_NOW_EXPLICIT",
+      "resolution": "APPROVED_DIAGNOSTIC_PACKAGE_NOT_SUPPLIED is explicit for X03-X08 and every target plan. No diagnostic package or real probe outcome is fabricated."
+    },
+    {
+      "id": "C08",
+      "status": "CLOSED_GENERATED_CACHE_ABSENT",
+      "resolution": "A later read-only check confirmed tools/__pycache__ absent from publication after root's reversible cleanup. Auditor checker execution always used python -B."
+    }
+  ],
+  "remaining_completion_blockers": [
+    "Approved disposable Windows environment and explicit target-execution approval",
+    "Exact approved APPX/dependencies/packaged JVM/shim/native identities",
+    "Approved independent diagnostic package",
+    "Real Series X owner observations for all applicable gates/56 targets",
+    "Owner-controlled legitimate account/ownership tests",
+    "Historical acquisition/update/publisher-authenticity evidence where unavailable"
+  ],
+  "limitations": [
+    "Checker controls are not target/device execution and must never be counted in W/X pass totals.",
+    "Single X12 receipt validation does not establish all56-target or four-runtime aggregate completion.",
+    "Allowlist/reference/hash checks cannot establish observation truth or certify absence of secrets.",
+    "Root final publication hash regeneration is required after source/document edits."
+  ],
+  "subsequent_observations": {
+    "observed_at_utc": "2026-10-17T06:58:46.9597759Z",
+    "E20": {
+      "positive_fixture_available": true,
+      "local_sha256_matches_record": true,
+      "sha256": "9081bab55e8c8ba72ff3c63a1c2cbb85ba523bd2ef357b94e272ba913cf5c52c",
+      "signature_verification_reported_by_parent": "VALID",
+      "actual_target_signature_acceptance_observed": false
+    },
+    "E21": {
+      "all56_plans_retained": true,
+      "hash_verified_minecraft_version_metadata": 22,
+      "exact_fabric_profiles": 20,
+      "resolved_forge_neoforge_release_indices": 34,
+      "unresolved_source_selected_loader": 1,
+      "vanilla_not_applicable": 1,
+      "target_execution": 0
+    },
+    "runtime_crosscheck": {
+      "current_expected_major25_rows": 12,
+      "matching_declared_baseline": 51,
+      "above_declared_baseline": 5,
+      "too_old_label_major_count": 0,
+      "packaged_runtime_observed": false,
+      "all56_runtime_statuses": "BLOCKED"
+    },
+    "publication_generated_cache_absent": true
+  }
+}

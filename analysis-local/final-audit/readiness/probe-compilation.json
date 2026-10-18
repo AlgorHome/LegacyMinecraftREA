@@ -1,0 +1,25 @@
+{
+  "Mode": "COMPILATION_ONLY",
+  "Compiler": "Existing trusted Ghidra JDK21 javac",
+  "CompilerReleaseMetadata": "Adoptium 21.0.12.1+1-LTS x86_64",
+  "ReleaseTarget": 8,
+  "CompilerExitCode": 0,
+  "SourceSha256": "56a6250ddf494136c6214fab269966ec2c099b60642002a28becd543ec58ddfd",
+  "ClassFiles": [
+    {
+      "Name": "RuntimeProbe.class",
+      "Length": 10267,
+      "MajorVersion": 52,
+      "Sha256": "8725b1fef3ff31b2d7d8403f06e61d61f76c1edf5dc1f1aba82032ecd4c4fc9b"
+    },
+    {
+      "Name": "RuntimeProbe$1.class",
+      "Length": 707,
+      "MajorVersion": 52,
+      "Sha256": "a3148a91e3c1d171c1ff53f73914fb74de615df7c14cdc910cb83ff368d1278e"
+    }
+  ],
+  "ProbeExecuted": false,
+  "TargetExecuted": false,
+  "ExecutionPassEstablished": false
+}
