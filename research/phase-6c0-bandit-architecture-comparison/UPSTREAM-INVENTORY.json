@@ -1,0 +1,236 @@
+[
+  {
+    "path": "LICENSE",
+    "url": "https://github.com/veroxsity/JavaUWP/blob/ba42117784ce201eb10ab5220ee25382e76cec1f/LICENSE",
+    "commit": "ba42117784ce201eb10ab5220ee25382e76cec1f",
+    "retrievedAtUtc": "2026-10-18T01:01:14.807525+00:00",
+    "sha256": "26e8a2205e9eff3e9cf7d09c6b69878d9685d43be7fcf80a0d995b5b4b2e0c1c",
+    "bytes": 4765,
+    "lines": 85,
+    "status": "ACCESSIBLE"
+  },
+  {
+    "path": "docs/LEGAL.md",
+    "url": "https://github.com/veroxsity/JavaUWP/blob/ba42117784ce201eb10ab5220ee25382e76cec1f/docs/LEGAL.md",
+    "commit": "ba42117784ce201eb10ab5220ee25382e76cec1f",
+    "retrievedAtUtc": "2026-10-18T01:01:14.881841+00:00",
+    "sha256": "1bd5be1b3a6ca7ef05c0f8b93cf683c356de761bcf878884126875d61d3ade2a",
+    "bytes": 2904,
+    "lines": 53,
+    "status": "ACCESSIBLE"
+  },
+  {
+    "path": "README.md",
+    "url": "https://github.com/veroxsity/JavaUWP/blob/ba42117784ce201eb10ab5220ee25382e76cec1f/README.md",
+    "commit": "ba42117784ce201eb10ab5220ee25382e76cec1f",
+    "retrievedAtUtc": "2026-10-18T01:01:15.049474+00:00",
+    "sha256": "aed137e32f52f99ff298f2fd91ee1c77286b942cec2dd0a354adf681c41d0370",
+    "bytes": 10947,
+    "lines": 155,
+    "status": "ACCESSIBLE"
+  },
+  {
+    "path": "AGENTS.md",
+    "url": "https://github.com/veroxsity/JavaUWP/blob/ba42117784ce201eb10ab5220ee25382e76cec1f/AGENTS.md",
+    "commit": "ba42117784ce201eb10ab5220ee25382e76cec1f",
+    "retrievedAtUtc": "2026-10-18T01:01:15.208779+00:00",
+    "sha256": "ab8ea2d0f4cab708a2e66eee9b9343d40031fdc43802e2c32f7d9b9a70a79571",
+    "bytes": 1667,
+    "lines": 24,
+    "status": "ACCESSIBLE"
+  },
+  {
+    "path": "CONTRIBUTING.md",
+    "url": "https://github.com/veroxsity/JavaUWP/blob/ba42117784ce201eb10ab5220ee25382e76cec1f/CONTRIBUTING.md",
+    "commit": "ba42117784ce201eb10ab5220ee25382e76cec1f",
+    "retrievedAtUtc": "2026-10-18T01:01:15.365330+00:00",
+    "sha256": "54cc9689df39638988068e52b5006691c9553d2652f480ae86dceceb0a329e25",
+    "bytes": 856,
+    "lines": 11,
+    "status": "ACCESSIBLE"
+  },
+  {
+    "path": "docs/ARCHITECTURE.md",
+    "url": "https://github.com/veroxsity/JavaUWP/blob/ba42117784ce201eb10ab5220ee25382e76cec1f/docs/ARCHITECTURE.md",
+    "commit": "ba42117784ce201eb10ab5220ee25382e76cec1f",
+    "retrievedAtUtc": "2026-10-18T01:01:15.526891+00:00",
+    "sha256": "2de492bed57c77a452be77e5445c66906f13e84e7f78ebdad93e28302f15e831",
+    "bytes": 11505,
+    "lines": 206,
+    "status": "ACCESSIBLE"
+  },
+  {
+    "path": "docs/BUILDING.md",
+    "url": "https://github.com/veroxsity/JavaUWP/blob/ba42117784ce201eb10ab5220ee25382e76cec1f/docs/BUILDING.md",
+    "commit": "ba42117784ce201eb10ab5220ee25382e76cec1f",
+    "retrievedAtUtc": "2026-10-18T01:01:15.686621+00:00",
+    "sha256": "a43ba8ce09894596e10984f16dab60317aac0176a6fbac952792361b8799e8b2",
+    "bytes": 21023,
+    "lines": 459,
+    "status": "ACCESSIBLE"
+  },
+  {
+    "path": "docs/PATCHING.md",
+    "url": "https://github.com/veroxsity/JavaUWP/blob/ba42117784ce201eb10ab5220ee25382e76cec1f/docs/PATCHING.md",
+    "commit": "ba42117784ce201eb10ab5220ee25382e76cec1f",
+    "retrievedAtUtc": "2026-10-18T01:01:15.846207+00:00",
+    "sha256": "8a10dde240d47ae1273ab5984841f276ec46b76f4c5234db175ab73970ac815b",
+    "bytes": 10267,
+    "lines": 231,
+    "status": "ACCESSIBLE"
+  },
+  {
+    "path": "docs/THIRD-PARTY.md",
+    "url": "https://github.com/veroxsity/JavaUWP/blob/ba42117784ce201eb10ab5220ee25382e76cec1f/docs/THIRD-PARTY.md",
+    "commit": "ba42117784ce201eb10ab5220ee25382e76cec1f",
+    "retrievedAtUtc": "2026-10-18T01:01:16.032700+00:00",
+    "sha256": "7ec8f67e4fbb9c26b12c549057979575e347cf958102f98c53f01c67cf2ec466",
+    "bytes": 2777,
+    "lines": 54,
+    "status": "ACCESSIBLE"
+  },
+  {
+    "path": "mesa-runtime/README.md",
+    "url": "https://github.com/veroxsity/JavaUWP/blob/ba42117784ce201eb10ab5220ee25382e76cec1f/mesa-runtime/README.md",
+    "commit": "ba42117784ce201eb10ab5220ee25382e76cec1f",
+    "retrievedAtUtc": "2026-10-18T01:01:48.764695+00:00",
+    "sha256": "4fbcb07259b111a6721c03ca6f89e4b61e140c9463c8602fdc699ae64971e9ac",
+    "lines": 29,
+    "status": "ACCESSIBLE"
+  },
+  {
+    "path": "config/versions.tsv",
+    "url": "https://github.com/veroxsity/JavaUWP/blob/ba42117784ce201eb10ab5220ee25382e76cec1f/config/versions.tsv",
+    "commit": "ba42117784ce201eb10ab5220ee25382e76cec1f",
+    "retrievedAtUtc": "2026-10-18T01:01:48.924495+00:00",
+    "sha256": "2ad6951b29700551416f3f634d2d15f60eed54fb7d424a1eb7cd989b00a0d134",
+    "lines": 57,
+    "status": "ACCESSIBLE"
+  },
+  {
+    "path": "scripts/config.ps1",
+    "url": "https://github.com/veroxsity/JavaUWP/blob/ba42117784ce201eb10ab5220ee25382e76cec1f/scripts/config.ps1",
+    "commit": "ba42117784ce201eb10ab5220ee25382e76cec1f",
+    "retrievedAtUtc": "2026-10-18T01:01:49.098771+00:00",
+    "sha256": "772777475383dccc7e6eda3b3ddc72d2ed28a319fdfa20182d72b7fced3ce161",
+    "lines": 40,
+    "status": "ACCESSIBLE"
+  },
+  {
+    "path": "MC.Xbox/launch/minecraft_launch.cpp",
+    "url": "https://github.com/veroxsity/JavaUWP/blob/ba42117784ce201eb10ab5220ee25382e76cec1f/MC.Xbox/launch/minecraft_launch.cpp",
+    "commit": "ba42117784ce201eb10ab5220ee25382e76cec1f",
+    "retrievedAtUtc": "2026-10-18T01:01:49.331195+00:00",
+    "sha256": "b4d1a48755deb5133a6fa1c59210391d335d479b9f8f6a6b0a5c5800dff57060",
+    "lines": 1536,
+    "status": "ACCESSIBLE"
+  },
+  {
+    "path": "MC.Xbox/launch/launch_internal.cpp",
+    "url": "https://github.com/veroxsity/JavaUWP/blob/ba42117784ce201eb10ab5220ee25382e76cec1f/MC.Xbox/launch/launch_internal.cpp",
+    "commit": "ba42117784ce201eb10ab5220ee25382e76cec1f",
+    "retrievedAtUtc": "2026-10-18T01:01:49.486381+00:00",
+    "sha256": "92ca673eb04449c9bbf960e452be338245d4ebba53d3e5e52a5d97c92e0973a1",
+    "lines": 309,
+    "status": "ACCESSIBLE"
+  },
+  {
+    "path": "MC.Xbox/App.cpp",
+    "url": "https://github.com/veroxsity/JavaUWP/blob/ba42117784ce201eb10ab5220ee25382e76cec1f/MC.Xbox/App.cpp",
+    "commit": "ba42117784ce201eb10ab5220ee25382e76cec1f",
+    "retrievedAtUtc": "2026-10-18T01:01:49.729121+00:00",
+    "sha256": "54e636820025d9e3e63bc8cefb9c4f4c57403831a9b885aca84d44e54fbdfb93",
+    "lines": 939,
+    "status": "ACCESSIBLE"
+  },
+  {
+    "path": "MC.Xbox/Package.appxmanifest",
+    "url": "https://github.com/veroxsity/JavaUWP/blob/ba42117784ce201eb10ab5220ee25382e76cec1f/MC.Xbox/Package.appxmanifest",
+    "commit": "ba42117784ce201eb10ab5220ee25382e76cec1f",
+    "retrievedAtUtc": "2026-10-18T01:01:49.901710+00:00",
+    "sha256": "e802c97026a4d4804e558242f2c7e41ae44525078fc1ba889b384c6522355878",
+    "lines": 51,
+    "status": "ACCESSIBLE"
+  },
+  {
+    "path": "glfw_shim/wgl_backend.h",
+    "url": "https://github.com/veroxsity/JavaUWP/blob/ba42117784ce201eb10ab5220ee25382e76cec1f/glfw_shim/wgl_backend.h",
+    "commit": "ba42117784ce201eb10ab5220ee25382e76cec1f",
+    "retrievedAtUtc": "2026-10-18T01:01:50.062870+00:00",
+    "sha256": "b2dee02955e1ae554afbb5eb5373e7d5cf486313b6bae8c5f20fe7729e51b37c",
+    "lines": 157,
+    "status": "ACCESSIBLE"
+  },
+  {
+    "path": "glfw_shim/build_glfw.ps1",
+    "url": "https://github.com/veroxsity/JavaUWP/blob/ba42117784ce201eb10ab5220ee25382e76cec1f/glfw_shim/build_glfw.ps1",
+    "commit": "ba42117784ce201eb10ab5220ee25382e76cec1f",
+    "retrievedAtUtc": "2026-10-18T01:01:50.224837+00:00",
+    "sha256": "f9632b24eb61b18b76c7831b6bc29465f35b97c5e0fb91a7b2f68b5304e099c9",
+    "lines": 68,
+    "status": "ACCESSIBLE"
+  },
+  {
+    "path": "glfw_shim/glfw_uwp.cpp",
+    "url": "https://github.com/veroxsity/JavaUWP/blob/ba42117784ce201eb10ab5220ee25382e76cec1f/glfw_shim/glfw_uwp.cpp",
+    "commit": "ba42117784ce201eb10ab5220ee25382e76cec1f",
+    "retrievedAtUtc": "2026-10-18T01:02:03.253594+00:00",
+    "sha256": "8ef8ba71a3bb3b43cbaef575c2d8a7e409a0e6813ec7e10b2c12b3aee5cc2f50",
+    "lines": 4150,
+    "status": "ACCESSIBLE"
+  },
+  {
+    "path": "build.ps1",
+    "url": "https://github.com/veroxsity/JavaUWP/blob/ba42117784ce201eb10ab5220ee25382e76cec1f/build.ps1",
+    "commit": "ba42117784ce201eb10ab5220ee25382e76cec1f",
+    "retrievedAtUtc": "2026-10-18T01:02:03.641515+00:00",
+    "sha256": "5e87230881545a2d4f58c58f190f0235de6767ffeb5597002949eaa430b84598",
+    "lines": 1332,
+    "status": "ACCESSIBLE"
+  },
+  {
+    "path": "MC.Xbox/launch/loaders/loader.cpp",
+    "url": "https://github.com/veroxsity/JavaUWP/blob/ba42117784ce201eb10ab5220ee25382e76cec1f/MC.Xbox/launch/loaders/loader.cpp",
+    "commit": "ba42117784ce201eb10ab5220ee25382e76cec1f",
+    "retrievedAtUtc": "2026-10-18T01:02:03.948012+00:00",
+    "sha256": "e50d588f7357cadaa01ec8e8f63e990c0582a38074e570335361fe747202d51f",
+    "lines": 93,
+    "status": "ACCESSIBLE"
+  },
+  {
+    "path": "MC.Xbox/launch/runtime_manager.cpp",
+    "url": "https://github.com/veroxsity/JavaUWP/blob/ba42117784ce201eb10ab5220ee25382e76cec1f/MC.Xbox/launch/runtime_manager.cpp",
+    "commit": "ba42117784ce201eb10ab5220ee25382e76cec1f",
+    "retrievedAtUtc": "2026-10-18T01:02:49.294879+00:00",
+    "sha256": "549958be39fbd467bc9b7f757119ed9d0cb76c1937187bd4b184583af7f677d6",
+    "lines": 1367,
+    "status": "ACCESSIBLE"
+  },
+  {
+    "path": "MC.Xbox/launch/loaders/forge.cpp",
+    "url": "https://github.com/veroxsity/JavaUWP/blob/ba42117784ce201eb10ab5220ee25382e76cec1f/MC.Xbox/launch/loaders/forge.cpp",
+    "commit": "ba42117784ce201eb10ab5220ee25382e76cec1f",
+    "retrievedAtUtc": "2026-10-18T01:02:49.635161+00:00",
+    "sha256": "f3b6fc4cf89c5cc0265d1efffee2bef92abf6b99902b2f924bbe71bff065324a",
+    "lines": 686,
+    "status": "ACCESSIBLE"
+  },
+  {
+    "path": "MC.Xbox/launch/loaders/neoforge.cpp",
+    "url": "https://github.com/veroxsity/JavaUWP/blob/ba42117784ce201eb10ab5220ee25382e76cec1f/MC.Xbox/launch/loaders/neoforge.cpp",
+    "commit": "ba42117784ce201eb10ab5220ee25382e76cec1f",
+    "retrievedAtUtc": "2026-10-18T01:02:49.848164+00:00",
+    "sha256": "138fd55bd34776683bd9bfce2d6dbc4c360908af340efbf8818d23692d27c5da",
+    "lines": 564,
+    "status": "ACCESSIBLE"
+  },
+  {
+    "path": "MC.Xbox/auth/minecraft_auth.cpp",
+    "url": "https://github.com/veroxsity/JavaUWP/blob/ba42117784ce201eb10ab5220ee25382e76cec1f/MC.Xbox/auth/minecraft_auth.cpp",
+    "commit": "ba42117784ce201eb10ab5220ee25382e76cec1f",
+    "retrievedAtUtc": "2026-10-18T01:02:50.053495+00:00",
+    "sha256": "d9248e6c24c134f82068022416c22e3f2c911379e51e4d0524b90cf0a2d24722",
+    "lines": 419,
+    "status": "ACCESSIBLE"
+  }
+]

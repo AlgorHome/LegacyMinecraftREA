@@ -1,0 +1,77 @@
+{
+  "researchDateLocal": "2026-10-17 America/Chicago",
+  "recordedAtUtc": "2026-10-18T04:19:08.587876+00:00",
+  "localLegalFiles": [
+    {
+      "path": "C:\\Users\\arinze\\AppData\\Local\\LegacyForge\\jdks\\jdk-21.0.12.1\\NOTICE",
+      "sha256": "c02756bcd9fa8191bf0fda4451bc018414dd44ee35bf09922c24377a475e4b5a",
+      "bytes": 2400
+    },
+    {
+      "path": "C:\\Users\\arinze\\AppData\\Local\\LegacyForge\\jdks\\jdk-21.0.12.1\\legal\\java.base\\LICENSE",
+      "sha256": "4b9abebc4338048a7c2dc184e9f800deb349366bdf28eb23c2677a77b4c87726",
+      "bytes": 19274
+    },
+    {
+      "path": "C:\\Users\\arinze\\AppData\\Local\\LegacyForge\\jdks\\jdk-21.0.12.1\\legal\\java.base\\ADDITIONAL_LICENSE_INFO",
+      "sha256": "a69bce275ba7a3570af6579cb0f55682cd75fedfcd49e0e8e9022270c447c916",
+      "bytes": 2114
+    },
+    {
+      "path": "C:\\Users\\arinze\\AppData\\Local\\LegacyForge\\jdks\\jdk-21.0.12.1\\legal\\java.base\\ASSEMBLY_EXCEPTION",
+      "sha256": "75292f03bf23d3db7c985aecc191029b93883200721ed23ed34a2e601463df33",
+      "bytes": 1514
+    }
+  ],
+  "primaryReferences": [
+    {
+      "title": "Adoptium release",
+      "url": "https://github.com/adoptium/temurin21-binaries/releases/tag/jdk-21.0.12.1%2B1"
+    },
+    {
+      "title": "Adoptium support",
+      "url": "https://adoptium.net/support"
+    },
+    {
+      "title": "Adoptium FAQ",
+      "url": "https://adoptium.net/docs/faq"
+    },
+    {
+      "title": "Microsoft download",
+      "url": "https://learn.microsoft.com/en-us/java/openjdk/download"
+    },
+    {
+      "title": "Microsoft FAQ",
+      "url": "https://learn.microsoft.com/en-us/java/openjdk/faq"
+    },
+    {
+      "title": "Microsoft support",
+      "url": "https://learn.microsoft.com/en-us/java/openjdk/support"
+    },
+    {
+      "title": "Corretto downloads",
+      "url": "https://docs.aws.amazon.com/corretto/latest/corretto-21-ug/downloads-list.html"
+    },
+    {
+      "title": "Corretto overview",
+      "url": "https://docs.aws.amazon.com/corretto/latest/corretto-21-ug/what-is-corretto-21.html"
+    },
+    {
+      "title": "JNI Invocation API21",
+      "url": "https://docs.oracle.com/en/java/javase/21/docs/specs/jni/invocation.html"
+    },
+    {
+      "title": "JNI functions21",
+      "url": "https://docs.oracle.com/en/java/javase/21/docs/specs/jni/functions.html"
+    },
+    {
+      "title": "LoadPackagedLibrary",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-loadpackagedlibrary"
+    },
+    {
+      "title": "Java21 launcher options",
+      "url": "https://docs.oracle.com/en/java/javase/21/docs/specs/man/java.html"
+    }
+  ],
+  "runtimeDownloads": 0
+}

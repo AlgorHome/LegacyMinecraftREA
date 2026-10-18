@@ -1,0 +1,50 @@
+[
+  {
+    "path": "bin\\server\\jvm.dll",
+    "status": "Valid",
+    "statusMessage": "Signature verified.",
+    "signerSubject": "CN=Eclipse Foundation, O=Eclipse Foundation, L=Bruxelles, C=BE",
+    "signerThumbprint": "F621CFCD35923BF836B2C2AED71EE689262AFE5D",
+    "timestampSubject": "CN=DigiCert SHA256 RSA4096 Timestamp Responder 2025 1, O=\"DigiCert, Inc.\", C=US"
+  },
+  {
+    "path": "bin\\java.dll",
+    "status": "Valid",
+    "statusMessage": "Signature verified.",
+    "signerSubject": "CN=Eclipse Foundation, O=Eclipse Foundation, L=Bruxelles, C=BE",
+    "signerThumbprint": "F621CFCD35923BF836B2C2AED71EE689262AFE5D",
+    "timestampSubject": "CN=DigiCert SHA256 RSA4096 Timestamp Responder 2025 1, O=\"DigiCert, Inc.\", C=US"
+  },
+  {
+    "path": "bin\\jli.dll",
+    "status": "Valid",
+    "statusMessage": "Signature verified.",
+    "signerSubject": "CN=Eclipse Foundation, O=Eclipse Foundation, L=Bruxelles, C=BE",
+    "signerThumbprint": "F621CFCD35923BF836B2C2AED71EE689262AFE5D",
+    "timestampSubject": "CN=DigiCert SHA256 RSA4096 Timestamp Responder 2025 1, O=\"DigiCert, Inc.\", C=US"
+  },
+  {
+    "path": "bin\\vcruntime140.dll",
+    "status": "Valid",
+    "statusMessage": "Signature verified.",
+    "signerSubject": "CN=Microsoft Windows Software Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+    "signerThumbprint": "19FAC08D74CA905CEC066C597708A16148C8FCD5",
+    "timestampSubject": "CN=Microsoft Time-Stamp Service, OU=nShield TSS ESN:8D00-05E0-D947, OU=Microsoft America Operations, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+  },
+  {
+    "path": "bin\\vcruntime140_1.dll",
+    "status": "Valid",
+    "statusMessage": "Signature verified.",
+    "signerSubject": "CN=Microsoft Windows Software Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+    "signerThumbprint": "19FAC08D74CA905CEC066C597708A16148C8FCD5",
+    "timestampSubject": "CN=Microsoft Time-Stamp Service, OU=Thales TSS ESN:3BD4-4B80-69C3, OU=Microsoft Ireland Operations Limited, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+  },
+  {
+    "path": "bin\\msvcp140.dll",
+    "status": "Valid",
+    "statusMessage": "Signature verified.",
+    "signerSubject": "CN=Microsoft Windows Software Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+    "signerThumbprint": "19FAC08D74CA905CEC066C597708A16148C8FCD5",
+    "timestampSubject": "CN=Microsoft Time-Stamp Service, OU=nShield TSS ESN:8603-05E0-D947, OU=Microsoft America Operations, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+  }
+]

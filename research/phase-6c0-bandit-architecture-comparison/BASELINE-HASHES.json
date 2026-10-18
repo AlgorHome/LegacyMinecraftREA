@@ -1,0 +1,2739 @@
+{
+  "head": "deb44072dd8e3ef2c936307b0a6788c6a95fad6b",
+  "branch": "research/phase6b5x-d06-srv03",
+  "status": "",
+  "originalFrozenCount": 175,
+  "preservedFiles": [
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\D06-FMT01-D10A4D4B-45B4-4E67-972F-5B7A13675204.json",
+      "sha256": "453d84192d19a698513513742468dae8509c74973ecd9645fe08266cb1184893"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\D06-HW01-594ACA53-FC63-4709-9C8B-BE96BEDD84BD.json",
+      "sha256": "14d609bddfe39019ed4808a23190319895a4b9d4d7117eb072c6f74014a49bc7"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\D06-RES01a-7A897A91-DE14-4A33-82AE-4737F5575C6D.json",
+      "sha256": "10081860917f805a82f366d0e2e9ddccb11a07deb330e16643bda68e55227fe9"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\D06-SRV01-DDCAC652-19A4-451E-8AD9-EB191AC45A23.json",
+      "sha256": "5a989a129e49658d42dcc61abc364b8a614feb7a7006ed897394a4c178f51d9b"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\D06-SRV02-8A125555-353C-4C3D-AD19-D8849FD138A8.json",
+      "sha256": "307dde1773ff9f5aba5b44862c7e9ef1c4179d97035161d873d832364a6e0436"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\IMG_5564.JPG",
+      "sha256": "9dec20778c9add96fb54d18ea84fa4bb2d316b89435ae588fe37ae92eddac8e1"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\IMG_5565.JPG",
+      "sha256": "6f71797139b62009b9a353877b0db42aa1091211cb028edd79a03ade28293f18"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b3d-signing\\20261017-132111-5ff08807\\RuntimeDiagnostics.D00.signed.appx",
+      "sha256": "51e5c74462e79a296335beab4830f479e861e7132e0f660c680f6974d3b27530"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b4c-signing\\20261017-140847-c38e9c14\\RuntimeDiagnostics.D00.ActivationExperiment.0.1.2.0.signed.appx",
+      "sha256": "e4ffef8502405cd6bbc6d8e27b09a40c8f9119f6b424bfca53c5e08becf6ede7"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b4e-evidence-retrieval\\OWNER-INVENTORY.json",
+      "sha256": "f5c5a336f4f4207da8d3a81aabc9dc444486c44d47f39a7194484e338c63a164"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b4f-signing\\20261017-143140-118313f1\\RuntimeDiagnostics.D00.MTAExperiment.0.1.3.0.signed.appx",
+      "sha256": "ca93ec2f10b75a7e9e87df679a2cbf5cdf84630fc94820df731e2f3759661848"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b4h-hardware-receipts\\FINAL-ACCEPTANCE-REVIEW.md",
+      "sha256": "5924e40e61d601a29c2c1239005f50eeb66ce5cdb7edcfe6d15ef590560338c1"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b4h-hardware-receipts\\originals\\D00-0799F3FD-1056-4709-9302-202AA86C4C5D.json",
+      "sha256": "1d247637c6551e2da289eecd3b343e0728b57aa4385a852590f61444fe888b7f"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b4h-hardware-receipts\\originals\\Xbox-D00-PASS.png",
+      "sha256": "74f383324231a453d88474ebc8a83a4ffb7c178f720c0384cbe6b8b7be8bf6fa"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b5-fmt01-hardware-acceptance\\originals\\D06-FMT01-D10A4D4B-45B4-4E67-972F-5B7A13675204.json",
+      "sha256": "453d84192d19a698513513742468dae8509c74973ecd9645fe08266cb1184893"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b5-fmt01-hardware-acceptance\\originals\\Xbox-D06-FMT01-PASS.png",
+      "sha256": "9a4c59da1a878a699aa9936081bd69cf5e21214923ae529ce7c59a919abafa68"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b5-hw01-acceptance\\originals\\D06-HW01-594ACA53-FC63-4709-9C8B-BE96BEDD84BD.json",
+      "sha256": "14d609bddfe39019ed4808a23190319895a4b9d4d7117eb072c6f74014a49bc7"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b5-hw01-acceptance\\originals\\Xbox-D06-HW01-PASS.png",
+      "sha256": "335a12b5cd31ab42d0a32e131c968b0a9549d0eb0cb1b26b1c83bcbbe9e15eff"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b5c-signing\\20261017-173712-e540416b\\NativeDiagnostics.D06-HW01.0.2.0.0.signed.appx",
+      "sha256": "d4629d1f494f73db7dcb6290bee8c5c9f28375c8630c531e58b3ee95a6f05908"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b5f-signing\\20261017-180640-31684a3e\\NativeDiagnostics.D06-FMT01.0.2.1.0.signed.appx",
+      "sha256": "ae19e5ff93438bcf8a3c9e0d42ad0323908ee83d95231cba9dcd9a319fd5d8ef"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b5f-signing\\20261017-180640-31684a3e\\SIGNING-VERIFICATION.json",
+      "sha256": "1648b8dbb9e5675ce578e0b5a4b72ffdf26b3ae840f578e852d2d6124791b156"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b5f-signing\\20261017-180640-31684a3e\\signtool-sign.log",
+      "sha256": "33e8fe077c69f9b4dd0a1d8ee509387b5e1f5088dd687f8240ea049d94bbdb28"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b5f-signing\\20261017-180640-31684a3e\\signtool-verify.log",
+      "sha256": "718655bbcb81e35c829383ed97cf5b1de34a60917321bb5076a830d78720f57c"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b5j-signing\\20261017-183700-68e8cd8f\\NativeDiagnostics.D06-RES01a.0.2.2.0.signed.appx",
+      "sha256": "ead7016c94e551fac43e2b622b323354bfa4506fe507f44bf5e98f112b8f0c3f"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b5j-signing\\20261017-183700-68e8cd8f\\SIGNING-VERIFICATION.json",
+      "sha256": "31a4364b77a530765d5280a8a393579ecf490e953ef083f345f68cfa1b717382"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b5j-signing\\20261017-183700-68e8cd8f\\signtool-sign.log",
+      "sha256": "d280855a4c8c28d35ad5c901f957fe8691fc13f3a8b32bbd0dbdc0de29681d69"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b5j-signing\\20261017-183700-68e8cd8f\\signtool-verify.log",
+      "sha256": "d9fecb7ead0c2c6f98330c730685ae033e2e17961c2cd8dccd7bf863822391a5"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b5m-res01a-hardware-acceptance\\originals\\D06-RES01a-7A897A91-DE14-4A33-82AE-4737F5575C6D.json",
+      "sha256": "10081860917f805a82f366d0e2e9ddccb11a07deb330e16643bda68e55227fe9"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b5m-res01a-hardware-acceptance\\originals\\IMG_5563.JPG",
+      "sha256": "d62d1121b060179d27790454fc9165e26cc6fe4abfba7ab9c08c0723e740aee8"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b5o-signing\\20261017-190225-a21c9a46\\NativeDiagnostics.D06-SRV01.0.2.3.0.signed.appx",
+      "sha256": "da28a5c22cb27b913b2bf296155c9d9bc5745e37ff3b2af88832f7661e042724"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b5o-signing\\20261017-190225-a21c9a46\\SIGNING-VERIFICATION.json",
+      "sha256": "575679afa539238f0377932fb60d3b2658c5d06e122d1e37e209743daa0efbf8"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b5o-signing\\20261017-190225-a21c9a46\\signtool-sign.log",
+      "sha256": "908f08a81102437ce186f5e956f09eaa0dbc279ff4f0fdcfa9b79e020212050b"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b5o-signing\\20261017-190225-a21c9a46\\signtool-verify.log",
+      "sha256": "3e7838b127171b8d0fd10c161f5c4e3cec75f07bade7638befe825c72a1a24e5"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b5r-srv01-hardware-acceptance\\originals\\D06-SRV01-DDCAC652-19A4-451E-8AD9-EB191AC45A23.json",
+      "sha256": "5a989a129e49658d42dcc61abc364b8a614feb7a7006ed897394a4c178f51d9b"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b5r-srv01-hardware-acceptance\\originals\\IMG_5564.JPG",
+      "sha256": "9dec20778c9add96fb54d18ea84fa4bb2d316b89435ae588fe37ae92eddac8e1"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b5t-signing\\20261017-193135-107a9142\\NativeDiagnostics.D06-SRV02.0.2.4.0.signed.appx",
+      "sha256": "a77e31a5922bca35a09084dbe885b5d13ed1207571f66458644d5ac7ee8738d5"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b3c-certificate\\CERTIFICATE-PUBLIC-METADATA.json",
+      "sha256": "0b97d0d88a9e549cbaa453d6d17f54d087a5d1da9dea45c3ee4f79c66d725560"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b4a-activation-investigation\\OWNER-OBSERVATIONS.json",
+      "sha256": "720a92d11875ccb422d09f8b13c58f611e9e818b21fb79f6cbc1764b1c8944c0"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b4d-activation-triage\\OBSERVATIONS.json",
+      "sha256": "bb499a69af25fe5aaab20dfe3065ef5846078642d5235eabf582b1d68fba35d2"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-fmt01\\BASELINE-REVALIDATION.json",
+      "sha256": "828656cffa20af3f8e572cf60b30bcb281c815f6da1ec007799b340990ab454d"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-fmt01\\BUILD-EVIDENCE.json",
+      "sha256": "b1c47a28111513b8e2e847e22afe977d92bf96084a773a3163a44b30d7085830"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-fmt01\\BUILD-RECEIPT.json",
+      "sha256": "a5baba5f2bfb7f54ae715eec3bbdf752ecc17d2666cd3c353a2f6fc845138cf7"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-fmt01\\HARDWARE-ACCEPTANCE-PLAN.md",
+      "sha256": "2efcee8f55cbfcd52f296a2eb8357a934d231225082cb54d9031a9c776d07d16"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-fmt01\\IMPLEMENTATION-REPORT.md",
+      "sha256": "fc6279327ffcdcb72f807bd1510910a5444bcd063dcc2f218d90b23c9e40b9b4"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-fmt01\\RECEIPT-SCHEMA.json",
+      "sha256": "3373265fb3aa787a375e4edc1da54e4807793bf4151d645519d9c45b5cdbb6b7"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-fmt01\\SOURCE-DIFF.patch",
+      "sha256": "b737f5274eaa25af25c08169dc2d3e36ba1effcf1a3b4f2685c61510c3dda862"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-fmt01\\STATIC-SAFETY-REVIEW.md",
+      "sha256": "a232fb0b1a2d8cfd291c9331b4cd2223425662c1ddbe1b9c0696521684413658"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-fmt01\\STATIC-VERIFICATION.json",
+      "sha256": "61b4ee99b6e747caa522d9efadcabb41ffe778952adccb035366e9842c8d9073"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-hw01\\ADDITIONAL-STATIC-REVIEW.json",
+      "sha256": "d7d9520fae2a8b69377adabc096c1f3321e208ad8d6ecb1f62ef11a411d7f2e8"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-hw01\\BUILD-EVIDENCE.json",
+      "sha256": "f4793efea35b6de18af07ba5db26210e3de45e0e8f9cf9f5762e622fd2307ceb"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-hw01\\COMPILE-GATE-CHECKS.json",
+      "sha256": "540cdadb0fb5b53a255a66858f4340da969e57b0996534bff79afe1686033b3a"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-hw01\\HARDWARE-ACCEPTANCE-PLAN.md",
+      "sha256": "9724eba0e8e63075433884798da21eb071ee9a107b3c1fd721476096b1df650b"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-hw01\\HARDWARE-ACCEPTANCE-REPORT.md",
+      "sha256": "117e4c331b21fed8016648f35e797c1cf9e6697daf099b8286ee5140c0774bff"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-hw01\\HARDWARE-VERIFICATION.json",
+      "sha256": "94bd34da25c2e13a0cc063b683df6717d23d13e30faafcc641ffcacb6f5b3020"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-hw01\\IMPLEMENTATION-REPORT.md",
+      "sha256": "107e4a3dc2dbb4e77bca8d147bc69d0f1057d25564771b8fcfe78cb6e7d55e20"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-hw01\\RECEIPT-SCHEMA.json",
+      "sha256": "db311c43104e3940cd7299a495b3ac2a5a0440cb8b3af06cbb5ba1314a4331e1"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-hw01\\STATIC-ARTIFACT-EVIDENCE.json",
+      "sha256": "7b1a8903d4eec4e09746bc619e9cd20a2221da0b7cdf1d694e598b8591cf0145"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-hw01\\STATIC-SAFETY-REVIEW.md",
+      "sha256": "63ad5f908e3907514d09b78b0ebb626b3004f0d8d9d67661d658a3f27ccf3e03"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-hw01\\native-default-control.log",
+      "sha256": "8fb882e4c0c94a47bee241bcfaa97d3be0668db79953f5ded7acc277e873910b"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-hw01\\reject-inherited-safety-disabled.log",
+      "sha256": "527bab7b30d714a3ce048fec8f72b5d3caca24a3003debcfe585a3bbd57aa47e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-hw01\\reject-jni-enabled.log",
+      "sha256": "527bab7b30d714a3ce048fec8f72b5d3caca24a3003debcfe585a3bbd57aa47e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-hw01\\reject-native-disabled.log",
+      "sha256": "527bab7b30d714a3ce048fec8f72b5d3caca24a3003debcfe585a3bbd57aa47e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-hw01\\reject-unapproved-case.log",
+      "sha256": "527bab7b30d714a3ce048fec8f72b5d3caca24a3003debcfe585a3bbd57aa47e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-hw01\\review_artifact.py",
+      "sha256": "f584aeb08708c7a037d5315d9cc5334492a5b90fd16ea2c9087b4c83bf5b5a19"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-hw01\\verify_hardware_receipt.py",
+      "sha256": "d4250e6e2052a3f4e7f8f7169a9231d24d88c8ed903bfd0914c37b88c509482b"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-res01a\\BASELINE-PRESERVATION.json",
+      "sha256": "b8f79c48a78d3dfef0e9df96d6aca419412eeb5cb9772113bd2767bee9d7e88a"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-res01a\\BUILD-EVIDENCE.json",
+      "sha256": "0f9fe5b34c2068fb0d1fcd30e52e06e3a70444601f04f5e1a567fdd1ccd28cf9"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-res01a\\BUILD-RECEIPT.json",
+      "sha256": "08078d400f6e360ea9fb400d3aa6ad100477263f51a5738b4a8770f12c812454"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-res01a\\FINAL-STATE.json",
+      "sha256": "701d7819607780df19e018fc782326f3e06deaa09ab3963d1ecc1ca9dc703e4b"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-res01a\\HARDWARE-ACCEPTANCE-PLAN.md",
+      "sha256": "232d4c99fc108fde538a899682f45d7fca3890931df8707475beae8bad361676"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-res01a\\IMPLEMENTATION-REPORT.md",
+      "sha256": "e0c3fc180983399779cfb77ce0bad4d86f59bdb5cf0289371dc9c0f49c204b47"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-res01a\\RECEIPT-SCHEMA.json",
+      "sha256": "cd2ba13e2da44ead0cb3f421d88138596cca6541e86105daed7e892883029180"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-res01a\\SOURCE-DIFF.patch",
+      "sha256": "519c7a9cf7a4df0d1a4b8a51cee7ab0800c0aead1706b0a0175ab7454179ecb3"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-res01a\\STATIC-SAFETY-REVIEW.md",
+      "sha256": "7283405f26aacbb166bfb807a4b6527d1e1027a9dcd50476448f6a128ac40073"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-res01a\\STATIC-VERIFICATION.json",
+      "sha256": "4a8f87cb7e131c652ed5bfc4543b900c0e58e06e145fdc7f324f71c9ea3d6201"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-srv01\\BASELINE-PRESERVATION.json",
+      "sha256": "e85b74bb0354f51b9eb96e4810bba484f6aa85b76f9c5ce4f33789ee11392254"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-srv01\\BUILD-EVIDENCE.json",
+      "sha256": "59da25104bce03eb4f615ff31c85f746d4a24ded9fb6092abf98a7de4fd6413d"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-srv01\\BUILD-RECEIPT.json",
+      "sha256": "0f5d1ce4878b3dd2df8c2585d7fa8bd68b5bb76e62d44a514ad01637abed1187"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-srv01\\FINAL-STATE.json",
+      "sha256": "f33ff5860a2dfc051368b632b798ed3522db18e37d9ecac91f284e4107184898"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-srv01\\HARDWARE-ACCEPTANCE-PLAN.md",
+      "sha256": "927d4e49eb2d0442cac5a374da6f7324f0df40a209f481cc247e1d2d7473603e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-srv01\\IMPLEMENTATION-REPORT.md",
+      "sha256": "490ba2ff8184f43df6154b82c6330df3ae02a55ba44618e56b77f1e85316f43d"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-srv01\\RECEIPT-SCHEMA.json",
+      "sha256": "322358b6bb95467165fa97d8f5e48035bd06e9f025b0f109c9ec17300732b228"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-srv01\\SOURCE-DIFF.patch",
+      "sha256": "7dd8b8759bc41d9beee65a46762b8b9ae87e2064b37dd82127b80cc5c44a04f7"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-srv01\\STATIC-SAFETY-REVIEW.md",
+      "sha256": "8ebfad70d01ea9001f2a0e267b01bef87e968be08ff3e6e4b178ee71331484e9"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-srv01\\STATIC-VERIFICATION.json",
+      "sha256": "ea29b21f694a8d3ca455b9699a7a65e6253e59ae9fc4a8f695bdd4f6ab0cdb61"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-srv02\\BASELINE-PRESERVATION.json",
+      "sha256": "95a8e746e2585d99a98fd4b70c987e3846f7024bb539fa0f08b5b112de32a954"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-srv02\\BUILD-EVIDENCE.json",
+      "sha256": "d7a07cb93bef222f8be5d470e29e237b09cfb93429970a22baf6272022029890"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-srv02\\BUILD-RECEIPT.json",
+      "sha256": "e5afce61f699897b5881d1d7ba2d657e4d4b671adb69a314dbe945c0c392c4c0"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-srv02\\FINAL-STATE.json",
+      "sha256": "991321d09b1c03ec9106d868fdfd3c205a3052bd58ef268f11546e86b51d3824"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-srv02\\HARDWARE-ACCEPTANCE-PLAN.md",
+      "sha256": "68aea80b06678aa306a92789f4be99573fc005da1398abf877f68f193ec7764a"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-srv02\\IMPLEMENTATION-REPORT.md",
+      "sha256": "f4c2d0c012eacd6830d91ce11af8320f64234ed12c2f56a06f99e81cef060049"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-srv02\\RECEIPT-SCHEMA.json",
+      "sha256": "4ab9dfbbf345704a846945d1c6609952b937f80949409c91fdf549be1cf71d36"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-srv02\\SOURCE-DIFF.patch",
+      "sha256": "5609e4810fba6e4589d467d01359565c5afa99d3e9b8a684672a099f5a1ea64d"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-srv02\\STATIC-SAFETY-REVIEW.md",
+      "sha256": "0a2dda30847de2da93bb0d622032eecdd48dda407962147fb4d7bb48e70f0a3b"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-srv02\\STATIC-VERIFICATION.json",
+      "sha256": "0056cd24f8420ebc37d155f985e4ae4e4703edea576062f6f321a52876911637"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-srv03\\BASELINE-PRESERVATION.json",
+      "sha256": "ebcfcf78f3f6457604d28ab4594dc0c32cfbd7cc54199f72c86bac81e12aa2f9"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-srv03\\BUILD-EVIDENCE.json",
+      "sha256": "114306d8ca2e92551c451bbcc0b527825aa8b1a1652e5864862d1e9e14825d0d"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-srv03\\BUILD-RECEIPT.json",
+      "sha256": "b2c89ef3d2970a4e5a9215e7752d63e071b79c7b9015c6712c766a4ce1557b4b"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-srv03\\FINAL-STATE.json",
+      "sha256": "292881342e8ffb477033c169b6463da8614f20f9821601eb03eda64a9414b7da"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-srv03\\HARDWARE-ACCEPTANCE-PLAN.md",
+      "sha256": "972a09262e2d2e8a3f72a65a1c47b5e25f864309b512c26562171f5630873563"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-srv03\\IMPLEMENTATION-REPORT.md",
+      "sha256": "d186fa1527e5571f9338bfbbf03adc30b26ecedd91e21c0e9930779b3efd1989"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-srv03\\RECEIPT-SCHEMA.json",
+      "sha256": "f7ceb7d2b6a8b9a1e3a00b1dba1e47afc1c763ce40f3426807d6999e215d102b"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-srv03\\SOURCE-DIFF.patch",
+      "sha256": "f42118ed4f2949409fc7a8613bef43b347aa8213f1d2de0cd4aec51127dd9a84"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-srv03\\STATIC-SAFETY-REVIEW.md",
+      "sha256": "576c3dc09d90428b6bb773d3c4383abd5d883312cfb6812b8bbf9391e2531cd1"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-d06-srv03\\STATIC-VERIFICATION.json",
+      "sha256": "66163b88babb6169b15d3bc4a23647daf4c8f349c399b27bc83942a3f91975b7"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-fmt01-hardware-acceptance\\HARDWARE-ACCEPTANCE-REPORT.md",
+      "sha256": "c867a203ea0ddc2f8bc41ac97434a790329cca24ce17229a5e101c44ae518f49"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-fmt01-hardware-acceptance\\HARDWARE-VERIFICATION.json",
+      "sha256": "a0496a9d473f6213a48428c10d839f69e96bba09780cf5a5f5c2be0c30ef38a9"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5-fmt01-hardware-acceptance\\verify_hardware_receipt.py",
+      "sha256": "d353ce8a2747ed3632634799fb8b55002d4ab791e65b77ba3dcae5ca6e60a70c"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5c-native-signing\\MESSAGE-DIALOG-REVIEW.md",
+      "sha256": "eaa0025b1ed100f1ede8c75288f511aedda231899580190607c1b75ebb9ade9e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5c-native-signing\\OWNER-INSTALLATION-ONLY.md",
+      "sha256": "9f274656772a472bfc72a36a7d7af7c7e7dfe03e32ff196d07a8638a463e0b68"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5c-native-signing\\SIGNED-MANIFEST.xml",
+      "sha256": "b107ba9665b0eb35d640cb5f7ff43b96ec2071d341feca0d5bfc3343eb98b7a4"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5c-native-signing\\SIGNED-PAYLOAD-VERIFICATION.json",
+      "sha256": "51cc227a15c20715379aa504b7ee3915443c2c1bae11705106f654f58816194f"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5c-native-signing\\SIGNING-REPORT.md",
+      "sha256": "dc95150bad88304643e3343b5dd355e2c10368b1ab6837961b684fdfb6ac5997"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5c-native-signing\\SIGNING-VERIFICATION.json",
+      "sha256": "268f4ce7c235c6f912d2c50f06e8eaee2e6141bfae8fd9e187a7541039c2ce39"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5c-native-signing\\Sign-And-Verify.ps1",
+      "sha256": "8e4351cfce69e18977a2ce2b6b399afe455b8e99aea602938de23ba2c0b0d5eb"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5c-native-signing\\UNSIGNED-PREFLIGHT.json",
+      "sha256": "7b1a8903d4eec4e09746bc619e9cd20a2221da0b7cdf1d694e598b8591cf0145"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5c-native-signing\\signtool-sign.log",
+      "sha256": "ae699dde76fbf1cd736f41348b11a512b2056a9bbd2b2ce5cacab372856105b2"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5c-native-signing\\signtool-verify.log",
+      "sha256": "86670b1356594c158ed16a0ad1271142a81f3092a39ce62773b3f98e62f4a972"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5c-native-signing\\verify_signed_payload.py",
+      "sha256": "52756c51226d5796b41bfc36a4b584b56853702194e37a91d09e0ea67d159ead"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5f-fmt01-signing\\LAST-RUN.json",
+      "sha256": "46375f7a47d4b590517713689ac84badf864d5266c951a3cd2e80016006a52ca"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5f-fmt01-signing\\OWNER-INSTALLATION-ONLY.md",
+      "sha256": "f80af65b60ae03d5b276d128f64a4623de485ad6cbd5ebaceb54d4293ab016e8"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5f-fmt01-signing\\SIGN-ATTEMPT.lock",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5f-fmt01-signing\\SIGNED-MANIFEST.xml",
+      "sha256": "593fbda9d0dce1ac6b6f12a96e187d5b1c2d0d4aaced9accdadb7cf806807fd0"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5f-fmt01-signing\\SIGNED-PAYLOAD-VERIFICATION.json",
+      "sha256": "f5a4919b1f92a23b3a82d98530dd8b1a5682278499dcd44463ab2d71d06b712a"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5f-fmt01-signing\\SIGNING-REPORT.md",
+      "sha256": "65d3a0278008aa835fd87c33948a92667294ee13f4617a2e8cae8061c10dadda"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5f-fmt01-signing\\SIGNING-VERIFICATION.json",
+      "sha256": "1648b8dbb9e5675ce578e0b5a4b72ffdf26b3ae840f578e852d2d6124791b156"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5f-fmt01-signing\\Sign-And-Verify.ps1",
+      "sha256": "e40366abf8059d95d2d3b543b4e034f91a5ded1b6a724a90c7efb7493512bf6e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5f-fmt01-signing\\UNSIGNED-PREFLIGHT.json",
+      "sha256": "61b4ee99b6e747caa522d9efadcabb41ffe778952adccb035366e9842c8d9073"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5f-fmt01-signing\\VERIFICATION-SUMMARY.json",
+      "sha256": "ff9208797d53a896f04056fc67d2c53b0043c66a044ce53eda845c2ea06faaaf"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5f-fmt01-signing\\signtool-sign.log",
+      "sha256": "33e8fe077c69f9b4dd0a1d8ee509387b5e1f5088dd687f8240ea049d94bbdb28"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5f-fmt01-signing\\signtool-verify.log",
+      "sha256": "718655bbcb81e35c829383ed97cf5b1de34a60917321bb5076a830d78720f57c"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5f-fmt01-signing\\verify_signed_payload.py",
+      "sha256": "dbb5ffd0c54491ee2b2f8078113c95d9823e58ddc878a3cbdb4f3f82b6822b46"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5j-res01a-signing\\LAST-RUN.json",
+      "sha256": "947433501ea45d4bc7d1714e5e241c0d3c653daaf81989cb3e8cb46062df583b"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5j-res01a-signing\\OWNER-INSTALLATION-ONLY.md",
+      "sha256": "718cb2a82f5f0c933a09eb7c88493568f5e339089129af321484a9f78d3f3d29"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5j-res01a-signing\\SIGN-ATTEMPT.lock",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5j-res01a-signing\\SIGNED-MANIFEST.xml",
+      "sha256": "82f0b634c4343a5272af9f873d1accc528970407da0dce1913deeb1704ccc3c0"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5j-res01a-signing\\SIGNED-PAYLOAD-VERIFICATION.json",
+      "sha256": "50e384705715d92244e5ca0e9133c74b18f1879c6aab8481927aef459118bb2e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5j-res01a-signing\\SIGNING-REPORT.md",
+      "sha256": "b046e4d1e285807f0eba353891641e5aaa9d3b8e500af1fed5987c08a4d8e0a4"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5j-res01a-signing\\SIGNING-VERIFICATION.json",
+      "sha256": "31a4364b77a530765d5280a8a393579ecf490e953ef083f345f68cfa1b717382"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5j-res01a-signing\\Sign-And-Verify.ps1",
+      "sha256": "4ae32a6f1bc552dda175494caa081a7f125d989858939e551f4fd72bd5eaddd3"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5j-res01a-signing\\UNSIGNED-PREFLIGHT.json",
+      "sha256": "4a8f87cb7e131c652ed5bfc4543b900c0e58e06e145fdc7f324f71c9ea3d6201"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5j-res01a-signing\\VERIFICATION-SUMMARY.json",
+      "sha256": "48703fd6ffa10c3d74650a34f27eee70ccf9b41a9f6704a24cc3ad433f374fb4"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5j-res01a-signing\\signtool-sign.log",
+      "sha256": "d280855a4c8c28d35ad5c901f957fe8691fc13f3a8b32bbd0dbdc0de29681d69"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5j-res01a-signing\\signtool-verify.log",
+      "sha256": "d9fecb7ead0c2c6f98330c730685ae033e2e17961c2cd8dccd7bf863822391a5"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5j-res01a-signing\\verify_signed_payload.py",
+      "sha256": "3bf6139e193eb526c77a685b106e9b463f4f8ceb7dc80cacd0743d728cc734f3"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5m-res01a-hardware-acceptance\\HARDWARE-ACCEPTANCE-REPORT.md",
+      "sha256": "a34944a4f9e3de40898bc14b8ffbc9e19cece2d98041cd651d6dfca319e4736e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5m-res01a-hardware-acceptance\\HARDWARE-VERIFICATION.json",
+      "sha256": "86571cd014f61d561059a61d3f96e75fc1a0f557b0266dc7c6c3a4ed58212f12"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5o-srv01-signing\\LAST-RUN.json",
+      "sha256": "43eaf795ff921e65afa9cd81a0a32d4f98c43d1c62add583968b7b9282c395c4"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5o-srv01-signing\\OWNER-INSTALLATION-ONLY.md",
+      "sha256": "b73edcb1f6ec8a41618b0c86d2fcda3cac476f8b91a7f2ebdd947af6de484e64"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5o-srv01-signing\\SIGN-ATTEMPT.lock",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5o-srv01-signing\\SIGNED-MANIFEST.xml",
+      "sha256": "459fe8541f08cb06e60636b84b30c3e2268959acf0680034b325dc0e942d3d16"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5o-srv01-signing\\SIGNED-PAYLOAD-VERIFICATION.json",
+      "sha256": "9ad4f70fb91810f6e400e07c292b7b2629c2b74b18c3e2f8ce007d3ffa2128b6"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5o-srv01-signing\\SIGNING-REPORT.md",
+      "sha256": "6128e40d8029ce4a5441b975be1e000ba68f345c6a91735e5279ce8b0e82ef9f"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5o-srv01-signing\\SIGNING-VERIFICATION.json",
+      "sha256": "575679afa539238f0377932fb60d3b2658c5d06e122d1e37e209743daa0efbf8"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5o-srv01-signing\\Sign-And-Verify.ps1",
+      "sha256": "370f39e1fb33d0408b334aea934b5dd5e9aab6e0969e74dc5e97746cb46e2e8a"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5o-srv01-signing\\UNSIGNED-PREFLIGHT.json",
+      "sha256": "ea29b21f694a8d3ca455b9699a7a65e6253e59ae9fc4a8f695bdd4f6ab0cdb61"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5o-srv01-signing\\VERIFICATION-SUMMARY.json",
+      "sha256": "59a0c8c589201e72e35fd219a38de9b9754a922a616ec023a403939f18e60202"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5o-srv01-signing\\signtool-sign.log",
+      "sha256": "908f08a81102437ce186f5e956f09eaa0dbc279ff4f0fdcfa9b79e020212050b"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5o-srv01-signing\\signtool-verify.log",
+      "sha256": "3e7838b127171b8d0fd10c161f5c4e3cec75f07bade7638befe825c72a1a24e5"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5o-srv01-signing\\verify_signed_payload.py",
+      "sha256": "03700ec5c5298446338828e802b0101e4f3befdcdae5d076f8f7c0a74d413b47"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5r-srv01-hardware-acceptance\\HARDWARE-ACCEPTANCE-REPORT.md",
+      "sha256": "fdefe4aa4aad8b961be265c971dbb0d3c24b7ca29d62de57d5d02354886b755d"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5r-srv01-hardware-acceptance\\HARDWARE-VERIFICATION.json",
+      "sha256": "04689a9971ffc9a3aaf98e9148196e96adea8dbc43c1ec953fabd9ecb7d2e720"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5t-srv02-signing\\LAST-RUN.json",
+      "sha256": "499c3a5c0bc4ddddbc88c4f4ee5c279bcde5d57b9fbe424719555e084c914cca"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5t-srv02-signing\\OWNER-INSTALLATION-ONLY.md",
+      "sha256": "f9ab84fb71f8be575befe8660239211df07b8bd63c6de94c58fbd96bb2f73aea"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5t-srv02-signing\\SIGN-ATTEMPT.lock",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5t-srv02-signing\\SIGNED-MANIFEST.xml",
+      "sha256": "cb09200058bafb97974ff366231fb4eca0829abc264e5aeb218bc4e4c6140550"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5t-srv02-signing\\SIGNED-PAYLOAD-VERIFICATION.json",
+      "sha256": "dc90931c4981122d279ca74728935c11adb23a05eb41ee9c2836fda21e53a550"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5t-srv02-signing\\SIGNING-REPORT.md",
+      "sha256": "4aa9ba0aadd24d9a19706f14e61afeb8382306933d2838b70ccdd5bd3cb0cb7f"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5t-srv02-signing\\SIGNING-VERIFICATION.json",
+      "sha256": "24590920f4abe4c2f833be4a8b7fe0bfbe39164b8e847a93cdfa24f75ee432bd"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5t-srv02-signing\\Sign-And-Verify.ps1",
+      "sha256": "8b9ddc6e510106dd45a924a6020c60a5b6735a985e1314ef4b911963e344d6a7"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5t-srv02-signing\\UNSIGNED-PREFLIGHT.json",
+      "sha256": "0056cd24f8420ebc37d155f985e4ae4e4703edea576062f6f321a52876911637"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5t-srv02-signing\\VERIFICATION-SUMMARY.json",
+      "sha256": "1d3da326bab7dfb7a2477c5874eea29d57316dbc5b713ab7dff69b934b06d84e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5t-srv02-signing\\signtool-sign.log",
+      "sha256": "4a18d56ce10a21bdfc8009e759a17dbec10b4a694936b2a41907229d9fe323e0"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5t-srv02-signing\\signtool-verify.log",
+      "sha256": "084745ef467e9bff5ef3d91578ada445de17b87b4e33c5f21c8efa2623848551"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5t-srv02-signing\\verify_signed_payload.py",
+      "sha256": "8c0afcf5463d2b990e2a99c487abc3526eda5e2855fb00c8f86f4f67beadb8c2"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5w-srv02-hardware-acceptance\\HARDWARE-ACCEPTANCE-REPORT.md",
+      "sha256": "3ef655fa23394103084eb956b7499f4c15074096560aec9a7ee776dad8cbdca0"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5w-srv02-hardware-acceptance\\HARDWARE-VERIFICATION.json",
+      "sha256": "a20c85c8ab49f637c5d3016069a25d772bf379f69b76309ccd882c23d8e0c612"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5w-srv02-hardware-acceptance\\SIGNED-MANIFEST.xml",
+      "sha256": "cb09200058bafb97974ff366231fb4eca0829abc264e5aeb218bc4e4c6140550"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5w-srv02-hardware-acceptance\\SIGNED-PAYLOAD-VERIFICATION.json",
+      "sha256": "dc90931c4981122d279ca74728935c11adb23a05eb41ee9c2836fda21e53a550"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5w-srv02-hardware-acceptance\\verify_hardware_evidence.py",
+      "sha256": "09cfea96009bf319956f73877cea9fd5b4655ea2177913074cdbe3c07afadbf0"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b5w-srv02-hardware-acceptance\\verify_signed_payload.py",
+      "sha256": "8c0afcf5463d2b990e2a99c487abc3526eda5e2855fb00c8f86f4f67beadb8c2"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\LICENSE",
+      "sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\App.cpp",
+      "sha256": "4d4b8c302d271c79e01fc378195d63f88573935390d2aabe41769047a1da4c2d"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\Assets\\Java_UWP_Icon.png",
+      "sha256": "64e6489b19fed93311c349ee1d0eac04b713cb55a9f0d79a9586a5b7affddc73"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\Assets\\SplashScreen.png",
+      "sha256": "98718b37a0c8d2388927b4c5115272105b28d33956d6a72c8948d0ab92a9dbca"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\Assets\\appx\\SplashScreen.png",
+      "sha256": "599b69937bcee9cab2ae271714d86a286e6bb553e8b76776e8ccf9b5b14543a3"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\Assets\\appx\\Square150x150Logo.png",
+      "sha256": "45df252d75a97922e53f0cb885785fc84d3f7d4c91ca624d992dd5662fe64e7f"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\Assets\\appx\\Square44x44Logo.png",
+      "sha256": "8acb00b770551e3986546327afbaf9bbcccfd45791f82a583b3b3306b72f9915"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\Assets\\appx\\StoreLogo.png",
+      "sha256": "9f866216396c9ac27ffc430cfe219f3ac517f5d2c82a2d528c6ccb1e7a1d5f16"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\Assets\\appx\\Wide310x150Logo.png",
+      "sha256": "f197baa6978879711203ca64d630250dd16735e9a0d1d5d3f03fd593f44ece7e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\Assets\\screenshots\\panorama_0.png",
+      "sha256": "343a4dad41574877930405372b4e0b1a7bed69fc06d58966696ebd43d27086e7"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\Assets\\screenshots\\panorama_1.png",
+      "sha256": "058cfe2469d586cfa08152bc2ffe0c81cf8258bf8f14d7dda51f84523d7dbf89"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\Assets\\screenshots\\panorama_2.png",
+      "sha256": "97b36b059d4be4c903db62c7ff869f46732063e888289942187d2d2ba178f729"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\Assets\\screenshots\\panorama_3.png",
+      "sha256": "cd21926af24115cf4b3e5e1ce23eecb13da46d92923877df9a588143914adad9"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\Package.appxmanifest",
+      "sha256": "0565a8560ffc0acd07157578f7906ca7046eb0db0bccf64457a7d08ea1eca369"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\auth\\minecraft_auth.cpp",
+      "sha256": "71873d00ddffae104a252497db098ace1634da6204b81a9d9c71b0fc56cefa95"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\auth\\minecraft_auth.h",
+      "sha256": "8f3557ec79282dfb16b107a5a13d8f6d5778359d2501706eaa09c135379daa7e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\common\\crash_report.cpp",
+      "sha256": "23573112e5fdff0541c0a85f90f96f05df0a189c7bbde5fc8bb0548b63d7c555"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\common\\crash_report.h",
+      "sha256": "b0a1ade9ad9299242b168989a7cd6a08a21306c605f3b28eafd5c5b5352c4a7e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\common\\launch_diagnostics.h",
+      "sha256": "f33e679e9f120a9b7f66800c89fdbddaf938664449de729da96e09e3ca054261"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\common\\launcher_common.cpp",
+      "sha256": "928dd5736fedcfab0352904b6f4f3fa5ba2d70d3a59cb9d2cab66f366550eb69"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\common\\launcher_common.h",
+      "sha256": "64c9d41c9cb657f73b9176a8f749a0d36ff69c694a7d3b8a2bc06a276f21d19e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\common\\qr_code.h",
+      "sha256": "31d7b11cbb8a416b8eba236353cc7e3362d0d00f6f1d32c2bb1a988e361bc43e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\launch\\app_globals.cpp",
+      "sha256": "3d6439523d524ce870ca6316e7de8136c4f6f6065dd164b39faa62bcd473675d"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\launch\\app_globals.h",
+      "sha256": "0abcbb91d77f9f356e010c191c6e5461cba9165d41ee2581c072adfba9b9423e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\launch\\launch_internal.cpp",
+      "sha256": "ae7c5443ec49e99bcac26fdf601ee21f14fb90a811baa2d3f6082107064dfff8"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\launch\\launch_internal.h",
+      "sha256": "11a0131ea3042d2943a34e8fe06bc4d0c4b81d5bd618bd41d14b7efeb49dbc59"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\launch\\loaders\\fabric.cpp",
+      "sha256": "d8e39662957e68eacee24ae0abfa2dec85ede34cf2561e909a9db2f65def954f"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\launch\\loaders\\fabric.h",
+      "sha256": "c46c52af608e42e7e94a6ba1438eb6a0b2e93794b7e30c4932c37b8bd0e39da7"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\launch\\loaders\\forge.cpp",
+      "sha256": "467e46d864fa9c4868bd5d8da5ab9ef23be6a681c136831dae273378769da001"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\launch\\loaders\\forge.h",
+      "sha256": "a94ec792c6b5bff7cd293d84357e12b27ec59c6d80beeeff97ce723f7b903b9d"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\launch\\loaders\\loader.cpp",
+      "sha256": "f40258d52e054db388244c3849fd67055cd62744a29c0c249be848cf73b8ccb5"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\launch\\loaders\\loader.h",
+      "sha256": "bd3961126539db4bf4a7965b989a2976687d7506f22b963560799390e717fb56"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\launch\\loaders\\loader_common.cpp",
+      "sha256": "b637905b5b5fdbfec40b364115d578bc24eb946e4620502b42996d6f88ae2b55"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\launch\\loaders\\loader_common.h",
+      "sha256": "4a8713a339905c1b5f9cdb59c3db6f9c9016330b6149f904800f52a3ebc0db8c"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\launch\\loaders\\neoforge.cpp",
+      "sha256": "343741ddc54ade76d25725e56e35b89ad169c160772ab5f514d93ccf4847eaf3"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\launch\\loaders\\neoforge.h",
+      "sha256": "a7c6b1a73cb460e1f646a22761ac1192d2325830bff3cfe0e76d708067ae7f95"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\launch\\minecraft_launch.cpp",
+      "sha256": "c37eade570d45fbdad0ba876be3347729b1000e579692c1819d059dbf80b5b12"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\launch\\minecraft_launch.h",
+      "sha256": "544ebe8e5f9f00e9158846ddb4ee7130f2338501302704454d74daebb272f399"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\launch\\runtime_manager.cpp",
+      "sha256": "fad066071b9c8914350d719fd08e2ea516daa59b6087b83ba45c96bb4787eeaf"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\launch\\runtime_manager.h",
+      "sha256": "4f59fbdd9a0a5890960ef6cffdb0bc4d08c6079fa1308cabf64d0ed4b9e36e6b"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\mods\\curseforge.cpp",
+      "sha256": "e882930aa6c14ecbbff6735a97e6307f7df16a3a117614bd17e240d7ffd270b5"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\mods\\curseforge.h",
+      "sha256": "80e7f555bafc664e982aef40a191d3cbc1745b68411b42230661a92cd5ddd186"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\mods\\manual_downloads.cpp",
+      "sha256": "375c3cafcf3896e6bbf2487dc38004c414daa7b6d892b26e0cece106a7fd6940"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\mods\\manual_downloads.h",
+      "sha256": "50e0b66cd9a7f48c57c653216d9f50d21967e61d24b1990f4a41eacbf3491182"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\mods\\mod_defaults.cpp",
+      "sha256": "f27aa9384cf157dbbc348b82e7dc70a9574dce1f61cb2b738e2bfbe635a46a2b"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\mods\\mod_defaults.h",
+      "sha256": "d486a8dfc73985c6fc7a157927abcdbd6fc45e1047940c874ace060ec442be9a"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\mods\\mod_source.cpp",
+      "sha256": "02e2d9cc424346863a89592458d1b4ef7e48b9715e2a1fcee8c2b153f9ac971f"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\mods\\mod_source.h",
+      "sha256": "70f22a49b663176e3f671bd9d0517febc4a79a9598c891a966e399d174c85b5e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\mods\\mod_types.h",
+      "sha256": "ea33d6658afca0de86aae0eafb3682ef1f80644d95d8f6f71ca2e025fc456d9e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\mods\\modpack_io.cpp",
+      "sha256": "839ca5f195f73ac5cbc73660ebd37a4ef6e2962fec257ee1816553a4f4d52474"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\mods\\modpack_io.h",
+      "sha256": "df907ee53bea5b36dfb29e395842796930be5ced697ec5549fb5acb02965ff7f"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\mods\\mods_browser.cpp",
+      "sha256": "7dd25ee8a02f8e347c3bf718f8b615b48c30a0a03f1a5d118e082fdb4fa3916e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\mods\\mods_browser.h",
+      "sha256": "a8f3472da97cbcf08ff0ef3e24bf3c17a18d3b51e5cd2208576d59f4331c3cf4"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\mods\\mods_page.h",
+      "sha256": "093254802bab627585592f5d26b2950838199069e9208ede1392fcf5a56ac978"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\mods\\world_io.cpp",
+      "sha256": "18825383361cde86a8e2132b9d63018528904f441204f760219502211d51a0b8"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\mods\\world_io.h",
+      "sha256": "8bef9f9fce263f9b1f645d83361db329cdb0f9ef50a080979b5199851ac1ee6e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\net\\http_client.cpp",
+      "sha256": "2d2c27fc5c1c591072c20bc18bb1450e823c748ca065ff6511c6b2b8c3f7651e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\net\\http_client.h",
+      "sha256": "5da1f1ac0c5eaee1c28f9dc1ea59e779e80cfb97872b657da1c263759636e077"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\net\\remote_file_server.cpp",
+      "sha256": "8204db697761878eb8740454418e32e661f8d48cd7d770e73f7d3b94a91a6206"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\net\\remote_file_server.h",
+      "sha256": "d43d100919c481f583c8698f7b10b1c3a4b511c2fde4af21c02034820f51ca37"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\net\\web_relay_server.cpp",
+      "sha256": "1d072a9db453e7f0ea5bf82b77720e085db1da409711cae0c8a5c54a1fb1c120"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\net\\web_relay_server.h",
+      "sha256": "aa5c2dc25b8b1194c0503f3444baa9945bfb8860f3c4a67c8bc11ea6a1ff829d"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\profiles\\profiles.cpp",
+      "sha256": "e347d28c1ca6feed2c6c53123de413f97e1352392dfa32f12a38319b83e99597"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\profiles\\profiles.h",
+      "sha256": "cb5bc729a2a4b578bf787190843024a0a86f674c2305613e4acada8cac3ec9ec"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\runtime_config.h.in",
+      "sha256": "6d34cf6afb954f9fe9ba7d348b8e4f33607d213e96f1d48296828161fa1596b4"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\telemetry\\compat_feed.cpp",
+      "sha256": "4cbe004ffc99ecae5e7a58ed24016856dfa7236a0001875d41748e8ae574abb8"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\telemetry\\compat_feed.h",
+      "sha256": "6173633967f883cf843e6f35f307cbbb01c041e50f423b764a1ee22afd409e16"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\telemetry\\crash_fingerprint.cpp",
+      "sha256": "a4c938d404b2e32876c56c23361b5028bdf82b79cf7300ac227f08e9efb58253"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\telemetry\\crash_fingerprint.h",
+      "sha256": "e2a97c4760b43c06ff3fbe421ada3ebde2cd52e784b3318e27effa4cbcfae7bf"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\telemetry\\crash_parse.cpp",
+      "sha256": "339b1f026a970c774f1814873b180eb7d1e3bdd23182cbaa7a015975e115571c"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\telemetry\\crash_parse.h",
+      "sha256": "5d20532fcec1f5dbc125b14890e5358b6f646aadcc97423b5a66ff66759df60b"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\telemetry\\telemetry.cpp",
+      "sha256": "0c9cb39be611a05fc3dac0b4a0247f1d7c96bdd52be7b8183c589f55835d4e6d"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\telemetry\\telemetry.h",
+      "sha256": "d00d95082b171cff9ef67fff8cf9179c44aa51b0916fc6b60a770843c6c424a9"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\telemetry\\tests\\crash_tests.cpp",
+      "sha256": "654ae3d4e9ff2f28e0138e7b5038b79979891f913308d4a8a8ebc77a8be539f8"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\telemetry\\tests\\run-crash-tests.ps1",
+      "sha256": "ca598c1346b676a2269aa0fb406928f527aa185f6d1a505a7453772cd48a370a"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\third_party\\miniz\\LICENSE",
+      "sha256": "0115478d567121238cf6cc1c0c361926cf07a49d9e4c9e66da97fac6a01646b3"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\third_party\\miniz\\miniz.c",
+      "sha256": "9912e2394970dfbd4259e60a40a63bde289692bcf764286d0d332620c78bc678"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\third_party\\miniz\\miniz.h",
+      "sha256": "28949a75d9a95d60d373674bdf1cac5cd8377f8802a4651e5b42d51c2fc143b3"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\ui\\auth_screen.h",
+      "sha256": "f8beb83e5659843d738243b1b26170b91599eec3cc475eb2f0d6442b990992af"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\ui\\auth_ui_state.h",
+      "sha256": "5ea46b0fbccb5db46f4db338e69829bc3c41a7151e55015d243619f913285413"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\ui\\installed_highlight.h",
+      "sha256": "1cc2f2cab119f9db1c82e26be28eb0032f6db97d0073d17916676cd24286de28"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\ui\\launcher_mouse.cpp",
+      "sha256": "c0a75db3596321b0b9434dc81a29e55bd98915a05d1532eda03cbac1a5ddb9a1"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\ui\\launcher_mouse.h",
+      "sha256": "21afe7369d7c66def2b1504b17ef4ee4ed4e21418351bbaf811c251c31188148"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\ui\\launcher_ui.cpp",
+      "sha256": "34476f79eeb64dd71a1d6f9e92c99cf507466d42b78f33ba158eae68dbeff5c5"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\ui\\launcher_ui.h",
+      "sha256": "99f4ebd927711bf8a3511f511e52266140578a700c4cdbdeea98d8b179e9b63e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\ui\\mods_ui_globals.cpp",
+      "sha256": "688cc3d8b5e3b9b05ce7d1f639aa7adf2307fac68942340f95b5268e91de1cd1"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\MC.Xbox\\ui\\mods_ui_globals.h",
+      "sha256": "e34dff7ca230a5e1032382f6f1266c34ed55d897b11bee8360a0013c36d68913"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\README.md",
+      "sha256": "9b9dac991b1ce1a570d52e961c41d0ef48f7ff223f3781280ec61d1c3987501c"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\build.ps1",
+      "sha256": "0e68582568ee6bd0f920e822c88ea8284d5f84d823b1d4597caa5e45ea7c6b8a"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\compat_mod\\build_compat_mod.ps1",
+      "sha256": "d252180558a298b87d61956994e1a746f5dfe3c63f607cc09d76a39902cd9495"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\compat_mod\\src\\main\\java\\banditvault\\xboxcompat\\BanditMouseCursorOverlay.java",
+      "sha256": "14043d14036a16259b291b79059fe7abebd9f6758f4ac60cef6a113f0b58dbf1"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\compat_mod\\src\\main\\java\\banditvault\\xboxcompat\\PathUtilResolver.java",
+      "sha256": "1c285556173a26332dad77a3eeeac635626996305425e68f98770ecf061a29c6"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\compat_mod\\src\\main\\java\\banditvault\\xboxcompat\\ReturnToLauncherSignal.java",
+      "sha256": "093d70f0b9065eed20372411e36829096bd40e41259fbc7cd608c351967b95f6"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\compat_mod\\src\\main\\java\\banditvault\\xboxcompat\\XboxCompatLog.java",
+      "sha256": "ce70b601dd11627ef59eeb7c393094a78863d650678c9d066fe61846c39496bf"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\compat_mod\\src\\main\\java\\banditvault\\xboxcompat\\ZipFsPathResolver.java",
+      "sha256": "d4232a381db6c21e3e6769c8f3166fd6c518855eda2628493a03965a3213e98e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\compat_mod\\src\\main\\java\\banditvault\\xboxcompat\\mixin\\BanditMouseCursorRecipeBookScreenMixin.java",
+      "sha256": "01c320c7c2df1445e492f8e71a55dc0a21cb4680867bd2a2891a1cfc79ccfa27"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\compat_mod\\src\\main\\java\\banditvault\\xboxcompat\\mixin\\BanditMouseCursorScreenMixin.java",
+      "sha256": "b52fc6994277eda63c8ba79642a879b1f9d50cc63dba668ec985ee0d4ed7b0b0"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\compat_mod\\src\\main\\java\\banditvault\\xboxcompat\\mixin\\CobblemonShowdownFileSystemMixin.java",
+      "sha256": "08e364300e13cf7698e0d69d371a98e0c5f619e0bc9fa7e2898b9e4a3c0ad348"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\compat_mod\\src\\main\\java\\banditvault\\xboxcompat\\mixin\\MinecraftClientExitMixin.java",
+      "sha256": "b890b4b2d584ea2a4d308325fe0d5e727f73ae644b1fd3845a7f776603b38637"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\compat_mod\\src\\main\\java\\banditvault\\xboxcompat\\mixin\\MinecraftClientProbeMixin.java",
+      "sha256": "cd4351b1c54f1ba18b1d6a5aede1ea0186e62556d90896d3a39fd395d22f5485"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\compat_mod\\src\\main\\java\\banditvault\\xboxcompat\\mixin\\PathUtilBypassMixin.java",
+      "sha256": "a92deb8bf58e29bed1bcb6a7fe99e62fdcfcf8bd575ada0c56d05280b2eae670"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\compat_mod\\src\\main\\java\\banditvault\\xboxcompat\\mixin\\SystemDetailsOshiBypassMixin.java",
+      "sha256": "77741d30014a06c5230980fa9d3a44f4bc53d2d66cb5dc76247cfd743c7150b3"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\compat_mod\\src\\main\\java\\banditvault\\xboxcompat\\mixin\\WorldLoadProgressTrackerMixin.java",
+      "sha256": "795aa42dc49ad8e3afbb186204c15e006a40a141e5d12e7145f22645b5166eec"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\compat_mod\\src\\main\\java\\banditvault\\xboxcompat\\mixin\\ZipFsBypass121Mixin.java",
+      "sha256": "f6ddeae6abf9a034eebd6ea756a6c2db96094934a0c2e96c19e0a4d7ce681fb9"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\compat_mod\\src\\main\\java\\banditvault\\xboxcompat\\mixin\\ZipFsBypassMixin.java",
+      "sha256": "5d0161f080553b53a2e0e96c2ad4d964d16459bbc2bb6f16739ff94027c661fd"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\compat_mod\\src\\main\\resources\\banditvault-xbox-compat.mixins.json",
+      "sha256": "f3b40691859d1dcf06c1542d9c0f65744faa00e6ea7bb58a85aa5ebd6eed9c29"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\compat_mod\\src\\main\\resources\\fabric.mod.json",
+      "sha256": "596fd9d83119efdcc5a9395299243da05c1ca7ca4a5fed128e7a91b5012f659b"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\compat_mod\\src\\variants\\26.2\\banditvault\\xboxcompat\\mixin\\MinecraftClientExitMixin.java",
+      "sha256": "b75ef7ba1a5fe1fd0d60711172b7cfdfe9d04297d57903b5605fdeb8302589a1"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\compat_mod\\src\\variants\\26.2\\banditvault\\xboxcompat\\mixin\\PathUtilBypassMixin.java",
+      "sha256": "4cb9b8b08cf2cdf323f3dfd5baca53f99c3cfc7271dfe09c329b4fb35b828e01"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\compat_mod\\src\\variants\\26.2\\banditvault\\xboxcompat\\mixin\\SystemDetailsOshiBypassMixin.java",
+      "sha256": "ce02fed2b0734ac70d77accbadcfb5e8b7bcd77922ddb33652cea36886aad682"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\compat_mod\\src\\variants\\26.2\\banditvault\\xboxcompat\\mixin\\ZipFsBypassMixin.java",
+      "sha256": "713192530db832609d95bb15939fd8cf076d349110522a1f991821a8d47b045e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\compat_mod\\src\\variants\\26.2\\resources\\banditvault-xbox-compat.mixins.json",
+      "sha256": "a5280376077777574c459c814c7d0c862646c008c7a2813cc2776e63d655736a"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\config\\forge-install-profile.json",
+      "sha256": "b7fae91ff999129d97f5ab5499ca97df98b6653936f67487d12132c48332d8de"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\config\\recommended-mods.json",
+      "sha256": "035429f26a4c898ba02f422d030b8096f0317aaa7ca924f6f3d1d452d0c7fa24"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\config\\versions.tsv",
+      "sha256": "acbd5fca365058b94dc5d01aacd13b5a67373eb8b5611b17cd5f539a4dba2a55"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\New Text Document.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\core\\src\\main\\java\\banditvault\\controllercore\\ControllerAction.java",
+      "sha256": "2c3eb19a94dc3e313d1a2d353a5cdc596a58eee5b249170fbdd04cd646b840aa"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\core\\src\\main\\java\\banditvault\\controllercore\\ControllerAxis.java",
+      "sha256": "dfba56c88c899808c3a069cdcb621682dd24c71267bea70b2c5dac6805f459e5"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\core\\src\\main\\java\\banditvault\\controllercore\\ControllerBindings.java",
+      "sha256": "8149546832a01dadd4a2435085aa1e34c7d6d19e687ea8befd4a28ad27e4071e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\core\\src\\main\\java\\banditvault\\controllercore\\ControllerButton.java",
+      "sha256": "59e4c094009f715422379fe6b77997f9da9e823dfd086ba8ffb13cc2298c89d5"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\core\\src\\main\\java\\banditvault\\controllercore\\ControllerInput.java",
+      "sha256": "62b897fa93d9f8e82bb46c2fa5e575f55e3ecc3a551c48c4cc5ffcf6f3711331"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\core\\src\\main\\java\\banditvault\\controllercore\\ControllerLog.java",
+      "sha256": "b109aeb0fa6890531d3fa1cb85f07d5beb8110d884c1e066196747432736f962"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\core\\src\\main\\java\\banditvault\\controllercore\\ControllerRuntime.java",
+      "sha256": "ee56385a1e1ab6250c9060eacc938380116d4d7e35f59a95aa1656dc2332c044"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\core\\src\\main\\java\\banditvault\\controllercore\\ControllerSettingsStore.java",
+      "sha256": "b767165424fc3a7c57f5495e31f652b091383c6435fc2fb86385374a1b43a2a1"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\core\\src\\main\\java\\banditvault\\controllercore\\ControllerSettingsValues.java",
+      "sha256": "f77dec71f695ea4300e465376fdd8c314e18bc5a199693446e14e21c9bfb7ce7"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\core\\src\\main\\java\\banditvault\\controllercore\\ControllerState.java",
+      "sha256": "d07edadf5e048e53e21a2e8fd81c408ebfd08188a88cb3fae35c1e58cb5c361d"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\core\\src\\main\\java\\banditvault\\controllercore\\GridNavigation.java",
+      "sha256": "fc8c1cd0efe1a3700b47664b102c0d195a9b786647a637874bedde7fec5eae8b"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\core\\src\\main\\java\\banditvault\\controllercore\\MinecraftControllerBridge.java",
+      "sha256": "55a78bd3a8e64d93e332b4a0c9a0091ee76953f7959e1bb65352c34838638305"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\core\\src\\test\\java\\banditvault\\controllercore\\ControllerRuntimeTest.java",
+      "sha256": "d9ff86e517744d36ce9cbe0cd72e350b4e832b5e961a0c4f9631e141eb3864cf"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\New Text Document.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\build_fabric_controller_mod.ps1",
+      "sha256": "d959a0f820c1b800f68c89235eb57c945f3786fcab55ea730412c41af62c9e97"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\New Text Document.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\main\\java\\banditvault\\fabriccontroller\\BanditControllerCompat.java",
+      "sha256": "01d2bb84f1b752ec7b25fafdf584fbd6ff94710d0c9d0ddbc3281426f3def00c"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\main\\java\\banditvault\\fabriccontroller\\BanditControllerSettings.java",
+      "sha256": "6333ed3de4698d5ef314491c1988c454f3906d1feba155fc0108ab160e336431"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\main\\java\\banditvault\\fabriccontroller\\BanditControllerSettingsScreen.java",
+      "sha256": "5ed70f5597c9f4cca74dbbd5ed016a50d45dd96747c7a7e3520f869b0a51d1d3"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\main\\java\\banditvault\\fabriccontroller\\FabricControllerLog.java",
+      "sha256": "f915998da3a760da36ea011aa7f43428550182d7aaa5b30c8c814182e5e81c0f"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\main\\java\\banditvault\\fabriccontroller\\mixin\\BanditControllerClientMixin.java",
+      "sha256": "adde7cf9a810d96a274ca087098386781b2db977a252ded3707cbc7b48f88e84"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\main\\java\\banditvault\\fabriccontroller\\mixin\\BanditControllerGameRendererMixin.java",
+      "sha256": "fea797a3b61a75c627587348a0afbc18a995372721dbab29aedb487ede8a9555"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\main\\java\\banditvault\\fabriccontroller\\mixin\\BanditControllerHandledScreenMixin.java",
+      "sha256": "cd42f40c6ac160c7485fbca773477b9236b59e562833606f6a3d7a8d41b68e0f"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\main\\java\\banditvault\\fabriccontroller\\mixin\\BanditControllerRecipeBookScreenMixin.java",
+      "sha256": "e893edc8df0eaedeb2d307b4c0fcf98233a9622e2f30cb77905bac053fa392bb"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\main\\java\\banditvault\\fabriccontroller\\mixin\\BanditControllerScreenMixin.java",
+      "sha256": "ec14ea096d1cf14e81d70110d9160d677f7bf1a565483377e34540274624680b"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\main\\resources\\banditvault-fabric-controller.mixins.json",
+      "sha256": "344f3fbbb2e77a2c7923f6f38cf2a2b97786d7ff34bdca9cf8ff1c24c4fe080f"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\main\\resources\\fabric.mod.json",
+      "sha256": "9d9da524e6fe7f34fba833d34ffc4be9b73f895661ee769ac7c5f3ea33662b59"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.1\\banditvault\\fabriccontroller\\BanditControllerCompat.java",
+      "sha256": "af6aa1976ec44ebfd0fc17d563ab05df0af5db49aea410c7c9158408cb9f0235"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.1\\banditvault\\fabriccontroller\\BanditControllerGuide.java",
+      "sha256": "37c5fb9211aace5fe0b047aca452b67fe0162d5a40b294211c5b97dd80db1e90"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.1\\banditvault\\fabriccontroller\\BanditControllerKeyboard.java",
+      "sha256": "c8c2271c5586bc01d83d8cd1a396b4cd74dc6423791bba92cafb73adb49746bc"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.1\\banditvault\\fabriccontroller\\BanditControllerRadialScreen.java",
+      "sha256": "7aa7290b61a75cfca5faba95dedae78f7da4519d8cbae421a4670f3d11737b92"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.1\\banditvault\\fabriccontroller\\BanditControllerSettingsScreen.java",
+      "sha256": "e2eb58f5d6e77a8541963a1f006f48d83b4b9b99e622e2e31983b0e2cf45a71b"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.1\\banditvault\\fabriccontroller\\BanditNativeKeyboard.java",
+      "sha256": "d51c170bbaec60fd01d7e4e6f07c496f0b57d8149b39f63b445e2f04ea0f93bc"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.1\\banditvault\\fabriccontroller\\Fabric12111MenuNavigation.java",
+      "sha256": "8653fde40a785f5f2cc6bc1ba4448834fbd992cf39a96e755f6866e7fe9dea3a"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.1\\banditvault\\fabriccontroller\\FabricClientApi.java",
+      "sha256": "e9b665ebda2754a7af0a1e61fb28a55689e15402a55523521df38bee4ef74620"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.1\\banditvault\\fabriccontroller\\FabricScreenApi.java",
+      "sha256": "63c513920caadf7553675753217ccf30b62ea865846b00eb95f863de8500adfd"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.1\\banditvault\\fabriccontroller\\mixin\\BanditControllerContainerAccessor.java",
+      "sha256": "9b0f0cf49e25fc4a81d8275077b9a9e48ac0a8f2c7fcd6e7e6ba7917448815f8"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.1\\banditvault\\fabriccontroller\\mixin\\BanditControllerControlsScreenMixin.java",
+      "sha256": "2e1116e257b78f62789d99606e63af45bbd1faf361162e61c9416d0e3f513619"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.1\\banditvault\\fabriccontroller\\mixin\\BanditControllerCreativeInventoryAccessor.java",
+      "sha256": "f7aa03a06cfb1fc98e43d78dcb10abc7d34d202532ca6c2aefbfd77e8fc873d2"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.1\\banditvault\\fabriccontroller\\mixin\\BanditControllerEditBoxAccessor.java",
+      "sha256": "1246c6b50788e5c24af5ff1b6bbc56b833c06753898815e9fb3f6cec573a849e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.1\\banditvault\\fabriccontroller\\mixin\\BanditControllerGameRendererMixin.java",
+      "sha256": "fea797a3b61a75c627587348a0afbc18a995372721dbab29aedb487ede8a9555"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.1\\banditvault\\fabriccontroller\\mixin\\BanditControllerHandledScreenMixin.java",
+      "sha256": "2e43ffaeea901cf73223900c197e8415140d1144e2fd150bfdabb57556555d0e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.1\\banditvault\\fabriccontroller\\mixin\\BanditControllerHudMixin.java",
+      "sha256": "4b0c6a25e44d0442ec21649af6502af38441e78fb234ae6f47d7162beda6ac35"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.1\\banditvault\\fabriccontroller\\mixin\\BanditControllerInventoryScreenMixin.java",
+      "sha256": "cedfedcfc4606051471855fb67bd5f33e58a160ac6b3cff18cd8db8c10121004"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.1\\banditvault\\fabriccontroller\\mixin\\BanditControllerKeyboardInputMixin.java",
+      "sha256": "4ddca51e301b47a4f969dd3aff80698e2c5dba49be670569ea3eb1e33ba92c83"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.1\\banditvault\\fabriccontroller\\mixin\\BanditControllerRecipeBookAccessor.java",
+      "sha256": "0045f6ab3c1c985d9fa0f49254d4bdf0217763c60fc1aace4319a9b4ac214425"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.1\\banditvault\\fabriccontroller\\mixin\\BanditControllerRecipeBookPageAccessor.java",
+      "sha256": "8214e36c8db7a4c896e999540134c692ef62bbea375fc454e508f9697d135381"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.1\\banditvault\\fabriccontroller\\mixin\\BanditControllerRecipeBookScreenMixin.java",
+      "sha256": "b33d7d919208775da803c53cc41b237c8c8584c220522ed1ea0e11e7aaff3ce3"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.1\\banditvault\\fabriccontroller\\mixin\\BanditControllerRecipeOverlayAccessor.java",
+      "sha256": "98842d717df23f161b2c60c849a389ff5a6ae54e5a0c8d456cc5c0b5b2e196c1"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.1\\banditvault\\fabriccontroller\\mixin\\BanditControllerScreenMixin.java",
+      "sha256": "fdaf653ffc2632e9ff4ee208b469c2524a06d63594375e7327dc1eb568795cf4"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.1\\banditvault\\fabriccontroller\\mixin\\BanditControllerSignEditScreenAccessor.java",
+      "sha256": "1621d5d31d52e53fa0669df627cb6611c8e3d601ef0186c51c526802c3ddac8a"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.1\\banditvault\\fabriccontroller\\mixin\\BanditControllerTextFieldAccessor.java",
+      "sha256": "a5a531e6ef8e5413787561815efc8bbba9ef5a439127e3656b5df30597f81872"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.1\\banditvault\\fabriccontroller\\mixin\\BanditControllerTextModelAccessor.java",
+      "sha256": "bfb8cdb1671039bbba4b7b1ec911e890237b64b3e6571aa5a689d38f1afe9d72"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.1\\resources\\banditvault-fabric-controller.mixins.json",
+      "sha256": "d53e69ce21ebb79425c14b1339cb848fad90ebae6ddf6a8a51b960a2e11159aa"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.4\\banditvault\\fabriccontroller\\BanditControllerCompat.java",
+      "sha256": "60f8a6806c097881cea83ce017cbdfe8199437cf7267123c09c9aea6f23639f2"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.4\\banditvault\\fabriccontroller\\Fabric12111MenuNavigation.java",
+      "sha256": "a5f74aa933d617fda97fd7c517f17fd91098558b9d0a3fbe18a0dd9de4a34d93"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.4\\banditvault\\fabriccontroller\\FabricScreenApi.java",
+      "sha256": "8db2696460ee4c13ded71880753766c3b001c5544f97e2b530c3ea50a468ed75"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.4\\banditvault\\fabriccontroller\\mixin\\BanditControllerContainerAccessor.java",
+      "sha256": "9b0f0cf49e25fc4a81d8275077b9a9e48ac0a8f2c7fcd6e7e6ba7917448815f8"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.4\\banditvault\\fabriccontroller\\mixin\\BanditControllerControlsScreenMixin.java",
+      "sha256": "2e1116e257b78f62789d99606e63af45bbd1faf361162e61c9416d0e3f513619"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.4\\banditvault\\fabriccontroller\\mixin\\BanditControllerHandledScreenMixin.java",
+      "sha256": "2e43ffaeea901cf73223900c197e8415140d1144e2fd150bfdabb57556555d0e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.4\\banditvault\\fabriccontroller\\mixin\\BanditControllerInventoryScreenMixin.java",
+      "sha256": "cedfedcfc4606051471855fb67bd5f33e58a160ac6b3cff18cd8db8c10121004"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.4\\banditvault\\fabriccontroller\\mixin\\BanditControllerRecipeBookAccessor.java",
+      "sha256": "0045f6ab3c1c985d9fa0f49254d4bdf0217763c60fc1aace4319a9b4ac214425"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.4\\banditvault\\fabriccontroller\\mixin\\BanditControllerRecipeBookPageAccessor.java",
+      "sha256": "8214e36c8db7a4c896e999540134c692ef62bbea375fc454e508f9697d135381"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.4\\banditvault\\fabriccontroller\\mixin\\BanditControllerRecipeOverlayAccessor.java",
+      "sha256": "98842d717df23f161b2c60c849a389ff5a6ae54e5a0c8d456cc5c0b5b2e196c1"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.4\\banditvault\\fabriccontroller\\mixin\\BanditControllerScreenMixin.java",
+      "sha256": "fdaf653ffc2632e9ff4ee208b469c2524a06d63594375e7327dc1eb568795cf4"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.20.4\\resources\\banditvault-fabric-controller.mixins.json",
+      "sha256": "d53e69ce21ebb79425c14b1339cb848fad90ebae6ddf6a8a51b960a2e11159aa"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.11\\banditvault\\fabriccontroller\\BanditControllerCompat.java",
+      "sha256": "3e0b7ab06464defe32075e2e4f03d8a87df6c634ce29616fca0d91b79439d220"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.11\\banditvault\\fabriccontroller\\BanditControllerGuide.java",
+      "sha256": "37c5fb9211aace5fe0b047aca452b67fe0162d5a40b294211c5b97dd80db1e90"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.11\\banditvault\\fabriccontroller\\BanditControllerKeyboard.java",
+      "sha256": "70c1706ea37722fc340960f7e21b8dd3ef8d87feb1acf7a7c1ce24c95a501690"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.11\\banditvault\\fabriccontroller\\BanditControllerRadialScreen.java",
+      "sha256": "f6226a724d33525efcf8870cb19822aa75fb2ab947db51a3c68b6ad6d61aaa9c"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.11\\banditvault\\fabriccontroller\\BanditControllerSettingsScreen.java",
+      "sha256": "b46697214ec7e84f05046495279fc388f66a24aa53418434f05562d102a50954"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.11\\banditvault\\fabriccontroller\\BanditNativeKeyboard.java",
+      "sha256": "d51c170bbaec60fd01d7e4e6f07c496f0b57d8149b39f63b445e2f04ea0f93bc"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.11\\banditvault\\fabriccontroller\\Fabric12111MenuNavigation.java",
+      "sha256": "cb344cc987d9775983d32690662fe0243ae38a0e63d5b49d4f84a29c2e953d90"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.11\\banditvault\\fabriccontroller\\FabricScreenApi.java",
+      "sha256": "bb4de311a2b7b8b88981a08a6d8dd31b088aa840e28119e6419702fbc4d44f17"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.11\\banditvault\\fabriccontroller\\mixin\\BanditControllerContainerAccessor.java",
+      "sha256": "9b0f0cf49e25fc4a81d8275077b9a9e48ac0a8f2c7fcd6e7e6ba7917448815f8"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.11\\banditvault\\fabriccontroller\\mixin\\BanditControllerControlsScreenMixin.java",
+      "sha256": "ee0271af3e6808a405b93659d19e5abf75cefb7a5c2e6e01af6546004cc50de0"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.11\\banditvault\\fabriccontroller\\mixin\\BanditControllerCreativeInventoryAccessor.java",
+      "sha256": "f7aa03a06cfb1fc98e43d78dcb10abc7d34d202532ca6c2aefbfd77e8fc873d2"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.11\\banditvault\\fabriccontroller\\mixin\\BanditControllerEditBoxAccessor.java",
+      "sha256": "1246c6b50788e5c24af5ff1b6bbc56b833c06753898815e9fb3f6cec573a849e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.11\\banditvault\\fabriccontroller\\mixin\\BanditControllerHandledScreenMixin.java",
+      "sha256": "2e43ffaeea901cf73223900c197e8415140d1144e2fd150bfdabb57556555d0e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.11\\banditvault\\fabriccontroller\\mixin\\BanditControllerHudMixin.java",
+      "sha256": "f405c7f8322cf72f207255cb37a8f740c3f48c173446197d0c167fd3574e2cf4"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.11\\banditvault\\fabriccontroller\\mixin\\BanditControllerInventoryScreenMixin.java",
+      "sha256": "cedfedcfc4606051471855fb67bd5f33e58a160ac6b3cff18cd8db8c10121004"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.11\\banditvault\\fabriccontroller\\mixin\\BanditControllerKeyboardInputMixin.java",
+      "sha256": "9b68e28b5c162a779fa7573683844b32fc73e544dc7b658a6f13dc326e9f7654"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.11\\banditvault\\fabriccontroller\\mixin\\BanditControllerOptionsSubScreenAccessor.java",
+      "sha256": "17057fe22adb91d15a240fa36b475305e7fff59cebe6f42be61fb89e1b7ddcb0"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.11\\banditvault\\fabriccontroller\\mixin\\BanditControllerRecipeBookAccessor.java",
+      "sha256": "c785e93c192d9cfe7ace7effa4e6754f8e94b8b4c7bd037b0d4ca54f1796c6a0"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.11\\banditvault\\fabriccontroller\\mixin\\BanditControllerRecipeBookPageAccessor.java",
+      "sha256": "fdca1fa21cf1f992159bdccf1e495e3674ddb8f7408f8932e0089450c9ee0c24"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.11\\banditvault\\fabriccontroller\\mixin\\BanditControllerRecipeBookScreenAccessor.java",
+      "sha256": "2df6db9d8e8ba2ad99491d3f96e3fca2b2e86a39ba2305c59cf5a88beb6cccac"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.11\\banditvault\\fabriccontroller\\mixin\\BanditControllerRecipeBookScreenMixin.java",
+      "sha256": "06b0ab413af3c532aa0ec1924021091acc21f5f4f99efe73463043ece0f46234"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.11\\banditvault\\fabriccontroller\\mixin\\BanditControllerRecipeOverlayAccessor.java",
+      "sha256": "98842d717df23f161b2c60c849a389ff5a6ae54e5a0c8d456cc5c0b5b2e196c1"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.11\\banditvault\\fabriccontroller\\mixin\\BanditControllerScreenMixin.java",
+      "sha256": "fdaf653ffc2632e9ff4ee208b469c2524a06d63594375e7327dc1eb568795cf4"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.11\\banditvault\\fabriccontroller\\mixin\\BanditControllerSignEditScreenAccessor.java",
+      "sha256": "1621d5d31d52e53fa0669df627cb6611c8e3d601ef0186c51c526802c3ddac8a"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.11\\banditvault\\fabriccontroller\\mixin\\BanditControllerTextFieldAccessor.java",
+      "sha256": "a5a531e6ef8e5413787561815efc8bbba9ef5a439127e3656b5df30597f81872"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.11\\banditvault\\fabriccontroller\\mixin\\BanditControllerTextModelAccessor.java",
+      "sha256": "bfb8cdb1671039bbba4b7b1ec911e890237b64b3e6571aa5a689d38f1afe9d72"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.11\\resources\\banditvault-fabric-controller.mixins.json",
+      "sha256": "0f4da2a2c16804f2e4d739fcfc681f46c7fe0b081f61261fbf0407dbcfcc05ab"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.1\\banditvault\\fabriccontroller\\BanditControllerCompat.java",
+      "sha256": "60f8a6806c097881cea83ce017cbdfe8199437cf7267123c09c9aea6f23639f2"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.1\\banditvault\\fabriccontroller\\Fabric12111MenuNavigation.java",
+      "sha256": "a3ba72e4d4dd051bac53f29c4c5ebdbd25214709d2ec4e8e67ae6753b9df59b1"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.1\\banditvault\\fabriccontroller\\mixin\\BanditControllerContainerAccessor.java",
+      "sha256": "9b0f0cf49e25fc4a81d8275077b9a9e48ac0a8f2c7fcd6e7e6ba7917448815f8"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.1\\banditvault\\fabriccontroller\\mixin\\BanditControllerControlsScreenMixin.java",
+      "sha256": "ee0271af3e6808a405b93659d19e5abf75cefb7a5c2e6e01af6546004cc50de0"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.1\\banditvault\\fabriccontroller\\mixin\\BanditControllerHandledScreenMixin.java",
+      "sha256": "2e43ffaeea901cf73223900c197e8415140d1144e2fd150bfdabb57556555d0e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.1\\banditvault\\fabriccontroller\\mixin\\BanditControllerInventoryScreenMixin.java",
+      "sha256": "cedfedcfc4606051471855fb67bd5f33e58a160ac6b3cff18cd8db8c10121004"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.1\\banditvault\\fabriccontroller\\mixin\\BanditControllerOptionsSubScreenAccessor.java",
+      "sha256": "17057fe22adb91d15a240fa36b475305e7fff59cebe6f42be61fb89e1b7ddcb0"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.1\\banditvault\\fabriccontroller\\mixin\\BanditControllerRecipeBookAccessor.java",
+      "sha256": "0045f6ab3c1c985d9fa0f49254d4bdf0217763c60fc1aace4319a9b4ac214425"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.1\\banditvault\\fabriccontroller\\mixin\\BanditControllerRecipeBookPageAccessor.java",
+      "sha256": "8214e36c8db7a4c896e999540134c692ef62bbea375fc454e508f9697d135381"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.1\\banditvault\\fabriccontroller\\mixin\\BanditControllerRecipeOverlayAccessor.java",
+      "sha256": "98842d717df23f161b2c60c849a389ff5a6ae54e5a0c8d456cc5c0b5b2e196c1"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.1\\banditvault\\fabriccontroller\\mixin\\BanditControllerScreenMixin.java",
+      "sha256": "fdaf653ffc2632e9ff4ee208b469c2524a06d63594375e7327dc1eb568795cf4"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.1\\resources\\banditvault-fabric-controller.mixins.json",
+      "sha256": "43e1249fc8aea2c94eef67a2131f438a6934d7207c66ca758aaae08b1819e551"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.4\\banditvault\\fabriccontroller\\BanditControllerCompat.java",
+      "sha256": "1dec40076619704a3fe257dd93d7ad8dcaf7f250c8059e9caed2355cf0eda53b"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.4\\banditvault\\fabriccontroller\\Fabric12111MenuNavigation.java",
+      "sha256": "1ddeb7b85adac2dd1246ab96805c43c9a9aab9303dcfa094b8913e607490701d"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.4\\banditvault\\fabriccontroller\\mixin\\BanditControllerContainerAccessor.java",
+      "sha256": "9b0f0cf49e25fc4a81d8275077b9a9e48ac0a8f2c7fcd6e7e6ba7917448815f8"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.4\\banditvault\\fabriccontroller\\mixin\\BanditControllerControlsScreenMixin.java",
+      "sha256": "ee0271af3e6808a405b93659d19e5abf75cefb7a5c2e6e01af6546004cc50de0"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.4\\banditvault\\fabriccontroller\\mixin\\BanditControllerHandledScreenMixin.java",
+      "sha256": "2e43ffaeea901cf73223900c197e8415140d1144e2fd150bfdabb57556555d0e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.4\\banditvault\\fabriccontroller\\mixin\\BanditControllerInventoryScreenMixin.java",
+      "sha256": "cedfedcfc4606051471855fb67bd5f33e58a160ac6b3cff18cd8db8c10121004"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.4\\banditvault\\fabriccontroller\\mixin\\BanditControllerKeyboardInputMixin.java",
+      "sha256": "a5921736a83e3830ff35b411b6ed5ddd4da8522f83677ba05a5f3d9afd85a61e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.4\\banditvault\\fabriccontroller\\mixin\\BanditControllerOptionsSubScreenAccessor.java",
+      "sha256": "17057fe22adb91d15a240fa36b475305e7fff59cebe6f42be61fb89e1b7ddcb0"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.4\\banditvault\\fabriccontroller\\mixin\\BanditControllerRecipeBookAccessor.java",
+      "sha256": "0045f6ab3c1c985d9fa0f49254d4bdf0217763c60fc1aace4319a9b4ac214425"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.4\\banditvault\\fabriccontroller\\mixin\\BanditControllerRecipeBookPageAccessor.java",
+      "sha256": "8214e36c8db7a4c896e999540134c692ef62bbea375fc454e508f9697d135381"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.4\\banditvault\\fabriccontroller\\mixin\\BanditControllerRecipeBookScreenAccessor.java",
+      "sha256": "2df6db9d8e8ba2ad99491d3f96e3fca2b2e86a39ba2305c59cf5a88beb6cccac"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.4\\banditvault\\fabriccontroller\\mixin\\BanditControllerRecipeBookScreenMixin.java",
+      "sha256": "06b0ab413af3c532aa0ec1924021091acc21f5f4f99efe73463043ece0f46234"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.4\\banditvault\\fabriccontroller\\mixin\\BanditControllerRecipeOverlayAccessor.java",
+      "sha256": "98842d717df23f161b2c60c849a389ff5a6ae54e5a0c8d456cc5c0b5b2e196c1"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.4\\banditvault\\fabriccontroller\\mixin\\BanditControllerScreenMixin.java",
+      "sha256": "fdaf653ffc2632e9ff4ee208b469c2524a06d63594375e7327dc1eb568795cf4"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.4\\resources\\banditvault-fabric-controller.mixins.json",
+      "sha256": "0f4da2a2c16804f2e4d739fcfc681f46c7fe0b081f61261fbf0407dbcfcc05ab"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.5\\banditvault\\fabriccontroller\\FabricScreenApi.java",
+      "sha256": "61556d7546c7104b558a9096558032ea743637b2ef52196bb4404b9788110604"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.5\\banditvault\\fabriccontroller\\mixin\\BanditControllerKeyboardInputMixin.java",
+      "sha256": "9b68e28b5c162a779fa7573683844b32fc73e544dc7b658a6f13dc326e9f7654"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21.6\\banditvault\\fabriccontroller\\FabricScreenApi.java",
+      "sha256": "ac7e8adeaffe35e6953773bfbb76b96854a74eacbc99c3b50acfee4bc4e0d999"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21\\banditvault\\fabriccontroller\\mixin\\BanditControllerGameRendererMixin.java",
+      "sha256": "65f6d5963c87e71ec40142e1d44ae882295df80867281f5a44b39f64c4b7ac74"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\1.21\\banditvault\\fabriccontroller\\mixin\\BanditControllerHudMixin.java",
+      "sha256": "f405c7f8322cf72f207255cb37a8f740c3f48c173446197d0c167fd3574e2cf4"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\26.1\\banditvault\\fabriccontroller\\FabricClientApi.java",
+      "sha256": "7bdd1742aa017d0465c1dcbb34d42935e3e8c3b4e31a7ef5d659ae1c939f46a0"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\26.1\\banditvault\\fabriccontroller\\mixin\\BanditControllerHudMixin.java",
+      "sha256": "4c0f51d030e5349f03efe8fb58eeead0f126784a4a27ec7480db754aeabbaec0"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\26.2\\banditvault\\fabriccontroller\\BanditControllerCompat.java",
+      "sha256": "6dc3aa38dbe13480416c886e67af7e1c94aa0e1cf174e0acbed4c89f2071e99c"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\26.2\\banditvault\\fabriccontroller\\BanditControllerGuide.java",
+      "sha256": "c351909316a0211d4ff9bdd9e23eba23190ce019b97e219ec85047f6465799be"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\26.2\\banditvault\\fabriccontroller\\BanditControllerKeyboard.java",
+      "sha256": "2481a74cb1cc6fa3d39b22840446357d71fd01a670763b29e40a1b8af8838373"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\26.2\\banditvault\\fabriccontroller\\BanditControllerRadialScreen.java",
+      "sha256": "50deca50a136b1c7ab9582c986e3e81fc1c7a73bba26e4369aafee3186b3657e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\26.2\\banditvault\\fabriccontroller\\BanditControllerSettingsScreen.java",
+      "sha256": "1ec50d5ac6c2cfe7f9bbbd9d0de9bf83cd42eb5a7cfb5f05e0219d8e3001ab0f"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\26.2\\banditvault\\fabriccontroller\\BanditNativeKeyboard.java",
+      "sha256": "d51c170bbaec60fd01d7e4e6f07c496f0b57d8149b39f63b445e2f04ea0f93bc"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\26.2\\banditvault\\fabriccontroller\\Fabric12111MenuNavigation.java",
+      "sha256": "09d77b57df53cbf8016b41ba7a453f4fcdee2f21838942d561cf2a7e0ba2b548"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\26.2\\banditvault\\fabriccontroller\\FabricClientApi.java",
+      "sha256": "cfb45af25dd5967d7db5299935ca87eddc2c7bb42f1b0db15115553205b81fd3"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\26.2\\banditvault\\fabriccontroller\\FabricScreenApi.java",
+      "sha256": "5b440c4d4604675a58c97b38ea3e1b03fad777aae2f0fa55e92a7cf17313ec8a"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\26.2\\banditvault\\fabriccontroller\\mixin\\BanditControllerClientMixin.java",
+      "sha256": "4b2997b4dd10393a32f70484c72254ba15745a6982d24cd5ae574016b67a58dc"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\26.2\\banditvault\\fabriccontroller\\mixin\\BanditControllerContainerAccessor.java",
+      "sha256": "445e3514ce1375eeec59b05cad3f559eb9aa1b81d69cdb4c8966cc3b6aafd881"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\26.2\\banditvault\\fabriccontroller\\mixin\\BanditControllerControlsScreenMixin.java",
+      "sha256": "f6685036115f36687a7c47a42cda3a81a9fdc5936dbe1ef26d18cdbe0efc3531"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\26.2\\banditvault\\fabriccontroller\\mixin\\BanditControllerCreativeInventoryAccessor.java",
+      "sha256": "4702b8b9c6ceb9a6ef82db4e0cdc831f105512a0aa3075fe50994f55e306da27"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\26.2\\banditvault\\fabriccontroller\\mixin\\BanditControllerEditBoxAccessor.java",
+      "sha256": "8dbf30d4c0476086c1dfb2128475310627e02d158a9f7b6bcd838160b8eb0092"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\26.2\\banditvault\\fabriccontroller\\mixin\\BanditControllerGameRendererMixin.java",
+      "sha256": "109acf8ea1b82d234a399ad45f6d59642136fa8aac277f4a80dcb16981067518"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\26.2\\banditvault\\fabriccontroller\\mixin\\BanditControllerHandledScreenMixin.java",
+      "sha256": "55c508371949d36398cb1fe0f104e9b99480893ea3b7414d9f94ff4fee8d3a89"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\26.2\\banditvault\\fabriccontroller\\mixin\\BanditControllerHudMixin.java",
+      "sha256": "165a8639160c1388301c56a3113425bedaad3db40bfb535f74f9e0cacd26aa5f"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\26.2\\banditvault\\fabriccontroller\\mixin\\BanditControllerInventoryScreenMixin.java",
+      "sha256": "32c399caa7ff18c3f10424a48a3a214437ab89dd0b992d2a2949af4d41127290"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\26.2\\banditvault\\fabriccontroller\\mixin\\BanditControllerKeyboardInputMixin.java",
+      "sha256": "8fd27dc3bae88b2d75515ecc6a18889472843f87207d4fd396c64f0797e38590"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\26.2\\banditvault\\fabriccontroller\\mixin\\BanditControllerOptionsSubScreenAccessor.java",
+      "sha256": "583451f0d82ae81d930af2d83b178e5477f8579509c94ac834405a1d92a7f465"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\26.2\\banditvault\\fabriccontroller\\mixin\\BanditControllerRecipeBookAccessor.java",
+      "sha256": "ebee74bba96b459b4637504f2a93bb67c1a7f90ab1064bccca36d5431fd962f6"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\26.2\\banditvault\\fabriccontroller\\mixin\\BanditControllerRecipeBookPageAccessor.java",
+      "sha256": "5df41e4867b90eb3d59e1339b2bfaa66782e34ceb6165cf8cb553eada0f82e87"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\26.2\\banditvault\\fabriccontroller\\mixin\\BanditControllerRecipeBookScreenAccessor.java",
+      "sha256": "875f93ecf5593eb5f310f8d6229ce2acb2f1ef45273ee180a403deb312acc524"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\26.2\\banditvault\\fabriccontroller\\mixin\\BanditControllerRecipeBookScreenMixin.java",
+      "sha256": "6df210a4d1885c6bc8bcb4272824bccba5e0930de88380e0657d3938333edad4"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\26.2\\banditvault\\fabriccontroller\\mixin\\BanditControllerRecipeOverlayAccessor.java",
+      "sha256": "6cf41b08a885fd394b6ab67b9f627e1b8b2741d2b8910a24aa1aa40c75cf5988"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\26.2\\banditvault\\fabriccontroller\\mixin\\BanditControllerScreenMixin.java",
+      "sha256": "bfe69d9bd9ccefcffb8fd82ae44d3fded7ebab55726396f07e628699c6b3456e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\26.2\\banditvault\\fabriccontroller\\mixin\\BanditControllerSignEditScreenAccessor.java",
+      "sha256": "4ed85d8aa1aabf49122ee9c848e2e85100f02578df4da330da39de611b45cc4e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\26.2\\banditvault\\fabriccontroller\\mixin\\BanditControllerTextFieldAccessor.java",
+      "sha256": "e219bc1e79913ef705f6727e6e96451faef19be86f17e42486f45148eabcc9ad"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\26.2\\banditvault\\fabriccontroller\\mixin\\BanditControllerTextModelAccessor.java",
+      "sha256": "e63161db38f47813571674fc5dc000c38adf3d9ba699990616cf5da230bb1012"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\26.2\\resources\\banditvault-fabric-controller.mixins.json",
+      "sha256": "0f4da2a2c16804f2e4d739fcfc681f46c7fe0b081f61261fbf0407dbcfcc05ab"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\fabric\\src\\variants\\New Text Document.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\forge\\build_forge_controller_mod.ps1",
+      "sha256": "0b26f47927d9c0bd0cbe5b8f8505ed31aba732a7c055d66b09a8211b66cf8d3c"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\forge\\build_forge_modern_controller_mod.ps1",
+      "sha256": "b4643f6a20840ab55220b2e7633524cbccd4544689588b780b4701a3cbb03a41"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\forge\\src\\compile\\java\\net\\minecraftforge\\api\\distmarker\\Dist.java",
+      "sha256": "498bbe1219041b33a93f9dea7ed641b364209a0075fbecaa224249e3b520fac9"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\forge\\src\\compile\\java\\net\\minecraftforge\\event\\TickEvent.java",
+      "sha256": "05f037fbfd4357b86c9b6f63c71801b48364697eaf7cb183a51a110dba597e44"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\forge\\src\\compile\\java\\net\\minecraftforge\\eventbus\\api\\SubscribeEvent.java",
+      "sha256": "a4480e158d997ba6e4bfb2fc7530dc15996897c83eb4f3960c58315a9cefb637"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\forge\\src\\compile\\java\\net\\minecraftforge\\fml\\common\\Mod.java",
+      "sha256": "58eb6d19157d3cebec9b28e10cd8ed60b11ef16b8182598c5ed8f39843d64c96"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\forge\\src\\main\\java\\banditvault\\forgecontroller\\ForgeControllerCompat.java",
+      "sha256": "809a85988327b49838de299312452017e52b0b497fbb2f547bc2cd825f81c0df"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\forge\\src\\main\\java\\banditvault\\forgecontroller\\ForgeControllerEvents.java",
+      "sha256": "550dde183e80b4b7790e8a717067f10c02bc07f4f2fe580e1b1dbd2695bf1ea0"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\forge\\src\\main\\java\\banditvault\\forgecontroller\\ForgeControllerKeys.java",
+      "sha256": "5614ed2ade5409905c11bf77da091e491e9b564a6bb3007738d24ac00b36ba5a"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\forge\\src\\main\\java\\banditvault\\forgecontroller\\ForgeControllerLog.java",
+      "sha256": "f54eb495e23bdb518cc4a905fe60dd1e27782251f111a479e192f600ad137108"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\forge\\src\\main\\java\\banditvault\\forgecontroller\\ForgeControllerMod.java",
+      "sha256": "80f4a3413107f7120904a55f3eb0359ee065d91f9491da84d9fdf0410f1c640c"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\forge\\src\\main\\java\\banditvault\\forgecontroller\\ForgeControllerSettings.java",
+      "sha256": "52dd83f2d7ff253ff9bd70aba036d7b5966a37f922aa08fa7d6bd16da3d84d3a"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\forge\\src\\main\\java\\banditvault\\forgecontroller\\ForgeControllerSettingsScreen.java",
+      "sha256": "e95a9883c43e22112886d6ab1e2bc5e617dc492eed3b06c717d23f570cf6ce29"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\forge\\src\\main\\java\\banditvault\\forgecontroller\\ForgeMenuNavigation.java",
+      "sha256": "1060b811b564a5218f534ccbe6af032152a4141ddd90512bb262800e5f4b2799"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\forge\\src\\main\\java\\banditvault\\forgecontroller\\mixin\\ForgeControllerContainerAccessor.java",
+      "sha256": "62fc7c672c2e662c26c193bbdb4b9e023ea82ae4e27b076585930943ee5b5a14"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\forge\\src\\main\\java\\banditvault\\forgecontroller\\mixin\\ForgeControllerControlsScreenMixin.java",
+      "sha256": "da354a2606f46939fccc57d04d14abd3acf6c372e75d4e6ee02e2ffefa88953a"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\forge\\src\\main\\java\\banditvault\\forgecontroller\\mixin\\ForgeControllerGameRendererMixin.java",
+      "sha256": "6f44e8d75b31e83871a8c1519ea484234763ff67fa1842339695066a575af5c1"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\forge\\src\\main\\java\\banditvault\\forgecontroller\\mixin\\ForgeControllerHandledScreenMixin.java",
+      "sha256": "d21875d5cd234eb5baac09886656f999f843d5beca13a3d58ce9ff0ce6270af9"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\forge\\src\\main\\java\\banditvault\\forgecontroller\\mixin\\ForgeControllerInventoryScreenMixin.java",
+      "sha256": "79c3a9c505a19ca5782426d55c851274606421193a6644cc8a1bc2da80bcae2c"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\forge\\src\\main\\java\\banditvault\\forgecontroller\\mixin\\ForgeControllerRecipeBookAccessor.java",
+      "sha256": "cefab4f0689d0a29c05d99c52e3b9c1faf5c551097558c452fed5a3ed8a40558"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\forge\\src\\main\\java\\banditvault\\forgecontroller\\mixin\\ForgeControllerRecipeBookPageAccessor.java",
+      "sha256": "65382c46bc64325f7bf3ccbc9b8faf2fc7e0c367c211410472ba63e59147f213"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\forge\\src\\main\\java\\banditvault\\forgecontroller\\mixin\\ForgeControllerRecipeOverlayAccessor.java",
+      "sha256": "c91111c4f08394d6abdd119fa57042042b3364c8a90fdd7a4348c0ee160d6218"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\forge\\src\\main\\java\\banditvault\\forgecontroller\\mixin\\ForgeControllerScreenMixin.java",
+      "sha256": "fdcb8d21301256c67bceb2319a1eebbb25bef6731b966e422106030491d261b2"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\forge\\src\\main\\java\\banditvault\\forgecontroller\\mixin\\ForgeControllerTitleScreenMixin.java",
+      "sha256": "76cd37457918c705d9b850fec96819507fc50609c3554985034641a3c425958e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\forge\\src\\main\\resources\\META-INF\\MANIFEST.MF",
+      "sha256": "0bb2db6958574f961052149a79d0fa8a71e3dd577212cc7447e8403dee84a59e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\forge\\src\\main\\resources\\META-INF\\mods.toml",
+      "sha256": "801820ec0271e713a660c9dbf53851231955dfe8b8426fc70cf33b1128981746"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\forge\\src\\main\\resources\\banditvault-forge-controller.mixins.json",
+      "sha256": "1882ff2774de2d620efea1db341b4dfbda7da69fca23aaa98c8028104b513e77"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\forge\\src\\main\\resources\\pack.mcmeta",
+      "sha256": "8d1492d45451785043530608c88d05bb2a46a6a24883cf24123727029d2cfa28"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\forge\\src\\modern\\java\\banditvault\\forgecontroller\\ForgeControllerMod.java",
+      "sha256": "a1cad43d56ab0749764a225b25489e2b06677cd2d1f545ed2cfb1f825b4248d7"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\forge\\src\\modern\\resources\\META-INF\\MANIFEST.MF",
+      "sha256": "0bb2db6958574f961052149a79d0fa8a71e3dd577212cc7447e8403dee84a59e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\forge\\src\\modern\\resources\\META-INF\\mods.toml",
+      "sha256": "43355195ef7bc869221a7497a6ce3e1788668c7eccb817f91f545ac79a3e00dc"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\forge\\src\\modern\\resources\\banditvault-forge-controller.mixins.json",
+      "sha256": "670a3abab2a124fa550610ea0cc8ca4c33102683fad1d92a277f74221da81adc"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\forge\\src\\modern\\resources\\pack.mcmeta",
+      "sha256": "f0c965db4f5423d5817e2649ab278b8878e5b826a4696d4ece5e98f8a395534e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\build_neoforge_controller_mod.ps1",
+      "sha256": "d4e4aab2e18a41a4772ad6b521cd4c4ae557e2bbf2e92f8641c239a433a7a489"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\compile\\java\\net\\neoforged\\api\\distmarker\\Dist.java",
+      "sha256": "2f7e1ea1ca1c884e98a7631d77920369f99c3f62f7312e9233d23fc9ddcbcdda"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\compile\\java\\net\\neoforged\\fml\\common\\Mod.java",
+      "sha256": "3f986e20bf7e48c17588d0d6530f1a6a361e393f74a67569b9f30587cbb37c0e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\main\\java\\banditvault\\neoforgecontroller\\NeoForgeClientApi.java",
+      "sha256": "a372d1904db952dd594702ed0825a57a853366013e8a31515e92c304a86a9c85"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\main\\java\\banditvault\\neoforgecontroller\\NeoForgeControllerCompat.java",
+      "sha256": "04cd45af6157d81eb4386e17d54b1f917b6acb8bdc8e95fabf397e35f32489b6"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\main\\java\\banditvault\\neoforgecontroller\\NeoForgeControllerKeys.java",
+      "sha256": "f1a11af5ab4756fa076fe3f1d72d154e9902ba36e3f7394a269f53e46c91d7e2"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\main\\java\\banditvault\\neoforgecontroller\\NeoForgeControllerLog.java",
+      "sha256": "76d1f1f207630c979decc7267e6318483e44e7c7307d60c951dbb34a27823966"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\main\\java\\banditvault\\neoforgecontroller\\NeoForgeControllerMod.java",
+      "sha256": "0f60570785c5279a87e0b31fe7907782e3ce3cf18b0cfcad79aefb19896cc49a"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\main\\java\\banditvault\\neoforgecontroller\\NeoForgeControllerSettings.java",
+      "sha256": "93649a2f3dcffafff5bc54427c832f2ae51cc80433fb3d6b86c8319f8ce68b03"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\main\\java\\banditvault\\neoforgecontroller\\NeoForgeControllerSettingsScreen.java",
+      "sha256": "dee2697d30f70dc3839bcf43def6bff492a1a2939e1f2a0e4ecf066c335060cc"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\main\\java\\banditvault\\neoforgecontroller\\NeoForgeMenuNavigation.java",
+      "sha256": "d2443c893635b064ddb963a37c5a795d1db4687102529431c03cc4a579626488"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\main\\java\\banditvault\\neoforgecontroller\\mixin\\NeoForgeControllerClientMixin.java",
+      "sha256": "ce5f7c84430d27428194d97a3e3eb5a6dee63acf7dc7c9471ec43ae7c4b233f5"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\main\\java\\banditvault\\neoforgecontroller\\mixin\\NeoForgeControllerContainerAccessor.java",
+      "sha256": "9a1e818e4d70792f24fe60d482c1463dfa4abc28294a40726b789ef377514a73"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\main\\java\\banditvault\\neoforgecontroller\\mixin\\NeoForgeControllerControlsScreenMixin.java",
+      "sha256": "77350e3170f255cac796abc5a2c5e8b669e98c3dcb489cf9fb71be29bd0b816f"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\main\\java\\banditvault\\neoforgecontroller\\mixin\\NeoForgeControllerGameRendererMixin.java",
+      "sha256": "027fe2f367ebcf7c7b48569ca4656868b1ed8d8a17b7b6ac84a45cccf59202e8"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\main\\java\\banditvault\\neoforgecontroller\\mixin\\NeoForgeControllerHandledScreenMixin.java",
+      "sha256": "00387ea4ca06bf21679e2199a81e949dbecba46fec3d3109a18aea7ae960b2b4"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\main\\java\\banditvault\\neoforgecontroller\\mixin\\NeoForgeControllerInventoryScreenMixin.java",
+      "sha256": "9bba616bf6478c05b3f744232f8d8f32ffa77b8197263ecbc05571913afb2299"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\main\\java\\banditvault\\neoforgecontroller\\mixin\\NeoForgeControllerOptionsSubScreenAccessor.java",
+      "sha256": "9f487d2d0efda1a3640295d118747b4bdc599052abf0d68bbdb8976e8cf2fa1e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\main\\java\\banditvault\\neoforgecontroller\\mixin\\NeoForgeControllerRecipeBookAccessor.java",
+      "sha256": "3a90dd2eb00248a15db437153a82543576fcbaea17839de4c6d18773f025f115"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\main\\java\\banditvault\\neoforgecontroller\\mixin\\NeoForgeControllerRecipeBookPageAccessor.java",
+      "sha256": "d5b775ee9b0e0009a4b4a866ef8eaf347ad0b11db51bf6ef718fec34b9d185f2"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\main\\java\\banditvault\\neoforgecontroller\\mixin\\NeoForgeControllerRecipeOverlayAccessor.java",
+      "sha256": "bde59b7107438167af64b96432fa81194d36b3a47a975453eca27ef7c6e95882"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\main\\java\\banditvault\\neoforgecontroller\\mixin\\NeoForgeControllerScreenMixin.java",
+      "sha256": "e5c9d98635434605c3338141ff6ec0485168a148ee1a41d88053bc88d2749d91"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\main\\java\\banditvault\\neoforgecontroller\\mixin\\NeoForgeControllerTitleScreenMixin.java",
+      "sha256": "f0c8a3fce50bb2f61d1f10cf3f14c78eebf6b4d97713663ed87eafade9195988"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\main\\resources\\META-INF\\MANIFEST.MF",
+      "sha256": "566ad1a80220026d05099562645ce968ff0e7c36cde22634332605bb34cc3eff"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\main\\resources\\META-INF\\neoforge.mods.toml",
+      "sha256": "b7e00d92b4ac36398c44726e5fe6aa734a1c39bba3c673c85d276441ace2f409"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\main\\resources\\banditvault-neoforge-controller.mixins.json",
+      "sha256": "670a3abab2a124fa550610ea0cc8ca4c33102683fad1d92a277f74221da81adc"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\main\\resources\\pack.mcmeta",
+      "sha256": "a132603cc6c87b708ce9723abf02193273eb0e496c5fbacc6eac5bb41c79f2a3"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\variants\\1.21.11\\banditvault\\neoforgecontroller\\NeoForgeRadialApi.java",
+      "sha256": "e53b497f9289a2d8895b08bfaf14ea48277ef96bac39c16b8cd3d491786069f2"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\variants\\1.21.11\\banditvault\\neoforgecontroller\\mixin\\NeoForgeControllerRecipeBookAccessor.java",
+      "sha256": "a19da9da7e1c4ad5d21fb6aeae13ae92b50028124c8f4330aa44603631b6e2e6"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\variants\\1.21.11\\banditvault\\neoforgecontroller\\mixin\\NeoForgeControllerRecipeBookPageAccessor.java",
+      "sha256": "406d1543dffd007f419a3f2f939548c34b4dc726fbb82f186f45c6ee9112a8cf"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\variants\\1.21.1\\banditvault\\neoforgecontroller\\NeoForgeControllerGuide.java",
+      "sha256": "a158a173a3c418f532a9efa181e814f06bd51ace1e84b144ea029964f42eb3d1"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\variants\\1.21.1\\banditvault\\neoforgecontroller\\NeoForgeControllerRadialScreen.java",
+      "sha256": "bd7080f80dae5a9b9776c5385eb1b23be90e131ef784b881e0bdd6edd78ba2e0"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\variants\\1.21.1\\banditvault\\neoforgecontroller\\NeoForgeControllerSettingsScreen.java",
+      "sha256": "f11d2d25dfdefbec0fa0dbb5566800b93332b6bc6bb8af18444977c9d74cd89c"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\variants\\1.21.1\\banditvault\\neoforgecontroller\\NeoForgeRadialApi.java",
+      "sha256": "d99c55aaf20e851268fb952b0a2a237f0dc6d218f37d39300c5ec62de1f1231c"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\variants\\1.21.1\\banditvault\\neoforgecontroller\\NeoForgeVersionApi.java",
+      "sha256": "6b3e4c9798de5447a4c9530bef21df4793050d6055473631a6381f966bce32aa"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\variants\\1.21.1\\banditvault\\neoforgecontroller\\mixin\\NeoForgeControllerHudMixin.java",
+      "sha256": "19f56f0aa4cac7c8b476f348520ffde563550715d5dcc63049b51664a670697e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\variants\\1.21.4\\banditvault\\neoforgecontroller\\NeoForgeRadialApi.java",
+      "sha256": "811ee9a8c57bc5ec38cfc424ca7874d29e4307512e55cb41469d9af12fb85b92"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\variants\\1.21.4\\banditvault\\neoforgecontroller\\NeoForgeVersionApi.java",
+      "sha256": "c8792bf1e4a73bee0575b61412b50a46752312efdfb939c3fb49bf56b4c92724"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\variants\\1.21.5\\banditvault\\neoforgecontroller\\NeoForgeVersionApi.java",
+      "sha256": "e096fa9a0be47282d8342c1b87a292490e4a3e36cc014e3e84ea4bf66dccd9f7"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\variants\\1.21.6\\banditvault\\neoforgecontroller\\NeoForgeVersionApi.java",
+      "sha256": "f80ba8d93c1a4572b1e5c13377513ce2df671c1140e5da46a5f98fa59eec79eb"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\variants\\1.21.9\\banditvault\\neoforgecontroller\\NeoForgeControllerGuide.java",
+      "sha256": "a158a173a3c418f532a9efa181e814f06bd51ace1e84b144ea029964f42eb3d1"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\variants\\1.21.9\\banditvault\\neoforgecontroller\\NeoForgeControllerRadialScreen.java",
+      "sha256": "bd7080f80dae5a9b9776c5385eb1b23be90e131ef784b881e0bdd6edd78ba2e0"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\variants\\1.21.9\\banditvault\\neoforgecontroller\\NeoForgeControllerSettingsScreen.java",
+      "sha256": "fec2b359d3c3d7f762498d8dd53ea5651339a343d04bded567aaea43494eb265"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\variants\\1.21.9\\banditvault\\neoforgecontroller\\NeoForgeRadialApi.java",
+      "sha256": "811ee9a8c57bc5ec38cfc424ca7874d29e4307512e55cb41469d9af12fb85b92"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\variants\\1.21.9\\banditvault\\neoforgecontroller\\NeoForgeVersionApi.java",
+      "sha256": "8b7f1cc98ea97846d963b249f87cc123314ab42b30a31db3b4671458a7c703f0"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\variants\\26.1\\banditvault\\neoforgecontroller\\NeoForgeControllerGuide.java",
+      "sha256": "132d6db8f7e341df92803dd6fd36859d917b3426d4ffe3925f174a4f5776fc60"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\variants\\26.1\\banditvault\\neoforgecontroller\\NeoForgeControllerRadialScreen.java",
+      "sha256": "b729c1b933b5b7b02baeab40ac4236d0cead5cd38e00e7f31da99c2b19477ed2"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\variants\\26.1\\banditvault\\neoforgecontroller\\NeoForgeControllerSettingsScreen.java",
+      "sha256": "a0ea2eb604c25c9e52b05ede2d8ce5f16e72a01e7b53d513388eaa2aae05a567"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\variants\\26.1\\banditvault\\neoforgecontroller\\NeoForgeRadialApi.java",
+      "sha256": "e53b497f9289a2d8895b08bfaf14ea48277ef96bac39c16b8cd3d491786069f2"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\variants\\26.1\\banditvault\\neoforgecontroller\\NeoForgeVersionApi.java",
+      "sha256": "caa58cc42206ba58ef231a9af1db54fe129066b3d142ae39d91bc65db28a1209"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\variants\\26.1\\banditvault\\neoforgecontroller\\mixin\\NeoForgeControllerContainerAccessor.java",
+      "sha256": "e383ebe68baf721287d4cb834afd9ab15deda8eb4a9fb05fb73fa559e50a7888"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\variants\\26.1\\banditvault\\neoforgecontroller\\mixin\\NeoForgeControllerHandledScreenMixin.java",
+      "sha256": "acce17c604c1db0491e71d4a4014042d1444b9df24df11301431c3adbe6b091b"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\variants\\26.1\\banditvault\\neoforgecontroller\\mixin\\NeoForgeControllerHudMixin.java",
+      "sha256": "45cd55f7f172721a424c27fffaa4b3a13b76ab421368b89dda75756766247294"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\variants\\26.1\\banditvault\\neoforgecontroller\\mixin\\NeoForgeControllerInventoryScreenMixin.java",
+      "sha256": "b3436dd9deb4b87bc45eebfa1189d18ddbded6241dc1def0eff199dfe380037f"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\variants\\26.1\\banditvault\\neoforgecontroller\\mixin\\NeoForgeControllerScreenMixin.java",
+      "sha256": "60fd151dcd0d00a8fa04844a9cbe4f26f5cc650fec3273bef3eb80bc1134d1f2"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\variants\\26.1\\banditvault\\neoforgecontroller\\mixin\\NeoForgeControllerTitleScreenMixin.java",
+      "sha256": "766455f37117594fe546bfe1b3edd3d9868909888952092dde302438dddb0272"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\controller_mod\\neoforge\\src\\variants\\26.2\\banditvault\\neoforgecontroller\\NeoForgeClientApi.java",
+      "sha256": "1d2236cef0334c0fa48e95eccf2938d8f38514bef5c9e570f9a5a88bceccd234"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\NativeCapabilities\\.gitignore",
+      "sha256": "3e7fd5e3ebfcdb92389d2cb8b2581bb530099879324ca6cc7c009b9d93dc3b0d"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\NativeCapabilities\\README.md",
+      "sha256": "d51228f3bbc335f22a9f1847ad7f08874e32825e077f7685feacef3a937db6eb"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\NativeCapabilities\\build.ps1",
+      "sha256": "a18564691b63e0ee4436c5f6c7ca4912760ec0dcedc4c06388ecffeeb3aba763"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\NativeCapabilities\\contracts\\native-receipt.schema.json",
+      "sha256": "f7ceb7d2b6a8b9a1e3a00b1dba1e47afc1c763ce40f3426807d6999e215d102b"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\NativeCapabilities\\include\\build_config.h",
+      "sha256": "64077d53a8b94745b4fb323a26de15255a6b2ccb9d0ce84c1471d0a8cb4b7a30"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\NativeCapabilities\\include\\native.h",
+      "sha256": "52c6dbddd245efa17e56837622ef27ce13e7a201fa104dc8bdbd6631068a87f2"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\NativeCapabilities\\native-inventory.json",
+      "sha256": "134bf4818b261a142f13bc63da11759dbdcdc0dbc54db31d05ebe7714259b5d7"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\NativeCapabilities\\out\\20261017-173106-d79a3eae\\NativeCapabilities.unsigned.appx",
+      "sha256": "79722c961dd677a2c89610599aec2e9537727dead6d66e2e3e8ff522da8b2501"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\NativeCapabilities\\out\\20261017-180047-9ad3700d\\NativeCapabilities.unsigned.appx",
+      "sha256": "24dc6835408f9a5d38d1ab56ec82dfd550cf0dc183e495defa836299d77dd03d"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\NativeCapabilities\\out\\20261017-183031-15ba7835\\NativeCapabilities.unsigned.appx",
+      "sha256": "526c7fe24950a1084e592c2df3d020c82aa1d15cd330b4b7fd5612e82191d7e8"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\NativeCapabilities\\out\\20261017-185632-1c4c5a9c\\NativeCapabilities.unsigned.appx",
+      "sha256": "e70fd6c9ef76ff17a06a9ad605c6c88e5eb412240446b6bbfcf17d1b8897c693"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\NativeCapabilities\\out\\20261017-192156-1c3f66cf\\NativeCapabilities.unsigned.appx",
+      "sha256": "88cde899358b6eaade1658802831c5a914b8e637cf1466321b233fa8a2788c31"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\NativeCapabilities\\out\\20261017-194936-1a6bc299\\NativeCapabilities.unsigned.appx",
+      "sha256": "f0c9aff93c7fe05d202d9460d0f6f8643b3facfe674ce1543055a9027e1bc3e6"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\NativeCapabilities\\package\\Package.appxmanifest",
+      "sha256": "b2671e67a6930f6072d36c416f05e56d31b3ab42e29504da928b135990f3b3ed"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\NativeCapabilities\\profiles\\D06-SRV03.json",
+      "sha256": "573a99d978fd910eb4a39ef61246b6193aeb644b9c86ac15c1aee74b975ad1dc"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\NativeCapabilities\\src\\app.cpp",
+      "sha256": "dbc155c198745fe9e0317bd71f7895331cdb648b80493ca78ab5b00a901a2f68"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\NativeCapabilities\\src\\probe.cpp",
+      "sha256": "fa4664030decc2ba435db4ab748a97e60c2869f1a54af69a32dec873635b724d"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\NativeCapabilities\\src\\report.cpp",
+      "sha256": "43c851b3eca91533ddafea29316472b8975434d5a12fd719140f31c07d28d6d1"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\NativeCapabilities\\tools\\receipt_contract.py",
+      "sha256": "fb56e2cae65731fdeaaba59825f3e0fd198ddf88270dabb2b55b2a9ca1fc138b"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\NativeCapabilities\\tools\\static_verify.py",
+      "sha256": "e7adf0e2ef7c95df7e3a1b7703efb018216612784fa984b0829a407651038355"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\.gitattributes",
+      "sha256": "a79691a93b46e49ce460c26ef22afcc03d6eca1e63bf2edbc20e96159510f6c9"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\.gitignore",
+      "sha256": "05d63aeaae418222e523833bf85eb29614a55640987dde7cd4d0e9311d5e2ff6"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\BUILD-REQUIREMENTS.md",
+      "sha256": "104c4a9baa32e13109b7869cc94b5a8f98b5053f3d5cab4c4077c63ca136d106"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\README.md",
+      "sha256": "03a3174bcdf75ec97b32769b6c8147e316cfba3c634e8a70faceed9056479c19"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\build.ps1",
+      "sha256": "454a64ee33a97a4413987fdb63105795b39c4ea6516c5709e32678b12826ed4f"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\contracts\\receipt.schema.json",
+      "sha256": "b73b2822e9b19799e1935bc9f6af12fc2a7b77598c87523e9c44aa44a12c3790"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\docs\\ACTIVATION-EXPERIMENT.md",
+      "sha256": "754f9e236b9c0fae87c9b371927c6ba8f9d3f4c3f89cbb5be9e95ffd7d70c13a"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\docs\\ARCHITECTURE.md",
+      "sha256": "76a226f9138ac66ca9d15ecebda353b9d2c3892fb84dd9d6cf3434c28e9c1f71"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\docs\\BUILD-STATUS.md",
+      "sha256": "e432497c3de82030f5d27500086c51c3bf8dd5d5d2aed0b0f57492251f970a94"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\docs\\BUILD.md",
+      "sha256": "eb28354bc1ca149cf7fcbd6e62ec2613c3b25357508ce273e12f2179e900dd37"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\docs\\COMPILATION-RECEIPT.json",
+      "sha256": "959d8f4a30afbe4d931de787e07bf41f74ff47f581cfd58983e857dd8b4c5ad8"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\docs\\D00-BUILD-EVIDENCE.json",
+      "sha256": "cd9c0d9baac8d07e3d8dd6fd2c96c846a0901767a8ea23b6db0aee4eb1ee7fe1"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\docs\\D00-ONLY.md",
+      "sha256": "96ab757f79eefd153f97da04a1bb3631a38c3f6c5d81c54b3abfcc4a2c9484e5"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\docs\\D00-SAFETY-REVIEW.md",
+      "sha256": "ce7b78cda2d92cd3145ca56a1cc5722e5bf2086676e760c2b774e797af03bbf5"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\docs\\MTA-EXPERIMENT.md",
+      "sha256": "7e9a1c1afa8c321944e8c404fa9ec1dad114136724716be22a95a9a3ac9520b1"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\docs\\XBOX-ACCEPTANCE.md",
+      "sha256": "ed2f00129940a8b39d5053567e8dcba43e2c768ecb786ca9c319613629be9854"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\include\\build_config.h",
+      "sha256": "11803ab4c567deb21112af7ccf2905f31047104aac5004f22c38a2ca508fae12"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\include\\diagnostics.h",
+      "sha256": "f095e1d6b20adaed0d14442d0f994bf3547e45d40987787efa1c162cf77b9341"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\java\\diagnostic\\JniSmoke.java",
+      "sha256": "9a1aaf27cf3908c0c78f34b8b32ea70260aa6e15d9da59d2cd10db5d10a40a30"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\out\\20261017-122521-8ece767b\\RuntimeDiagnostics.unsigned.appx",
+      "sha256": "ecb53bb12ac86600df22c5d80608f908f10371787be9aa96e06d53011c8c9558"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\out\\20261017-140332-19d39263\\RuntimeDiagnostics.unsigned.appx",
+      "sha256": "5fd3462dcce83faea10617b19d18000f437e19d70d04b0e2a5bc98411b9a44fd"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\out\\20261017-142300-e07d5ee8\\RuntimeDiagnostics.unsigned.appx",
+      "sha256": "0595e9936aa4091ebdcce3e23b4e43fdba014d88267b4aaa0656fbd9cddb307e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\package\\Package.appxmanifest",
+      "sha256": "ae4893536a1fe6c38ed441fe69b844fd89e4e1e2d9e810534ac467dffaa1fe17"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\runtime-inventory.template.json",
+      "sha256": "280d9b53fd911a2e6d6c3c346f323c2a7c7d57d98c4f612fc0c4f544c2f9ac3f"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\src\\app.cpp",
+      "sha256": "ee5a02b58984a51e6fd93d4826490cd12e587059e95785fb084e2697835ef6ee"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\src\\jni_smoke.cpp",
+      "sha256": "3ae14dd6fce9885cadf4f93a2885f0e38e2cd83e812c24f29cff0f91fbaf64c6"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\src\\native_control.cpp",
+      "sha256": "4da7baac93fbe08a6889743ba4264e7d49247892331a4b94a2f34e0f8fb1c6bc"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\src\\report.cpp",
+      "sha256": "60a968b794dad204fa21c1a1a9240b02b930e744046a04abdde9a8f6a684afc6"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\tools\\__pycache__\\verify_artifacts.cpython-314.pyc",
+      "sha256": "ffbf36036ea6121622c1c361fe726a4821fa477616d1bdedf31aa06338fd0d00"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\tools\\audit_d00.py",
+      "sha256": "6a1876adf4e08fa223039d880f18f74f9aebaf526847d12c88102b85aea2c6b4"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\tools\\verify_artifacts.py",
+      "sha256": "a28cca956f69f34af21689496450efe4a6d93c5fd4940edffa3eea81cde2c712"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\docs\\ARCHITECTURE.md",
+      "sha256": "826f22fbb0e81f39ddcc53f08d5e1bcd7a74cfb93659afa4004e4eb1392488aa"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\docs\\COMPATIBLE-MODS.md",
+      "sha256": "5024b6fd34e536be1a60020567d9d79a0d6d1a14559484568b415c5b0f269b0a"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\docs\\HOME-ACCOUNTS-V2.md",
+      "sha256": "dd1f88044b876c6d45d38bb09ed5010abcca53905cc207ca1d7fd85b8b346313"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\docs\\PATCHING.md",
+      "sha256": "91ef0214353a065508e828cf832ca3fe9b1a55bf83e8c5aa89fa7f2222ec21a5"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\docs\\PHASE-5B.md",
+      "sha256": "2627a8c3645f329b970e5c4086dae18c639450aadafc09dd63a5a805f06542b4"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\docs\\PHASE-5C.md",
+      "sha256": "d7424ef4597df93f95890f376738d07d64c558a43feb13ef760c533a28ed7674"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\docs\\PHASE-5C2.md",
+      "sha256": "d9a58e0c9da1bb10894c5836bf62ad57731efda69bede7659ad820e5c9708a2f"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\docs\\PHASE-5C3.md",
+      "sha256": "b43bc19c72dca15e7b88e58a6d6c099dbd52a27a92a30d34c33f1f0588069d99"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\docs\\PHASE-5D.md",
+      "sha256": "5bff3e09683272d4beda0fc44e4e7c5db7c9bb50f3ff053c60e093ec3cbfada6"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\docs\\PHASE-5D2.md",
+      "sha256": "cf5382da4b1553bc451b28702efea65e1291a898ed3b255c5008019289a6da58"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\docs\\PHASE-5D3.md",
+      "sha256": "29627d4dfb9875d6014ab3b3026cd817e1b26107b060e2e5fd6bfd68d3154e63"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\docs\\PHASE-5D4.md",
+      "sha256": "2f2372f71618bec5cea39ee3e95577a148e19a25ed4d5cff4ec90a1eb8da3823"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\docs\\PHASE-5E1.md",
+      "sha256": "256be8b7e19b62d87acf91a7213fdae383cd4eaba9d69aa05eafa07a6c426158"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\docs\\PHASE-5E2.md",
+      "sha256": "84364b46b2a7c03493116d30bac4b0c98990aadb95023cd0b724ed5a62c0823f"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\docs\\PHASE-5E3.md",
+      "sha256": "2e8982b2580fbb934482486876b1dd1adef2c7f77587d6eeebd6f9e938c13277"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\docs\\PHASE-5E3A.md",
+      "sha256": "4313e9cc64e6ccc783fa7b8d6a54cf9580642d18d297c760385fbaadbaf7bdba"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\docs\\PHASE-5E3B.md",
+      "sha256": "ab281c3b39d265829209b7955f5144472c7e97b78c1e6e10cdf167c8bf04087e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\docs\\PHASE-5E3C.md",
+      "sha256": "9ddbf3a2ffaec97359a6aa8ae54e9c931416fa936859d79162cb7aa5a61ac8d3"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\docs\\PHASE-5F1.md",
+      "sha256": "daa663294736c5ad57aa17fed5bcfe9094a68f41cad60c5ccc932f6df789376e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\docs\\PHASE-5F2.md",
+      "sha256": "10fca472896060eaf3b4a3c53bd1f2355f6f418f6f37b617309002e85e589177"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\docs\\PRIVACY.md",
+      "sha256": "824c4ce174d3726d850e2cb85102138f68ecd775726c422b99a5090109df4611"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\docs\\THIRD-PARTY.md",
+      "sha256": "f4ec4e2397960b6e6f45f22f6e24599188009ba0427c2423fc5c8b88a6bc315c"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\docs\\UI-V2.md",
+      "sha256": "7328f61052ea9178c66df98018f6508032fb136a69b67862b52377f3e0a00c1c"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\glfw_shim\\build_glfw.ps1",
+      "sha256": "44ce079364e5adb8e6c9050f0e54f0512dbf055c83c1ce3b4134a57e8eda06a0"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\glfw_shim\\glfw_uwp.cpp",
+      "sha256": "0dde9a0c2e0e9b6f028fae5efe9d45a8a81a1e26e330bb72d42cacc3a4ad4d10"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\glfw_shim\\glfw_uwp.def",
+      "sha256": "ee44e5b29cf0c85239fc51a31ec5652ade205791458cebc4ee4e0b40478a3f5f"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\glfw_shim\\wgl_backend.h",
+      "sha256": "1ea8555c459fc9ed7579701f66d03902ff057317d509a3ac69f96ed2f2fd1b67"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\log_configs\\client-uwp.xml",
+      "sha256": "609b81897d8aef3be6b3c16bd43b4435744ffd788a9a90c68dc9abdda7811c31"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\mesa-runtime\\README.md",
+      "sha256": "589a7188c8c066dc3da8adc12a4260e20dbc07ac4d4aae00e1f504f8b3dd934d"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\mesa-runtime\\dxil.dll",
+      "sha256": "6733bfe8829c830a04456ab77d96124c81d3a582e703d160743c83c4c1e9ad9d"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\mesa-runtime\\libgallium_wgl.dll",
+      "sha256": "db5e48f276605c707be3ec19f5971abdeada212ceb6f2a17ccb866844e05b76c"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\mesa-runtime\\opengl32.dll",
+      "sha256": "e6d2f814b3eb7528e8a13cd03afefc11169da679639b88f70b5d7162c826c571"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\mesa-runtime\\spirv_to_dxil.dll",
+      "sha256": "bb0516f78150d3e060c11145ee25d47895d685cfcfb6122a886d7aa2a66b6a9d"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\mesa-runtime\\vulkan_dzn.dll",
+      "sha256": "57bd09034cffaa620f0380e31029d8764d14dff399ef753d72ec4ec552625d77"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\mesa-runtime\\z-1.dll",
+      "sha256": "0cfa1e87256415d907ad44609151cfdcdad7a0e83a7404e6475b01e8a9263fdf"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\mouse_support\\build_mouse_support.ps1",
+      "sha256": "8ef463fa5495e07fd205a8955eeacee7a24a149bdfd8cd47c9f39ceae83013c4"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\mouse_support\\mouse_support.cpp",
+      "sha256": "bf9e2d17ab3477706b133dc5d71cc099d82859c43d5c8df34a579a5097c038b2"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\mouse_support\\mouse_support_api.h",
+      "sha256": "76a4ff660681735157d6bbfa9ee7d62e52a03fa256c823c344ad31833c4e77e8"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\mouse_support\\mouse_support_core.h",
+      "sha256": "a535a4cd9e5389d0ed46d5f0c4cefec0c21d38a48dd508f02fcdde427c82dfd2"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\patch\\FabricLauncherBase.java",
+      "sha256": "b43754943a90d6b97f324937f8c36d3e06630e7817d8463d939ad4fbafc3d03d"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\patch\\FileSystemHandler.java",
+      "sha256": "52191ab711df3c79bcc9839ed5217bf8e0620131bfbca08a5bb010a5a4160bf1"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\patch\\FileSystemReference.java",
+      "sha256": "7134c4f6e258d54e4b4b2c6afe7673661bd8599d44803268b522f65ce77bab45"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\patch\\FileSystemUtil.java",
+      "sha256": "0934a4af63a587ad7ba6c7b8c5f477503d811ef6d7d6dc97f54caf0deb3c100b"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\patch\\LoaderUtil.java",
+      "sha256": "76f3175bb00b2fb58dfffc81592a20733c77dbea3db5ffedc6d4ed0780735d9d"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\patch\\OutputConsumerPath.java",
+      "sha256": "7f2799d72d0a787f84b30abed22e763b78b5186b194e09d6b3b727f65c32cef4"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\patch\\securejarhandler\\cpw\\mods\\cl\\ModuleClassLoader.java",
+      "sha256": "dab059e7dac4eae5ac72d3894b4220468e6fbb191a5eceff7fdcedb199534452"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\patch\\securejarhandler\\cpw\\mods\\jarhandling\\impl\\JarContentsImpl.java",
+      "sha256": "fd6208461f32cb0ae320da144d7fa37bfd6d6b28bd3d52ef89b0c8ddfadcfad3"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\scripts\\ApplyAccessTransformers.java",
+      "sha256": "7ba167bdcf69591df48654a23590190883318ce1e85396d5b1b01f0f2aec3ff1"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\scripts\\check-variant-duplicates.ps1",
+      "sha256": "c134594b2e6b4dc8d1650de7fc2df4e48df98e46b9afe39795a59a909e6c00e9"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\scripts\\clean.ps1",
+      "sha256": "3ce07aa85f975df38b16b7ba5b3ea00564672ee383072f1366551276d0549567"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\scripts\\common.ps1",
+      "sha256": "169d8a3b11072412c2c2131d7cbc9da8b82a8c7d6376b14391550af90b10185c"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\scripts\\config.ps1",
+      "sha256": "dabee14724b8a782d21fe5afa58744250bce11d23841e73f5fda168cbe973e56"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\scripts\\download-assets.ps1",
+      "sha256": "1bc155155b425e48cd4d46f6b0688c06f4f63790d941c80ab879166ddb42ef31"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\scripts\\download-libs.ps1",
+      "sha256": "e6c533b1d79fc45a8f3ec38ed691686d9c6b5734224791f4b24ac4aafb02dfe8"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\scripts\\gen-neoforge-artifacts.ps1",
+      "sha256": "7e8068fca27e3164ac9ad4df9c2143c15987078e14b6cbdd164155c251f4d9ec"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\scripts\\new-download-manifest.ps1",
+      "sha256": "843bde309ed1b1a32a06e7f11430d93f8a63d485c79ca6677886fdce57954b32"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\scripts\\patch-fabric.ps1",
+      "sha256": "36b2fddb9d98d2df47afcb1a99983dcbdf027f161ba412574933ae40fcbb2342"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\scripts\\prepare-forge-patched-client.ps1",
+      "sha256": "9eb8d26e4adb2fb21bff03c33b27bdc6564eb55723f9d211cb235603489cf407"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\scripts\\publish-release.ps1",
+      "sha256": "a398a01e42443903ba5c9ebdf7073b7d2712347f26d2eb0851930d6375b27e4b"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\scripts\\setup.ps1",
+      "sha256": "a7a122fcb4a9ba0f92f033fb98ffbf68bb0e65e4352a36019551fe23707ba067"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\scripts\\syntax-check.ps1",
+      "sha256": "7e6d70575623cdf24489207b424f00a151b77fff8e9d9d06c454c39335403b59"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\scripts\\validate-modern-version-matrix.ps1",
+      "sha256": "4fcfe2c078c20403dc7f32ed4dbc8731f9547706e5ce49d47f45b5f8cc5955dc"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\tools\\mouse-relay\\CMakeLists.txt",
+      "sha256": "cc7db126d65fa8c37ff0b15c9aed422ab31953d906edeefb84a4506d58e782cf"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\tools\\mouse-relay\\README.md",
+      "sha256": "c5c470603cd3b4c7859acad7cd6b90e5102319f642480cc7a8fca9a59d40077a"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\tools\\mouse-relay\\android\\app\\build.gradle",
+      "sha256": "fe26930f489a5e83716c034582336f34a73ca82ec6248f0b5d503601fe54d96b"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\tools\\mouse-relay\\android\\app\\src\\main\\AndroidManifest.xml",
+      "sha256": "f7e5fa5e452996a005d772635c651546260b8ff2305db3d97618fd85bd9b1d85"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\tools\\mouse-relay\\android\\app\\src\\main\\java\\dev\\bandit\\mouserelay\\MainActivity.java",
+      "sha256": "b296f5636ee3ad7d5933e31cd5d485599b81f745507aa9a9a100bb56c6623a96"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\tools\\mouse-relay\\android\\app\\src\\main\\res\\mipmap\\ic_launcher.png",
+      "sha256": "86998354266638cbc7a535a521b36913b7725d753e8e93ea371c344bb6a0ed60"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\tools\\mouse-relay\\android\\app\\src\\main\\res\\values-v28\\styles.xml",
+      "sha256": "7344a8c19e086560362ba9b3402bab19ce60ddf469a1a1facaaeb473fc717aae"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\tools\\mouse-relay\\android\\app\\src\\main\\res\\values\\strings.xml",
+      "sha256": "a0e5c0cc9f89554f692fb62d0de488f1e25cb7bb08a6097c2d03e04e2361845a"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\tools\\mouse-relay\\android\\app\\src\\main\\res\\values\\styles.xml",
+      "sha256": "46e4a076b20462376354b066381a6da77277e0335f9284645aa75840aa8eddb9"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\tools\\mouse-relay\\android\\build.gradle",
+      "sha256": "1d5bc427738b3347349340b36924c13b92f4dc93cd2d130d4c93598f11467a91"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\tools\\mouse-relay\\android\\gradle.properties",
+      "sha256": "38a23c205c84154198d5604263c2b60b41372669806e30a870b7d0592e34c274"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\tools\\mouse-relay\\android\\settings.gradle",
+      "sha256": "b8c50278f3f0b059046eedc493ec8fc20c8ca5e8e29a0d63a9009737c5ea2b8e"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\tools\\mouse-relay\\ios\\Info.plist",
+      "sha256": "37bb2af3b4f200b4756e50e5fe11593f0f6c8ea197b39985534a3363952d0ead"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\tools\\mouse-relay\\scripts\\build-windows.ps1",
+      "sha256": "cfefeb348a3db47dd67da8979186fea767d3c63295b85d2915403dcbbea13138"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\tools\\mouse-relay\\scripts\\package-windows.ps1",
+      "sha256": "8e86eafe22812ade92e1b175bde09a6c5d4b4eae4f9ac4cf1e1c638f8048327b"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\tools\\mouse-relay\\src\\app.ico",
+      "sha256": "f873cd0b08a31dd88759016fd7de5d06fd556fb06eb70f0ea71508106c753d6d"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\tools\\mouse-relay\\src\\app.rc",
+      "sha256": "9b28081be4f432414378337f0d319c3ce97b388b2fea5d10373db1049eabb8bf"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\tools\\mouse-relay\\src\\main.cpp",
+      "sha256": "10bbabbc6539ee9148a8db4b341f7fba65571c95cb97ac5c3793afa6e609286b"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\tools\\ui-preview\\render.ps1",
+      "sha256": "1c912267230240aaab05a75c4d91bad3d8f54ee9a1cba925f8dc3fed70d1b9c9"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\tools\\ui-preview\\ui_preview.cpp",
+      "sha256": "4ce8522f46bacd4ca22b2c8fa95a55305df939817264dfa95abab9d27e8b16a4"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Downloads\\IMG_5563.JPG",
+      "sha256": "d62d1121b060179d27790454fc9165e26cc6fe4abfba7ab9c08c0723e740aee8"
+    }
+  ],
+  "statusAfter": "PASS",
+  "verifiedAtUtc": "2026-10-18T03:57:21.125751+00:00",
+  "originalFrozenVerified": 175,
+  "totalPreservedVerified": 679,
+  "current": {
+    "head": "deb44072dd8e3ef2c936307b0a6788c6a95fad6b",
+    "branch": "research/phase6b5x-d06-srv03",
+    "status": ""
+  },
+  "sourceModified": false,
+  "branchChanged": false,
+  "buildsPerformed": 0,
+  "diagnosticExecutions": 0,
+  "signingsPerformed": 0,
+  "consoleAccess": false
+}

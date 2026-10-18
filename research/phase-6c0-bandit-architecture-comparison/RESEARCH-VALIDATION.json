@@ -1,0 +1,45 @@
+{
+  "status": "COMPLETE_RESEARCH_ONLY",
+  "upstreamCommit": "ba42117784ce201eb10ab5220ee25382e76cec1f",
+  "productionReference": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+  "current": {
+    "head": "deb44072dd8e3ef2c936307b0a6788c6a95fad6b",
+    "branch": "research/phase6b5x-d06-srv03",
+    "status": ""
+  },
+  "tenRequiredDocuments": [
+    "README.md",
+    "UPSTREAM-SOURCE-INVENTORY.md",
+    "ARCHITECTURE-COMPARISON.md",
+    "JVM-FEASIBILITY.md",
+    "GRAPHICS-STRATEGY.md",
+    "LEGAL-AND-LICENSE-RISKS.md",
+    "GAP-AND-RISK-REGISTER.md",
+    "RECOMMENDED-EXPERIMENTS.md",
+    "DECISION-REPORT.md",
+    "BASELINE-PRESERVATION.md"
+  ],
+  "originalFrozenFilesVerified": 175,
+  "totalFilesVerified": 679,
+  "sourceChanges": false,
+  "newImplementations": 0,
+  "builds": 0,
+  "signings": 0,
+  "installations": 0,
+  "executions": 0,
+  "consoleAccess": false,
+  "upstreamSourcesMirrored": false,
+  "recommendation": "Staged JVM qualification/load/query/VM first; small native D3D12 second track; preserve D3D11 and unsigned SRV03",
+  "reportHashes": {
+    "README.md": "6141e93b7eb849b755c875636d3d275efd5f7bbb042b99ad31b37b048afbdaaa",
+    "UPSTREAM-SOURCE-INVENTORY.md": "6cd76319b0287c3fe632a8b400074a4df95111a502e8bc5e9652703d47ba356b",
+    "ARCHITECTURE-COMPARISON.md": "f38c50b642ff8d5c563454166d2c3ec65bac3ad7343c8cea4eae3aeb46598f72",
+    "JVM-FEASIBILITY.md": "b9ba4b3cd95b7f8b7fe707fb368fa02832d403690e8b6f25252562a2cc73944c",
+    "GRAPHICS-STRATEGY.md": "55b7b77a0f66decfdad55220493b030b6ef3f342d6887b8292f6d644297bb63f",
+    "LEGAL-AND-LICENSE-RISKS.md": "89584bf5173542fe78dbaa0f622d033b6a7270af981383fb8032e8a452ec5854",
+    "GAP-AND-RISK-REGISTER.md": "3ffc2860c1ce339de069b296b7c1fb0cb6cec7f2bd343134294592e6fe53f95f",
+    "RECOMMENDED-EXPERIMENTS.md": "c8bdce9746b62efb9cd38dc825366d8493090a10c0bda8df5c9b71fcb433b4f4",
+    "DECISION-REPORT.md": "38d5c0e6376a5b1537bcb51c37668238b2ced7d82883b6f5b8c3f09fbc1735fa",
+    "BASELINE-PRESERVATION.md": "f994a3ee326d0796e4ee047647de1dfdf9a7ca24de473461213293c1b0a7e78f"
+  }
+}

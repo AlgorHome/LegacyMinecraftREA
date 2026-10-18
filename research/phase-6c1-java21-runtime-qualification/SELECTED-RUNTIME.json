@@ -1,0 +1,151 @@
+{
+  "vendor": "Eclipse Adoptium",
+  "distribution": "Eclipse Temurin HotSpot JDK",
+  "version": "21.0.12.1+1-LTS",
+  "architecture": "Windows x64",
+  "localRoot": "C:\\Users\\arinze\\AppData\\Local\\LegacyForge\\jdks\\jdk-21.0.12.1",
+  "publisherPackage": {
+    "checksum": "f9d6e191ab098c0d416e7d588a24420a8621cd2f4720dab2459b8b7b2d2d8b4e",
+    "checksum_link": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.12.1%2B1/OpenJDK21U-jdk_x64_windows_hotspot_21.0.12.1_1.zip.sha256.txt",
+    "download_count": 1075445,
+    "link": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.12.1%2B1/OpenJDK21U-jdk_x64_windows_hotspot_21.0.12.1_1.zip",
+    "metadata_link": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.12.1%2B1/OpenJDK21U-jdk_x64_windows_hotspot_21.0.12.1_1.zip.json",
+    "name": "OpenJDK21U-jdk_x64_windows_hotspot_21.0.12.1_1.zip",
+    "signature_link": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.12.1%2B1/OpenJDK21U-jdk_x64_windows_hotspot_21.0.12.1_1.zip.sig",
+    "size": 205073461
+  },
+  "publisherRelease": "https://github.com/adoptium/temurin21-binaries/releases/tag/jdk-21.0.12.1%2B1",
+  "publisherReleasePublishedAt": "2026-08-19T12:10:19Z",
+  "localImportantFiles": [
+    {
+      "path": "release",
+      "bytes": 1664,
+      "sha256": "07117c72ce033949c14878e07fbf2fe23f59a1f8c90a6d1351b5c89099847ce7"
+    },
+    {
+      "path": "NOTICE",
+      "bytes": 2400,
+      "sha256": "c02756bcd9fa8191bf0fda4451bc018414dd44ee35bf09922c24377a475e4b5a"
+    },
+    {
+      "path": "include/jni.h",
+      "bytes": 76018,
+      "sha256": "99e64ebbe749e6df284f852f11b3c73f6ea97baf15120428f40f887fe0616e61"
+    },
+    {
+      "path": "include/win32/jni_md.h",
+      "bytes": 1510,
+      "sha256": "3cacac1e4802ec246ea7c0c6772d4ac40c9f7255d4df095cfffe601137689771"
+    },
+    {
+      "path": "bin/server/jvm.dll",
+      "bytes": 13919872,
+      "sha256": "3df13bd73c7dbeef26693cef664b4ede84649720f7a12f0203215a65656d25f4"
+    },
+    {
+      "path": "bin/java.dll",
+      "bytes": 122488,
+      "sha256": "9b484b6a703e890292ab3bdb43c81c17eac1eecce585a28205d32ae42c3bc049"
+    },
+    {
+      "path": "bin/jli.dll",
+      "bytes": 89720,
+      "sha256": "1e189c727f043e924cb8779b673702ba836faa7c9e752e2743b69cde70a2c1fb"
+    },
+    {
+      "path": "bin/jimage.dll",
+      "bytes": 34424,
+      "sha256": "8123408896077c9fcdcb0d5809d5bdf6e96a3e3a1a15bec2dc7432f68b42acf4"
+    },
+    {
+      "path": "bin/verify.dll",
+      "bytes": 54912,
+      "sha256": "dd1d4af0d2c1348f29a143c358922be9d071addbf0d103d15910332cf3b74a58"
+    },
+    {
+      "path": "bin/zip.dll",
+      "bytes": 87168,
+      "sha256": "a9ae352e10a098403f497ea69442818be1148a737792a21a7d568a4836d2dc06"
+    },
+    {
+      "path": "bin/net.dll",
+      "bytes": 60024,
+      "sha256": "da8fe694d71e287cb1c74d478d8854f55d6ea26aba17e58050b772a0a7ef79d8"
+    },
+    {
+      "path": "bin/nio.dll",
+      "bytes": 80504,
+      "sha256": "50cddbcea627390ed9dee80da7ca9d1942c4c7b1e3f138276693d487a6dd589c"
+    },
+    {
+      "path": "bin/vcruntime140.dll",
+      "bytes": 119888,
+      "sha256": "02c6aa0e6e624411a9f19b0360a7865ab15908e26024510e5c38a9c08362c35a"
+    },
+    {
+      "path": "bin/vcruntime140_1.dll",
+      "bytes": 49640,
+      "sha256": "7dd9aa02e271c68ca6d5f18d651d23a15d7259715af43326578f7dde27f37637"
+    },
+    {
+      "path": "bin/msvcp140.dll",
+      "bytes": 575056,
+      "sha256": "a4c2229bdc2a2a630acdc095b4d86008e5c3e3bc7773174354f3da4f5beb9cde"
+    },
+    {
+      "path": "bin/ucrtbase.dll",
+      "bytes": 1361448,
+      "sha256": "2e5fb14b7bf8540278f3614a12f0226e56a7cc9e64b81cbd976c6fcf2f71cbfb"
+    },
+    {
+      "path": "lib/modules",
+      "bytes": 140891368,
+      "sha256": "cbcbf551210912063c7cb8384474d127568ffc8b4eef1ed57572ae7150591ec7"
+    },
+    {
+      "path": "lib/jvm.cfg",
+      "bytes": 29,
+      "sha256": "aa9efb969444c1484e29adecab55a122458090616e766b2f1230ef05bc3867e0"
+    },
+    {
+      "path": "conf/security/java.security",
+      "bytes": 73067,
+      "sha256": "7eff0eef66774d0c6a07f6c69fae02d8a7dff9b2ef3d7751af9af87a4dda33e6"
+    },
+    {
+      "path": "legal/java.base/LICENSE",
+      "bytes": 19274,
+      "sha256": "4b9abebc4338048a7c2dc184e9f800deb349366bdf28eb23c2677a77b4c87726"
+    },
+    {
+      "path": "legal/java.base/ADDITIONAL_LICENSE_INFO",
+      "bytes": 2114,
+      "sha256": "a69bce275ba7a3570af6579cb0f55682cd75fedfcd49e0e8e9022270c447c916"
+    },
+    {
+      "path": "legal/java.base/ASSEMBLY_EXCEPTION",
+      "bytes": 1514,
+      "sha256": "75292f03bf23d3db7c985aecc191029b93883200721ed23ed34a2e601463df33"
+    }
+  ],
+  "fileCount": 490,
+  "totalBytes": 343823876,
+  "localReleaseTextVerified": true,
+  "localArchiveAvailable": false,
+  "archiveChecksumVerified": false,
+  "archiveDetachedSignatureVerified": false,
+  "selectedFileAuthenticode": "Six selected files Valid; see LOCAL-SIGNATURE-OBSERVATIONS.json",
+  "jvmExports": [
+    "JNI_CreateJavaVM",
+    "JNI_GetCreatedJavaVMs",
+    "JNI_GetDefaultJavaVMInitArgs"
+  ],
+  "exportCrossCheck": "Read-only Microsoft dumpbin /exports independently confirms named JNI exports",
+  "j0Readiness": "BLOCKED",
+  "missing": [
+    "Original official archive/member comparison and detached signature verification",
+    "Exact J0 package module allowlist and CRT/framework resolution policy",
+    "Xbox API/dependency availability unresolved; no runtime load performed",
+    "New package source/build/signing/install/execution approvals not granted"
+  ]
+}

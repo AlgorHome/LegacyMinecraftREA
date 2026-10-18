@@ -1,0 +1,58 @@
+[
+  {
+    "name": "OpenJDK21 license",
+    "url": "https://raw.githubusercontent.com/openjdk/jdk21u/master/LICENSE",
+    "sha256": "4b9abebc4338048a7c2dc184e9f800deb349366bdf28eb23c2677a77b4c87726",
+    "retrievedAtUtc": "2026-10-18T01:03:18.454948+00:00",
+    "status": "ACCESSIBLE",
+    "pinNote": "License orientation only; exact future redistributable revision not selected"
+  },
+  {
+    "name": "LWJGL3.3.3 license",
+    "url": "https://raw.githubusercontent.com/LWJGL/lwjgl3/3.3.3/LICENSE.md",
+    "sha256": "4c2f770897d0cfda4d9a65bb4d6d6983dccfd57d4c7eb74ea5ded0762cbc0e75",
+    "retrievedAtUtc": "2026-10-18T01:03:18.630048+00:00",
+    "status": "ACCESSIBLE",
+    "pinNote": "License orientation only; exact future redistributable revision not selected"
+  },
+  {
+    "name": "Fabric Loader license",
+    "url": "https://raw.githubusercontent.com/FabricMC/fabric-loader/master/LICENSE",
+    "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+    "retrievedAtUtc": "2026-10-18T01:03:18.801085+00:00",
+    "status": "ACCESSIBLE",
+    "pinNote": "License orientation only; exact future redistributable revision not selected"
+  },
+  {
+    "name": "Forge license",
+    "url": "https://raw.githubusercontent.com/MinecraftForge/MinecraftForge/1.21.11/LICENSE.txt",
+    "sha256": "415f4b8c16c0077728dd5c1d84aaba7c4b10df0fb358e7270e60e46ea520fd13",
+    "retrievedAtUtc": "2026-10-18T01:03:18.973733+00:00",
+    "status": "ACCESSIBLE",
+    "pinNote": "License orientation only; exact future redistributable revision not selected"
+  },
+  {
+    "name": "NeoForge license",
+    "url": "https://raw.githubusercontent.com/neoforged/NeoForge/1.21.11/LICENSE.txt",
+    "sha256": "a8746534d481c0d1046a1c6c02acc034231ad45b56f04ca35212e1f23e3f2712",
+    "retrievedAtUtc": "2026-10-18T01:03:19.165201+00:00",
+    "status": "ACCESSIBLE",
+    "pinNote": "License orientation only; exact future redistributable revision not selected"
+  },
+  {
+    "name": "OpenAL Soft license",
+    "url": "https://raw.githubusercontent.com/kcat/openal-soft/master/COPYING",
+    "sha256": "d808ce217e5b611854da622b57ec29fe545584c48bc5352fae72a4b6e5074a15",
+    "retrievedAtUtc": "2026-10-18T01:03:19.325871+00:00",
+    "status": "ACCESSIBLE",
+    "pinNote": "License orientation only; exact future redistributable revision not selected"
+  },
+  {
+    "name": "JNA license",
+    "url": "https://raw.githubusercontent.com/java-native-access/jna/master/LICENSE",
+    "sha256": "07c938b23950ab7d47a24ef35f9f5da3a05ae164278dc959ad6994135ed59ff1",
+    "retrievedAtUtc": "2026-10-18T01:03:19.534096+00:00",
+    "status": "ACCESSIBLE",
+    "pinNote": "License orientation only; exact future redistributable revision not selected"
+  }
+]

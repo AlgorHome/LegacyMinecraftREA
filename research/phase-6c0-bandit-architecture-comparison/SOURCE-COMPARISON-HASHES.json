@@ -1,0 +1,65 @@
+[
+  {
+    "path": "MC.Xbox/launch/minecraft_launch.cpp",
+    "upstreamSha256": "b4d1a48755deb5133a6fa1c59210391d335d479b9f8f6a6b0a5c5800dff57060",
+    "productionGitBlobSha256": "34f581947e9a512b0ac95a676089c66b86c25ff45ed559f0117a9030511e5f77",
+    "byteIdentical": false,
+    "lfNormalizedIdentical": false
+  },
+  {
+    "path": "glfw_shim/glfw_uwp.cpp",
+    "upstreamSha256": "8ef8ba71a3bb3b43cbaef575c2d8a7e409a0e6813ec7e10b2c12b3aee5cc2f50",
+    "productionGitBlobSha256": "8ef8ba71a3bb3b43cbaef575c2d8a7e409a0e6813ec7e10b2c12b3aee5cc2f50",
+    "byteIdentical": true,
+    "lfNormalizedIdentical": true
+  },
+  {
+    "path": "glfw_shim/wgl_backend.h",
+    "upstreamSha256": "b2dee02955e1ae554afbb5eb5373e7d5cf486313b6bae8c5f20fe7729e51b37c",
+    "productionGitBlobSha256": "b2dee02955e1ae554afbb5eb5373e7d5cf486313b6bae8c5f20fe7729e51b37c",
+    "byteIdentical": true,
+    "lfNormalizedIdentical": true
+  },
+  {
+    "path": "MC.Xbox/launch/runtime_manager.cpp",
+    "upstreamSha256": "549958be39fbd467bc9b7f757119ed9d0cb76c1937187bd4b184583af7f677d6",
+    "productionGitBlobSha256": "f5d2ebf3c57e8b42b16873ca16579c7fc47b77ccf3d00462cfd1a2913fd98f4a",
+    "byteIdentical": false,
+    "lfNormalizedIdentical": false
+  },
+  {
+    "path": "MC.Xbox/launch/loaders/loader.cpp",
+    "upstreamSha256": "e50d588f7357cadaa01ec8e8f63e990c0582a38074e570335361fe747202d51f",
+    "productionGitBlobSha256": "e50d588f7357cadaa01ec8e8f63e990c0582a38074e570335361fe747202d51f",
+    "byteIdentical": true,
+    "lfNormalizedIdentical": true
+  },
+  {
+    "path": "MC.Xbox/launch/loaders/forge.cpp",
+    "upstreamSha256": "f3b6fc4cf89c5cc0265d1efffee2bef92abf6b99902b2f924bbe71bff065324a",
+    "productionGitBlobSha256": "f3b6fc4cf89c5cc0265d1efffee2bef92abf6b99902b2f924bbe71bff065324a",
+    "byteIdentical": true,
+    "lfNormalizedIdentical": true
+  },
+  {
+    "path": "MC.Xbox/launch/loaders/neoforge.cpp",
+    "upstreamSha256": "138fd55bd34776683bd9bfce2d6dbc4c360908af340efbf8818d23692d27c5da",
+    "productionGitBlobSha256": "138fd55bd34776683bd9bfce2d6dbc4c360908af340efbf8818d23692d27c5da",
+    "byteIdentical": true,
+    "lfNormalizedIdentical": true
+  },
+  {
+    "path": "MC.Xbox/auth/minecraft_auth.cpp",
+    "upstreamSha256": "d9248e6c24c134f82068022416c22e3f2c911379e51e4d0524b90cf0a2d24722",
+    "productionGitBlobSha256": "d9248e6c24c134f82068022416c22e3f2c911379e51e4d0524b90cf0a2d24722",
+    "byteIdentical": true,
+    "lfNormalizedIdentical": true
+  },
+  {
+    "path": "build.ps1",
+    "upstreamSha256": "5e87230881545a2d4f58c58f190f0235de6767ffeb5597002949eaa430b84598",
+    "productionGitBlobSha256": "f3710a95350b54807ecba81d4d468e400d8a608f76b97ff0bdb987714988627c",
+    "byteIdentical": false,
+    "lfNormalizedIdentical": false
+  }
+]
