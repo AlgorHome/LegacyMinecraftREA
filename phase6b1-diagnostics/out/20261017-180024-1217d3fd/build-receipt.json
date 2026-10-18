@@ -1,0 +1,213 @@
+{
+  "schema": "legacyforge-native-build-v1",
+  "sourceCommit": "ad12aadde63f04af57411bb3def71c95294cde19",
+  "buildId": "20261017-180024-1217d3fd",
+  "caseId": "D06-FMT01",
+  "definitions": [
+    "LFN_NATIVE_ONLY=1",
+    "LFN_JNI_ENABLED=0",
+    "LFD_D00_ONLY=1",
+    "LFN_CASE_D06_FMT01=1"
+  ],
+  "compiledSources": [
+    "src/app.cpp",
+    "src/report.cpp",
+    "src/probe.cpp"
+  ],
+  "nativeOnly": true,
+  "jniEnabled": false,
+  "status": "BUILD_FAILED_NOT_EXECUTED",
+  "targetExecuted": false,
+  "signed": false,
+  "commands": [
+    {
+      "log": "logs/gate-LFN_NATIVE_ONLY-0.log",
+      "expected": "nonzero preprocessor rejection",
+      "exitCode": 2,
+      "sha256": "1afe15d1330607f67cca4025ae9982c4344be58ab6cf3d50ae2a99210b075b7d",
+      "role": "gate-LFN_NATIVE_ONLY-0"
+    },
+    {
+      "log": "logs/gate-LFN_JNI_ENABLED-1.log",
+      "expected": "nonzero preprocessor rejection",
+      "exitCode": 2,
+      "sha256": "1afe15d1330607f67cca4025ae9982c4344be58ab6cf3d50ae2a99210b075b7d",
+      "role": "gate-LFN_JNI_ENABLED-1"
+    },
+    {
+      "log": "logs/gate-LFD_D00_ONLY-0.log",
+      "expected": "nonzero preprocessor rejection",
+      "exitCode": 2,
+      "sha256": "1afe15d1330607f67cca4025ae9982c4344be58ab6cf3d50ae2a99210b075b7d",
+      "role": "gate-LFD_D00_ONLY-0"
+    },
+    {
+      "log": "logs/gate-LFN_CASE_D06_FMT01-0.log",
+      "expected": "nonzero preprocessor rejection",
+      "exitCode": 2,
+      "sha256": "1afe15d1330607f67cca4025ae9982c4344be58ab6cf3d50ae2a99210b075b7d",
+      "role": "gate-LFN_CASE_D06_FMT01-0"
+    },
+    {
+      "log": "logs/gate-LFN_CASE_D06_HW01-1.log",
+      "expected": "nonzero preprocessor rejection",
+      "exitCode": 2,
+      "sha256": "38e55c66efaa3e92ab345b1101c791818d68167ce8bd330fc0061c6bbda91678",
+      "role": "gate-LFN_CASE_D06_HW01-1"
+    },
+    {
+      "log": "logs/cpp-app.log",
+      "exitCode": 0,
+      "sha256": "2cfd29eed153fc4be8dec0f6ad434df5acd289005e0a7e798ab39e1644dcba03",
+      "role": "cpp-app"
+    },
+    {
+      "log": "logs/preprocess-app.log",
+      "exitCode": 0,
+      "sha256": "2cfd29eed153fc4be8dec0f6ad434df5acd289005e0a7e798ab39e1644dcba03",
+      "role": "preprocess-app"
+    },
+    {
+      "log": "logs/cpp-report.log",
+      "exitCode": 0,
+      "sha256": "a10ee989a627ea977e6e2fcc2cfb3ac7e59c276ac40f97d2cdac8417721131d7",
+      "role": "cpp-report"
+    },
+    {
+      "log": "logs/preprocess-report.log",
+      "exitCode": 0,
+      "sha256": "a10ee989a627ea977e6e2fcc2cfb3ac7e59c276ac40f97d2cdac8417721131d7",
+      "role": "preprocess-report"
+    },
+    {
+      "log": "logs/cpp-probe.log",
+      "exitCode": 0,
+      "sha256": "25d4f66c7c01d5b35c220cb97ffdd1608405f4ab45160497e6cc7ea3079676cf",
+      "role": "cpp-probe"
+    },
+    {
+      "log": "logs/preprocess-probe.log",
+      "exitCode": 0,
+      "sha256": "25d4f66c7c01d5b35c220cb97ffdd1608405f4ab45160497e6cc7ea3079676cf",
+      "role": "preprocess-probe"
+    },
+    {
+      "log": "logs/link.log",
+      "exitCode": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "link"
+    },
+    {
+      "log": "logs/imports.log",
+      "exitCode": 0,
+      "sha256": "acf15d6ad05c08c17ec8e1b7a757a8f0834076e869a83e5ad0a54162191cc66d",
+      "role": "imports"
+    },
+    {
+      "log": "logs/headers.log",
+      "exitCode": 0,
+      "sha256": "324941ccea19e7d1eb11d814da1039bc3f5095da97f0902e871c4bcbf66a3842",
+      "role": "headers"
+    },
+    {
+      "log": "logs/assets.log",
+      "exitCode": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "assets"
+    },
+    {
+      "log": "logs/makeappx.log",
+      "exitCode": 0,
+      "sha256": "970f8ee50d2431cc70ba9dd7732b65c4f9632d1eff5f95b1cba33f0c46ac72c4",
+      "role": "makeappx"
+    },
+    {
+      "log": "logs/static-safety.log",
+      "exitCode": 1,
+      "sha256": "f8ec95628a3cfb3beb74715b0891912553cc60d87eeeaf91d51a55b39596fec7",
+      "role": "static-safety"
+    }
+  ],
+  "tools": [
+    {
+      "path": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+      "sha256": "fe251ef50a1545b1b0835ee17b1e785459712b38d79e45b5c1d3d28970a36619"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\link.exe",
+      "sha256": "a364af801a8539e4324d9489313dbf001d959128451fc99a27b24676bbac058f"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\dumpbin.exe",
+      "sha256": "cfee7ed764b7b0866aae0be12f9c0ad2a7f5aecc4046ba2b7de26335827ca815"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\makeappx.exe",
+      "sha256": "00fff202b71c1266b8c3899701e42b5468ea153b2b33a0a47215fe27695f16d0"
+    },
+    {
+      "path": "C:\\Users\\arinze\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+      "sha256": "4942b86a6597e5aee0128daa00050ed79bc21f6e709a78eb19cbfeb0c2f39ac9"
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": ".gitignore",
+      "sha256": "744a1502c1d7ad664e0677975e40beb6cf6abfe3f49da5311af22b109a50af68"
+    },
+    {
+      "path": "build.ps1",
+      "sha256": "983d4e50a1f153a16db2aba0e5cc0ab6f2537de33c82fff137d3f929f921ae5b"
+    },
+    {
+      "path": "native-inventory.json",
+      "sha256": "37cc66fcd8abd77fce39b6d488ac822e196ced3bf91cb1a7835ec90976d1f1b6"
+    },
+    {
+      "path": "README.md",
+      "sha256": "25f0a4ea9e6585e7e35d933df00a20ae9c5add89bd1e550ccfa18b403a26fab5"
+    },
+    {
+      "path": "contracts/native-receipt.schema.json",
+      "sha256": "3373265fb3aa787a375e4edc1da54e4807793bf4151d645519d9c45b5cdbb6b7"
+    },
+    {
+      "path": "include/build_config.h",
+      "sha256": "90644b27ddc2213f8e7941e995c55f15b767fa73190e486ca0241e822d2bc91a"
+    },
+    {
+      "path": "include/native.h",
+      "sha256": "fec0a2e3502777c2df8c781e1c61fb927fc533f912586aabe674338e74c68450"
+    },
+    {
+      "path": "package/Package.appxmanifest",
+      "sha256": "593fbda9d0dce1ac6b6f12a96e187d5b1c2d0d4aaced9accdadb7cf806807fd0"
+    },
+    {
+      "path": "profiles/D06-FMT01.json",
+      "sha256": "57f849c631ba5fd2de08e6d6eda593eccd81f7cba485212b99f7665b86f0a845"
+    },
+    {
+      "path": "src/app.cpp",
+      "sha256": "f103c0be4e67d1428c901d4c8ac6d33a49f2a287a2de1e6d8b1c57a4e18ee925"
+    },
+    {
+      "path": "src/probe.cpp",
+      "sha256": "16b6726216eec497ce61d85f602abef7f0281b75aeb734674ae69eb9f0d75166"
+    },
+    {
+      "path": "src/report.cpp",
+      "sha256": "012398c1163b039105d3860f95615317d1c513a48df3f5e310e1a85a100a0268"
+    },
+    {
+      "path": "tools/receipt_contract.py",
+      "sha256": "1d2ce21b7d67c7ad86566fcb58fd722a43619c358712748eed697883b98a513c"
+    },
+    {
+      "path": "tools/static_verify.py",
+      "sha256": "ab7247ef314ddab928054f7c280a2ad6f4651e3e8952e0c99f26e63841fb6bb6"
+    }
+  ],
+  "artifacts": [],
+  "generatedIdentitySha256": "863805b2bb842d8ff07468b93773a48e343435e63e2080f05a40343d751b4c5b"
+}

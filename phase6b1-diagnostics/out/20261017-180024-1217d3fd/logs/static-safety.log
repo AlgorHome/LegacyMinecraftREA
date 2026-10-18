@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\NativeCapabilities\tools\static_verify.py", line 107, in <module>
+    result=verify(a.build);a.output.write_text(json.dumps(result,indent=2));print('PASS: native D06-FMT01 static artifact audit; target not executed')
+  File "C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\NativeCapabilities\tools\static_verify.py", line 67, in verify
+    assert not re.search(r'\b(?:CreateTexture\w*|CreateBuffer|Create\w*Shader|Create\w*View|CreateSwapChain\w*|Draw\w*|Dispatch|Present\w*)\s*\(',source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
