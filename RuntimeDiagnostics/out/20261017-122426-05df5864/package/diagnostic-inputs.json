@@ -1,0 +1,96 @@
+{
+  "schema": "legacyforge-diagnostic-inputs-v1",
+  "baseline": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+  "buildId": "20261017-122426-05df5864",
+  "configuration": "D00Only",
+  "sourceCommit": "c6ef073212561edc56087a344386482fa59c9193",
+  "sourceFiles": [
+    {
+      "path": "build.ps1",
+      "sha256": "17c795e466e1e16e84d21b6e3c08dae60aaa9407b8adafe8083a136678106eb2"
+    },
+    {
+      "path": "package/Package.appxmanifest",
+      "sha256": "460332f49663e5a887ac6c0a07e6a10f205bc7669d845b33b59e8c3e8e01c235"
+    },
+    {
+      "path": "runtime-inventory.template.json",
+      "sha256": "280d9b53fd911a2e6d6c3c346f323c2a7c7d57d98c4f612fc0c4f544c2f9ac3f"
+    },
+    {
+      "path": "tools/verify_artifacts.py",
+      "sha256": "6f09056b9d0ac392b2719ed45a4837d5f19bb8425364f1db3a0bf54a2bafe528"
+    },
+    {
+      "path": "tools/audit_d00.py",
+      "sha256": "34023c4fa7ca32f88c13a52bcd0dafa4aa452879d7e0c69b07e5a0811d49524d"
+    },
+    {
+      "path": "include/diagnostics.h",
+      "sha256": "f095e1d6b20adaed0d14442d0f994bf3547e45d40987787efa1c162cf77b9341"
+    },
+    {
+      "path": "include/build_config.h",
+      "sha256": "11803ab4c567deb21112af7ccf2905f31047104aac5004f22c38a2ca508fae12"
+    },
+    {
+      "path": "src/app.cpp",
+      "sha256": "83c52828bd9901000c6ed31e1e9cf3ff0e8929aab4ece3acec99254e39e443fe"
+    },
+    {
+      "path": "src/report.cpp",
+      "sha256": "60a968b794dad204fa21c1a1a9240b02b930e744046a04abdde9a8f6a684afc6"
+    },
+    {
+      "path": "src/native_control.cpp",
+      "sha256": "4da7baac93fbe08a6889743ba4264e7d49247892331a4b94a2f34e0f8fb1c6bc"
+    },
+    {
+      "path": "src/jni_smoke.cpp",
+      "sha256": "3ae14dd6fce9885cadf4f93a2885f0e38e2cd83e812c24f29cff0f91fbaf64c6"
+    },
+    {
+      "path": "java/diagnostic/JniSmoke.java",
+      "sha256": "9a1aaf27cf3908c0c78f34b8b32ea70260aa6e15d9da59d2cd10db5d10a40a30"
+    }
+  ],
+  "runtimeInventorySha256": "a847983740065493a4e5e106aada42b355f7d1b5955cedc39dd5bf36649915c1",
+  "packageFiles": [
+    {
+      "path": "AppxManifest.xml",
+      "sha256": "fdcd667e4c95dac3fa8f1a158559478b4d04083dc38f3c8d8acdf6318c281835"
+    },
+    {
+      "path": "LICENSE.txt",
+      "sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6"
+    },
+    {
+      "path": "runtime-inventory.json",
+      "sha256": "a847983740065493a4e5e106aada42b355f7d1b5955cedc39dd5bf36649915c1"
+    },
+    {
+      "path": "RuntimeDiagnostics.exe",
+      "sha256": "f976e0abfd0347fb1e014361e5d8a8ab578acb1cda909b10fe23f69575cdd1dc"
+    },
+    {
+      "path": "Assets/SplashScreen.png",
+      "sha256": "f88748811206edee8116b16e660b3ec91018f0a0fe7ec377dce521ee37e0399a"
+    },
+    {
+      "path": "Assets/Square150x150Logo.png",
+      "sha256": "0406b630403d089059e2a7eb114bb6e4bc18cc4e85382cf2f3353cbcb389a680"
+    },
+    {
+      "path": "Assets/Square44x44Logo.png",
+      "sha256": "1986f83bbe595418567c5fb9e84b937acd928de61c9711c726725ff0e1c47611"
+    },
+    {
+      "path": "Assets/StoreLogo.png",
+      "sha256": "593d708a5fcbd0b802c25202f4e7d16b74f7d02a453e34fd8d5bb9cc686b2e18"
+    },
+    {
+      "path": "profiles/native-control.json",
+      "sha256": "faf0085ec92f82e319cc3c0393485bbc035bf3f9d645a5df3a3f51241193eb6d"
+    }
+  ]
+}

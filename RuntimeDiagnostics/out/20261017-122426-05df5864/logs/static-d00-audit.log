@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\tools\audit_d00.py", line 89, in <module>
+    result = audit(a.build)
+  File "C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\tools\audit_d00.py", line 39, in audit
+    raise ValueError('unapproved loader/process API import')
+ValueError: unapproved loader/process API import
