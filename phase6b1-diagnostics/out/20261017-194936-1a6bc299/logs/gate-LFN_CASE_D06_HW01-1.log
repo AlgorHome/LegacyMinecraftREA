@@ -1,0 +1,2 @@
+gate.cpp
+C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\NativeCapabilities\include\build_config.h(16): fatal error C1189: #error:  The accepted HW01/FMT01/RES01a/SRV01/SRV02 cases are excluded from this SRV03 build

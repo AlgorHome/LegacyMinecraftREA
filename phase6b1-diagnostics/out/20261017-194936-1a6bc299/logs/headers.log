@@ -1,0 +1,151 @@
+
+Dump of file C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\NativeCapabilities\out\20261017-194936-1a6bc299\package\NativeCapabilities.exe
+
+PE signature found
+
+File Type: EXECUTABLE IMAGE
+
+FILE HEADER VALUES
+            8664 machine (x64)
+               5 number of sections
+        6AD417AD time date stamp Sat Oct 17 19:49:49 2026
+               0 file pointer to symbol table
+               0 number of symbols
+              F0 size of optional header
+              22 characteristics
+                   Executable
+                   Application can handle large (>2GB) addresses
+
+OPTIONAL HEADER VALUES
+             20B magic # (PE32+)
+           14.44 linker version
+           10A00 size of code
+            FA00 size of initialized data
+               0 size of uninitialized data
+            FE28 entry point (000000014000FE28)
+            1000 base of code
+       140000000 image base (0000000140000000 to 0000000140023FFF)
+            1000 section alignment
+             200 file alignment
+            6.02 operating system version
+            0.00 image version
+            6.02 subsystem version
+               0 Win32 version
+           24000 size of image
+             400 size of headers
+               0 checksum
+               2 subsystem (Windows GUI)
+            9160 DLL characteristics
+                   High Entropy Virtual Addresses
+                   Dynamic base
+                   NX compatible
+                   App Container
+                   Terminal Server Aware
+          100000 size of stack reserve
+            1000 size of stack commit
+          100000 size of heap reserve
+            1000 size of heap commit
+               0 loader flags
+              10 number of directories
+               0 [       0] RVA [size] of Export Directory
+           1CFEC [     258] RVA [size] of Import Directory
+               0 [       0] RVA [size] of Resource Directory
+           22000 [     E64] RVA [size] of Exception Directory
+               0 [       0] RVA [size] of Certificates Directory
+           23000 [     204] RVA [size] of Base Relocation Directory
+           186B0 [      1C] RVA [size] of Debug Directory
+               0 [       0] RVA [size] of Architecture Directory
+               0 [       0] RVA [size] of Global Pointer Directory
+           18700 [      28] RVA [size] of Thread Storage Directory
+           18570 [     140] RVA [size] of Load Configuration Directory
+               0 [       0] RVA [size] of Bound Import Directory
+           12000 [     418] RVA [size] of Import Address Table Directory
+               0 [       0] RVA [size] of Delay Import Directory
+               0 [       0] RVA [size] of COM Descriptor Directory
+               0 [       0] RVA [size] of Reserved Directory
+
+
+SECTION HEADER #1
+   .text name
+   1082C virtual size
+    1000 virtual address (0000000140001000 to 000000014001182B)
+   10A00 size of raw data
+     400 file pointer to raw data (00000400 to 00010DFF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+60000020 flags
+         Code
+         Execute Read
+
+SECTION HEADER #2
+  .rdata name
+    C160 virtual size
+   12000 virtual address (0000000140012000 to 000000014001E15F)
+    C200 size of raw data
+   10E00 file pointer to raw data (00010E00 to 0001CFFF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40000040 flags
+         Initialized Data
+         Read Only
+
+  Debug Directories
+
+        Time Type        Size      RVA  Pointer
+    -------- ------- -------- -------- --------
+    6AD417AD coffgrp      2DC 0001A968    19768
+
+SECTION HEADER #3
+   .data name
+    2308 virtual size
+   1F000 virtual address (000000014001F000 to 0000000140021307)
+    1C00 size of raw data
+   1D000 file pointer to raw data (0001D000 to 0001EBFF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+C0000040 flags
+         Initialized Data
+         Read Write
+
+SECTION HEADER #4
+  .pdata name
+     E64 virtual size
+   22000 virtual address (0000000140022000 to 0000000140022E63)
+    1000 size of raw data
+   1EC00 file pointer to raw data (0001EC00 to 0001FBFF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40000040 flags
+         Initialized Data
+         Read Only
+
+SECTION HEADER #5
+  .reloc name
+     204 virtual size
+   23000 virtual address (0000000140023000 to 0000000140023203)
+     400 size of raw data
+   1FC00 file pointer to raw data (0001FC00 to 0001FFFF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+42000040 flags
+         Initialized Data
+         Discardable
+         Read Only
+
+  Summary
+
+        3000 .data
+        1000 .pdata
+        D000 .rdata
+        1000 .reloc
+       11000 .text
