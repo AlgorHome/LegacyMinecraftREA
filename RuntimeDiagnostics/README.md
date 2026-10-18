@@ -1,3 +1,8 @@
+RuntimeDiagnostics was orginally supposed to be in the folder 'phase6b1-diagnostics'.
+But it was mistakenly placed here.
+
+
+
 > **Phase 6B.1a:** The default configuration is now **D00Only**. See
 > [D00-only build and safety contract](docs/D00-ONLY.md).
 > Earlier Java21 instructions describe the retained Java21Smoke configuration;
