@@ -1,0 +1,28 @@
+{
+ "$schema":"https://json-schema.org/draft/2020-12/schema",
+ "$id":"urn:legacyforge:native-capability-receipt:v1",
+ "title":"D06-HW01 only; not graphics presentation or all native capability certification",
+ "type":"object","additionalProperties":false,
+ "required":["schema","case_id","source_commit","build_id","production_comparison_commit","frozen_d00_reference_commit","package_name","package_publisher","package_version","architecture","application_id","expected_package_identity","run_id","process_instance_id","java_jni_enabled","minecraft_or_gameplay_tested","all_d06_certified","hardware_device_requested","watchdog_cancels_native_calls","payload_hashes","status","reason","stage","terminal","sequence","elapsed_monotonic_ms","deadline_ms","observed_at_utc","last_durable_checkpoint_stage","receipt_persistence_result","details"],
+ "properties":{
+  "schema":{"const":"legacyforge-native-capability-receipt-v1"},"case_id":{"const":"D06-HW01"},
+  "source_commit":{"type":"string","pattern":"^[a-f0-9]{40}$"},"build_id":{"type":"string","pattern":"^[0-9]{8}-[0-9]{6}-[a-f0-9]{8}$"},
+  "production_comparison_commit":{"const":"d1453434ceefe73bef5aff497194e09f39dde7e1"},"frozen_d00_reference_commit":{"const":"553c6554f40f1372b0ea09f6badbbb98e133a9ab"},
+  "package_name":{"const":"AlgorHome.LegacyForge.NativeDiagnostics"},"package_publisher":{"const":"CN=LegacyForgeDiagnostics"},"package_version":{"const":"0.2.0.0"},"architecture":{"const":"x64"},"application_id":{"const":"App"},"expected_package_identity":{"const":true},
+  "run_id":{"type":"string","format":"uuid"},"process_instance_id":{"type":"string","format":"uuid"},
+  "java_jni_enabled":{"const":false},"minecraft_or_gameplay_tested":{"const":false},"all_d06_certified":{"const":false},"hardware_device_requested":{"const":true},"watchdog_cancels_native_calls":{"const":false},
+  "payload_hashes":{"type":"object","additionalProperties":false,"required":["executable_sha256","manifest_sha256","build_inputs_sha256","policy_sha256","schema_sha256","inventory_sha256"],"properties":{
+   "executable_sha256":{"$ref":"#/$defs/hash"},"manifest_sha256":{"$ref":"#/$defs/hash"},"build_inputs_sha256":{"$ref":"#/$defs/hash"},"policy_sha256":{"$ref":"#/$defs/hash"},"schema_sha256":{"$ref":"#/$defs/hash"},"inventory_sha256":{"$ref":"#/$defs/hash"}}},
+  "status":{"enum":["RUNNING","PASS","FAILED","BLOCKED","INCONCLUSIVE","NOT EXECUTED"]},"reason":{"type":"string","pattern":"^[A-Z0-9_]+$"},"stage":{"enum":["STARTED","BEFORE_CREATE_DEVICE","FINAL"]},"terminal":{"type":"boolean"},"sequence":{"type":"integer","minimum":1},"elapsed_monotonic_ms":{"type":"integer","minimum":0},"deadline_ms":{"const":10000},"observed_at_utc":{"type":"string","format":"date-time"},"last_durable_checkpoint_stage":{"enum":["","STARTED","BEFORE_CREATE_DEVICE"]},"receipt_persistence_result":{"const":"VERIFY_BY_RETRIEVAL"},
+  "details":{"type":"object","additionalProperties":false,"properties":{
+   "requested_driver_type":{"const":"HARDWARE"},"requested_driver_type_value":{"const":1},"requested_feature_level":{"const":45056},"creation_flags":{"const":32},"software_fallback_allowed":{"const":false},"render_or_present_tested":{"const":false},
+   "memory_before":{"$ref":"#/$defs/memory"},"memory_after_release":{"$ref":"#/$defs/memory"},"creation_hresult":{"$ref":"#/$defs/hresult"},"creation_hresult_signed":{"type":"integer","minimum":-2147483648,"maximum":2147483647},"selected_feature_level":{"type":"integer","minimum":0},"device_returned":{"type":"boolean"},"context_returned":{"type":"boolean"},"classification_hresult":{"$ref":"#/$defs/hresult"},"get_adapter_hresult":{"$ref":"#/$defs/hresult"},"get_desc_hresult":{"$ref":"#/$defs/hresult"},"adapter_flags":{"type":"integer","minimum":0},"adapter_software_flag":{"type":"boolean"},"device_removed_reason":{"$ref":"#/$defs/hresult"},"test_resources_released":{"type":"boolean"},"exception_hresult":{"$ref":"#/$defs/hresult"}
+  }}
+ },
+ "$defs":{
+  "hash":{"type":"string","pattern":"^[a-f0-9]{64}$"},
+  "hresult":{"type":"string","pattern":"^0x[A-F0-9]{8}$"},
+  "memory":{"type":"object","additionalProperties":false,"required":["available"],"properties":{"available":{"type":"boolean"},"usage_bytes":{"type":"integer","minimum":0},"limit_bytes":{"type":"integer","minimum":0},"hresult":{"$ref":"#/$defs/hresult"}}}
+ },
+ "$comment":"Schema validates structure, not hardware truth. PASS additionally requires the independent case oracle, payload comparison, deadline, cleanup and retrieval. Persistence is proved by original terminal file retrieval, not a self-prediction of successful storage."
+}
