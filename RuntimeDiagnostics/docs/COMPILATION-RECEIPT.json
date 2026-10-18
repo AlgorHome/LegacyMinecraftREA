@@ -1,0 +1,174 @@
+{
+  "schema": "legacyforge-phase6b1-compilation-evidence-v1",
+  "recorded_utc": "2026-10-17T16:35:40.092385+00:00",
+  "baseline": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+  "branch": "research/phase6b1-runtime-diagnostics",
+  "local_build_id": "20261017-113425-45caeffd",
+  "compilation": "PASS",
+  "source_inputs_match_current_files": true,
+  "compiler_and_static_commands": [
+    {
+      "role": "java-fixture",
+      "exitCode": 0
+    },
+    {
+      "role": "cpp-app",
+      "exitCode": 0
+    },
+    {
+      "role": "cpp-report",
+      "exitCode": 0
+    },
+    {
+      "role": "cpp-native_control",
+      "exitCode": 0
+    },
+    {
+      "role": "cpp-jni_smoke",
+      "exitCode": 0
+    },
+    {
+      "role": "link",
+      "exitCode": 0
+    },
+    {
+      "role": "static-imports",
+      "exitCode": 0
+    },
+    {
+      "role": "generate-original-assets",
+      "exitCode": 0
+    },
+    {
+      "role": "static-package-check",
+      "exitCode": 0
+    },
+    {
+      "role": "makeappx-unsigned",
+      "exitCode": 0
+    }
+  ],
+  "tools": [
+    {
+      "role": "javac",
+      "fileVersion": "21.0.12.1",
+      "sha256": "00f7c6f9ec89ebba4bb96cf8760403cccf1268df2eae8685900ba38e58a7aff9"
+    },
+    {
+      "role": "cl",
+      "fileVersion": "19.44.35229.0",
+      "sha256": "fe251ef50a1545b1b0835ee17b1e785459712b38d79e45b5c1d3d28970a36619"
+    },
+    {
+      "role": "link",
+      "fileVersion": "14.44.35229.0",
+      "sha256": "a364af801a8539e4324d9489313dbf001d959128451fc99a27b24676bbac058f"
+    },
+    {
+      "role": "dumpbin",
+      "fileVersion": "14.44.35229.0",
+      "sha256": "cfee7ed764b7b0866aae0be12f9c0ad2a7f5aecc4046ba2b7de26335827ca815"
+    },
+    {
+      "role": "python",
+      "fileVersion": "3.14.7",
+      "sha256": "4942b86a6597e5aee0128daa00050ed79bc21f6e709a78eb19cbfeb0c2f39ac9"
+    },
+    {
+      "role": "makeappx",
+      "fileVersion": "10.0.26100.7705 (WinBuild.160101.0800)",
+      "sha256": "00fff202b71c1266b8c3899701e42b5468ea153b2b33a0a47215fe27695f16d0"
+    },
+    {
+      "role": "jni-header",
+      "fileVersion": null,
+      "sha256": "99e64ebbe749e6df284f852f11b3c73f6ea97baf15120428f40f887fe0616e61"
+    },
+    {
+      "role": "jdk-release",
+      "fileVersion": null,
+      "sha256": "07117c72ce033949c14878e07fbf2fe23f59a1f8c90a6d1351b5c89099847ce7"
+    }
+  ],
+  "source_files": [
+    {
+      "sha256": "730ffa06828760946b3245491bfdbd59dab7eaa3eb6108b4ff888c6eab77ab60",
+      "path": "build.ps1"
+    },
+    {
+      "sha256": "4a64d9982cd48e07da857ddad21510cc12b4725f1a14b3a279207ade27da9dd6",
+      "path": "package/Package.appxmanifest"
+    },
+    {
+      "sha256": "280d9b53fd911a2e6d6c3c346f323c2a7c7d57d98c4f612fc0c4f544c2f9ac3f",
+      "path": "runtime-inventory.template.json"
+    },
+    {
+      "sha256": "544c9446bc6376e4d1b805633bb8383ef2bdeab5c2bb68d2d97d17155e30c841",
+      "path": "tools/verify_artifacts.py"
+    },
+    {
+      "sha256": "294fdd876b57a6b33438246d4f53151c5df3e766974c543b2137bcdbdae5bc47",
+      "path": "include/diagnostics.h"
+    },
+    {
+      "sha256": "5aed1bcc4532ca000aa5a31e5dd83971075f226576ed5110b380f3045513ad7b",
+      "path": "src/app.cpp"
+    },
+    {
+      "sha256": "60a968b794dad204fa21c1a1a9240b02b930e744046a04abdde9a8f6a684afc6",
+      "path": "src/report.cpp"
+    },
+    {
+      "sha256": "4da7baac93fbe08a6889743ba4264e7d49247892331a4b94a2f34e0f8fb1c6bc",
+      "path": "src/native_control.cpp"
+    },
+    {
+      "sha256": "341138e121576943530e6fdc746e4240289067caba0b7770bffe24574c22a607",
+      "path": "src/jni_smoke.cpp"
+    },
+    {
+      "sha256": "9a1aaf27cf3908c0c78f34b8b32ea70260aa6e15d9da59d2cd10db5d10a40a30",
+      "path": "java/diagnostic/JniSmoke.java"
+    }
+  ],
+  "license_files": [
+    {
+      "sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6",
+      "path": "LICENSE.txt"
+    }
+  ],
+  "native_executable": {
+    "architecture": "x64",
+    "appcontainer_flag": true,
+    "sha256": "e349811bfa2641c4f880a80108d04eddf575588980c31ab016b07c13471ce349",
+    "bytes": 182784
+  },
+  "java_fixture": {
+    "classfile_major": 65,
+    "sha256": "33cfb26683923979bf734c1b9a20f90872b958294425e4e993b3839ff3565b50",
+    "bytes": 1417
+  },
+  "unsigned_appx": {
+    "sha256": "930f6844eea2777433886d1d347b6925206d2cfd51fccf4a36b1206ab8cf9f08",
+    "bytes": 89592,
+    "crc_and_staged_contents_match": true,
+    "signed": false
+  },
+  "static_verification": {
+    "runtimeStatus": "BLOCKED_RUNTIME_NOT_SUPPLIED",
+    "identity": "AlgorHome.LegacyForge.RuntimeDiagnostics",
+    "staticVerification": "PASS",
+    "targetExecuted": false,
+    "packageFiles": 11
+  },
+  "warning_logs": [],
+  "execution": {
+    "D00": "NOT_EXECUTED_APPROVAL_REQUIRED",
+    "S21": "BLOCKED_APPROVED_RUNTIME_NOT_SUPPLIED",
+    "signing": "BLOCKED_SIGNING_INPUT_NOT_SUPPLIED",
+    "deployment": "NOT_AUTHORIZED_NOT_PERFORMED",
+    "target_binaries_executed": 0
+  },
+  "errors": []
+}

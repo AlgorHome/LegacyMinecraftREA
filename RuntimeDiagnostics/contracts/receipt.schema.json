@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:legacyforge:phase6b1:runtime-receipt:v1",
+  "title": "Phase6B.1 diagnostic observation, not gameplay/runtime-family certification",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "source_baseline", "package_role", "process_instance_id", "expected_package_identity", "package_version", "identities", "case_id", "run_id", "status", "stage", "reason", "observed_at_utc", "sequence", "elapsed_monotonic_ms", "terminal", "minecraft_or_gameplay_tested", "authentication_or_entitlements_modified", "details"],
+  "properties": {
+    "schema": {"const": "legacyforge-phase6b1-runtime-receipt-v1"},
+    "source_baseline": {"const": "d1453434ceefe73bef5aff497194e09f39dde7e1"},
+    "package_role": {"const": "INDEPENDENT_RUNTIME_DIAGNOSTICS"},
+    "process_instance_id": {"type": "string", "format": "uuid"},
+    "expected_package_identity": {"type": "boolean"},
+    "package_version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "identities": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-z_]+_sha256$": {"type": "string", "pattern": "^([a-f0-9]{64})?$"},
+        "^[a-z_]+_sha256_error$": {"type": "integer", "minimum": 0}
+      },
+      "additionalProperties": false
+    },
+    "case_id": {"enum": ["D00", "S21-JNI21"]},
+    "run_id": {"type": "string", "format": "uuid"},
+    "status": {"enum": ["RUNNING", "PASS", "FAILED", "BLOCKED", "INCONCLUSIVE", "NOT_APPLICABLE"]},
+    "stage": {"type": "string", "pattern": "^[A-Z0-9_]+$"},
+    "reason": {"type": "string", "pattern": "^[A-Z0-9_]+$"},
+    "observed_at_utc": {"type": "string", "format": "date-time"},
+    "sequence": {"type": "integer", "minimum": 1},
+    "elapsed_monotonic_ms": {"type": "integer", "minimum": 0},
+    "terminal": {"type": "boolean"},
+    "minecraft_or_gameplay_tested": {"const": false},
+    "authentication_or_entitlements_modified": {"const": false},
+    "details": {"type": "object"},
+    "last_durable_checkpoint_stage": {"type": "string", "pattern": "^[A-Z0-9_]+$"},
+    "last_durable_checkpoint_details": {"type": "object"}
+  },
+  "$comment": "Details are fixed technical fields emitted by source. This schema does not automatically certify free-text privacy, observer truth, deadlines, visual/audible behavior or target support. No actual receipts were generated during implementation."
+}
