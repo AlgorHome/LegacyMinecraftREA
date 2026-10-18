@@ -1,0 +1,92 @@
+{
+  "schema": "legacyforge-diagnostic-inputs-v1",
+  "baseline": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+  "buildId": "20261017-122222-b24b3009",
+  "configuration": "D00Only",
+  "sourceCommit": "f77bd4cdabb4955a95eb6b9224159604731645c7",
+  "sourceFiles": [
+    {
+      "path": "build.ps1",
+      "sha256": "3bac01c155c0326d95cc10ba6e6deb79f9a54a7e6d4b34e0934e8742563e835c"
+    },
+    {
+      "path": "package/Package.appxmanifest",
+      "sha256": "54d7e70671a61d0a148b30b3b8ee932bf517867c6b2bf231903a210fa11de147"
+    },
+    {
+      "path": "runtime-inventory.template.json",
+      "sha256": "280d9b53fd911a2e6d6c3c346f323c2a7c7d57d98c4f612fc0c4f544c2f9ac3f"
+    },
+    {
+      "path": "tools/verify_artifacts.py",
+      "sha256": "f3c6b67cffba731daa9bacebfb684c613d1bb3c1d52c8f7fa41d0cd920de1f5a"
+    },
+    {
+      "path": "include/diagnostics.h",
+      "sha256": "0d2338c7e90cee8c7d2a4bef27e056f31fe620c52990d105714b09d3b8b0f29d"
+    },
+    {
+      "path": "include/build_config.h",
+      "sha256": "9509ca01654b2af225d291e9772e3dc1dabb37594953450a96d00cbf7bd9d7a7"
+    },
+    {
+      "path": "src/app.cpp",
+      "sha256": "b554c849bb140c543ba4e4fd2179bab1b022f0b2d5e9a81c11ab05a79633bd65"
+    },
+    {
+      "path": "src/report.cpp",
+      "sha256": "60a968b794dad204fa21c1a1a9240b02b930e744046a04abdde9a8f6a684afc6"
+    },
+    {
+      "path": "src/native_control.cpp",
+      "sha256": "4da7baac93fbe08a6889743ba4264e7d49247892331a4b94a2f34e0f8fb1c6bc"
+    },
+    {
+      "path": "src/jni_smoke.cpp",
+      "sha256": "b9b0c3b8bbb932d765f19bfe8b381e7a076f63d8a6496a710886b296ffc8842e"
+    },
+    {
+      "path": "java/diagnostic/JniSmoke.java",
+      "sha256": "9a1aaf27cf3908c0c78f34b8b32ea70260aa6e15d9da59d2cd10db5d10a40a30"
+    }
+  ],
+  "runtimeInventorySha256": "a847983740065493a4e5e106aada42b355f7d1b5955cedc39dd5bf36649915c1",
+  "packageFiles": [
+    {
+      "path": "AppxManifest.xml",
+      "sha256": "f87311ff129fee8d7a6a42d5509d8dae7a187bccfac7d5bebd128f63a2967155"
+    },
+    {
+      "path": "LICENSE.txt",
+      "sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6"
+    },
+    {
+      "path": "runtime-inventory.json",
+      "sha256": "a847983740065493a4e5e106aada42b355f7d1b5955cedc39dd5bf36649915c1"
+    },
+    {
+      "path": "RuntimeDiagnostics.exe",
+      "sha256": "37c1b963832f61727e9e132259fb94e511959ac4a2f9e5494453d9e7a4ad83c7"
+    },
+    {
+      "path": "Assets/SplashScreen.png",
+      "sha256": "f88748811206edee8116b16e660b3ec91018f0a0fe7ec377dce521ee37e0399a"
+    },
+    {
+      "path": "Assets/Square150x150Logo.png",
+      "sha256": "0406b630403d089059e2a7eb114bb6e4bc18cc4e85382cf2f3353cbcb389a680"
+    },
+    {
+      "path": "Assets/Square44x44Logo.png",
+      "sha256": "1986f83bbe595418567c5fb9e84b937acd928de61c9711c726725ff0e1c47611"
+    },
+    {
+      "path": "Assets/StoreLogo.png",
+      "sha256": "593d708a5fcbd0b802c25202f4e7d16b74f7d02a453e34fd8d5bb9cc686b2e18"
+    },
+    {
+      "path": "profiles/native-control.json",
+      "sha256": "1f55594df207ea30fd9854e6912d89df150b239f0845ff6c613856c232e0b8af"
+    }
+  ]
+}

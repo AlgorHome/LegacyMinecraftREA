@@ -1,0 +1,42 @@
+Microsoft (R) MakeAppx Tool
+
+Copyright (C) 2013 Microsoft.  All rights reserved.
+
+
+
+The path (/p) parameter is: "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\out\20261017-113425-45caeffd\RuntimeDiagnostics.unsigned.appx"
+
+The content directory (/d) parameter is: "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\out\20261017-113425-45caeffd\package"
+
+Enumerating files from directory "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\out\20261017-113425-45caeffd\package"
+
+Packing 12 file(s) in "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\out\20261017-113425-45caeffd\package" (content directory) to "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\out\20261017-113425-45caeffd\RuntimeDiagnostics.unsigned.appx" (output file name).
+
+Memory limit defaulting to 4188739584 bytes.
+
+Using "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\out\20261017-113425-45caeffd\package\AppxManifest.xml" as the manifest for the package.
+
+Processing "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\out\20261017-113425-45caeffd\package\LICENSE.txt" as a payload file.  Its path in the package will be "LICENSE.txt".
+
+Processing "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\out\20261017-113425-45caeffd\package\Fixtures\classes\diagnostic\JniSmoke.class" as a payload file.  Its path in the package will be "Fixtures\classes\diagnostic\JniSmoke.class".
+
+Processing "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\out\20261017-113425-45caeffd\package\RuntimeDiagnostics.exe" as a payload file.  Its path in the package will be "RuntimeDiagnostics.exe".
+
+Processing "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\out\20261017-113425-45caeffd\package\Assets\Square150x150Logo.png" as a payload file.  Its path in the package will be "Assets\Square150x150Logo.png".
+
+Processing "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\out\20261017-113425-45caeffd\package\Assets\StoreLogo.png" as a payload file.  Its path in the package will be "Assets\StoreLogo.png".
+
+Processing "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\out\20261017-113425-45caeffd\package\Assets\Square44x44Logo.png" as a payload file.  Its path in the package will be "Assets\Square44x44Logo.png".
+
+Processing "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\out\20261017-113425-45caeffd\package\Assets\SplashScreen.png" as a payload file.  Its path in the package will be "Assets\SplashScreen.png".
+
+Processing "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\out\20261017-113425-45caeffd\package\runtime-inventory.json" as a payload file.  Its path in the package will be "runtime-inventory.json".
+
+Processing "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\out\20261017-113425-45caeffd\package\profiles\native-control.json" as a payload file.  Its path in the package will be "profiles\native-control.json".
+
+Processing "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\out\20261017-113425-45caeffd\package\profiles\java21-smoke.json" as a payload file.  Its path in the package will be "profiles\java21-smoke.json".
+
+Processing "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\out\20261017-113425-45caeffd\package\diagnostic-inputs.json" as a payload file.  Its path in the package will be "diagnostic-inputs.json".
+
+Package creation succeeded.
+
