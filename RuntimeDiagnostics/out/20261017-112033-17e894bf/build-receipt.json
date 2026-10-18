@@ -1,0 +1,121 @@
+{
+  "schema": "legacyforge-diagnostic-build-v1",
+  "mode": "COMPILE_AND_STATIC_PACKAGE_ONLY",
+  "targetExecuted": false,
+  "baseline": "d1453434ceefe73bef5aff497194e09f39dde7e1",
+  "buildId": "20261017-112033-17e894bf",
+  "status": "BUILD_FAILED_NOT_EXECUTED",
+  "runtimeStatus": "BLOCKED_RUNTIME_NOT_SUPPLIED",
+  "commands": [
+    {
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "java-fixture",
+      "log": "logs/java-fixture.log",
+      "exitCode": 0
+    },
+    {
+      "logSha256": "2cfd29eed153fc4be8dec0f6ad434df5acd289005e0a7e798ab39e1644dcba03",
+      "role": "cpp-app",
+      "log": "logs/cpp-app.log",
+      "exitCode": 0
+    },
+    {
+      "logSha256": "8f0ed8a2ce863d64d25a375096c12565c4b44812eafbf8b38236cddab28be909",
+      "role": "cpp-report",
+      "log": "logs/cpp-report.log",
+      "exitCode": 2
+    }
+  ],
+  "tools": [
+    {
+      "path": "<USERPROFILE>\\AppData\\Local\\Programs\\Ghidra\\jdk-21.0.12.1+1\\bin\\javac.exe",
+      "sha256": "00f7c6f9ec89ebba4bb96cf8760403cccf1268df2eae8685900ba38e58a7aff9",
+      "fileVersion": "21.0.12.1",
+      "role": "javac"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+      "sha256": "fe251ef50a1545b1b0835ee17b1e785459712b38d79e45b5c1d3d28970a36619",
+      "fileVersion": "19.44.35229.0",
+      "role": "cl"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\link.exe",
+      "sha256": "a364af801a8539e4324d9489313dbf001d959128451fc99a27b24676bbac058f",
+      "fileVersion": "14.44.35229.0",
+      "role": "link"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\dumpbin.exe",
+      "sha256": "cfee7ed764b7b0866aae0be12f9c0ad2a7f5aecc4046ba2b7de26335827ca815",
+      "fileVersion": "14.44.35229.0",
+      "role": "dumpbin"
+    },
+    {
+      "path": "<USERPROFILE>\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+      "sha256": "4942b86a6597e5aee0128daa00050ed79bc21f6e709a78eb19cbfeb0c2f39ac9",
+      "fileVersion": "3.14.7",
+      "role": "python"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\makeappx.exe",
+      "sha256": "00fff202b71c1266b8c3899701e42b5468ea153b2b33a0a47215fe27695f16d0",
+      "fileVersion": "10.0.26100.7705 (WinBuild.160101.0800)",
+      "role": "makeappx"
+    },
+    {
+      "path": "EXPLICIT_JAVA21/include/jni.h",
+      "sha256": "99e64ebbe749e6df284f852f11b3c73f6ea97baf15120428f40f887fe0616e61",
+      "role": "jni-header"
+    },
+    {
+      "path": "EXPLICIT_JAVA21/release",
+      "sha256": "07117c72ce033949c14878e07fbf2fe23f59a1f8c90a6d1351b5c89099847ce7",
+      "role": "jdk-release"
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "build.ps1",
+      "sha256": "3cf62697227f63b0f324dc75500152b5783846f55010f642313ca81b43b19590"
+    },
+    {
+      "path": "package/Package.appxmanifest",
+      "sha256": "4a64d9982cd48e07da857ddad21510cc12b4725f1a14b3a279207ade27da9dd6"
+    },
+    {
+      "path": "runtime-inventory.template.json",
+      "sha256": "280d9b53fd911a2e6d6c3c346f323c2a7c7d57d98c4f612fc0c4f544c2f9ac3f"
+    },
+    {
+      "path": "tools/verify_artifacts.py",
+      "sha256": "8f1c3703ca63e8b3aaa855296a0f768f786f597f7d452ddddfee501fdc02d2c1"
+    },
+    {
+      "path": "include/diagnostics.h",
+      "sha256": "45b0b6cdf0efe0a94d47e7715b456e9618aafc31bbaaf977734f61adaa7880ff"
+    },
+    {
+      "path": "src/app.cpp",
+      "sha256": "5e76be540d9a96550f379c3204af5c28593b0b33eb22bdf36f4228ca3d39018a"
+    },
+    {
+      "path": "src/report.cpp",
+      "sha256": "204e8bb8eec1740f2c47a7d046612568a45dc31a2971e00b7acbf5ce952c6986"
+    },
+    {
+      "path": "src/native_control.cpp",
+      "sha256": "4da7baac93fbe08a6889743ba4264e7d49247892331a4b94a2f34e0f8fb1c6bc"
+    },
+    {
+      "path": "src/jni_smoke.cpp",
+      "sha256": "326a14fe70960614b161e1cdd7f05ab55c060241e377c97ccddb4c8200204341"
+    },
+    {
+      "path": "java/diagnostic/JniSmoke.java",
+      "sha256": "9019697261e7741e817f7178850ed38097df792b29d7d045c0f4b1576090510d"
+    }
+  ],
+  "artifacts": [],
+  "licenseFiles": []
+}

@@ -1,0 +1,29 @@
+report.cpp
+C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\src\report.cpp(106): error C3779: 'winrt::impl::consume_Windows_Foundation_Collections_IMap<D,K,V>::Insert': a function that returns 'auto' cannot be used before it is defined
+        with
+        [
+            D=winrt::Windows::Data::Json::JsonObject,
+            K=winrt::hstring,
+            V=winrt::Windows::Data::Json::IJsonValue
+        ]
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\cppwinrt\winrt/impl/Windows.Foundation.Collections.0.h(350): note: see declaration of 'winrt::impl::consume_Windows_Foundation_Collections_IMap<D,K,V>::Insert'
+        with
+        [
+            D=winrt::Windows::Data::Json::JsonObject,
+            K=winrt::hstring,
+            V=winrt::Windows::Data::Json::IJsonValue
+        ]
+C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\src\report.cpp(230): error C3779: 'winrt::impl::consume_Windows_Foundation_Collections_IMap<D,K,V>::Insert': a function that returns 'auto' cannot be used before it is defined
+        with
+        [
+            D=winrt::Windows::Data::Json::JsonObject,
+            K=winrt::hstring,
+            V=winrt::Windows::Data::Json::IJsonValue
+        ]
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\cppwinrt\winrt/impl/Windows.Foundation.Collections.0.h(350): note: see declaration of 'winrt::impl::consume_Windows_Foundation_Collections_IMap<D,K,V>::Insert'
+        with
+        [
+            D=winrt::Windows::Data::Json::JsonObject,
+            K=winrt::hstring,
+            V=winrt::Windows::Data::Json::IJsonValue
+        ]

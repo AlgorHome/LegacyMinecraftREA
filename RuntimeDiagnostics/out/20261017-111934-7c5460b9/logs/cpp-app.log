@@ -1,0 +1,56 @@
+app.cpp
+C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\src\app.cpp(308): error C2589: '(': illegal token on right side of '::'
+C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\src\app.cpp(308): error C2059: syntax error: ')'
+C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\src\app.cpp(309): error C2589: '(': illegal token on right side of '::'
+C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\src\app.cpp(309): error C2059: syntax error: ')'
+C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\src\app.cpp(338): error C2589: '(': illegal token on right side of '::'
+C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\src\app.cpp(338): error C2059: syntax error: ')'
+C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\src\app.cpp(339): error C2589: '(': illegal token on right side of '::'
+C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\src\app.cpp(339): error C2059: syntax error: ')'
+C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\src\app.cpp(352): error C2039: 'DrawTextW': is not a member of 'ID2D1DeviceContext'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\d2d1_1.h(1522): note: see declaration of 'ID2D1DeviceContext'
+C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\src\app.cpp(390): error C3779: 'winrt::impl::consume_Windows_Foundation_Collections_IIterable<D,T>::begin': a function that returns 'auto' cannot be used before it is defined
+        with
+        [
+            D=winrt::Windows::Foundation::Collections::IVectorView<winrt::Windows::Gaming::Input::Gamepad>,
+            T=winrt::Windows::Gaming::Input::Gamepad
+        ]
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\cppwinrt\winrt/impl/Windows.Foundation.Collections.0.h(240): note: see declaration of 'winrt::impl::consume_Windows_Foundation_Collections_IIterable<D,T>::begin'
+        with
+        [
+            D=winrt::Windows::Foundation::Collections::IVectorView<winrt::Windows::Gaming::Input::Gamepad>,
+            T=winrt::Windows::Gaming::Input::Gamepad
+        ]
+C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\src\app.cpp(390): error C3779: 'winrt::impl::consume_Windows_Foundation_Collections_IIterable<D,T>::end': a function that returns 'auto' cannot be used before it is defined
+        with
+        [
+            D=winrt::Windows::Foundation::Collections::IVectorView<winrt::Windows::Gaming::Input::Gamepad>,
+            T=winrt::Windows::Gaming::Input::Gamepad
+        ]
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\cppwinrt\winrt/impl/Windows.Foundation.Collections.0.h(241): note: see declaration of 'winrt::impl::consume_Windows_Foundation_Collections_IIterable<D,T>::end'
+        with
+        [
+            D=winrt::Windows::Foundation::Collections::IVectorView<winrt::Windows::Gaming::Input::Gamepad>,
+            T=winrt::Windows::Gaming::Input::Gamepad
+        ]
+C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\src\app.cpp(390): error C3536: '<begin>$L0': cannot be used before it is initialized
+C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\src\app.cpp(390): error C3536: '<end>$L0': cannot be used before it is initialized
+C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\src\app.cpp(390): error C2100: you cannot dereference an operand of type '<error type>'
+C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\src\app.cpp(392): error C3536: 'buttons': cannot be used before it is initialized
+C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\src\app.cpp(392): error C2440: 'type cast': cannot convert from 'winrt::Windows::Gaming::Input::GamepadButtons' to 'unsigned int'
+C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\src\app.cpp(392): note: This conversion requires an explicit cast (static_cast, C-style cast or parenthesized function-style cast)
+C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\src\app.cpp(392): error C2677: binary '!=': no global operator found which takes type 'winrt::Windows::Gaming::Input::GamepadButtons' (or there is no acceptable conversion)
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\cppwinrt\winrt/base.h(4497): note: could be 'bool winrt::operator !=(std::nullptr_t,const winrt::weak_ref<T> &) noexcept'
+C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\src\app.cpp(392): note: 'bool winrt::operator !=(std::nullptr_t,const winrt::weak_ref<T> &) noexcept': could not deduce template argument for 'const winrt::weak_ref<T> &' from 'winrt::Windows::Gaming::Input::GamepadButtons'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\cppwinrt\winrt/base.h(4491): note: or       'bool winrt::operator !=(const winrt::weak_ref<T> &,std::nullptr_t) noexcept'
+C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\src\app.cpp(392): note: 'bool winrt::operator !=(const winrt::weak_ref<T> &,std::nullptr_t) noexcept': could not deduce template argument for 'const winrt::weak_ref<T> &' from 'unsigned int'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\cppwinrt\winrt/base.h(4485): note: or       'bool winrt::operator !=(const winrt::weak_ref<T> &,const winrt::weak_ref<T> &) noexcept'
+C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\src\app.cpp(392): note: 'bool winrt::operator !=(const winrt::weak_ref<T> &,const winrt::weak_ref<T> &) noexcept': could not deduce template argument for 'const winrt::weak_ref<T> &' from 'unsigned int'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\cppwinrt\winrt/base.h(4235): note: or       'bool winrt::operator !=(const winrt::array_view<T> &,const winrt::array_view<U> &) noexcept'
+C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\src\app.cpp(392): note: 'bool winrt::operator !=(const winrt::array_view<T> &,const winrt::array_view<U> &) noexcept': could not deduce template argument for 'const winrt::array_view<T> &' from 'unsigned int'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\cppwinrt\winrt/base.h(2791): note: or       'bool winrt::operator !=(std::nullptr_t,const winrt::com_ptr<T> &) noexcept'
+C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\src\app.cpp(392): note: 'bool winrt::operator !=(std::nullptr_t,const winrt::com_ptr<T> &) noexcept': could not deduce template argument for 'const winrt::com_ptr<T> &' from 'winrt::Windows::Gaming::Input::GamepadButtons'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\cppwinrt\winrt/base.h(2785): note: or       'bool winrt::operator !=(const winrt::com_ptr<T> &,std::nullptr_t) noexcept'
+C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\src\app.cpp(392): note: 'bool winrt::operator !=(const winrt::com_ptr<T> &,std::nullptr_t) noexcept': could not deduce template argument for 'const winrt::com_ptr<T> &' from 'unsigned int'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\cppwinrt\winrt/base.h(2779): note: or       'bool winrt::operator !=(const winrt::com_ptr<T> &,const winrt::com_ptr<T> &) noexcept'
+C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\src\app.cpp(392): note: 'bool winrt::operator !=(const winrt::com_ptr<T> &,const winrt::com_ptr<T> &) noexcept': could not deduce template argument for 'const winrt::com_ptr<T> &' from 'unsigned int'
