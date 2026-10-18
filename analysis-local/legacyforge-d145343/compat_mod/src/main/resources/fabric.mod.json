@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "banditvault_xbox_compat",
+  "version": "1.0.0",
+  "name": "BanditVault Xbox Compat",
+  "description": "Compatibility patches for Minecraft Java inside the Xbox UWP sandbox.",
+  "environment": "client",
+  "mixins": [
+    "banditvault-xbox-compat.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=__FABRIC_LOADER_VERSION__",
+    "minecraft": "__MINECRAFT_VERSION__",
+    "java": ">=21"
+  }
+}
