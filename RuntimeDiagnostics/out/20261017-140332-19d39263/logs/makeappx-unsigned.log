@@ -1,0 +1,38 @@
+Microsoft (R) MakeAppx Tool
+
+Copyright (C) 2013 Microsoft.  All rights reserved.
+
+
+
+The path (/p) parameter is: "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\out\20261017-140332-19d39263\RuntimeDiagnostics.unsigned.appx"
+
+The content directory (/d) parameter is: "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\out\20261017-140332-19d39263\package"
+
+Enumerating files from directory "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\out\20261017-140332-19d39263\package"
+
+Packing 10 file(s) in "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\out\20261017-140332-19d39263\package" (content directory) to "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\out\20261017-140332-19d39263\RuntimeDiagnostics.unsigned.appx" (output file name).
+
+Memory limit defaulting to 4188739584 bytes.
+
+Using "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\out\20261017-140332-19d39263\package\AppxManifest.xml" as the manifest for the package.
+
+Processing "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\out\20261017-140332-19d39263\package\LICENSE.txt" as a payload file.  Its path in the package will be "LICENSE.txt".
+
+Processing "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\out\20261017-140332-19d39263\package\RuntimeDiagnostics.exe" as a payload file.  Its path in the package will be "RuntimeDiagnostics.exe".
+
+Processing "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\out\20261017-140332-19d39263\package\Assets\StoreLogo.png" as a payload file.  Its path in the package will be "Assets\StoreLogo.png".
+
+Processing "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\out\20261017-140332-19d39263\package\Assets\Square150x150Logo.png" as a payload file.  Its path in the package will be "Assets\Square150x150Logo.png".
+
+Processing "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\out\20261017-140332-19d39263\package\Assets\Square44x44Logo.png" as a payload file.  Its path in the package will be "Assets\Square44x44Logo.png".
+
+Processing "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\out\20261017-140332-19d39263\package\Assets\SplashScreen.png" as a payload file.  Its path in the package will be "Assets\SplashScreen.png".
+
+Processing "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\out\20261017-140332-19d39263\package\runtime-inventory.json" as a payload file.  Its path in the package will be "runtime-inventory.json".
+
+Processing "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\out\20261017-140332-19d39263\package\profiles\native-control.json" as a payload file.  Its path in the package will be "profiles\native-control.json".
+
+Processing "\\?\C:\Users\arinze\Desktop\ReverseLegacyCraft\phase6b1-diagnostics\diagnostics\RuntimeDiagnostics\out\20261017-140332-19d39263\package\diagnostic-inputs.json" as a payload file.  Its path in the package will be "diagnostic-inputs.json".
+
+Package creation succeeded.
+
