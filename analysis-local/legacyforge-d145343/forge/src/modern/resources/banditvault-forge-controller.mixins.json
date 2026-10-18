@@ -1,0 +1,24 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "banditvault.neoforgecontroller.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "NeoForgeControllerClientMixin",
+    "NeoForgeControllerContainerAccessor",
+    "NeoForgeControllerControlsScreenMixin",
+    "NeoForgeControllerGameRendererMixin",
+    "NeoForgeControllerHandledScreenMixin",
+    "NeoForgeControllerHudMixin",
+    "NeoForgeControllerInventoryScreenMixin",
+    "NeoForgeControllerOptionsSubScreenAccessor",
+    "NeoForgeControllerRecipeBookAccessor",
+    "NeoForgeControllerRecipeBookPageAccessor",
+    "NeoForgeControllerRecipeOverlayAccessor",
+    "NeoForgeControllerScreenMixin",
+    "NeoForgeControllerTitleScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
