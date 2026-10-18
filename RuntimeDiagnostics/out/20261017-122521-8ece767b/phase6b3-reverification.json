@@ -1,0 +1,126 @@
+{
+  "schema": "legacyforge-d00-static-safety-v1",
+  "verdict": "PASS",
+  "priorReviewRequirement8": "PASS_STATIC_COMPILE_TIME_DISABLED",
+  "sourceCommit": "4101f7ee07d1c74911ffbf5cd2a44aff608c401d",
+  "configuration": "D00Only",
+  "targetExecuted": false,
+  "signed": false,
+  "deployed": false,
+  "appxSha256": "ecb53bb12ac86600df22c5d80608f908f10371787be9aa96e06d53011c8c9558",
+  "appxBytes": 59847,
+  "identity": {
+    "Name": "AlgorHome.LegacyForge.RuntimeDiagnostics",
+    "Publisher": "CN=LegacyForgeDiagnostics",
+    "Version": "0.1.1.0",
+    "ProcessorArchitecture": "x64"
+  },
+  "capabilities": [],
+  "manifestDependencies": [
+    {
+      "Name": "Windows.Universal",
+      "MinVersion": "10.0.17763.0",
+      "MaxVersionTested": "10.0.26100.0"
+    },
+    {
+      "Name": "Microsoft.VCLibs.140.00",
+      "MinVersion": "14.0.0.0",
+      "Publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+    }
+  ],
+  "directImportModules": [
+    "api-ms-win-core-com-l1-1-0.dll",
+    "api-ms-win-core-errorhandling-l1-1-0.dll",
+    "api-ms-win-core-file-l1-1-0.dll",
+    "api-ms-win-core-file-l1-2-0.dll",
+    "api-ms-win-core-file-l2-1-0.dll",
+    "api-ms-win-core-handle-l1-1-0.dll",
+    "api-ms-win-core-heap-l1-1-0.dll",
+    "api-ms-win-core-interlocked-l1-1-0.dll",
+    "api-ms-win-core-libraryloader-l1-2-0.dll",
+    "api-ms-win-core-processthreads-l1-1-0.dll",
+    "api-ms-win-core-profile-l1-1-0.dll",
+    "api-ms-win-core-string-l1-1-0.dll",
+    "api-ms-win-core-synch-l1-1-0.dll",
+    "api-ms-win-core-synch-l1-2-0.dll",
+    "api-ms-win-core-sysinfo-l1-1-0.dll",
+    "api-ms-win-core-winrt-error-l1-1-1.dll",
+    "api-ms-win-core-winrt-l1-1-0.dll",
+    "api-ms-win-crt-heap-l1-1-0.dll",
+    "api-ms-win-crt-locale-l1-1-0.dll",
+    "api-ms-win-crt-math-l1-1-0.dll",
+    "api-ms-win-crt-runtime-l1-1-0.dll",
+    "api-ms-win-crt-stdio-l1-1-0.dll",
+    "api-ms-win-crt-string-l1-1-0.dll",
+    "bcrypt.dll",
+    "d2d1.dll",
+    "d3d11.dll",
+    "DWrite.dll",
+    "MSVCP140_APP.dll",
+    "OLEAUT32.dll",
+    "VCRUNTIME140_1_APP.dll",
+    "VCRUNTIME140_APP.dll"
+  ],
+  "systemLoaderImports": [
+    "LoadLibraryExW",
+    "GetProcAddress",
+    "FreeLibrary"
+  ],
+  "payload": [
+    {
+      "path": "AppxManifest.xml",
+      "bytes": 1424,
+      "sha256": "aeb26c76e9b53342fbff2ddded481df804a1a553ee2588f1c516fb9639c93400"
+    },
+    {
+      "path": "Assets/SplashScreen.png",
+      "bytes": 2518,
+      "sha256": "f88748811206edee8116b16e660b3ec91018f0a0fe7ec377dce521ee37e0399a"
+    },
+    {
+      "path": "Assets/Square150x150Logo.png",
+      "bytes": 570,
+      "sha256": "0406b630403d089059e2a7eb114bb6e4bc18cc4e85382cf2f3353cbcb389a680"
+    },
+    {
+      "path": "Assets/Square44x44Logo.png",
+      "bytes": 142,
+      "sha256": "1986f83bbe595418567c5fb9e84b937acd928de61c9711c726725ff0e1c47611"
+    },
+    {
+      "path": "Assets/StoreLogo.png",
+      "bytes": 153,
+      "sha256": "593d708a5fcbd0b802c25202f4e7d16b74f7d02a453e34fd8d5bb9cc686b2e18"
+    },
+    {
+      "path": "LICENSE.txt",
+      "bytes": 11558,
+      "sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6"
+    },
+    {
+      "path": "RuntimeDiagnostics.exe",
+      "bytes": 119296,
+      "sha256": "418a77107f02f28dc8df882e4a31ea744d93f9c3d5470aa267ffc03a8eca4231"
+    },
+    {
+      "path": "diagnostic-inputs.json",
+      "bytes": 3318,
+      "sha256": "4b98e676878900e44ffd92f9b7cec53145807bcf08dc31633c31bbf59be5c5b5"
+    },
+    {
+      "path": "profiles/native-control.json",
+      "bytes": 154,
+      "sha256": "9b69198a132c651a2fdea1ddcaecefe20f1d30dac5ed764be05c8f1b4057e3ba"
+    },
+    {
+      "path": "runtime-inventory.json",
+      "bytes": 234,
+      "sha256": "a847983740065493a4e5e106aada42b355f7d1b5955cedc39dd5bf36649915c1"
+    }
+  ],
+  "limits": [
+    "No activation or runtime behavior tested",
+    "Direct imports are not resolved transitive dependency closure",
+    "Synchronous rejection stub inspected, never invoked"
+  ]
+}

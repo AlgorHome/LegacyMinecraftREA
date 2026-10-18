@@ -1,0 +1,41 @@
+[
+  {
+    "test": "untampered D00 stage",
+    "result": "PASS"
+  },
+  {
+    "test": "unexpected DLL",
+    "result": "PASS_REJECTED",
+    "reason": "D00-only exact payload allowlist mismatch"
+  },
+  {
+    "test": "Java fixture",
+    "result": "PASS_REJECTED",
+    "reason": "D00-only exact payload allowlist mismatch"
+  },
+  {
+    "test": "S21 profile",
+    "result": "PASS_REJECTED",
+    "reason": "D00-only exact payload allowlist mismatch"
+  },
+  {
+    "test": "runtime approval flag",
+    "result": "PASS_REJECTED",
+    "reason": "D00-only forbids runtime/fixture approval or inputs"
+  },
+  {
+    "test": "D00 build rejects RuntimeRoot",
+    "result": "PASS_REJECTED_BEFORE_OUTPUT_OR_TOOL_INVOCATION",
+    "exitCode": 1
+  },
+  {
+    "test": "D00 build rejects RuntimeInventory",
+    "result": "PASS_REJECTED_BEFORE_OUTPUT_OR_TOOL_INVOCATION",
+    "exitCode": 1
+  },
+  {
+    "test": "D00 build rejects JavaHome21",
+    "result": "PASS_REJECTED_BEFORE_OUTPUT_OR_TOOL_INVOCATION",
+    "exitCode": 1
+  }
+]

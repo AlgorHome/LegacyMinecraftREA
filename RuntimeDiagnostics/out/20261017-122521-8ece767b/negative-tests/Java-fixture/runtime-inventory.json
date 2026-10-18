@@ -1,0 +1,10 @@
+{
+  "schema": "legacyforge-runtime-inventory-v1",
+  "available": false,
+  "approvedForDiagnosticPackaging": false,
+  "expectedJavaMajor": 21,
+  "architecture": "x64",
+  "files": [],
+  "loadOrder": [],
+  "fixtureFiles": []
+}
