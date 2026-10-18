@@ -1,0 +1,25 @@
+// runtime_config.h.in - template substituted by build.ps1 before compiling App.cpp.
+//
+// The build script replaces the placeholders below with values from
+// scripts/config.ps1 (overridable via the -McVersion, -FabricLoader,
+// -AssetIndex parameters on build.ps1). The substituted output is written to
+// the build directory as runtime_config.h and picked up via the compiler
+// INCLUDE path.
+//
+// Do not include this template directly. Do not check in the generated header.
+
+#pragma once
+
+static constexpr wchar_t kDefaultMinecraftVersionW[] = L"@@MC_VERSION@@";
+static constexpr char    kDefaultMinecraftVersion[]  = "@@MC_VERSION@@";
+static constexpr char    kDefaultFabricLoaderVersion[] = "@@FABRIC_LOADER_VERSION@@";
+static constexpr char    kDefaultFabricLaunchVersion[] = "fabric-loader-@@FABRIC_LOADER_VERSION@@-@@MC_VERSION@@";
+static constexpr char    kDefaultMinecraftAssetIndex[] = "@@MC_ASSET_INDEX@@";
+
+// Compatibility aliases while the launcher is moved from one compile-time
+// Minecraft version to profile-owned launch targets.
+static constexpr wchar_t kMinecraftVersionW[] = L"@@MC_VERSION@@";
+static constexpr char    kMinecraftVersion[]  = "@@MC_VERSION@@";
+static constexpr char    kFabricLoaderVersion[] = "@@FABRIC_LOADER_VERSION@@";
+static constexpr char    kFabricLaunchVersion[] = "fabric-loader-@@FABRIC_LOADER_VERSION@@-@@MC_VERSION@@";
+static constexpr char    kMinecraftAssetIndex[] = "@@MC_ASSET_INDEX@@";
