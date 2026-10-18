@@ -1,0 +1,18 @@
+[
+  {
+    "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b3d-signing\\20261017-132111-5ff08807\\RuntimeDiagnostics.D00.signed.appx",
+    "sha256": "51e5c74462e79a296335beab4830f479e861e7132e0f660c680f6974d3b27530"
+  },
+  {
+    "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\out\\20261017-122521-8ece767b\\RuntimeDiagnostics.unsigned.appx",
+    "sha256": "ecb53bb12ac86600df22c5d80608f908f10371787be9aa96e06d53011c8c9558"
+  },
+  {
+    "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b3c-certificate\\CERTIFICATE-PUBLIC-METADATA.json",
+    "sha256": "0b97d0d88a9e549cbaa453d6d17f54d087a5d1da9dea45c3ee4f79c66d725560"
+  },
+  {
+    "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b4a-activation-investigation\\OWNER-OBSERVATIONS.json",
+    "sha256": "720a92d11875ccb422d09f8b13c58f611e9e818b21fb79f6cbc1764b1c8944c0"
+  }
+]

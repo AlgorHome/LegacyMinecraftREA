@@ -1,0 +1,29 @@
+
+
+Verifying: C:/Users/arinze/Desktop/ReverseLegacyCraft/analysis-local/phase6b3d-signing/20261017-132111-5ff08807/RuntimeDiagnostics.D00.signed.appx
+
+
+Signature Index: 0 (Primary Signature)
+Hash of file (sha256): 415050584158504373D92E798B31161DE08969E02D500AF4F1D4DA3D2AF2A1662193BE92B30FE72941584344C919F6B5BB90D97867071E1EE98E77C97DAD83CAB6349FA412259A938E048C1841584354E88123AA86134DCE648915F1B83003C1279D5A712F6B6EF05F62B6F4B7523BDE4158424D98C9712EF728701EFBA934AB17E854C7EAEC0A2E66921D3EBD8479EE0C02D4E841584349C8B3DA04C27AE80E95AE4BE97CB8197EBFC921901D10064C290A3783AE937685
+
+Signing Certificate Chain:
+    Issued to: LegacyForgeDiagnostics
+
+    Issued by: LegacyForgeDiagnostics
+
+    Expires:   Sun Oct 17 13:08:48 2027
+
+    SHA1 hash: D6245FB640D520EDED8F8A987B364BCADE01D01D
+
+
+File is not timestamped.
+
+
+Number of files successfully Verified: 0
+
+Number of warnings: 0
+
+Number of errors: 1
+
+SignTool Error: A certificate chain processed, but terminated in a root
+	certificate which is not trusted by the trust provider.

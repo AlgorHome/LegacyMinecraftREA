@@ -1,0 +1,30 @@
+{
+  "phase": "6B.4 first Xbox D00 launch",
+  "authority": "owner-reported, not independently observed by Codex",
+  "console": "Xbox Series X",
+  "os_build": "10.26100.9445",
+  "registration": "PASS",
+  "identity": {
+    "name": "AlgorHome.LegacyForge.RuntimeDiagnostics",
+    "publisher": "CN=LegacyForgeDiagnostics",
+    "version": "0.1.1.0",
+    "architecture": "x64",
+    "classification": "App",
+    "package_full_name": null,
+    "package_full_name_evidence": "visible but truncated in owner screenshot"
+  },
+  "activation_attempt": "FAILED",
+  "error_decimal": -2015297530,
+  "error_hex": "0x87E10006",
+  "message": "Failed to launch the application.",
+  "process_after_attempt": "Not running",
+  "d00_ui": "NOT OBSERVED",
+  "native_control_execution": "UNKNOWN",
+  "receipt_persistence": "UNKNOWN",
+  "overall_acceptance": "FAILED",
+  "authorized_launch_attempt_consumed": true,
+  "screenshot_file": null,
+  "screenshot_preservation": "BLOCKED - original not supplied to this turn",
+  "additional_launches_performed_by_codex": 0,
+  "console_access_performed_by_codex": false
+}

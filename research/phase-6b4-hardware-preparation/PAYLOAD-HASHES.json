@@ -1,0 +1,33 @@
+{
+  "signed_appx_sha256": "51e5c74462e79a296335beab4830f479e861e7132e0f660c680f6974d3b27530",
+  "payload_roles": [
+    {
+      "role": "diagnostic_exe_sha256",
+      "entry": "RuntimeDiagnostics.exe",
+      "sha256": "418a77107f02f28dc8df882e4a31ea744d93f9c3d5470aa267ffc03a8eca4231"
+    },
+    {
+      "role": "package_manifest_sha256",
+      "entry": "AppxManifest.xml",
+      "sha256": "aeb26c76e9b53342fbff2ddded481df804a1a553ee2588f1c516fb9639c93400"
+    },
+    {
+      "role": "input_manifest_sha256",
+      "entry": "diagnostic-inputs.json",
+      "sha256": "4b98e676878900e44ffd92f9b7cec53145807bcf08dc31633c31bbf59be5c5b5"
+    },
+    {
+      "role": "runtime_inventory_sha256",
+      "entry": "runtime-inventory.json",
+      "sha256": "a847983740065493a4e5e106aada42b355f7d1b5955cedc39dd5bf36649915c1"
+    },
+    {
+      "role": "profile_sha256",
+      "entry": "profiles/native-control.json",
+      "sha256": "9b69198a132c651a2fdea1ddcaecefe20f1d30dac5ed764be05c8f1b4057e3ba"
+    }
+  ],
+  "hardware_execution": "NOT AUTHORIZED OR PERFORMED",
+  "installation": "PASS - owner reported",
+  "package_full_name": "NOT DISPLAYED"
+}

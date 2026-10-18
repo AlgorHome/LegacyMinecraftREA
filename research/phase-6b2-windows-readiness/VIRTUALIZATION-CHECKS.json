@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-17 America/Chicago",
+  "scope": "READ_ONLY_HOST_QUERIES",
+  "executionReadyForApproval": false,
+  "getComputerInfo": {
+    "WindowsProductName": "Windows 10 Pro",
+    "WindowsVersion": "2009",
+    "OsBuildNumber": "26300"
+  },
+  "win32OperatingSystem": {
+    "Caption": "Microsoft Windows 11 Pro",
+    "Version": "10.0.26300",
+    "BuildNumber": "26300",
+    "OSArchitecture": "64-bit"
+  },
+  "featureQueries": {
+    "Containers-DisposableClientVM": {
+      "status": "BLOCKED_ELEVATION_REQUIRED",
+      "hresult": -2147024156
+    },
+    "Microsoft-Hyper-V-All": {
+      "status": "BLOCKED_ELEVATION_REQUIRED",
+      "hresult": -2147024156
+    }
+  },
+  "getVmCommand": "PRESENT_HYPER_V_MODULE",
+  "vmInventory": {
+    "status": "BLOCKED_PERMISSION_UNAVAILABLE",
+    "hresult": -2146233088
+  },
+  "cpu": {
+    "Name": "Intel(R) Core(TM) i5-9500 CPU @ 3.00GHz",
+    "VirtualizationFirmwareEnabled": false,
+    "SecondLevelAddressTranslationExtensions": false,
+    "VMMonitorModeExtensions": false
+  },
+  "HypervisorPresent": true,
+  "interpretation": "CPU flags not treated as proof virtualization disabled while hypervisor present",
+  "selectedGuest": null,
+  "diagnosticExecution": "NOT_EXECUTED",
+  "sourceChanged": false
+}

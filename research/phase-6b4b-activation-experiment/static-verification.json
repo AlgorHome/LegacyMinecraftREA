@@ -1,0 +1,8 @@
+{
+  "runtimeStatus": "BLOCKED_RUNTIME_NOT_SUPPLIED",
+  "configuration": "D00Only",
+  "identity": "AlgorHome.LegacyForge.RuntimeDiagnostics",
+  "staticVerification": "PASS",
+  "targetExecuted": false,
+  "packageFiles": 9
+}

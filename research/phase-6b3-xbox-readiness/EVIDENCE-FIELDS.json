@@ -1,0 +1,52 @@
+{
+  "schema": "legacyforge-d00-owner-observation-v1",
+  "templateOnly": true,
+  "sourceCommit": "4101f7ee07d1c74911ffbf5cd2a44aff608c401d",
+  "unsignedAppxSha256": "ecb53bb12ac86600df22c5d80608f908f10371787be9aa96e06d53011c8c9558",
+  "signedAppxSha256": null,
+  "dependencyArtifactSha256": null,
+  "consoleOsBuild": null,
+  "appOrGameClassification": null,
+  "exactDiagnosticPackageFullName": null,
+  "receiptRunId": null,
+  "receiptProcessInstanceId": null,
+  "originalReceiptSha256": null,
+  "fields": {
+    "packageRegistration": {
+      "result": "NOT_EXECUTED",
+      "evidence": null
+    },
+    "activation": {
+      "result": "NOT_EXECUTED",
+      "evidence": null
+    },
+    "d00InitialRendering": {
+      "result": "NOT_EXECUTED",
+      "evidence": null
+    },
+    "durableReceiptWriting": {
+      "result": "NOT_EXECUTED",
+      "evidence": null
+    },
+    "receiptRetrieval": {
+      "result": "NOT_EXECUTED",
+      "evidence": null
+    },
+    "nativeControlObservations": {
+      "result": "NOT_EXECUTED",
+      "evidence": null
+    },
+    "overallD00Acceptance": {
+      "result": "NOT_EXECUTED",
+      "evidence": null
+    }
+  },
+  "formalGraphicsD06": "NOT_EXECUTED",
+  "jni": "DISABLED_COMPILE_TIME",
+  "notes": [
+    "Use fresh owner-observed receipt and approved hashes, not a stale file",
+    "Render failure may coexist with successful registration/receipt writing",
+    "Only overall receipt PASS with complete binding satisfies overall D00",
+    "The jvm_loaded field is a source assertion, not module enumeration"
+  ]
+}

@@ -1,0 +1,596 @@
+{
+  "verdict": "PASS_STATIC_ONLY",
+  "source_commit": "553c6554f40f1372b0ea09f6badbbb98e133a9ab",
+  "source_changed_paths": [
+    "diagnostics/RuntimeDiagnostics/docs/MTA-EXPERIMENT.md",
+    "diagnostics/RuntimeDiagnostics/package/Package.appxmanifest",
+    "diagnostics/RuntimeDiagnostics/src/app.cpp",
+    "diagnostics/RuntimeDiagnostics/tools/verify_artifacts.py"
+  ],
+  "sole_runtime_source_change": "entry-thread STA to MTA",
+  "manifest_only_change": "Version 0.1.2.0 to 0.1.3.0",
+  "identity": {
+    "Name": "AlgorHome.LegacyForge.RuntimeDiagnostics",
+    "Publisher": "CN=LegacyForgeDiagnostics",
+    "Version": "0.1.3.0",
+    "ProcessorArchitecture": "x64"
+  },
+  "entrypoint": "LegacyForgeDiagnostics.App",
+  "capabilities": [],
+  "unsigned_artifact": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\out\\20261017-142300-e07d5ee8\\RuntimeDiagnostics.unsigned.appx",
+  "unsigned_sha256": "0595e9936aa4091ebdcce3e23b4e43fdba014d88267b4aaa0656fbd9cddb307e",
+  "direct_imports_identical": true,
+  "delay_imports_identical": true,
+  "static_PE_baseline": {
+    "role": "diagnostic",
+    "path": "RuntimeDiagnostics.exe",
+    "bytes": 119296,
+    "sha256": "e0f43709d09491bbbad28845c9018b4250c07c2612865daa75f30f476b667d40",
+    "machine": "0x8664",
+    "architecture": "x86_64",
+    "imports": [
+      {
+        "module": "d2d1.dll",
+        "functions": [
+          "ordinal:1"
+        ]
+      },
+      {
+        "module": "d3d11.dll",
+        "functions": [
+          "D3D11CreateDevice"
+        ]
+      },
+      {
+        "module": "DWrite.dll",
+        "functions": [
+          "DWriteCreateFactory"
+        ]
+      },
+      {
+        "module": "api-ms-win-core-file-l1-1-0.dll",
+        "functions": [
+          "WriteFile",
+          "CreateDirectoryW",
+          "ReadFile",
+          "GetFileAttributesW",
+          "FlushFileBuffers"
+        ]
+      },
+      {
+        "module": "api-ms-win-core-file-l1-2-0.dll",
+        "functions": [
+          "CreateFile2"
+        ]
+      },
+      {
+        "module": "api-ms-win-core-handle-l1-1-0.dll",
+        "functions": [
+          "CloseHandle"
+        ]
+      },
+      {
+        "module": "api-ms-win-core-errorhandling-l1-1-0.dll",
+        "functions": [
+          "GetLastError"
+        ]
+      },
+      {
+        "module": "api-ms-win-core-sysinfo-l1-1-0.dll",
+        "functions": [
+          "GetSystemTime",
+          "GetSystemTimeAsFileTime",
+          "GetTickCount64"
+        ]
+      },
+      {
+        "module": "api-ms-win-core-file-l2-1-0.dll",
+        "functions": [
+          "MoveFileExW"
+        ]
+      },
+      {
+        "module": "bcrypt.dll",
+        "functions": [
+          "BCryptGetProperty",
+          "BCryptCloseAlgorithmProvider",
+          "BCryptOpenAlgorithmProvider",
+          "BCryptDestroyHash",
+          "BCryptFinishHash",
+          "BCryptHashData",
+          "BCryptCreateHash"
+        ]
+      },
+      {
+        "module": "api-ms-win-core-com-l1-1-0.dll",
+        "functions": [
+          "CoCreateGuid",
+          "CoTaskMemAlloc",
+          "StringFromGUID2",
+          "CoCreateFreeThreadedMarshaler",
+          "CoInitializeEx"
+        ]
+      },
+      {
+        "module": "MSVCP140_APP.dll",
+        "functions": [
+          "?_Xlength_error@std@@YAXPEBD@Z",
+          "?_Throw_Cpp_error@std@@YAXH@Z",
+          "_Query_perf_counter",
+          "_Query_perf_frequency",
+          "_Thrd_detach",
+          "_Mtx_unlock",
+          "_Mtx_lock",
+          "_Cnd_do_broadcast_at_thread_exit"
+        ]
+      },
+      {
+        "module": "VCRUNTIME140_APP.dll",
+        "functions": [
+          "_CxxThrowException",
+          "__std_terminate",
+          "memcpy",
+          "__std_exception_copy",
+          "memset",
+          "__C_specific_handler",
+          "memmove",
+          "__std_exception_destroy"
+        ]
+      },
+      {
+        "module": "VCRUNTIME140_1_APP.dll",
+        "functions": [
+          "__CxxFrameHandler4"
+        ]
+      },
+      {
+        "module": "api-ms-win-crt-runtime-l1-1-0.dll",
+        "functions": [
+          "_set_app_type",
+          "_configure_wide_argv",
+          "_initialize_wide_environment",
+          "_register_thread_local_exe_atexit_callback",
+          "_cexit",
+          "exit",
+          "_crt_atexit",
+          "_register_onexit_function",
+          "_initialize_onexit_table",
+          "_initterm_e",
+          "_c_exit",
+          "_get_wide_winmain_command_line",
+          "_seh_filter_exe",
+          "_beginthreadex",
+          "abort",
+          "_errno",
+          "_invoke_watson",
+          "_exit",
+          "_invalid_parameter_noinfo",
+          "_initterm",
+          "terminate"
+        ]
+      },
+      {
+        "module": "api-ms-win-crt-string-l1-1-0.dll",
+        "functions": [
+          "wcslen",
+          "strlen",
+          "iswspace"
+        ]
+      },
+      {
+        "module": "api-ms-win-crt-stdio-l1-1-0.dll",
+        "functions": [
+          "__stdio_common_vswprintf_s",
+          "__p__commode",
+          "_set_fmode"
+        ]
+      },
+      {
+        "module": "api-ms-win-crt-math-l1-1-0.dll",
+        "functions": [
+          "_dclass",
+          "__setusermatherr"
+        ]
+      },
+      {
+        "module": "api-ms-win-crt-heap-l1-1-0.dll",
+        "functions": [
+          "malloc",
+          "free",
+          "_set_new_mode",
+          "_callnewh"
+        ]
+      },
+      {
+        "module": "api-ms-win-crt-locale-l1-1-0.dll",
+        "functions": [
+          "_configthreadlocale"
+        ]
+      },
+      {
+        "module": "api-ms-win-core-synch-l1-1-0.dll",
+        "functions": [
+          "ReleaseSRWLockExclusive",
+          "AcquireSRWLockExclusive"
+        ]
+      },
+      {
+        "module": "api-ms-win-core-synch-l1-2-0.dll",
+        "functions": [
+          "Sleep",
+          "WakeAllConditionVariable",
+          "SleepConditionVariableSRW"
+        ]
+      },
+      {
+        "module": "api-ms-win-core-processthreads-l1-1-0.dll",
+        "functions": [
+          "GetCurrentProcessId",
+          "GetCurrentThreadId"
+        ]
+      },
+      {
+        "module": "api-ms-win-core-winrt-l1-1-0.dll",
+        "functions": [
+          "RoInitialize",
+          "RoGetActivationFactory"
+        ]
+      },
+      {
+        "module": "api-ms-win-core-profile-l1-1-0.dll",
+        "functions": [
+          "QueryPerformanceCounter"
+        ]
+      },
+      {
+        "module": "api-ms-win-core-interlocked-l1-1-0.dll",
+        "functions": [
+          "InitializeSListHead",
+          "InterlockedPushEntrySList"
+        ]
+      },
+      {
+        "module": "api-ms-win-core-winrt-error-l1-1-1.dll",
+        "functions": [
+          "RoOriginateLanguageException"
+        ]
+      },
+      {
+        "module": "api-ms-win-core-libraryloader-l1-2-0.dll",
+        "functions": [
+          "LoadLibraryExW",
+          "FreeLibrary",
+          "GetProcAddress"
+        ]
+      },
+      {
+        "module": "OLEAUT32.dll",
+        "functions": [
+          "ordinal:201",
+          "ordinal:200",
+          "ordinal:6",
+          "ordinal:7"
+        ]
+      },
+      {
+        "module": "api-ms-win-core-string-l1-1-0.dll",
+        "functions": [
+          "MultiByteToWideChar",
+          "WideCharToMultiByte"
+        ]
+      },
+      {
+        "module": "api-ms-win-core-heap-l1-1-0.dll",
+        "functions": [
+          "HeapFree",
+          "HeapAlloc",
+          "GetProcessHeap"
+        ]
+      }
+    ],
+    "delay_imports": [],
+    "named_exports": []
+  },
+  "static_PE_experiment": {
+    "role": "diagnostic",
+    "path": "RuntimeDiagnostics.exe",
+    "bytes": 119296,
+    "sha256": "89997350241657405fc38e596788c91b45c9e5978288d066ece51e3f42a4a6b9",
+    "machine": "0x8664",
+    "architecture": "x86_64",
+    "imports": [
+      {
+        "module": "d2d1.dll",
+        "functions": [
+          "ordinal:1"
+        ]
+      },
+      {
+        "module": "d3d11.dll",
+        "functions": [
+          "D3D11CreateDevice"
+        ]
+      },
+      {
+        "module": "DWrite.dll",
+        "functions": [
+          "DWriteCreateFactory"
+        ]
+      },
+      {
+        "module": "api-ms-win-core-file-l1-1-0.dll",
+        "functions": [
+          "WriteFile",
+          "CreateDirectoryW",
+          "ReadFile",
+          "GetFileAttributesW",
+          "FlushFileBuffers"
+        ]
+      },
+      {
+        "module": "api-ms-win-core-file-l1-2-0.dll",
+        "functions": [
+          "CreateFile2"
+        ]
+      },
+      {
+        "module": "api-ms-win-core-handle-l1-1-0.dll",
+        "functions": [
+          "CloseHandle"
+        ]
+      },
+      {
+        "module": "api-ms-win-core-errorhandling-l1-1-0.dll",
+        "functions": [
+          "GetLastError"
+        ]
+      },
+      {
+        "module": "api-ms-win-core-sysinfo-l1-1-0.dll",
+        "functions": [
+          "GetSystemTime",
+          "GetSystemTimeAsFileTime",
+          "GetTickCount64"
+        ]
+      },
+      {
+        "module": "api-ms-win-core-file-l2-1-0.dll",
+        "functions": [
+          "MoveFileExW"
+        ]
+      },
+      {
+        "module": "bcrypt.dll",
+        "functions": [
+          "BCryptGetProperty",
+          "BCryptCloseAlgorithmProvider",
+          "BCryptOpenAlgorithmProvider",
+          "BCryptDestroyHash",
+          "BCryptFinishHash",
+          "BCryptHashData",
+          "BCryptCreateHash"
+        ]
+      },
+      {
+        "module": "api-ms-win-core-com-l1-1-0.dll",
+        "functions": [
+          "CoCreateGuid",
+          "CoTaskMemAlloc",
+          "StringFromGUID2",
+          "CoCreateFreeThreadedMarshaler",
+          "CoInitializeEx"
+        ]
+      },
+      {
+        "module": "MSVCP140_APP.dll",
+        "functions": [
+          "?_Xlength_error@std@@YAXPEBD@Z",
+          "?_Throw_Cpp_error@std@@YAXH@Z",
+          "_Query_perf_counter",
+          "_Query_perf_frequency",
+          "_Thrd_detach",
+          "_Mtx_unlock",
+          "_Mtx_lock",
+          "_Cnd_do_broadcast_at_thread_exit"
+        ]
+      },
+      {
+        "module": "VCRUNTIME140_APP.dll",
+        "functions": [
+          "_CxxThrowException",
+          "__std_terminate",
+          "memcpy",
+          "__std_exception_copy",
+          "memset",
+          "__C_specific_handler",
+          "memmove",
+          "__std_exception_destroy"
+        ]
+      },
+      {
+        "module": "VCRUNTIME140_1_APP.dll",
+        "functions": [
+          "__CxxFrameHandler4"
+        ]
+      },
+      {
+        "module": "api-ms-win-crt-runtime-l1-1-0.dll",
+        "functions": [
+          "_set_app_type",
+          "_configure_wide_argv",
+          "_initialize_wide_environment",
+          "_register_thread_local_exe_atexit_callback",
+          "_cexit",
+          "exit",
+          "_crt_atexit",
+          "_register_onexit_function",
+          "_initialize_onexit_table",
+          "_initterm_e",
+          "_c_exit",
+          "_get_wide_winmain_command_line",
+          "_seh_filter_exe",
+          "_beginthreadex",
+          "abort",
+          "_errno",
+          "_invoke_watson",
+          "_exit",
+          "_invalid_parameter_noinfo",
+          "_initterm",
+          "terminate"
+        ]
+      },
+      {
+        "module": "api-ms-win-crt-string-l1-1-0.dll",
+        "functions": [
+          "wcslen",
+          "strlen",
+          "iswspace"
+        ]
+      },
+      {
+        "module": "api-ms-win-crt-stdio-l1-1-0.dll",
+        "functions": [
+          "__stdio_common_vswprintf_s",
+          "__p__commode",
+          "_set_fmode"
+        ]
+      },
+      {
+        "module": "api-ms-win-crt-math-l1-1-0.dll",
+        "functions": [
+          "_dclass",
+          "__setusermatherr"
+        ]
+      },
+      {
+        "module": "api-ms-win-crt-heap-l1-1-0.dll",
+        "functions": [
+          "malloc",
+          "free",
+          "_set_new_mode",
+          "_callnewh"
+        ]
+      },
+      {
+        "module": "api-ms-win-crt-locale-l1-1-0.dll",
+        "functions": [
+          "_configthreadlocale"
+        ]
+      },
+      {
+        "module": "api-ms-win-core-synch-l1-1-0.dll",
+        "functions": [
+          "ReleaseSRWLockExclusive",
+          "AcquireSRWLockExclusive"
+        ]
+      },
+      {
+        "module": "api-ms-win-core-synch-l1-2-0.dll",
+        "functions": [
+          "Sleep",
+          "WakeAllConditionVariable",
+          "SleepConditionVariableSRW"
+        ]
+      },
+      {
+        "module": "api-ms-win-core-processthreads-l1-1-0.dll",
+        "functions": [
+          "GetCurrentProcessId",
+          "GetCurrentThreadId"
+        ]
+      },
+      {
+        "module": "api-ms-win-core-winrt-l1-1-0.dll",
+        "functions": [
+          "RoInitialize",
+          "RoGetActivationFactory"
+        ]
+      },
+      {
+        "module": "api-ms-win-core-profile-l1-1-0.dll",
+        "functions": [
+          "QueryPerformanceCounter"
+        ]
+      },
+      {
+        "module": "api-ms-win-core-interlocked-l1-1-0.dll",
+        "functions": [
+          "InitializeSListHead",
+          "InterlockedPushEntrySList"
+        ]
+      },
+      {
+        "module": "api-ms-win-core-winrt-error-l1-1-1.dll",
+        "functions": [
+          "RoOriginateLanguageException"
+        ]
+      },
+      {
+        "module": "api-ms-win-core-libraryloader-l1-2-0.dll",
+        "functions": [
+          "LoadLibraryExW",
+          "FreeLibrary",
+          "GetProcAddress"
+        ]
+      },
+      {
+        "module": "OLEAUT32.dll",
+        "functions": [
+          "ordinal:201",
+          "ordinal:200",
+          "ordinal:6",
+          "ordinal:7"
+        ]
+      },
+      {
+        "module": "api-ms-win-core-string-l1-1-0.dll",
+        "functions": [
+          "MultiByteToWideChar",
+          "WideCharToMultiByte"
+        ]
+      },
+      {
+        "module": "api-ms-win-core-heap-l1-1-0.dll",
+        "functions": [
+          "HeapFree",
+          "HeapAlloc",
+          "GetProcessHeap"
+        ]
+      }
+    ],
+    "delay_imports": [],
+    "named_exports": []
+  },
+  "package_member_differences": [
+    {
+      "path": "AppxBlockMap.xml",
+      "baseline_sha256": "b3d2c42da1c2f3913d04e00b479dd78e14f438ab1ae0afb962a20b45591bbb06",
+      "experiment_sha256": "cd596be374b1d792aec3dcb50ccc627cf7ede3919fd60a976442c1a80aa280cf"
+    },
+    {
+      "path": "AppxManifest.xml",
+      "baseline_sha256": "1cc66c3a6f92a977b1198e2ba48751a3c1ff012776686b5c7a3d5c1381848fdb",
+      "experiment_sha256": "68e2b1a0a418593f6c768d5c4df044574e36b876276903c684eb18fe6a18065a"
+    },
+    {
+      "path": "RuntimeDiagnostics.exe",
+      "baseline_sha256": "e0f43709d09491bbbad28845c9018b4250c07c2612865daa75f30f476b667d40",
+      "experiment_sha256": "89997350241657405fc38e596788c91b45c9e5978288d066ece51e3f42a4a6b9"
+    },
+    {
+      "path": "diagnostic-inputs.json",
+      "baseline_sha256": "1e9addfb67f1ce1ab099c7a3d6649b2120f474053083215aea8c9f35acb1cd01",
+      "experiment_sha256": "b53990c9ef4c4211d7c88c33b547b043ec14bef8258b2089dd29e5ad0c102404",
+      "JSON_semantically_equal": false
+    },
+    {
+      "path": "profiles/native-control.json",
+      "baseline_sha256": "847bde4fd772b416b7f0d2daf294881b580b9cb65d659da519ecd0bdc97f8b8d",
+      "experiment_sha256": "d27605ed090789a49f9f0e171b21a79470af27cae829c904c427f55bebe6f8e8",
+      "JSON_semantically_equal": true
+    }
+  ],
+  "preservation_PASS": true,
+  "signed": false,
+  "executed": false
+}

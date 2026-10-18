@@ -1,0 +1,92 @@
+{
+  "verdict": "PASS",
+  "signed_sha256": "e4ffef8502405cd6bbc6d8e27b09a40c8f9119f6b424bfca53c5e08becf6ede7",
+  "unsigned_sha256": "5fd3462dcce83faea10617b19d18000f437e19d70d04b0e2a5bc98411b9a44fd",
+  "original_payload_and_blockmap_byte_identical": true,
+  "unchanged_members": [
+    {
+      "path": "LICENSE.txt",
+      "sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6",
+      "byte_identical": true
+    },
+    {
+      "path": "RuntimeDiagnostics.exe",
+      "sha256": "e0f43709d09491bbbad28845c9018b4250c07c2612865daa75f30f476b667d40",
+      "byte_identical": true
+    },
+    {
+      "path": "Assets/StoreLogo.png",
+      "sha256": "593d708a5fcbd0b802c25202f4e7d16b74f7d02a453e34fd8d5bb9cc686b2e18",
+      "byte_identical": true
+    },
+    {
+      "path": "Assets/Square150x150Logo.png",
+      "sha256": "0406b630403d089059e2a7eb114bb6e4bc18cc4e85382cf2f3353cbcb389a680",
+      "byte_identical": true
+    },
+    {
+      "path": "Assets/Square44x44Logo.png",
+      "sha256": "1986f83bbe595418567c5fb9e84b937acd928de61c9711c726725ff0e1c47611",
+      "byte_identical": true
+    },
+    {
+      "path": "Assets/SplashScreen.png",
+      "sha256": "f88748811206edee8116b16e660b3ec91018f0a0fe7ec377dce521ee37e0399a",
+      "byte_identical": true
+    },
+    {
+      "path": "runtime-inventory.json",
+      "sha256": "a847983740065493a4e5e106aada42b355f7d1b5955cedc39dd5bf36649915c1",
+      "byte_identical": true
+    },
+    {
+      "path": "profiles/native-control.json",
+      "sha256": "847bde4fd772b416b7f0d2daf294881b580b9cb65d659da519ecd0bdc97f8b8d",
+      "byte_identical": true
+    },
+    {
+      "path": "diagnostic-inputs.json",
+      "sha256": "1e9addfb67f1ce1ab099c7a3d6649b2120f474053083215aea8c9f35acb1cd01",
+      "byte_identical": true
+    },
+    {
+      "path": "AppxManifest.xml",
+      "sha256": "1cc66c3a6f92a977b1198e2ba48751a3c1ff012776686b5c7a3d5c1381848fdb",
+      "byte_identical": true
+    },
+    {
+      "path": "AppxBlockMap.xml",
+      "sha256": "b3d2c42da1c2f3913d04e00b479dd78e14f438ab1ae0afb962a20b45591bbb06",
+      "byte_identical": true
+    }
+  ],
+  "added_signing_metadata": [
+    "AppxMetadata/CodeIntegrity.cat",
+    "AppxSignature.p7x"
+  ],
+  "added_content_type_declarations": [
+    {
+      "ContentType": "application/vnd.ms-pkiseccat",
+      "PartName": "/AppxMetadata/CodeIntegrity.cat"
+    },
+    {
+      "ContentType": "application/vnd.ms-appx.signature",
+      "PartName": "/AppxSignature.p7x"
+    }
+  ],
+  "identity": {
+    "Name": "AlgorHome.LegacyForge.RuntimeDiagnostics",
+    "Publisher": "CN=LegacyForgeDiagnostics",
+    "Version": "0.1.2.0",
+    "ProcessorArchitecture": "x64"
+  },
+  "application": {
+    "Id": "App",
+    "Executable": "RuntimeDiagnostics.exe",
+    "EntryPoint": "LegacyForgeDiagnostics.App"
+  },
+  "capabilities": [],
+  "D00_only_inventory": true,
+  "source_commit": "c70a17ecd4022452a963697196f362c8f286ed57",
+  "target_executed": false
+}

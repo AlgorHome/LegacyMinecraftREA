@@ -1,0 +1,155 @@
+{
+  "verdict": "PASS",
+  "signed_path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b5c-signing\\20261017-173712-e540416b\\NativeDiagnostics.D06-HW01.0.2.0.0.signed.appx",
+  "signed_sha256": "d4629d1f494f73db7dcb6290bee8c5c9f28375c8630c531e58b3ee95a6f05908",
+  "unsigned_sha256": "79722c961dd677a2c89610599aec2e9537727dead6d66e2e3e8ff522da8b2501",
+  "unchanged_original_payload_and_blockmap": [
+    {
+      "path": "LICENSE.txt",
+      "sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6",
+      "byte_identical": true
+    },
+    {
+      "path": "profiles/D06-HW01.json",
+      "sha256": "01561fdb7ff95df0d502659b7ab3c5065a8c9f681c4d5ed38db7053a9f837cac",
+      "byte_identical": true
+    },
+    {
+      "path": "contracts/native-receipt.schema.json",
+      "sha256": "db311c43104e3940cd7299a495b3ac2a5a0440cb8b3af06cbb5ba1314a4331e1",
+      "byte_identical": true
+    },
+    {
+      "path": "native-inventory.json",
+      "sha256": "642a0d0826deb138fb61fdbcedf02718e83d0938b3960a00c0c1ffc848354bb4",
+      "byte_identical": true
+    },
+    {
+      "path": "NativeCapabilities.exe",
+      "sha256": "61ba742e8022c6874af7364c022289157c887da5d6035201f4aa61dba7ca02d0",
+      "byte_identical": true
+    },
+    {
+      "path": "Assets/SplashScreen.png",
+      "sha256": "d195f3ffb31e2b9c0381d8aeafb4c0649360dc46939525cb275062f03641d923",
+      "byte_identical": true
+    },
+    {
+      "path": "Assets/Square150x150Logo.png",
+      "sha256": "cfce78a93197c46c8ffb95ab85f183a8b4c070b3092a8b04b1a88910096ddb82",
+      "byte_identical": true
+    },
+    {
+      "path": "Assets/StoreLogo.png",
+      "sha256": "8c66ace1328b014584aa938a2039b57cdf2065b606825508688c2ea235468ffc",
+      "byte_identical": true
+    },
+    {
+      "path": "Assets/Square44x44Logo.png",
+      "sha256": "fae939abf1e0864326180b17ddd82cc618ce1512be5810db8f1de29249dd3cf0",
+      "byte_identical": true
+    },
+    {
+      "path": "native-inputs.json",
+      "sha256": "13a52990281afbbbca0c2e83f903216e7dd46791253f5e7154f6a16757d1c03b",
+      "byte_identical": true
+    },
+    {
+      "path": "AppxManifest.xml",
+      "sha256": "b107ba9665b0eb35d640cb5f7ff43b96ec2071d341feca0d5bfc3343eb98b7a4",
+      "byte_identical": true
+    },
+    {
+      "path": "AppxBlockMap.xml",
+      "sha256": "371887c8e15d244519f0629c05c8c31931610aff559aaa1aaaff566d898591e0",
+      "byte_identical": true
+    }
+  ],
+  "added_signing_metadata": [
+    "AppxMetadata/CodeIntegrity.cat",
+    "AppxSignature.p7x"
+  ],
+  "content_type_changes": [
+    {
+      "ContentType": "application/vnd.ms-pkiseccat",
+      "PartName": "/AppxMetadata/CodeIntegrity.cat"
+    },
+    {
+      "ContentType": "application/vnd.ms-appx.signature",
+      "PartName": "/AppxSignature.p7x"
+    }
+  ],
+  "blockmap_checks": [
+    {
+      "path": "LICENSE.txt",
+      "blocks_checked": 1,
+      "size_and_local_header_match": true
+    },
+    {
+      "path": "profiles/D06-HW01.json",
+      "blocks_checked": 1,
+      "size_and_local_header_match": true
+    },
+    {
+      "path": "contracts/native-receipt.schema.json",
+      "blocks_checked": 1,
+      "size_and_local_header_match": true
+    },
+    {
+      "path": "native-inventory.json",
+      "blocks_checked": 1,
+      "size_and_local_header_match": true
+    },
+    {
+      "path": "NativeCapabilities.exe",
+      "blocks_checked": 2,
+      "size_and_local_header_match": true
+    },
+    {
+      "path": "Assets/SplashScreen.png",
+      "blocks_checked": 1,
+      "size_and_local_header_match": true
+    },
+    {
+      "path": "Assets/Square150x150Logo.png",
+      "blocks_checked": 1,
+      "size_and_local_header_match": true
+    },
+    {
+      "path": "Assets/StoreLogo.png",
+      "blocks_checked": 1,
+      "size_and_local_header_match": true
+    },
+    {
+      "path": "Assets/Square44x44Logo.png",
+      "blocks_checked": 1,
+      "size_and_local_header_match": true
+    },
+    {
+      "path": "native-inputs.json",
+      "blocks_checked": 1,
+      "size_and_local_header_match": true
+    },
+    {
+      "path": "AppxManifest.xml",
+      "blocks_checked": 1,
+      "size_and_local_header_match": true
+    }
+  ],
+  "manifest_identity": {
+    "Name": "AlgorHome.LegacyForge.NativeDiagnostics",
+    "Publisher": "CN=LegacyForgeDiagnostics",
+    "Version": "0.2.0.0",
+    "ProcessorArchitecture": "x64"
+  },
+  "application": {
+    "Id": "App",
+    "Executable": "NativeCapabilities.exe",
+    "EntryPoint": "LegacyForgeNativeDiagnostics.App"
+  },
+  "capabilities": [],
+  "classification": "App is intended; console classification requires later owner inspection, not derivable from manifest",
+  "native_only_safety_preserved": true,
+  "source_commit": "a3f72874241914f6048d4ca9ec4fc0edc978625d",
+  "target_executed": false
+}

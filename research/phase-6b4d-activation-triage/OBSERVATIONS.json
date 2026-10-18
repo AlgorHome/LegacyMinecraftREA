@@ -1,0 +1,42 @@
+{
+  "authority": "owner-reported",
+  "baseline_0_1_1_0": {
+    "registration": "PASS",
+    "identity": "MATCHED",
+    "activation": "FAILED - prior explicit owner report",
+    "error_decimal": -2015297530,
+    "error_hex": "0x87E10006",
+    "message": "Failed to launch the application.",
+    "post_attempt_process": "Not running",
+    "UI": "Not observed",
+    "receipt_persistence": "UNKNOWN",
+    "prior_single_launch_allowance_consumed": true
+  },
+  "experiment_0_1_2_0": {
+    "update": "PASS",
+    "registered_identity": "MATCHED",
+    "package_full_name": "UNKNOWN",
+    "confirmed_activation_attempt_count": null,
+    "activation": "FAILED - brief appearance followed by apparent crash, owner-attributed to 0.1.2.0",
+    "error_decimal": -2144927141,
+    "error_hex": "0x8027025B",
+    "rendering": "D00 rendering UNKNOWN; brief app appearance reported",
+    "native_control_execution": "UNKNOWN",
+    "receipt_persistence": "UNKNOWN"
+  },
+  "new_report_attribution": {
+    "error_decimal": -2144927141,
+    "error_hex": "0x8027025B",
+    "portal_message": "Failed to launch the application",
+    "appearance": "App reportedly appears briefly before returning to Dev Home",
+    "structured_update_result": "No deliberate launch reported",
+    "clarification_answer_verbatim": "Both 3 and 2",
+    "first_clarification_interpretation": "Initially ambiguous; targeted followup obtained version attribution",
+    "followup_answer_verbatim": "version 0.1.1.0  didn't run ant all. But version 0.1.2.0 ran for a split second then crached.",
+    "resolved_interpretation": "No visible run reported for 0.1.1.0; brief appearance/apparent crash attributed by owner to 0.1.2.0",
+    "remaining_unknown": "Post-update triggering action and exact attempt count not supplied; no manual/automatic launch inferred"
+  },
+  "codex_console_access": false,
+  "codex_target_execution": false,
+  "new_screenshot_or_console_log_supplied": false
+}

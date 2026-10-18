@@ -1,0 +1,30 @@
+[
+  {
+    "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b3d-signing\\20261017-132111-5ff08807\\RuntimeDiagnostics.D00.signed.appx",
+    "sha256": "51e5c74462e79a296335beab4830f479e861e7132e0f660c680f6974d3b27530"
+  },
+  {
+    "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b4c-signing\\20261017-140847-c38e9c14\\RuntimeDiagnostics.D00.ActivationExperiment.0.1.2.0.signed.appx",
+    "sha256": "e4ffef8502405cd6bbc6d8e27b09a40c8f9119f6b424bfca53c5e08becf6ede7"
+  },
+  {
+    "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\out\\20261017-122521-8ece767b\\RuntimeDiagnostics.unsigned.appx",
+    "sha256": "ecb53bb12ac86600df22c5d80608f908f10371787be9aa96e06d53011c8c9558"
+  },
+  {
+    "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\out\\20261017-140332-19d39263\\RuntimeDiagnostics.unsigned.appx",
+    "sha256": "5fd3462dcce83faea10617b19d18000f437e19d70d04b0e2a5bc98411b9a44fd"
+  },
+  {
+    "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b4a-activation-investigation\\OWNER-OBSERVATIONS.json",
+    "sha256": "720a92d11875ccb422d09f8b13c58f611e9e818b21fb79f6cbc1764b1c8944c0"
+  },
+  {
+    "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b4d-activation-triage\\OBSERVATIONS.json",
+    "sha256": "bb499a69af25fe5aaab20dfe3065ef5846078642d5235eabf582b1d68fba35d2"
+  },
+  {
+    "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\docs\\research\\phase-6b3c-certificate\\CERTIFICATE-PUBLIC-METADATA.json",
+    "sha256": "0b97d0d88a9e549cbaa453d6d17f54d087a5d1da9dea45c3ee4f79c66d725560"
+  }
+]

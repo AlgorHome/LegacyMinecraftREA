@@ -1,0 +1,191 @@
+{
+  "schema": "legacyforge-owner-dependency-audit-v1",
+  "date": "2026-10-17 America/Chicago",
+  "readOnlyTargetDirectory": "C:\\Users\\arinze\\Desktop\\DesktopAppInstaller_Dependencies",
+  "packages": [
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\DesktopAppInstaller_Dependencies\\arm64\\Microsoft.VCLibs.140.00.UWPDesktop_14.0.33728.0_arm64.appx",
+      "relativePath": "arm64/Microsoft.VCLibs.140.00.UWPDesktop_14.0.33728.0_arm64.appx",
+      "name": "Microsoft.VCLibs.140.00.UWPDesktop",
+      "version": "14.0.33728.0",
+      "processorArchitecture": "arm64",
+      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+      "framework": true,
+      "sha256": "831118f2f5cac8e29284e4ecc23bf4236436ccc2ea4a7c225c4946f8cfd29dd3",
+      "bytes": 11161325,
+      "zipCrc": "PASS",
+      "signatureMemberPresent": true
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\DesktopAppInstaller_Dependencies\\arm64\\Microsoft.VCLibs.140.00_14.0.33519.0_arm64.appx",
+      "relativePath": "arm64/Microsoft.VCLibs.140.00_14.0.33519.0_arm64.appx",
+      "name": "Microsoft.VCLibs.140.00",
+      "version": "14.0.33519.0",
+      "processorArchitecture": "arm64",
+      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+      "framework": true,
+      "sha256": "c73d0f55dda331f9dcbefc99ff5a420b62120773d2917387639382aa478533ee",
+      "bytes": 1570406,
+      "zipCrc": "PASS",
+      "signatureMemberPresent": true
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\DesktopAppInstaller_Dependencies\\x64\\Microsoft.VCLibs.140.00.UWPDesktop_14.0.33728.0_x64.appx",
+      "relativePath": "x64/Microsoft.VCLibs.140.00.UWPDesktop_14.0.33728.0_x64.appx",
+      "name": "Microsoft.VCLibs.140.00.UWPDesktop",
+      "version": "14.0.33728.0",
+      "processorArchitecture": "x64",
+      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+      "framework": true,
+      "sha256": "077a3d1a5d0622bd3004dca85f5e192d6e98ec79b83d4aa06766759ea6c09c3d",
+      "bytes": 6757465,
+      "zipCrc": "PASS",
+      "signatureMemberPresent": true
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\DesktopAppInstaller_Dependencies\\x64\\Microsoft.VCLibs.140.00_14.0.33519.0_x64.appx",
+      "relativePath": "x64/Microsoft.VCLibs.140.00_14.0.33519.0_x64.appx",
+      "name": "Microsoft.VCLibs.140.00",
+      "version": "14.0.33519.0",
+      "processorArchitecture": "x64",
+      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+      "framework": true,
+      "sha256": "9c17b521f9d690a1f504da5108ed6eec5669eb3a8fd1331eef43e40d84e74283",
+      "bytes": 896581,
+      "zipCrc": "PASS",
+      "signatureMemberPresent": true
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\DesktopAppInstaller_Dependencies\\x86\\Microsoft.VCLibs.140.00.UWPDesktop_14.0.33728.0_x86.appx",
+      "relativePath": "x86/Microsoft.VCLibs.140.00.UWPDesktop_14.0.33728.0_x86.appx",
+      "name": "Microsoft.VCLibs.140.00.UWPDesktop",
+      "version": "14.0.33728.0",
+      "processorArchitecture": "x86",
+      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+      "framework": true,
+      "sha256": "596c7175c0b0fa27ed292a44f4681f687720a77e34e007bf6c403d1940e46005",
+      "bytes": 6050794,
+      "zipCrc": "PASS",
+      "signatureMemberPresent": true
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\DesktopAppInstaller_Dependencies\\x86\\Microsoft.VCLibs.140.00_14.0.33519.0_x86.appx",
+      "relativePath": "x86/Microsoft.VCLibs.140.00_14.0.33519.0_x86.appx",
+      "name": "Microsoft.VCLibs.140.00",
+      "version": "14.0.33519.0",
+      "processorArchitecture": "x86",
+      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+      "framework": true,
+      "sha256": "7ba6ea7bc32cd58b7e0683da588796086accfb74efb7a3e525e9f8014d2ad663",
+      "bytes": 758544,
+      "zipCrc": "PASS",
+      "signatureMemberPresent": true
+    }
+  ],
+  "matchingDependency": {
+    "path": "C:\\Users\\arinze\\Desktop\\DesktopAppInstaller_Dependencies\\x64\\Microsoft.VCLibs.140.00_14.0.33519.0_x64.appx",
+    "relativePath": "x64/Microsoft.VCLibs.140.00_14.0.33519.0_x64.appx",
+    "name": "Microsoft.VCLibs.140.00",
+    "version": "14.0.33519.0",
+    "processorArchitecture": "x64",
+    "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+    "framework": true,
+    "sha256": "9c17b521f9d690a1f504da5108ed6eec5669eb3a8fd1331eef43e40d84e74283",
+    "bytes": 896581,
+    "zipCrc": "PASS",
+    "signatureMemberPresent": true
+  },
+  "expectedSha256": "9c17b521f9d690a1f504da5108ed6eec5669eb3a8fd1331eef43e40d84e74283",
+  "sha256Matches": true,
+  "byteIdenticalToPriorMicrosoftVerifiedReference": true,
+  "signatureVerification": {
+    "verdict": "PASS_BY_EXACT_BYTE_IDENTITY_TO_PREVIOUSLY_VERIFIED_PACKAGE",
+    "priorVerification": {
+      "tool": "Windows SDK10.0.26100.0 x64 SignTool",
+      "command": "verify /pa /v <candidate.appx>",
+      "exitCode": 0,
+      "warnings": 0,
+      "errors": 0,
+      "logSha256": "a627ab7d749c1c99321019bf8659829fc657b4bc5105b762b4ca0fd6222bac49",
+      "signer": "Microsoft Corporation",
+      "signerThumbprint": "5E56A63F29AB04EEC8AED3B9B57416BE0CCEC0D0",
+      "root": "Microsoft Root Certificate Authority 2011",
+      "timestampReported": "2024-01-29 14:30:03 (tool display time)"
+    },
+    "priorLogHashReverified": true,
+    "freshSignToolOrRevocationCheckPerformed": false,
+    "note": "No SignTool/dumpbin invocation this audit; signature bytes and entire package are identical to previously trusted verification"
+  },
+  "crtExportChecks": [
+    {
+      "dll": "msvcp140_app.dll",
+      "sha256": "40d3e4997d76ee34c3c3b276dc146b9feb8b7ac0032d2adccce1e81e481c9381",
+      "machine": "0x8664",
+      "requiredSymbols": [
+        "?_Xlength_error@std@@YAXPEBD@Z",
+        "?_Throw_Cpp_error@std@@YAXH@Z",
+        "_Query_perf_counter",
+        "_Query_perf_frequency",
+        "_Thrd_detach",
+        "_Mtx_unlock",
+        "_Mtx_lock",
+        "_Cnd_do_broadcast_at_thread_exit"
+      ],
+      "requiredCount": 8,
+      "exportCount": 1493,
+      "missing": [],
+      "verdict": "PASS_FRESH_PE_TABLE_READ"
+    },
+    {
+      "dll": "vcruntime140_app.dll",
+      "sha256": "b8acc56e87437e2dfbb6dfac36b99ee41562da1727dbc95535c2cd8ed3a538ad",
+      "machine": "0x8664",
+      "requiredSymbols": [
+        "_CxxThrowException",
+        "__std_terminate",
+        "memcpy",
+        "__std_exception_copy",
+        "memset",
+        "__C_specific_handler",
+        "memmove",
+        "__std_exception_destroy"
+      ],
+      "requiredCount": 8,
+      "exportCount": 71,
+      "missing": [],
+      "verdict": "PASS_FRESH_PE_TABLE_READ"
+    },
+    {
+      "dll": "vcruntime140_1_app.dll",
+      "sha256": "db894749cf8c88fe40057bb486415ca7f7a5988e7fa593070266682a93d9d858",
+      "machine": "0x8664",
+      "requiredSymbols": [
+        "__CxxFrameHandler4"
+      ],
+      "requiredCount": 1,
+      "exportCount": 3,
+      "missing": [],
+      "verdict": "PASS_FRESH_PE_TABLE_READ"
+    }
+  ],
+  "totalRequiredSymbols": 17,
+  "unsignedDiagnosticSha256": "ecb53bb12ac86600df22c5d80608f908f10371787be9aa96e06d53011c8c9558",
+  "consoleFrameworkState": "UNKNOWN",
+  "actions": {
+    "targetDirectoryModified": false,
+    "packageInstalledOrSigned": false,
+    "certificateCreatedModifiedOrPrivateKeyAccessed": false,
+    "externalVerificationExecutablesLaunched": false,
+    "targetDllLoadedOrExecuted": false,
+    "xboxContact": false,
+    "productionModified": false
+  },
+  "preservedCertificatePublicMetadata": {
+    "subject": "CN=LegacyForgeDiagnostics",
+    "thumbprint": "D6245FB640D520EDED8F8A987B364BCADE01D01D",
+    "store": "Cert:\\CurrentUser\\My",
+    "present": true,
+    "modificationPerformed": false,
+    "privateKeyOpened": false
+  }
+}

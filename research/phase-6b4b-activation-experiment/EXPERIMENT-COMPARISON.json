@@ -1,0 +1,109 @@
+{
+  "verdict": "PASS_STATIC_ONLY",
+  "baseline_build": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\out\\20261017-122521-8ece767b",
+  "experiment_build": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\out\\20261017-140332-19d39263",
+  "experiment_commit": "c70a17ecd4022452a963697196f362c8f286ed57",
+  "unsigned_appx_sha256": "5fd3462dcce83faea10617b19d18000f437e19d70d04b0e2a5bc98411b9a44fd",
+  "exact_manifest_changes": {
+    "EntryPoint": [
+      "Windows.PartialTrustApplication",
+      "LegacyForgeDiagnostics.App"
+    ],
+    "Version": [
+      "0.1.1.0",
+      "0.1.2.0"
+    ]
+  },
+  "all_native_source_headers_schema_unchanged": true,
+  "entry_thread_STA_unchanged": true,
+  "PE_identical_except_COFF_and_debug_timestamps": true,
+  "PE_section_hashes_identical": false,
+  "PE_changed_sections": [
+    ".rdata"
+  ],
+  "PE_byte_differences": [
+    {
+      "offset": 248,
+      "before": 143,
+      "after": 150
+    },
+    {
+      "offset": 249,
+      "before": 175,
+      "after": 198
+    },
+    {
+      "offset": 85604,
+      "before": 143,
+      "after": 150
+    },
+    {
+      "offset": 85605,
+      "before": 175,
+      "after": 198
+    }
+  ],
+  "PE_lengths": [
+    119296,
+    119296
+  ],
+  "baseline_PE": {
+    "timestamp": 1792257935,
+    "sections": {
+      ".text": "cbe798e4dcd896443181948dbe6bb2fb1d232b50a73a2b6c839d307029f7c181",
+      ".rdata": "13652ee275d42d1bbe8fafdd16e33533e6b716c9da88136b6b03e53a6334f131",
+      ".data": "ddb07947cd349e30b1d39c533335a89d791988458b887363a598c8e1a13fd7b2",
+      ".pdata": "03cab0059017a3b3ef13e1ccdfa713ead832280c29ed93acc7a2a095c156f983",
+      ".reloc": "acce09e266f54a090edab1dad25ecd187f3322eae22cbf0c84796016484bd0c6"
+    },
+    "timestamp_offsets": [
+      248,
+      85604
+    ]
+  },
+  "experiment_PE": {
+    "timestamp": 1792263830,
+    "sections": {
+      ".text": "cbe798e4dcd896443181948dbe6bb2fb1d232b50a73a2b6c839d307029f7c181",
+      ".rdata": "4063a11c73453930c39433661b5555c300d7971304d94b42b5a78bd4a9cb47f6",
+      ".data": "ddb07947cd349e30b1d39c533335a89d791988458b887363a598c8e1a13fd7b2",
+      ".pdata": "03cab0059017a3b3ef13e1ccdfa713ead832280c29ed93acc7a2a095c156f983",
+      ".reloc": "acce09e266f54a090edab1dad25ecd187f3322eae22cbf0c84796016484bd0c6"
+    },
+    "timestamp_offsets": [
+      248,
+      85604
+    ]
+  },
+  "package_member_differences": [
+    {
+      "path": "AppxBlockMap.xml",
+      "before_sha256": "98c9712ef728701efba934ab17e854c7eaec0a2e66921d3ebd8479ee0c02d4e8",
+      "after_sha256": "b3d2c42da1c2f3913d04e00b479dd78e14f438ab1ae0afb962a20b45591bbb06"
+    },
+    {
+      "path": "AppxManifest.xml",
+      "before_sha256": "aeb26c76e9b53342fbff2ddded481df804a1a553ee2588f1c516fb9639c93400",
+      "after_sha256": "1cc66c3a6f92a977b1198e2ba48751a3c1ff012776686b5c7a3d5c1381848fdb"
+    },
+    {
+      "path": "RuntimeDiagnostics.exe",
+      "before_sha256": "418a77107f02f28dc8df882e4a31ea744d93f9c3d5470aa267ffc03a8eca4231",
+      "after_sha256": "e0f43709d09491bbbad28845c9018b4250c07c2612865daa75f30f476b667d40"
+    },
+    {
+      "path": "diagnostic-inputs.json",
+      "before_sha256": "4b98e676878900e44ffd92f9b7cec53145807bcf08dc31633c31bbf59be5c5b5",
+      "after_sha256": "1e9addfb67f1ce1ab099c7a3d6649b2120f474053083215aea8c9f35acb1cd01",
+      "json_semantically_equal": false
+    },
+    {
+      "path": "profiles/native-control.json",
+      "before_sha256": "9b69198a132c651a2fdea1ddcaecefe20f1d30dac5ed764be05c8f1b4057e3ba",
+      "after_sha256": "847bde4fd772b416b7f0d2daf294881b580b9cb65d659da519ecd0bdc97f8b8d",
+      "json_semantically_equal": true
+    }
+  ],
+  "signed": false,
+  "target_executed": false
+}

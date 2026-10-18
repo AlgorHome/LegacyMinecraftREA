@@ -1,0 +1,78 @@
+{
+  "schema": "legacyforge-phase6b3g-final-review-v1",
+  "date": "2026-10-17 America/Chicago",
+  "scope": "DOCUMENTATION_AND_READ_ONLY_LOCAL_REVIEW",
+  "deploymentAuthorized": false,
+  "ownerObservedConsole": {
+    "provenance": "OWNER_OPERATED_PORTAL_FINDINGS",
+    "osBuildVerbatim": "10.26100.9445",
+    "devHome": "Working",
+    "defaultClassification": "App",
+    "packagePresence": "OWNER_OBSERVED_PRESENT",
+    "package": {
+      "Name": "Microsoft.VCLibs.140.00",
+      "Version": "14.0.33519.0",
+      "Architecture": "x64",
+      "Publisher": null,
+      "PublisherObservation": "NOT_DISPLAYED",
+      "Framework": "UNKNOWN",
+      "PackageFullName": null
+    },
+    "consoleChangesReported": false,
+    "suitability": "PARTIALLY_VERIFIED_PUBLISHER_AND_FRAMEWORK_UNRESOLVED"
+  },
+  "preservedLocalEvidence": {
+    "sourceCommit": "4101f7ee07d1c74911ffbf5cd2a44aff608c401d",
+    "reviewHead": "df23adb6dbe948079510cf12eb64d5fd23542256",
+    "signedAppxPath": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b3d-signing\\20261017-132111-5ff08807\\RuntimeDiagnostics.D00.signed.appx",
+    "signedSha256": "51e5c74462e79a296335beab4830f479e861e7132e0f660c680f6974d3b27530",
+    "identity": {
+      "Name": "AlgorHome.LegacyForge.RuntimeDiagnostics",
+      "Publisher": "CN=LegacyForgeDiagnostics",
+      "Version": "0.1.1.0",
+      "ProcessorArchitecture": "x64"
+    },
+    "certificateThumbprint": "D6245FB640D520EDED8F8A987B364BCADE01D01D",
+    "cmsIntegrity": "PASS_PRIOR_PHASE6B3E",
+    "appxDigestIntegrity": "PASS_PRIOR_PHASE6B3E",
+    "normalWindowsSignToolPaTrust": "FAIL_CERT_E_UNTRUSTEDROOT_0x800B0109",
+    "fallbackPath": "C:\\Users\\arinze\\Desktop\\DesktopAppInstaller_Dependencies\\x64\\Microsoft.VCLibs.140.00_14.0.33519.0_x64.appx",
+    "fallbackSha256": "9c17b521f9d690a1f504da5108ed6eec5669eb3a8fd1331eef43e40d84e74283"
+  },
+  "metadataOptions": {
+    "uiDetails": "OWNER_MAY_INSPECT_IF_EXPOSED",
+    "documentedReadOnlyGet": "/api/app/packagemanager/packages",
+    "documentedResponseFields": [
+      "Name",
+      "PackageFullName",
+      "Publisher",
+      "Version"
+    ],
+    "frameworkFieldGuaranteedByDocumentedSchema": false,
+    "missingFieldsInvented": false
+  },
+  "proposedInstallation": {
+    "requiresSeparateExplicitApproval": true,
+    "appxOnly": true,
+    "existingFrameworkFirst": true,
+    "uploadFallbackByDefault": false,
+    "autoLaunch": false,
+    "metadataGapsMustBeResolvedOrExplicitlyAcknowledgedInApproval": true
+  },
+  "stages": {
+    "installationRegistration": "NOT_EXECUTED_SEPARATE_APPROVAL_REQUIRED",
+    "activation": "NOT_EXECUTED_SEPARATE_APPROVAL_REQUIRED",
+    "receiptRetrieval": "NOT_EXECUTED_SEPARATE_APPROVAL_REQUIRED",
+    "cleanup": "NOT_EXECUTED_SEPARATE_APPROVAL_REQUIRED"
+  },
+  "actionsPerformed": {
+    "codexConsoleContact": false,
+    "packageModification": false,
+    "certificateTrustOrKeyChanges": false,
+    "fallbackModification": false,
+    "installationDeploymentOrLaunch": false,
+    "consoleSettingChange": false,
+    "productionModification": false
+  },
+  "reviewDocumentSha256": "9fed17c4aa402bd0e3f0aba33489b0c8500ca0ea45286917942d0982658f2e0a"
+}

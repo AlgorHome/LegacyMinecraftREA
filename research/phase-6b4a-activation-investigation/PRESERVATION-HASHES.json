@@ -1,0 +1,14 @@
+[
+  {
+    "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b3d-signing\\20261017-132111-5ff08807\\RuntimeDiagnostics.D00.signed.appx",
+    "sha256": "51e5c74462e79a296335beab4830f479e861e7132e0f660c680f6974d3b27530"
+  },
+  {
+    "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\out\\20261017-122521-8ece767b\\RuntimeDiagnostics.unsigned.appx",
+    "sha256": "ecb53bb12ac86600df22c5d80608f908f10371787be9aa96e06d53011c8c9558"
+  },
+  {
+    "path": "C:\\Users\\arinze\\Desktop\\DesktopAppInstaller_Dependencies\\x64\\Microsoft.VCLibs.140.00_14.0.33519.0_x64.appx",
+    "sha256": "9c17b521f9d690a1f504da5108ed6eec5669eb3a8fd1331eef43e40d84e74283"
+  }
+]

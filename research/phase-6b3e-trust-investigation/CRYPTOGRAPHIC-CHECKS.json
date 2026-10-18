@@ -1,0 +1,82 @@
+{
+  "schema": "legacyforge-phase6b3e-readonly-cryptographic-check-v1",
+  "signedAppxSha256": "51e5c74462e79a296335beab4830f479e861e7132e0f660c680f6974d3b27530",
+  "cmsContentType": "1.3.6.1.4.1.311.2.1.4",
+  "cmsSignatureOnlyCheck": "PASS_SIGNEDCMS_CHECKSIGNATURE_TRUE",
+  "signatureOnlyIsNotTrustApproval": true,
+  "cmsDigestAlgorithm": "2.16.840.1.101.3.4.2.1",
+  "packageDigestCheck": {
+    "SubjectGuid": "0ac5df4b-ce07-4de2-b76e-23c839a09fd1",
+    "DigestAlgorithm": "2.16.840.1.101.3.4.2.1",
+    "DigestHex": "415050584158504373D92E798B31161DE08969E02D500AF4F1D4DA3D2AF2A1662193BE92B30FE72941584344C919F6B5BB90D97867071E1EE98E77C97DAD83CAB6349FA412259A938E048C1841584354E88123AA86134DCE648915F1B83003C1279D5A712F6B6EF05F62B6F4B7523BDE4158424D98C9712EF728701EFBA934AB17E854C7EAEC0A2E66921D3EBD8479EE0C02D4E841584349C8B3DA04C27AE80E95AE4BE97CB8197EBFC921901D10064C290A3783AE937685",
+    "FileDigestMatches": true,
+    "MutatedExpectedDigestRejected": true,
+    "FileDigestError": null,
+    "MutatedDigestError": "0x80096010"
+  },
+  "normalWinVerifyTrustHresult": "0x800B0109",
+  "certificate": {
+    "notBeforeUtc": "2026-10-17T17:58:48Z",
+    "subject": "CN=LegacyForgeDiagnostics",
+    "thumbprint": "D6245FB640D520EDED8F8A987B364BCADE01D01D",
+    "notAfterUtc": "2027-10-17T18:08:48Z",
+    "extensions": [
+      {
+        "description": "Digital Signature (80)",
+        "oid": "2.5.29.15"
+      },
+      {
+        "description": "Code Signing (1.3.6.1.5.5.7.3.3)",
+        "oid": "2.5.29.37"
+      },
+      {
+        "description": "Subject Type=End Entity, Path Length Constraint=None",
+        "oid": "2.5.29.19"
+      }
+    ],
+    "issuer": "CN=LegacyForgeDiagnostics"
+  },
+  "chain": {
+    "policy": "NoFlag; Code Signing application policy; downloads disabled; revocation not checked",
+    "elements": [
+      {
+        "thumbprint": "D6245FB640D520EDED8F8A987B364BCADE01D01D",
+        "issuer": "CN=LegacyForgeDiagnostics",
+        "status": [
+          "UntrustedRoot"
+        ],
+        "subject": "CN=LegacyForgeDiagnostics"
+      }
+    ],
+    "buildResult": false,
+    "status": [
+      {
+        "status": "UntrustedRoot",
+        "description": "A certificate chain processed, but terminated in a root certificate which is not trusted by the trust provider."
+      }
+    ]
+  },
+  "trustStores": {
+    "Cert:/CurrentUser/Root": {
+      "nominatedCertificatePresent": false,
+      "unchanged": true
+    },
+    "Cert:/CurrentUser/TrustedPeople": {
+      "nominatedCertificatePresent": false,
+      "unchanged": true
+    },
+    "Cert:/LocalMachine/TrustedPeople": {
+      "nominatedCertificatePresent": false,
+      "unchanged": true
+    },
+    "Cert:/LocalMachine/Root": {
+      "nominatedCertificatePresent": false,
+      "unchanged": true
+    }
+  },
+  "noTrustChangesPerformed": true,
+  "noPrivateKeyAccess": true,
+  "noSigningOrDeployment": true,
+  "negativeControlMemoryOnly": true,
+  "negativeControl": "One hash byte at expected-digest offset8 changed in allocated memory; APPX identifiers and on-disk files untouched"
+}

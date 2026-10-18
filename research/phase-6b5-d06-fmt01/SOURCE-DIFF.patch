@@ -1,0 +1,974 @@
+diff --git a/diagnostics/NativeCapabilities/README.md b/diagnostics/NativeCapabilities/README.md
+index 771fef3..469ed3b 100644
+--- a/diagnostics/NativeCapabilities/README.md
++++ b/diagnostics/NativeCapabilities/README.md
+@@ -1,9 +1,11 @@
+-# NativeCapabilities â€” D06-HW01 only
++# NativeCapabilities â€” D06-FMT01 only
+ 
+ Original native-only UWP diagnostic, separate from frozen RuntimeDiagnostics0.1.3.0
+-and production LegacyForge. Package NativeDiagnostics0.2.0.0; zero capabilities.
++and production LegacyForge. Package NativeDiagnostics0.2.1.0; zero capabilities.
+ MTA/CoreApplication startup, one HW D3D11CreateDevice attempt, level11_0, adapter
+-SOFTWARE flag classification, scoped release, memory policy, atomic JSON evidence.
++SOFTWARE flag classification, one CheckFormatSupport(R8G8B8A8_UNORM) call, scoped release, memory policy, atomic JSON evidence.
++PASS requires TEXTURE2D(0x20), SHADER_SAMPLE(0x200), RENDER_TARGET(0x4000).
++MIP(0x1000) is optional and recorded. Failed/invalid query output has no mask or decoded flags.
+ No swapchain, render target, render/presentation loop, additional case or fallback.
+ 
+ UI uses a Windows.UI.Popups.MessageDialog posted on the UI dispatcher after the
+@@ -33,14 +35,26 @@ success. Downloaded original and member-hash oracle establish persistence later.
+ Memory uses observed AppMemoryUsage/Limit: require256MiB headroom before GPU call,
+ fail if post-release observed growth exceeds64MiB. Driver allocations cannot be
+ strictly capped by this API; no explicit test texture/buffer is allocated. Receipt
+-size capped128KiB. Unsupported policy/API becomes BLOCKED with HRESULT. D06-HW01
++size capped128KiB. Unsupported policy/API becomes BLOCKED with HRESULT. D06-FMT01
+ PASS is not all D06, resource-limit, rendering, audio, input, JNI or Minecraft PASS.
+ 
+ No signing, certificate change, deployment, installation, console access or app
+ execution is part of this implementation authorization. See the external research
+-dossier docs/research/phase-6b5-d06-hw01 for review and separately gated hardware plan.
++dossier docs/research/phase-6b5-d06-fmt01 for review and separately gated hardware plan.
+ 
+ API references:
+ https://learn.microsoft.com/en-us/windows/win32/api/d3d11/nf-d3d11-d3d11createdevice
+ https://learn.microsoft.com/en-us/windows/uwp/api/windows.ui.popups.messagedialog?view=winrt-26100
+ https://learn.microsoft.com/en-us/windows/uwp/gaming/about-the-uwp-user-interface-and-directx
++
++This 0.2.1.0 package shares NativeDiagnostics identity with accepted 0.2.0.0.
++A later installation replaces that registration and may retain LocalState. It
++cannot provide side-by-side HW01 reproduction. If that is required, separately
++approve a distinct package name (for example NativeFormatDiagnostics), isolated
++LocalState and fresh identity evidence before installation. No installed app is
++changed by this build. D00 RuntimeDiagnostics remains a different identity.
++
++Receipt schema v2; tools/receipt_contract.py validates structure/semantics offline.
++Synthetic oracle fixtures are not packaged or represented as Xbox observations.
++CheckFormatSupport docs: https://learn.microsoft.com/en-us/windows/win32/api/d3d11/nf-d3d11-id3d11device-checkformatsupport
++Support flag docs: https://learn.microsoft.com/en-us/windows/win32/api/d3d11/ne-d3d11-d3d11_format_support
+diff --git a/diagnostics/NativeCapabilities/build.ps1 b/diagnostics/NativeCapabilities/build.ps1
+index 3120b01..8d1a5c8 100644
+--- a/diagnostics/NativeCapabilities/build.ps1
++++ b/diagnostics/NativeCapabilities/build.ps1
+@@ -1,5 +1,5 @@
+ [CmdletBinding()]
+-param([ValidateSet('D06-HW01')][string]$Case='D06-HW01',
++param([ValidateSet('D06-FMT01')][string]$Case='D06-FMT01',
+  [string]$MsvcRoot='C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207',
+  [string]$SdkRoot='C:\Program Files (x86)\Windows Kits\10',[string]$SdkVersion='10.0.26100.0',[string]$Python='python')
+ # Compile/static tooling only; no diagnostic execution, signing, installation or downloads.
+@@ -15,7 +15,7 @@ $out=Join-Path $root ('out\'+$buildId)
+ $stage=Join-Path $out 'package';$objects=Join-Path $out 'objects';$generated=Join-Path $out 'generated';$logs=Join-Path $out 'logs'
+ foreach($dir in @($stage,$objects,$generated,$logs,(Join-Path $stage 'profiles'),(Join-Path $stage 'contracts'))){New-Item -ItemType Directory -Path $dir -ErrorAction Stop | Out-Null}
+ function Hash([string]$path){(Get-FileHash -LiteralPath $path -Algorithm SHA256).Hash.ToLowerInvariant()}
+-$definitions=@('LFN_NATIVE_ONLY=1','LFN_JNI_ENABLED=0','LFD_D00_ONLY=1','LFN_CASE_D06_HW01=1')
++$definitions=@('LFN_NATIVE_ONLY=1','LFN_JNI_ENABLED=0','LFD_D00_ONLY=1','LFN_CASE_D06_FMT01=1')
+ $sources=@('src/app.cpp','src/report.cpp','src/probe.cpp')
+ $record=[ordered]@{schema='legacyforge-native-build-v1';sourceCommit=$commit;buildId=$buildId;caseId=$Case;definitions=$definitions;compiledSources=$sources;nativeOnly=$true;jniEnabled=$false;status='STARTED';targetExecuted=$false;signed=$false;commands=@();tools=@();sourceFiles=@();artifacts=@()}
+ function Save { $record | ConvertTo-Json -Depth 12 | Set-Content -LiteralPath (Join-Path $out 'build-receipt.json') -Encoding utf8 }
+@@ -37,6 +37,16 @@ try {
+  $identityHeader=Join-Path $generated 'build_identity.h'
+  ('#pragma once'+[Environment]::NewLine+'namespace lfn { inline constexpr wchar_t SourceCommit[] = L"'+$commit+'"; inline constexpr wchar_t BuildId[] = L"'+$buildId+'"; }') | Set-Content -LiteralPath $identityHeader -Encoding utf8
+  $record.generatedIdentitySha256=Hash $identityHeader
++ # Preprocessor-only rejection tests: never link or execute an unsafe build.
++ $gateSource=Join-Path $generated 'gate.cpp'
++ '#include "build_config.h"' | Set-Content -LiteralPath $gateSource -Encoding utf8
++ foreach($definition in @('LFN_NATIVE_ONLY=0','LFN_JNI_ENABLED=1','LFD_D00_ONLY=0','LFN_CASE_D06_FMT01=0','LFN_CASE_D06_HW01=1')) {
++  $name='gate-'+$definition.Replace('=','-');$log=Join-Path $logs ($name+'.log')
++  & $cl /nologo /P ('/I'+(Join-Path $root 'include')) ('/D'+$definition) ('/Fi'+(Join-Path $generated ($name+'.i'))) $gateSource *> $log
++  $code=$LASTEXITCODE
++  $record.commands+=@{role=$name;exitCode=$code;expected='nonzero preprocessor rejection';log=('logs/'+$name+'.log');sha256=(Hash $log)};Save
++  if($code -eq 0 -or !(Select-String -LiteralPath $log -SimpleMatch '#error' -Quiet)){throw 'Unsafe compile configuration was not explicitly rejected'}
++ }
+  $objFiles=@()
+  foreach($source in $sources){$name=[IO.Path]::GetFileNameWithoutExtension($source);$obj=Join-Path $objects ($name+'.obj');$objFiles+=$obj
+   $args=@('/nologo','/c','/std:c++17','/EHsc','/utf-8','/MD','/W4','/O2','/DUNICODE','/D_UNICODE','/DWINAPI_FAMILY=WINAPI_FAMILY_APP','/D_WIN32_WINNT=0x0A00',('/I'+(Join-Path $root 'include')),('/I'+$generated),('/Fo'+$obj),(Join-Path $root $source))+@($definitions | ForEach-Object {'/D'+$_})
+@@ -48,7 +58,7 @@ try {
+  Invoke-Static 'imports' $dump @('/nologo','/imports',$exe)
+  Invoke-Static 'headers' $dump @('/nologo','/headers',$exe)
+  Copy-Item -LiteralPath (Join-Path $root 'package\Package.appxmanifest') -Destination (Join-Path $stage 'AppxManifest.xml')
+- Copy-Item -LiteralPath (Join-Path $root 'profiles\D06-HW01.json') -Destination (Join-Path $stage 'profiles\D06-HW01.json')
++ Copy-Item -LiteralPath (Join-Path $root 'profiles\D06-FMT01.json') -Destination (Join-Path $stage 'profiles\D06-FMT01.json')
+  Copy-Item -LiteralPath (Join-Path $root 'contracts\native-receipt.schema.json') -Destination (Join-Path $stage 'contracts\native-receipt.schema.json')
+  Copy-Item -LiteralPath (Join-Path $root 'native-inventory.json') -Destination (Join-Path $stage 'native-inventory.json')
+  Copy-Item -LiteralPath (Join-Path (Split-Path (Split-Path $root -Parent) -Parent) 'LICENSE') -Destination (Join-Path $stage 'LICENSE.txt')
+diff --git a/diagnostics/NativeCapabilities/contracts/native-receipt.schema.json b/diagnostics/NativeCapabilities/contracts/native-receipt.schema.json
+index 918cb21..7bf9b2a 100644
+--- a/diagnostics/NativeCapabilities/contracts/native-receipt.schema.json
++++ b/diagnostics/NativeCapabilities/contracts/native-receipt.schema.json
+@@ -1,28 +1,340 @@
+ {
+- "$schema":"https://json-schema.org/draft/2020-12/schema",
+- "$id":"urn:legacyforge:native-capability-receipt:v1",
+- "title":"D06-HW01 only; not graphics presentation or all native capability certification",
+- "type":"object","additionalProperties":false,
+- "required":["schema","case_id","source_commit","build_id","production_comparison_commit","frozen_d00_reference_commit","package_name","package_publisher","package_version","architecture","application_id","expected_package_identity","run_id","process_instance_id","java_jni_enabled","minecraft_or_gameplay_tested","all_d06_certified","hardware_device_requested","watchdog_cancels_native_calls","payload_hashes","status","reason","stage","terminal","sequence","elapsed_monotonic_ms","deadline_ms","observed_at_utc","last_durable_checkpoint_stage","receipt_persistence_result","details"],
+- "properties":{
+-  "schema":{"const":"legacyforge-native-capability-receipt-v1"},"case_id":{"const":"D06-HW01"},
+-  "source_commit":{"type":"string","pattern":"^[a-f0-9]{40}$"},"build_id":{"type":"string","pattern":"^[0-9]{8}-[0-9]{6}-[a-f0-9]{8}$"},
+-  "production_comparison_commit":{"const":"d1453434ceefe73bef5aff497194e09f39dde7e1"},"frozen_d00_reference_commit":{"const":"553c6554f40f1372b0ea09f6badbbb98e133a9ab"},
+-  "package_name":{"const":"AlgorHome.LegacyForge.NativeDiagnostics"},"package_publisher":{"const":"CN=LegacyForgeDiagnostics"},"package_version":{"const":"0.2.0.0"},"architecture":{"const":"x64"},"application_id":{"const":"App"},"expected_package_identity":{"const":true},
+-  "run_id":{"type":"string","format":"uuid"},"process_instance_id":{"type":"string","format":"uuid"},
+-  "java_jni_enabled":{"const":false},"minecraft_or_gameplay_tested":{"const":false},"all_d06_certified":{"const":false},"hardware_device_requested":{"const":true},"watchdog_cancels_native_calls":{"const":false},
+-  "payload_hashes":{"type":"object","additionalProperties":false,"required":["executable_sha256","manifest_sha256","build_inputs_sha256","policy_sha256","schema_sha256","inventory_sha256"],"properties":{
+-   "executable_sha256":{"$ref":"#/$defs/hash"},"manifest_sha256":{"$ref":"#/$defs/hash"},"build_inputs_sha256":{"$ref":"#/$defs/hash"},"policy_sha256":{"$ref":"#/$defs/hash"},"schema_sha256":{"$ref":"#/$defs/hash"},"inventory_sha256":{"$ref":"#/$defs/hash"}}},
+-  "status":{"enum":["RUNNING","PASS","FAILED","BLOCKED","INCONCLUSIVE","NOT EXECUTED"]},"reason":{"type":"string","pattern":"^[A-Z0-9_]+$"},"stage":{"enum":["STARTED","BEFORE_CREATE_DEVICE","FINAL"]},"terminal":{"type":"boolean"},"sequence":{"type":"integer","minimum":1},"elapsed_monotonic_ms":{"type":"integer","minimum":0},"deadline_ms":{"const":10000},"observed_at_utc":{"type":"string","format":"date-time"},"last_durable_checkpoint_stage":{"enum":["","STARTED","BEFORE_CREATE_DEVICE"]},"receipt_persistence_result":{"const":"VERIFY_BY_RETRIEVAL"},
+-  "details":{"type":"object","additionalProperties":false,"properties":{
+-   "requested_driver_type":{"const":"HARDWARE"},"requested_driver_type_value":{"const":1},"requested_feature_level":{"const":45056},"creation_flags":{"const":32},"software_fallback_allowed":{"const":false},"render_or_present_tested":{"const":false},
+-   "memory_before":{"$ref":"#/$defs/memory"},"memory_after_release":{"$ref":"#/$defs/memory"},"creation_hresult":{"$ref":"#/$defs/hresult"},"creation_hresult_signed":{"type":"integer","minimum":-2147483648,"maximum":2147483647},"selected_feature_level":{"type":"integer","minimum":0},"device_returned":{"type":"boolean"},"context_returned":{"type":"boolean"},"classification_hresult":{"$ref":"#/$defs/hresult"},"get_adapter_hresult":{"$ref":"#/$defs/hresult"},"get_desc_hresult":{"$ref":"#/$defs/hresult"},"adapter_flags":{"type":"integer","minimum":0},"adapter_software_flag":{"type":"boolean"},"device_removed_reason":{"$ref":"#/$defs/hresult"},"test_resources_released":{"type":"boolean"},"exception_hresult":{"$ref":"#/$defs/hresult"}
+-  }}
+- },
+- "$defs":{
+-  "hash":{"type":"string","pattern":"^[a-f0-9]{64}$"},
+-  "hresult":{"type":"string","pattern":"^0x[A-F0-9]{8}$"},
+-  "memory":{"type":"object","additionalProperties":false,"required":["available"],"properties":{"available":{"type":"boolean"},"usage_bytes":{"type":"integer","minimum":0},"limit_bytes":{"type":"integer","minimum":0},"hresult":{"$ref":"#/$defs/hresult"}}}
+- },
+- "$comment":"Schema validates structure, not hardware truth. PASS additionally requires the independent case oracle, payload comparison, deadline, cleanup and retrieval. Persistence is proved by original terminal file retrieval, not a self-prediction of successful storage."
++  "$schema": "https://json-schema.org/draft/2020-12/schema",
++  "$id": "urn:legacyforge:native-capability-receipt:v2",
++  "title": "D06-FMT01 RGBA8 query only; no rendering or presentation",
++  "type": "object",
++  "additionalProperties": false,
++  "required": [
++    "schema",
++    "case_id",
++    "source_commit",
++    "build_id",
++    "production_comparison_commit",
++    "frozen_d00_reference_commit",
++    "package_name",
++    "package_publisher",
++    "package_version",
++    "architecture",
++    "application_id",
++    "expected_package_identity",
++    "run_id",
++    "process_instance_id",
++    "java_jni_enabled",
++    "minecraft_or_gameplay_tested",
++    "all_d06_certified",
++    "hardware_device_requested",
++    "watchdog_cancels_native_calls",
++    "payload_hashes",
++    "status",
++    "reason",
++    "stage",
++    "terminal",
++    "sequence",
++    "elapsed_monotonic_ms",
++    "deadline_ms",
++    "observed_at_utc",
++    "last_durable_checkpoint_stage",
++    "receipt_persistence_result",
++    "details",
++    "frozen_hw01_reference_commit"
++  ],
++  "properties": {
++    "schema": {
++      "const": "legacyforge-native-capability-receipt-v2"
++    },
++    "case_id": {
++      "const": "D06-FMT01"
++    },
++    "source_commit": {
++      "type": "string",
++      "pattern": "^[a-f0-9]{40}$"
++    },
++    "build_id": {
++      "type": "string",
++      "pattern": "^[0-9]{8}-[0-9]{6}-[a-f0-9]{8}$"
++    },
++    "production_comparison_commit": {
++      "const": "d1453434ceefe73bef5aff497194e09f39dde7e1"
++    },
++    "frozen_d00_reference_commit": {
++      "const": "553c6554f40f1372b0ea09f6badbbb98e133a9ab"
++    },
++    "package_name": {
++      "const": "AlgorHome.LegacyForge.NativeDiagnostics"
++    },
++    "package_publisher": {
++      "const": "CN=LegacyForgeDiagnostics"
++    },
++    "package_version": {
++      "const": "0.2.1.0"
++    },
++    "architecture": {
++      "const": "x64"
++    },
++    "application_id": {
++      "const": "App"
++    },
++    "expected_package_identity": {
++      "const": true
++    },
++    "run_id": {
++      "type": "string",
++      "format": "uuid"
++    },
++    "process_instance_id": {
++      "type": "string",
++      "format": "uuid"
++    },
++    "java_jni_enabled": {
++      "const": false
++    },
++    "minecraft_or_gameplay_tested": {
++      "const": false
++    },
++    "all_d06_certified": {
++      "const": false
++    },
++    "hardware_device_requested": {
++      "const": true
++    },
++    "watchdog_cancels_native_calls": {
++      "const": false
++    },
++    "payload_hashes": {
++      "type": "object",
++      "additionalProperties": false,
++      "required": [
++        "executable_sha256",
++        "manifest_sha256",
++        "build_inputs_sha256",
++        "policy_sha256",
++        "schema_sha256",
++        "inventory_sha256"
++      ],
++      "properties": {
++        "executable_sha256": {
++          "$ref": "#/$defs/hash"
++        },
++        "manifest_sha256": {
++          "$ref": "#/$defs/hash"
++        },
++        "build_inputs_sha256": {
++          "$ref": "#/$defs/hash"
++        },
++        "policy_sha256": {
++          "$ref": "#/$defs/hash"
++        },
++        "schema_sha256": {
++          "$ref": "#/$defs/hash"
++        },
++        "inventory_sha256": {
++          "$ref": "#/$defs/hash"
++        }
++      }
++    },
++    "status": {
++      "enum": [
++        "RUNNING",
++        "PASS",
++        "FAILED",
++        "BLOCKED",
++        "INCONCLUSIVE",
++        "NOT EXECUTED"
++      ]
++    },
++    "reason": {
++      "type": "string",
++      "pattern": "^[A-Z0-9_]+$"
++    },
++    "stage": {
++      "enum": [
++        "STARTED",
++        "BEFORE_CREATE_DEVICE",
++        "BEFORE_FORMAT_QUERY",
++        "FINAL"
++      ]
++    },
++    "terminal": {
++      "type": "boolean"
++    },
++    "sequence": {
++      "type": "integer",
++      "minimum": 1
++    },
++    "elapsed_monotonic_ms": {
++      "type": "integer",
++      "minimum": 0
++    },
++    "deadline_ms": {
++      "const": 10000
++    },
++    "observed_at_utc": {
++      "type": "string",
++      "format": "date-time"
++    },
++    "last_durable_checkpoint_stage": {
++      "enum": [
++        "",
++        "STARTED",
++        "BEFORE_CREATE_DEVICE",
++        "BEFORE_FORMAT_QUERY"
++      ]
++    },
++    "receipt_persistence_result": {
++      "const": "VERIFY_BY_RETRIEVAL"
++    },
++    "details": {
++      "type": "object",
++      "additionalProperties": false,
++      "properties": {
++        "requested_driver_type": {
++          "const": "HARDWARE"
++        },
++        "requested_driver_type_value": {
++          "const": 1
++        },
++        "requested_feature_level": {
++          "const": 45056
++        },
++        "creation_flags": {
++          "const": 32
++        },
++        "software_fallback_allowed": {
++          "const": false
++        },
++        "render_or_present_tested": {
++          "const": false
++        },
++        "memory_before": {
++          "$ref": "#/$defs/memory"
++        },
++        "memory_after_release": {
++          "$ref": "#/$defs/memory"
++        },
++        "creation_hresult": {
++          "$ref": "#/$defs/hresult"
++        },
++        "creation_hresult_signed": {
++          "type": "integer",
++          "minimum": -2147483648,
++          "maximum": 2147483647
++        },
++        "selected_feature_level": {
++          "type": "integer",
++          "minimum": 0
++        },
++        "device_returned": {
++          "type": "boolean"
++        },
++        "context_returned": {
++          "type": "boolean"
++        },
++        "classification_hresult": {
++          "$ref": "#/$defs/hresult"
++        },
++        "get_adapter_hresult": {
++          "$ref": "#/$defs/hresult"
++        },
++        "get_desc_hresult": {
++          "$ref": "#/$defs/hresult"
++        },
++        "adapter_flags": {
++          "type": "integer",
++          "minimum": 0
++        },
++        "adapter_software_flag": {
++          "type": "boolean"
++        },
++        "device_removed_reason": {
++          "$ref": "#/$defs/hresult"
++        },
++        "test_resources_released": {
++          "type": "boolean"
++        },
++        "exception_hresult": {
++          "$ref": "#/$defs/hresult"
++        },
++        "format_name": {
++          "const": "DXGI_FORMAT_R8G8B8A8_UNORM"
++        },
++        "format_value": {
++          "const": 28
++        },
++        "query_attempted": {
++          "type": "boolean"
++        },
++        "query_hresult": {
++          "$ref": "#/$defs/hresult"
++        },
++        "query_hresult_signed": {
++          "type": "integer",
++          "minimum": -2147483648,
++          "maximum": 2147483647
++        },
++        "format_support_valid": {
++          "type": "boolean"
++        },
++        "format_support_raw": {
++          "type": "integer",
++          "minimum": 0,
++          "maximum": 2147483647
++        },
++        "format_support_hex": {
++          "$ref": "#/$defs/hresult"
++        },
++        "texture2d_supported": {
++          "type": "boolean"
++        },
++        "shader_sample_supported": {
++          "type": "boolean"
++        },
++        "render_target_supported": {
++          "type": "boolean"
++        },
++        "mip_supported": {
++          "type": "boolean"
++        },
++        "required_support_mask": {
++          "const": 16928
++        }
++      }
++    },
++    "frozen_hw01_reference_commit": {
++      "const": "a3f72874241914f6048d4ca9ec4fc0edc978625d"
++    }
++  },
++  "$defs": {
++    "hash": {
++      "type": "string",
++      "pattern": "^[a-f0-9]{64}$"
++    },
++    "hresult": {
++      "type": "string",
++      "pattern": "^0x[A-F0-9]{8}$"
++    },
++    "memory": {
++      "type": "object",
++      "additionalProperties": false,
++      "required": [
++        "available"
++      ],
++      "properties": {
++        "available": {
++          "type": "boolean"
++        },
++        "usage_bytes": {
++          "type": "integer",
++          "minimum": 0
++        },
++        "limit_bytes": {
++          "type": "integer",
++          "minimum": 0
++        },
++        "hresult": {
++          "$ref": "#/$defs/hresult"
++        }
++      }
++    }
++  },
++  "$comment": "Structure plus tools/receipt_contract.py semantic validation. Only S_OK and a non-reserved mask may have raw/decoded flags. PASS requires three required bits, hardware classification, cleanup, memory/deadline and independent payload binding/retrieval. MIP optional. No proof of rendering. Original receipt retrieval is required; file/GPU calls cannot be cancelled."
+ }
+diff --git a/diagnostics/NativeCapabilities/include/build_config.h b/diagnostics/NativeCapabilities/include/build_config.h
+index 88309f0..443d5fb 100644
+--- a/diagnostics/NativeCapabilities/include/build_config.h
++++ b/diagnostics/NativeCapabilities/include/build_config.h
+@@ -9,9 +9,12 @@
+ #ifndef LFD_D00_ONLY
+ #define LFD_D00_ONLY 1
+ #endif
+-#ifndef LFN_CASE_D06_HW01
+-#define LFN_CASE_D06_HW01 1
++#ifndef LFN_CASE_D06_FMT01
++#define LFN_CASE_D06_FMT01 1
+ #endif
+-#if LFN_NATIVE_ONLY != 1 || LFN_JNI_ENABLED != 0 || LFD_D00_ONLY != 1 || LFN_CASE_D06_HW01 != 1
+-#error This project permits only native D06-HW01; Java and additional cases are forbidden
++#if defined(LFN_CASE_D06_HW01)
++#error The accepted HW01 case is excluded from this FMT01 build
++#endif
++#if LFN_NATIVE_ONLY != 1 || LFN_JNI_ENABLED != 0 || LFD_D00_ONLY != 1 || LFN_CASE_D06_FMT01 != 1
++#error This project permits only native D06-FMT01; Java and additional cases are forbidden
+ #endif
+diff --git a/diagnostics/NativeCapabilities/include/native.h b/diagnostics/NativeCapabilities/include/native.h
+index f7afb39..5c31cfb 100644
+--- a/diagnostics/NativeCapabilities/include/native.h
++++ b/diagnostics/NativeCapabilities/include/native.h
+@@ -13,7 +13,7 @@
+ 
+ namespace lfn {
+ using Json = winrt::Windows::Data::Json::JsonObject;
+-inline constexpr wchar_t Case[] = L"D06-HW01";
++inline constexpr wchar_t Case[] = L"D06-FMT01";
+ inline constexpr wchar_t Identity[] = L"AlgorHome.LegacyForge.NativeDiagnostics";
+ inline constexpr uint64_t DeadlineMs = 10000;
+ void Text(Json const&, wchar_t const*, std::wstring const&);
+diff --git a/diagnostics/NativeCapabilities/native-inventory.json b/diagnostics/NativeCapabilities/native-inventory.json
+index b028766..ba7f2f9 100644
+--- a/diagnostics/NativeCapabilities/native-inventory.json
++++ b/diagnostics/NativeCapabilities/native-inventory.json
+@@ -1 +1 @@
+-{"schema":"legacyforge-native-inventory-v1","case_id":"D06-HW01","native_only":true,"java_jni_enabled":false,"runtime_files":[],"fixtures":[],"extra_modules":[],"executable":"NativeCapabilities.exe"}
++{"schema":"legacyforge-native-inventory-v1","case_id":"D06-FMT01","native_only":true,"java_jni_enabled":false,"runtime_files":[],"fixtures":[],"extra_modules":[],"executable":"NativeCapabilities.exe"}
+diff --git a/diagnostics/NativeCapabilities/package/Package.appxmanifest b/diagnostics/NativeCapabilities/package/Package.appxmanifest
+index 70d0ba9..f3ccc11 100644
+--- a/diagnostics/NativeCapabilities/package/Package.appxmanifest
++++ b/diagnostics/NativeCapabilities/package/Package.appxmanifest
+@@ -1,8 +1,8 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap">
+- <Identity Name="AlgorHome.LegacyForge.NativeDiagnostics" Publisher="CN=LegacyForgeDiagnostics" Version="0.2.0.0" ProcessorArchitecture="x64"/>
+- <Properties><DisplayName>Native Diagnostics â€” D06-HW01</DisplayName><PublisherDisplayName>Independent Native Diagnostics</PublisherDisplayName><Logo>Assets/StoreLogo.png</Logo></Properties>
++ <Identity Name="AlgorHome.LegacyForge.NativeDiagnostics" Publisher="CN=LegacyForgeDiagnostics" Version="0.2.1.0" ProcessorArchitecture="x64"/>
++ <Properties><DisplayName>Native Diagnostics â€” D06-FMT01</DisplayName><PublisherDisplayName>Independent Native Diagnostics</PublisherDisplayName><Logo>Assets/StoreLogo.png</Logo></Properties>
+  <Dependencies><TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.26100.0"/><PackageDependency Name="Microsoft.VCLibs.140.00" MinVersion="14.0.0.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"/></Dependencies>
+  <Resources><Resource Language="en-us"/></Resources>
+- <Applications><Application Id="App" Executable="NativeCapabilities.exe" EntryPoint="LegacyForgeNativeDiagnostics.App"><uap:VisualElements DisplayName="Native Diagnostics â€” D06-HW01" Description="Hardware device creation only; no Java or presentation test" BackgroundColor="#162030" Square150x150Logo="Assets/Square150x150Logo.png" Square44x44Logo="Assets/Square44x44Logo.png"><uap:SplashScreen Image="Assets/SplashScreen.png" BackgroundColor="#162030"/></uap:VisualElements></Application></Applications>
++ <Applications><Application Id="App" Executable="NativeCapabilities.exe" EntryPoint="LegacyForgeNativeDiagnostics.App"><uap:VisualElements DisplayName="Native Diagnostics â€” D06-FMT01" Description="RGBA8 format support query only; no rendering or Java" BackgroundColor="#162030" Square150x150Logo="Assets/Square150x150Logo.png" Square44x44Logo="Assets/Square44x44Logo.png"><uap:SplashScreen Image="Assets/SplashScreen.png" BackgroundColor="#162030"/></uap:VisualElements></Application></Applications>
+ </Package>
+diff --git a/diagnostics/NativeCapabilities/profiles/D06-FMT01.json b/diagnostics/NativeCapabilities/profiles/D06-FMT01.json
+new file mode 100644
+index 0000000..7293eaf
+--- /dev/null
++++ b/diagnostics/NativeCapabilities/profiles/D06-FMT01.json
+@@ -0,0 +1,27 @@
++{
++  "schema": "legacyforge-native-case-policy-v1",
++  "case_id": "D06-FMT01",
++  "deadline_ms": 10000,
++  "owner_observation_ms": 30000,
++  "minimum_headroom_bytes": 268435456,
++  "maximum_observed_growth_bytes": 67108864,
++  "driver_type": "HARDWARE",
++  "feature_levels": [
++    45056
++  ],
++  "creation_flags": 32,
++  "device_attempts_maximum": 1,
++  "software_fallback": false,
++  "java_jni_enabled": false,
++  "swapchain_or_presentation": false,
++  "all_d06_certified": false,
++  "ui": "platform_message_dialog_after_case; no app renderer",
++  "format_name": "DXGI_FORMAT_R8G8B8A8_UNORM",
++  "format_value": 28,
++  "query_attempts_maximum": 1,
++  "required_support_mask": 16928,
++  "optional_mip_bit": 4096,
++  "invalid_output_policy": "omit raw and decoded capabilities unless S_OK and no reserved bits; sentinel 0xffffffff",
++  "texture_or_buffer_creation": false,
++  "shader_execution": false
++}
+diff --git a/diagnostics/NativeCapabilities/profiles/D06-HW01.json b/diagnostics/NativeCapabilities/profiles/D06-HW01.json
+deleted file mode 100644
+index 1eed869..0000000
+--- a/diagnostics/NativeCapabilities/profiles/D06-HW01.json
++++ /dev/null
+@@ -1,17 +0,0 @@
+-{
+-  "schema":"legacyforge-native-case-policy-v1",
+-  "case_id":"D06-HW01",
+-  "deadline_ms":10000,
+-  "owner_observation_ms":30000,
+-  "minimum_headroom_bytes":268435456,
+-  "maximum_observed_growth_bytes":67108864,
+-  "driver_type":"HARDWARE",
+-  "feature_levels":[45056],
+-  "creation_flags":32,
+-  "device_attempts_maximum":1,
+-  "software_fallback":false,
+-  "java_jni_enabled":false,
+-  "swapchain_or_presentation":false,
+-  "all_d06_certified":false,
+-  "ui":"platform_message_dialog_after_case; no app renderer"
+-}
+diff --git a/diagnostics/NativeCapabilities/src/app.cpp b/diagnostics/NativeCapabilities/src/app.cpp
+index 86d3af0..0c159b2 100644
+--- a/diagnostics/NativeCapabilities/src/app.cpp
++++ b/diagnostics/NativeCapabilities/src/app.cpp
+@@ -23,8 +23,8 @@ struct View : implements<View,IFrameworkView> {
+     Windows::Foundation::IAsyncOperation<IUICommand> dialogOperation_{nullptr};
+     void Show(std::wstring const& content) {
+         // Platform UI owns drawing; this program has no swapchain/target/presentation code.
+-        try {MessageDialog dialog{content,L"Native Diagnostics â€” D06-HW01"};dialogOperation_=dialog.ShowAsync();}
+-        catch(...) {try {Windows::UI::ViewManagement::ApplicationView::GetForCurrentView().Title(L"Native Diagnostics â€” D06-HW01: UI unavailable; inspect receipt");}catch(...) {}}
++        try {MessageDialog dialog{content,L"Native Diagnostics â€” D06-FMT01"};dialogOperation_=dialog.ShowAsync();}
++        catch(...) {try {Windows::UI::ViewManagement::ApplicationView::GetForCurrentView().Title(L"Native Diagnostics â€” D06-FMT01: UI unavailable; inspect receipt");}catch(...) {}}
+     }
+     void Initialize(CoreApplicationView const& view) {
+         view_=view;
+@@ -55,7 +55,7 @@ struct View : implements<View,IFrameworkView> {
+             try {dispatcher.RunAsync(CoreDispatcherPriority::Normal,[state,weak]{
+                 if(auto self=weak.get()) {
+                     auto result=state->receipt->Snapshot();
+-                    std::wstring text=L"Case: D06-HW01 / package 0.2.0.0\nTest status: "+result.status+L"\nReason: "+result.reason+L"\nHardware request: yes; no software fallback\nCreation HRESULT: "+result.creation+L"\nFeature level: "+result.feature+L"\nReceipt persistence: "+(result.persistence==0?std::wstring(L"saved; verify downloaded JSON"):std::wstring(L"NOT CONFIRMED / error ")+std::to_wstring(result.persistence))+L"\nRun: "+state->receipt->RunId()+L"\nJava/JNI excluded. Device creation only; not all D06.\nClose this message; no additional test will run.";
++                    std::wstring text=L"Case: D06-FMT01 / package 0.2.1.0\nTest status: "+result.status+L"\nReason: "+result.reason+L"\nHardware request: yes; no software fallback\nCreation HRESULT: "+result.creation+L"\nFeature level: "+result.feature+L"\nReceipt persistence: "+(result.persistence==0?std::wstring(L"saved; verify downloaded JSON"):std::wstring(L"NOT CONFIRMED / error ")+std::to_wstring(result.persistence))+L"\nRun: "+state->receipt->RunId()+L"\nJava/JNI excluded. RGBA8 format query only; no rendering/presentation. Verify flags in JSON.\nClose this message; no additional test will run.";
+                     self->Show(text);
+                 }
+             });}catch(...){}
+diff --git a/diagnostics/NativeCapabilities/src/probe.cpp b/diagnostics/NativeCapabilities/src/probe.cpp
+index 662e34e..9dacd31 100644
+--- a/diagnostics/NativeCapabilities/src/probe.cpp
++++ b/diagnostics/NativeCapabilities/src/probe.cpp
+@@ -8,6 +8,9 @@ void Probe(std::shared_ptr<Receipt> const& receipt) {
+     Json details;Text(details,L"requested_driver_type",L"HARDWARE");Number(details,L"requested_driver_type_value",D3D_DRIVER_TYPE_HARDWARE);
+     Number(details,L"requested_feature_level",D3D_FEATURE_LEVEL_11_0);Number(details,L"creation_flags",D3D11_CREATE_DEVICE_BGRA_SUPPORT);
+     Flag(details,L"software_fallback_allowed",false);Flag(details,L"render_or_present_tested",false);
++    Text(details,L"format_name",L"DXGI_FORMAT_R8G8B8A8_UNORM");Number(details,L"format_value",DXGI_FORMAT_R8G8B8A8_UNORM);
++    Number(details,L"required_support_mask",D3D11_FORMAT_SUPPORT_TEXTURE2D|D3D11_FORMAT_SUPPORT_SHADER_SAMPLE|D3D11_FORMAT_SUPPORT_RENDER_TARGET);
++    Flag(details,L"query_attempted",false);Flag(details,L"format_support_valid",false);
+     auto before=Memory();details.Insert(L"memory_before",before);
+     if(!before.GetNamedBoolean(L"available",false)){receipt->Finish(L"BLOCKED",L"MEMORY_OBSERVATION_UNAVAILABLE",details);return;}
+     double usage=before.GetNamedNumber(L"usage_bytes"),limit=before.GetNamedNumber(L"limit_bytes");
+@@ -38,7 +41,34 @@ void Probe(std::shared_ptr<Receipt> const& receipt) {
+                     else {DXGI_ADAPTER_DESC1 desc{};hr=adapter1->GetDesc1(&desc);Text(details,L"get_desc_hresult",Hex(hr));
+                         if(FAILED(hr)){status=L"BLOCKED";reason=L"ADAPTER_DESCRIPTION_UNAVAILABLE";}
+                         else {Number(details,L"adapter_flags",desc.Flags);bool software=(desc.Flags&DXGI_ADAPTER_FLAG_SOFTWARE)!=0;Flag(details,L"adapter_software_flag",software);
+-                            if(software){reason=L"SOFTWARE_ADAPTER_UNDER_HARDWARE_REQUEST";}else{status=L"PASS";reason=L"HARDWARE_DEVICE_CREATED_AND_CLASSIFIED";}}
++                            if(software){reason=L"SOFTWARE_ADAPTER_UNDER_HARDWARE_REQUEST";}
++                            else if(!receipt->Checkpoint(L"BEFORE_FORMAT_QUERY",details)){status=L"BLOCKED";reason=L"QUERY_CHECKPOINT_FAILED";}
++                            else if(receipt->Expired() || receipt->Terminal()){status=L"INCONCLUSIVE";reason=L"DEADLINE_BEFORE_FORMAT_QUERY";}
++                            else {
++                                // SDK flags occupy bits 0..30. Sentinel/reserved bit must never
++                                // become a claimed all-zero or all-supported capability result.
++                                UINT formatSupport=0xffffffffu;
++                                Flag(details,L"query_attempted",true);
++                                HRESULT queryHr=device->CheckFormatSupport(DXGI_FORMAT_R8G8B8A8_UNORM,&formatSupport);
++                                Text(details,L"query_hresult",Hex(queryHr));Number(details,L"query_hresult_signed",queryHr);
++                                if(queryHr!=S_OK) {
++                                    status=L"FAILED";reason=L"FORMAT_QUERY_FAILED";
++                                    if(queryHr==E_ACCESSDENIED || queryHr==E_NOTIMPL || queryHr==E_NOINTERFACE){status=L"BLOCKED";reason=L"FORMAT_QUERY_API_OR_POLICY_UNAVAILABLE";}
++                                    else if(SUCCEEDED(queryHr)){status=L"INCONCLUSIVE";reason=L"FORMAT_QUERY_UNEXPECTED_SUCCESS_CODE";}
++                                } else if(formatSupport&0x80000000u){status=L"INCONCLUSIVE";reason=L"FORMAT_QUERY_INVALID_OUTPUT";}
++                                else {
++                                    Flag(details,L"format_support_valid",true);Number(details,L"format_support_raw",formatSupport);Text(details,L"format_support_hex",Hex(static_cast<HRESULT>(formatSupport)));
++                                    Flag(details,L"texture2d_supported",(formatSupport&D3D11_FORMAT_SUPPORT_TEXTURE2D)!=0);
++                                    Flag(details,L"shader_sample_supported",(formatSupport&D3D11_FORMAT_SUPPORT_SHADER_SAMPLE)!=0);
++                                    Flag(details,L"render_target_supported",(formatSupport&D3D11_FORMAT_SUPPORT_RENDER_TARGET)!=0);
++                                    Flag(details,L"mip_supported",(formatSupport&D3D11_FORMAT_SUPPORT_MIP)!=0);
++                                    constexpr UINT required=D3D11_FORMAT_SUPPORT_TEXTURE2D|D3D11_FORMAT_SUPPORT_SHADER_SAMPLE|D3D11_FORMAT_SUPPORT_RENDER_TARGET;
++                                    if((formatSupport&required)==required){status=L"PASS";reason=L"RGBA8_REQUIRED_FORMAT_SUPPORT_CONFIRMED";}
++                                    else {status=L"FAILED";reason=L"RGBA8_REQUIRED_FORMAT_SUPPORT_MISSING";}
++                                }
++                                if(receipt->Expired() || receipt->Terminal()){status=L"INCONCLUSIVE";reason=L"FORMAT_QUERY_RETURNED_LATE";}
++                            }
++                        }
+                     }
+                 }
+             }
+diff --git a/diagnostics/NativeCapabilities/src/report.cpp b/diagnostics/NativeCapabilities/src/report.cpp
+index 7eccf51..6fe26a5 100644
+--- a/diagnostics/NativeCapabilities/src/report.cpp
++++ b/diagnostics/NativeCapabilities/src/report.cpp
+@@ -50,19 +50,20 @@ Json Memory() {
+ Receipt::Receipt() {
+     static std::wstring const processId=NewId(); process_=processId;run_=NewId();
+     auto package=winrt::Windows::ApplicationModel::Package::Current(); auto id=package.Id(); auto v=id.Version();
+-    if(id.Name()!=Identity || id.Publisher()!=L"CN=LegacyForgeDiagnostics" || v.Major!=0 || v.Minor!=2 || v.Build!=0 || v.Revision!=0 || id.Architecture()!=winrt::Windows::System::ProcessorArchitecture::X64) winrt::throw_hresult(E_ACCESSDENIED);
+-    Json binding;Text(binding,L"schema",L"legacyforge-native-capability-receipt-v1");Text(binding,L"case_id",Case);Text(binding,L"source_commit",SourceCommit);Text(binding,L"build_id",BuildId);
++    if(id.Name()!=Identity || id.Publisher()!=L"CN=LegacyForgeDiagnostics" || v.Major!=0 || v.Minor!=2 || v.Build!=1 || v.Revision!=0 || id.Architecture()!=winrt::Windows::System::ProcessorArchitecture::X64) winrt::throw_hresult(E_ACCESSDENIED);
++    Json binding;Text(binding,L"schema",L"legacyforge-native-capability-receipt-v2");Text(binding,L"case_id",Case);Text(binding,L"source_commit",SourceCommit);Text(binding,L"build_id",BuildId);
+     Text(binding,L"production_comparison_commit",L"d1453434ceefe73bef5aff497194e09f39dde7e1");Text(binding,L"frozen_d00_reference_commit",L"553c6554f40f1372b0ea09f6badbbb98e133a9ab");
+-    Text(binding,L"package_name",Identity);Text(binding,L"package_publisher",L"CN=LegacyForgeDiagnostics");Text(binding,L"package_version",L"0.2.0.0");Text(binding,L"architecture",L"x64");Text(binding,L"application_id",L"App");Flag(binding,L"expected_package_identity",true);
++    Text(binding,L"frozen_hw01_reference_commit",L"a3f72874241914f6048d4ca9ec4fc0edc978625d");
++    Text(binding,L"package_name",Identity);Text(binding,L"package_publisher",L"CN=LegacyForgeDiagnostics");Text(binding,L"package_version",L"0.2.1.0");Text(binding,L"architecture",L"x64");Text(binding,L"application_id",L"App");Flag(binding,L"expected_package_identity",true);
+     Text(binding,L"run_id",run_);Text(binding,L"process_instance_id",process_);Flag(binding,L"java_jni_enabled",false);Flag(binding,L"minecraft_or_gameplay_tested",false);Flag(binding,L"all_d06_certified",false);Flag(binding,L"hardware_device_requested",true);Flag(binding,L"watchdog_cancels_native_calls",false);
+     Json hashes;std::wstring root=package.InstalledLocation().Path().c_str();
+-    const struct{wchar_t const* role;wchar_t const* relative;} roles[]={{L"executable_sha256",L"NativeCapabilities.exe"},{L"manifest_sha256",L"AppxManifest.xml"},{L"build_inputs_sha256",L"native-inputs.json"},{L"policy_sha256",L"profiles\\D06-HW01.json"},{L"schema_sha256",L"contracts\\native-receipt.schema.json"},{L"inventory_sha256",L"native-inventory.json"}};
++    const struct{wchar_t const* role;wchar_t const* relative;} roles[]={{L"executable_sha256",L"NativeCapabilities.exe"},{L"manifest_sha256",L"AppxManifest.xml"},{L"build_inputs_sha256",L"native-inputs.json"},{L"policy_sha256",L"profiles\\D06-FMT01.json"},{L"schema_sha256",L"contracts\\native-receipt.schema.json"},{L"inventory_sha256",L"native-inventory.json"}};
+     for(auto const& role:roles){DWORD error=0;auto digest=HashFile(root+L"\\"+role.relative,&error);if(error || digest.size()!=64)winrt::throw_hresult(HRESULT_FROM_WIN32(error?error:ERROR_INVALID_DATA));Text(hashes,role.role,digest);}
+     binding.Insert(L"payload_hashes",hashes);binding_=binding.Stringify().c_str();
+     std::wstring local=winrt::Windows::Storage::ApplicationData::Current().LocalFolder().Path().c_str();local+=L"\\NativeCapabilityReceipts";
+     if(!CreateDirectoryW(local.c_str(),nullptr) && GetLastError()!=ERROR_ALREADY_EXISTS) winrt::throw_last_error();
+     DWORD attr=GetFileAttributesW(local.c_str());if(attr==INVALID_FILE_ATTRIBUTES || !(attr&FILE_ATTRIBUTE_DIRECTORY) || (attr&FILE_ATTRIBUTE_REPARSE_POINT))winrt::throw_hresult(E_ACCESSDENIED);
+-    path_=local+L"\\D06-HW01-"+run_+L".json";
++    path_=local+L"\\D06-FMT01-"+run_+L".json";
+ }
+ void Receipt::ArmDeadline(){deadline_=GetTickCount64()+DeadlineMs;}
+ bool Receipt::Expired()const{auto d=deadline_.load();return d && GetTickCount64()>=d;}
+diff --git a/diagnostics/NativeCapabilities/tools/receipt_contract.py b/diagnostics/NativeCapabilities/tools/receipt_contract.py
+new file mode 100644
+index 0000000..1085719
+--- /dev/null
++++ b/diagnostics/NativeCapabilities/tools/receipt_contract.py
+@@ -0,0 +1,203 @@
++"""Original offline receipt validation; no target, native library or driver execution.
++
++Validates every JSON Schema keyword used by this project's pinned schema, then
++applies case semantics separately. Synthetic contracts are not hardware results.
++"""
++import copy
++import datetime
++import hashlib
++import json
++import re
++import uuid
++
++FLAGS = {'texture2d_supported': 0x20, 'shader_sample_supported': 0x200,
++         'render_target_supported': 0x4000, 'mip_supported': 0x1000}
++REQUIRED = 0x4220
++OUTPUT = {'format_support_raw', 'format_support_hex', *FLAGS}
++
++def read_json(data):
++    def unique(pairs):
++        result = {}
++        for key, value in pairs:
++            assert key not in result, ('duplicate key', key)
++            result[key] = value
++        return result
++    return json.loads(data.decode('utf-8-sig'), object_pairs_hook=unique)
++
++def structure(value, schema, root=None):
++    root = schema if root is None else root
++    keywords = {'$schema', '$id', '$comment', '$defs', '$ref', 'title', 'description',
++                'type', 'const', 'enum', 'properties', 'additionalProperties',
++                'required', 'minimum', 'maximum', 'format', 'pattern'}
++    assert not set(schema) - keywords, 'unsupported schema keyword'
++    if '$ref' in schema:
++        assert schema['$ref'].startswith('#/$defs/')
++        structure(value, root['$defs'][schema['$ref'].split('/')[-1]], root)
++    if 'type' in schema:
++        assert type(value) is {'object': dict, 'string': str, 'integer': int,
++                              'boolean': bool}[schema['type']], 'type'
++    if 'const' in schema:
++        assert type(value) is type(schema['const']) and value == schema['const'], 'const'
++    if 'enum' in schema:
++        assert value in schema['enum'], 'enum'
++    if 'pattern' in schema:
++        assert re.search(schema['pattern'], value), 'pattern'
++    if 'minimum' in schema:
++        assert value >= schema['minimum'], 'minimum'
++    if 'maximum' in schema:
++        assert value <= schema['maximum'], 'maximum'
++    if schema.get('format') == 'uuid':
++        assert re.fullmatch(r'[a-fA-F0-9]{8}(?:-[a-fA-F0-9]{4}){3}-[a-fA-F0-9]{12}', value)
++        uuid.UUID(value)
++    if schema.get('format') == 'date-time':
++        assert re.fullmatch(r'\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2})', value)
++        assert datetime.datetime.fromisoformat(value.replace('Z', '+00:00')).tzinfo
++    if isinstance(value, dict):
++        assert set(schema.get('required', [])) <= set(value), 'required'
++        for key, item in value.items():
++            if key in schema.get('properties', {}):
++                structure(item, schema['properties'][key], root)
++            else:
++                assert schema.get('additionalProperties', True), ('unknown field', key)
++
++def validate(receipt, schema):
++    structure(receipt, schema)
++    assert receipt['run_id'].lower() != receipt['process_instance_id'].lower()
++    d = receipt['details']
++    valid = d.get('format_support_valid', False)
++    if 'query_hresult' in d:
++        assert d.get('query_attempted') is True
++        number = int(d['query_hresult'], 16)
++        assert d['query_hresult_signed'] == (number if number < 2**31 else number - 2**32)
++    if valid:
++        assert d['query_hresult'] == '0x00000000'
++        assert OUTPUT <= set(d)
++        mask = d['format_support_raw']
++        assert 0 <= mask <= 0x7fffffff
++        assert d['format_support_hex'] == f'0x{mask:08X}'
++        for name, bit in FLAGS.items():
++            assert d[name] == bool(mask & bit), ('decode', name)
++    else:
++        assert not OUTPUT & set(d), 'invalid/unavailable query must omit capabilities'
++    if not d.get('query_attempted', False):
++        assert 'query_hresult' not in d and not valid
++    if receipt['status'] == 'PASS':
++        assert receipt['terminal'] is True and receipt['stage'] == 'FINAL'
++        assert receipt['reason'] == 'RGBA8_REQUIRED_FORMAT_SUPPORT_CONFIRMED'
++        assert valid and (d['format_support_raw'] & REQUIRED) == REQUIRED
++        assert d['format_name'] == 'DXGI_FORMAT_R8G8B8A8_UNORM' and d['format_value'] == 28
++        assert d['required_support_mask'] == REQUIRED
++        assert d['creation_hresult'] == '0x00000000' and d['creation_hresult_signed'] == 0
++        assert d['device_returned'] and d['context_returned'] and d['test_resources_released']
++        assert d['selected_feature_level'] == d['requested_feature_level'] == 45056
++        assert d['requested_driver_type'] == 'HARDWARE' and d['requested_driver_type_value'] == 1
++        assert d['creation_flags'] == 32 and d['software_fallback_allowed'] is False
++        assert d['render_or_present_tested'] is False
++        assert d['get_adapter_hresult'] == d['get_desc_hresult'] == '0x00000000'
++        assert d['adapter_software_flag'] is False and not d['adapter_flags'] & 2
++        assert receipt['sequence'] == 4 and receipt['last_durable_checkpoint_stage'] == 'BEFORE_FORMAT_QUERY'
++        assert receipt['elapsed_monotonic_ms'] < receipt['deadline_ms']
++        before, after = d['memory_before'], d['memory_after_release']
++        assert before['available'] and after['available']
++        assert before['limit_bytes'] - before['usage_bytes'] >= 268435456
++        assert after['usage_bytes'] - before['usage_bytes'] <= 67108864
++
++def bind_payload(receipt, stage):
++    roles = {'executable_sha256': 'NativeCapabilities.exe', 'manifest_sha256': 'AppxManifest.xml',
++             'build_inputs_sha256': 'native-inputs.json', 'policy_sha256': 'profiles/D06-FMT01.json',
++             'schema_sha256': 'contracts/native-receipt.schema.json', 'inventory_sha256': 'native-inventory.json'}
++    actual = {role: hashlib.sha256((stage / name).read_bytes()).hexdigest() for role, name in roles.items()}
++    assert receipt['payload_hashes'] == actual, 'independent payload binding'
++    inputs = read_json((stage / 'native-inputs.json').read_bytes())
++    assert receipt['source_commit'] == inputs['sourceCommit'] == inputs['compiledSourceCommit']
++    assert receipt['build_id'] == inputs['buildId']
++
++def self_test(schema, stage):
++    # Original synthetic data exists only in this offline process; never saved as a
++    # console receipt, never packaged, and never evidence of target execution.
++    r = {}
++    for key, spec in schema['properties'].items():
++        if 'const' in spec:
++            r[key] = spec['const']
++    r.update(source_commit='0'*40, build_id='20261017-000000-00000000',
++             run_id='11111111-1111-4111-8111-111111111111',
++             process_instance_id='22222222-2222-4222-8222-222222222222',
++             status='PASS', reason='RGBA8_REQUIRED_FORMAT_SUPPORT_CONFIRMED', stage='FINAL',
++             terminal=True, sequence=4, elapsed_monotonic_ms=100,
++             observed_at_utc='2026-10-17T00:00:00Z', last_durable_checkpoint_stage='BEFORE_FORMAT_QUERY',
++             payload_hashes={k: '0'*64 for k in schema['properties']['payload_hashes']['required']})
++    d = dict(format_name='DXGI_FORMAT_R8G8B8A8_UNORM', format_value=28,
++             query_attempted=True, format_support_valid=True,
++             query_hresult='0x00000000', query_hresult_signed=0,
++             format_support_raw=REQUIRED, format_support_hex='0x00004220',
++             required_support_mask=REQUIRED, creation_hresult='0x00000000', creation_hresult_signed=0,
++             device_returned=True, context_returned=True, test_resources_released=True,
++             selected_feature_level=45056, requested_feature_level=45056,
++             requested_driver_type='HARDWARE', requested_driver_type_value=1, creation_flags=32,
++             software_fallback_allowed=False, render_or_present_tested=False,
++             get_adapter_hresult='0x00000000', get_desc_hresult='0x00000000',
++             adapter_flags=0, adapter_software_flag=False,
++             memory_before=dict(available=True, usage_bytes=1000000, limit_bytes=1073741824),
++             memory_after_release=dict(available=True, usage_bytes=2000000, limit_bytes=1073741824))
++    for name, bit in FLAGS.items():
++        d[name] = bool(REQUIRED & bit)
++    r['details'] = d
++    validate(r, schema)
++    with_mip = copy.deepcopy(r)
++    with_mip['details'].update(format_support_raw=0x5220, format_support_hex='0x00005220', mip_supported=True)
++    validate(with_mip, schema)
++    failed_query = copy.deepcopy(r)
++    failed_query.update(status='FAILED', reason='FORMAT_QUERY_FAILED')
++    for field in OUTPUT:
++        failed_query['details'].pop(field)
++    failed_query['details'].update(format_support_valid=False, query_hresult='0x80004005', query_hresult_signed=-2147467259)
++    validate(failed_query, schema)
++    unavailable = copy.deepcopy(failed_query)
++    unavailable.update(status='BLOCKED', reason='FORMAT_QUERY_API_OR_POLICY_UNAVAILABLE')
++    unavailable['details'].update(query_hresult='0x80004001', query_hresult_signed=-2147467263)
++    validate(unavailable, schema)
++    invalid_output = copy.deepcopy(failed_query)
++    invalid_output.update(status='INCONCLUSIVE', reason='FORMAT_QUERY_INVALID_OUTPUT')
++    invalid_output['details'].update(query_hresult='0x00000000', query_hresult_signed=0)
++    validate(invalid_output, schema)
++    zero = copy.deepcopy(r)
++    zero.update(status='FAILED', reason='RGBA8_REQUIRED_FORMAT_SUPPORT_MISSING')
++    zero['details'].update(format_support_raw=0, format_support_hex='0x00000000', **{k: False for k in FLAGS})
++    validate(zero, schema)
++    timeout = copy.deepcopy(r)
++    timeout.update(status='INCONCLUSIVE', reason='NATIVE_CALL_DEADLINE', details={})
++    validate(timeout, schema)
++    negatives = []
++    def bad(name, value):
++        try:
++            validate(value, schema)
++        except (AssertionError, KeyError, ValueError):
++            negatives.append(name)
++            return
++        raise AssertionError('accepted invalid fixture: '+name)
++    for key, value in [('texture2d_supported', False), ('shader_sample_supported', False),
++                       ('render_target_supported', False), ('adapter_software_flag', True),
++                       ('format_support_raw', 0x80004220), ('test_resources_released', False),
++                       ('query_hresult', '0x80004005'), ('query_attempted', False),
++                       ('format_value', 87)]:
++        invalid = copy.deepcopy(r);invalid['details'][key] = value;bad(key, invalid)
++    for key, value in [('case_id', 'D06-HW01'), ('package_version', '0.2.0.0'),
++                       ('elapsed_monotonic_ms', 10000), ('terminal', False),
++                       ('process_instance_id', r['run_id']), ('source_commit', 'bad')]:
++        invalid = copy.deepcopy(r);invalid[key] = value;bad(key, invalid)
++    invalid = copy.deepcopy(failed_query);invalid['details']['format_support_raw'] = 0
++    bad('failed query with fabricated zero capability', invalid)
++    try:
++        bind_payload(r, stage)
++    except AssertionError:
++        negatives.append('forged payload binding')
++    else:
++        raise AssertionError('accepted unbound receipt')
++    try:
++        read_json(b'{"status":"PASS","status":"FAILED"}')
++    except AssertionError:
++        negatives.append('duplicate JSON keys')
++    else:
++        raise AssertionError('accepted duplicate keys')
++    return {'syntheticValidCases': 7, 'syntheticRejectedCases': negatives,
++            'executedTarget': False, 'scope': 'offline schema and semantic oracle, not native runtime tests'}
+diff --git a/diagnostics/NativeCapabilities/tools/static_verify.py b/diagnostics/NativeCapabilities/tools/static_verify.py
+index 5db7c21..66a3180 100644
+--- a/diagnostics/NativeCapabilities/tools/static_verify.py
++++ b/diagnostics/NativeCapabilities/tools/static_verify.py
+@@ -1,6 +1,7 @@
+ """Original static build/package auditor; never loads or executes target code."""
+ from pathlib import Path
+ import argparse,hashlib,json,re,struct,zlib,zipfile,xml.etree.ElementTree as ET
++from receipt_contract import read_json, self_test
+ 
+ def sha(data):return hashlib.sha256(data).hexdigest()
+ def assets(root):
+@@ -38,31 +39,41 @@ def pe_imports(data):
+ 
+ def verify(build):
+     stage=build/'package';root=Path(__file__).resolve().parents[1]
+-    expected={'NativeCapabilities.exe','AppxManifest.xml','native-inputs.json','native-inventory.json','LICENSE.txt','profiles/D06-HW01.json','contracts/native-receipt.schema.json','Assets/StoreLogo.png','Assets/Square150x150Logo.png','Assets/Square44x44Logo.png','Assets/SplashScreen.png'}
++    expected={'NativeCapabilities.exe','AppxManifest.xml','native-inputs.json','native-inventory.json','LICENSE.txt','profiles/D06-FMT01.json','contracts/native-receipt.schema.json','Assets/StoreLogo.png','Assets/Square150x150Logo.png','Assets/Square44x44Logo.png','Assets/SplashScreen.png'}
+     assert {p.relative_to(stage).as_posix() for p in stage.rglob('*') if p.is_file()}==expected
+     ns={'p':'http://schemas.microsoft.com/appx/manifest/foundation/windows10'};manifest=ET.parse(stage/'AppxManifest.xml').getroot()
+     ident=manifest.find('p:Identity',ns).attrib
+-    assert ident=={'Name':'AlgorHome.LegacyForge.NativeDiagnostics','Publisher':'CN=LegacyForgeDiagnostics','Version':'0.2.0.0','ProcessorArchitecture':'x64'}
++    assert ident=={'Name':'AlgorHome.LegacyForge.NativeDiagnostics','Publisher':'CN=LegacyForgeDiagnostics','Version':'0.2.1.0','ProcessorArchitecture':'x64'}
+     assert manifest.find('p:Applications/p:Application',ns).attrib=={'Id':'App','Executable':'NativeCapabilities.exe','EntryPoint':'LegacyForgeNativeDiagnostics.App'}
+     assert not any(n.tag.rsplit('}',1)[-1] in ('Capability','DeviceCapability') for n in manifest.iter())
+     dependencies=[dict(n.attrib) for n in manifest.find('p:Dependencies',ns)]
+     assert dependencies==[{'Name':'Windows.Universal','MinVersion':'10.0.17763.0','MaxVersionTested':'10.0.26100.0'},{'Name':'Microsoft.VCLibs.140.00','MinVersion':'14.0.0.0','Publisher':'CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US'}]
+     inventory=json.loads((stage/'native-inventory.json').read_text())
+     assert inventory['native_only'] and not inventory['java_jni_enabled'] and all(not inventory[k] for k in ('runtime_files','fixtures','extra_modules'))
+-    policy=json.loads((stage/'profiles/D06-HW01.json').read_text())
+-    assert policy['case_id']=='D06-HW01' and policy['feature_levels']==[45056] and policy['creation_flags']==32 and policy['deadline_ms']==10000
++    policy=json.loads((stage/'profiles/D06-FMT01.json').read_text())
++    assert policy['case_id']=='D06-FMT01' and policy['feature_levels']==[45056] and policy['creation_flags']==32 and policy['deadline_ms']==10000
+     assert policy['minimum_headroom_bytes']==268435456 and policy['maximum_observed_growth_bytes']==67108864 and policy['device_attempts_maximum']==1 and not policy['software_fallback'] and not policy['swapchain_or_presentation']
+     inputs=json.loads((stage/'native-inputs.json').read_text(encoding='utf-8-sig'))
+-    assert inputs['caseId']=='D06-HW01' and inputs['nativeOnly'] and not inputs['jniEnabled'] and inputs['sourceCommit']==inputs['compiledSourceCommit']
++    assert inputs['caseId']=='D06-FMT01' and inputs['nativeOnly'] and not inputs['jniEnabled'] and inputs['sourceCommit']==inputs['compiledSourceCommit']
+     assert set(inputs['compiledSources'])=={'src/app.cpp','src/report.cpp','src/probe.cpp'}
+-    assert inputs['definitions']==['LFN_NATIVE_ONLY=1','LFN_JNI_ENABLED=0','LFD_D00_ONLY=1','LFN_CASE_D06_HW01=1']
++    assert inputs['definitions']==['LFN_NATIVE_ONLY=1','LFN_JNI_ENABLED=0','LFD_D00_ONLY=1','LFN_CASE_D06_FMT01=1']
+     assert set(e['path'] for e in inputs['packageFiles'])==expected-{'native-inputs.json'}
+     for item in inputs['packageFiles']:assert sha((stage/item['path']).read_bytes())==item['sha256']
+     for item in inputs['sourceFiles']:assert sha((root/item['path']).read_bytes())==item['sha256']
+     source='\n'.join((root/name).read_text() for name in inputs['compiledSources'])
+-    forbidden=['JNI_CreateJavaVM','JNI_GetDefaultJavaVMInitArgs','RequestJavaSmoke','RunJava21Smoke','CreateSwapChain','CreateRenderTargetView','Present(','CreateTexture2D','D3D_DRIVER_TYPE_WARP','D3D_DRIVER_TYPE_REFERENCE','TerminateProcess','TerminateThread','CreateProcess']
++    forbidden=['JNI_CreateJavaVM','JNI_GetDefaultJavaVMInitArgs','RequestJavaSmoke','RunJava21Smoke','CreateSwapChain','CreateRenderTargetView','Present(','CreateTexture2D','CreateTexture1D','CreateTexture3D','CreateBuffer','CreateVertexShader','CreatePixelShader','D3DCompile','Draw(','DrawIndexed(','Map(','CopyResource','ReadFromSubresource','D3D_DRIVER_TYPE_WARP','D3D_DRIVER_TYPE_REFERENCE','TerminateProcess','TerminateThread','CreateProcess']
+     for token in forbidden:assert token not in source,token
+     assert source.count('D3D11CreateDevice(')==1
++    assert not re.search(r'\b(?:CreateTexture\w*|CreateBuffer|Create\w*Shader|Create(?:RenderTarget|DepthStencil|ShaderResource|UnorderedAccess)View|CreateSwapChain\w*|Draw\w*|Dispatch|Present\w*)\s*\(',source)
++    assert source.count('->CheckFormatSupport(')==1
++    assert 'CheckFormatSupport(DXGI_FORMAT_R8G8B8A8_UNORM,&formatSupport)' in source
++    assert 'UINT formatSupport=0xffffffffu' in source and 'formatSupport&0x80000000u' in source
++    assert 'if(queryHr!=S_OK)' in source and 'BEFORE_FORMAT_QUERY' in source
++    assert policy['format_value']==28 and policy['required_support_mask']==0x4220 and policy['query_attempts_maximum']==1
++    assert policy['optional_mip_bit']==0x1000 and not policy['texture_or_buffer_creation'] and not policy['shader_execution']
++    schema=read_json((stage/'contracts/native-receipt.schema.json').read_bytes())
++    assert schema['properties']['schema']['const']=='legacyforge-native-capability-receipt-v2'
++    contract_tests=self_test(schema,stage)
+     assert 'command!=lfn::Case' in source and 'ActivationKind::Launch' in source and 'started.exchange(true)' in source
+     assert 'init_apartment(winrt::apartment_type::multi_threaded)' in source
+     assert 'if(status==L"PASS" && Expired())' in source and 'terminal_.exchange(true)' in source
+@@ -78,7 +89,7 @@ def verify(build):
+     assert 'D3D11CreateDevice' in symbols
+     assert not symbols.intersection({'LoadPackagedLibrary','TerminateProcess','TerminateThread','CreateProcessW','CreateProcessA','JNI_CreateJavaVM','JNI_GetDefaultJavaVMInitArgs'})
+     modules={m['module'].lower() for m in imports}
+-    assert not modules.intersection({'jvm.dll','java.dll','jli.dll','d2d1.dll','dwrite.dll','dxgi.dll'})
++    assert not modules.intersection({'jvm.dll','java.dll','jli.dll','d2d1.dll','dwrite.dll','dxgi.dll','opengl32.dll','d3dcompiler_47.dll','d3dcompiler_43.dll'})
+     # DXGI classification uses COM vtables; no DXGI factory creation/import is required.
+     package=build/'NativeCapabilities.unsigned.appx'
+     payload=[]
+@@ -87,10 +98,10 @@ def verify(build):
+         assert set(z.namelist())==expected|{'AppxBlockMap.xml','[Content_Types].xml'}
+         for name in sorted(expected):
+             b=z.read(name);assert b==(stage/name).read_bytes();payload.append({'path':name,'bytes':len(b),'sha256':sha(b)})
+-    return {'verdict':'PASS_STATIC_ONLY','sourceCommit':inputs['sourceCommit'],'identity':ident,'entryPoint':'LegacyForgeNativeDiagnostics.App','capabilities':[],'dependencies':dependencies,'payload':payload,'nativeImports':imports,'nativeImportClosure':'System/API-set/framework references require target loader validation; no claim of complete Xbox closure','unsignedAppxSha256':sha(package.read_bytes()),'jniExcluded':True,'oneHardwareCallSite':True,'noSwapchainOrPresentationCode':True,'executed':False,'signed':False,'ui':'Platform MessageDialog; Xbox behavior NOT EXECUTED','limits':['Source/race/failure review is static, not a runtime test','Blocked native and file calls cannot be cancelled','First terminal ownership and late-PASS guard inspected only']}
++    return {'verdict':'PASS_STATIC_ONLY','sourceCommit':inputs['sourceCommit'],'identity':ident,'entryPoint':'LegacyForgeNativeDiagnostics.App','capabilities':[],'dependencies':dependencies,'payload':payload,'nativeImports':imports,'nativeImportClosure':'System/API-set/framework references require target loader validation; no claim of complete Xbox closure','unsignedAppxSha256':sha(package.read_bytes()),'jniExcluded':True,'oneHardwareCallSite':True,'oneFormatQueryCallSite':True,'queryFormat':'DXGI_FORMAT_R8G8B8A8_UNORM','receiptContractTests':contract_tests,'noSwapchainOrPresentationCode':True,'executed':False,'signed':False,'ui':'Platform MessageDialog; Xbox behavior NOT EXECUTED','limits':['Source/race/failure review is static, not a runtime test','Blocked native and file calls cannot be cancelled','First terminal ownership and late-PASS guard inspected only']}
+ 
+ if __name__=='__main__':
+     p=argparse.ArgumentParser();p.add_argument('--assets',type=Path);p.add_argument('--build',type=Path);p.add_argument('--output',type=Path);a=p.parse_args()
+     if a.assets:assets(a.assets)
+     else:
+-        result=verify(a.build);a.output.write_text(json.dumps(result,indent=2));print('PASS: native D06-HW01 static artifact audit; target not executed')
++        result=verify(a.build);a.output.write_text(json.dumps(result,indent=2));print('PASS: native D06-FMT01 static artifact audit; target not executed')

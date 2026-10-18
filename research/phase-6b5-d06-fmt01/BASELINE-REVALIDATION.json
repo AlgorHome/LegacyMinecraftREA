@@ -1,0 +1,151 @@
+{
+  "verdict": "PASS_BEFORE_SOURCE_CHANGES",
+  "items": [
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b4f-signing\\20261017-143140-118313f1\\RuntimeDiagnostics.D00.MTAExperiment.0.1.3.0.signed.appx",
+      "role": "accepted_signed_appx",
+      "sha256": "ca93ec2f10b75a7e9e87df679a2cbf5cdf84630fc94820df731e2f3759661848"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b4h-hardware-receipts\\originals\\D00-0799F3FD-1056-4709-9302-202AA86C4C5D.json",
+      "role": "accepted_original_receipt",
+      "sha256": "1d247637c6551e2da289eecd3b343e0728b57aa4385a852590f61444fe888b7f"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b4h-hardware-receipts\\originals\\Xbox-D00-PASS.png",
+      "role": "accepted_original_photo",
+      "sha256": "74f383324231a453d88474ebc8a83a4ffb7c178f720c0384cbe6b8b7be8bf6fa"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b4h-hardware-receipts\\FINAL-ACCEPTANCE-REVIEW.md",
+      "role": "accepted_report",
+      "sha256": "5924e40e61d601a29c2c1239005f50eeb66ce5cdb7edcfe6d15ef590560338c1"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\.gitattributes",
+      "sha256": "a79691a93b46e49ce460c26ef22afcc03d6eca1e63bf2edbc20e96159510f6c9"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\.gitignore",
+      "sha256": "05d63aeaae418222e523833bf85eb29614a55640987dde7cd4d0e9311d5e2ff6"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\BUILD-REQUIREMENTS.md",
+      "sha256": "104c4a9baa32e13109b7869cc94b5a8f98b5053f3d5cab4c4077c63ca136d106"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\build.ps1",
+      "sha256": "454a64ee33a97a4413987fdb63105795b39c4ea6516c5709e32678b12826ed4f"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\README.md",
+      "sha256": "03a3174bcdf75ec97b32769b6c8147e316cfba3c634e8a70faceed9056479c19"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\runtime-inventory.template.json",
+      "sha256": "280d9b53fd911a2e6d6c3c346f323c2a7c7d57d98c4f612fc0c4f544c2f9ac3f"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\contracts\\receipt.schema.json",
+      "sha256": "b73b2822e9b19799e1935bc9f6af12fc2a7b77598c87523e9c44aa44a12c3790"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\docs\\ACTIVATION-EXPERIMENT.md",
+      "sha256": "754f9e236b9c0fae87c9b371927c6ba8f9d3f4c3f89cbb5be9e95ffd7d70c13a"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\docs\\ARCHITECTURE.md",
+      "sha256": "76a226f9138ac66ca9d15ecebda353b9d2c3892fb84dd9d6cf3434c28e9c1f71"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\docs\\BUILD-STATUS.md",
+      "sha256": "e432497c3de82030f5d27500086c51c3bf8dd5d5d2aed0b0f57492251f970a94"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\docs\\BUILD.md",
+      "sha256": "eb28354bc1ca149cf7fcbd6e62ec2613c3b25357508ce273e12f2179e900dd37"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\docs\\COMPILATION-RECEIPT.json",
+      "sha256": "959d8f4a30afbe4d931de787e07bf41f74ff47f581cfd58983e857dd8b4c5ad8"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\docs\\D00-BUILD-EVIDENCE.json",
+      "sha256": "cd9c0d9baac8d07e3d8dd6fd2c96c846a0901767a8ea23b6db0aee4eb1ee7fe1"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\docs\\D00-ONLY.md",
+      "sha256": "96ab757f79eefd153f97da04a1bb3631a38c3f6c5d81c54b3abfcc4a2c9484e5"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\docs\\D00-SAFETY-REVIEW.md",
+      "sha256": "ce7b78cda2d92cd3145ca56a1cc5722e5bf2086676e760c2b774e797af03bbf5"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\docs\\MTA-EXPERIMENT.md",
+      "sha256": "7e9a1c1afa8c321944e8c404fa9ec1dad114136724716be22a95a9a3ac9520b1"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\docs\\XBOX-ACCEPTANCE.md",
+      "sha256": "ed2f00129940a8b39d5053567e8dcba43e2c768ecb786ca9c319613629be9854"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\include\\build_config.h",
+      "sha256": "11803ab4c567deb21112af7ccf2905f31047104aac5004f22c38a2ca508fae12"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\include\\diagnostics.h",
+      "sha256": "f095e1d6b20adaed0d14442d0f994bf3547e45d40987787efa1c162cf77b9341"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\java\\diagnostic\\JniSmoke.java",
+      "sha256": "9a1aaf27cf3908c0c78f34b8b32ea70260aa6e15d9da59d2cd10db5d10a40a30"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\package\\Package.appxmanifest",
+      "sha256": "ae4893536a1fe6c38ed441fe69b844fd89e4e1e2d9e810534ac467dffaa1fe17"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\src\\app.cpp",
+      "sha256": "ee5a02b58984a51e6fd93d4826490cd12e587059e95785fb084e2697835ef6ee"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\src\\jni_smoke.cpp",
+      "sha256": "3ae14dd6fce9885cadf4f93a2885f0e38e2cd83e812c24f29cff0f91fbaf64c6"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\src\\native_control.cpp",
+      "sha256": "4da7baac93fbe08a6889743ba4264e7d49247892331a4b94a2f34e0f8fb1c6bc"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\src\\report.cpp",
+      "sha256": "60a968b794dad204fa21c1a1a9240b02b930e744046a04abdde9a8f6a684afc6"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\tools\\audit_d00.py",
+      "sha256": "6a1876adf4e08fa223039d880f18f74f9aebaf526847d12c88102b85aea2c6b4"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\tools\\verify_artifacts.py",
+      "sha256": "a28cca956f69f34af21689496450efe4a6d93c5fd4940edffa3eea81cde2c712"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\RuntimeDiagnostics\\tools\\__pycache__\\verify_artifacts.cpython-314.pyc",
+      "sha256": "ffbf36036ea6121622c1c361fe726a4821fa477616d1bdedf31aa06338fd0d00"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\analysis-local\\phase6b5c-signing\\20261017-173712-e540416b\\NativeDiagnostics.D06-HW01.0.2.0.0.signed.appx",
+      "sha256": "d4629d1f494f73db7dcb6290bee8c5c9f28375c8630c531e58b3ee95a6f05908"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\D06-HW01-594ACA53-FC63-4709-9C8B-BE96BEDD84BD.json",
+      "sha256": "14d609bddfe39019ed4808a23190319895a4b9d4d7117eb072c6f74014a49bc7"
+    },
+    {
+      "path": "C:\\Users\\arinze\\Desktop\\ReverseLegacyCraft\\phase6b1-diagnostics\\diagnostics\\NativeCapabilities\\out\\20261017-173106-d79a3eae\\NativeCapabilities.unsigned.appx",
+      "sha256": "79722c961dd677a2c89610599aec2e9537727dead6d66e2e3e8ff522da8b2501"
+    }
+  ],
+  "hw01Source": "a3f72874241914f6048d4ca9ec4fc0edc978625d",
+  "consoleAccess": false
+}

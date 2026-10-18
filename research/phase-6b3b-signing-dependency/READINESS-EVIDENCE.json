@@ -1,0 +1,357 @@
+{
+  "schema": "legacyforge-phase6b3b-signing-dependency-v1",
+  "date": "2026-10-17 America/Chicago",
+  "scope": "RESEARCH_STATIC_VERIFICATION_PROCEDURE_PREPARATION_ONLY",
+  "sourceCommit": "4101f7ee07d1c74911ffbf5cd2a44aff608c401d",
+  "reviewCommit": "df23adb6dbe948079510cf12eb64d5fd23542256",
+  "workingTree": "CLEAN",
+  "unsignedDiagnosticAppxSha256": "ecb53bb12ac86600df22c5d80608f908f10371787be9aa96e06d53011c8c9558",
+  "diagnosticRevalidation": {
+    "schema": "legacyforge-d00-static-safety-v1",
+    "verdict": "PASS",
+    "priorReviewRequirement8": "PASS_STATIC_COMPILE_TIME_DISABLED",
+    "sourceCommit": "4101f7ee07d1c74911ffbf5cd2a44aff608c401d",
+    "configuration": "D00Only",
+    "targetExecuted": false,
+    "signed": false,
+    "deployed": false,
+    "appxSha256": "ecb53bb12ac86600df22c5d80608f908f10371787be9aa96e06d53011c8c9558",
+    "appxBytes": 59847,
+    "identity": {
+      "Name": "AlgorHome.LegacyForge.RuntimeDiagnostics",
+      "Publisher": "CN=LegacyForgeDiagnostics",
+      "Version": "0.1.1.0",
+      "ProcessorArchitecture": "x64"
+    },
+    "capabilities": [],
+    "manifestDependencies": [
+      {
+        "Name": "Windows.Universal",
+        "MinVersion": "10.0.17763.0",
+        "MaxVersionTested": "10.0.26100.0"
+      },
+      {
+        "Name": "Microsoft.VCLibs.140.00",
+        "MinVersion": "14.0.0.0",
+        "Publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+      }
+    ],
+    "directImportModules": [
+      "api-ms-win-core-com-l1-1-0.dll",
+      "api-ms-win-core-errorhandling-l1-1-0.dll",
+      "api-ms-win-core-file-l1-1-0.dll",
+      "api-ms-win-core-file-l1-2-0.dll",
+      "api-ms-win-core-file-l2-1-0.dll",
+      "api-ms-win-core-handle-l1-1-0.dll",
+      "api-ms-win-core-heap-l1-1-0.dll",
+      "api-ms-win-core-interlocked-l1-1-0.dll",
+      "api-ms-win-core-libraryloader-l1-2-0.dll",
+      "api-ms-win-core-processthreads-l1-1-0.dll",
+      "api-ms-win-core-profile-l1-1-0.dll",
+      "api-ms-win-core-string-l1-1-0.dll",
+      "api-ms-win-core-synch-l1-1-0.dll",
+      "api-ms-win-core-synch-l1-2-0.dll",
+      "api-ms-win-core-sysinfo-l1-1-0.dll",
+      "api-ms-win-core-winrt-error-l1-1-1.dll",
+      "api-ms-win-core-winrt-l1-1-0.dll",
+      "api-ms-win-crt-heap-l1-1-0.dll",
+      "api-ms-win-crt-locale-l1-1-0.dll",
+      "api-ms-win-crt-math-l1-1-0.dll",
+      "api-ms-win-crt-runtime-l1-1-0.dll",
+      "api-ms-win-crt-stdio-l1-1-0.dll",
+      "api-ms-win-crt-string-l1-1-0.dll",
+      "bcrypt.dll",
+      "d2d1.dll",
+      "d3d11.dll",
+      "DWrite.dll",
+      "MSVCP140_APP.dll",
+      "OLEAUT32.dll",
+      "VCRUNTIME140_1_APP.dll",
+      "VCRUNTIME140_APP.dll"
+    ],
+    "systemLoaderImports": [
+      "LoadLibraryExW",
+      "GetProcAddress",
+      "FreeLibrary"
+    ],
+    "payload": [
+      {
+        "path": "AppxManifest.xml",
+        "bytes": 1424,
+        "sha256": "aeb26c76e9b53342fbff2ddded481df804a1a553ee2588f1c516fb9639c93400"
+      },
+      {
+        "path": "Assets/SplashScreen.png",
+        "bytes": 2518,
+        "sha256": "f88748811206edee8116b16e660b3ec91018f0a0fe7ec377dce521ee37e0399a"
+      },
+      {
+        "path": "Assets/Square150x150Logo.png",
+        "bytes": 570,
+        "sha256": "0406b630403d089059e2a7eb114bb6e4bc18cc4e85382cf2f3353cbcb389a680"
+      },
+      {
+        "path": "Assets/Square44x44Logo.png",
+        "bytes": 142,
+        "sha256": "1986f83bbe595418567c5fb9e84b937acd928de61c9711c726725ff0e1c47611"
+      },
+      {
+        "path": "Assets/StoreLogo.png",
+        "bytes": 153,
+        "sha256": "593d708a5fcbd0b802c25202f4e7d16b74f7d02a453e34fd8d5bb9cc686b2e18"
+      },
+      {
+        "path": "LICENSE.txt",
+        "bytes": 11558,
+        "sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6"
+      },
+      {
+        "path": "RuntimeDiagnostics.exe",
+        "bytes": 119296,
+        "sha256": "418a77107f02f28dc8df882e4a31ea744d93f9c3d5470aa267ffc03a8eca4231"
+      },
+      {
+        "path": "diagnostic-inputs.json",
+        "bytes": 3318,
+        "sha256": "4b98e676878900e44ffd92f9b7cec53145807bcf08dc31633c31bbf59be5c5b5"
+      },
+      {
+        "path": "profiles/native-control.json",
+        "bytes": 154,
+        "sha256": "9b69198a132c651a2fdea1ddcaecefe20f1d30dac5ed764be05c8f1b4057e3ba"
+      },
+      {
+        "path": "runtime-inventory.json",
+        "bytes": 234,
+        "sha256": "a847983740065493a4e5e106aada42b355f7d1b5955cedc39dd5bf36649915c1"
+      }
+    ],
+    "limits": [
+      "No activation or runtime behavior tested",
+      "Direct imports are not resolved transitive dependency closure",
+      "Synchronous rejection stub inspected, never invoked"
+    ]
+  },
+  "ownerObservedXbox": {
+    "provenance": "USER_REPORTED_READ_ONLY_INSPECTION",
+    "devHome": "WORKING",
+    "osVersionBuildVerbatim": "10.26100.9445",
+    "defaultClassification": "App",
+    "vclibs140X64UwpInstalled": "UNKNOWN",
+    "consoleConfigurationChangesReported": false,
+    "codexConsoleContact": false
+  },
+  "officialCandidate": {
+    "acquisition": {
+      "releaseApi": "https://api.github.com/repos/microsoft/winget-cli/releases/tags/v1.29.380",
+      "releasePage": "https://github.com/microsoft/winget-cli/releases/tag/v1.29.380",
+      "releaseTag": "v1.29.380",
+      "archiveUrl": "https://github.com/microsoft/winget-cli/releases/download/v1.29.380/DesktopAppInstaller_Dependencies.zip",
+      "archiveBytes": 97760717,
+      "archiveSha256": "ba875afe9d190f61218985ac0292a99d1db710bf93e13c68944ca9d89f0d82d1",
+      "githubPublishedDigest": "sha256:ba875afe9d190f61218985ac0292a99d1db710bf93e13c68944ca9d89f0d82d1",
+      "zipMember": "x64/Microsoft.VCLibs.140.00_14.0.33519.0_x64.appx",
+      "candidatePath": "Microsoft.VCLibs.140.00.x64.official.appx",
+      "candidateSha256": "9c17b521f9d690a1f504da5108ed6eec5669eb3a8fd1331eef43e40d84e74283",
+      "candidateBytes": 896581,
+      "targetExecuted": false
+    },
+    "validation": {
+      "identity": {
+        "Name": "Microsoft.VCLibs.140.00",
+        "ProcessorArchitecture": "x64",
+        "Publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+        "Version": "14.0.33519.0"
+      },
+      "framework": true,
+      "targetDeviceFamily": [
+        {
+          "Name": "Windows.Universal",
+          "MinVersion": "10.0.10042.0",
+          "MaxVersionTested": "10.0.10042.0"
+        }
+      ],
+      "dllChecks": [
+        {
+          "dll": "msvcp140_app.dll",
+          "architecture": "x64",
+          "sha256": "40d3e4997d76ee34c3c3b276dc146b9feb8b7ac0032d2adccce1e81e481c9381",
+          "requiredSymbols": [
+            "?_Throw_Cpp_error@std@@YAXH@Z",
+            "?_Xlength_error@std@@YAXPEBD@Z",
+            "_Cnd_do_broadcast_at_thread_exit",
+            "_Mtx_lock",
+            "_Mtx_unlock",
+            "_Query_perf_counter",
+            "_Query_perf_frequency",
+            "_Thrd_detach"
+          ],
+          "requiredCount": 8,
+          "exportCount": 1493,
+          "missingSymbols": [],
+          "verdict": "PASS_DIRECT_IMPORT_SYMBOL_COVERAGE"
+        },
+        {
+          "dll": "vcruntime140_app.dll",
+          "architecture": "x64",
+          "sha256": "b8acc56e87437e2dfbb6dfac36b99ee41562da1727dbc95535c2cd8ed3a538ad",
+          "requiredSymbols": [
+            "_CxxThrowException",
+            "__C_specific_handler",
+            "__std_exception_copy",
+            "__std_exception_destroy",
+            "__std_terminate",
+            "memcpy",
+            "memmove",
+            "memset"
+          ],
+          "requiredCount": 8,
+          "exportCount": 71,
+          "missingSymbols": [],
+          "verdict": "PASS_DIRECT_IMPORT_SYMBOL_COVERAGE"
+        },
+        {
+          "dll": "vcruntime140_1_app.dll",
+          "architecture": "x64",
+          "sha256": "db894749cf8c88fe40057bb486415ca7f7a5988e7fa593070266682a93d9d858",
+          "requiredSymbols": [
+            "__CxxFrameHandler4"
+          ],
+          "requiredCount": 1,
+          "exportCount": 3,
+          "missingSymbols": [],
+          "verdict": "PASS_DIRECT_IMPORT_SYMBOL_COVERAGE"
+        }
+      ],
+      "totalRequiredSymbols": 17,
+      "signatureVerification": {
+        "tool": "Windows SDK10.0.26100.0 x64 SignTool",
+        "command": "verify /pa /v <candidate.appx>",
+        "exitCode": 0,
+        "warnings": 0,
+        "errors": 0,
+        "logSha256": "a627ab7d749c1c99321019bf8659829fc657b4bc5105b762b4ca0fd6222bac49",
+        "signer": "Microsoft Corporation",
+        "signerThumbprint": "5E56A63F29AB04EEC8AED3B9B57416BE0CCEC0D0",
+        "root": "Microsoft Root Certificate Authority 2011",
+        "timestampReported": "2024-01-29 14:30:03 (tool display time)"
+      },
+      "license": {
+        "embeddedLicenseFile": false,
+        "redistributableList": "https://learn.microsoft.com/en-us/visualstudio/releases/2022/redistribution#universal-windows-apps-and-windows-store-apps",
+        "frameworkClassListed": true,
+        "ownerApplicableLicenseConfirmation": "BLOCKED_NOT_PROVIDED",
+        "note": "Unmodified UWP VCLibs retail APPX is listed for redistribution subject to applicable Visual Studio license terms; WinGet MIT license is not asserted for this Microsoft framework"
+      },
+      "targetExecuted": false,
+      "limits": [
+        "Direct-import export coverage only; no Xbox API-set or transitive runtime resolution tested",
+        "Console installation status remains UNKNOWN",
+        "Static candidate validation is not installation authorization"
+      ],
+      "allPackagedDllArchitectures": [
+        {
+          "path": "concrt140_app.dll",
+          "machine": "0x8664",
+          "sha256": "7368f268d113302b19d88c1661040546190d34d2b2cdfb0376d0a0664373fb9f"
+        },
+        {
+          "path": "msvcp140_1_app.dll",
+          "machine": "0x8664",
+          "sha256": "05c9ec5b7ef2068935b618a6e1b13e4b96c51323c2b1a6b7c2626e143be8e098"
+        },
+        {
+          "path": "msvcp140_2_app.dll",
+          "machine": "0x8664",
+          "sha256": "be4193f4872526c416773ee1b1806370ca31dce84cb44637dab318c28258bb3a"
+        },
+        {
+          "path": "msvcp140_app.dll",
+          "machine": "0x8664",
+          "sha256": "40d3e4997d76ee34c3c3b276dc146b9feb8b7ac0032d2adccce1e81e481c9381"
+        },
+        {
+          "path": "msvcp140_atomic_wait_app.dll",
+          "machine": "0x8664",
+          "sha256": "a903c6c83b732e04d77c1710f2d0d44a8d464663f8377b88a859953295344705"
+        },
+        {
+          "path": "msvcp140_codecvt_ids_app.dll",
+          "machine": "0x8664",
+          "sha256": "b9a43374c780b58f56575b4af88eac241089b32df2a8d9458d12ac2f1a68b9e2"
+        },
+        {
+          "path": "vcamp140_app.dll",
+          "machine": "0x8664",
+          "sha256": "011fb4a5df03bb53e11384434629243669284ee4a4e441f13f402fa4542e8f30"
+        },
+        {
+          "path": "vccorlib140_app.dll",
+          "machine": "0x8664",
+          "sha256": "6a32fd0052f6bdf5376120e8c5374f554ecead0d63925ddcd1d28c132d12ca25"
+        },
+        {
+          "path": "vcomp140_app.dll",
+          "machine": "0x8664",
+          "sha256": "25b47208a168280e46302ee675208335212ed6cfb7f6bcddae6b6f964cedae17"
+        },
+        {
+          "path": "vcruntime140_1_app.dll",
+          "machine": "0x8664",
+          "sha256": "db894749cf8c88fe40057bb486415ca7f7a5988e7fa593070266682a93d9d858"
+        },
+        {
+          "path": "vcruntime140_app.dll",
+          "machine": "0x8664",
+          "sha256": "b8acc56e87437e2dfbb6dfac36b99ee41562da1727dbc95535c2cd8ed3a538ad"
+        }
+      ]
+    },
+    "cacheRelativeToResearchWorkspace": "analysis-local/phase6b3b-dependency",
+    "insideGitRepository": false,
+    "candidateIsNotInDiagnosticPayload": true,
+    "candidateDoesNotEstablishConsoleInstallState": true
+  },
+  "gateStates": {
+    "candidateArchitecturePublisherManifest": "PASS",
+    "allPackagedDllX64": "PASS",
+    "diagnosticDirectCrtExportCoverage": "PASS_17_OF_17",
+    "microsoftSignature": "PASS",
+    "redistributableClassInMicrosoftList": "CONFIRMED_CONDITIONAL_ON_LICENSE_TERMS",
+    "ownerApplicableLicenseConfirmation": "BLOCKED",
+    "consoleFrameworkPresence": "UNKNOWN",
+    "certificateCreation": "BLOCKED_NOT_AUTHORIZED",
+    "diagnosticSigning": "BLOCKED_NOT_AUTHORIZED",
+    "portalConnection": "BLOCKED_NOT_AUTHORIZED",
+    "dependencyInstallation": "BLOCKED_NOT_AUTHORIZED_NEED_NOT_ESTABLISHED",
+    "diagnosticDeployment": "BLOCKED_NOT_AUTHORIZED",
+    "diagnosticActivation": "BLOCKED_NOT_AUTHORIZED",
+    "receiptRetrieval": "NOT_EXECUTED",
+    "overallD00": "NOT_EXECUTED"
+  },
+  "actions": {
+    "officialDependencyArchiveDownloadedForStaticInspection": true,
+    "archivePublishedDigestVerified": true,
+    "fixedCandidateAppxAndThreeDllsExtractedAsData": true,
+    "trustedSdkSignatureAndExportToolsRun": true,
+    "candidateModulesLoadedOrExecuted": false,
+    "privateKeyCreatedAccessedOrExported": false,
+    "certificateCreatedOrImported": false,
+    "diagnosticAppxSigned": false,
+    "dependenciesInstalled": false,
+    "consoleOrDevicePortalContact": false,
+    "diagnosticDeployedOrExecuted": false,
+    "archivedInstallerExecuted": false,
+    "productionAuthOrEntitlementModified": false,
+    "thirdPartyBinariesCommitted": false
+  },
+  "signatureLog": {
+    "relativeToResearchWorkspace": "analysis-local/phase6b3b-dependency/signtool-verification.log",
+    "sha256": "a627ab7d749c1c99321019bf8659829fc657b4bc5105b762b4ca0fd6222bac49"
+  },
+  "preparedFileHashes": {
+    "PREPARATION-REPORT.md": "3db6bf2f818fdf535c36d687b1ade946420cb3de3db4c40e5cde0a9ff2b2b5cd",
+    "CERTIFICATE-WORKFLOW.md": "9c1b48c9a2970aec4b2b8e322818550c2c3f09d31225942d01154ea68670f5de",
+    "FINAL-PREDEPLOYMENT-CHECKLIST.md": "81ef695a50b011a5c144251f050844337aa34691e09011b181a4a872627fd7b2"
+  }
+}
