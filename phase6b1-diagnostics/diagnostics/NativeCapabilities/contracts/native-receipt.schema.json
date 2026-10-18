@@ -1,0 +1,643 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:legacyforge:native-capability-receipt:v6",
+  "title": "D06-SRV03 one SRV owning-device canonical IUnknown identity query",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "case_id",
+    "source_commit",
+    "build_id",
+    "production_comparison_commit",
+    "frozen_d00_reference_commit",
+    "package_name",
+    "package_publisher",
+    "package_version",
+    "architecture",
+    "application_id",
+    "expected_package_identity",
+    "run_id",
+    "process_instance_id",
+    "java_jni_enabled",
+    "minecraft_or_gameplay_tested",
+    "all_d06_certified",
+    "hardware_device_requested",
+    "watchdog_cancels_native_calls",
+    "payload_hashes",
+    "status",
+    "reason",
+    "stage",
+    "terminal",
+    "sequence",
+    "elapsed_monotonic_ms",
+    "deadline_ms",
+    "observed_at_utc",
+    "last_durable_checkpoint_stage",
+    "receipt_persistence_result",
+    "details",
+    "frozen_hw01_reference_commit",
+    "frozen_fmt01_reference_commit",
+    "frozen_res01a_reference_commit",
+    "frozen_srv01_reference_commit",
+    "frozen_srv02_reference_commit"
+  ],
+  "properties": {
+    "schema": {
+      "const": "legacyforge-native-capability-receipt-v6"
+    },
+    "case_id": {
+      "const": "D06-SRV03"
+    },
+    "source_commit": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{40}$"
+    },
+    "build_id": {
+      "type": "string",
+      "pattern": "^[0-9]{8}-[0-9]{6}-[a-f0-9]{8}$"
+    },
+    "production_comparison_commit": {
+      "const": "d1453434ceefe73bef5aff497194e09f39dde7e1"
+    },
+    "frozen_d00_reference_commit": {
+      "const": "553c6554f40f1372b0ea09f6badbbb98e133a9ab"
+    },
+    "package_name": {
+      "const": "AlgorHome.LegacyForge.NativeDiagnostics"
+    },
+    "package_publisher": {
+      "const": "CN=LegacyForgeDiagnostics"
+    },
+    "package_version": {
+      "const": "0.2.5.0"
+    },
+    "architecture": {
+      "const": "x64"
+    },
+    "application_id": {
+      "const": "App"
+    },
+    "expected_package_identity": {
+      "const": true
+    },
+    "run_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "process_instance_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "java_jni_enabled": {
+      "const": false
+    },
+    "minecraft_or_gameplay_tested": {
+      "const": false
+    },
+    "all_d06_certified": {
+      "const": false
+    },
+    "hardware_device_requested": {
+      "const": true
+    },
+    "watchdog_cancels_native_calls": {
+      "const": false
+    },
+    "payload_hashes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "executable_sha256",
+        "manifest_sha256",
+        "build_inputs_sha256",
+        "policy_sha256",
+        "schema_sha256",
+        "inventory_sha256"
+      ],
+      "properties": {
+        "executable_sha256": {
+          "$ref": "#/$defs/hash"
+        },
+        "manifest_sha256": {
+          "$ref": "#/$defs/hash"
+        },
+        "build_inputs_sha256": {
+          "$ref": "#/$defs/hash"
+        },
+        "policy_sha256": {
+          "$ref": "#/$defs/hash"
+        },
+        "schema_sha256": {
+          "$ref": "#/$defs/hash"
+        },
+        "inventory_sha256": {
+          "$ref": "#/$defs/hash"
+        }
+      }
+    },
+    "status": {
+      "enum": [
+        "RUNNING",
+        "PASS",
+        "FAILED",
+        "BLOCKED",
+        "INCONCLUSIVE",
+        "NOT EXECUTED"
+      ]
+    },
+    "reason": {
+      "type": "string",
+      "pattern": "^[A-Z0-9_]+$"
+    },
+    "stage": {
+      "enum": [
+        "STARTED",
+        "BEFORE_CREATE_DEVICE",
+        "BEFORE_CREATE_TEXTURE",
+        "BEFORE_CREATE_SRV",
+        "BEFORE_GET_DEVICE",
+        "FINAL"
+      ]
+    },
+    "terminal": {
+      "type": "boolean"
+    },
+    "sequence": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "elapsed_monotonic_ms": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "deadline_ms": {
+      "const": 10000
+    },
+    "observed_at_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "last_durable_checkpoint_stage": {
+      "enum": [
+        "",
+        "STARTED",
+        "BEFORE_CREATE_DEVICE",
+        "BEFORE_CREATE_TEXTURE",
+        "BEFORE_CREATE_SRV",
+        "BEFORE_GET_DEVICE"
+      ]
+    },
+    "receipt_persistence_result": {
+      "const": "VERIFY_BY_RETRIEVAL"
+    },
+    "details": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "requested_driver_type": {
+          "const": "HARDWARE"
+        },
+        "requested_driver_type_value": {
+          "const": 1
+        },
+        "requested_feature_level": {
+          "const": 45056
+        },
+        "creation_flags": {
+          "const": 32
+        },
+        "software_fallback_allowed": {
+          "const": false
+        },
+        "render_or_present_tested": {
+          "const": false
+        },
+        "memory_before": {
+          "$ref": "#/$defs/memory"
+        },
+        "memory_after_release": {
+          "$ref": "#/$defs/memory"
+        },
+        "creation_hresult": {
+          "$ref": "#/$defs/hresult"
+        },
+        "creation_hresult_signed": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        },
+        "selected_feature_level": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "device_returned": {
+          "type": "boolean"
+        },
+        "context_returned": {
+          "type": "boolean"
+        },
+        "classification_hresult": {
+          "$ref": "#/$defs/hresult"
+        },
+        "get_adapter_hresult": {
+          "$ref": "#/$defs/hresult"
+        },
+        "get_desc_hresult": {
+          "$ref": "#/$defs/hresult"
+        },
+        "adapter_flags": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "adapter_software_flag": {
+          "type": "boolean"
+        },
+        "device_removed_reason": {
+          "$ref": "#/$defs/hresult"
+        },
+        "test_resources_released": {
+          "type": "boolean"
+        },
+        "exception_hresult": {
+          "$ref": "#/$defs/hresult"
+        },
+        "format_name": {
+          "const": "DXGI_FORMAT_R8G8B8A8_UNORM"
+        },
+        "format_value": {
+          "const": 28
+        },
+        "texture_attempted": {
+          "type": "boolean"
+        },
+        "texture_hresult": {
+          "$ref": "#/$defs/hresult"
+        },
+        "texture_hresult_signed": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        },
+        "texture_returned": {
+          "type": "boolean"
+        },
+        "get_desc_called": {
+          "type": "boolean"
+        },
+        "descriptors_match": {
+          "type": "boolean"
+        },
+        "texture_reference_released": {
+          "type": "boolean"
+        },
+        "requested_descriptor": {
+          "$ref": "#/$defs/requested_descriptor"
+        },
+        "returned_descriptor": {
+          "$ref": "#/$defs/descriptor"
+        },
+        "initial_data_supplied": {
+          "const": false
+        },
+        "nonnull_output_pointer": {
+          "const": true
+        },
+        "srv_attempted": {
+          "type": "boolean"
+        },
+        "srv_hresult": {
+          "$ref": "#/$defs/hresult"
+        },
+        "srv_hresult_signed": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        },
+        "srv_returned": {
+          "type": "boolean"
+        },
+        "srv_get_desc_called": {
+          "type": "boolean"
+        },
+        "srv_descriptors_match": {
+          "type": "boolean"
+        },
+        "srv_reference_released": {
+          "type": "boolean"
+        },
+        "srv_released_before_texture": {
+          "type": "boolean"
+        },
+        "srv_nonnull_output_pointer": {
+          "const": true
+        },
+        "srv_requested_descriptor": {
+          "$ref": "#/$defs/srv_requested_descriptor"
+        },
+        "srv_returned_descriptor": {
+          "$ref": "#/$defs/srv_descriptor"
+        },
+        "identity_interface": {
+          "const": "IID_IUnknown"
+        },
+        "get_device_nonnull_output_pointer": {
+          "const": true
+        },
+        "get_device_called": {
+          "type": "boolean"
+        },
+        "owning_device_returned": {
+          "type": "boolean"
+        },
+        "original_device_identity_query_attempted": {
+          "type": "boolean"
+        },
+        "returned_device_identity_query_attempted": {
+          "type": "boolean"
+        },
+        "original_device_identity_returned": {
+          "type": "boolean"
+        },
+        "returned_device_identity_returned": {
+          "type": "boolean"
+        },
+        "identity_comparison_performed": {
+          "type": "boolean"
+        },
+        "canonical_identity_equal": {
+          "type": "boolean"
+        },
+        "temporary_identity_references_released": {
+          "type": "boolean"
+        },
+        "returned_device_reference_released": {
+          "type": "boolean"
+        },
+        "device_references_released_before_srv": {
+          "type": "boolean"
+        },
+        "original_device_identity_query_hresult": {
+          "$ref": "#/$defs/hresult"
+        },
+        "original_device_identity_query_hresult_signed": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        },
+        "returned_device_identity_query_hresult": {
+          "$ref": "#/$defs/hresult"
+        },
+        "returned_device_identity_query_hresult_signed": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        }
+      }
+    },
+    "frozen_hw01_reference_commit": {
+      "const": "a3f72874241914f6048d4ca9ec4fc0edc978625d"
+    },
+    "frozen_fmt01_reference_commit": {
+      "const": "bbe3a42c422e4328d5f98c07a9370fa948d0cbbf"
+    },
+    "frozen_res01a_reference_commit": {
+      "const": "4457142ff1fd9e01371eb446612c70162ce93357"
+    },
+    "frozen_srv01_reference_commit": {
+      "const": "e3cd2e0fbed5725980d5cc36ac8cb6535d7fa4e8"
+    },
+    "frozen_srv02_reference_commit": {
+      "const": "c81d0f48286513f7a7579a1d2d786cca4f5e60e2"
+    }
+  },
+  "$defs": {
+    "hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "hresult": {
+      "type": "string",
+      "pattern": "^0x[A-F0-9]{8}$"
+    },
+    "memory": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "available"
+      ],
+      "properties": {
+        "available": {
+          "type": "boolean"
+        },
+        "usage_bytes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "limit_bytes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "hresult": {
+          "$ref": "#/$defs/hresult"
+        }
+      }
+    },
+    "descriptor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "width",
+        "height",
+        "mip_levels",
+        "array_size",
+        "format",
+        "sample_count",
+        "sample_quality",
+        "usage",
+        "bind_flags",
+        "cpu_access_flags",
+        "misc_flags"
+      ],
+      "properties": {
+        "width": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295
+        },
+        "mip_levels": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295
+        },
+        "array_size": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295
+        },
+        "format": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295
+        },
+        "sample_count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295
+        },
+        "sample_quality": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295
+        },
+        "usage": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295
+        },
+        "bind_flags": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295
+        },
+        "cpu_access_flags": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295
+        },
+        "misc_flags": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295
+        }
+      }
+    },
+    "requested_descriptor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "width",
+        "height",
+        "mip_levels",
+        "array_size",
+        "format",
+        "sample_count",
+        "sample_quality",
+        "usage",
+        "bind_flags",
+        "cpu_access_flags",
+        "misc_flags"
+      ],
+      "properties": {
+        "width": {
+          "type": "integer",
+          "const": 1
+        },
+        "height": {
+          "type": "integer",
+          "const": 1
+        },
+        "mip_levels": {
+          "type": "integer",
+          "const": 1
+        },
+        "array_size": {
+          "type": "integer",
+          "const": 1
+        },
+        "format": {
+          "type": "integer",
+          "const": 28
+        },
+        "sample_count": {
+          "type": "integer",
+          "const": 1
+        },
+        "sample_quality": {
+          "type": "integer",
+          "const": 0
+        },
+        "usage": {
+          "type": "integer",
+          "const": 0
+        },
+        "bind_flags": {
+          "type": "integer",
+          "const": 8
+        },
+        "cpu_access_flags": {
+          "type": "integer",
+          "const": 0
+        },
+        "misc_flags": {
+          "type": "integer",
+          "const": 0
+        }
+      }
+    },
+    "srv_requested_descriptor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "format",
+        "view_dimension",
+        "most_detailed_mip",
+        "mip_levels"
+      ],
+      "properties": {
+        "format": {
+          "type": "integer",
+          "const": 28
+        },
+        "view_dimension": {
+          "type": "integer",
+          "const": 4
+        },
+        "most_detailed_mip": {
+          "type": "integer",
+          "const": 0
+        },
+        "mip_levels": {
+          "type": "integer",
+          "const": 1
+        }
+      }
+    },
+    "srv_descriptor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "format",
+        "view_dimension"
+      ],
+      "properties": {
+        "format": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295
+        },
+        "view_dimension": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295
+        },
+        "most_detailed_mip": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295
+        },
+        "mip_levels": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295
+        }
+      }
+    }
+  },
+  "$comment": "Structure plus semantic oracle. GetDevice returns void: no fabricated HRESULT. Canonical IID_IUnknown QI requires S_OK and non-null outputs on both objects before equality. No raw pointer addresses. Temporary identities/returned resource released before SRV/texture/context/device. PASS requires sequence6, cleanup/memory/deadline, independent hashes and original receipt retrieval."
+}
